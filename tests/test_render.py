@@ -109,3 +109,11 @@ def test_touch_targets_44px(tmp_path):
     covered = {s.strip() for sel, body in rules if "min-height: 44px" in body for s in sel.split(",")}
     assert {".replay", ".who a", ".back", ".notice a", ".foot a"} <= covered
     assert ".replay[hidden] { display: none; }" in css
+
+
+def test_pages_ask_search_engines_not_to_index(tmp_path):
+    # 금감원 확인 전까지 검색 노출 막기. 정식 개설 때 base.html 의 robots 줄을 지우고 이 테스트도 지운다.
+    c = result()
+    render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+    for f in ["index.html", "c/EXM/index.html", "criteria/index.html", "404.html"]:
+        assert '<meta name="robots" content="noindex, nofollow">' in (tmp_path / f).read_text()
