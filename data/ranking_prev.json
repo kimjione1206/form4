@@ -10,11 +10,6 @@
     "ticker": "AMRZ"
   },
   {
-    "issuer_cik": "1063761",
-    "name": "SIMON PROPERTY GROUP INC.",
-    "ticker": "SPG"
-  },
-  {
     "issuer_cik": "1041934",
     "name": "EDAP TMS SA",
     "ticker": "EDAP"
@@ -48,11 +43,6 @@
     "issuer_cik": "1386716",
     "name": "Star Bulk Carriers Corp.",
     "ticker": "SBLK"
-  },
-  {
-    "issuer_cik": "1791145",
-    "name": "GBank Financial Holdings Inc.",
-    "ticker": "GBFH"
   },
   {
     "issuer_cik": "930236",

@@ -11,11 +11,6 @@
       "sic_description": "Cement, Hydraulic"
     },
     {
-      "cik": "1063761",
-      "name": "SIMON PROPERTY GROUP INC.",
-      "sic_description": "Real Estate Investment Trusts"
-    },
-    {
       "cik": "1041934",
       "name": "EDAP TMS SA",
       "sic_description": "Electromedical & Electrotherapeutic Apparatus"
@@ -49,11 +44,6 @@
       "cik": "1386716",
       "name": "Star Bulk Carriers Corp.",
       "sic_description": "Deep Sea Foreign Transportation of  Freight"
-    },
-    {
-      "cik": "1791145",
-      "name": "GBank Financial Holdings Inc.",
-      "sic_description": "State Commercial Banks"
     },
     {
       "cik": "930236",
@@ -472,7 +462,6 @@
     }
   ],
   "titles": [
-    "CEO and Executive Chairman",
     "CEO and President",
     "CEO/President",
     "CFO & General Counsel",
@@ -532,8 +521,6 @@
     "President, Heritage DebtX LLC",
     "President, Industrial Assets",
     "President/CEO",
-    "President/CEO (GBank)",
-    "SECRETARY",
     "SVP & CFO",
     "SVP & GC",
     "SVP - Acetyls",
