@@ -117,3 +117,15 @@ def test_footnote_text_read_past_inner_elements():
                     footnotes={"F1": "Price note.<b>x</b> Purchased in the Offering; dividend reinvestment."})
     r = parse_form4(xml, "a", FILED)[0]
     assert r["offering"] is True and r["drip"] is True
+
+
+def test_only_transaction_footnotes_mark_drip_and_offering():
+    notes = {"F1": "Includes 120 shares acquired under the Issuer's Dividend Reinvestment Plan.",
+             "F2": "Includes shares purchased in the IPO."}
+    tx = {"code": "P", "date": "2026-09-30", "shares": 1, "price": 1, "after": 2}
+    on_holdings = form4_xml(txs=[{**tx, "after_footnotes": ["F1", "F2"]}], footnotes=notes)
+    r = parse_form4(on_holdings, "a", FILED)[0]
+    assert r["drip"] is False and r["offering"] is False
+    on_price = form4_xml(txs=[{**tx, "price_footnotes": ["F1", "F2"]}], footnotes=notes)
+    r = parse_form4(on_price, "a", FILED)[0]
+    assert r["drip"] is True and r["offering"] is True

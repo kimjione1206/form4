@@ -106,12 +106,9 @@ def test_company_without_ticker_excluded():
     assert rank(buys(3, ticker=""), AS_OF, TITLES) == []
     assert rank(buys(3, ticker="NONE"), AS_OF, TITLES) == []
     assert rank(buys(3, ticker=" n/a "), AS_OF, TITLES) == []
+    for ticker in ["-", "..", " . "]:
+        assert rank(buys(3, ticker=ticker), AS_OF, TITLES) == []
     assert rank(buys(3, ticker="EXM"), AS_OF, TITLES)[0]["ticker"] == "EXM"
-
-
-def test_slug_unusable_ticker_uses_cik():
-    recs = buys(3, issuer="33", ticker="..")
-    assert rank(recs, AS_OF, TITLES)[0]["slug"] == "cik33"
 
 
 def test_slug_same_ticker_later_gets_cik_suffix():

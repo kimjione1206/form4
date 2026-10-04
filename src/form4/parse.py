@@ -87,7 +87,9 @@ def parse_form4(xml_text: str, accession: str, filed: date) -> list[dict]:
         code = _t(tx, "transactionCoding/transactionCode")
         if code not in ("P", "S"):
             continue
-        ids = {f.get("id") for f in tx.iter("footnoteId")}
+        # 거래 자체(날짜·코드·수량·가격)에 붙은 각주만 본다. 보유 수량 각주는 과거 취득분 설명이라 제외.
+        ids = {f.get("id") for part in ("transactionDate", "transactionCoding", "transactionAmounts")
+               for el in tx.findall(part) for f in el.iter("footnoteId")}
         records.append({
             **base,
             "code": code,

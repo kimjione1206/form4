@@ -14,6 +14,7 @@ from form4.tables import guard_text
 CEO_RE = re.compile(r"chief executive|\bceo\b", re.I)
 VP_RE = re.compile(r"vice[\s-]*president|\b[se]?vp\b", re.I)
 SLUG_RE = re.compile(r"[^A-Z0-9.-]")
+ALNUM_RE = re.compile(r"[A-Z0-9]")
 PLACEHOLDER_TICKERS = {"", "NONE", "N/A"}
 
 
@@ -43,11 +44,8 @@ def owner_label(o: dict, titles: dict[str, str]) -> str:
     return "대주주"
 
 
-def _slug(ticker: str, cik: str) -> str:
-    s = SLUG_RE.sub("", ticker.upper())
-    if not s.strip("."):
-        return f"cik{cik}"
-    return s
+def _slug(ticker: str) -> str:
+    return SLUG_RE.sub("", ticker.upper())
 
 
 def _value(r: dict) -> float:
@@ -112,7 +110,7 @@ def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
     rs = [r for r in rs if not (r["code"] == "P" and r.get("drip"))]  # 배당 재투자는 아예 안 셈
     ticker = next((r["ticker"] for r in sorted(rs, key=lambda r: r["filed"], reverse=True)
                    if r["ticker"]), "")
-    if ticker.strip().upper() in PLACEHOLDER_TICKERS:
+    if ticker.strip().upper() in PLACEHOLDER_TICKERS or not ALNUM_RE.search(ticker.upper()):
         return None  # 종목 코드가 없는 비상장 펀드·BDC는 방문자가 살 수 없음
     person_buys = [r for r in rs if r["code"] == "P" and _has_person(r)]
     buys = [r for r in person_buys if not r["offering"]]  # 증자 참여는 시장 매수가 아님
@@ -139,7 +137,7 @@ def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
         "issuer_cik": cik,
         "name": latest["issuer_name"],
         "ticker": ticker,
-        "slug": _slug(ticker, cik),
+        "slug": _slug(ticker),
         "people": len(qualified),
         "total_usd": sum(_value(r) for r in counted),
         "sales": len({r["accession"] for r in rs if r["code"] == "S"}),

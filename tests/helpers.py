@@ -22,9 +22,11 @@ def form4_xml(issuer_cik="1000697", ticker="WAT", owners=None, txs=None, plan=Fa
     tx_xml = ""
     for t in txs:
         fn = "".join(f'<footnoteId id="{f}"/>' for f in t.get("footnotes", []))
+        price_fn = "".join(f'<footnoteId id="{f}"/>' for f in t.get("price_footnotes", []))
+        after_fn = "".join(f'<footnoteId id="{f}"/>' for f in t.get("after_footnotes", []))
         after = (
             f"<postTransactionAmounts><sharesOwnedFollowingTransaction><value>{t['after']}</value>"
-            f"</sharesOwnedFollowingTransaction></postTransactionAmounts>"
+            f"{after_fn}</sharesOwnedFollowingTransaction></postTransactionAmounts>"
             if t.get("after") is not None else ""
         )
         tx_xml += (
@@ -33,7 +35,7 @@ def form4_xml(issuer_cik="1000697", ticker="WAT", owners=None, txs=None, plan=Fa
             f"<transactionCoding><transactionFormType>4</transactionFormType>"
             f"<transactionCode>{t['code']}</transactionCode></transactionCoding>"
             f"<transactionAmounts><transactionShares><value>{t['shares']}</value>{fn}</transactionShares>"
-            f"<transactionPricePerShare><value>{t['price']}</value></transactionPricePerShare>"
+            f"<transactionPricePerShare><value>{t['price']}</value>{price_fn}</transactionPricePerShare>"
             f"<transactionAcquiredDisposedCode><value>A</value></transactionAcquiredDisposedCode>"
             f"</transactionAmounts>{after}"
             f"<ownershipNature><directOrIndirectOwnership><value>{t.get('direct', 'D')}</value>"
