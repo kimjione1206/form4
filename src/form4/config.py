@@ -10,6 +10,6 @@ SAME_DAY_TOLERANCE = 1.2
 MAX_FAIL_RATIO = 0.05
 MAX_DAILY_DAYS = 5  # daily 한 번에 따라잡는 최대 영업일 수
 
-FORBIDDEN_WORDS = ("주목", "급등", "신호", "기회", "유망", "추천", "성장")
+FORBIDDEN_WORDS = ("주목", "급등", "신호", "기회", "유망", "추천", "성장", "손절", "고점", "경고")
 
 REPO_URL = "https://github.com/kimjione1206/form4"

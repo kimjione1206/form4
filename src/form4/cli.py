@@ -13,7 +13,7 @@ from form4.briefing import briefing, snapshot
 from form4.fx import current_rate
 from form4.index import parse_master_index
 from form4.parse import extract_xml, parse_form4
-from form4.rank import rank
+from form4.rank import profiles
 from form4.render import render_site
 from form4.sec import SecClient, SecError, index_url
 from form4.tables import (build_todo, check_tables, ensure_company_info, load_json,
@@ -101,7 +101,8 @@ def run(dates, as_of, now_utc, client, fx_client, data_dir: Path, dist_dir: Path
 
     titles = load_json(data_dir / "titles.json", {})
     companies = load_json(data_dir / "companies.json", {})
-    results = rank(records, as_of, titles)
+    all_profiles = profiles(records, as_of, titles)
+    results = [c for c in all_profiles if c["qualified"]]  # 조건 충족 목록(회사 정보·AI 할 일은 이것만)
     ensure_company_info(results, companies, client)
     brief = briefing(results, load_json(data_dir / "ranking_prev.json", None))
     fx = current_rate(fx_client, state.get("fx"))
@@ -110,7 +111,7 @@ def run(dates, as_of, now_utc, client, fx_client, data_dir: Path, dist_dir: Path
         "updated": now_utc.astimezone(SEOUL).strftime("%m/%d %H:%M"),
         "fx_rate": fx["rate"], "fx_date": fx["date"], "new_filings": total,
     }
-    render_site(results, brief, meta, companies, dist_dir)
+    render_site(all_profiles, brief, meta, companies, dist_dir)
 
     store.save(data_dir / "transactions.jsonl", records)
     save_json(data_dir / "companies.json", companies)

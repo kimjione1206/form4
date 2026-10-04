@@ -40,6 +40,22 @@ a { color: var(--accent); } a:hover { color: #142660; }
 .foot { margin: 0 16px; font-size: 11px; color: var(--dim); line-height: 1.7; }
 .replay, .back, .who a, .notice a, .foot a { display: inline-flex; align-items: center; min-height: 44px; margin: -13px 0; }
 .replay[hidden] { display: none; }
+.search { display: flex; flex-direction: column; gap: 6px; }
+.search label { font-weight: 500; }
+.search-row { display: flex; gap: 8px; }
+.search input { flex: 1; min-width: 0; min-height: 44px; padding: 0 12px; font: inherit; font-size: 16px; color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 6px; }
+.search button { min-height: 44px; padding: 0 18px; font: inherit; font-weight: 700; color: #fff; background: var(--accent); border: 0; border-radius: 6px; cursor: pointer; }
+.search-out { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--line); border-radius: 6px; }
+.search-out[hidden] { display: none; }
+.search-out a { display: flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 12px; border-top: 1px solid var(--soft); color: var(--ink); text-decoration: none; font-weight: 500; }
+.search-out a:first-child { border-top: 0; }
+.search-out p { margin: 0; padding: 12px; font-size: 13px; color: var(--ink); }
+.search-note { margin: 0; }
+.band .search label { color: #CBD3E0; }
+.list-hint { margin: 2px 0 0; }
+.explain { margin: 0 16px; background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 0 16px; }
+.explain summary { min-height: 44px; padding: 12px 0; font-weight: 700; cursor: pointer; }
+.explain p { margin: 0 0 14px; font-size: 13px; }
 /* 컴퓨터 화면용 묶음: 휴대폰에서는 상자가 없는 것처럼(display: contents) 두어 모양이 그대로다 */
 .band-in, .band-main, .cols, .col { display: contents; }
 .d-only { display: none; }
@@ -58,7 +74,9 @@ a { color: var(--accent); } a:hover { color: #142660; }
   .band-main { display: flex; flex-direction: column; gap: 6px; max-width: 760px; }
   .band-side { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; flex: none; }
   .band-side a { color: #CBD3E0; display: inline-flex; align-items: center; min-height: 44px; margin: -13px 0; }
-  .card, .notice, .note { margin: 0; }
+  .card, .notice, .note, .explain { margin: 0; }
+  .band-note { width: min(1200px, 100% - 48px); margin: 0 auto; }
+  .band-search { margin-top: 10px; max-width: 520px; }
   .card { padding: 16px 18px; }
   .pad-x { padding: 0; }
   .cols { display: grid; gap: 16px 24px; align-items: start; }

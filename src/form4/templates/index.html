@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% from "_search.html" import search_form %}
 {% block body %}
 <header class="band band-home">
   <div class="band-in">
@@ -6,11 +7,13 @@
       <div class="band-top"><span class="mono dim">FORM 4 · KR</span><span class="mono dim m-only">{{ meta.updated }} 갱신</span></div>
       <h1>미국 임원 매수 정리</h1>
       <p class="sub">내부자 거래 공시(Form 4) 한국어 정리</p>
-      <p class="intro">미국 회사 임원·이사가 자기 회사 주식을 사고팔면 이틀 안에 공개 신고해야 해요(합법). 그 신고를 매일 아침 정리합니다.</p>
+      <p class="intro">미국 회사 임원·이사가 자기 회사 주식을 사고팔면 이틀 안에 공개 신고해야 해요(신고 의무가 있는 공개 정보예요). 그 신고를 매일 아침 정리합니다.</p>
+      <div class="d-only band-search">{{ search_form("q-d") }}</div>
     </div>
     <div class="band-side mono small dim d-only"><span>{{ meta.updated }} 갱신</span><span>미국 {{ meta.as_of_label }} 접수분까지</span><a href="/criteria/">기준 보기 →</a></div>
   </div>
 </header>
+<div class="m-only pad-x">{{ search_form("q-m") }}</div>
 
 <div class="cols cols-home">
 <div class="col">
@@ -21,17 +24,26 @@
     <div class="tile"><span class="small dim">빠짐</span><span class="mono big">−{{ brief.dropped|length }}</span><span class="small">{{ brief.dropped[0].name if brief.dropped else "없음" }}</span></div>
     <div class="tile"><span class="small dim">최대 금액</span><span class="mono big">{{ brief.top.total_usd|krw_short(meta.fx_rate) if brief.top else "-" }}</span><span class="small">{{ brief.top.name if brief.top else "" }}</span></div>
   </div>
+  <p class="small dim">새로 = 오늘 목록에 처음 오른 회사 · 빠짐 = 기간(60일)이 지나 목록에서 빠진 회사</p>
   {% for c in brief.new[:3] %}<p class="small">{{ c.name }} — 임원·이사 {{ c.people }}명 장내 매수 (거래 {{ c.first_date|md }}~{{ c.last_date|md }})</p>{% endfor %}
   {% if brief.new|length > 3 %}<p class="small dim">외 {{ brief.new|length - 3 }}곳은 아래 목록에서 '새로' 표시로 볼 수 있어요.</p>{% endif %}
   {% if meta.new_filings == 0 %}<p class="small dim">새로 들어온 신고가 없어요 (미국 주말·휴일).</p>{% endif %}
 </section>
 
 <p class="notice">특정 종목의 매수·매도를 권하지 않아요. 공시를 정해진 기준으로 자동 정리한 목록이에요. <a href="/criteria/">기준 보기</a></p>
+
+<details class="explain">
+  <summary>매도는 왜 일어나요?</summary>
+  <p>임원은 월급·보너스를 회사 주식으로 받는 경우가 많아요. 그래서 세금 납부, 생활 자금, 분산 투자를 위해 팔기도 하고, 몇 달 전에 미리 정해 둔 계획(10b5-1)대로 자동으로 팔기도 해요. 매도가 많다고 주가 하락을 뜻하지 않아요. 반대로 매수는 이유가 비교적 단순해서 이 사이트는 매수를 중심으로 정리해요.</p>
+</details>
 </div>
-<div class="row-between small dim pad-x m-only"><span>조건 충족 {{ results|length }}곳</span><span>사람 수 ↓ · 금액 ↓</span></div>
+<div class="pad-x m-only">
+  <div class="row-between small dim"><span>조건 충족 {{ results|length }}곳</span><span>사람 수 ↓ · 금액 ↓</span></div>
+  <p class="small dim list-hint">조건 충족 = 최근 60일 임원·이사 3명 이상이 각자 1만 달러 이상 장내 매수</p>
+</div>
 
 <div class="card list">
-<div class="row-between list-head d-only"><h2>조건 충족 {{ results|length }}곳</h2><span class="small dim">사람 수 ↓ · 금액 ↓</span></div>
+<div class="row-between list-head d-only"><div><h2>조건 충족 {{ results|length }}곳</h2><p class="small dim">조건 충족 = 최근 60일 임원·이사 3명 이상이 각자 1만 달러 이상 장내 매수</p></div><span class="small dim">사람 수 ↓ · 금액 ↓</span></div>
 {% if results %}<div class="list-cols small dim d-only"><span>#</span><span>회사</span><span class="r">인원</span><span class="r">총액</span><span class="r">달러</span><span class="r">최근 거래</span><span class="r">매도</span></div>{% endif %}
 {% for c in results %}
   <a class="item" href="/c/{{ c.slug }}/">
@@ -55,4 +67,5 @@
 {% endfor %}
 </div>
 </div>
+<script src="/search.js" defer></script>
 {% endblock %}

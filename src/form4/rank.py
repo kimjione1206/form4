@@ -137,6 +137,7 @@ def _same_day(counted: list[dict], qualified: set[str], info: dict[str, dict]) -
 
 
 def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
+    """임원·이사 개인의 장내 매수·매도가 하나라도 있고 종목 코드가 있는 회사. 조건 충족이면 qualified."""
     rs = [r for r in rs if not (r["code"] == "P" and r.get("drip"))]  # 배당 재투자는 아예 안 셈
     ticker = next((r["ticker"] for r in sorted(rs, key=lambda r: r["filed"], reverse=True)
                    if r["ticker"]), "")
@@ -144,6 +145,9 @@ def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
         return None  # 종목 코드가 없는 비상장 펀드·BDC는 방문자가 살 수 없음
     person_buys = [r for r in rs if r["code"] == "P" and _has_person(r)]
     buys = [r for r in person_buys if not r["offering"]]  # 증자 참여는 시장 매수가 아님
+    sells = [r for r in rs if r["code"] == "S" and _has_person(r)]
+    if not buys and not sells:
+        return None
     per_person, info = defaultdict(float), {}
     for r in buys:
         for o in r["owners"]:
@@ -151,8 +155,9 @@ def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
                 per_person[o["cik"]] += _value(r)
                 info[o["cik"]] = o
     qualified = {c for c, v in per_person.items() if v >= config.MIN_PERSON_USD}
-    if len(qualified) < config.MIN_PEOPLE:
-        return None
+    is_listed = len(qualified) >= config.MIN_PEOPLE
+    if not is_listed:
+        qualified = set(per_person)  # 목록 밖 회사는 기준 없이 있는 그대로 보여 준다
     counted = [r for r in buys if any(o["cik"] in qualified for o in r["owners"])]
     rows = _rows(counted, qualified, titles)
     latest = max(rs, key=lambda r: (r["filed"], r["accession"]))
@@ -163,12 +168,12 @@ def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
         tags.append("같은 날 여러 명 매수")
     if any("계획 매수" in r["tags"] for r in rows):
         tags.append("계획 매수 포함")
-    sells = [r for r in rs if r["code"] == "S" and _has_person(r)]
     return {
         "issuer_cik": cik,
         "name": latest["issuer_name"],
         "ticker": ticker,
         "slug": _slug(ticker),
+        "qualified": is_listed,
         "people": len(qualified),
         "total_usd": sum(_value(r) for r in counted),
         "sale_people": len({o["cik"] for r in sells for o in r["owners"] if _is_insider(o)}),
@@ -177,17 +182,18 @@ def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
         "offering_usd": sum(_value(r) for r in person_buys if r["offering"]),
         "ten_pct_usd": sum(_value(r) for r in rs if r["code"] == "P" and not _has_person(r)
                            and any(_is_holder(o) for o in r["owners"])),
-        "first_date": min(r["date"] for r in counted),
-        "last_date": max(r["date"] for r in counted),
+        "first_date": min((r["date"] for r in counted), default=None),
+        "last_date": max((r["date"] for r in counted), default=None),
         "tags": tags,
         "officer_titles": sorted({info[c]["title"] for c in qualified
                                   if info[c]["is_officer"] and info[c]["title"]}),
         "rows": rows,
-        "top": max(rows, key=lambda x: x["value"]),
+        "top": max(rows, key=lambda x: x["value"], default=None),
     }
 
 
-def rank(records: list[dict], as_of: date, titles: dict[str, str]) -> list[dict]:
+def profiles(records: list[dict], as_of: date, titles: dict[str, str]) -> list[dict]:
+    """임원·이사 거래가 있는 모든 회사. 조건 충족 회사가 먼저 와서 지금 목록의 주소(slug)가 그대로다."""
     start = (as_of - timedelta(days=config.WINDOW_DAYS - 1)).isoformat()
     end = as_of.isoformat()
     by_company = defaultdict(list)
@@ -195,10 +201,14 @@ def rank(records: list[dict], as_of: date, titles: dict[str, str]) -> list[dict]
         if start <= r["date"] <= end:
             by_company[r["issuer_cik"]].append(r)
     results = [c for cik, rs in by_company.items() if (c := _company(cik, rs, titles))]
-    results.sort(key=lambda c: (-c["people"], -c["total_usd"], c["name"]))
+    results.sort(key=lambda c: (not c["qualified"], -c["people"], -c["total_usd"], c["name"]))
     used = set()
     for c in results:
         if c["slug"] in used:
             c["slug"] = f"{c['slug']}-{c['issuer_cik']}"
         used.add(c["slug"])
     return results
+
+
+def rank(records: list[dict], as_of: date, titles: dict[str, str]) -> list[dict]:
+    return [c for c in profiles(records, as_of, titles) if c["qualified"]]

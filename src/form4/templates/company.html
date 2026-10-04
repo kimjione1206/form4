@@ -8,12 +8,15 @@
   <p class="sub">{{ line }}</p>
   </div>
 </header>
+{% if not c.qualified %}
+<p class="note band-note">조건 충족 목록에는 없는 회사예요 (기준: 최근 60일 임원·이사 3명 이상이 각각 1만 달러 이상 장내 매수).</p>
+{% endif %}
 
 <div class="cols cols-detail">
 <div class="col col-top">
 <section class="tiles pad-x">
   <div class="tile card-lite"><span class="small dim">장내 매수</span><span class="mono big accent">{{ c.people }}명</span><span class="small dim">임원·이사</span></div>
-  <div class="tile card-lite"><span class="small dim">총액</span><span class="mono big">{{ c.total_usd|krw_short(meta.fx_rate) }}</span><span class="mono small dim">{{ c.total_usd|usd }}</span></div>
+  <div class="tile card-lite"><span class="small dim">총액</span>{% if c.rows %}<span class="mono big">{{ c.total_usd|krw_short(meta.fx_rate) }}</span><span class="mono small dim">{{ c.total_usd|usd }}</span>{% else %}<span class="mono big">-</span><span class="small dim">없음</span>{% endif %}</div>
   <div class="tile card-lite"><span class="small dim">같은 기간 매도</span><span class="mono big">{{ c.sale_people }}명</span><span class="small dim">{{ c.sale_usd|krw(meta.fx_rate) if c.sale_people else "없음" }}</span></div>
 </section>
 
@@ -25,7 +28,8 @@
 
 <div class="col col-main">
 <section class="card trades">
-  <div class="row-between"><h2>거래 기록</h2><span class="small dim">최근 거래일 순</span></div>
+  <div class="row-between"><h2>거래 기록</h2>{% if c.rows %}<span class="small dim">최근 거래일 순</span>{% endif %}</div>
+  {% if c.rows %}
   <div class="trow thead small dim"><span>거래일</span><span class="d-only">신고일</span><span>누가</span><span class="r">금액</span><span class="r">보유↑</span><span class="d-only">구분</span><span class="d-only r">원문</span></div>
   {% for r in c.rows %}
   <div class="trow">
@@ -38,6 +42,9 @@
     <a class="src d-only" href="{{ r.url }}" target="_blank" rel="noopener">원문 ↗</a>
   </div>
   {% endfor %}
+  {% else %}
+  <p class="small trades-note">최근 60일 동안 임원·이사의 장내 매수 신고는 없어요.</p>
+  {% endif %}
 </section>
 
 <section class="card trades">
@@ -77,7 +84,7 @@
   <p><b>계획 매수</b> 몇 달 전에 미리 정해 둔 계획(10b5-1)대로 자동으로 산 것</p>
   <p><b>계획 매도</b> 몇 달 전에 미리 정해 둔 계획(10b5-1)대로 판 것</p>
   <p><b>옵션 행사 후 매도</b> 스톡옵션으로 받은 주식을 같은 날 바로 판 것</p>
-  <p><b>간접</b> 본인 이름이 아닌 가족·신탁 명의로 산 것</p>
+  <p><b>간접</b> 본인 이름이 아닌 가족·신탁 명의로 사고판 것</p>
   <p><b>보유↑</b> 원래 갖고 있던 주식 대비 이번에 늘어난 비율</p>
   <p><b>보유↓</b> 원래 갖고 있던 주식 대비 이번에 줄어든 비율</p>
   <p><b>거래일·신고일</b> 실제로 산 날과 공개 신고한 날 (이틀 안)</p>

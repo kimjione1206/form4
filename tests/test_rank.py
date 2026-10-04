@@ -1,7 +1,7 @@
 from datetime import date
 
 from form4 import store
-from form4.rank import owner_label, rank
+from form4.rank import owner_label, profiles, rank
 from helpers import director, entity_director, fund, make_rec, officer
 
 AS_OF = date(2026, 10, 2)
@@ -207,3 +207,50 @@ def test_old_shape_sale_rows_count_as_zero_amount():
 def test_no_sales():
     c = rank(buys(3), AS_OF, TITLES)[0]
     assert (c["sale_people"], c["sale_usd"], c["sale_rows"]) == (0, 0.0, [])
+
+
+def test_profile_with_only_sells():
+    recs = buys(3) + sold("s", [director("7")], issuer="X", ticker="SEL", shares=100, price=10.0)
+    p = {c["issuer_cik"]: c for c in profiles(recs, AS_OF, TITLES)}["X"]
+    assert p["qualified"] is False and p["slug"] == "SEL"
+    assert (p["people"], p["total_usd"], p["rows"], p["top"]) == (0, 0.0, [], None)
+    assert p["sale_people"] == 1 and p["sale_usd"] == 1_000.0 and len(p["sale_rows"]) == 1
+
+
+def test_profile_two_small_buyers_shows_what_exists():
+    recs = [make_rec("a", owners=[director("1")], shares=1000, price=20.0),
+            make_rec("b", owners=[director("2")], shares=100, price=20.0)]  # 2,000달러도 셈
+    [p] = profiles(recs, AS_OF, TITLES)
+    assert p["qualified"] is False
+    assert p["people"] == 2 and p["total_usd"] == 22_000.0 and len(p["rows"]) == 2
+    assert p["top"]["value"] == 20_000.0 and p["tags"] == []
+
+
+def test_profiles_skip_companies_without_insider_trades_or_ticker():
+    recs = (buys(2, issuer="NT", ticker="")
+            + [make_rec("F", issuer="FU", owners=[fund("50")]),
+               make_rec("O", issuer="OF", owners=[director("1")], offering=True),
+               make_rec("D", issuer="DR", owners=[director("1")], drip=True)]
+            + sold("E", [entity_director("9")], issuer="EN"))
+    assert profiles(recs, AS_OF, TITLES) == []
+
+
+def test_qualified_flag_matches_rank():
+    recs = (buys(3, issuer="A", ticker="AAA") + buys(4, value_each=11_000, issuer="B", ticker="BBB")
+            + buys(2, issuer="C", ticker="CCC") + sold("s", [director("1")], issuer="D", ticker="DDD"))
+    ps = profiles(recs, AS_OF, TITLES)
+    assert [p["issuer_cik"] for p in ps if p["qualified"]] == [c["issuer_cik"] for c in rank(recs, AS_OF, TITLES)]
+    assert {p["issuer_cik"]: p["qualified"] for p in ps} == {"A": True, "B": True, "C": False, "D": False}
+
+
+def test_profile_slugs_unique_and_listed_slugs_unchanged():
+    small = [make_rec(f"n{i}", issuer="33", ticker="ABC", owners=[director(str(i))], shares=100, price=20.0)
+             for i in range(6)]  # 6명이지만 각자 2,000달러 → 목록 밖, 사람 수는 더 많음
+    recs = buys(3, issuer="11", ticker="ABC") + buys(4, issuer="22", ticker="ABC") + small
+    listed = {c["issuer_cik"]: c["slug"] for c in rank(buys(3, issuer="11", ticker="ABC")
+                                                        + buys(4, issuer="22", ticker="ABC"), AS_OF, TITLES)}
+    ps = profiles(recs, AS_OF, TITLES)
+    slugs = {p["issuer_cik"]: p["slug"] for p in ps}
+    assert {k: slugs[k] for k in listed} == listed == {"22": "ABC", "11": "ABC-11"}
+    assert slugs["33"] == "ABC-33" and len(set(slugs.values())) == len(ps)
+    assert {c["issuer_cik"]: c["slug"] for c in rank(recs, AS_OF, TITLES)} == listed

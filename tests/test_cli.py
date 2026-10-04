@@ -169,3 +169,23 @@ def test_daily_dates_caps_catch_up_to_oldest_five():
 
 def test_daily_dates_without_last_date():
     assert cli.daily_dates(None, date(2026, 10, 2)) == ([date(2026, 10, 2)], date(2026, 10, 2))
+
+
+def test_pages_for_companies_outside_the_list_without_extra_sec_requests(tmp_path):
+    data, dist = tmp_path / "data", tmp_path / "dist"
+    seed(data)
+    pages = site_pages()
+    day, acc = date(2026, 10, 2), "0000000901-26-000001"
+    path = f"edgar/data/901/{acc}.txt"
+    pages[index_url(day)] += f"\n901|ONE BUYER CO|4|{day:%Y%m%d}|{path}"
+    pages["https://www.sec.gov/Archives/" + path] = submission(form4_xml(
+        issuer_cik="901", ticker="ONE", owners=[{"cik": "77", "director": True}],
+        txs=[{"code": "P", "date": "2026-09-30", "shares": 100, "price": 20, "after": 500}]))
+    sec = RecordingSec(pages)
+    cli.run([day], day, NOW, sec, fx(), data, dist, log=lambda m: None)
+    assert "조건 충족 1곳" in (dist / "index.html").read_text()
+    assert "조건 충족 목록에는 없는 회사예요" in (dist / "c" / "ONE" / "index.html").read_text()
+    assert [e["t"] for e in json.loads((dist / "search.json").read_text())] == ["EXM", "ONE"]
+    assert not any("CIK0000000901" in u for u in sec.calls)  # 목록 밖 회사는 SEC 회사 정보를 받지 않음
+    assert "901" not in json.loads((data / "companies.json").read_text())
+    assert [p["ticker"] for p in json.loads((data / "ranking_prev.json").read_text())] == ["EXM"]

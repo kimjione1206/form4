@@ -1,3 +1,4 @@
+import json
 import re
 
 import pytest
@@ -12,7 +13,7 @@ META = {"as_of_label": "10/2", "updated": "10/04 06:07", "fx_rate": 1400.0,
 def result(**kw):
     row = {"date": "2026-09-29", "filed": "2026-10-01", "who": "대표이사(CEO)", "value": 1_500_000.0,
            "increase": 0.18, "tags": ["계획 매수"], "url": "https://www.sec.gov/x", "ceo": True}
-    c = {"issuer_cik": "900", "name": "EXAMPLE CORP", "ticker": "EXM", "slug": "EXM",
+    c = {"issuer_cik": "900", "name": "EXAMPLE CORP", "ticker": "EXM", "slug": "EXM", "qualified": True,
          "people": 5, "total_usd": 2_400_000.0, "ten_pct_usd": 5_000_000.0,
          "sale_people": 0, "sale_usd": 0.0, "sale_rows": [],
          "offering_usd": 0.0,
@@ -31,6 +32,8 @@ def test_formatters():
     assert fmt_increase(0.18) == "+18%" and fmt_increase("new") == "신규 보유" and fmt_increase(None) == "-"
     assert fmt_decrease(0.08) == "\u22128%" and fmt_decrease(0.084) == "−8%" and fmt_decrease(1.0) == "−100%"
     assert fmt_decrease(0.004) == "−1% 미만" and fmt_decrease(None) == "-"
+    assert fmt_decrease(0.995) == "−99%" and fmt_decrease(0.9999) == "−99%" and fmt_decrease(0.994) == "−99%"
+    assert fmt_decrease(1.2) == "−100%" and fmt_decrease(0.0) == "-"
 
 
 def test_formatters_round_up_to_next_unit():
@@ -112,7 +115,8 @@ def test_touch_targets_44px(tmp_path):
     css = (tmp_path / "style.css").read_text()
     rules = re.findall(r"([^{}]+)\{([^}]*)\}", css)
     covered = {s.strip() for sel, body in rules if "min-height: 44px" in body for s in sel.split(",")}
-    assert {".replay", ".who a", ".back", ".notice a", ".foot a", ".band-side a", ".src"} <= covered
+    assert {".replay", ".who a", ".back", ".notice a", ".foot a", ".band-side a", ".src",
+            ".search button", ".explain summary"} <= covered
     assert ".replay[hidden] { display: none; }" in css
 
 
@@ -194,3 +198,83 @@ def test_glossary_explains_sell_terms(tmp_path):
     assert "계획 매도 몇 달 전에 미리 정해 둔 계획(10b5-1)대로 판 것" in text
     assert "옵션 행사 후 매도 스톡옵션으로 받은 주식을 같은 날 바로 판 것" in text
     assert "보유↓ 원래 갖고 있던 주식 대비 이번에 줄어든 비율" in text
+    assert "간접 본인 이름이 아닌 가족·신탁 명의로 사고판 것" in text
+
+
+def plain(html):
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html))
+
+
+NOT_LISTED = "조건 충족 목록에는 없는 회사예요 (기준: 최근 60일 임원·이사 3명 이상이 각각 1만 달러 이상 장내 매수)."
+
+
+def test_pages_for_companies_outside_the_list(tmp_path):
+    listed = result()
+    two = result(issuer_cik="901", name="TWO BUYERS CO", ticker="TWO", slug="TWO", qualified=False, people=2,
+                 total_usd=30_000.0, tags=[])
+    seller = result(issuer_cik="902", name="SELLER CO", ticker="SEL", slug="SEL", qualified=False, people=0,
+                    total_usd=0.0, rows=[], top=None, tags=[], first_date=None, last_date=None,
+                    sale_people=2, sale_usd=20_000.0, sale_rows=[SELL])
+    render_site([listed, two, seller], {"count": 1, "new": [], "dropped": [], "top": listed}, META, {}, tmp_path)
+    home = (tmp_path / "index.html").read_text()
+    assert "조건 충족 1곳" in home and "TWO BUYERS CO" not in home and "SELLER CO" not in home
+    assert NOT_LISTED not in plain((tmp_path / "c" / "EXM" / "index.html").read_text())
+    two_page = plain((tmp_path / "c" / "TWO" / "index.html").read_text())
+    assert NOT_LISTED in two_page and "임원·이사 2명이 시장에서 직접" in two_page
+    page = (tmp_path / "c" / "SEL" / "index.html").read_text()
+    text = plain(page)
+    assert NOT_LISTED in text
+    assert ("최근 60일 동안 임원·이사의 장내 매수 신고는 없어요. "
+            "같은 기간 임원·이사 2명이 약 2,800만 원어치를 장내 매도했어요.") in text
+    assert "장내 매수 0명" in text
+    buys = page[page.index("거래 기록"):page.index("매도 기록")]
+    assert "trow" not in buys and "장내 매수 신고는 없어요" in buys
+    assert "$20K" in page[page.index("매도 기록"):]
+
+
+def test_forbidden_word_checked_on_pages_outside_the_list(tmp_path):
+    bad = result(issuer_cik="901", name="ROCKET 급등 CORP", slug="RKT", qualified=False)
+    with pytest.raises(ValueError, match="금지어"):
+        render_site([result(), bad], {"count": 1, "new": [], "dropped": [], "top": None}, META, {}, tmp_path)
+
+
+def test_search_index_and_forms(tmp_path):
+    ps = [result(ticker="ZZZ", slug="ZZZ"),
+          result(issuer_cik="901", name="Apple Inc.", ticker="AAPL", slug="AAPL", qualified=False)]
+    render_site(ps, {"count": 1, "new": [], "dropped": [], "top": None}, META, {}, tmp_path)
+    assert json.loads((tmp_path / "search.json").read_text()) == [
+        {"t": "AAPL", "n": "Apple Inc.", "s": "AAPL", "q": False},
+        {"t": "ZZZ", "n": "EXAMPLE CORP", "s": "ZZZ", "q": True}]
+    assert (tmp_path / "search.js").exists()
+    for f in ["index.html", "404.html"]:
+        page = (tmp_path / f).read_text()
+        forms = re.findall(r'<form role="search"[^>]*>.*?</form>', page, re.S)
+        assert forms, f
+        for form in forms:
+            assert 'action="#"' in form and "name=" not in form  # 검색어가 주소에 실려 서버로 가지 않게
+            label = re.search(r'<label for="([^"]+)"', form).group(1)
+            assert f'<input id="{label}"' in form
+            assert 'placeholder="종목 코드 또는 회사 이름 (예: AAPL)"' in form and ">찾기</button>" in form
+        assert "검색어는 이 브라우저 안에서만 처리돼요." in page
+        assert '<script src="/search.js" defer></script>' in page
+    text = plain((tmp_path / "404.html").read_text())
+    assert "없는 페이지예요" in text
+    assert "이 주소의 회사 페이지가 없어요. 최근 60일 동안 임원 거래 공시가 없거나 주소가 달라요." in text
+    js = (tmp_path / "search.js").read_text()
+    assert "/search.json" in js and "최근 60일 동안 이 종목의 임원·이사 매수·매도 공시가 없어요." in js
+
+
+def test_home_explanations(tmp_path):
+    c = result()
+    render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+    home = (tmp_path / "index.html").read_text()
+    text = plain(home)
+    assert "(합법)" not in home and "공개 신고해야 해요(신고 의무가 있는 공개 정보예요)." in text
+    assert "새로 = 오늘 목록에 처음 오른 회사 · 빠짐 = 기간(60일)이 지나 목록에서 빠진 회사" in text
+    assert "조건 충족 = 최근 60일 임원·이사 3명 이상이 각자 1만 달러 이상 장내 매수" in text
+    details = re.search(r"<details[^>]*>\s*<summary[^>]*>매도는 왜 일어나요\?</summary>(.*?)</details>", home, re.S)
+    assert details and ("임원은 월급·보너스를 회사 주식으로 받는 경우가 많아요. 그래서 세금 납부, 생활 자금, 분산 투자를 위해 "
+                        "팔기도 하고, 몇 달 전에 미리 정해 둔 계획(10b5-1)대로 자동으로 팔기도 해요. 매도가 많다고 주가 "
+                        "하락을 뜻하지 않아요. 반대로 매수는 이유가 비교적 단순해서 이 사이트는 매수를 중심으로 정리해요.") \
+        in plain(details.group(1))
+    assert home.index('class="notice"') < home.index("<details")
