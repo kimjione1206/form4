@@ -9,6 +9,7 @@ from collections import defaultdict
 from datetime import date, timedelta
 
 from form4 import config
+from form4.store import bad_price
 from form4.tables import guard_text
 
 CEO_RE = re.compile(r"chief executive|\bceo\b", re.I)
@@ -16,7 +17,6 @@ VP_RE = re.compile(r"vice[\s-]*president|\b[se]?vp\b", re.I)
 REMARKS_RE = re.compile(r"^\s*see\s+remarks?\s*$", re.I)  # 직함 칸에 "비고 참조"만 적은 신고
 SLUG_RE = re.compile(r"[^A-Z0-9.-]")
 ALNUM_RE = re.compile(r"[A-Z0-9]")
-PLACEHOLDER_TICKERS = {"", "NONE", "N/A"}
 
 
 def _is_insider(o: dict) -> bool:
@@ -144,12 +144,18 @@ def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
     rs = [r for r in rs if not (r["code"] == "P" and r.get("drip"))]  # 배당 재투자는 아예 안 셈
     ticker = next((r["ticker"] for r in sorted(rs, key=lambda r: r["filed"], reverse=True)
                    if r["ticker"]), "")
-    if ticker.strip().upper() in PLACEHOLDER_TICKERS or not ALNUM_RE.search(ticker.upper()):
+    if ticker.strip().upper() in config.PLACEHOLDER_TICKERS or not ALNUM_RE.search(ticker.upper()):
         return None  # 종목 코드가 없는 비상장 펀드·BDC는 방문자가 살 수 없음
+    latest = max(rs, key=lambda r: (r["filed"], r["accession"]))
+    # 주당 가격이 비정상적으로 큰 매수 줄·매도 신고는 원문 오류로 보고 뺀다(매도는 저장할 때 이미 해당 줄을 뺐음)
+    error_accessions = {r["accession"] for r in rs
+                        if (r["code"] == "P" and bad_price(r)) or (r["code"] == "S" and r.get("price_error"))}
+    rs = [r for r in rs if not ((r["code"] == "P" and bad_price(r))
+                                or (r["code"] == "S" and r.get("price_error") and not r.get("shares")))]
     person_buys = [r for r in rs if r["code"] == "P" and _has_person(r)]
     buys = [r for r in person_buys if not r["offering"]]  # 증자 참여는 시장 매수가 아님
     sells = [r for r in rs if r["code"] == "S" and _has_person(r)]
-    if not buys and not sells:
+    if not buys and not sells and not error_accessions:
         return None
     per_person, info = defaultdict(float), {}
     for r in buys:
@@ -163,7 +169,6 @@ def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
         counted_people = set(per_person)  # 목록 밖 회사는 기준 없이 있는 그대로 보여 준다
     counted = [r for r in buys if any(o["cik"] in counted_people for o in r["owners"])]
     rows = _rows(counted, counted_people, titles)
-    latest = max(rs, key=lambda r: (r["filed"], r["accession"]))
     tags = []
     if any(r["ceo"] for r in rows):
         tags.append("대표이사 포함")
@@ -187,6 +192,7 @@ def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
         "offering_usd": sum(_value(r) for r in person_buys if r["offering"]),
         "ten_pct_usd": sum(_value(r) for r in rs if r["code"] == "P" and not _has_person(r)
                            and any(_is_holder(o) for o in r["owners"])),
+        "price_error_count": len(error_accessions),
         "first_date": min((r["date"] for r in counted), default=None),
         "last_date": max((r["date"] for r in counted), default=None),
         "tags": tags,

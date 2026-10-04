@@ -321,7 +321,7 @@ def test_korean_name_shown_first(tmp_path):
     index = {e["t"]: e for e in json.loads((tmp_path / "search.json").read_text())}
     assert index["NVDA"]["k"] == "엔비디아" and index["OTH"]["k"] == ""
     js = (tmp_path / "search.js").read_text()
-    assert "e.k" in js
+    assert '(e.k || "")' in js  # 예전 search.json(k 없음)이 캐시돼 있어도 검색이 깨지지 않게
 
 
 SITE = "https://form4.jmheo.com"
@@ -383,6 +383,7 @@ def test_company_page_copy_link_button(tmp_path):
         assert "share.js" not in (tmp_path / f).read_text()
     js = (tmp_path / "share.js").read_text()
     assert "navigator.clipboard" in js and "location.href" in js and "복사했어요" in js and "2000" in js
+    assert ".catch(" in js and "복사하지 못했어요" in js
 
 
 def test_og_image_copied(tmp_path):
@@ -413,6 +414,7 @@ def test_privacy_page_and_footer_link(tmp_path):
     for s in ["개인정보 안내", "이 사이트는 이름·이메일 등 개인정보를 모으지 않아요",
               "회원가입·댓글·구독 없음", "검색어는 브라우저 안에서만 처리",
               "쿠키를 쓰지 않는 Cloudflare Web Analytics", "페이지별 방문 수", "(켜져 있을 때)",
+              "글꼴은 구글 폰트(Google Fonts)에서 불러와요. 이때 브라우저가 구글 서버에 접속해요.",
               "form4@jmheo.com"]:
         assert s in text, s
     for f in ["index.html", "c/EXM/index.html", "criteria/index.html", "privacy/index.html", "404.html"]:
@@ -433,3 +435,27 @@ def test_beacon_only_with_token(tmp_path):
     tag = BEACON + """ data-cf-beacon='{"token": "abc123"}'></script>"""
     for f in ["index.html", "c/EXM/index.html", "criteria/index.html", "privacy/index.html", "404.html"]:
         assert tag in (tmp_path / f).read_text(), f
+
+
+def test_home_brief_uses_korean_names(tmp_path):
+    nv = result(**NVDA, total_usd=9_000_000.0)
+    other = result(issuer_cik="901", name="OTHER CO", ticker="OTH", slug="OTH")
+    render_site([nv, other], {"count": 2, "new": [nv, other], "dropped": [], "top": nv}, META, {}, tmp_path,
+                {"NVDA": "엔비디아"})
+    home = (tmp_path / "index.html").read_text()
+    tiles = home[home.index('<div class="tiles">'):home.index("새로 = 오늘")]
+    assert tiles.count('<span class="small">엔비디아</span>') == 2  # 새로 첫 회사 + 최대 금액
+    assert "NVIDIA CORP" not in tiles
+    text = plain(home)
+    assert "엔비디아 — 임원·이사 5명 장내 매수" in text and "OTHER CO — 임원·이사 5명 장내 매수" in text
+
+
+PRICE_NOTE = ("신고서의 주당 가격이 비정상적으로 큰 신고 2건은 원문 오류로 보고 계산에서 뺐어요. "
+              "원문을 확인해 주세요.")
+
+
+def test_price_error_note_only_when_present(tmp_path):
+    for count, shown in [(0, False), (2, True)]:
+        c = result(price_error_count=count)
+        render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+        assert (PRICE_NOTE in plain((tmp_path / "c" / "EXM" / "index.html").read_text())) is shown

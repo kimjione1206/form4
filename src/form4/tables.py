@@ -8,6 +8,7 @@ from form4 import config
 from form4.sec import submissions_url
 
 DIGIT_RE = re.compile(r"\d")
+TICKER_RE = re.compile(r"[A-Z0-9.\-]{1,10}")  # 할 일에 올릴 수 있는 깨끗한 종목 코드
 MAX_NAME_TODO = 300  # 한국어 이름 할 일은 금액 큰 회사부터 이만큼만
 
 
@@ -35,7 +36,7 @@ def check_tables(companies: dict, titles: dict, names: dict) -> list[str]:
         if not guard_text(ko, 30):
             errors.append(f"직함 {en!r}: {ko!r}")
     for ticker, ko in names.items():
-        if not guard_text(ko, 20):
+        if ko != "" and not guard_text(ko, 20):  # 빈 문자열 = 루틴이 건너뛴 회사 기록
             errors.append(f"한국어 이름 {ticker!r}: {ko!r}")
     return errors
 
@@ -67,7 +68,8 @@ def ensure_company_info(results: list[dict], companies: dict, client) -> None:
 
 def build_todo(results: list[dict], companies: dict, titles: dict, profiles: list[dict],
                names: dict) -> dict:
-    """회사 소개는 조건 충족 목록(results)만, 직함 번역·한국어 이름은 페이지가 있는 모든 회사(profiles)에서."""
+    """회사 소개는 조건 충족 목록(results)만, 직함 번역·한국어 이름은 페이지가 있는 모든 회사(profiles)에서.
+    한국어 이름은 표에 아직 없는(빈 문자열로 건너뛴 것도 제외) 깨끗한 종목 코드만."""
     todo_companies = [
         {"cik": c["issuer_cik"], "name": companies[c["issuer_cik"]]["name"],
          "sic_description": companies[c["issuer_cik"]]["sic_description"]}
@@ -77,7 +79,9 @@ def build_todo(results: list[dict], companies: dict, titles: dict, profiles: lis
     todo_titles = sorted({t for c in profiles for t in c["officer_titles"] if t not in titles})
     todo_names, seen = [], set()
     for c in sorted(profiles, key=lambda c: -(c["total_usd"] + c["sale_usd"])):
-        if c["ticker"] not in seen and not korean_name(c["ticker"], names):
-            seen.add(c["ticker"])
-            todo_names.append({"t": c["ticker"], "n": c["name"]})
+        t = c["ticker"]
+        if (t not in seen and t not in names and TICKER_RE.fullmatch(t)
+                and t not in config.PLACEHOLDER_TICKERS):
+            seen.add(t)
+            todo_names.append({"t": t, "n": c["name"]})
     return {"companies": todo_companies, "titles": todo_titles, "names": todo_names[:MAX_NAME_TODO]}

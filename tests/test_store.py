@@ -87,3 +87,19 @@ def test_save_and_load_roundtrip(tmp_path):
     store.save(p, recs)
     assert [r["accession"] for r in store.load(p)] == ["A", "B"]
     assert store.load(tmp_path / "none.jsonl") == []
+
+
+def test_collapsed_sale_skips_absurd_price_lines_and_flags():
+    ok = make_rec("S1", code="S", shares=100, price=10.0)
+    bad = make_rec("S1", code="S", shares=34_800, price=52_317.0)  # 원문 가격 오류(IHT 사례)
+    [row] = store.merge([], [ok, bad])
+    assert row["shares"] == 100 and row["value"] == 1000.0 and row["price_error"] is True
+    [all_bad] = store.merge([], [make_rec("S2", code="S", shares=10, price=2_272_653.0)])
+    assert all_bad["shares"] == 0 and all_bad["value"] == 0 and all_bad["price_error"] is True
+    [normal] = store.merge([], [make_rec("S3", code="S", shares=10, price=20_000.0)])
+    assert "price_error" not in normal and normal["value"] == 200_000.0
+
+
+def test_collapsed_sale_allowlisted_ticker_keeps_high_price():
+    [row] = store.merge([], [make_rec("S1", code="S", ticker="BRK.A", shares=2, price=700_000.0)])
+    assert row["value"] == 1_400_000.0 and "price_error" not in row

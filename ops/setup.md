@@ -48,5 +48,12 @@ GitHub → Actions → backfill → Run workflow 를 두 번(각각 약 1~2시�
    ```
 7. 커넥터는 모두 빼기(이 루틴은 GitHub만 쓴다)
 
-## 6. 공개 전
+## 6. 방문 통계(Cloudflare Web Analytics, 쿠키 없음)
+1. 대시보드 → Analytics & Logs → Web Analytics → 사이트 추가 → `form4.jmheo.com` → 안내 화면의 스크립트에서 `"token": "..."` 값을 복사
+2. 저장소 **변수(variable)** `FORM4_BEACON_TOKEN` 만들기 — 둘 중 하나:
+   - 웹: 저장소 Settings → Secrets and variables → Actions → **Variables** 탭 → New repository variable → 이름 `FORM4_BEACON_TOKEN`, 값 붙여 넣기
+   - 터미널: `gh variable set FORM4_BEACON_TOKEN -R kimjione1206/form4` 실행 후 값 붙여 넣기
+3. 이 값은 비밀값이 아니에요(페이지 소스에 그대로 보여요). 그래서 Secrets 가 아니라 Variables 에 넣어요. 다음 daily 실행부터 페이지에 통계 스크립트가 들어가요(값이 비어 있으면 넣지 않아요).
+
+## 7. 공개 전
 - 금감원 1332: "광고·후원·회원 없이 무료로 미국 SEC 공시를 정해진 기준으로 정리해 보여 주는 사이트가 유사투자자문업 신고 대상인지" 문의

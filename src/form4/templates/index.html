@@ -21,12 +21,12 @@
 <section class="card">
   <div class="row-between"><h2>오늘의 정리</h2><span class="mono small dim m-only">미국 {{ meta.as_of_label }} 접수분까지</span></div>
   <div class="tiles">
-    <div class="tile"><span class="small dim">새로</span><span class="mono big accent">+{{ brief.new|length }}</span><span class="small">{{ brief.new[0].name if brief.new else "없음" }}</span></div>
+    <div class="tile"><span class="small dim">새로</span><span class="mono big accent">+{{ brief.new|length }}</span><span class="small">{{ (knames[brief.new[0].issuer_cik] or brief.new[0].name) if brief.new else "없음" }}</span></div>
     <div class="tile"><span class="small dim">빠짐</span><span class="mono big">−{{ brief.dropped|length }}</span><span class="small">{{ brief.dropped[0].name if brief.dropped else "없음" }}</span></div>
-    <div class="tile"><span class="small dim">최대 금액</span><span class="mono big">{{ brief.top.total_usd|krw_short(meta.fx_rate) if brief.top else "-" }}</span><span class="small">{{ brief.top.name if brief.top else "" }}</span></div>
+    <div class="tile"><span class="small dim">최대 금액</span><span class="mono big">{{ brief.top.total_usd|krw_short(meta.fx_rate) if brief.top else "-" }}</span><span class="small">{{ (knames[brief.top.issuer_cik] or brief.top.name) if brief.top else "" }}</span></div>
   </div>
   <p class="small dim">새로 = 오늘 목록에 처음 오른 회사 · 빠짐 = 기간(60일)이 지나 목록에서 빠진 회사</p>
-  {% for c in brief.new[:3] %}<p class="small">{{ c.name }} — 임원·이사 {{ c.people }}명 장내 매수 (거래 {{ c.first_date|md }}~{{ c.last_date|md }})</p>{% endfor %}
+  {% for c in brief.new[:3] %}<p class="small">{{ knames[c.issuer_cik] or c.name }} — 임원·이사 {{ c.people }}명 장내 매수 (거래 {{ c.first_date|md }}~{{ c.last_date|md }})</p>{% endfor %}
   {% if brief.new|length > 3 %}<p class="small dim">외 {{ brief.new|length - 3 }}곳은 아래 목록에서 '새로' 표시로 볼 수 있어요.</p>{% endif %}
   {% if meta.new_filings == 0 %}<p class="small dim">새로 들어온 신고가 없어요 (미국 주말·휴일).</p>{% endif %}
 </section>

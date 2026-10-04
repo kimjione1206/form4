@@ -4,11 +4,16 @@
   if (!btn || !navigator.clipboard) return;
   var label = btn.textContent, timer;
   btn.hidden = false;
+  function show(text) {
+    btn.textContent = text;
+    clearTimeout(timer);
+    timer = setTimeout(function () { btn.textContent = label; }, 2000);
+  }
   btn.addEventListener("click", function () {
     navigator.clipboard.writeText(location.href).then(function () {
-      btn.textContent = "복사했어요";
-      clearTimeout(timer);
-      timer = setTimeout(function () { btn.textContent = label; }, 2000);
+      show("복사했어요");
+    }).catch(function () {
+      show("복사하지 못했어요");
     });
   });
 })();

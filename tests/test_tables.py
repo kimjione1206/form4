@@ -79,16 +79,17 @@ def test_null_industry_name_stored_as_empty():
 
 
 def test_korean_name_guarded():
-    names = {"NVDA": "엔비디아", "BAD": "추천 회사", "NUM": "쓰리엠3", "LONG": "가" * 21, "OK20": "가" * 20}
+    names = {"NVDA": "엔비디아", "BAD": "추천 회사", "NUM": "쓰리엠3", "LONG": "가" * 21, "OK20": "가" * 20,
+             "SKIP": ""}
     assert korean_name("NVDA", names) == "엔비디아"
     assert korean_name("OK20", names) == "가" * 20
-    for t in ["BAD", "NUM", "LONG", "NONE"]:
+    for t in ["BAD", "NUM", "LONG", "NONE", "SKIP"]:
         assert korean_name(t, names) == ""
 
 
 def test_check_tables_validates_korean_names():
-    errors = check_tables({}, {}, {"NVDA": "엔비디아", "X": "유망 회사", "Y": "가" * 21})
-    assert len(errors) == 2 and "X" in errors[0] and "Y" in errors[1]
+    errors = check_tables({}, {}, {"NVDA": "엔비디아", "X": "유망 회사", "Y": "가" * 21, "SKIP": ""})
+    assert len(errors) == 2 and "X" in errors[0] and "Y" in errors[1]  # 빈 문자열 = 건너뛴 회사 기록
 
 
 def p(ticker, name, buy, sale):
@@ -100,9 +101,19 @@ def test_build_todo_names_largest_first_without_korean_name():
     profiles = [p("SMALL", "Small Co", 100.0, 0.0), p("NVDA", "NVIDIA CORP", 1e9, 0.0),
                 p("SELL", "Seller Co", 0.0, 5e6), p("BUY", "Buyer Co", 3e6, 1e6),
                 p("BAD", "Bad Co", 9e9, 0.0)]
-    todo = build_todo([], {}, {}, profiles, {"NVDA": "엔비디아", "BAD": "추천 회사"})
+    todo = build_todo([], {}, {}, profiles, {"NVDA": "엔비디아"})
     assert todo["names"] == [{"t": "BAD", "n": "Bad Co"}, {"t": "SELL", "n": "Seller Co"},
                              {"t": "BUY", "n": "Buyer Co"}, {"t": "SMALL", "n": "Small Co"}]
+    # 이미 표에 있는 종목은 값이 빈 문자열(건너뛴 회사)이어도 다시 올리지 않는다
+    todo = build_todo([], {}, {}, profiles, {"NVDA": "엔비디아", "BAD": "", "SELL": "추천 회사"})
+    assert [e["t"] for e in todo["names"]] == ["BUY", "SMALL"]
+
+
+def test_build_todo_names_only_clean_ticker_codes():
+    messy = ["NYSE: VTEX", "GEF, GEF-B", "(SIRI)", "N/A", "NONE", "TOOLONGTICKER", "brk.b"]
+    profiles = [p(t, f"Co {t}", 1e6, 0.0) for t in messy] + [p("BRK.B", "Berkshire", 1.0, 0.0),
+                                                            p("GEF-B", "Greif", 1.0, 0.0)]
+    assert [e["t"] for e in build_todo([], {}, {}, profiles, {})["names"]] == ["BRK.B", "GEF-B"]
 
 
 def test_build_todo_names_capped_at_300():

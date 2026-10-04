@@ -265,3 +265,35 @@ def test_profile_slugs_unique_and_listed_slugs_unchanged():
     assert {k: slugs[k] for k in listed} == listed == {"22": "ABC", "11": "ABC-11"}
     assert slugs["33"] == "ABC-33" and len(set(slugs.values())) == len(ps)
     assert {c["issuer_cik"]: c["slug"] for c in rank(recs, AS_OF, TITLES)} == listed
+
+
+def test_absurd_buy_price_is_filing_error():
+    slbt = make_rec("bad", owners=[director("88")], shares=4_400_000, price=2_272_653.0)  # SLBT 사례
+    c = rank(buys(3) + [slbt], AS_OF, TITLES)[0]
+    assert c["people"] == 3 and c["total_usd"] == 60_000.0 and len(c["rows"]) == 3
+    assert c["price_error_count"] == 1
+    assert rank(buys(2) + [slbt], AS_OF, TITLES) == []
+    assert profiles(buys(3), AS_OF, TITLES)[0]["price_error_count"] == 0
+
+
+def test_allowlisted_ticker_high_price_counted():
+    recs = [make_rec(f"b{i}", owners=[director(str(i))], ticker="BRK.A", shares=1, price=700_000.0)
+            for i in range(3)]
+    c = rank(recs, AS_OF, TITLES)[0]
+    assert c["total_usd"] == 2_100_000.0 and c["price_error_count"] == 0
+
+
+def test_sale_with_price_error_flag():
+    partial = store.merge([], [make_rec("s1", code="S", owners=[director("0")], shares=100, price=10.0),
+                               make_rec("s1", code="S", owners=[director("0")], shares=9, price=60_000.0)])
+    all_bad = store.merge([], [make_rec("s2", code="S", owners=[director("1")], shares=9, price=60_000.0)])
+    c = profiles(buys(3) + partial + all_bad, AS_OF, TITLES)[0]
+    assert c["sale_people"] == 1 and c["sale_usd"] == 1000.0 and len(c["sale_rows"]) == 1
+    assert c["price_error_count"] == 2
+
+
+def test_company_with_only_price_error_filings_keeps_page_with_note():
+    slbt = make_rec("bad", issuer="77", owners=[director("88")], shares=4_400_000, price=2_272_653.0, ticker="SLBT")
+    [c] = profiles([slbt], AS_OF, TITLES)
+    assert c["ticker"] == "SLBT" and not c["qualified"] and c["people"] == 0 and c["total_usd"] == 0
+    assert c["rows"] == [] and c["price_error_count"] == 1

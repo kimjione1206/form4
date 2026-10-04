@@ -16,7 +16,7 @@
     var hits = entries.filter(function (e) { return e.t.toUpperCase() === q; });
     if (hits.length) return hits;
     return entries.filter(function (e) {
-      return e.n.toUpperCase().indexOf(q) !== -1 || e.k.toUpperCase().indexOf(q) !== -1;
+      return e.n.toUpperCase().indexOf(q) !== -1 || (e.k || "").toUpperCase().indexOf(q) !== -1;
     });
   }
   function message(out, text) {
