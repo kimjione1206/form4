@@ -63,10 +63,10 @@
   <div class="trow">
     <span class="mono small">{{ r.date|md }}</span>
     <span class="mono small dim d-only">{{ r.filed|md }}</span>
-    <span class="who"><b>{{ r.who }}</b>{% for t in r.tags %}<span class="chip m-only">{{ t }}</span>{% endfor %}<a class="small m-only" href="{{ r.url }}" target="_blank" rel="noopener">신고 {{ r.filed|md }} · 원문 ↗</a></span>
+    <span class="who"><b>{{ r.who }}</b>{% for t in r.tags %}<span class="chip m-only">{{ t }}</span>{% endfor %}{% if "계획 매도" not in r.tags %}<span class="small dim m-only">계획 표시 없음</span>{% endif %}<a class="small m-only" href="{{ r.url }}" target="_blank" rel="noopener">신고 {{ r.filed|md }} · 원문 ↗</a></span>
     <span class="mono r">{{ r.value|usd }}</span>
     <span class="mono r">{{ r.decrease|decrease }}</span>
-    <span class="small d-only">{{ r.tags|join(" · ") }}</span>
+    <span class="small d-only">{{ r.tags|join(" · ") }}{% if "계획 매도" not in r.tags %}{% if r.tags %} · {% endif %}<span class="dim">계획 표시 없음</span>{% endif %}</span>
     <a class="src d-only" href="{{ r.url }}" target="_blank" rel="noopener">원문 ↗</a>
   </div>
   {% endfor %}
@@ -101,8 +101,9 @@
   <p><b>계획 매도</b> 몇 달 전에 미리 정해 둔 계획(10b5-1)대로 판 것</p>
   <p><b>옵션 행사 후 매도</b> 스톡옵션으로 받은 주식을 같은 날 바로 판 것</p>
   <p><b>간접</b> 본인 이름이 아닌 가족·신탁 명의로 사고판 것</p>
-  <p><b>보유↑</b> 원래 갖고 있던 주식 대비 이번에 늘어난 비율</p>
-  <p><b>보유↓</b> 원래 갖고 있던 주식 대비 이번에 줄어든 비율</p>
+  <p><b>보유↑</b> 이 신고서 명의(본인 또는 가족·신탁) 기준으로, 거래 전 갖고 있던 주식 대비 늘어난 비율</p>
+  <p><b>보유↓</b> 이 신고서 명의(본인 또는 가족·신탁) 기준으로, 거래 전 갖고 있던 주식 대비 줄어든 비율</p>
+  <p><b>계획 표시 없음</b> 신고서에 계획(10b5-1) 매도 표시가 없다는 뜻이에요. 계획이 아니라고 단정할 수는 없어요.</p>
   <p><b>거래일·신고일</b> 실제로 산 날과 공개 신고한 날 (이틀 안)</p>
 </section>
 

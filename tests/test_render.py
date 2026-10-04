@@ -56,7 +56,8 @@ def test_summary_segments_text():
                     "가장 큰 매수는 대표이사(CEO)의 약 21억 원으로, 기존 보유 주식의 +18%를 늘린 거예요. "
                     "같은 기간 장내 매도 신고는 없어요.")
     sold = "".join(t for t, _ in summary_segments(result(sale_people=2, sale_usd=20_000.0), 1400))
-    assert sold.endswith("를 늘린 거예요. 같은 기간 임원·이사 2명이 약 2,800만 원어치를 장내 매도했어요.")
+    assert sold.endswith("를 늘린 거예요. 같은 기간 임원·이사 2명이 약 2,800만 원어치를 장내 매도했어요. "
+                         "미리 정한 계획(10b5-1) 매도 표시는 없어요.")
 
 
 def test_render_site_writes_pages(tmp_path):
@@ -204,7 +205,10 @@ def test_glossary_explains_sell_terms(tmp_path):
     text = re.sub(r"<[^>]+>", "", (tmp_path / "c" / "EXM" / "index.html").read_text())
     assert "계획 매도 몇 달 전에 미리 정해 둔 계획(10b5-1)대로 판 것" in text
     assert "옵션 행사 후 매도 스톡옵션으로 받은 주식을 같은 날 바로 판 것" in text
-    assert "보유↓ 원래 갖고 있던 주식 대비 이번에 줄어든 비율" in text
+    assert "보유↑ 이 신고서 명의(본인 또는 가족·신탁) 기준으로, 거래 전 갖고 있던 주식 대비 늘어난 비율" in text
+    assert "보유↓ 이 신고서 명의(본인 또는 가족·신탁) 기준으로, 거래 전 갖고 있던 주식 대비 줄어든 비율" in text
+    assert ("계획 표시 없음 신고서에 계획(10b5-1) 매도 표시가 없다는 뜻이에요. "
+            "계획이 아니라고 단정할 수는 없어요.") in text
     assert "간접 본인 이름이 아닌 가족·신탁 명의로 사고판 것" in text
 
 
@@ -529,3 +533,37 @@ def test_summary_full_text_in_html_and_typing_never_collapses(tmp_path):
     assert "minHeight" in js and "offsetHeight" in js  # 지우기 전에 높이를 고정해 상자가 접히지 않게
     assert "1200" in js  # 길이와 상관없이 약 1.2초 안에 끝
     assert "prefers-reduced-motion" in js and "data-replay" in js
+
+
+UNPLANNED = {"date": "2026-09-24", "filed": "2026-09-25", "who": "이사", "value": 980_000.0,
+             "decrease": 0.02, "tags": ["간접"], "url": "https://www.sec.gov/sell2"}
+
+
+def test_sale_rows_without_plan_tag_say_so(tmp_path):
+    c = result(sale_people=2, sale_usd=1_000_000.0, sale_rows=[SELL, UNPLANNED])
+    render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+    detail = (tmp_path / "c" / "EXM" / "index.html").read_text()
+    sells = detail[detail.index("<h2>매도 기록"):detail.index("용어 풀이")]
+    rows = re.findall(r'<div class="trow">.*?</div>', sells, re.S)
+    assert len(rows) == 2
+    assert "계획 표시 없음" not in rows[0]  # 계획 매도 줄
+    assert '<span class="small d-only">간접 · <span class="dim">계획 표시 없음</span></span>' in rows[1]
+    assert re.search(r'<span class="chip m-only">간접</span><span class="small dim m-only">계획 표시 없음</span>'
+                     r'<a class="small m-only"', rows[1])
+    buys = detail[detail.index("<h2>매수 기록"):detail.index("<h2>매도 기록")]
+    assert "계획 표시 없음" not in buys  # 매수 줄은 그대로
+
+
+def test_summary_planned_sale_share():
+    def text(rows, sale_usd):
+        return "".join(t for t, _ in summary_segments(
+            result(sale_people=len(rows), sale_usd=sale_usd, sale_rows=rows), 1400))
+    plan = lambda v: {**SELL, "value": v}
+    other = lambda v: {**UNPLANNED, "value": v}
+    assert text([plan(30_000.0), other(970_000.0)], 1_000_000.0).endswith(
+        "장내 매도했어요. 매도 금액 중 약 3%는 미리 정한 계획(10b5-1)에 따른 매도예요.")
+    assert text([plan(5_000.0), other(995_000.0)], 1_000_000.0).endswith(
+        "매도 금액 중 1% 미만은 미리 정한 계획(10b5-1)에 따른 매도예요.")
+    assert text([plan(20_000.0)], 20_000.0).endswith("매도 금액 중 약 100%는 미리 정한 계획(10b5-1)에 따른 매도예요.")
+    assert text([other(20_000.0)], 20_000.0).endswith("장내 매도했어요. 미리 정한 계획(10b5-1) 매도 표시는 없어요.")
+    assert text([], 0.0).endswith("같은 기간 장내 매도 신고는 없어요.")

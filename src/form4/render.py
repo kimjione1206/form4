@@ -86,9 +86,21 @@ def summary_segments(c: dict, rate: float) -> list[tuple[str, bool]]:
 
 def _sale_segments(c: dict, rate: float) -> list[tuple[str, bool]]:
     if c["sale_people"]:
-        return [(f"같은 기간 임원·이사 {c['sale_people']}명이 {fmt_krw(c['sale_usd'], rate)}어치를 "
-                 "장내 매도했어요.", False)]
+        text = f"같은 기간 임원·이사 {c['sale_people']}명이 {fmt_krw(c['sale_usd'], rate)}어치를 장내 매도했어요."
+        if c["sale_usd"] > 0:
+            text += " " + _planned_sale_sentence(c)
+        return [(text, False)]
     return [("같은 기간 장내 매도 신고는 없어요.", False)]
+
+
+def _planned_sale_sentence(c: dict) -> str:
+    """매도 금액 중 미리 정한 계획(10b5-1) 매도의 비율. 저장된 매도 줄의 계획 표시·금액만 쓴다."""
+    planned = sum(r["value"] for r in c["sale_rows"] if "계획 매도" in r["tags"])
+    share = planned / c["sale_usd"] * 100
+    if share == 0:
+        return "미리 정한 계획(10b5-1) 매도 표시는 없어요."
+    part = "1% 미만은" if share < 1 else f"약 {round(share)}%는"
+    return f"매도 금액 중 {part} 미리 정한 계획(10b5-1)에 따른 매도예요."
 
 
 def page_description(text: str, limit: int = 150) -> str:
