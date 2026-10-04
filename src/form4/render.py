@@ -103,6 +103,14 @@ def _planned_sale_sentence(c: dict) -> str:
     return f"매도 금액 중 {part} 미리 정한 계획(10b5-1)에 따른 매도예요."
 
 
+def company_description(c: dict, k: str, rate: float) -> str:
+    """회사 페이지 검색·공유 미리보기 설명(자르기 전)."""
+    buy = f"{fmt_krw_short(c['total_usd'], rate)} 원" if c["total_usd"] > 0 else "없음"
+    sale = f"{fmt_krw_short(c['sale_usd'], rate)} 원" if c["sale_usd"] > 0 else "없음"
+    return (f"{k or c['name']}({c['ticker']}) 임원·이사 거래, SEC 공시 기준 최근 {config.WINDOW_DAYS}일: "
+            f"매수 {c['people']}명·{buy}, 매도 {c['sale_people']}명·{sale}. 매일 아침 한국어로 정리 · 무료 · 광고 없음")
+
+
 def page_description(text: str, limit: int = 150) -> str:
     """검색·공유 미리보기 설명. 길면 문장 단위로 자르고, 첫 문장부터 길면 글자로 자른다."""
     if len(text) <= limit:
@@ -159,7 +167,8 @@ def render_site(profiles: list[dict], brief: dict, meta: dict, companies: dict, 
         summary = summary_segments(c, meta["fx_rate"])
         checked[f"c/{c['slug']}/index.html"] = env.get_template("company.html").render(
             meta=meta, path=f"/c/{c['slug']}/", c=c, k=knames[c["issuer_cik"]], line=lines[c["issuer_cik"]],
-            summary=summary, description=page_description("".join(t for t, _ in summary)))
+            summary=summary,
+            description=page_description(company_description(c, knames[c["issuer_cik"]], meta["fx_rate"])))
     for name, html in checked.items():
         bad = find_forbidden(html)
         if bad:

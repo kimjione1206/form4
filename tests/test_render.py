@@ -385,9 +385,10 @@ def test_share_meta_tags(tmp_path):
     assert props["twitter:card"] == "summary_large_image"
 
     title, props, canonical = head_meta((tmp_path / "c" / "EXM" / "index.html").read_text())
-    summary = "".join(t for t, _ in summary_segments(c, META["fx_rate"]))
+    desc = ("EXAMPLE CORP(EXM) 임원·이사 거래, SEC 공시 기준 최근 60일: 매수 5명·34억 원, 매도 0명·없음. "
+            "매일 아침 한국어로 정리 · 무료 · 광고 없음")
     assert canonical == SITE + "/c/EXM/" and props["og:url"] == canonical
-    assert props["description"] == summary and props["og:description"] == summary
+    assert props["description"] == desc and props["og:description"] == desc
     assert props["og:title"] == title == "EXAMPLE CORP(EXM) 임원 매수·매도 기록 · 미국 임원 매수 정리"
 
     for f, path in [("criteria/index.html", "/criteria/"), ("privacy/index.html", "/privacy/")]:
@@ -587,3 +588,51 @@ def test_criteria_window_reason_and_about(tmp_path):
         "만든 사람 개인이 만들어 운영해요. 광고·후원·유료 기능이 없고, 운영자는 이 사이트로 수익을 받지 않아요. "
         "운영자는 목록·검색 결과의 종목을 따로 사고팔지 않아요. 문의: form4@jmheo.com")
     assert "자기 돈" not in page
+
+
+def _contrast(fg, bg):
+    def lum(h):
+        c = [int(h[i:i + 2], 16) / 255 for i in (1, 3, 5)]
+        c = [x / 12.92 if x <= 0.03928 else ((x + 0.055) / 1.055) ** 2.4 for x in c]
+        return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2]
+    hi, lo = sorted([lum(fg), lum(bg)], reverse=True)
+    return (hi + 0.05) / (lo + 0.05)
+
+
+def test_readable_text_sizes_and_contrast(tmp_path):
+    render_site([], {"count": 0, "new": [], "dropped": [], "top": None}, META, {}, tmp_path)
+    css = (tmp_path / "style.css").read_text()
+    rules = {}
+    for sel, body in re.findall(r"([^{}]+)\{([^}]*)\}", css):
+        rules.setdefault(sel.strip(), []).append(body)
+
+    def size(sel):
+        return next(m.group(1) for body in rules[sel] if (m := re.search(r"font-size: ([\d.]+)px", body)))
+    assert size(".small") == "13"
+    for sel in [".chip", ".replay", ".item .num", ".foot", ".col-sale .dim"]:
+        assert size(sel) == "12", sel
+    assert size(".notice") == size(".note") == "13.5"
+    assert min(float(x) for x in re.findall(r"font-size: ([\d.]+)px", css)) >= 12
+    var = dict(re.findall(r"--(\w+):(#[0-9A-Fa-f]{6})", css))
+    assert _contrast(var["dim"], var["ground"]) >= 4.5  # 바닥글 글자
+    notice = rules[".notice"][0]
+    assert _contrast(re.search(r"color: (#\w{6})", notice).group(1),
+                     re.search(r"background: (#\w{6})", notice).group(1)) >= 4.5
+
+
+def test_company_description_snippet(tmp_path):
+    nv = result(**NVDA, sale_people=3, sale_usd=1_000_000_000.0, sale_rows=[SELL])
+    seller = result(issuer_cik="902", name="SELLER CO", ticker="SEL", slug="SEL", qualified=False, people=0,
+                    total_usd=0.0, rows=[], top=None, tags=[], first_date=None, last_date=None,
+                    sale_people=2, sale_usd=20_000.0, sale_rows=[SELL])
+    long = result(issuer_cik="903", name="A" * 80, ticker="LONG", slug="LONG")
+    render_site([nv, seller, long], {"count": 1, "new": [], "dropped": [], "top": nv}, META, {}, tmp_path,
+                {"NVDA": "엔비디아"})
+    _, props, _ = head_meta((tmp_path / "c" / "NVDA" / "index.html").read_text())
+    assert props["description"] == ("엔비디아(NVDA) 임원·이사 거래, SEC 공시 기준 최근 60일: 매수 5명·34억 원, "
+                                    "매도 3명·1.4조 원. 매일 아침 한국어로 정리 · 무료 · 광고 없음")
+    assert props["og:description"] == props["description"]
+    _, props, _ = head_meta((tmp_path / "c" / "SEL" / "index.html").read_text())
+    assert "매수 0명·없음, 매도 2명·2,800만 원." in props["description"]
+    _, props, _ = head_meta((tmp_path / "c" / "LONG" / "index.html").read_text())
+    assert len(props["description"]) <= 150 and props["description"].endswith("매도 0명·없음.")
