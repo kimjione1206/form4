@@ -474,10 +474,6 @@
       "t": "ALH"
     },
     {
-      "n": "INNSUITES HOSPITALITY TRUST",
-      "t": "IHT"
-    },
-    {
       "n": "Primo Brands Corp",
       "t": "PRMB"
     },
@@ -532,6 +528,10 @@
     {
       "n": "TUTOR PERINI CORP",
       "t": "TPC"
+    },
+    {
+      "n": "INNSUITES HOSPITALITY TRUST",
+      "t": "IHT"
     },
     {
       "n": "Medpace Holdings, Inc.",
@@ -2086,7 +2086,6 @@
     "EVP & President Vistra Retail",
     "EVP & President, LLY Int'l",
     "EVP & President, Restaurants",
-    "EVP & Secretary/Treasurer",
     "EVP - ASRV Wealth & Cap. Mgmt.",
     "EVP - Business Operations",
     "EVP - CLO, CRCO",
