@@ -1,8 +1,23 @@
 [
   {
+    "issuer_cik": "1160330",
+    "name": "BANK BRADESCO",
+    "ticker": "BBD"
+  },
+  {
     "issuer_cik": "2035989",
     "name": "Amrize Ltd",
     "ticker": "AMRZ"
+  },
+  {
+    "issuer_cik": "1063761",
+    "name": "SIMON PROPERTY GROUP INC.",
+    "ticker": "SPG"
+  },
+  {
+    "issuer_cik": "2095486",
+    "name": "Blackstone Multi-Strategy Hedge Fund L.P.",
+    "ticker": "NONE"
   },
   {
     "issuer_cik": "1041934",
@@ -20,9 +35,49 @@
     "ticker": "CDNL"
   },
   {
+    "issuer_cik": "1089063",
+    "name": "DICK'S SPORTING GOODS, INC.",
+    "ticker": "DKS"
+  },
+  {
+    "issuer_cik": "1386716",
+    "name": "Star Bulk Carriers Corp.",
+    "ticker": "SBLK"
+  },
+  {
+    "issuer_cik": "39368",
+    "name": "FULLER H B CO",
+    "ticker": "FUL"
+  },
+  {
     "issuer_cik": "1627223",
     "name": "Chemours Co",
     "ticker": "CC"
+  },
+  {
+    "issuer_cik": "1791145",
+    "name": "GBank Financial Holdings Inc.",
+    "ticker": "GBFH"
+  },
+  {
+    "issuer_cik": "930236",
+    "name": "REDWOOD TRUST INC",
+    "ticker": "RWT"
+  },
+  {
+    "issuer_cik": "1576789",
+    "name": "Wix.com Ltd.",
+    "ticker": "WIX"
+  },
+  {
+    "issuer_cik": "1326380",
+    "name": "GameStop Corp.",
+    "ticker": "GME"
+  },
+  {
+    "issuer_cik": "1925309",
+    "name": "Sixth Street Lending Partners",
+    "ticker": "NONE"
   },
   {
     "issuer_cik": "2123955",
@@ -40,19 +95,24 @@
     "ticker": "ELAN"
   },
   {
-    "issuer_cik": "1791145",
-    "name": "GBank Financial Holdings Inc.",
-    "ticker": "GBFH"
-  },
-  {
     "issuer_cik": "1552797",
     "name": "Delek Logistics Partners, LP",
     "ticker": "DKL"
   },
   {
+    "issuer_cik": "2058758",
+    "name": "Avidia Bancorp, Inc.",
+    "ticker": "AVBC"
+  },
+  {
     "issuer_cik": "860748",
     "name": "KEMPER Corp",
     "ticker": "KMPR"
+  },
+  {
+    "issuer_cik": "1502292",
+    "name": "Presurance Holdings, Inc.",
+    "ticker": "PRHI"
   },
   {
     "issuer_cik": "73290",
@@ -75,14 +135,24 @@
     "ticker": "NONE"
   },
   {
+    "issuer_cik": "1833141",
+    "name": "Helus Pharma Inc.",
+    "ticker": "HELP"
+  },
+  {
     "issuer_cik": "1521332",
     "name": "Aptiv PLC",
     "ticker": "APTV"
   },
   {
-    "issuer_cik": "1089063",
-    "name": "DICK'S SPORTING GOODS, INC.",
-    "ticker": "DKS"
+    "issuer_cik": "896493",
+    "name": "Hyperscale Data, Inc.",
+    "ticker": "GPUS"
+  },
+  {
+    "issuer_cik": "1844971",
+    "name": "Vulcan Infrastructure & Power Inc.",
+    "ticker": "GREE"
   },
   {
     "issuer_cik": "1533615",
@@ -90,9 +160,19 @@
     "ticker": "XRN"
   },
   {
+    "issuer_cik": "1930054",
+    "name": "Blackstone Private Equity Strategies Fund L.P.",
+    "ticker": "NONE"
+  },
+  {
     "issuer_cik": "1488139",
     "name": "Ameresco, Inc.",
     "ticker": "AMRC"
+  },
+  {
+    "issuer_cik": "1505732",
+    "name": "Bankwell Financial Group, Inc.",
+    "ticker": "BWFG"
   },
   {
     "issuer_cik": "2001557",
@@ -100,9 +180,9 @@
     "ticker": "INV"
   },
   {
-    "issuer_cik": "1872789",
-    "name": "Embecta Corp.",
-    "ticker": "EMBC"
+    "issuer_cik": "1641614",
+    "name": "CPI Card Group Inc.",
+    "ticker": "PMTS"
   },
   {
     "issuer_cik": "318833",
@@ -110,9 +190,34 @@
     "ticker": "TISI"
   },
   {
+    "issuer_cik": "1872789",
+    "name": "Embecta Corp.",
+    "ticker": "EMBC"
+  },
+  {
+    "issuer_cik": "849145",
+    "name": "Heritage Global Inc.",
+    "ticker": "HGBL"
+  },
+  {
+    "issuer_cik": "40417",
+    "name": "GENERAL AMERICAN INVESTORS CO INC",
+    "ticker": "GAM"
+  },
+  {
     "issuer_cik": "1671502",
     "name": "Quoin Pharmaceuticals, Ltd.",
     "ticker": "QNRX"
+  },
+  {
+    "issuer_cik": "715446",
+    "name": "Anixa Biosciences Inc",
+    "ticker": "ANIX"
+  },
+  {
+    "issuer_cik": "1046179",
+    "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
+    "ticker": "TSM"
   },
   {
     "issuer_cik": "1660334",
@@ -120,14 +225,59 @@
     "ticker": "VRCA"
   },
   {
+    "issuer_cik": "1963088",
+    "name": "AtlasClear Holdings, Inc.",
+    "ticker": "ATCH"
+  },
+  {
+    "issuer_cik": "31107",
+    "name": "EASTERN CO",
+    "ticker": "EML"
+  },
+  {
+    "issuer_cik": "1802369",
+    "name": "ADARx Pharmaceuticals, Inc.",
+    "ticker": "ADRX"
+  },
+  {
+    "issuer_cik": "1469395",
+    "name": "Pampa Energy Inc.",
+    "ticker": "PAM"
+  },
+  {
+    "issuer_cik": "1715497",
+    "name": "Borr Drilling Ltd",
+    "ticker": "BORR"
+  },
+  {
     "issuer_cik": "1704715",
     "name": "Alpha Metallurgical Resources, Inc.",
     "ticker": "AMR"
   },
   {
+    "issuer_cik": "1551047",
+    "name": "Bluerock Private Real Estate Fund",
+    "ticker": "BPRE"
+  },
+  {
     "issuer_cik": "1944885",
     "name": "Apollomics Inc.",
     "ticker": "APLM"
+  },
+  {
+    "issuer_cik": "1865200",
+    "name": "Angel Studios, Inc.",
+    "ticker": "ANGX"
+  },
+  {
+    "issuer_cik": "2007919",
+    "name": "Inhibrx Biosciences, Inc.",
+    "ticker": "INBX"
+  },
+  {
+    "issuer_cik": "917251",
+    "name": "AGREE REALTY CORP",
+    "ticker": "ADC"
   },
   {
     "issuer_cik": "1577445",
@@ -140,9 +290,24 @@
     "ticker": "PFE"
   },
   {
-    "issuer_cik": "1865200",
-    "name": "Angel Studios, Inc.",
-    "ticker": "ANGX"
+    "issuer_cik": "1788257",
+    "name": "BETTERWARE DE MEXICO, S.A.P.I. DE C.V",
+    "ticker": "BWMX"
+  },
+  {
+    "issuer_cik": "1378950",
+    "name": "CarParts.com, Inc.",
+    "ticker": "PRTS"
+  },
+  {
+    "issuer_cik": "711404",
+    "name": "COOPER COMPANIES, INC.",
+    "ticker": "COO"
+  },
+  {
+    "issuer_cik": "1341766",
+    "name": "Celsius Holdings, Inc.",
+    "ticker": "CELH"
   },
   {
     "issuer_cik": "1703057",
@@ -160,9 +325,29 @@
     "ticker": "MTDR"
   },
   {
+    "issuer_cik": "1408534",
+    "name": "First Guaranty Bancshares, Inc.",
+    "ticker": "FGBI"
+  },
+  {
     "issuer_cik": "1437958",
     "name": "COASTAL FINANCIAL CORP",
     "ticker": "CCB"
+  },
+  {
+    "issuer_cik": "2040127",
+    "name": "Karman Holdings Inc.",
+    "ticker": "KRMN"
+  },
+  {
+    "issuer_cik": "1840572",
+    "name": "Lucky Strike Entertainment Corp",
+    "ticker": "LUCK"
+  },
+  {
+    "issuer_cik": "97134",
+    "name": "TENNANT CO",
+    "ticker": "TNC"
   },
   {
     "issuer_cik": "1740332",
@@ -170,14 +355,24 @@
     "ticker": "REZI"
   },
   {
+    "issuer_cik": "1839530",
+    "name": "XBP Global Holdings, Inc.",
+    "ticker": "XBP"
+  },
+  {
     "issuer_cik": "1843162",
     "name": "Chicago Atlantic BDC, Inc.",
     "ticker": "LIEN"
   },
   {
-    "issuer_cik": "1130713",
-    "name": "BED BATH & BEYOND, INC.",
-    "ticker": "BBBY"
+    "issuer_cik": "67215",
+    "name": "DYCOM INDUSTRIES INC",
+    "ticker": "DY"
+  },
+  {
+    "issuer_cik": "1606163",
+    "name": "Limbach Holdings, Inc.",
+    "ticker": "LMB"
   },
   {
     "issuer_cik": "1837014",
@@ -185,14 +380,14 @@
     "ticker": "SMRT"
   },
   {
-    "issuer_cik": "2058758",
-    "name": "Avidia Bancorp, Inc.",
-    "ticker": "AVBC"
+    "issuer_cik": "1158172",
+    "name": "COMSCORE, INC.",
+    "ticker": "SCOR"
   },
   {
-    "issuer_cik": "24090",
-    "name": "CITIZENS, INC.",
-    "ticker": "CIA"
+    "issuer_cik": "1998768",
+    "name": "Proficient Auto Logistics, Inc",
+    "ticker": "PAL"
   },
   {
     "issuer_cik": "63296",
@@ -200,14 +395,29 @@
     "ticker": "MATW"
   },
   {
-    "issuer_cik": "1158172",
-    "name": "COMSCORE, INC.",
-    "ticker": "SCOR"
+    "issuer_cik": "1130713",
+    "name": "NEIGHBORHOOD INTELLIGENCE, INC.",
+    "ticker": "NXH"
   },
   {
-    "issuer_cik": "1378950",
-    "name": "CarParts.com, Inc.",
-    "ticker": "PRTS"
+    "issuer_cik": "24090",
+    "name": "CITIZENS, INC.",
+    "ticker": "CIA"
+  },
+  {
+    "issuer_cik": "1805385",
+    "name": "Evolv Technologies Holdings, Inc.",
+    "ticker": "EVLV"
+  },
+  {
+    "issuer_cik": "101538",
+    "name": "UNITED STATES ANTIMONY CORP",
+    "ticker": "UAMY"
+  },
+  {
+    "issuer_cik": "1982518",
+    "name": "Smith Douglas Homes Corp.",
+    "ticker": "SDHC"
   },
   {
     "issuer_cik": "1306830",
@@ -215,14 +425,54 @@
     "ticker": "CE"
   },
   {
+    "issuer_cik": "1841761",
+    "name": "Grove Collaborative Holdings, Inc.",
+    "ticker": "GROV"
+  },
+  {
+    "issuer_cik": "1069533",
+    "name": "RGC RESOURCES INC",
+    "ticker": "RGCO"
+  },
+  {
+    "issuer_cik": "813623",
+    "name": "Total Return Securities Fund",
+    "ticker": "SWZ"
+  },
+  {
+    "issuer_cik": "1653384",
+    "name": "Runway Growth Finance Corp.",
+    "ticker": "RWAY"
+  },
+  {
     "issuer_cik": "1550913",
     "name": "MacKenzie Realty Capital, Inc.",
     "ticker": "MKZR"
   },
   {
-    "issuer_cik": "849145",
-    "name": "Heritage Global Inc.",
-    "ticker": "HGBL"
+    "issuer_cik": "1638290",
+    "name": "MasterCraft Boat Holdings, Inc.",
+    "ticker": "MCFT"
+  },
+  {
+    "issuer_cik": "34956",
+    "name": "TENAX THERAPEUTICS, INC.",
+    "ticker": "TENX"
+  },
+  {
+    "issuer_cik": "1175151",
+    "name": "Cytosorbents Corp",
+    "ticker": "CTSO"
+  },
+  {
+    "issuer_cik": "1928446",
+    "name": "Granite Ridge Resources, Inc.",
+    "ticker": "GRNT"
+  },
+  {
+    "issuer_cik": "1163389",
+    "name": "NEW PEOPLES BANKSHARES INC",
+    "ticker": "NWPP"
   },
   {
     "issuer_cik": "1547546",
@@ -230,19 +480,44 @@
     "ticker": "LFT"
   },
   {
-    "issuer_cik": "88000",
-    "name": "Horizon Kinetics Holding Corp",
-    "ticker": "HKHC"
-  },
-  {
     "issuer_cik": "714395",
     "name": "GERMAN AMERICAN BANCORP, INC.",
     "ticker": "GABC"
   },
   {
+    "issuer_cik": "88000",
+    "name": "Horizon Kinetics Holding Corp",
+    "ticker": "HKHC"
+  },
+  {
+    "issuer_cik": "935419",
+    "name": "RCI HOSPITALITY HOLDINGS, INC.",
+    "ticker": "RICK"
+  },
+  {
+    "issuer_cik": "1868995",
+    "name": "CI&T Inc",
+    "ticker": "CINT"
+  },
+  {
+    "issuer_cik": "723188",
+    "name": "COMMUNITY FINANCIAL SYSTEM, INC.",
+    "ticker": "CBU"
+  },
+  {
+    "issuer_cik": "1533040",
+    "name": "Phio Pharmaceuticals Corp.",
+    "ticker": "PHIO"
+  },
+  {
     "issuer_cik": "65433",
     "name": "MEXICO FUND INC",
     "ticker": "MXF"
+  },
+  {
+    "issuer_cik": "1041368",
+    "name": "RIVERVIEW BANCORP INC",
+    "ticker": "RVSB"
   },
   {
     "issuer_cik": "1866757",

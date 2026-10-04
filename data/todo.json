@@ -1,9 +1,24 @@
 {
   "companies": [
     {
+      "cik": "1160330",
+      "name": "BANK BRADESCO",
+      "sic_description": "State Commercial Banks"
+    },
+    {
       "cik": "2035989",
       "name": "Amrize Ltd",
       "sic_description": "Cement, Hydraulic"
+    },
+    {
+      "cik": "1063761",
+      "name": "SIMON PROPERTY GROUP INC.",
+      "sic_description": "Real Estate Investment Trusts"
+    },
+    {
+      "cik": "2095486",
+      "name": "Blackstone Multi-Strategy Hedge Fund L.P.",
+      "sic_description": "Investment Advice"
     },
     {
       "cik": "1041934",
@@ -21,9 +36,49 @@
       "sic_description": "Heavy Construction Other Than Bldg Const - Contractors"
     },
     {
+      "cik": "1089063",
+      "name": "DICK'S SPORTING GOODS, INC.",
+      "sic_description": "Retail-Miscellaneous Shopping Goods Stores"
+    },
+    {
+      "cik": "1386716",
+      "name": "Star Bulk Carriers Corp.",
+      "sic_description": "Deep Sea Foreign Transportation of  Freight"
+    },
+    {
+      "cik": "39368",
+      "name": "FULLER H B CO",
+      "sic_description": "Adhesives & Sealants"
+    },
+    {
       "cik": "1627223",
       "name": "Chemours Co",
       "sic_description": "Chemicals & Allied Products"
+    },
+    {
+      "cik": "1791145",
+      "name": "GBank Financial Holdings Inc.",
+      "sic_description": "State Commercial Banks"
+    },
+    {
+      "cik": "930236",
+      "name": "REDWOOD TRUST INC",
+      "sic_description": "Real Estate Investment Trusts"
+    },
+    {
+      "cik": "1576789",
+      "name": "Wix.com Ltd.",
+      "sic_description": "Services-Computer Programming, Data Processing, Etc."
+    },
+    {
+      "cik": "1326380",
+      "name": "GameStop Corp.",
+      "sic_description": "Retail-Computer & Computer Software Stores"
+    },
+    {
+      "cik": "1925309",
+      "name": "Sixth Street Lending Partners",
+      "sic_description": ""
     },
     {
       "cik": "2123955",
@@ -41,18 +96,23 @@
       "sic_description": "Pharmaceutical Preparations"
     },
     {
-      "cik": "1791145",
-      "name": "GBank Financial Holdings Inc.",
-      "sic_description": "State Commercial Banks"
-    },
-    {
       "cik": "1552797",
       "name": "Delek Logistics Partners, LP",
       "sic_description": "Pipe Lines (No Natural Gas)"
     },
     {
+      "cik": "2058758",
+      "name": "Avidia Bancorp, Inc.",
+      "sic_description": "Savings Institutions, Not Federally Chartered"
+    },
+    {
       "cik": "860748",
       "name": "KEMPER Corp",
+      "sic_description": "Fire, Marine & Casualty Insurance"
+    },
+    {
+      "cik": "1502292",
+      "name": "Presurance Holdings, Inc.",
       "sic_description": "Fire, Marine & Casualty Insurance"
     },
     {
@@ -76,14 +136,24 @@
       "sic_description": "Real Estate"
     },
     {
+      "cik": "1833141",
+      "name": "Helus Pharma Inc.",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
       "cik": "1521332",
       "name": "Aptiv PLC",
       "sic_description": "Motor Vehicle Parts & Accessories"
     },
     {
-      "cik": "1089063",
-      "name": "DICK'S SPORTING GOODS, INC.",
-      "sic_description": "Retail-Miscellaneous Shopping Goods Stores"
+      "cik": "896493",
+      "name": "Hyperscale Data, Inc.",
+      "sic_description": "Oil & Gas Field Machinery & Equipment"
+    },
+    {
+      "cik": "1844971",
+      "name": "Vulcan Infrastructure & Power Inc.",
+      "sic_description": "Finance Services"
     },
     {
       "cik": "1533615",
@@ -91,9 +161,19 @@
       "sic_description": "Real Estate Investment Trusts"
     },
     {
+      "cik": "1930054",
+      "name": "Blackstone Private Equity Strategies Fund L.P.",
+      "sic_description": ""
+    },
+    {
       "cik": "1488139",
       "name": "Ameresco, Inc.",
       "sic_description": "Construction - Special Trade Contractors"
+    },
+    {
+      "cik": "1505732",
+      "name": "Bankwell Financial Group, Inc.",
+      "sic_description": "State Commercial Banks"
     },
     {
       "cik": "2001557",
@@ -101,9 +181,9 @@
       "sic_description": "Blank Checks"
     },
     {
-      "cik": "1872789",
-      "name": "Embecta Corp.",
-      "sic_description": "Surgical & Medical Instruments & Apparatus"
+      "cik": "1641614",
+      "name": "CPI Card Group Inc.",
+      "sic_description": "Commercial Printing"
     },
     {
       "cik": "318833",
@@ -111,9 +191,34 @@
       "sic_description": "Services-Miscellaneous Repair Services"
     },
     {
+      "cik": "1872789",
+      "name": "Embecta Corp.",
+      "sic_description": "Surgical & Medical Instruments & Apparatus"
+    },
+    {
+      "cik": "849145",
+      "name": "Heritage Global Inc.",
+      "sic_description": "Services-Business Services, NEC"
+    },
+    {
+      "cik": "40417",
+      "name": "GENERAL AMERICAN INVESTORS CO INC",
+      "sic_description": ""
+    },
+    {
       "cik": "1671502",
       "name": "Quoin Pharmaceuticals, Ltd.",
       "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "715446",
+      "name": "Anixa Biosciences Inc",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "1046179",
+      "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
+      "sic_description": "Semiconductors & Related Devices"
     },
     {
       "cik": "1660334",
@@ -121,14 +226,59 @@
       "sic_description": "Pharmaceutical Preparations"
     },
     {
+      "cik": "1963088",
+      "name": "AtlasClear Holdings, Inc.",
+      "sic_description": "Finance Services"
+    },
+    {
+      "cik": "31107",
+      "name": "EASTERN CO",
+      "sic_description": "Cutlery, Handtools & General Hardware"
+    },
+    {
+      "cik": "1802369",
+      "name": "ADARx Pharmaceuticals, Inc.",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "1469395",
+      "name": "Pampa Energy Inc.",
+      "sic_description": "Electric Services"
+    },
+    {
+      "cik": "1715497",
+      "name": "Borr Drilling Ltd",
+      "sic_description": "Drilling Oil & Gas Wells"
+    },
+    {
       "cik": "1704715",
       "name": "Alpha Metallurgical Resources, Inc.",
       "sic_description": "Bituminous Coal & Lignite Surface Mining"
     },
     {
+      "cik": "1551047",
+      "name": "Bluerock Private Real Estate Fund",
+      "sic_description": ""
+    },
+    {
       "cik": "1944885",
       "name": "Apollomics Inc.",
       "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "1865200",
+      "name": "Angel Studios, Inc.",
+      "sic_description": "Services-Motion Picture & Video Tape Production"
+    },
+    {
+      "cik": "2007919",
+      "name": "Inhibrx Biosciences, Inc.",
+      "sic_description": "Biological Products, (No Diagnostic Substances)"
+    },
+    {
+      "cik": "917251",
+      "name": "AGREE REALTY CORP",
+      "sic_description": "Real Estate Investment Trusts"
     },
     {
       "cik": "1577445",
@@ -141,9 +291,24 @@
       "sic_description": "Pharmaceutical Preparations"
     },
     {
-      "cik": "1865200",
-      "name": "Angel Studios, Inc.",
-      "sic_description": "Services-Motion Picture & Video Tape Production"
+      "cik": "1788257",
+      "name": "BETTERWARE DE MEXICO, S.A.P.I. DE C.V",
+      "sic_description": "Retail-Catalog & Mail-Order Houses"
+    },
+    {
+      "cik": "1378950",
+      "name": "CarParts.com, Inc.",
+      "sic_description": "Retail-Auto & Home Supply Stores"
+    },
+    {
+      "cik": "711404",
+      "name": "COOPER COMPANIES, INC.",
+      "sic_description": "Ophthalmic Goods"
+    },
+    {
+      "cik": "1341766",
+      "name": "Celsius Holdings, Inc.",
+      "sic_description": "Bottled & Canned Soft Drinks & Carbonated Waters"
     },
     {
       "cik": "1703057",
@@ -161,9 +326,29 @@
       "sic_description": "Crude Petroleum & Natural Gas"
     },
     {
+      "cik": "1408534",
+      "name": "First Guaranty Bancshares, Inc.",
+      "sic_description": "Savings Institution, Federally Chartered"
+    },
+    {
       "cik": "1437958",
       "name": "COASTAL FINANCIAL CORP",
       "sic_description": "State Commercial Banks"
+    },
+    {
+      "cik": "2040127",
+      "name": "Karman Holdings Inc.",
+      "sic_description": "Aircraft Parts & Auxiliary Equipment, NEC"
+    },
+    {
+      "cik": "1840572",
+      "name": "Lucky Strike Entertainment Corp",
+      "sic_description": "Services-Amusement & Recreation Services"
+    },
+    {
+      "cik": "97134",
+      "name": "TENNANT CO",
+      "sic_description": "Refrigeration & Service Industry Machinery"
     },
     {
       "cik": "1740332",
@@ -171,14 +356,24 @@
       "sic_description": "Wholesale-Hardware"
     },
     {
+      "cik": "1839530",
+      "name": "XBP Global Holdings, Inc.",
+      "sic_description": "Services-Business Services, NEC"
+    },
+    {
       "cik": "1843162",
       "name": "Chicago Atlantic BDC, Inc.",
       "sic_description": ""
     },
     {
-      "cik": "1130713",
-      "name": "BED BATH & BEYOND, INC.",
-      "sic_description": "Retail-Catalog & Mail-Order Houses"
+      "cik": "67215",
+      "name": "DYCOM INDUSTRIES INC",
+      "sic_description": "Water, Sewer, Pipeline, Comm & Power Line Construction"
+    },
+    {
+      "cik": "1606163",
+      "name": "Limbach Holdings, Inc.",
+      "sic_description": "Construction - Special Trade Contractors"
     },
     {
       "cik": "1837014",
@@ -186,14 +381,14 @@
       "sic_description": "Services-Computer Integrated Systems Design"
     },
     {
-      "cik": "2058758",
-      "name": "Avidia Bancorp, Inc.",
-      "sic_description": "Savings Institutions, Not Federally Chartered"
+      "cik": "1158172",
+      "name": "COMSCORE, INC.",
+      "sic_description": "Services-Business Services, NEC"
     },
     {
-      "cik": "24090",
-      "name": "CITIZENS, INC.",
-      "sic_description": "Life Insurance"
+      "cik": "1998768",
+      "name": "Proficient Auto Logistics, Inc",
+      "sic_description": "Transportation Services"
     },
     {
       "cik": "63296",
@@ -201,14 +396,29 @@
       "sic_description": "Nonferrous Foundries (Castings)"
     },
     {
-      "cik": "1158172",
-      "name": "COMSCORE, INC.",
-      "sic_description": "Services-Business Services, NEC"
+      "cik": "1130713",
+      "name": "BED BATH & BEYOND, INC.",
+      "sic_description": "Retail-Catalog & Mail-Order Houses"
     },
     {
-      "cik": "1378950",
-      "name": "CarParts.com, Inc.",
-      "sic_description": "Retail-Auto & Home Supply Stores"
+      "cik": "24090",
+      "name": "CITIZENS, INC.",
+      "sic_description": "Life Insurance"
+    },
+    {
+      "cik": "1805385",
+      "name": "Evolv Technologies Holdings, Inc.",
+      "sic_description": "Computer Peripheral Equipment, NEC"
+    },
+    {
+      "cik": "101538",
+      "name": "UNITED STATES ANTIMONY CORP",
+      "sic_description": "Primary Smelting & Refining of  Nonferrous Metals"
+    },
+    {
+      "cik": "1982518",
+      "name": "Smith Douglas Homes Corp.",
+      "sic_description": "Operative Builders"
     },
     {
       "cik": "1306830",
@@ -216,14 +426,54 @@
       "sic_description": "Plastic Material, Synth Resin/Rubber, Cellulos (No Glass)"
     },
     {
+      "cik": "1841761",
+      "name": "Grove Collaborative Holdings, Inc.",
+      "sic_description": "Retail-Catalog & Mail-Order Houses"
+    },
+    {
+      "cik": "1069533",
+      "name": "RGC RESOURCES INC",
+      "sic_description": "Natural Gas Transmisison & Distribution"
+    },
+    {
+      "cik": "813623",
+      "name": "Total Return Securities Fund",
+      "sic_description": ""
+    },
+    {
+      "cik": "1653384",
+      "name": "Runway Growth Finance Corp.",
+      "sic_description": ""
+    },
+    {
       "cik": "1550913",
       "name": "MacKenzie Realty Capital, Inc.",
       "sic_description": "Real Estate Investment Trusts"
     },
     {
-      "cik": "849145",
-      "name": "Heritage Global Inc.",
-      "sic_description": "Services-Business Services, NEC"
+      "cik": "1638290",
+      "name": "MasterCraft Boat Holdings, Inc.",
+      "sic_description": "Ship & Boat Building & Repairing"
+    },
+    {
+      "cik": "34956",
+      "name": "TENAX THERAPEUTICS, INC.",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "1175151",
+      "name": "Cytosorbents Corp",
+      "sic_description": "Surgical & Medical Instruments & Apparatus"
+    },
+    {
+      "cik": "1928446",
+      "name": "Granite Ridge Resources, Inc.",
+      "sic_description": "Crude Petroleum & Natural Gas"
+    },
+    {
+      "cik": "1163389",
+      "name": "NEW PEOPLES BANKSHARES INC",
+      "sic_description": "State Commercial Banks"
     },
     {
       "cik": "1547546",
@@ -231,19 +481,44 @@
       "sic_description": "Real Estate Investment Trusts"
     },
     {
-      "cik": "88000",
-      "name": "Horizon Kinetics Holding Corp",
-      "sic_description": "Investment Advice"
-    },
-    {
       "cik": "714395",
       "name": "GERMAN AMERICAN BANCORP, INC.",
       "sic_description": "State Commercial Banks"
     },
     {
+      "cik": "88000",
+      "name": "Horizon Kinetics Holding Corp",
+      "sic_description": "Investment Advice"
+    },
+    {
+      "cik": "935419",
+      "name": "RCI HOSPITALITY HOLDINGS, INC.",
+      "sic_description": "Retail-Eating  Places"
+    },
+    {
+      "cik": "1868995",
+      "name": "CI&T Inc",
+      "sic_description": "Services-Computer Programming Services"
+    },
+    {
+      "cik": "723188",
+      "name": "COMMUNITY FINANCIAL SYSTEM, INC.",
+      "sic_description": "National Commercial Banks"
+    },
+    {
+      "cik": "1533040",
+      "name": "Phio Pharmaceuticals Corp.",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
       "cik": "65433",
       "name": "MEXICO FUND INC",
       "sic_description": ""
+    },
+    {
+      "cik": "1041368",
+      "name": "RIVERVIEW BANCORP INC",
+      "sic_description": "Savings Institution, Federally Chartered"
     },
     {
       "cik": "1866757",
@@ -255,41 +530,66 @@
     "CEO and Executive Chairman",
     "CEO and President",
     "CEO/President",
+    "CFO & General Counsel",
+    "CFO and Treasurer",
+    "CFO, Treasurer",
+    "CFO, Treasurer and Secretary",
+    "CHIEF EXECUTIVE OFFICER",
+    "CHIEF GROWTH OFFICER",
     "CMO",
+    "CTO",
     "Chair and CEO",
     "Chairman & CEO",
     "Chairman and CEO",
+    "Chairman, Pres. & CEO",
+    "Chairperson",
     "Chief Actuary",
     "Chief Clinical-Medical Affairs",
+    "Chief Compliance Officer",
     "Chief Content Officer",
     "Chief Development Officer",
+    "Chief Growth Officer",
+    "Chief Human Resource Officer",
     "Chief Investment Officer",
     "Chief Legal Officer",
     "Chief Legal Officer & Corp Sec",
     "Chief Mktg & Corp Affairs Off",
     "Chief People Officer",
     "Chief Strategy & M&A Officer",
+    "Chief Strategy Officer",
     "Chief Supply Chain Officer",
     "Co-Chief Executive Officer",
     "Co-Chief Investment Officer",
+    "Dir, EVP & Chief Mining Eng",
     "EVP",
     "EVP and CFO",
+    "EVP and Co-COO",
     "EVP, Chief Financial Officer",
     "EVP, Reservoir Engineering",
     "EVP, Sec. & General Counsel",
     "EVP- Human Resources",
     "EXECUTIVE CHAIRMAN & CEO",
     "Executive Chair",
+    "Executive Officer",
     "Executive Vice Chairman",
     "Executive Vice President, DKL",
     "GC AND CORP SEC",
     "General Counsel & Corp Sec",
     "General Counsel/Secretary",
     "Interim CFO",
+    "MD Betterware Mexico",
+    "PRESIDENT & CEO",
     "Pres, Pharm Svc&Prod Mgmt, CLO",
+    "Pres. of N. Am. /Europe Ops",
+    "President - Foot Locker Intl",
+    "President and COO",
+    "President and General Counsel",
     "President, Building Materials",
+    "President, CEO and Chairman",
+    "President, COO, & CFO",
     "President, Heritage DebtX LLC",
     "President, Industrial Assets",
+    "President/CEO",
     "President/CEO (GBank)",
     "SECRETARY",
     "SVP & CFO",
@@ -299,8 +599,15 @@
     "SVP, GC & Corp Sec",
     "SVP, Marketing & Product Mgmt.",
     "SVP, Strategy & Business Ops",
+    "Secretary",
     "Secretary; Co-CIO",
     "See Remarks",
-    "Treasurer"
+    "Treasurer",
+    "Treasurer/PAO/PFO",
+    "VP",
+    "VP Administration",
+    "Vice-President",
+    "Vicepresident",
+    "co CFO"
   ]
 }

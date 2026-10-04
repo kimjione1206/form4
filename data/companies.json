@@ -1,7 +1,32 @@
 {
+  "101538": {
+    "name": "UNITED STATES ANTIMONY CORP",
+    "sic_description": "Primary Smelting & Refining of  Nonferrous Metals",
+    "summary": null
+  },
+  "1041368": {
+    "name": "RIVERVIEW BANCORP INC",
+    "sic_description": "Savings Institution, Federally Chartered",
+    "summary": null
+  },
   "1041934": {
     "name": "EDAP TMS SA",
     "sic_description": "Electromedical & Electrotherapeutic Apparatus",
+    "summary": null
+  },
+  "1046179": {
+    "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "1063761": {
+    "name": "SIMON PROPERTY GROUP INC.",
+    "sic_description": "Real Estate Investment Trusts",
+    "summary": null
+  },
+  "1069533": {
+    "name": "RGC RESOURCES INC",
+    "sic_description": "Natural Gas Transmisison & Distribution",
     "summary": null
   },
   "1089063": {
@@ -19,9 +44,29 @@
     "sic_description": "Services-Business Services, NEC",
     "summary": null
   },
+  "1160330": {
+    "name": "BANK BRADESCO",
+    "sic_description": "State Commercial Banks",
+    "summary": null
+  },
+  "1163389": {
+    "name": "NEW PEOPLES BANKSHARES INC",
+    "sic_description": "State Commercial Banks",
+    "summary": null
+  },
+  "1175151": {
+    "name": "Cytosorbents Corp",
+    "sic_description": "Surgical & Medical Instruments & Apparatus",
+    "summary": null
+  },
   "1306830": {
     "name": "Celanese Corp",
     "sic_description": "Plastic Material, Synth Resin/Rubber, Cellulos (No Glass)",
+    "summary": null
+  },
+  "1326380": {
+    "name": "GameStop Corp.",
+    "sic_description": "Retail-Computer & Computer Software Stores",
     "summary": null
   },
   "1339005": {
@@ -29,9 +74,24 @@
     "sic_description": "Surgical & Medical Instruments & Apparatus",
     "summary": null
   },
+  "1341766": {
+    "name": "Celsius Holdings, Inc.",
+    "sic_description": "Bottled & Canned Soft Drinks & Carbonated Waters",
+    "summary": null
+  },
   "1378950": {
     "name": "CarParts.com, Inc.",
     "sic_description": "Retail-Auto & Home Supply Stores",
+    "summary": null
+  },
+  "1386716": {
+    "name": "Star Bulk Carriers Corp.",
+    "sic_description": "Deep Sea Foreign Transportation of  Freight",
+    "summary": null
+  },
+  "1408534": {
+    "name": "First Guaranty Bancshares, Inc.",
+    "sic_description": "Savings Institution, Federally Chartered",
     "summary": null
   },
   "1437958": {
@@ -39,9 +99,24 @@
     "sic_description": "State Commercial Banks",
     "summary": null
   },
+  "1469395": {
+    "name": "Pampa Energy Inc.",
+    "sic_description": "Electric Services",
+    "summary": null
+  },
   "1488139": {
     "name": "Ameresco, Inc.",
     "sic_description": "Construction - Special Trade Contractors",
+    "summary": null
+  },
+  "1502292": {
+    "name": "Presurance Holdings, Inc.",
+    "sic_description": "Fire, Marine & Casualty Insurance",
+    "summary": null
+  },
+  "1505732": {
+    "name": "Bankwell Financial Group, Inc.",
+    "sic_description": "State Commercial Banks",
     "summary": null
   },
   "1520006": {
@@ -52,6 +127,11 @@
   "1521332": {
     "name": "Aptiv PLC",
     "sic_description": "Motor Vehicle Parts & Accessories",
+    "summary": null
+  },
+  "1533040": {
+    "name": "Phio Pharmaceuticals Corp.",
+    "sic_description": "Pharmaceutical Preparations",
     "summary": null
   },
   "1533615": {
@@ -69,14 +149,29 @@
     "sic_description": "Real Estate Investment Trusts",
     "summary": null
   },
+  "1551047": {
+    "name": "Bluerock Private Real Estate Fund",
+    "sic_description": "",
+    "summary": null
+  },
   "1552797": {
     "name": "Delek Logistics Partners, LP",
     "sic_description": "Pipe Lines (No Natural Gas)",
     "summary": null
   },
+  "1576789": {
+    "name": "Wix.com Ltd.",
+    "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+    "summary": null
+  },
   "1577445": {
     "name": "Odysight.ai Inc.",
     "sic_description": "Services-Computer Integrated Systems Design",
+    "summary": null
+  },
+  "1606163": {
+    "name": "Limbach Holdings, Inc.",
+    "sic_description": "Construction - Special Trade Contractors",
     "summary": null
   },
   "1627223": {
@@ -87,6 +182,21 @@
   "1635077": {
     "name": "Aclarion, Inc.",
     "sic_description": "Services-Medical Laboratories",
+    "summary": null
+  },
+  "1638290": {
+    "name": "MasterCraft Boat Holdings, Inc.",
+    "sic_description": "Ship & Boat Building & Repairing",
+    "summary": null
+  },
+  "1641614": {
+    "name": "CPI Card Group Inc.",
+    "sic_description": "Commercial Printing",
+    "summary": null
+  },
+  "1653384": {
+    "name": "Runway Growth Finance Corp.",
+    "sic_description": "",
     "summary": null
   },
   "1660334": {
@@ -109,6 +219,11 @@
     "sic_description": "Bituminous Coal & Lignite Surface Mining",
     "summary": null
   },
+  "1715497": {
+    "name": "Borr Drilling Ltd",
+    "sic_description": "Drilling Oil & Gas Wells",
+    "summary": null
+  },
   "1739104": {
     "name": "Elanco Animal Health Inc",
     "sic_description": "Pharmaceutical Preparations",
@@ -119,9 +234,29 @@
     "sic_description": "Wholesale-Hardware",
     "summary": null
   },
+  "1788257": {
+    "name": "BETTERWARE DE MEXICO, S.A.P.I. DE C.V",
+    "sic_description": "Retail-Catalog & Mail-Order Houses",
+    "summary": null
+  },
   "1791145": {
     "name": "GBank Financial Holdings Inc.",
     "sic_description": "State Commercial Banks",
+    "summary": null
+  },
+  "1802369": {
+    "name": "ADARx Pharmaceuticals, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1805385": {
+    "name": "Evolv Technologies Holdings, Inc.",
+    "sic_description": "Computer Peripheral Equipment, NEC",
+    "summary": null
+  },
+  "1833141": {
+    "name": "Helus Pharma Inc.",
+    "sic_description": "Pharmaceutical Preparations",
     "summary": null
   },
   "1837014": {
@@ -129,14 +264,34 @@
     "sic_description": "Services-Computer Integrated Systems Design",
     "summary": null
   },
+  "1839530": {
+    "name": "XBP Global Holdings, Inc.",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
   "1839970": {
     "name": "BlossomHill Therapeutics, Inc.",
     "sic_description": "Pharmaceutical Preparations",
     "summary": null
   },
+  "1840572": {
+    "name": "Lucky Strike Entertainment Corp",
+    "sic_description": "Services-Amusement & Recreation Services",
+    "summary": null
+  },
+  "1841761": {
+    "name": "Grove Collaborative Holdings, Inc.",
+    "sic_description": "Retail-Catalog & Mail-Order Houses",
+    "summary": null
+  },
   "1843162": {
     "name": "Chicago Atlantic BDC, Inc.",
     "sic_description": "",
+    "summary": null
+  },
+  "1844971": {
+    "name": "Vulcan Infrastructure & Power Inc.",
+    "sic_description": "Finance Services",
     "summary": null
   },
   "1865200": {
@@ -154,9 +309,29 @@
     "sic_description": "Real Estate Investment Trusts",
     "summary": null
   },
+  "1868995": {
+    "name": "CI&T Inc",
+    "sic_description": "Services-Computer Programming Services",
+    "summary": null
+  },
   "1872789": {
     "name": "Embecta Corp.",
     "sic_description": "Surgical & Medical Instruments & Apparatus",
+    "summary": null
+  },
+  "1925309": {
+    "name": "Sixth Street Lending Partners",
+    "sic_description": "",
+    "summary": null
+  },
+  "1928446": {
+    "name": "Granite Ridge Resources, Inc.",
+    "sic_description": "Crude Petroleum & Natural Gas",
+    "summary": null
+  },
+  "1930054": {
+    "name": "Blackstone Private Equity Strategies Fund L.P.",
+    "sic_description": "",
     "summary": null
   },
   "1944885": {
@@ -164,14 +339,39 @@
     "sic_description": "Pharmaceutical Preparations",
     "summary": null
   },
+  "1963088": {
+    "name": "AtlasClear Holdings, Inc.",
+    "sic_description": "Finance Services",
+    "summary": null
+  },
+  "1982518": {
+    "name": "Smith Douglas Homes Corp.",
+    "sic_description": "Operative Builders",
+    "summary": null
+  },
+  "1998768": {
+    "name": "Proficient Auto Logistics, Inc",
+    "sic_description": "Transportation Services",
+    "summary": null
+  },
   "2001557": {
     "name": "Innventure, Inc.",
     "sic_description": "Blank Checks",
     "summary": null
   },
+  "2007919": {
+    "name": "Inhibrx Biosciences, Inc.",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
+  },
   "2035989": {
     "name": "Amrize Ltd",
     "sic_description": "Cement, Hydraulic",
+    "summary": null
+  },
+  "2040127": {
+    "name": "Karman Holdings Inc.",
+    "sic_description": "Aircraft Parts & Auxiliary Equipment, NEC",
     "summary": null
   },
   "2058758": {
@@ -189,6 +389,11 @@
     "sic_description": "Real Estate",
     "summary": null
   },
+  "2095486": {
+    "name": "Blackstone Multi-Strategy Hedge Fund L.P.",
+    "sic_description": "Investment Advice",
+    "summary": null
+  },
   "2123955": {
     "name": "Pinnacle Acquisition Corp",
     "sic_description": "Blank Checks",
@@ -204,9 +409,29 @@
     "sic_description": "Life Insurance",
     "summary": null
   },
+  "31107": {
+    "name": "EASTERN CO",
+    "sic_description": "Cutlery, Handtools & General Hardware",
+    "summary": null
+  },
   "318833": {
     "name": "TEAM INC",
     "sic_description": "Services-Miscellaneous Repair Services",
+    "summary": null
+  },
+  "34956": {
+    "name": "TENAX THERAPEUTICS, INC.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "39368": {
+    "name": "FULLER H B CO",
+    "sic_description": "Adhesives & Sealants",
+    "summary": null
+  },
+  "40417": {
+    "name": "GENERAL AMERICAN INVESTORS CO INC",
+    "sic_description": "",
     "summary": null
   },
   "63296": {
@@ -219,9 +444,29 @@
     "sic_description": "",
     "summary": null
   },
+  "67215": {
+    "name": "DYCOM INDUSTRIES INC",
+    "sic_description": "Water, Sewer, Pipeline, Comm & Power Line Construction",
+    "summary": null
+  },
+  "711404": {
+    "name": "COOPER COMPANIES, INC.",
+    "sic_description": "Ophthalmic Goods",
+    "summary": null
+  },
   "714395": {
     "name": "GERMAN AMERICAN BANCORP, INC.",
     "sic_description": "State Commercial Banks",
+    "summary": null
+  },
+  "715446": {
+    "name": "Anixa Biosciences Inc",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "723188": {
+    "name": "COMMUNITY FINANCIAL SYSTEM, INC.",
+    "sic_description": "National Commercial Banks",
     "summary": null
   },
   "73290": {
@@ -232,6 +477,11 @@
   "78003": {
     "name": "PFIZER INC",
     "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "813623": {
+    "name": "Total Return Securities Fund",
+    "sic_description": "",
     "summary": null
   },
   "849145": {
@@ -247,6 +497,31 @@
   "88000": {
     "name": "Horizon Kinetics Holding Corp",
     "sic_description": "Investment Advice",
+    "summary": null
+  },
+  "896493": {
+    "name": "Hyperscale Data, Inc.",
+    "sic_description": "Oil & Gas Field Machinery & Equipment",
+    "summary": null
+  },
+  "917251": {
+    "name": "AGREE REALTY CORP",
+    "sic_description": "Real Estate Investment Trusts",
+    "summary": null
+  },
+  "930236": {
+    "name": "REDWOOD TRUST INC",
+    "sic_description": "Real Estate Investment Trusts",
+    "summary": null
+  },
+  "935419": {
+    "name": "RCI HOSPITALITY HOLDINGS, INC.",
+    "sic_description": "Retail-Eating  Places",
+    "summary": null
+  },
+  "97134": {
+    "name": "TENNANT CO",
+    "sic_description": "Refrigeration & Service Industry Machinery",
     "summary": null
   }
 }
