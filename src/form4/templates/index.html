@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block body %}
+<header class="band">
+  <div class="band-top"><span class="mono dim">FORM 4 · KR</span><span class="mono dim">{{ meta.updated }} 갱신</span></div>
+  <h1>미국 임원 매수 정리</h1>
+  <p class="sub">내부자 거래 공시(Form 4) 한국어 정리</p>
+  <p class="intro">미국 회사 임원·이사가 자기 회사 주식을 사고팔면 이틀 안에 공개 신고해야 해요(합법). 그 신고를 매일 아침 정리합니다.</p>
+</header>
+
+<section class="card">
+  <div class="row-between"><h2>오늘의 정리</h2><span class="mono small dim">미국 {{ meta.as_of_label }} 접수분까지</span></div>
+  <div class="tiles">
+    <div class="tile"><span class="small dim">새로</span><span class="mono big accent">+{{ brief.new|length }}</span><span class="small">{{ brief.new[0].name if brief.new else "없음" }}</span></div>
+    <div class="tile"><span class="small dim">빠짐</span><span class="mono big">−{{ brief.dropped|length }}</span><span class="small">{{ brief.dropped[0].name if brief.dropped else "없음" }}</span></div>
+    <div class="tile"><span class="small dim">최대 금액</span><span class="mono big">{{ brief.top.total_usd|krw_short(meta.fx_rate) if brief.top else "-" }}</span><span class="small">{{ brief.top.name if brief.top else "" }}</span></div>
+  </div>
+  {% for c in brief.new %}<p class="small">{{ c.name }} — 임원·이사 {{ c.people }}명 장내 매수 (거래 {{ c.first_date|md }}~{{ c.last_date|md }})</p>{% endfor %}
+  {% if meta.new_filings == 0 %}<p class="small dim">새로 들어온 신고가 없어요 (미국 주말·휴일).</p>{% endif %}
+</section>
+
+<p class="notice">특정 종목의 매수·매도를 권하지 않아요. 공시를 정해진 기준으로 자동 정리한 목록이에요. <a href="/criteria/">기준 보기</a></p>
+<div class="row-between small dim pad-x"><span>조건 충족 {{ results|length }}곳</span><span>사람 수 ↓ · 금액 ↓</span></div>
+
+<div class="card list">
+{% for c in results %}
+  <a class="item" href="/c/{{ c.slug }}/">
+    <span class="mono num">{{ "%02d"|format(loop.index) }}</span>
+    <span class="item-main">
+      <span class="name">{{ c.name }} <span class="mono small dim">{{ c.ticker }}</span></span>
+      <span class="small dim">{{ lines[c.issuer_cik] }}</span>
+      <span class="small">{% for t in c.tags %}{{ t }} · {% endfor %}매도 {{ c.sales }}건{% if c.issuer_cik in new_ciks %} · <b class="accent">새로 · 거래 {{ c.last_date|md }}</b>{% endif %}</span>
+    </span>
+    <span class="item-nums">
+      <span class="mono strong accent">{{ c.people }}명</span>
+      <span class="mono">{{ c.total_usd|krw_short(meta.fx_rate) }} 원</span>
+      <span class="mono small dim">{{ c.total_usd|usd }}</span>
+    </span>
+  </a>
+{% else %}
+  <p class="pad">오늘은 조건에 맞는 회사가 없어요.</p>
+{% endfor %}
+</div>
+{% endblock %}

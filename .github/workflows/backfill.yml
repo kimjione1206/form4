@@ -1,0 +1,47 @@
+name: backfill
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: "시작일 YYYY-MM-DD (비우면 60일 전)"
+        required: false
+      end:
+        description: "끝일 YYYY-MM-DD (비우면 미국 어제)"
+        required: false
+permissions:
+  contents: write
+concurrency:
+  group: data
+  cancel-in-progress: false
+defaults:
+  run:
+    shell: bash
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: astral-sh/setup-uv@v7
+      - run: uv sync --frozen
+      - name: backfill
+        run: |
+          args=""
+          [ -n "${{ inputs.start }}" ] && args="$args --start ${{ inputs.start }}"
+          [ -n "${{ inputs.end }}" ] && args="$args --end ${{ inputs.end }}"
+          uv run form4 backfill $args 2>&1 | tee run.log
+      - name: deploy
+        run: npx --yes wrangler@4 deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      - name: commit data
+        run: |
+          git config user.name "form4-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "data: backfill ${{ inputs.start }}~${{ inputs.end }}"
+          git pull --rebase
+          git push

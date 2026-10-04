@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}{{ c.name }} · 미국 임원 매수 정리{% endblock %}
+{% block body %}
+<header class="band">
+  <div class="band-top"><a class="back" href="/">← 오늘의 정리</a><span class="mono dim">최근 60일 · {{ meta.updated }}</span></div>
+  <h1>{{ c.name }} <span class="mono small dim">{{ c.ticker }}</span></h1>
+  <p class="sub">{{ line }}</p>
+</header>
+
+<section class="tiles pad-x">
+  <div class="tile card-lite"><span class="small dim">장내 매수</span><span class="mono big accent">{{ c.people }}명</span><span class="small dim">임원·이사</span></div>
+  <div class="tile card-lite"><span class="small dim">총액</span><span class="mono big">{{ c.total_usd|krw_short(meta.fx_rate) }}</span><span class="mono small dim">{{ c.total_usd|usd }}</span></div>
+  <div class="tile card-lite"><span class="small dim">같은 기간 매도</span><span class="mono big">{{ c.sales }}건</span><span class="small dim">장내 매도</span></div>
+</section>
+
+<section class="card">
+  <div class="row-between"><h2>요약</h2><span><span class="mono small accent" data-typing-status>자동 정리</span> <button type="button" class="replay" data-replay hidden><span>다시 보기</span></button></span></div>
+  <p class="summary" data-typing>{% for text, bold in summary %}{% if bold %}<strong>{{ text }}</strong>{% else %}{{ text }}{% endif %}{% endfor %}</p>
+</section>
+
+<section class="card">
+  <div class="row-between"><h2>거래 기록</h2><span class="small dim">최근 거래일 순</span></div>
+  <div class="trow thead small dim"><span>거래일</span><span>누가</span><span class="r">금액</span><span class="r">보유↑</span></div>
+  {% for r in c.rows %}
+  <div class="trow">
+    <span class="mono small">{{ r.date|md }}</span>
+    <span class="who"><b>{{ r.who }}</b>{% for t in r.tags %}<span class="chip">{{ t }}</span>{% endfor %}<a class="small" href="{{ r.url }}" target="_blank" rel="noopener">신고 {{ r.filed|md }} · 원문 ↗</a></span>
+    <span class="mono r">{{ r.value|usd }}</span>
+    <span class="mono r accent">{{ r.increase|increase }}</span>
+  </div>
+  {% endfor %}
+</section>
+
+{% if c.ten_pct_usd > 0 %}
+<p class="note"><strong>참고</strong> · 지분 10% 이상 대주주(펀드)도 같은 기간 {{ c.ten_pct_usd|usd }} 장내 매수했어요. 회사 안 사람의 판단과 성격이 달라서 위 인원·금액에는 넣지 않았어요.</p>
+{% endif %}
+
+<section class="card small">
+  <h2>용어 풀이</h2>
+  <p><b>장내 매수</b> 증권시장에서 직접 산 것 (회사가 보상으로 준 주식은 제외)</p>
+  <p><b>계획 매수</b> 몇 달 전에 미리 정해 둔 계획(10b5-1)대로 자동으로 산 것</p>
+  <p><b>간접</b> 본인 이름이 아닌 가족·신탁 명의로 산 것</p>
+  <p><b>증자 참여</b> 회사가 새로 찍은 주식을 공모·사모로 받은 것</p>
+  <p><b>보유↑</b> 원래 갖고 있던 주식 대비 이번에 늘어난 비율</p>
+  <p><b>거래일·신고일</b> 실제로 산 날과 공개 신고한 날 (이틀 안)</p>
+</section>
+
+<p class="notice">특정 종목의 매수·매도를 권하지 않아요 · 이름은 원문(↗)에서 확인하세요.</p>
+<script src="/typing.js" defer></script>
+{% endblock %}

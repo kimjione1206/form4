@@ -1,0 +1,7 @@
+.superpowers/
+.venv/
+__pycache__/
+dist/
+.pytest_cache/
+run.log
+docs/superpowers/

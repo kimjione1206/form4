@@ -1,0 +1,76 @@
+import re
+
+import pytest
+
+from form4.render import (find_forbidden, fmt_increase, fmt_krw, fmt_krw_short, fmt_usd,
+                          render_site, summary_segments)
+
+META = {"as_of_label": "10/2", "updated": "10/04 06:07", "fx_rate": 1400.0,
+        "fx_date": "2026-10-02", "new_filings": 1502}
+
+
+def result(**kw):
+    row = {"date": "2026-09-29", "filed": "2026-10-01", "who": "대표이사(CEO)", "value": 1_500_000.0,
+           "increase": 0.18, "tags": ["계획 매수"], "url": "https://www.sec.gov/x", "ceo": True}
+    c = {"issuer_cik": "900", "name": "EXAMPLE CORP", "ticker": "EXM", "slug": "EXM",
+         "people": 5, "total_usd": 2_400_000.0, "sales": 0, "ten_pct_usd": 5_000_000.0,
+         "first_date": "2026-09-12", "last_date": "2026-09-29", "tags": ["대표이사 포함"],
+         "officer_titles": [], "rows": [row], "top": row}
+    c.update(kw)
+    return c
+
+
+def test_formatters():
+    assert fmt_usd(2_400_000) == "$2.4M" and fmt_usd(310_000) == "$310K" and fmt_usd(9_500) == "$9,500"
+    assert fmt_krw(2_400_000, 1400) == "약 34억 원"
+    assert fmt_krw(310_000, 1400) == "약 4.3억 원"
+    assert fmt_krw(5_000, 1400) == "약 700만 원"
+    assert fmt_krw_short(2_400_000, 1400) == "34억"
+    assert fmt_increase(0.18) == "+18%" and fmt_increase("new") == "신규 보유" and fmt_increase(None) == "-"
+
+
+def test_summary_segments_text():
+    text = "".join(t for t, _ in summary_segments(result(), 1400))
+    assert text == ("최근 60일 동안 임원·이사 5명이 시장에서 직접 약 34억 원($2.4M)어치를 샀어요. "
+                    "가장 큰 매수는 대표이사(CEO)의 약 21억 원으로, 기존 보유 주식의 +18%를 늘린 거예요. "
+                    "같은 기간 매도 신고는 0건이에요.")
+
+
+def test_render_site_writes_pages(tmp_path):
+    c = result()
+    brief = {"count": 1, "new": [c], "dropped": [], "top": c}
+    companies = {"900": {"name": "EXAMPLE CORP", "sic_description": "Retail", "summary": "반도체 장비를 만드는 회사"}}
+    render_site([c], brief, META, companies, tmp_path)
+    home = (tmp_path / "index.html").read_text()
+    detail = (tmp_path / "c" / "EXM" / "index.html").read_text()
+    assert "특정 종목의 매수·매도를 권하지 않아요" in home
+    assert "반도체 장비를 만드는 회사" in home and "매도 0건" in home
+    assert "새로 · 거래 9/29" in home
+    assert "data-typing" in detail and "+18%" in detail and "대주주(펀드)" in detail
+    for f in ["criteria/index.html", "404.html", "style.css", "typing.js"]:
+        assert (tmp_path / f).exists()
+
+
+def test_render_rejects_forbidden_words(tmp_path):
+    c = result(name="ROCKET 급등 CORP")
+    with pytest.raises(ValueError, match="금지어"):
+        render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+
+
+def test_find_forbidden_ignores_markup():
+    assert find_forbidden('<p class="추천">x</p>') == []
+    assert find_forbidden("<p>추천 종목</p>") == ["추천"]
+
+
+def test_empty_day(tmp_path):
+    render_site([], {"count": 0, "new": [], "dropped": [], "top": None}, META, {}, tmp_path)
+    assert "조건에 맞는 회사가 없어요" in (tmp_path / "index.html").read_text()
+
+
+def test_touch_targets_44px(tmp_path):
+    render_site([], {"count": 0, "new": [], "dropped": [], "top": None}, META, {}, tmp_path)
+    css = (tmp_path / "style.css").read_text()
+    rules = re.findall(r"([^{}]+)\{([^}]*)\}", css)
+    covered = {s.strip() for sel, body in rules if "min-height: 44px" in body for s in sel.split(",")}
+    assert {".replay", ".who a", ".back", ".notice a", ".foot a"} <= covered
+    assert ".replay[hidden] { display: none; }" in css
