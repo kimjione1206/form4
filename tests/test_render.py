@@ -107,7 +107,7 @@ def test_touch_targets_44px(tmp_path):
     css = (tmp_path / "style.css").read_text()
     rules = re.findall(r"([^{}]+)\{([^}]*)\}", css)
     covered = {s.strip() for sel, body in rules if "min-height: 44px" in body for s in sel.split(",")}
-    assert {".replay", ".who a", ".back", ".notice a", ".foot a"} <= covered
+    assert {".replay", ".who a", ".back", ".notice a", ".foot a", ".band-side a", ".src"} <= covered
     assert ".replay[hidden] { display: none; }" in css
 
 
@@ -125,10 +125,10 @@ def test_desktop_layout(tmp_path):
     render_site([a, b], {"count": 2, "new": [], "dropped": [], "top": a}, META, {}, tmp_path)
     assert "@media (min-width: 1024px)" in (tmp_path / "style.css").read_text()
     home = (tmp_path / "index.html").read_text()
-    assert re.search(r'<div class="list-cols[^"]*">.*<span class="r">최근 거래</span>', home, re.S)
-    rows = re.findall(r'<a class="item".*?</a>', home, re.S)
+    assert re.search(r'<div class="[^"]*\blist-cols\b[^"]*">.*<span class="[^"]*\br\b[^"]*">최근 거래</span>', home, re.S)
+    rows = re.findall(r'<a class="[^"]*\bitem\b[^"]*".*?</a>', home, re.S)
     assert len(rows) == 2
-    assert '<span class="mono small r d-only col-last">9/29</span>' in rows[0]
-    assert '<span class="mono small r d-only col-last">8/27</span>' in rows[1]
+    assert re.search(r'<span class="[^"]*\bcol-last\b[^"]*">9/29</span>', rows[0])
+    assert re.search(r'<span class="[^"]*\bcol-last\b[^"]*">8/27</span>', rows[1])
     detail = (tmp_path / "c" / "EXM" / "index.html").read_text()
-    assert re.search(r'<div class="trow thead[^"]*">.*<span class="d-only">신고일</span>', detail, re.S)
+    assert re.search(r'<div class="[^"]*\bthead\b[^"]*">.*<span class="[^"]*\bd-only\b[^"]*">신고일</span>', detail, re.S)

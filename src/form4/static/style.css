@@ -57,7 +57,7 @@ a { color: var(--accent); } a:hover { color: #142660; }
   .band-home .band-in { flex-direction: row; justify-content: space-between; align-items: flex-end; gap: 40px; }
   .band-main { display: flex; flex-direction: column; gap: 6px; max-width: 760px; }
   .band-side { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; flex: none; }
-  .band-side a { color: #CBD3E0; }
+  .band-side a { color: #CBD3E0; display: inline-flex; align-items: center; min-height: 44px; margin: -13px 0; }
   .card, .notice, .note { margin: 0; }
   .card { padding: 16px 18px; }
   .pad-x { padding: 0; }
