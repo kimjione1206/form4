@@ -15,19 +15,9 @@
     "ticker": "SPG"
   },
   {
-    "issuer_cik": "2095486",
-    "name": "Blackstone Multi-Strategy Hedge Fund L.P.",
-    "ticker": "NONE"
-  },
-  {
     "issuer_cik": "1041934",
     "name": "EDAP TMS SA",
     "ticker": "EDAP"
-  },
-  {
-    "issuer_cik": "2131524",
-    "name": "Braveheart Bio, Inc.",
-    "ticker": "BRVE"
   },
   {
     "issuer_cik": "2079999",
@@ -40,11 +30,6 @@
     "ticker": "DKS"
   },
   {
-    "issuer_cik": "1386716",
-    "name": "Star Bulk Carriers Corp.",
-    "ticker": "SBLK"
-  },
-  {
     "issuer_cik": "39368",
     "name": "FULLER H B CO",
     "ticker": "FUL"
@@ -53,6 +38,16 @@
     "issuer_cik": "1627223",
     "name": "Chemours Co",
     "ticker": "CC"
+  },
+  {
+    "issuer_cik": "2131524",
+    "name": "Braveheart Bio, Inc.",
+    "ticker": "BRVE"
+  },
+  {
+    "issuer_cik": "1386716",
+    "name": "Star Bulk Carriers Corp.",
+    "ticker": "SBLK"
   },
   {
     "issuer_cik": "1791145",
@@ -73,21 +68,6 @@
     "issuer_cik": "1326380",
     "name": "GameStop Corp.",
     "ticker": "GME"
-  },
-  {
-    "issuer_cik": "1925309",
-    "name": "Sixth Street Lending Partners",
-    "ticker": "NONE"
-  },
-  {
-    "issuer_cik": "2123955",
-    "name": "Pinnacle Acquisition Corp",
-    "ticker": "PNAQ"
-  },
-  {
-    "issuer_cik": "1839970",
-    "name": "BlossomHill Therapeutics, Inc.",
-    "ticker": "BLSM"
   },
   {
     "issuer_cik": "1739104",
@@ -115,11 +95,6 @@
     "ticker": "PRHI"
   },
   {
-    "issuer_cik": "73290",
-    "name": "BIOMERICA INC",
-    "ticker": "BMRA"
-  },
-  {
     "issuer_cik": "1339005",
     "name": "FEMASYS INC",
     "ticker": "FEMY"
@@ -128,11 +103,6 @@
     "issuer_cik": "1635077",
     "name": "Aclarion, Inc.",
     "ticker": "ACON"
-  },
-  {
-    "issuer_cik": "2089975",
-    "name": "HPS Real Assets Lending Co LP",
-    "ticker": "NONE"
   },
   {
     "issuer_cik": "1833141",
@@ -155,14 +125,14 @@
     "ticker": "GREE"
   },
   {
+    "issuer_cik": "1839970",
+    "name": "BlossomHill Therapeutics, Inc.",
+    "ticker": "BLSM"
+  },
+  {
     "issuer_cik": "1533615",
     "name": "Chiron Real Estate Inc.",
     "ticker": "XRN"
-  },
-  {
-    "issuer_cik": "1930054",
-    "name": "Blackstone Private Equity Strategies Fund L.P.",
-    "ticker": "NONE"
   },
   {
     "issuer_cik": "1488139",
@@ -205,11 +175,6 @@
     "ticker": "GAM"
   },
   {
-    "issuer_cik": "1671502",
-    "name": "Quoin Pharmaceuticals, Ltd.",
-    "ticker": "QNRX"
-  },
-  {
     "issuer_cik": "715446",
     "name": "Anixa Biosciences Inc",
     "ticker": "ANIX"
@@ -235,11 +200,6 @@
     "ticker": "EML"
   },
   {
-    "issuer_cik": "1802369",
-    "name": "ADARx Pharmaceuticals, Inc.",
-    "ticker": "ADRX"
-  },
-  {
     "issuer_cik": "1469395",
     "name": "Pampa Energy Inc.",
     "ticker": "PAM"
@@ -260,11 +220,6 @@
     "ticker": "BPRE"
   },
   {
-    "issuer_cik": "1944885",
-    "name": "Apollomics Inc.",
-    "ticker": "APLM"
-  },
-  {
     "issuer_cik": "1865200",
     "name": "Angel Studios, Inc.",
     "ticker": "ANGX"
@@ -278,11 +233,6 @@
     "issuer_cik": "917251",
     "name": "AGREE REALTY CORP",
     "ticker": "ADC"
-  },
-  {
-    "issuer_cik": "1577445",
-    "name": "Odysight.ai Inc.",
-    "ticker": "ODYS"
   },
   {
     "issuer_cik": "78003",
@@ -478,11 +428,6 @@
     "issuer_cik": "1547546",
     "name": "Lument Finance Trust, Inc.",
     "ticker": "LFT"
-  },
-  {
-    "issuer_cik": "714395",
-    "name": "GERMAN AMERICAN BANCORP, INC.",
-    "ticker": "GABC"
   },
   {
     "issuer_cik": "88000",

@@ -16,19 +16,9 @@
       "sic_description": "Real Estate Investment Trusts"
     },
     {
-      "cik": "2095486",
-      "name": "Blackstone Multi-Strategy Hedge Fund L.P.",
-      "sic_description": "Investment Advice"
-    },
-    {
       "cik": "1041934",
       "name": "EDAP TMS SA",
       "sic_description": "Electromedical & Electrotherapeutic Apparatus"
-    },
-    {
-      "cik": "2131524",
-      "name": "Braveheart Bio, Inc.",
-      "sic_description": "Pharmaceutical Preparations"
     },
     {
       "cik": "2079999",
@@ -41,11 +31,6 @@
       "sic_description": "Retail-Miscellaneous Shopping Goods Stores"
     },
     {
-      "cik": "1386716",
-      "name": "Star Bulk Carriers Corp.",
-      "sic_description": "Deep Sea Foreign Transportation of  Freight"
-    },
-    {
       "cik": "39368",
       "name": "FULLER H B CO",
       "sic_description": "Adhesives & Sealants"
@@ -54,6 +39,16 @@
       "cik": "1627223",
       "name": "Chemours Co",
       "sic_description": "Chemicals & Allied Products"
+    },
+    {
+      "cik": "2131524",
+      "name": "Braveheart Bio, Inc.",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "1386716",
+      "name": "Star Bulk Carriers Corp.",
+      "sic_description": "Deep Sea Foreign Transportation of  Freight"
     },
     {
       "cik": "1791145",
@@ -74,21 +69,6 @@
       "cik": "1326380",
       "name": "GameStop Corp.",
       "sic_description": "Retail-Computer & Computer Software Stores"
-    },
-    {
-      "cik": "1925309",
-      "name": "Sixth Street Lending Partners",
-      "sic_description": ""
-    },
-    {
-      "cik": "2123955",
-      "name": "Pinnacle Acquisition Corp",
-      "sic_description": "Blank Checks"
-    },
-    {
-      "cik": "1839970",
-      "name": "BlossomHill Therapeutics, Inc.",
-      "sic_description": "Pharmaceutical Preparations"
     },
     {
       "cik": "1739104",
@@ -116,11 +96,6 @@
       "sic_description": "Fire, Marine & Casualty Insurance"
     },
     {
-      "cik": "73290",
-      "name": "BIOMERICA INC",
-      "sic_description": "In Vitro & In Vivo Diagnostic Substances"
-    },
-    {
       "cik": "1339005",
       "name": "FEMASYS INC",
       "sic_description": "Surgical & Medical Instruments & Apparatus"
@@ -129,11 +104,6 @@
       "cik": "1635077",
       "name": "Aclarion, Inc.",
       "sic_description": "Services-Medical Laboratories"
-    },
-    {
-      "cik": "2089975",
-      "name": "HPS Real Assets Lending Co LP",
-      "sic_description": "Real Estate"
     },
     {
       "cik": "1833141",
@@ -156,14 +126,14 @@
       "sic_description": "Finance Services"
     },
     {
+      "cik": "1839970",
+      "name": "BlossomHill Therapeutics, Inc.",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
       "cik": "1533615",
       "name": "Chiron Real Estate Inc.",
       "sic_description": "Real Estate Investment Trusts"
-    },
-    {
-      "cik": "1930054",
-      "name": "Blackstone Private Equity Strategies Fund L.P.",
-      "sic_description": ""
     },
     {
       "cik": "1488139",
@@ -206,11 +176,6 @@
       "sic_description": ""
     },
     {
-      "cik": "1671502",
-      "name": "Quoin Pharmaceuticals, Ltd.",
-      "sic_description": "Pharmaceutical Preparations"
-    },
-    {
       "cik": "715446",
       "name": "Anixa Biosciences Inc",
       "sic_description": "Pharmaceutical Preparations"
@@ -236,11 +201,6 @@
       "sic_description": "Cutlery, Handtools & General Hardware"
     },
     {
-      "cik": "1802369",
-      "name": "ADARx Pharmaceuticals, Inc.",
-      "sic_description": "Pharmaceutical Preparations"
-    },
-    {
       "cik": "1469395",
       "name": "Pampa Energy Inc.",
       "sic_description": "Electric Services"
@@ -261,11 +221,6 @@
       "sic_description": ""
     },
     {
-      "cik": "1944885",
-      "name": "Apollomics Inc.",
-      "sic_description": "Pharmaceutical Preparations"
-    },
-    {
       "cik": "1865200",
       "name": "Angel Studios, Inc.",
       "sic_description": "Services-Motion Picture & Video Tape Production"
@@ -279,11 +234,6 @@
       "cik": "917251",
       "name": "AGREE REALTY CORP",
       "sic_description": "Real Estate Investment Trusts"
-    },
-    {
-      "cik": "1577445",
-      "name": "Odysight.ai Inc.",
-      "sic_description": "Services-Computer Integrated Systems Design"
     },
     {
       "cik": "78003",
@@ -481,11 +431,6 @@
       "sic_description": "Real Estate Investment Trusts"
     },
     {
-      "cik": "714395",
-      "name": "GERMAN AMERICAN BANCORP, INC.",
-      "sic_description": "State Commercial Banks"
-    },
-    {
       "cik": "88000",
       "name": "Horizon Kinetics Holding Corp",
       "sic_description": "Investment Advice"
@@ -542,10 +487,8 @@
     "Chairman & CEO",
     "Chairman and CEO",
     "Chairman, Pres. & CEO",
-    "Chairperson",
     "Chief Actuary",
     "Chief Clinical-Medical Affairs",
-    "Chief Compliance Officer",
     "Chief Content Officer",
     "Chief Development Officer",
     "Chief Growth Officer",
@@ -571,7 +514,6 @@
     "EXECUTIVE CHAIRMAN & CEO",
     "Executive Chair",
     "Executive Officer",
-    "Executive Vice Chairman",
     "Executive Vice President, DKL",
     "GC AND CORP SEC",
     "General Counsel & Corp Sec",
