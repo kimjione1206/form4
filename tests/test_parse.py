@@ -129,3 +129,10 @@ def test_only_transaction_footnotes_mark_drip_and_offering():
     on_price = form4_xml(txs=[{**tx, "price_footnotes": ["F1", "F2"]}], footnotes=notes)
     r = parse_form4(on_price, "a", FILED)[0]
     assert r["drip"] is True and r["offering"] is True
+
+
+def test_offering_footnote_on_security_title_counts():
+    # 실제 사례(EDAP): "공모로 산 주식"이라는 각주가 증권 종류 칸에 붙어 있다
+    tx = {"code": "P", "date": "2026-08-14", "shares": 1, "price": 1, "after": 2, "title_footnotes": ["F2"]}
+    xml = form4_xml(txs=[tx], footnotes={"F2": "ordinary shares purchased in connection with an underwritten public offering"})
+    assert parse_form4(xml, "a", FILED)[0]["offering"] is True

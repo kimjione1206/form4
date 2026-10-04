@@ -24,13 +24,14 @@ def form4_xml(issuer_cik="1000697", ticker="WAT", owners=None, txs=None, plan=Fa
         fn = "".join(f'<footnoteId id="{f}"/>' for f in t.get("footnotes", []))
         price_fn = "".join(f'<footnoteId id="{f}"/>' for f in t.get("price_footnotes", []))
         after_fn = "".join(f'<footnoteId id="{f}"/>' for f in t.get("after_footnotes", []))
+        title_fn = "".join(f'<footnoteId id="{f}"/>' for f in t.get("title_footnotes", []))
         after = (
             f"<postTransactionAmounts><sharesOwnedFollowingTransaction><value>{t['after']}</value>"
             f"{after_fn}</sharesOwnedFollowingTransaction></postTransactionAmounts>"
             if t.get("after") is not None else ""
         )
         tx_xml += (
-            "<nonDerivativeTransaction><securityTitle><value>Common Stock</value></securityTitle>"
+            f"<nonDerivativeTransaction><securityTitle><value>Common Stock</value>{title_fn}</securityTitle>"
             f"<transactionDate><value>{t['date']}</value></transactionDate>"
             f"<transactionCoding><transactionFormType>4</transactionFormType>"
             f"<transactionCode>{t['code']}</transactionCode></transactionCoding>"
