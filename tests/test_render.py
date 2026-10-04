@@ -307,7 +307,12 @@ def test_home_explanations(tmp_path):
     render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
     home = (tmp_path / "index.html").read_text()
     text = plain(home)
-    assert "(합법)" not in home and "공개 신고해야 해요(신고 의무가 있는 공개 정보예요)." in text
+    assert "(합법)" not in home
+    assert ('<p class="intro">임원의 자기 회사 주식 거래는 합법이에요. 사고팔면 이틀 안에 미국 증권거래위원회(SEC)에 '
+            '공개 신고해야 하고, 그 신고를 정리해요.</p>') in home
+    css = (tmp_path / "style.css").read_text()
+    assert ".band .intro { margin: 6px 0 0; font-size: 15px;" in css  # 본문과 같은 크기(작은 글씨 아님)
+    assert ".band .sub, .band .intro" not in css
     assert "새로 = 오늘 목록에 처음 오른 회사 · 빠짐 = 기간(60일)이 지나 목록에서 빠진 회사" in text
     assert "조건 충족 = 최근 60일 임원·이사 3명 이상이 각자 1만 달러 이상 장내 매수" in text
     details = re.search(r"<details[^>]*>\s*<summary[^>]*>매도는 왜 일어나요\?</summary>(.*?)</details>", home, re.S)
@@ -369,7 +374,7 @@ def head_meta(html):
 def test_share_meta_tags(tmp_path):
     c = result()
     render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
-    default = "미국 SEC 내부자 거래 공시(Form 4)를 매일 아침 한국어로 정리해요. 무료, 광고 없음, 투자 권유 아님."
+    default = "미국 상장사 임원의 자기 회사 주식 거래(합법·공개 신고)를 매일 아침 한국어로 정리해요. 무료, 광고 없음, 투자 권유 아님."
     title, props, canonical = head_meta((tmp_path / "index.html").read_text())
     assert title == "미국 임원 매수 정리 · 내부자 거래 공시(Form 4) 한국어 정리"
     assert canonical == SITE + "/"
@@ -450,7 +455,7 @@ def test_privacy_page_and_footer_link(tmp_path):
         assert s in text, s
     for f in ["index.html", "c/EXM/index.html", "criteria/index.html", "privacy/index.html", "404.html"]:
         foot = re.search(r'<footer class="foot">.*?</footer>', (tmp_path / f).read_text(), re.S).group(0)
-        assert '<a href="/privacy/">개인정보 안내</a>' in foot, f
+        assert '<a href="/privacy/">개인정보 안내</a> · <a href="/criteria/#about">만든 사람·기준</a>' in foot, f
 
 
 BEACON = '<script defer src="https://static.cloudflareinsights.com/beacon.min.js"'
@@ -567,3 +572,18 @@ def test_summary_planned_sale_share():
     assert text([plan(20_000.0)], 20_000.0).endswith("매도 금액 중 약 100%는 미리 정한 계획(10b5-1)에 따른 매도예요.")
     assert text([other(20_000.0)], 20_000.0).endswith("장내 매도했어요. 미리 정한 계획(10b5-1) 매도 표시는 없어요.")
     assert text([], 0.0).endswith("같은 기간 장내 매도 신고는 없어요.")
+
+
+def test_criteria_window_reason_and_about(tmp_path):
+    render_site([], {"count": 0, "new": [], "dropped": [], "top": None}, META, {}, tmp_path)
+    page = (tmp_path / "criteria" / "index.html").read_text()
+    text = plain(page)
+    assert "3. 최근 60일(거래한 날짜 기준, 달력 날짜) 동안 1인 합계 10,000달러 미만은 세지 않습니다." in text
+    assert "(거래일 기준)" not in text
+    assert ("왜 이 기준인가요? 한 사람의 매수는 개인 사정일 수 있어서, 같은 회사에서 여러 임원·이사가 비슷한 시기에 "
+            "시장에서 산 경우만 모았어요. 1만 달러 미만의 소액은 뺐어요. 이 기준은 주가를 예측하지 않아요.") in text
+    about = re.search(r'<section class="card" id="about">(.*?)</section>', page, re.S).group(1)
+    assert plain(about).strip() == (
+        "만든 사람 개인이 만들어 운영해요. 광고·후원·유료 기능이 없고, 운영자는 이 사이트로 수익을 받지 않아요. "
+        "운영자는 목록·검색 결과의 종목을 따로 사고팔지 않아요. 문의: form4@jmheo.com")
+    assert "자기 돈" not in page

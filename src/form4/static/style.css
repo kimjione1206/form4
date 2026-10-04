@@ -8,8 +8,8 @@ a { color: var(--accent); } a:hover { color: #142660; }
 .big { font-size: 20px; font-weight: 600; } .r { text-align: right; }
 .band { background: var(--ink); color: #F3F5F8; padding: 20px; display: flex; flex-direction: column; gap: 4px; }
 .band h1 { margin: 4px 0 0; font-size: 24px; letter-spacing: -0.02em; }
-.band .dim, .band .sub { color: #A9B4C6; } .band .sub { margin: 0; font-size: 13px; }
-.band .intro { margin: 6px 0 0; font-size: 13px; color: #CBD3E0; }
+.band .dim, .band .sub { color: #A9B4C6; } .band .sub { margin: 0; font-size: 14px; }
+.band .intro { margin: 6px 0 0; font-size: 15px; color: #CBD3E0; }
 .band-top { display: flex; justify-content: space-between; align-items: center; font-size: 12px; }
 .back { color: #CBD3E0; text-decoration: none; }
 .copy { align-self: flex-start; min-height: 44px; margin-top: 6px; padding: 0 14px; font: inherit; font-size: 13px; color: #CBD3E0; background: none; border: 1px solid #4B5563; border-radius: 6px; cursor: pointer; }
@@ -73,7 +73,6 @@ a { color: var(--accent); } a:hover { color: #142660; }
   .band-in { display: flex; flex-direction: column; gap: 6px; }
   .band h1 { font-size: 32px; } .band-home h1 { font-size: 34px; }
   .band h1 .small { font-size: 15px; }
-  .band .sub, .band .intro { font-size: 14px; }
   .band-home .band-in { flex-direction: row; justify-content: space-between; align-items: flex-end; gap: 40px; }
   .band-main { display: flex; flex-direction: column; gap: 6px; max-width: 760px; }
   .band-side { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; flex: none; }
