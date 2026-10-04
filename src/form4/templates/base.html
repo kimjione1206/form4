@@ -4,7 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% block title %}미국 임원 매수 정리{% endblock %}</title>
-<meta name="description" content="미국 SEC 내부자 거래 공시(Form 4)를 매일 아침 한국어로 정리합니다.">
+<meta name="description" content="{% block description %}미국 SEC 내부자 거래 공시(Form 4)를 매일 아침 한국어로 정리해요. 무료, 광고 없음, 투자 권유 아님.{% endblock %}">
+{% if path %}<link rel="canonical" href="{{ site }}{{ path }}">
+<meta property="og:url" content="{{ site }}{{ path }}">
+{% endif %}<meta property="og:type" content="website">
+<meta property="og:site_name" content="미국 임원 매수 정리">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.description() }}">
+<meta property="og:image" content="{{ site }}/og.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -13,7 +22,8 @@
 <body>
 <div class="page">
 {% block body %}{% endblock %}
-<footer class="foot">출처: SEC EDGAR · 원화는 {{ meta.fx_date }} 기준 환율(1달러 {{ meta.fx_rate|round|int }}원) 대략값 · 운영자는 금융투자업자가 아니며 수익을 받지 않아요 · 운영자는 목록·검색 결과의 종목을 따로 사고팔지 않아요 · <a href="/criteria/">기준 보기</a> · 문의·삭제 요청 <a href="mailto:form4@jmheo.com">form4@jmheo.com</a></footer>
+<footer class="foot">출처: SEC EDGAR · 원화는 {{ meta.fx_date }} 기준 환율(1달러 {{ meta.fx_rate|round|int }}원) 대략값 · 운영자는 금융투자업자가 아니며 수익을 받지 않아요 · 운영자는 목록·검색 결과의 종목을 따로 사고팔지 않아요 · <a href="/criteria/">기준 보기</a> · <a href="/privacy/">개인정보 안내</a> · 문의·삭제 요청 <a href="mailto:form4@jmheo.com">form4@jmheo.com</a></footer>
 </div>
-</body>
+{% if meta.beacon_token %}<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ meta.beacon_token }}"}'></script>
+{% endif %}</body>
 </html>

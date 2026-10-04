@@ -130,6 +130,11 @@ def test_check_tables_exit_code(tmp_path, monkeypatch):
     assert cli.main(["check-tables"]) == 0
     (data / "titles.json").write_text('{"X": "추천 부사장"}')
     assert cli.main(["check-tables"]) == 1
+    (data / "titles.json").write_text("{}")
+    (data / "korean_names.json").write_text('{"NVDA": "엔비디아"}')
+    assert cli.main(["check-tables"]) == 0
+    (data / "korean_names.json").write_text('{"NVDA": "엔비디아 3"}')
+    assert cli.main(["check-tables"]) == 1
 
 
 class FlakySec(FakeSec):
@@ -189,3 +194,26 @@ def test_pages_for_companies_outside_the_list_without_extra_sec_requests(tmp_pat
     assert not any("CIK0000000901" in u for u in sec.calls)  # 목록 밖 회사는 SEC 회사 정보를 받지 않음
     assert "901" not in json.loads((data / "companies.json").read_text())
     assert [p["ticker"] for p in json.loads((data / "ranking_prev.json").read_text())] == ["EXM"]
+
+
+def test_daily_uses_korean_names_beacon_token_and_as_of(tmp_path, monkeypatch):
+    data, dist = tmp_path / "data", tmp_path / "dist"
+    seed(data)
+    (data / "korean_names.json").write_text('{"EXM": "예시전자"}')
+    monkeypatch.setenv("FORM4_BEACON_TOKEN", "tok123")
+    cli.run([date(2026, 10, 2)], date(2026, 10, 2), NOW, FakeSec(site_pages()), fx(), data, dist, log=lambda m: None)
+    detail = (dist / "c" / "EXM" / "index.html").read_text()
+    assert "<title>예시전자(EXM) 임원 매수·매도 기록" in detail
+    assert """data-cf-beacon='{"token": "tok123"}'""" in detail
+    assert "<lastmod>2026-10-02</lastmod>" in (dist / "sitemap.xml").read_text()
+    assert json.loads((data / "todo.json").read_text())["names"] == []
+    assert json.loads((data / "korean_names.json").read_text()) == {"EXM": "예시전자"}  # 읽기만 한다
+
+
+def test_daily_without_beacon_token(tmp_path, monkeypatch):
+    data, dist = tmp_path / "data", tmp_path / "dist"
+    seed(data)
+    monkeypatch.delenv("FORM4_BEACON_TOKEN", raising=False)
+    cli.run([date(2026, 10, 2)], date(2026, 10, 2), NOW, FakeSec(site_pages()), fx(), data, dist, log=lambda m: None)
+    assert "cloudflareinsights" not in (dist / "index.html").read_text()
+    assert json.loads((data / "todo.json").read_text())["names"] == [{"t": "EXM", "n": "EXAMPLE CORP"}]

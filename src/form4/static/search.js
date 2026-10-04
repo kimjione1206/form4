@@ -15,7 +15,9 @@
   function find(entries, q) {
     var hits = entries.filter(function (e) { return e.t.toUpperCase() === q; });
     if (hits.length) return hits;
-    return entries.filter(function (e) { return e.n.toUpperCase().indexOf(q) !== -1; });
+    return entries.filter(function (e) {
+      return e.n.toUpperCase().indexOf(q) !== -1 || e.k.toUpperCase().indexOf(q) !== -1;
+    });
   }
   function message(out, text) {
     var p = document.createElement("p");
@@ -41,7 +43,7 @@
         hits.slice(0, 10).forEach(function (e) {
           var a = document.createElement("a");
           a.href = "/c/" + e.s + "/";
-          a.textContent = e.n + " ";
+          a.textContent = (e.k ? e.k + " " : "") + e.n + " ";
           var t = document.createElement("span");
           t.className = "mono small dim";
           t.textContent = e.t + (e.q ? " · 조건 충족" : "");

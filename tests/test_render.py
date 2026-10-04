@@ -4,10 +4,10 @@ import re
 import pytest
 
 from form4.render import (find_forbidden, fmt_decrease, fmt_increase, fmt_krw, fmt_krw_short,
-                          fmt_usd, render_site, summary_segments)
+                          fmt_usd, page_description, render_site, summary_segments)
 
-META = {"as_of_label": "10/2", "updated": "10/04 06:07", "fx_rate": 1400.0,
-        "fx_date": "2026-10-02", "new_filings": 1502}
+META = {"as_of_label": "10/2", "as_of": "2026-10-02", "updated": "10/04 06:07", "fx_rate": 1400.0,
+        "fx_date": "2026-10-02", "new_filings": 1502, "beacon_token": ""}
 
 
 def result(**kw):
@@ -116,7 +116,7 @@ def test_touch_targets_44px(tmp_path):
     rules = re.findall(r"([^{}]+)\{([^}]*)\}", css)
     covered = {s.strip() for sel, body in rules if "min-height: 44px" in body for s in sel.split(",")}
     assert {".replay", ".who a", ".back", ".notice a", ".foot a", ".band-side a", ".src",
-            ".search button", ".explain summary"} <= covered
+            ".search button", ".explain summary", ".copy"} <= covered
     assert ".replay[hidden] { display: none; }" in css
 
 
@@ -176,7 +176,7 @@ def test_detail_sell_tile_and_table(tmp_path):
     text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", detail))
     assert "같은 기간 매도 2명 약 2,800만 원" in text
     assert "같은 기간 임원·이사 2명이 약 2,800만 원어치를 장내 매도했어요." in text
-    sells = detail[detail.index("매도 기록"):detail.index("용어 풀이")]
+    sells = detail[detail.index("<h2>매도 기록"):detail.index("용어 풀이")]
     assert "매도는 세금 납부·생활 자금·미리 정한 계획 등 여러 이유로 일어나며, 주가 하락을 뜻하지 않아요." in sells
     assert re.search(r'<div class="[^"]*\bthead\b[^"]*">.*<span class="[^"]*\bd-only\b[^"]*">신고일</span>.*보유↓', sells, re.S)
     assert "9/25" in sells and "$20K" in sells and "−8%" in sells
@@ -185,14 +185,14 @@ def test_detail_sell_tile_and_table(tmp_path):
     assert re.search(r'<a class="src d-only" href="https://www.sec.gov/sell1"', sells)
     assert "계획 매도 · 옵션 행사 후 매도" in sells
     assert "장내 매도 신고는 없어요" not in sells
-    assert detail.index("거래 기록") < detail.index("매도 기록") < detail.index("용어 풀이")
+    assert detail.index("<h2>거래 기록") < detail.index("<h2>매도 기록") < detail.index("용어 풀이")
 
 
 def test_detail_without_sales(tmp_path):
     c = result()
     render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
     detail = (tmp_path / "c" / "EXM" / "index.html").read_text()
-    sells = detail[detail.index("매도 기록"):detail.index("용어 풀이")]
+    sells = detail[detail.index("<h2>매도 기록"):detail.index("용어 풀이")]
     assert "같은 기간 임원·이사의 장내 매도 신고는 없어요." in sells and "trow" not in sells
     text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", detail))
     assert "같은 기간 매도 0명 없음" in text
@@ -234,9 +234,9 @@ def test_pages_for_companies_outside_the_list(tmp_path):
     assert ("최근 60일 동안 임원·이사의 장내 매수 신고는 없어요. "
             "같은 기간 임원·이사 2명이 약 2,800만 원어치를 장내 매도했어요.") in text
     assert "장내 매수 0명" in text
-    buys = page[page.index("거래 기록"):page.index("매도 기록")]
+    buys = page[page.index("<h2>거래 기록"):page.index("<h2>매도 기록")]
     assert "trow" not in buys and "장내 매수 신고는 없어요" in buys
-    assert "$20K" in page[page.index("매도 기록"):]
+    assert "$20K" in page[page.index("<h2>매도 기록"):]
 
 
 def test_forbidden_word_checked_on_pages_outside_the_list(tmp_path):
@@ -250,8 +250,8 @@ def test_search_index_and_forms(tmp_path):
           result(issuer_cik="901", name="Apple Inc.", ticker="AAPL", slug="AAPL", qualified=False)]
     render_site(ps, {"count": 1, "new": [], "dropped": [], "top": None}, META, {}, tmp_path)
     assert json.loads((tmp_path / "search.json").read_text()) == [
-        {"t": "AAPL", "n": "Apple Inc.", "s": "AAPL", "q": False},
-        {"t": "ZZZ", "n": "EXAMPLE CORP", "s": "ZZZ", "q": True}]
+        {"t": "AAPL", "n": "Apple Inc.", "k": "", "s": "AAPL", "q": False},
+        {"t": "ZZZ", "n": "EXAMPLE CORP", "k": "", "s": "ZZZ", "q": True}]
     assert (tmp_path / "search.js").exists()
     for f in ["index.html", "404.html"]:
         page = (tmp_path / f).read_text()
@@ -285,3 +285,151 @@ def test_home_explanations(tmp_path):
                         "하락을 뜻하지 않아요. 반대로 매수는 이유가 비교적 단순해서 이 사이트는 매수를 중심으로 정리해요.") \
         in plain(details.group(1))
     assert home.index('class="notice"') < home.index("<details")
+
+
+def test_krw_jo_unit():
+    assert fmt_krw_short(1_304_600_000_000, 1) == "1.3조"   # 13046억
+    assert fmt_krw_short(999_950_000_000, 1) == "1조"       # 9999.5억 → 반올림하면 1조
+    assert fmt_krw_short(2_000_000_000_000, 1) == "2조"
+    assert fmt_krw_short(13_046_000_000_000, 1) == "13조"
+    assert fmt_krw_short(999_900_000_000, 1) == "9999억"
+    assert fmt_krw(1_304_600_000_000, 1) == "약 1.3조 원"
+    assert fmt_krw_short(2_400_000, 1400) == "34억" and fmt_krw_short(71_425, 1400) == "1억"
+
+
+NVDA = dict(issuer_cik="1045810", name="NVIDIA CORP", ticker="NVDA", slug="NVDA")
+
+
+def test_korean_name_shown_first(tmp_path):
+    c = result(**NVDA)
+    other = result(issuer_cik="901", name="OTHER CO", ticker="OTH", slug="OTH")
+    names = {"NVDA": "엔비디아", "OTH": "추천 회사"}  # 금지어가 든 이름은 쓰지 않는다
+    render_site([c, other], {"count": 2, "new": [], "dropped": [], "top": c}, META, {}, tmp_path, names)
+    detail = (tmp_path / "c" / "NVDA" / "index.html").read_text()
+    assert "<title>엔비디아(NVDA) 임원 매수·매도 기록 · 미국 임원 매수 정리</title>" in detail
+    h1 = re.search(r"<h1>(.*?)</h1>", detail, re.S).group(1)
+    assert h1.startswith("엔비디아 <span") and plain(h1).split() == ["엔비디아", "NVIDIA", "CORP", "·", "NVDA"]
+    home = (tmp_path / "index.html").read_text()
+    rows = re.findall(r'<a class="[^"]*\bitem\b[^"]*".*?</a>', home, re.S)
+    name0 = re.search(r'<span class="name">(.*?)</span>\s*<span class="small dim">', rows[0], re.S).group(1)
+    assert name0.startswith("엔비디아 <span") and "NVIDIA CORP" in name0
+    name1 = re.search(r'<span class="name">(.*?)</span>\s*<span class="small dim">', rows[1], re.S).group(1)
+    assert name1.startswith("OTHER CO <span") and "추천" not in home
+    other_page = (tmp_path / "c" / "OTH" / "index.html").read_text()
+    assert "<title>OTHER CO(OTH) 임원 매수·매도 기록 · 미국 임원 매수 정리</title>" in other_page
+    assert "<h1>OTHER CO <span" in other_page
+    index = {e["t"]: e for e in json.loads((tmp_path / "search.json").read_text())}
+    assert index["NVDA"]["k"] == "엔비디아" and index["OTH"]["k"] == ""
+    js = (tmp_path / "search.js").read_text()
+    assert "e.k" in js
+
+
+SITE = "https://form4.jmheo.com"
+
+
+def head_meta(html):
+    head = html[:html.index("</head>")]
+    props = dict(re.findall(r'<meta (?:property|name)="([^"]+)" content="([^"]*)">', head))
+    canonical = re.search(r'<link rel="canonical" href="([^"]+)">', head)
+    title = re.search(r"<title>(.*?)</title>", head).group(1)
+    return title, props, canonical.group(1) if canonical else None
+
+
+def test_share_meta_tags(tmp_path):
+    c = result()
+    render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+    default = "미국 SEC 내부자 거래 공시(Form 4)를 매일 아침 한국어로 정리해요. 무료, 광고 없음, 투자 권유 아님."
+    title, props, canonical = head_meta((tmp_path / "index.html").read_text())
+    assert title == "미국 임원 매수 정리 · 내부자 거래 공시(Form 4) 한국어 정리"
+    assert canonical == SITE + "/"
+    assert props["description"] == default and props["og:description"] == default
+    assert props["og:title"] == title and props["og:url"] == SITE + "/"
+    assert props["og:type"] == "website" and props["og:site_name"] == "미국 임원 매수 정리"
+    assert props["og:image"] == SITE + "/og.png" and props["og:locale"] == "ko_KR"
+    assert props["twitter:card"] == "summary_large_image"
+
+    title, props, canonical = head_meta((tmp_path / "c" / "EXM" / "index.html").read_text())
+    summary = "".join(t for t, _ in summary_segments(c, META["fx_rate"]))
+    assert canonical == SITE + "/c/EXM/" and props["og:url"] == canonical
+    assert props["description"] == summary and props["og:description"] == summary
+    assert props["og:title"] == title == "EXAMPLE CORP(EXM) 임원 매수·매도 기록 · 미국 임원 매수 정리"
+
+    for f, path in [("criteria/index.html", "/criteria/"), ("privacy/index.html", "/privacy/")]:
+        title, props, canonical = head_meta((tmp_path / f).read_text())
+        assert canonical == SITE + path and props["og:url"] == canonical
+        assert props["description"] and props["description"] != default and props["og:title"] == title
+    _, props, _ = head_meta((tmp_path / "404.html").read_text())
+    assert props["description"] and props["description"] != default
+
+
+def test_page_description_cuts_at_sentence():
+    short = "첫 문장이에요. 둘째 문장이에요."
+    assert page_description(short) == short
+    long = "가" * 100 + "요. " + "나" * 60 + "요. 끝이에요."
+    assert page_description(long) == "가" * 100 + "요."
+    no_stop = "다" * 200
+    cut = page_description(no_stop)
+    assert len(cut) <= 150 and cut.endswith("…")
+
+
+def test_company_page_copy_link_button(tmp_path):
+    c = result()
+    render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+    detail = (tmp_path / "c" / "EXM" / "index.html").read_text()
+    band = detail[detail.index('<header class="band">'):detail.index("</header>")]
+    assert re.search(r'<button type="button" class="copy" data-copy-link hidden>링크 복사</button>', band)
+    assert '<script src="/share.js" defer></script>' in detail
+    for f in ["index.html", "criteria/index.html", "privacy/index.html", "404.html"]:
+        assert "share.js" not in (tmp_path / f).read_text()
+    js = (tmp_path / "share.js").read_text()
+    assert "navigator.clipboard" in js and "location.href" in js and "복사했어요" in js and "2000" in js
+
+
+def test_og_image_copied(tmp_path):
+    render_site([], {"count": 0, "new": [], "dropped": [], "top": None}, META, {}, tmp_path)
+    png = (tmp_path / "og.png").read_bytes()
+    assert png[:8] == b"\x89PNG\r\n\x1a\n"
+    assert int.from_bytes(png[16:20], "big") == 1200 and int.from_bytes(png[20:24], "big") == 630
+
+
+def test_sitemap_and_robots(tmp_path):
+    listed = result()
+    outside = result(issuer_cik="901", name="TWO CO", ticker="TWO", slug="TWO", qualified=False)
+    render_site([listed, outside], {"count": 1, "new": [], "dropped": [], "top": listed}, META, {}, tmp_path)
+    xml = (tmp_path / "sitemap.xml").read_text()
+    assert xml.startswith('<?xml version="1.0" encoding="UTF-8"?>')
+    assert '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' in xml
+    locs = re.findall(r"<url><loc>([^<]+)</loc><lastmod>2026-10-02</lastmod></url>", xml)
+    assert locs == [SITE + "/", SITE + "/criteria/", SITE + "/privacy/", SITE + "/c/EXM/", SITE + "/c/TWO/"]
+    assert xml.count("<url>") == 5
+    assert (tmp_path / "robots.txt").read_text() == (
+        "User-agent: *\nAllow: /\nSitemap: https://form4.jmheo.com/sitemap.xml\n")
+
+
+def test_privacy_page_and_footer_link(tmp_path):
+    c = result()
+    render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+    text = plain((tmp_path / "privacy" / "index.html").read_text())
+    for s in ["개인정보 안내", "이 사이트는 이름·이메일 등 개인정보를 모으지 않아요",
+              "회원가입·댓글·구독 없음", "검색어는 브라우저 안에서만 처리",
+              "쿠키를 쓰지 않는 Cloudflare Web Analytics", "페이지별 방문 수", "(켜져 있을 때)",
+              "form4@jmheo.com"]:
+        assert s in text, s
+    for f in ["index.html", "c/EXM/index.html", "criteria/index.html", "privacy/index.html", "404.html"]:
+        foot = re.search(r'<footer class="foot">.*?</footer>', (tmp_path / f).read_text(), re.S).group(0)
+        assert '<a href="/privacy/">개인정보 안내</a>' in foot, f
+
+
+BEACON = '<script defer src="https://static.cloudflareinsights.com/beacon.min.js"'
+
+
+def test_beacon_only_with_token(tmp_path):
+    c = result()
+    brief = {"count": 1, "new": [], "dropped": [], "top": c}
+    render_site([c], brief, META, {}, tmp_path)
+    for f in ["index.html", "c/EXM/index.html", "privacy/index.html"]:
+        assert "cloudflareinsights" not in (tmp_path / f).read_text()
+    render_site([c], brief, {**META, "beacon_token": "abc123"}, {}, tmp_path)
+    tag = BEACON + """ data-cf-beacon='{"token": "abc123"}'></script>"""
+    for f in ["index.html", "c/EXM/index.html", "criteria/index.html", "privacy/index.html", "404.html"]:
+        assert tag in (tmp_path / f).read_text(), f

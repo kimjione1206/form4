@@ -9,9 +9,10 @@ from pathlib import Path
 from jinja2 import Environment, PackageLoader, select_autoescape
 
 from form4 import config
-from form4.tables import company_line
+from form4.tables import company_line, korean_name
 
 TAG_RE = re.compile(r"<[^>]+>")
+SENTENCE_GAP_RE = re.compile(r"(?<=\.) ")
 
 
 def fmt_usd(v: float) -> str:
@@ -24,6 +25,10 @@ def fmt_usd(v: float) -> str:
 
 def fmt_krw_short(usd: float, rate: float) -> str:
     won = usd * rate
+    if round(won / 1e8) >= 10000:
+        jo = won / 1e12
+        s = f"{jo:.0f}" if jo >= 10 else f"{jo:.1f}".rstrip("0").rstrip(".")
+        return f"{s}조"
     if round(won / 1e4) >= 10000:
         eok = won / 1e8
         s = f"{eok:.0f}" if eok >= 10 else f"{eok:.1f}".rstrip("0").rstrip(".")
@@ -86,6 +91,19 @@ def _sale_segments(c: dict, rate: float) -> list[tuple[str, bool]]:
     return [("같은 기간 장내 매도 신고는 없어요.", False)]
 
 
+def page_description(text: str, limit: int = 150) -> str:
+    """검색·공유 미리보기 설명. 길면 문장 단위로 자르고, 첫 문장부터 길면 글자로 자른다."""
+    if len(text) <= limit:
+        return text
+    out = ""
+    for sentence in SENTENCE_GAP_RE.split(text):
+        joined = f"{out} {sentence}" if out else sentence
+        if len(joined) > limit:
+            break
+        out = joined
+    return out or text[:limit - 1] + "…"
+
+
 def find_forbidden(html: str) -> list[str]:
     text = TAG_RE.sub(" ", html)
     return [w for w in config.FORBIDDEN_WORDS if w in text]
@@ -95,32 +113,46 @@ def _env() -> Environment:
     env = Environment(loader=PackageLoader("form4", "templates"), autoescape=select_autoescape())
     env.filters.update(usd=fmt_usd, krw=fmt_krw, krw_short=fmt_krw_short,
                        increase=fmt_increase, decrease=fmt_decrease, md=fmt_md)
+    env.globals["site"] = config.SITE_URL
     return env
 
 
-def search_index(profiles: list[dict]) -> list[dict]:
-    return sorted(({"t": c["ticker"], "n": c["name"], "s": c["slug"], "q": c["qualified"]} for c in profiles),
+def search_index(profiles: list[dict], knames: dict) -> list[dict]:
+    return sorted(({"t": c["ticker"], "n": c["name"], "k": knames[c["issuer_cik"]], "s": c["slug"],
+                    "q": c["qualified"]} for c in profiles),
                   key=lambda e: (e["t"], e["s"]))
 
 
-def render_site(profiles: list[dict], brief: dict, meta: dict, companies: dict, out_dir: Path) -> None:
-    """profiles: 회사 페이지를 만들 모든 회사. 그중 qualified 인 것이 첫 화면 목록(순서 그대로)."""
+def sitemap(profiles: list[dict], as_of: str) -> str:
+    paths = ["/", "/criteria/", "/privacy/"] + [f"/c/{c['slug']}/" for c in profiles]
+    urls = "".join(f"<url><loc>{config.SITE_URL}{p}</loc><lastmod>{as_of}</lastmod></url>\n" for p in paths)
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n'
+            f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n')
+
+
+def render_site(profiles: list[dict], brief: dict, meta: dict, companies: dict, out_dir: Path,
+                names: dict | None = None) -> None:
+    """profiles: 회사 페이지를 만들 모든 회사. 그중 qualified 인 것이 첫 화면 목록(순서 그대로).
+    names: 종목 코드 → 한국어 회사 이름 표(data/korean_names.json)."""
     env = _env()
     results = [c for c in profiles if c["qualified"]]
     lines = {c["issuer_cik"]: company_line(c["issuer_cik"], companies) for c in profiles}
+    knames = {c["issuer_cik"]: korean_name(c["ticker"], names or {}) for c in profiles}
     new_ciks = {c["issuer_cik"] for c in brief["new"]}
     checked = {"index.html": env.get_template("index.html").render(
-        meta=meta, brief=brief, results=results, lines=lines, new_ciks=new_ciks)}
+        meta=meta, path="/", brief=brief, results=results, lines=lines, knames=knames, new_ciks=new_ciks)}
     for c in profiles:
+        summary = summary_segments(c, meta["fx_rate"])
         checked[f"c/{c['slug']}/index.html"] = env.get_template("company.html").render(
-            meta=meta, c=c, line=lines[c["issuer_cik"]],
-            summary=summary_segments(c, meta["fx_rate"]))
+            meta=meta, path=f"/c/{c['slug']}/", c=c, k=knames[c["issuer_cik"]], line=lines[c["issuer_cik"]],
+            summary=summary, description=page_description("".join(t for t, _ in summary)))
     for name, html in checked.items():
         bad = find_forbidden(html)
         if bad:
             raise ValueError(f"{name}: 금지어 {bad}")
     pages = dict(checked)
-    pages["criteria/index.html"] = env.get_template("criteria.html").render(meta=meta, cfg=config)
+    pages["criteria/index.html"] = env.get_template("criteria.html").render(meta=meta, path="/criteria/", cfg=config)
+    pages["privacy/index.html"] = env.get_template("privacy.html").render(meta=meta, path="/privacy/")
     pages["404.html"] = env.get_template("404.html").render(meta=meta)
 
     if out_dir.exists():
@@ -130,7 +162,10 @@ def render_site(profiles: list[dict], brief: dict, meta: dict, companies: dict, 
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(html)
     (out_dir / "search.json").write_text(
-        json.dumps(search_index(profiles), ensure_ascii=False, separators=(",", ":")))
+        json.dumps(search_index(profiles, knames), ensure_ascii=False, separators=(",", ":")))
+    (out_dir / "sitemap.xml").write_text(sitemap(profiles, meta["as_of"]))
+    (out_dir / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {config.SITE_URL}/sitemap.xml\n")
     static = files("form4") / "static"
-    for name in ("style.css", "typing.js", "search.js"):
+    for name in ("style.css", "typing.js", "search.js", "share.js"):
         (out_dir / name).write_text((static / name).read_text())
+    (out_dir / "og.png").write_bytes((static / "og.png").read_bytes())

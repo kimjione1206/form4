@@ -1,6 +1,7 @@
 """명령: daily(매일), backfill(처음 60일 채우기), check-tables(AI 표 검사)."""
 
 import argparse
+import os
 import xml.etree.ElementTree as ET
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -101,21 +102,23 @@ def run(dates, as_of, now_utc, client, fx_client, data_dir: Path, dist_dir: Path
 
     titles = load_json(data_dir / "titles.json", {})
     companies = load_json(data_dir / "companies.json", {})
+    names = load_json(data_dir / "korean_names.json", {})
     all_profiles = profiles(records, as_of, titles)
     results = [c for c in all_profiles if c["qualified"]]  # 조건 충족 목록(회사 정보·AI 할 일은 이것만)
     ensure_company_info(results, companies, client)
     brief = briefing(results, load_json(data_dir / "ranking_prev.json", None))
     fx = current_rate(fx_client, state.get("fx"))
     meta = {
-        "as_of_label": f"{as_of.month}/{as_of.day}",
+        "as_of_label": f"{as_of.month}/{as_of.day}", "as_of": as_of.isoformat(),
         "updated": now_utc.astimezone(SEOUL).strftime("%m/%d %H:%M"),
         "fx_rate": fx["rate"], "fx_date": fx["date"], "new_filings": total,
+        "beacon_token": os.environ.get("FORM4_BEACON_TOKEN", ""),  # 쿠키 없는 방문 통계(비우면 안 넣음)
     }
-    render_site(all_profiles, brief, meta, companies, dist_dir)
+    render_site(all_profiles, brief, meta, companies, dist_dir, names)
 
     store.save(data_dir / "transactions.jsonl", records)
     save_json(data_dir / "companies.json", companies)
-    save_json(data_dir / "todo.json", build_todo(results, companies, titles, all_profiles))
+    save_json(data_dir / "todo.json", build_todo(results, companies, titles, all_profiles, names))
     save_json(data_dir / "ranking_prev.json", snapshot(results))
     (data_dir / "skipped.log").write_text("".join(s + "\n" for s in skipped))
     last = max(filter(None, [state.get("last_date"), *(d.isoformat() for d in dates)]),
@@ -137,7 +140,8 @@ def main(argv=None) -> int:
     data_dir, dist_dir = Path("data"), Path("dist")
     if args.cmd == "check-tables":
         errors = check_tables(load_json(data_dir / "companies.json", {}),
-                              load_json(data_dir / "titles.json", {}))
+                              load_json(data_dir / "titles.json", {}),
+                              load_json(data_dir / "korean_names.json", {}))
         for e in errors:
             print(e)
         return 1 if errors else 0

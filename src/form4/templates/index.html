@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% from "_search.html" import search_form %}
+{% block title %}미국 임원 매수 정리 · 내부자 거래 공시(Form 4) 한국어 정리{% endblock %}
 {% block body %}
 <header class="band band-home">
   <div class="band-in">
@@ -49,7 +50,7 @@
   <a class="item" href="/c/{{ c.slug }}/">
     <span class="mono num">{{ "%02d"|format(loop.index) }}</span>
     <span class="item-main">
-      <span class="name">{{ c.name }} <span class="mono small dim">{{ c.ticker }}</span></span>
+      <span class="name">{% if knames[c.issuer_cik] %}{{ knames[c.issuer_cik] }} <span class="small dim">{{ c.name }}</span> {% else %}{{ c.name }} {% endif %}<span class="mono small dim">{{ c.ticker }}</span></span>
       <span class="small dim">{{ lines[c.issuer_cik] }}</span>
       <span class="small m-only">{% for t in c.tags %}{{ t }} · {% endfor %}매도 {{ c.sale_people }}명{% if c.sale_people %} · {{ c.sale_usd|krw(meta.fx_rate) }}{% endif %}{% if c.issuer_cik in new_ciks %} · <b class="accent">새로 · 거래 {{ c.last_date|md }}</b>{% endif %}</span>
       {% if c.tags or c.issuer_cik in new_ciks %}<span class="small d-only">{% for t in c.tags %}{{ t }}{% if not loop.last %} · {% endif %}{% endfor %}{% if c.issuer_cik in new_ciks %}{% if c.tags %} · {% endif %}<b class="accent">새로</b>{% endif %}</span>{% endif %}

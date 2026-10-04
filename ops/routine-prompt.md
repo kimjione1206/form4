@@ -7,7 +7,7 @@
 - 없으면 → **표 채우기 모드**.
 
 ## 표 채우기 모드
-1. `data/todo.json`을 읽는다. 두 목록이 모두 비었으면 아무것도 하지 않고 끝낸다.
+1. `data/todo.json`을 읽는다. 세 목록(`companies`, `titles`, `names`)이 모두 비었으면 아무것도 하지 않고 끝낸다.
 2. `companies`의 각 회사:
    - `https://data.sec.gov/submissions/CIK{cik 10자리}.json` 에서 가장 최근 `10-K`의 `primaryDocument`를 찾아 `https://www.sec.gov/Archives/edgar/data/{cik}/{접수번호 하이픈 제거}/{primaryDocument}` 를 받는다. 요청마다 헤더 `User-Agent: form4.jmheo.com form4@jmheo.com`, 요청 사이 0.2초 이상 쉰다.
    - "Item 1. Business" 첫머리를 근거로 **이 회사가 무엇을 하는지** 한국어 한 줄(40자 이하)로 쓴다. 예: "반도체 장비를 만드는 회사", "지역 은행".
@@ -15,8 +15,9 @@
    - 금지: 숫자, 평가하는 말(주목, 급등, 신호, 기회, 유망, 추천, 성장, 선도, 최고, 혁신 등), 주가·실적 언급.
    - `data/companies.json`의 그 회사 `summary`에 넣는다(다른 칸은 건드리지 않는다).
 3. `titles`의 각 영어 직함을 한국 회사 직급 표현으로 옮겨 `data/titles.json`에 추가한다(30자 이하, 숫자 금지, 약어는 괄호, 예: "재무이사(CFO)").
-4. `uv run form4 check-tables` 가 0으로 끝날 때까지 고친다.
-5. `data/companies.json`, `data/titles.json` 두 파일만 커밋해 **main 에 바로 푸시**한다. 메시지: `data: 회사 소개·직함 번역 (루틴)`. `data/todo.json`은 건드리지 않는다(다음 daily가 다시 계산한다).
+4. `names`의 각 회사(`t` 종목 코드, `n` 영어 이름): 한국에서 널리 알려져 흔히 쓰는 한국어 이름이 있는 회사만(예: NVDA → "엔비디아") `data/korean_names.json`에 `"종목 코드": "한국어 이름"`으로 추가한다(20자 이하, 숫자 금지). 한국에서 잘 알려지지 않은 회사는 건너뛴다(영어 이름을 소리 나는 대로 옮겨 적지 않는다).
+5. `uv run form4 check-tables` 가 0으로 끝날 때까지 고친다.
+6. `data/companies.json`, `data/titles.json`, `data/korean_names.json` 세 파일만 커밋해 **main 에 바로 푸시**한다. 메시지: `data: 회사 소개·직함 번역·한국어 이름 (루틴)`. `data/todo.json`은 건드리지 않는다(다음 daily가 다시 계산한다).
 
 ## 수리 모드
 1. 실패 기록과 GitHub Actions 실행 주소를 근거로 원인을 찾는다. `uv sync && uv run pytest -q` 로 현재 상태를 확인한다.

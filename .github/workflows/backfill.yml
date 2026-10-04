@@ -32,6 +32,8 @@ jobs:
           [ -n "${{ inputs.start }}" ] && args="$args --start ${{ inputs.start }}"
           [ -n "${{ inputs.end }}" ] && args="$args --end ${{ inputs.end }}"
           uv run form4 backfill $args 2>&1 | tee run.log
+        env:
+          FORM4_BEACON_TOKEN: ${{ vars.FORM4_BEACON_TOKEN }}  # 공개값이라 비밀값(secret)이 아닌 변수(variable)
       - name: deploy
         run: npx --yes wrangler@4 deploy
         env:
