@@ -78,6 +78,14 @@ def test_offering_note_only_when_present(tmp_path):
     assert "증자 참여</b>" not in detail
 
 
+def test_criteria_lists_exclusions(tmp_path):
+    render_site([], {"count": 0, "new": [], "dropped": [], "top": None}, META, {}, tmp_path)
+    page = (tmp_path / "criteria" / "index.html").read_text()
+    assert ("다음은 시장에서 직접 산 매수가 아니라서 세지 않아요: 각주에 배당 재투자로 적힌 매수, "
+            "공모·사모 등 증자 참여(상세 페이지에 참고로 표시), 종목 코드가 없는 비상장 회사.") in page
+    assert "증자 참여 포함" not in page
+
+
 def test_render_rejects_forbidden_words(tmp_path):
     c = result(name="ROCKET 급등 CORP")
     with pytest.raises(ValueError, match="금지어"):
