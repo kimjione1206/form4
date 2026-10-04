@@ -1,1 +1,252 @@
-[]
+[
+  {
+    "issuer_cik": "2035989",
+    "name": "Amrize Ltd",
+    "ticker": "AMRZ"
+  },
+  {
+    "issuer_cik": "1041934",
+    "name": "EDAP TMS SA",
+    "ticker": "EDAP"
+  },
+  {
+    "issuer_cik": "2131524",
+    "name": "Braveheart Bio, Inc.",
+    "ticker": "BRVE"
+  },
+  {
+    "issuer_cik": "2079999",
+    "name": "Cardinal Infrastructure Group Inc.",
+    "ticker": "CDNL"
+  },
+  {
+    "issuer_cik": "1627223",
+    "name": "Chemours Co",
+    "ticker": "CC"
+  },
+  {
+    "issuer_cik": "2123955",
+    "name": "Pinnacle Acquisition Corp",
+    "ticker": "PNAQ"
+  },
+  {
+    "issuer_cik": "1839970",
+    "name": "BlossomHill Therapeutics, Inc.",
+    "ticker": "BLSM"
+  },
+  {
+    "issuer_cik": "1739104",
+    "name": "Elanco Animal Health Inc",
+    "ticker": "ELAN"
+  },
+  {
+    "issuer_cik": "1791145",
+    "name": "GBank Financial Holdings Inc.",
+    "ticker": "GBFH"
+  },
+  {
+    "issuer_cik": "1552797",
+    "name": "Delek Logistics Partners, LP",
+    "ticker": "DKL"
+  },
+  {
+    "issuer_cik": "860748",
+    "name": "KEMPER Corp",
+    "ticker": "KMPR"
+  },
+  {
+    "issuer_cik": "73290",
+    "name": "BIOMERICA INC",
+    "ticker": "BMRA"
+  },
+  {
+    "issuer_cik": "1339005",
+    "name": "FEMASYS INC",
+    "ticker": "FEMY"
+  },
+  {
+    "issuer_cik": "1635077",
+    "name": "Aclarion, Inc.",
+    "ticker": "ACON"
+  },
+  {
+    "issuer_cik": "2089975",
+    "name": "HPS Real Assets Lending Co LP",
+    "ticker": "NONE"
+  },
+  {
+    "issuer_cik": "1521332",
+    "name": "Aptiv PLC",
+    "ticker": "APTV"
+  },
+  {
+    "issuer_cik": "1089063",
+    "name": "DICK'S SPORTING GOODS, INC.",
+    "ticker": "DKS"
+  },
+  {
+    "issuer_cik": "1533615",
+    "name": "Chiron Real Estate Inc.",
+    "ticker": "XRN"
+  },
+  {
+    "issuer_cik": "1488139",
+    "name": "Ameresco, Inc.",
+    "ticker": "AMRC"
+  },
+  {
+    "issuer_cik": "2001557",
+    "name": "Innventure, Inc.",
+    "ticker": "INV"
+  },
+  {
+    "issuer_cik": "1872789",
+    "name": "Embecta Corp.",
+    "ticker": "EMBC"
+  },
+  {
+    "issuer_cik": "318833",
+    "name": "TEAM INC",
+    "ticker": "TISI"
+  },
+  {
+    "issuer_cik": "1671502",
+    "name": "Quoin Pharmaceuticals, Ltd.",
+    "ticker": "QNRX"
+  },
+  {
+    "issuer_cik": "1660334",
+    "name": "Verrica Pharmaceuticals Inc.",
+    "ticker": "VRCA"
+  },
+  {
+    "issuer_cik": "1704715",
+    "name": "Alpha Metallurgical Resources, Inc.",
+    "ticker": "AMR"
+  },
+  {
+    "issuer_cik": "1944885",
+    "name": "Apollomics Inc.",
+    "ticker": "APLM"
+  },
+  {
+    "issuer_cik": "1577445",
+    "name": "Odysight.ai Inc.",
+    "ticker": "ODYS"
+  },
+  {
+    "issuer_cik": "78003",
+    "name": "PFIZER INC",
+    "ticker": "PFE"
+  },
+  {
+    "issuer_cik": "1865200",
+    "name": "Angel Studios, Inc.",
+    "ticker": "ANGX"
+  },
+  {
+    "issuer_cik": "1703057",
+    "name": "AbCellera Biologics Inc.",
+    "ticker": "ABCL"
+  },
+  {
+    "issuer_cik": "1867949",
+    "name": "Chicago Atlantic Real Estate Finance, Inc.",
+    "ticker": "REFI"
+  },
+  {
+    "issuer_cik": "1520006",
+    "name": "Matador Resources Co",
+    "ticker": "MTDR"
+  },
+  {
+    "issuer_cik": "1437958",
+    "name": "COASTAL FINANCIAL CORP",
+    "ticker": "CCB"
+  },
+  {
+    "issuer_cik": "1740332",
+    "name": "RESIDEO TECHNOLOGIES, INC.",
+    "ticker": "REZI"
+  },
+  {
+    "issuer_cik": "1843162",
+    "name": "Chicago Atlantic BDC, Inc.",
+    "ticker": "LIEN"
+  },
+  {
+    "issuer_cik": "1130713",
+    "name": "BED BATH & BEYOND, INC.",
+    "ticker": "BBBY"
+  },
+  {
+    "issuer_cik": "1837014",
+    "name": "SmartRent, Inc.",
+    "ticker": "SMRT"
+  },
+  {
+    "issuer_cik": "2058758",
+    "name": "Avidia Bancorp, Inc.",
+    "ticker": "AVBC"
+  },
+  {
+    "issuer_cik": "24090",
+    "name": "CITIZENS, INC.",
+    "ticker": "CIA"
+  },
+  {
+    "issuer_cik": "63296",
+    "name": "MATTHEWS INTERNATIONAL CORP",
+    "ticker": "MATW"
+  },
+  {
+    "issuer_cik": "1158172",
+    "name": "COMSCORE, INC.",
+    "ticker": "SCOR"
+  },
+  {
+    "issuer_cik": "1378950",
+    "name": "CarParts.com, Inc.",
+    "ticker": "PRTS"
+  },
+  {
+    "issuer_cik": "1306830",
+    "name": "Celanese Corp",
+    "ticker": "CE"
+  },
+  {
+    "issuer_cik": "1550913",
+    "name": "MacKenzie Realty Capital, Inc.",
+    "ticker": "MKZR"
+  },
+  {
+    "issuer_cik": "849145",
+    "name": "Heritage Global Inc.",
+    "ticker": "HGBL"
+  },
+  {
+    "issuer_cik": "1547546",
+    "name": "Lument Finance Trust, Inc.",
+    "ticker": "LFT"
+  },
+  {
+    "issuer_cik": "88000",
+    "name": "Horizon Kinetics Holding Corp",
+    "ticker": "HKHC"
+  },
+  {
+    "issuer_cik": "714395",
+    "name": "GERMAN AMERICAN BANCORP, INC.",
+    "ticker": "GABC"
+  },
+  {
+    "issuer_cik": "65433",
+    "name": "MEXICO FUND INC",
+    "ticker": "MXF"
+  },
+  {
+    "issuer_cik": "1866757",
+    "name": "Brilliant Earth Group, Inc.",
+    "ticker": "BRLT"
+  }
+]

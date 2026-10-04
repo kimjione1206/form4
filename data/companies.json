@@ -1,1 +1,252 @@
-{}
+{
+  "1041934": {
+    "name": "EDAP TMS SA",
+    "sic_description": "Electromedical & Electrotherapeutic Apparatus",
+    "summary": null
+  },
+  "1089063": {
+    "name": "DICK'S SPORTING GOODS, INC.",
+    "sic_description": "Retail-Miscellaneous Shopping Goods Stores",
+    "summary": null
+  },
+  "1130713": {
+    "name": "BED BATH & BEYOND, INC.",
+    "sic_description": "Retail-Catalog & Mail-Order Houses",
+    "summary": null
+  },
+  "1158172": {
+    "name": "COMSCORE, INC.",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
+  "1306830": {
+    "name": "Celanese Corp",
+    "sic_description": "Plastic Material, Synth Resin/Rubber, Cellulos (No Glass)",
+    "summary": null
+  },
+  "1339005": {
+    "name": "FEMASYS INC",
+    "sic_description": "Surgical & Medical Instruments & Apparatus",
+    "summary": null
+  },
+  "1378950": {
+    "name": "CarParts.com, Inc.",
+    "sic_description": "Retail-Auto & Home Supply Stores",
+    "summary": null
+  },
+  "1437958": {
+    "name": "COASTAL FINANCIAL CORP",
+    "sic_description": "State Commercial Banks",
+    "summary": null
+  },
+  "1488139": {
+    "name": "Ameresco, Inc.",
+    "sic_description": "Construction - Special Trade Contractors",
+    "summary": null
+  },
+  "1520006": {
+    "name": "Matador Resources Co",
+    "sic_description": "Crude Petroleum & Natural Gas",
+    "summary": null
+  },
+  "1521332": {
+    "name": "Aptiv PLC",
+    "sic_description": "Motor Vehicle Parts & Accessories",
+    "summary": null
+  },
+  "1533615": {
+    "name": "Chiron Real Estate Inc.",
+    "sic_description": "Real Estate Investment Trusts",
+    "summary": null
+  },
+  "1547546": {
+    "name": "Lument Finance Trust, Inc.",
+    "sic_description": "Real Estate Investment Trusts",
+    "summary": null
+  },
+  "1550913": {
+    "name": "MacKenzie Realty Capital, Inc.",
+    "sic_description": "Real Estate Investment Trusts",
+    "summary": null
+  },
+  "1552797": {
+    "name": "Delek Logistics Partners, LP",
+    "sic_description": "Pipe Lines (No Natural Gas)",
+    "summary": null
+  },
+  "1577445": {
+    "name": "Odysight.ai Inc.",
+    "sic_description": "Services-Computer Integrated Systems Design",
+    "summary": null
+  },
+  "1627223": {
+    "name": "Chemours Co",
+    "sic_description": "Chemicals & Allied Products",
+    "summary": null
+  },
+  "1635077": {
+    "name": "Aclarion, Inc.",
+    "sic_description": "Services-Medical Laboratories",
+    "summary": null
+  },
+  "1660334": {
+    "name": "Verrica Pharmaceuticals Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1671502": {
+    "name": "Quoin Pharmaceuticals, Ltd.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1703057": {
+    "name": "AbCellera Biologics Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1704715": {
+    "name": "Alpha Metallurgical Resources, Inc.",
+    "sic_description": "Bituminous Coal & Lignite Surface Mining",
+    "summary": null
+  },
+  "1739104": {
+    "name": "Elanco Animal Health Inc",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1740332": {
+    "name": "RESIDEO TECHNOLOGIES, INC.",
+    "sic_description": "Wholesale-Hardware",
+    "summary": null
+  },
+  "1791145": {
+    "name": "GBank Financial Holdings Inc.",
+    "sic_description": "State Commercial Banks",
+    "summary": null
+  },
+  "1837014": {
+    "name": "SmartRent, Inc.",
+    "sic_description": "Services-Computer Integrated Systems Design",
+    "summary": null
+  },
+  "1839970": {
+    "name": "BlossomHill Therapeutics, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1843162": {
+    "name": "Chicago Atlantic BDC, Inc.",
+    "sic_description": "",
+    "summary": null
+  },
+  "1865200": {
+    "name": "Angel Studios, Inc.",
+    "sic_description": "Services-Motion Picture & Video Tape Production",
+    "summary": null
+  },
+  "1866757": {
+    "name": "Brilliant Earth Group, Inc.",
+    "sic_description": "Jewelry, Silverware & Plated Ware",
+    "summary": null
+  },
+  "1867949": {
+    "name": "Chicago Atlantic Real Estate Finance, Inc.",
+    "sic_description": "Real Estate Investment Trusts",
+    "summary": null
+  },
+  "1872789": {
+    "name": "Embecta Corp.",
+    "sic_description": "Surgical & Medical Instruments & Apparatus",
+    "summary": null
+  },
+  "1944885": {
+    "name": "Apollomics Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "2001557": {
+    "name": "Innventure, Inc.",
+    "sic_description": "Blank Checks",
+    "summary": null
+  },
+  "2035989": {
+    "name": "Amrize Ltd",
+    "sic_description": "Cement, Hydraulic",
+    "summary": null
+  },
+  "2058758": {
+    "name": "Avidia Bancorp, Inc.",
+    "sic_description": "Savings Institutions, Not Federally Chartered",
+    "summary": null
+  },
+  "2079999": {
+    "name": "Cardinal Infrastructure Group Inc.",
+    "sic_description": "Heavy Construction Other Than Bldg Const - Contractors",
+    "summary": null
+  },
+  "2089975": {
+    "name": "HPS Real Assets Lending Co LP",
+    "sic_description": "Real Estate",
+    "summary": null
+  },
+  "2123955": {
+    "name": "Pinnacle Acquisition Corp",
+    "sic_description": "Blank Checks",
+    "summary": null
+  },
+  "2131524": {
+    "name": "Braveheart Bio, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "24090": {
+    "name": "CITIZENS, INC.",
+    "sic_description": "Life Insurance",
+    "summary": null
+  },
+  "318833": {
+    "name": "TEAM INC",
+    "sic_description": "Services-Miscellaneous Repair Services",
+    "summary": null
+  },
+  "63296": {
+    "name": "MATTHEWS INTERNATIONAL CORP",
+    "sic_description": "Nonferrous Foundries (Castings)",
+    "summary": null
+  },
+  "65433": {
+    "name": "MEXICO FUND INC",
+    "sic_description": "",
+    "summary": null
+  },
+  "714395": {
+    "name": "GERMAN AMERICAN BANCORP, INC.",
+    "sic_description": "State Commercial Banks",
+    "summary": null
+  },
+  "73290": {
+    "name": "BIOMERICA INC",
+    "sic_description": "In Vitro & In Vivo Diagnostic Substances",
+    "summary": null
+  },
+  "78003": {
+    "name": "PFIZER INC",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "849145": {
+    "name": "Heritage Global Inc.",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
+  "860748": {
+    "name": "KEMPER Corp",
+    "sic_description": "Fire, Marine & Casualty Insurance",
+    "summary": null
+  },
+  "88000": {
+    "name": "Horizon Kinetics Holding Corp",
+    "sic_description": "Investment Advice",
+    "summary": null
+  }
+}
