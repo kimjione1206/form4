@@ -1,6 +1,6 @@
 // 종목 검색: /search.json 을 한 번 받아 브라우저 안에서만 찾는다. 검색어는 어디로도 보내지 않는다.
 (function () {
-  var NONE = "최근 60일 동안 이 종목의 임원·이사 매수·매도 공시가 없어요. 미국 상장 종목 코드가 맞는지도 확인해 주세요.";
+  var NONE = "찾는 회사가 이 사이트에 없어요. 최근 60일 안에 임원·이사 거래 신고가 있는 회사만 있어서, 거래가 없었거나 이름이 다를 수 있어요. 미국 종목 코드(예: AAPL)로도 찾아보세요.";
   var list;
   function load() {
     if (!list) {
@@ -12,12 +12,16 @@
     }
     return list;
   }
+  // 종목 코드가 딱 맞으면 그것만. 아니면 종목 코드 앞부분이 맞는 회사(GOOG → GOOGL) 먼저, 이름에 든 회사를 뒤에, 겹치지 않게.
   function find(entries, q) {
     var hits = entries.filter(function (e) { return e.t.toUpperCase() === q; });
     if (hits.length) return hits;
-    return entries.filter(function (e) {
-      return e.n.toUpperCase().indexOf(q) !== -1 || (e.k || "").toUpperCase().indexOf(q) !== -1;
+    var prefix = entries.filter(function (e) { return e.t.toUpperCase().indexOf(q) === 0; });
+    var named = entries.filter(function (e) {
+      return prefix.indexOf(e) === -1 &&
+        (e.n.toUpperCase().indexOf(q) !== -1 || (e.k || "").toUpperCase().indexOf(q) !== -1);
     });
+    return prefix.concat(named);
   }
   function message(out, text) {
     var p = document.createElement("p");

@@ -259,7 +259,7 @@ def test_search_index_and_forms(tmp_path):
         {"t": "AAPL", "n": "Apple Inc.", "k": "", "s": "AAPL", "q": False},
         {"t": "ZZZ", "n": "EXAMPLE CORP", "k": "", "s": "ZZZ", "q": True}]
     assert (tmp_path / "search.js").exists()
-    for f in ["index.html", "404.html"]:
+    for f in ["index.html", "404.html", "c/AAPL/index.html", "c/ZZZ/index.html"]:
         page = (tmp_path / f).read_text()
         forms = re.findall(r'<form role="search"[^>]*>.*?</form>', page, re.S)
         assert forms, f
@@ -274,7 +274,28 @@ def test_search_index_and_forms(tmp_path):
     assert "없는 페이지예요" in text
     assert "이 주소의 회사 페이지가 없어요. 최근 60일 동안 임원 거래 공시가 없거나 주소가 달라요." in text
     js = (tmp_path / "search.js").read_text()
-    assert "/search.json" in js and "최근 60일 동안 이 종목의 임원·이사 매수·매도 공시가 없어요." in js
+    assert "/search.json" in js and ("찾는 회사가 이 사이트에 없어요. 최근 60일 안에 임원·이사 거래 신고가 있는 회사만 "
+                                     "있어서, 거래가 없었거나 이름이 다를 수 있어요. 미국 종목 코드(예: AAPL)로도 "
+                                     "찾아보세요.") in js
+    assert "공시가 없어요" not in js  # 신고가 없다고 단정하지 않는다
+    assert "indexOf(q) === 0" in js  # 종목 코드 앞부분으로도 찾는다(GOOG → GOOGL)
+
+
+def test_company_page_search_box_near_top(tmp_path):
+    listed = result()
+    outside = result(issuer_cik="901", name="TWO CO", ticker="TWO", slug="TWO", qualified=False)
+    render_site([listed, outside], {"count": 1, "new": [], "dropped": [], "top": listed}, META, {}, tmp_path)
+    for slug in ["EXM", "TWO"]:
+        page = (tmp_path / "c" / slug / "index.html").read_text()
+        assert len(re.findall(r'<form role="search"', page)) == 1
+        form_at = page.index('<form role="search"')
+        assert page.index("</header>") < form_at < page.index('<section class="tiles')
+        if slug == "TWO":
+            assert page.index('class="note band-note"') < form_at
+        assert 'id="q-c"' in page and 'class="c-search' in page
+        assert '<script src="/search.js" defer></script>' in page
+    home = (tmp_path / "index.html").read_text()
+    assert 'id="q-c"' not in home and 'class="c-search' not in home
 
 
 def test_home_explanations(tmp_path):
