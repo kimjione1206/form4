@@ -132,12 +132,13 @@ def sitemap(profiles: list[dict], as_of: str) -> str:
 
 
 def render_site(profiles: list[dict], brief: dict, meta: dict, companies: dict, out_dir: Path,
-                names: dict | None = None) -> None:
+                names: dict | None = None, industries: dict | None = None) -> None:
     """profiles: 회사 페이지를 만들 모든 회사. 그중 qualified 인 것이 첫 화면 목록(순서 그대로).
-    names: 종목 코드 → 한국어 회사 이름 표(data/korean_names.json)."""
+    names: 종목 코드 → 한국어 회사 이름 표(data/korean_names.json).
+    industries: SEC 영어 업종 → 한국어 업종 표(data/industries.json)."""
     env = _env()
     results = [c for c in profiles if c["qualified"]]
-    lines = {c["issuer_cik"]: company_line(c["issuer_cik"], companies) for c in profiles}
+    lines = {c["issuer_cik"]: company_line(c["issuer_cik"], companies, industries) for c in profiles}
     knames = {c["issuer_cik"]: korean_name(c["ticker"], names or {}) for c in profiles}
     new_ciks = {c["issuer_cik"] for c in brief["new"]}
     checked = {"index.html": env.get_template("index.html").render(

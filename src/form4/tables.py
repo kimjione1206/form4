@@ -1,4 +1,4 @@
-"""회사 한 줄 소개·직함 번역·한국어 회사 이름 표. AI(Claude 루틴)가 채우고, 여기서 검사한다."""
+"""회사 한 줄 소개·직함 번역·한국어 회사 이름·한국어 업종 표. AI(Claude 루틴)가 채우고, 여기서 검사한다."""
 
 import json
 import re
@@ -26,7 +26,7 @@ def guard_text(s: str, max_len: int = 40) -> bool:
             and not any(w in s for w in config.FORBIDDEN_WORDS))
 
 
-def check_tables(companies: dict, titles: dict, names: dict) -> list[str]:
+def check_tables(companies: dict, titles: dict, names: dict, industries: dict | None = None) -> list[str]:
     errors = []
     for cik, c in companies.items():
         s = c.get("summary")
@@ -38,15 +38,21 @@ def check_tables(companies: dict, titles: dict, names: dict) -> list[str]:
     for ticker, ko in names.items():
         if ko != "" and not guard_text(ko, 20):  # 빈 문자열 = 루틴이 건너뛴 회사 기록
             errors.append(f"한국어 이름 {ticker!r}: {ko!r}")
+    for en, ko in (industries or {}).items():
+        if not guard_text(ko, 30):
+            errors.append(f"업종 {en!r}: {ko!r}")
     return errors
 
 
-def company_line(cik: str, companies: dict) -> str:
+def company_line(cik: str, companies: dict, industries: dict | None = None) -> str:
+    """회사 소개 → 한국어 업종(data/industries.json) → SEC 영어 업종 → 빈칸 순."""
     c = companies.get(cik, {})
     s = c.get("summary")
     if s and guard_text(s):
         return s
-    return c.get("sic_description") or ""
+    sic = c.get("sic_description") or ""
+    ko = (industries or {}).get(sic, "")
+    return ko if guard_text(ko, 30) else sic
 
 
 def korean_name(ticker: str, names: dict) -> str:
@@ -67,9 +73,10 @@ def ensure_company_info(results: list[dict], companies: dict, client) -> None:
 
 
 def build_todo(results: list[dict], companies: dict, titles: dict, profiles: list[dict],
-               names: dict) -> dict:
+               names: dict, industries: dict | None = None) -> dict:
     """회사 소개는 조건 충족 목록(results)만, 직함 번역·한국어 이름은 페이지가 있는 모든 회사(profiles)에서.
-    한국어 이름은 표에 아직 없는(빈 문자열로 건너뛴 것도 제외) 깨끗한 종목 코드만."""
+    한국어 이름은 표에 아직 없는(빈 문자열로 건너뛴 것도 제외) 깨끗한 종목 코드만.
+    업종은 companies.json 의 영어 업종 중 한국어 업종 표에 아직 없는 것."""
     todo_companies = [
         {"cik": c["issuer_cik"], "name": companies[c["issuer_cik"]]["name"],
          "sic_description": companies[c["issuer_cik"]]["sic_description"]}
@@ -84,4 +91,7 @@ def build_todo(results: list[dict], companies: dict, titles: dict, profiles: lis
                 and t not in config.PLACEHOLDER_TICKERS):
             seen.add(t)
             todo_names.append({"t": t, "n": c["name"]})
-    return {"companies": todo_companies, "titles": todo_titles, "names": todo_names[:MAX_NAME_TODO]}
+    todo_industries = sorted({c["sic_description"] for c in companies.values()
+                              if c.get("sic_description") and c["sic_description"] not in (industries or {})})
+    return {"companies": todo_companies, "titles": todo_titles, "names": todo_names[:MAX_NAME_TODO],
+            "industries": todo_industries}

@@ -217,3 +217,25 @@ def test_daily_without_beacon_token(tmp_path, monkeypatch):
     cli.run([date(2026, 10, 2)], date(2026, 10, 2), NOW, FakeSec(site_pages()), fx(), data, dist, log=lambda m: None)
     assert "cloudflareinsights" not in (dist / "index.html").read_text()
     assert json.loads((data / "todo.json").read_text())["names"] == [{"t": "EXM", "n": "EXAMPLE CORP"}]
+
+
+def test_check_tables_checks_industries(tmp_path, monkeypatch):
+    data = tmp_path / "data"
+    seed(data)
+    monkeypatch.chdir(tmp_path)
+    (data / "industries.json").write_text('{"Retail": "소매"}')
+    assert cli.main(["check-tables"]) == 0
+    (data / "industries.json").write_text('{"Retail": "소매 3"}')
+    assert cli.main(["check-tables"]) == 1
+
+
+def test_daily_uses_industries_table(tmp_path):
+    data, dist = tmp_path / "data", tmp_path / "dist"
+    seed(data)
+    cli.run([date(2026, 10, 2)], date(2026, 10, 2), NOW, FakeSec(site_pages()), fx(), data, dist, log=lambda m: None)
+    assert json.loads((data / "todo.json").read_text())["industries"] == ["Retail"]
+    (data / "industries.json").write_text('{"Retail": "소매업"}')
+    cli.run([date(2026, 10, 2)], date(2026, 10, 2), NOW, FakeSec(site_pages()), fx(), data, dist, log=lambda m: None)
+    assert "소매업" in (dist / "index.html").read_text()
+    assert json.loads((data / "todo.json").read_text())["industries"] == []
+    assert json.loads((data / "industries.json").read_text()) == {"Retail": "소매업"}  # 읽기만 한다

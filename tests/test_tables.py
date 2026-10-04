@@ -120,3 +120,33 @@ def test_build_todo_names_capped_at_300():
     profiles = [p(f"T{i:03d}", f"Co {i}", float(i), 0.0) for i in range(350)]
     names = build_todo([], {}, {}, profiles, {})["names"]
     assert len(names) == 300 and names[0]["t"] == "T349" and names[-1]["t"] == "T050"
+
+
+def test_company_line_uses_korean_industry_before_english():
+    companies = {"1": {"summary": "지역 은행", "sic_description": "State Commercial Banks"},
+                 "2": {"summary": None, "sic_description": "State Commercial Banks"},
+                 "3": {"summary": None, "sic_description": "Pharmaceutical Preparations"},
+                 "4": {"summary": None, "sic_description": "Retail"}}
+    industries = {"State Commercial Banks": "은행", "Pharmaceutical Preparations": "유망 의약품",
+                  "Retail": "가" * 31}
+    assert company_line("1", companies, industries) == "지역 은행"  # 소개가 먼저
+    assert company_line("2", companies, industries) == "은행"
+    assert company_line("3", companies, industries) == "Pharmaceutical Preparations"  # 금지어 → 영어
+    assert company_line("4", companies, industries) == "Retail"  # 30자 넘음 → 영어
+    assert company_line("9", companies, industries) == ""
+
+
+def test_check_tables_validates_industries():
+    errors = check_tables({}, {}, {}, {"State Commercial Banks": "은행", "X": "추천 업종", "Y": "업종3"})
+    assert len(errors) == 2 and "X" in errors[0] and "Y" in errors[1]
+
+
+def test_build_todo_industries_not_yet_translated():
+    companies = {"1": {"name": "A", "sic_description": "State Commercial Banks", "summary": "은행"},
+                 "2": {"name": "B", "sic_description": "Retail", "summary": None},
+                 "3": {"name": "C", "sic_description": "Retail", "summary": None},
+                 "4": {"name": "D", "sic_description": "", "summary": None},
+                 "5": {"name": "E", "sic_description": "Air Transport", "summary": None}}
+    todo = build_todo([], companies, {}, [], {}, {"State Commercial Banks": "은행"})
+    assert todo["industries"] == ["Air Transport", "Retail"]
+    assert set(todo) == {"companies", "titles", "names", "industries"}
