@@ -29,20 +29,22 @@ a { color: var(--accent); } a:hover { color: #142660; }
 .list { padding: 0; gap: 0; }
 .item { display: grid; grid-template-columns: 20px minmax(0, 1fr) auto; gap: 10px; padding: 14px 16px; border-bottom: 1px solid var(--soft); color: var(--ink); text-decoration: none; min-height: 44px; }
 .item:last-child { border-bottom: 0; }
-.item .num { font-size: 12px; color: #8A93A3; padding-top: 3px; }
+.item .num { font-size: 12px; color: var(--dim); padding-top: 3px; }
 .item-main, .item-nums { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .item-nums { align-items: flex-end; } .name { font-weight: 700; }
 .trow { display: grid; grid-template-columns: 44px minmax(0, 1fr) 64px 56px; gap: 8px; padding: 10px 0; border-top: 1px solid var(--soft); font-size: 13px; }
 .thead { padding: 6px 0; }
 .who { display: flex; flex-direction: column; gap: 3px; align-items: flex-start; }
 .chip { font-size: 12px; background: #E8ECF3; color: #374151; border-radius: 4px; padding: 0 6px; }
+.chip.same { white-space: nowrap; }
+.pps { word-break: keep-all; }  /* '700,000주'가 숫자와 '주' 사이에서 줄이 갈리지 않게 */
 .summary { min-height: 88px; }
 .summary.is-typing::after { content: "▍"; color: var(--accent); animation: caret 0.8s steps(1) infinite; }
 @keyframes caret { 50% { opacity: 0; } }
 .replay { font: inherit; font-size: 12px; color: #374151; background: none; border: 0; padding: 0; cursor: pointer; }
 .replay span { background: var(--ground); border: 1px solid var(--line); border-radius: 4px; padding: 2px 8px; }
 .foot { margin: 0 16px; font-size: 12px; color: var(--dim); line-height: 1.7; }
-.replay, .back, .who a, .notice a, .foot a { display: inline-flex; align-items: center; min-height: 44px; margin: -13px 0; }
+.replay, .back, .who a, .notice a, .foot a, .recent a { display: inline-flex; align-items: center; min-height: 44px; margin: -13px 0; }
 .replay[hidden] { display: none; }
 .search { display: flex; flex-direction: column; gap: 6px; }
 .search label { font-weight: 500; }
@@ -57,6 +59,11 @@ a { color: var(--accent); } a:hover { color: #142660; }
 .search-note { margin: 0; }
 .band .search label { color: #CBD3E0; }
 .list-hint { margin: 2px 0 0; }
+.sort { display: flex; align-items: center; gap: 6px; padding: 10px 16px; border-bottom: 1px solid var(--soft); }
+.sort[hidden] { display: none; }
+.sort > span { margin-right: 4px; }
+.sort button { min-height: 44px; padding: 0 14px; font: inherit; font-size: 14px; color: #374151; background: #fff; border: 1px solid var(--line); border-radius: 6px; cursor: pointer; }
+.sort button[aria-pressed="true"] { color: #fff; background: var(--accent); border-color: var(--accent); font-weight: 700; }
 .explain { margin: 0 16px; background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 0 16px; }
 .explain summary { min-height: 44px; padding: 12px 0; font-weight: 700; cursor: pointer; }
 .explain p { margin: 0 0 14px; font-size: 13px; }
@@ -101,14 +108,16 @@ a { color: var(--accent); } a:hover { color: #142660; }
   .list-head, .trades > .row-between { display: flex; padding: 16px 20px; border-bottom: 1px solid var(--line); }
   .list-head h2, .trades h2 { font-size: 16px; }
   .list-cols, .item { grid-template-columns: 28px minmax(0, 1fr) 52px 96px 64px 64px 52px; gap: 10px; align-items: center; padding: 12px 20px; }
+  .sort { padding: 10px 20px; }
   .list-cols { display: grid; padding: 10px 20px; background: #F8F9FB; border-bottom: 1px solid var(--soft); white-space: nowrap; }
   .item:hover { background: #F8F9FB; }
   .item .num { padding-top: 0; }
   .item-nums { display: contents; }
   .item-nums > span { text-align: right; white-space: nowrap; }
-  .trow { grid-template-columns: 56px 56px minmax(0, 1.4fr) 76px 72px minmax(0, 1fr) 64px; gap: 10px; align-items: center; padding: 2px 20px; font-size: 14px; }
+  .trow { grid-template-columns: 44px 44px minmax(0, 1.6fr) 80px 64px 64px minmax(0, 1fr) 48px; gap: 8px; align-items: center; padding: 2px 20px; font-size: 14px; }
   .thead { padding: 10px 20px; font-size: 12px; background: #F8F9FB; border-top: 0; white-space: nowrap; }
   .trades-note { padding: 12px 20px 10px; }
   .col-sale { white-space: nowrap; line-height: 1.35; } .col-sale .dim { font-size: 12px; }
+  .shares { font-size: 12px; }
   .src { display: inline-flex; align-items: center; justify-content: flex-end; min-height: 44px; font-size: 13px; }
 }

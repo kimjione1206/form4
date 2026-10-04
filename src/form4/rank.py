@@ -5,7 +5,7 @@
 """
 
 import re
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import date, timedelta
 
 from form4 import config
@@ -70,7 +70,7 @@ def _rows(counted: list[dict], qualified: set[str], titles: dict[str, str]) -> l
     groups = defaultdict(list)
     for r in counted:
         groups[r["accession"]].append(r)
-    rows = []
+    rows, solo = [], {}
     for rs in groups.values():
         rs.sort(key=lambda r: r["date"])
         owners = [o for o in rs[0]["owners"] if o["cik"] in qualified]
@@ -79,14 +79,30 @@ def _rows(counted: list[dict], qualified: set[str], titles: dict[str, str]) -> l
             tags.append("계획 매수")
         if any(r["direct"] == "I" for r in rs):
             tags.append("간접")
+        value, shares = sum(_value(r) for r in rs), sum(r["shares"] for r in rs)
         rows.append({
             "date": rs[-1]["date"], "filed": rs[0]["filed"], "who": _who(owners, titles),
-            "value": sum(_value(r) for r in rs), "increase": _increase(rs),
-            "tags": tags, "url": rs[0]["url"],
+            "value": value, "shares": shares, "avg_price": value / shares if shares else None,
+            "increase": _increase(rs), "tags": tags, "url": rs[0]["url"],
             "ceo": any(o["is_officer"] and CEO_RE.search(o["title"]) for o in owners),
         })
+        if len(owners) == 1:
+            solo[id(rows[-1])] = owners[0]["cik"]
     rows.sort(key=lambda x: (x["date"], x["value"]), reverse=True)
+    _mark_same_person(rows, solo)
     return rows
+
+
+def _mark_same_person(rows: list[dict], solo: dict[int, str]) -> None:
+    """혼자 신고한 줄에서 같은 사람이 2번 이상 나오면 표에 보이는 순서대로 A, B, C… (이름 없이)."""
+    repeat = Counter(solo.values())
+    letters = {}
+    for r in rows:
+        cik = solo.get(id(r))
+        if cik and repeat[cik] >= 2 and cik not in letters:
+            i = len(letters)
+            letters[cik] = chr(65 + i) if i < 26 else str(i + 1)
+        r["same"] = letters.get(cik)
 
 
 def _who(owners: list[dict], titles: dict[str, str]) -> str:
@@ -115,19 +131,26 @@ def _sale_rows(sells: list[dict], titles: dict[str, str]) -> list[dict]:
         rows.append({
             "date": r["date"], "filed": r["filed"],
             "who": _who([o for o in r["owners"] if _is_insider(o)], titles),
-            "value": r.get("value", 0.0), "decrease": _decrease(r), "tags": tags, "url": r["url"],
+            "value": r.get("value", 0.0), "shares": r.get("shares", 0.0),
+            "avg_price": r["value"] / r["shares"] if r.get("shares") and r.get("value") else None,
+            "decrease": _decrease(r), "tags": tags, "url": r["url"],
         })
     rows.sort(key=lambda x: (x["date"], x["value"]), reverse=True)
     return rows
 
 
-def _same_day(counted: list[dict], qualified: set[str], info: dict[str, dict]) -> bool:
-    by_filed = defaultdict(lambda: defaultdict(float))
+def _by_trade_date(counted: list[dict], qualified: set[str]) -> dict[str, dict[str, float]]:
+    """거래일 → 사람(cik) → 그날 산 금액. 접수일이 갈려도 같은 날 산 것은 한데 모인다."""
+    by_date = defaultdict(lambda: defaultdict(float))
     for r in counted:
         for o in r["owners"]:
             if o["cik"] in qualified:
-                by_filed[r["filed"]][o["cik"]] += _value(r)
-    for amounts in by_filed.values():
+                by_date[r["date"]][o["cik"]] += _value(r)
+    return by_date
+
+
+def _same_day(counted: list[dict], qualified: set[str], info: dict[str, dict]) -> bool:
+    for amounts in _by_trade_date(counted, qualified).values():
         if len(amounts) < 3:
             continue
         vals = list(amounts.values())
@@ -137,6 +160,29 @@ def _same_day(counted: list[dict], qualified: set[str], info: dict[str, dict]) -
         if vp * 2 > len(amounts):
             return True
     return False
+
+
+def _bulk(counted: list[dict], qualified: set[str]) -> dict | None:
+    """하루에 BULK_MIN_PEOPLE명 이상이 산 날(가장 많은 날, 같으면 최근 날). 회사 제도에 따른 매수일 수 있다."""
+    best = max(((len(people), d) for d, people in _by_trade_date(counted, qualified).items()), default=None)
+    if best is None or best[0] < config.BULK_MIN_PEOPLE:
+        return None
+    return {"date": best[1], "people": best[0]}
+
+
+def _top_person(counted: list[dict], qualified: set[str], info: dict[str, dict],
+                titles: dict[str, str]) -> dict | None:
+    """가장 많이 산 1명의 비중. 공동 신고 금액은 함께 신고한 사람 수로 나눠 두 번 세지 않는다."""
+    per = defaultdict(float)
+    for r in counted:
+        owners = [o["cik"] for o in r["owners"] if o["cik"] in qualified]
+        for c in owners:
+            per[c] += _value(r) / len(owners)
+    total = sum(per.values())
+    if len(per) < 2 or total <= 0:
+        return None
+    cik = max(per, key=per.get)
+    return {"label": owner_label(info[cik], titles), "share": round(per[cik] / total * 100)}
 
 
 def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
@@ -176,6 +222,9 @@ def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
         tags.append("대표이사 포함")
     if _same_day(counted, counted_people, info):
         tags.append("같은 날 여러 명 매수")
+    bulk = _bulk(counted, counted_people)
+    if bulk:
+        tags.append(f"하루 {bulk['people']}명 일괄 매수")
     if any("계획 매수" in r["tags"] for r in rows):
         tags.append("계획 매수 포함")
     # 페이지에 직함이 보이는 사람(매수 표 + 매도 표) — 직함 번역 할 일에 쓴다
@@ -188,6 +237,10 @@ def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
         "qualified": is_listed,
         "people": len(counted_people),
         "total_usd": sum(_value(r) for r in counted),
+        "avg_price": (sum(_value(r) for r in counted) / shares
+                      if (shares := sum(r["shares"] for r in counted)) else None),
+        "top_person": _top_person(counted, counted_people, info, titles),
+        "bulk": bulk,
         "sale_people": len({o["cik"] for r in sells for o in r["owners"] if _is_insider(o)}),
         "sale_usd": sum(r.get("value", 0.0) for r in sells),
         "sale_rows": _sale_rows(sells, titles),

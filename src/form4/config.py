@@ -7,6 +7,7 @@ WINDOW_DAYS = 60
 MIN_PERSON_USD = 10_000
 MIN_PEOPLE = 3
 SAME_DAY_TOLERANCE = 1.2
+BULK_MIN_PEOPLE = 10  # 같은 거래일에 이만큼 이상이 사면 '하루 N명 일괄 매수' 꼬리표
 MAX_FAIL_RATIO = 0.05
 MAX_DAILY_DAYS = 5  # daily 한 번에 따라잡는 최대 영업일 수
 MAX_PRICE_PER_SHARE = 20_000  # 주당 가격이 이보다 크면 신고서 원문 오류로 보고 계산에서 뺀다

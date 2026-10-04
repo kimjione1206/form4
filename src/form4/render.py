@@ -3,12 +3,14 @@
 import json
 import re
 import shutil
+from datetime import date
 from importlib.resources import files
 from pathlib import Path
 
 from jinja2 import Environment, PackageLoader, select_autoescape
 
 from form4 import config
+from form4.briefing import recent
 from form4.tables import company_line, korean_name
 
 TAG_RE = re.compile(r"<[^>]+>")
@@ -58,6 +60,19 @@ def fmt_decrease(x) -> str:
     return "\u2212100%"
 
 
+def fmt_price(v: float) -> str:
+    """주당 가격. 100달러 이상은 소수점 없이, 1달러 미만은 소수 넷째 자리까지."""
+    if v >= 100:
+        return f"${v:,.0f}"
+    if v >= 1:
+        return f"${v:.2f}"
+    return f"${v:.4f}"
+
+
+def fmt_shares(v: float) -> str:
+    return f"{v:,.0f}주"
+
+
 def fmt_md(iso: str) -> str:
     _, m, d = iso.split("-")
     return f"{int(m)}/{int(d)}"
@@ -81,6 +96,11 @@ def summary_segments(c: dict, rate: float) -> list[tuple[str, bool]]:
         segs.append(("으로, 새로 보유를 시작한 거예요. ", False))
     else:
         segs.append(("이에요. ", False))
+    if c["avg_price"]:
+        segs.append((f"임원·이사가 산 평균 가격은 주당 약 {fmt_price(c['avg_price'])}예요. ", False))
+    if c["top_person"]:
+        tp = c["top_person"]
+        segs.append((f"가장 많이 산 1명({tp['label']})이 전체 매수 금액의 약 {tp['share']}%를 차지해요. ", False))
     return segs + _sale_segments(c, rate)
 
 
@@ -132,7 +152,8 @@ def find_forbidden(html: str) -> list[str]:
 def _env() -> Environment:
     env = Environment(loader=PackageLoader("form4", "templates"), autoescape=select_autoescape())
     env.filters.update(usd=fmt_usd, krw=fmt_krw, krw_short=fmt_krw_short,
-                       increase=fmt_increase, decrease=fmt_decrease, md=fmt_md)
+                       increase=fmt_increase, decrease=fmt_decrease, md=fmt_md,
+                       price=fmt_price, shares=fmt_shares)
     env.globals["site"] = config.SITE_URL
     env.globals["naver_verification"] = config.NAVER_SITE_VERIFICATION
     return env
@@ -161,8 +182,10 @@ def render_site(profiles: list[dict], brief: dict, meta: dict, companies: dict, 
     lines = {c["issuer_cik"]: company_line(c["issuer_cik"], companies, industries) for c in profiles}
     knames = {c["issuer_cik"]: korean_name(c["ticker"], names or {}) for c in profiles}
     new_ciks = {c["issuer_cik"] for c in brief["new"]}
+    recent_buys = [] if brief["new"] else recent(results, date.fromisoformat(meta["as_of"]))
     checked = {"index.html": env.get_template("index.html").render(
-        meta=meta, path="/", brief=brief, results=results, lines=lines, knames=knames, new_ciks=new_ciks)}
+        meta=meta, path="/", brief=brief, results=results, lines=lines, knames=knames, new_ciks=new_ciks,
+        recent=recent_buys)}
     for c in profiles:
         summary = summary_segments(c, meta["fx_rate"])
         checked[f"c/{c['slug']}/index.html"] = env.get_template("company.html").render(
@@ -189,6 +212,6 @@ def render_site(profiles: list[dict], brief: dict, meta: dict, companies: dict, 
     (out_dir / "sitemap.xml").write_text(sitemap(profiles, meta["as_of"]))
     (out_dir / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {config.SITE_URL}/sitemap.xml\n")
     static = files("form4") / "static"
-    for name in ("style.css", "typing.js", "search.js", "share.js"):
+    for name in ("style.css", "typing.js", "search.js", "share.js", "sort.js"):
         (out_dir / name).write_text((static / name).read_text())
     (out_dir / "og.png").write_bytes((static / "og.png").read_bytes())

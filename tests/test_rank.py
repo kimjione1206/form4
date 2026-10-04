@@ -308,3 +308,80 @@ def test_price_error_filings_listed_newest_first_people_only():
     assert c["price_error_filings"] == [{"filed": "2026-09-22", "url": "https://www.sec.gov/e2"},
                                         {"filed": "2026-09-02", "url": "https://www.sec.gov/e1"}]
     assert c["ten_pct_usd"] == 0  # 오류 줄은 대주주 금액에도 넣지 않는다
+
+
+# ---- 묶음 B (2026-10-05): 주당 가격·주식 수, 거래일 기준 같은 날, 일괄 매수, 상위 1명 비중, 같은 사람 ----
+
+def test_buy_rows_shares_and_avg_price():
+    recs = buys(2) + [make_rec("m", owners=[director("7")], shares=1000, price=20.0),
+                      make_rec("m", owners=[director("7")], shares=3000, price=24.0, date="2026-10-01")]
+    c = rank(recs, AS_OF, TITLES)[0]
+    row = next(r for r in c["rows"] if r["url"].endswith("/m"))
+    assert row["shares"] == 4000 and abs(row["avg_price"] - 23.0) < 1e-9  # 92,000 / 4,000
+    zero = make_rec("z", owners=[director("8")], shares=0.0, price=20.0)
+    [c] = profiles([zero], AS_OF, TITLES)  # 목록 밖 회사는 있는 그대로 보여 준다
+    assert c["rows"][0]["avg_price"] is None and c["avg_price"] is None
+
+
+def test_company_avg_price_weighted_by_shares():
+    recs = [make_rec("a", owners=[director("1")], shares=1000, price=10.0),
+            make_rec("b", owners=[director("2")], shares=3000, price=30.0),
+            make_rec("c", owners=[director("3")], shares=1000, price=50.0)]
+    c = rank(recs, AS_OF, TITLES)[0]
+    assert abs(c["avg_price"] - 30.0) < 1e-9  # 150,000 / 5,000
+    assert profiles(sold("s", [director("1")], issuer="X", ticker="SEL"), AS_OF, TITLES)[0]["avg_price"] is None
+
+
+def test_sale_rows_shares_and_avg_price():
+    recs = buys(3) + sold("a", [director("0")], shares=200, price=12.5) + [
+        {k: v for k, v in make_rec("old", code="S").items() if k in store.SALE_KEYS}]
+    rows = {r["url"][-3:]: r for r in rank(recs, AS_OF, TITLES)[0]["sale_rows"]}
+    assert rows["v/a"]["shares"] == 200 and rows["v/a"]["avg_price"] == 12.5
+    assert rows["old"]["avg_price"] is None  # 예전 모양(수량·금액 없음)
+
+
+def test_same_day_groups_by_trade_date_not_filing_date():
+    owners = [officer(str(i), "Senior Vice President") for i in range(3)]
+    recs = [make_rec(f"v{i}", owners=[o], date="2026-09-18", filed=f"2026-09-2{1 + i % 2}",
+                     shares=1000, price=20.0 + i) for i, o in enumerate(owners)]
+    assert "같은 날 여러 명 매수" in rank(recs, AS_OF, TITLES)[0]["tags"]
+    apart = [make_rec(f"w{i}", owners=[o], date=f"2026-09-1{i}", filed="2026-09-21",
+                      shares=1000, price=20.0 + i) for i, o in enumerate(owners)]
+    assert "같은 날 여러 명 매수" not in rank(apart, AS_OF, TITLES)[0]["tags"]
+
+
+def test_bulk_tag_ten_people_same_trade_date():
+    from form4 import config
+    assert config.BULK_MIN_PEOPLE == 10
+    day = [make_rec(f"d{i}", owners=[director(str(i))], date="2026-09-18", filed=f"2026-09-2{1 + i % 2}",
+                    shares=1000, price=20.0 + i) for i in range(11)]
+    other = [make_rec("x", owners=[director("50")], date="2026-09-25", shares=1000, price=20.0)]
+    c = rank(day + other, AS_OF, TITLES)[0]
+    assert "하루 11명 일괄 매수" in c["tags"]
+    assert c["bulk"] == {"date": "2026-09-18", "people": 11}
+    assert c["people"] == 12  # 인원·순서 계산은 그대로
+    nine = rank(day[:9], AS_OF, TITLES)[0]
+    assert nine["bulk"] is None and not any("일괄" in t for t in nine["tags"])
+
+
+def test_top_person_share_splits_joint_filings():
+    recs = [make_rec("a", owners=[officer("1", "Chief Financial Officer")], shares=3000, price=20.0),
+            make_rec("b", owners=[officer("1", "Chief Financial Officer")], shares=1000, price=20.0),
+            make_rec("j", owners=[director("2"), director("3")], shares=2000, price=20.0)]
+    c = rank(recs, AS_OF, TITLES)[0]
+    # CFO 80,000 / 전체 120,000 → 67% (공동 신고 40,000 은 두 사람에게 20,000씩)
+    assert c["top_person"] == {"label": "재무이사(CFO)", "share": 67}
+    [one] = profiles([make_rec("s", owners=[director("1")], shares=1000, price=20.0)], AS_OF, TITLES)
+    assert one["top_person"] is None  # 한 사람뿐이면 비중 문장 없음
+
+
+def test_same_person_chip_letters_only_for_repeat_solo_rows():
+    recs = [make_rec("a1", owners=[director("1")], date="2026-09-30", shares=1000, price=20.0),
+            make_rec("b1", owners=[director("2")], date="2026-09-29", shares=1000, price=20.0),
+            make_rec("a2", owners=[director("1")], date="2026-09-28", shares=1000, price=20.0),
+            make_rec("c1", owners=[director("3")], date="2026-09-27", shares=1000, price=20.0),
+            make_rec("b2", owners=[director("2")], date="2026-09-26", shares=1000, price=20.0),
+            make_rec("j", owners=[director("1"), director("3")], date="2026-09-25", shares=1000, price=20.0)]
+    rows = rank(recs, AS_OF, TITLES)[0]["rows"]
+    assert [(r["url"][-2:], r["same"]) for r in rows] == [
+        ("a1", "A"), ("b1", "B"), ("a2", "A"), ("c1", None), ("b2", "B"), ("/j", None)]

@@ -20,3 +20,16 @@ def test_first_run_has_no_new_or_dropped():
 
 def test_empty_results():
     assert briefing([], []) == {"count": 0, "new": [], "dropped": [], "top": None}
+
+
+def test_recent_within_seven_days_newest_first_then_people():
+    from datetime import date
+    from form4.briefing import recent
+
+    def c(cik, last, people):
+        return {"issuer_cik": cik, "last_date": last, "people": people}
+    rs = [c("old", "2026-09-25", 9), c("a", "2026-09-26", 3), c("b", "2026-10-01", 3),
+          c("c", "2026-10-01", 5), c("d", "2026-09-30", 4), c("none", None, 3)]
+    assert [x["issuer_cik"] for x in recent(rs, date(2026, 10, 2))] == ["c", "b", "d"]
+    assert [x["issuer_cik"] for x in recent(rs[:2], date(2026, 10, 2))] == ["a"]  # 9/26 = 기준일 − 6일
+    assert recent([c("old", "2026-09-25", 9)], date(2026, 10, 2)) == []

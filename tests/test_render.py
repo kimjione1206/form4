@@ -12,9 +12,11 @@ META = {"as_of_label": "10/2", "as_of": "2026-10-02", "updated": "10/04 06:07", 
 
 def result(**kw):
     row = {"date": "2026-09-29", "filed": "2026-10-01", "who": "대표이사(CEO)", "value": 1_500_000.0,
+           "shares": 61_450.0, "avg_price": 24.41, "same": None,
            "increase": 0.18, "tags": ["계획 매수"], "url": "https://www.sec.gov/x", "ceo": True}
     c = {"issuer_cik": "900", "name": "EXAMPLE CORP", "ticker": "EXM", "slug": "EXM", "qualified": True,
          "people": 5, "total_usd": 2_400_000.0, "ten_pct_usd": 5_000_000.0,
+         "avg_price": 24.41, "top_person": {"label": "대표이사(CEO)", "share": 63}, "bulk": None,
          "sale_people": 0, "sale_usd": 0.0, "sale_rows": [],
          "offering_usd": 0.0,
          "first_date": "2026-09-12", "last_date": "2026-09-29", "tags": ["대표이사 포함"],
@@ -54,9 +56,11 @@ def test_summary_segments_text():
     text = "".join(t for t, _ in summary_segments(result(), 1400))
     assert text == ("최근 60일 동안 임원·이사 5명이 시장에서 직접 약 34억 원($2.4M)어치를 샀어요. "
                     "가장 큰 매수는 대표이사(CEO)의 약 21억 원으로, 기존 보유 주식의 +18%를 늘린 거예요. "
+                    "임원·이사가 산 평균 가격은 주당 약 $24.41예요. "
+                    "가장 많이 산 1명(대표이사(CEO))이 전체 매수 금액의 약 63%를 차지해요. "
                     "같은 기간 장내 매도 신고는 없어요.")
     sold = "".join(t for t, _ in summary_segments(result(sale_people=2, sale_usd=20_000.0), 1400))
-    assert sold.endswith("를 늘린 거예요. 같은 기간 임원·이사 2명이 약 2,800만 원어치를 장내 매도했어요. "
+    assert sold.endswith("를 차지해요. 같은 기간 임원·이사 2명이 약 2,800만 원어치를 장내 매도했어요. "
                          "미리 정한 계획(10b5-1) 매도 표시는 없어요.")
 
 
@@ -152,6 +156,7 @@ def test_desktop_layout(tmp_path):
 
 
 SELL = {"date": "2026-09-25", "filed": "2026-09-26", "who": "재무이사(CFO)", "value": 20_000.0,
+        "shares": 160.0, "avg_price": 125.0,
         "decrease": 0.08, "tags": ["계획 매도", "옵션 행사 후 매도"], "url": "https://www.sec.gov/sell1"}
 
 
@@ -542,6 +547,7 @@ def test_summary_full_text_in_html_and_typing_never_collapses(tmp_path):
 
 
 UNPLANNED = {"date": "2026-09-24", "filed": "2026-09-25", "who": "이사", "value": 980_000.0,
+             "shares": 0.0, "avg_price": None,
              "decrease": 0.02, "tags": ["간접"], "url": "https://www.sec.gov/sell2"}
 
 
@@ -611,6 +617,9 @@ def test_readable_text_sizes_and_contrast(tmp_path):
     assert size(".small") == "13"
     for sel in [".chip", ".replay", ".item .num", ".foot", ".col-sale .dim"]:
         assert size(sel) == "12", sel
+    num = next(m.group(1) for body in rules[".item .num"] if (m := re.search(r"color: (#\w{6}|var\(--\w+\))", body)))
+    num = dict(re.findall(r"--(\w+):(#[0-9A-Fa-f]{6})", css)).get(num[6:-1], num) if num.startswith("var") else num
+    assert _contrast(num, "#FFFFFF") >= 4.5 and _contrast(num, "#F8F9FB") >= 4.5  # 첫 화면 순번(01) 글자
     assert size(".notice") == size(".note") == "13.5"
     assert min(float(x) for x in re.findall(r"font-size: ([\d.]+)px", css)) >= 12
     var = dict(re.findall(r"--(\w+):(#[0-9A-Fa-f]{6})", css))
@@ -636,3 +645,117 @@ def test_company_description_snippet(tmp_path):
     assert "매수 0명·없음, 매도 2명·2,800만 원." in props["description"]
     _, props, _ = head_meta((tmp_path / "c" / "LONG" / "index.html").read_text())
     assert len(props["description"]) <= 150 and props["description"].endswith("매도 0명·없음.")
+
+
+# ---- 묶음 B (2026-10-05) ----
+
+def test_price_and_share_formatters():
+    from form4.render import fmt_price, fmt_shares
+    assert fmt_price(24.41) == "$24.41" and fmt_price(7.5) == "$7.50" and fmt_price(99.994) == "$99.99"
+    assert fmt_price(185.6) == "$186" and fmt_price(1234.6) == "$1,235"
+    assert fmt_price(0.0123) == "$0.0123"
+    assert fmt_shares(700_000) == "700,000주" and fmt_shares(12.6) == "13주"
+
+
+def test_summary_avg_price_and_top_person_only_when_present():
+    text = lambda **kw: "".join(t for t, _ in summary_segments(result(**kw), 1400))
+    t = text(top_person=None, avg_price=185.6)
+    assert "평균 가격은 주당 약 $186예요." in t and "가장 많이 산 1명" not in t
+    assert "평균 가격" not in text(avg_price=None)
+    none = text(people=0, total_usd=0.0, rows=[], top=None, avg_price=None, top_person=None)
+    assert "평균 가격" not in none and "가장 많이 산" not in none
+
+
+def test_company_tables_show_price_per_share_and_share_count(tmp_path):
+    c = result(sale_people=2, sale_usd=1_000_000.0, sale_rows=[SELL, UNPLANNED])
+    render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+    detail = (tmp_path / "c" / "EXM" / "index.html").read_text()
+    buys = detail[detail.index("<h2>매수 기록"):detail.index("<h2>매도 기록")]
+    sells = detail[detail.index("<h2>매도 기록"):detail.index("용어 풀이")]
+    for part in (buys, sells):
+        head = re.search(r'<div class="trow thead[^"]*">(.*?)</div>', part, re.S).group(1)
+        cols = re.findall(r"<span[^>]*>([^<]*)</span>", head)
+        assert cols[cols.index("금액") + 1] == "주당"
+        assert '<span class="r d-only">주당</span>' in head
+    [row] = re.findall(r'<div class="trow">.*?</div>', buys, re.S)
+    assert '<span class="mono r d-only">$24.41</span>' in row
+    assert re.search(r'<span class="mono r">\$1\.5M<span class="shares small dim d-only">61,450주</span></span>', row)
+    assert '<span class="pps small dim m-only">주당 $24.41 · 61,450주</span>' in row
+    sell_rows = re.findall(r'<div class="trow">.*?</div>', sells, re.S)
+    assert '<span class="pps small dim m-only">주당 $125 · 160주</span>' in sell_rows[0]
+    assert '<span class="mono r d-only">$125</span>' in sell_rows[0]
+    assert "주당 " not in sell_rows[1] and '<span class="mono r d-only">-</span>' in sell_rows[1]  # 수량 없음
+
+
+def test_same_person_chip_in_buy_table(tmp_path):
+    rows = [dict(result()["rows"][0], same=s, url=f"https://www.sec.gov/{i}") for i, s in enumerate(["A", None, "A"])]
+    c = result(rows=rows, top=rows[0])
+    render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+    detail = (tmp_path / "c" / "EXM" / "index.html").read_text()
+    trs = re.findall(r'<div class="trow">.*?</div>', detail[detail.index("<h2>매수 기록"):detail.index("<h2>매도 기록")], re.S)
+    assert ['<span class="chip same">같은 사람 A</span>' in r for r in trs] == [True, False, True]
+
+
+BULK_NOTE = ("참고 · 9/18 하루에 임원·이사 22명이 함께 매수했어요. 회사 제도(임직원 주식 매수 프로그램 등)에 따른 "
+             "매수일 수 있어서, 각자 따로 판단해 산 매수와는 성격이 다를 수 있어요. 원문을 확인해 주세요.")
+
+
+def test_bulk_note_and_criteria(tmp_path):
+    for bulk, shown in [(None, False), ({"date": "2026-09-18", "people": 22}, True)]:
+        c = result(bulk=bulk, tags=["하루 22명 일괄 매수"] if bulk else [])
+        render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+        assert (BULK_NOTE in plain((tmp_path / "c" / "EXM" / "index.html").read_text())) is shown
+    assert "하루 22명 일괄 매수" in (tmp_path / "index.html").read_text()
+    text = plain((tmp_path / "criteria" / "index.html").read_text())
+    assert ("6. 꼬리표: 대표이사 포함 / 같은 날 여러 명 매수(같은 거래일에 3명 이상, 금액 차이 20% 안, 절반 넘게 부사장급) "
+            "/ 하루 N명 일괄 매수(같은 거래일에 10명 이상이 매수, 회사 제도에 따른 매수일 수 있음) "
+            "/ 계획 매수 포함(10b5-1).") in text
+
+
+def test_home_sort_control_and_mobile_last_date(tmp_path):
+    a = result()
+    b = result(issuer_cik="901", name="SECOND CO", slug="SEC2", people=3, total_usd=9_000_000.0, last_date="2026-10-01")
+    render_site([a, b], {"count": 2, "new": [], "dropped": [], "top": b}, META, {}, tmp_path)
+    home = (tmp_path / "index.html").read_text()
+    bar = re.search(r'<div class="sort" data-sort-bar hidden role="group" aria-label="정렬">(.*?)</div>', home, re.S)
+    assert bar, "정렬 버튼 묶음(JS 없으면 숨김)"
+    assert re.findall(r'<button type="button" data-sort="(\w+)" aria-pressed="(\w+)">([^<]+)</button>', bar.group(1)) == [
+        ("people", "true", "사람 수"), ("last", "false", "최근 거래"), ("total", "false", "금액")]
+    assert home.index("data-sort-bar") < home.index('class="item"')
+    rows = re.findall(r'<a class="item"[^>]*>.*?</a>', home, re.S)
+    assert re.search(r'<a class="item" href="/c/EXM/" data-rank="1" data-last="2026-09-29" data-total="2400000.0">', rows[0])
+    assert re.search(r'data-rank="2" data-last="2026-10-01" data-total="9000000.0"', rows[1])
+    assert '<span class="mono small dim m-only">최근 9/29</span>' in rows[0]
+    assert '<script src="/sort.js" defer></script>' in home
+    js = (tmp_path / "sort.js").read_text()
+    for s in ["data-sort-bar", "data-rank", "data-last", "data-total", "aria-pressed", "hidden = false"]:
+        assert s in js, s
+    assert "localStorage" not in js and "cookie" not in js  # 아무것도 기억하지 않는다
+    css = (tmp_path / "style.css").read_text()
+    assert ".sort[hidden] { display: none; }" in css
+    assert re.search(r"\.sort button \{[^}]*min-height: 44px", css)
+    assert "sort.js" not in (tmp_path / "c" / "EXM" / "index.html").read_text()
+
+
+RECENT_HEAD = "최근 7일 안에 매수가 있었던 곳"
+
+
+def test_brief_recent_fallback_when_nothing_new(tmp_path):
+    a = result(last_date="2026-09-29")
+    b = result(issuer_cik="901", name="SECOND CO", slug="SEC2", last_date="2026-10-01", people=3)
+    old = result(issuer_cik="902", name="OLD CO", slug="OLD", last_date="2026-09-20")
+    render_site([a, b, old], {"count": 3, "new": [], "dropped": [], "top": a}, META, {}, tmp_path)
+    home = (tmp_path / "index.html").read_text()
+    card = home[home.index("<h2>오늘의 정리"):home.index('class="notice"')]
+    assert RECENT_HEAD in card
+    links = re.findall(r'<p class="small recent"><a href="(/c/[^"]+/)">([^<]+)</a> — ([^<]+)</p>', card)
+    assert links == [("/c/SEC2/", "SECOND CO", "임원·이사 3명 · 최근 거래 10/1"),
+                     ("/c/EXM/", "EXAMPLE CORP", "임원·이사 5명 · 최근 거래 9/29")]
+    render_site([a, b], {"count": 2, "new": [b], "dropped": [], "top": a}, META, {}, tmp_path)
+    assert RECENT_HEAD not in (tmp_path / "index.html").read_text()  # '새로'가 있으면 그대로
+    render_site([old], {"count": 1, "new": [], "dropped": [], "top": old}, META, {}, tmp_path)
+    assert RECENT_HEAD not in (tmp_path / "index.html").read_text()  # 7일 안에 없으면 원래 빈 칸 그대로
+    css = (tmp_path / "style.css").read_text()
+    covered = {s.strip() for sel, body in re.findall(r"([^{}]+)\{([^}]*)\}", css) if "min-height: 44px" in body
+               for s in sel.split(",")}
+    assert ".recent a" in covered

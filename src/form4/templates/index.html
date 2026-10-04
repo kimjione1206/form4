@@ -28,6 +28,8 @@
   <p class="small dim">새로 = 오늘 목록에 처음 오른 회사 · 빠짐 = 기간(60일)이 지나 목록에서 빠진 회사</p>
   {% for c in brief.new[:3] %}<p class="small">{{ knames[c.issuer_cik] or c.name }} — 임원·이사 {{ c.people }}명 장내 매수 (거래 {{ c.first_date|md }}~{{ c.last_date|md }})</p>{% endfor %}
   {% if brief.new|length > 3 %}<p class="small dim">외 {{ brief.new|length - 3 }}곳은 아래 목록에서 '새로' 표시로 볼 수 있어요.</p>{% endif %}
+  {% if recent %}<p class="small dim">최근 7일 안에 매수가 있었던 곳</p>
+  {% for c in recent %}<p class="small recent"><a href="/c/{{ c.slug }}/">{{ knames[c.issuer_cik] or c.name }}</a> — 임원·이사 {{ c.people }}명 · 최근 거래 {{ c.last_date|md }}</p>{% endfor %}{% endif %}
   {% if meta.new_filings == 0 %}<p class="small dim">새로 들어온 신고가 없어요 (미국 주말·휴일).</p>{% endif %}
 </section>
 
@@ -39,15 +41,16 @@
 </details>
 </div>
 <div class="pad-x m-only">
-  <div class="row-between small dim"><span>조건 충족 {{ results|length }}곳</span><span>사람 수 ↓ · 금액 ↓</span></div>
+  <div class="row-between small dim"><span>조건 충족 {{ results|length }}곳</span><span data-sort-label>사람 수 ↓ · 금액 ↓</span></div>
   <p class="small dim list-hint">조건 충족 = 최근 60일 임원·이사 3명 이상이 각자 1만 달러 이상 장내 매수</p>
 </div>
 
 <div class="card list">
-<div class="row-between list-head d-only"><div><h2>조건 충족 {{ results|length }}곳</h2><p class="small dim">조건 충족 = 최근 60일 임원·이사 3명 이상이 각자 1만 달러 이상 장내 매수</p></div><span class="small dim">사람 수 ↓ · 금액 ↓</span></div>
+<div class="row-between list-head d-only"><div><h2>조건 충족 {{ results|length }}곳</h2><p class="small dim">조건 충족 = 최근 60일 임원·이사 3명 이상이 각자 1만 달러 이상 장내 매수</p></div><span class="small dim" data-sort-label>사람 수 ↓ · 금액 ↓</span></div>
+{% if results|length > 1 %}<div class="sort" data-sort-bar hidden role="group" aria-label="정렬"><span class="small dim">정렬</span><button type="button" data-sort="people" aria-pressed="true">사람 수</button><button type="button" data-sort="last" aria-pressed="false">최근 거래</button><button type="button" data-sort="total" aria-pressed="false">금액</button></div>{% endif %}
 {% if results %}<div class="list-cols small dim d-only"><span>#</span><span>회사</span><span class="r">인원</span><span class="r">총액</span><span class="r">달러</span><span class="r">최근 거래</span><span class="r">매도</span></div>{% endif %}
 {% for c in results %}
-  <a class="item" href="/c/{{ c.slug }}/">
+  <a class="item" href="/c/{{ c.slug }}/" data-rank="{{ loop.index }}" data-last="{{ c.last_date }}" data-total="{{ c.total_usd }}">
     <span class="mono num">{{ "%02d"|format(loop.index) }}</span>
     <span class="item-main">
       <span class="name">{% if knames[c.issuer_cik] %}{{ knames[c.issuer_cik] }} <span class="small dim">{{ c.name }}</span> {% else %}{{ c.name }} {% endif %}<span class="mono small dim">{{ c.ticker }}</span></span>
@@ -59,6 +62,7 @@
       <span class="mono strong accent">{{ c.people }}명</span>
       <span class="mono">{{ c.total_usd|krw_short(meta.fx_rate) }} 원</span>
       <span class="mono small dim">{{ c.total_usd|usd }}</span>
+      <span class="mono small dim m-only">최근 {{ c.last_date|md }}</span>
     </span>
     <span class="mono small r d-only col-last">{{ c.last_date|md }}</span>
     <span class="mono small r d-only col-sale">{{ c.sale_people }}명{% if c.sale_people %}<br><span class="dim">{{ c.sale_usd|krw_short(meta.fx_rate) }}</span>{% endif %}</span>
@@ -69,4 +73,5 @@
 </div>
 </div>
 <script src="/search.js" defer></script>
+<script src="/sort.js" defer></script>
 {% endblock %}
