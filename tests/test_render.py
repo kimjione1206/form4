@@ -489,3 +489,16 @@ def test_naver_site_verification_meta_on_home(tmp_path):
     render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
     tag = f'<meta name="naver-site-verification" content="{config.NAVER_SITE_VERIFICATION}">'
     assert tag in (tmp_path / "index.html").read_text()
+
+
+def test_summary_full_text_in_html_and_typing_never_collapses(tmp_path):
+    c = result(sale_people=2, sale_usd=20_000.0, sale_rows=[SELL])
+    render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+    detail = (tmp_path / "c" / "EXM" / "index.html").read_text()
+    box = re.search(r"<p class=\"summary\" data-typing>(.*?)</p>", detail, re.S).group(1)
+    full = "".join(t for t, _ in summary_segments(c, META["fx_rate"]))
+    assert re.sub(r"<[^>]+>", "", box) == full  # JS 가 없어도 문장 전체가 보인다
+    js = (tmp_path / "typing.js").read_text()
+    assert "minHeight" in js and "offsetHeight" in js  # 지우기 전에 높이를 고정해 상자가 접히지 않게
+    assert "1200" in js  # 길이와 상관없이 약 1.2초 안에 끝
+    assert "prefers-reduced-motion" in js and "data-replay" in js
