@@ -136,3 +136,18 @@ def test_offering_footnote_on_security_title_counts():
     tx = {"code": "P", "date": "2026-08-14", "shares": 1, "price": 1, "after": 2, "title_footnotes": ["F2"]}
     xml = form4_xml(txs=[tx], footnotes={"F2": "ordinary shares purchased in connection with an underwritten public offering"})
     assert parse_form4(xml, "a", FILED)[0]["offering"] is True
+
+
+def test_exercise_marks_lines_with_option_exercise_same_day():
+    sale = {"code": "S", "date": "2026-09-30", "shares": 10, "price": 5, "after": 90}
+    exercise_same_day = {"code": "M", "date": "2026-09-30", "shares": 10, "price": 1, "after": 100}
+    in_table = form4_xml(txs=[exercise_same_day, sale])
+    assert [r["exercise"] for r in parse_form4(in_table, "a", FILED)] == [True]
+    deriv = form4_xml(txs=[sale], deriv_txs=[{"code": "M", "date": "2026-09-30-04:00"}])
+    assert parse_form4(deriv, "a", FILED)[0]["exercise"] is True
+    other_day = form4_xml(txs=[sale], deriv_txs=[{"code": "M", "date": "2026-09-29"}])
+    assert parse_form4(other_day, "a", FILED)[0]["exercise"] is False
+    no_m = form4_xml(txs=[sale], deriv_txs=[{"code": "A", "date": "2026-09-30"}])
+    assert parse_form4(no_m, "a", FILED)[0]["exercise"] is False
+    buy = form4_xml()
+    assert parse_form4(buy, "a", FILED)[0]["exercise"] is False

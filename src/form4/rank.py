@@ -71,18 +71,48 @@ def _rows(counted: list[dict], qualified: set[str], titles: dict[str, str]) -> l
     for rs in groups.values():
         rs.sort(key=lambda r: r["date"])
         owners = [o for o in rs[0]["owners"] if o["cik"] in qualified]
-        labels = [owner_label(o, titles) for o in owners]
-        who = labels[0] if len(labels) == 1 else f"{labels[0]} 외 {len(labels) - 1}명"
         tags = []
         if rs[0]["plan"]:
             tags.append("계획 매수")
         if any(r["direct"] == "I" for r in rs):
             tags.append("간접")
         rows.append({
-            "date": rs[-1]["date"], "filed": rs[0]["filed"], "who": who,
+            "date": rs[-1]["date"], "filed": rs[0]["filed"], "who": _who(owners, titles),
             "value": sum(_value(r) for r in rs), "increase": _increase(rs),
             "tags": tags, "url": rs[0]["url"],
             "ceo": any(o["is_officer"] and CEO_RE.search(o["title"]) for o in owners),
+        })
+    rows.sort(key=lambda x: (x["date"], x["value"]), reverse=True)
+    return rows
+
+
+def _who(owners: list[dict], titles: dict[str, str]) -> str:
+    labels = [owner_label(o, titles) for o in owners]
+    return labels[0] if len(labels) == 1 else f"{labels[0]} 외 {len(labels) - 1}명"
+
+
+def _decrease(r: dict) -> float | None:
+    shares, after = r.get("shares", 0.0), r.get("after")
+    if after is None or after + shares <= 0:
+        return None
+    return shares / (after + shares)
+
+
+def _sale_rows(sells: list[dict], titles: dict[str, str]) -> list[dict]:
+    """매도는 저장할 때 이미 신고서당 한 줄. 예전 모양(금액 없음) 줄은 0으로 본다."""
+    rows = []
+    for r in sells:
+        tags = []
+        if r.get("plan"):
+            tags.append("계획 매도")
+        if r.get("exercise"):
+            tags.append("옵션 행사 후 매도")
+        if r.get("direct") == "I":
+            tags.append("간접")
+        rows.append({
+            "date": r["date"], "filed": r["filed"],
+            "who": _who([o for o in r["owners"] if _is_insider(o)], titles),
+            "value": r.get("value", 0.0), "decrease": _decrease(r), "tags": tags, "url": r["url"],
         })
     rows.sort(key=lambda x: (x["date"], x["value"]), reverse=True)
     return rows
@@ -133,6 +163,7 @@ def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
         tags.append("같은 날 여러 명 매수")
     if any("계획 매수" in r["tags"] for r in rows):
         tags.append("계획 매수 포함")
+    sells = [r for r in rs if r["code"] == "S" and _has_person(r)]
     return {
         "issuer_cik": cik,
         "name": latest["issuer_name"],
@@ -140,7 +171,9 @@ def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
         "slug": _slug(ticker),
         "people": len(qualified),
         "total_usd": sum(_value(r) for r in counted),
-        "sales": len({r["accession"] for r in rs if r["code"] == "S"}),
+        "sale_people": len({o["cik"] for r in sells for o in r["owners"] if _is_insider(o)}),
+        "sale_usd": sum(r.get("value", 0.0) for r in sells),
+        "sale_rows": _sale_rows(sells, titles),
         "offering_usd": sum(_value(r) for r in person_buys if r["offering"]),
         "ten_pct_usd": sum(_value(r) for r in rs if r["code"] == "P" and not _has_person(r)
                            and any(_is_holder(o) for o in r["owners"])),

@@ -39,7 +39,7 @@
     <span class="item-main">
       <span class="name">{{ c.name }} <span class="mono small dim">{{ c.ticker }}</span></span>
       <span class="small dim">{{ lines[c.issuer_cik] }}</span>
-      <span class="small m-only">{% for t in c.tags %}{{ t }} · {% endfor %}매도 {{ c.sales }}건{% if c.issuer_cik in new_ciks %} · <b class="accent">새로 · 거래 {{ c.last_date|md }}</b>{% endif %}</span>
+      <span class="small m-only">{% for t in c.tags %}{{ t }} · {% endfor %}매도 {{ c.sale_people }}명{% if c.sale_people %} · {{ c.sale_usd|krw(meta.fx_rate) }}{% endif %}{% if c.issuer_cik in new_ciks %} · <b class="accent">새로 · 거래 {{ c.last_date|md }}</b>{% endif %}</span>
       {% if c.tags or c.issuer_cik in new_ciks %}<span class="small d-only">{% for t in c.tags %}{{ t }}{% if not loop.last %} · {% endif %}{% endfor %}{% if c.issuer_cik in new_ciks %}{% if c.tags %} · {% endif %}<b class="accent">새로</b>{% endif %}</span>{% endif %}
     </span>
     <span class="item-nums">
@@ -48,7 +48,7 @@
       <span class="mono small dim">{{ c.total_usd|usd }}</span>
     </span>
     <span class="mono small r d-only col-last">{{ c.last_date|md }}</span>
-    <span class="mono small dim r d-only">{{ c.sales }}건</span>
+    <span class="mono small r d-only col-sale">{{ c.sale_people }}명{% if c.sale_people %}<br><span class="dim">{{ c.sale_usd|krw_short(meta.fx_rate) }}</span>{% endif %}</span>
   </a>
 {% else %}
   <p class="pad">오늘은 조건에 맞는 회사가 없어요.</p>

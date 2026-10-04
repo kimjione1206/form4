@@ -1,5 +1,6 @@
 from datetime import date
 
+from form4 import store
 from form4.rank import owner_label, rank
 from helpers import director, entity_director, fund, make_rec, officer
 
@@ -42,14 +43,14 @@ def test_sort_by_people_then_total():
     assert [r["issuer_cik"] for r in rank(a + b + c, AS_OF, TITLES)] == ["B", "C", "A"]
 
 
-def test_sales_count_and_tags():
+def test_sale_people_and_tags():
     recs = buys(2) + [
         make_rec("ceo", owners=[officer("5", "Chief Executive Officer")], plan=True,
                  direct="I", shares=1000, price=20.0),
         make_rec("s1", code="S", owners=[director("0")]),
     ]
     c = rank(recs, AS_OF, TITLES)[0]
-    assert c["sales"] == 1
+    assert c["sale_people"] == 1 and "sales" not in c
     assert c["tags"] == ["대표이사 포함", "계획 매수 포함"]
     row = [r for r in c["rows"] if r["ceo"]][0]
     assert row["who"] == "대표이사" and row["tags"] == ["계획 매수", "간접"]
@@ -152,3 +153,57 @@ def test_offering_not_counted_but_reported():
     assert c["people"] == 3 and c["total_usd"] == 60_000.0 and len(c["rows"]) == 3
     assert c["offering_usd"] == 30_000.0 and c["ten_pct_usd"] == 100_000.0
     assert rank(buys(3), AS_OF, TITLES)[0]["offering_usd"] == 0.0
+
+
+def sold(accession, owners, **kw):
+    """저장될 때처럼 신고서당 한 줄로 줄인 매도."""
+    return store.merge([], [make_rec(accession, code="S", owners=owners, **kw)])
+
+
+def test_sale_people_and_usd_count_only_insider_individuals():
+    recs = buys(3) + (
+        sold("s1", [director("0"), entity_director("E")], shares=100, price=10.0)
+        + sold("s2", [director("0")], shares=50, price=10.0)
+        + sold("s3", [officer("8", "Chief Financial Officer")], shares=10, price=10.0)
+        + sold("s4", [entity_director("E2")], shares=1000, price=10.0)
+        + sold("s5", [director("9"), fund("F")], shares=20, price=10.0)
+    ) + [{**make_rec("s6", code="S", owners=[fund("F2")], shares=1000, price=10.0),
+          "value": 10_000.0}]  # 10% 대주주만 (저장 단계에서 빠지지만 혹시 들어와도 안 셈)
+    c = rank(recs, AS_OF, TITLES)[0]
+    assert c["sale_people"] == 3  # 이사 0, CFO 8, 이사 9 — 법인·대주주는 빼고
+    assert c["sale_usd"] == 1_800.0
+    assert sorted(r["url"][-2:] for r in c["sale_rows"]) == ["s1", "s2", "s3", "s5"]
+    assert c["people"] == 3 and c["total_usd"] == 60_000.0  # 매도는 조건·순서에 영향 없음
+
+
+def test_sale_rows_decrease_tags_and_order():
+    recs = buys(3) + (
+        sold("a", [officer("8", "Chief Financial Officer"), director("2")], date="2026-09-20",
+             shares=200, price=10.0, after=800.0, plan=True, exercise=True, direct="I")
+        + sold("b", [director("0")], date="2026-09-25", shares=100, price=10.0, after=None)
+        + sold("c", [director("1")], date="2026-09-25", shares=10, price=10.0, after=0.0)
+    )
+    rows = rank(recs, AS_OF, TITLES)[0]["sale_rows"]
+    assert [r["url"][-1] for r in rows] == ["b", "c", "a"]
+    a = rows[2]
+    assert a["who"] == "재무이사(CFO) 외 1명" and a["value"] == 2_000.0
+    assert abs(a["decrease"] - 0.2) < 1e-9
+    assert a["tags"] == ["계획 매도", "옵션 행사 후 매도", "간접"]
+    assert (a["date"], a["filed"]) == ("2026-09-20", "2026-09-20")
+    assert rows[0]["decrease"] is None and rows[0]["tags"] == []
+    assert rows[1]["decrease"] == 1.0  # 전부 팜
+    zero = sold("z", [director("0")], shares=0.0, price=10.0, after=0.0)
+    assert rank(buys(3) + zero, AS_OF, TITLES)[0]["sale_rows"][0]["decrease"] is None
+
+
+def test_old_shape_sale_rows_count_as_zero_amount():
+    old = {k: v for k, v in make_rec("old", code="S").items() if k in store.SALE_KEYS}
+    c = rank(buys(3) + [old], AS_OF, TITLES)[0]
+    assert c["sale_people"] == 1 and c["sale_usd"] == 0.0
+    [row] = c["sale_rows"]
+    assert row["value"] == 0.0 and row["decrease"] is None and row["tags"] == []
+
+
+def test_no_sales():
+    c = rank(buys(3), AS_OF, TITLES)[0]
+    assert (c["sale_people"], c["sale_usd"], c["sale_rows"]) == (0, 0.0, [])

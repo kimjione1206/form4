@@ -14,7 +14,7 @@
 <section class="tiles pad-x">
   <div class="tile card-lite"><span class="small dim">장내 매수</span><span class="mono big accent">{{ c.people }}명</span><span class="small dim">임원·이사</span></div>
   <div class="tile card-lite"><span class="small dim">총액</span><span class="mono big">{{ c.total_usd|krw_short(meta.fx_rate) }}</span><span class="mono small dim">{{ c.total_usd|usd }}</span></div>
-  <div class="tile card-lite"><span class="small dim">같은 기간 매도</span><span class="mono big">{{ c.sales }}건</span><span class="small dim">장내 매도</span></div>
+  <div class="tile card-lite"><span class="small dim">같은 기간 매도</span><span class="mono big">{{ c.sale_people }}명</span><span class="small dim">{{ c.sale_usd|krw(meta.fx_rate) if c.sale_people else "없음" }}</span></div>
 </section>
 
 <section class="card">
@@ -23,6 +23,7 @@
 </section>
 </div>
 
+<div class="col col-main">
 <section class="card trades">
   <div class="row-between"><h2>거래 기록</h2><span class="small dim">최근 거래일 순</span></div>
   <div class="trow thead small dim"><span>거래일</span><span class="d-only">신고일</span><span>누가</span><span class="r">금액</span><span class="r">보유↑</span><span class="d-only">구분</span><span class="d-only r">원문</span></div>
@@ -39,6 +40,28 @@
   {% endfor %}
 </section>
 
+<section class="card trades">
+  <div class="row-between"><h2>매도 기록</h2>{% if c.sale_rows %}<span class="small dim">최근 거래일 순</span>{% endif %}</div>
+  <p class="small dim trades-note">매도는 세금 납부·생활 자금·미리 정한 계획 등 여러 이유로 일어나며, 주가 하락을 뜻하지 않아요.</p>
+  {% if c.sale_rows %}
+  <div class="trow thead small dim"><span>거래일</span><span class="d-only">신고일</span><span>누가</span><span class="r">금액</span><span class="r">보유↓</span><span class="d-only">구분</span><span class="d-only r">원문</span></div>
+  {% for r in c.sale_rows %}
+  <div class="trow">
+    <span class="mono small">{{ r.date|md }}</span>
+    <span class="mono small dim d-only">{{ r.filed|md }}</span>
+    <span class="who"><b>{{ r.who }}</b>{% for t in r.tags %}<span class="chip m-only">{{ t }}</span>{% endfor %}<a class="small m-only" href="{{ r.url }}" target="_blank" rel="noopener">신고 {{ r.filed|md }} · 원문 ↗</a></span>
+    <span class="mono r">{{ r.value|usd }}</span>
+    <span class="mono r">{{ r.decrease|decrease }}</span>
+    <span class="small d-only">{{ r.tags|join(" · ") }}</span>
+    <a class="src d-only" href="{{ r.url }}" target="_blank" rel="noopener">원문 ↗</a>
+  </div>
+  {% endfor %}
+  {% else %}
+  <p class="small trades-note">같은 기간 임원·이사의 장내 매도 신고는 없어요.</p>
+  {% endif %}
+</section>
+</div>
+
 <div class="col col-bottom">
 
 {% if c.ten_pct_usd > 0 %}
@@ -52,8 +75,11 @@
   <h2>용어 풀이</h2>
   <p><b>장내 매수</b> 증권시장에서 직접 산 것 (회사가 보상으로 준 주식은 제외)</p>
   <p><b>계획 매수</b> 몇 달 전에 미리 정해 둔 계획(10b5-1)대로 자동으로 산 것</p>
+  <p><b>계획 매도</b> 몇 달 전에 미리 정해 둔 계획(10b5-1)대로 판 것</p>
+  <p><b>옵션 행사 후 매도</b> 스톡옵션으로 받은 주식을 같은 날 바로 판 것</p>
   <p><b>간접</b> 본인 이름이 아닌 가족·신탁 명의로 산 것</p>
   <p><b>보유↑</b> 원래 갖고 있던 주식 대비 이번에 늘어난 비율</p>
+  <p><b>보유↓</b> 원래 갖고 있던 주식 대비 이번에 줄어든 비율</p>
   <p><b>거래일·신고일</b> 실제로 산 날과 공개 신고한 날 (이틀 안)</p>
 </section>
 

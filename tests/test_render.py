@@ -2,8 +2,8 @@ import re
 
 import pytest
 
-from form4.render import (find_forbidden, fmt_increase, fmt_krw, fmt_krw_short, fmt_usd,
-                          render_site, summary_segments)
+from form4.render import (find_forbidden, fmt_decrease, fmt_increase, fmt_krw, fmt_krw_short,
+                          fmt_usd, render_site, summary_segments)
 
 META = {"as_of_label": "10/2", "updated": "10/04 06:07", "fx_rate": 1400.0,
         "fx_date": "2026-10-02", "new_filings": 1502}
@@ -13,7 +13,8 @@ def result(**kw):
     row = {"date": "2026-09-29", "filed": "2026-10-01", "who": "대표이사(CEO)", "value": 1_500_000.0,
            "increase": 0.18, "tags": ["계획 매수"], "url": "https://www.sec.gov/x", "ceo": True}
     c = {"issuer_cik": "900", "name": "EXAMPLE CORP", "ticker": "EXM", "slug": "EXM",
-         "people": 5, "total_usd": 2_400_000.0, "sales": 0, "ten_pct_usd": 5_000_000.0,
+         "people": 5, "total_usd": 2_400_000.0, "ten_pct_usd": 5_000_000.0,
+         "sale_people": 0, "sale_usd": 0.0, "sale_rows": [],
          "offering_usd": 0.0,
          "first_date": "2026-09-12", "last_date": "2026-09-29", "tags": ["대표이사 포함"],
          "officer_titles": [], "rows": [row], "top": row}
@@ -28,6 +29,8 @@ def test_formatters():
     assert fmt_krw(5_000, 1400) == "약 700만 원"
     assert fmt_krw_short(2_400_000, 1400) == "34억"
     assert fmt_increase(0.18) == "+18%" and fmt_increase("new") == "신규 보유" and fmt_increase(None) == "-"
+    assert fmt_decrease(0.08) == "\u22128%" and fmt_decrease(0.084) == "−8%" and fmt_decrease(1.0) == "−100%"
+    assert fmt_decrease(0.004) == "−1% 미만" and fmt_decrease(None) == "-"
 
 
 def test_formatters_round_up_to_next_unit():
@@ -48,7 +51,9 @@ def test_summary_segments_text():
     text = "".join(t for t, _ in summary_segments(result(), 1400))
     assert text == ("최근 60일 동안 임원·이사 5명이 시장에서 직접 약 34억 원($2.4M)어치를 샀어요. "
                     "가장 큰 매수는 대표이사(CEO)의 약 21억 원으로, 기존 보유 주식의 +18%를 늘린 거예요. "
-                    "같은 기간 매도 신고는 0건이에요.")
+                    "같은 기간 장내 매도 신고는 없어요.")
+    sold = "".join(t for t, _ in summary_segments(result(sale_people=2, sale_usd=20_000.0), 1400))
+    assert sold.endswith("를 늘린 거예요. 같은 기간 임원·이사 2명이 약 2,800만 원어치를 장내 매도했어요.")
 
 
 def test_render_site_writes_pages(tmp_path):
@@ -59,7 +64,7 @@ def test_render_site_writes_pages(tmp_path):
     home = (tmp_path / "index.html").read_text()
     detail = (tmp_path / "c" / "EXM" / "index.html").read_text()
     assert "특정 종목의 매수·매도를 권하지 않아요" in home
-    assert "반도체 장비를 만드는 회사" in home and "매도 0건" in home
+    assert "반도체 장비를 만드는 회사" in home and "매도 0명 · <b" in home
     assert "새로 · 거래 9/29" in home
     assert "data-typing" in detail and "+18%" in detail and "대주주(펀드)" in detail
     for f in ["criteria/index.html", "404.html", "style.css", "typing.js"]:
@@ -132,3 +137,60 @@ def test_desktop_layout(tmp_path):
     assert re.search(r'<span class="[^"]*\bcol-last\b[^"]*">8/27</span>', rows[1])
     detail = (tmp_path / "c" / "EXM" / "index.html").read_text()
     assert re.search(r'<div class="[^"]*\bthead\b[^"]*">.*<span class="[^"]*\bd-only\b[^"]*">신고일</span>', detail, re.S)
+
+
+SELL = {"date": "2026-09-25", "filed": "2026-09-26", "who": "재무이사(CFO)", "value": 20_000.0,
+        "decrease": 0.08, "tags": ["계획 매도", "옵션 행사 후 매도"], "url": "https://www.sec.gov/sell1"}
+
+
+def test_home_shows_sale_people_and_amount(tmp_path):
+    a = result(sale_people=2, sale_usd=20_000.0, sale_rows=[SELL])
+    b = result(issuer_cik="901", name="SECOND CO", slug="SEC2")
+    render_site([a, b], {"count": 2, "new": [], "dropped": [], "top": a}, META, {}, tmp_path)
+    home = (tmp_path / "index.html").read_text()
+    rows = re.findall(r'<a class="[^"]*\bitem\b[^"]*".*?</a>', home, re.S)
+    assert "대표이사 포함 · 매도 2명 · 약 2,800만 원" in rows[0]
+    assert "대표이사 포함 · 매도 0명<" in rows[1] and "매도 0명 ·" not in rows[1]
+    cell = re.search(r'<span class="[^"]*\bcol-sale\b[^"]*">(.*?)</span>\s*</a>', rows[0], re.S).group(1)
+    assert "2명" in cell and "2,800만" in cell
+    cell = re.search(r'<span class="[^"]*\bcol-sale\b[^"]*">(.*?)</span>\s*</a>', rows[1], re.S).group(1)
+    assert "0명" in cell and "만" not in cell
+    assert "건</span>" not in home
+
+
+def test_detail_sell_tile_and_table(tmp_path):
+    c = result(sale_people=2, sale_usd=20_000.0, sale_rows=[SELL])
+    render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+    detail = (tmp_path / "c" / "EXM" / "index.html").read_text()
+    text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", detail))
+    assert "같은 기간 매도 2명 약 2,800만 원" in text
+    assert "같은 기간 임원·이사 2명이 약 2,800만 원어치를 장내 매도했어요." in text
+    sells = detail[detail.index("매도 기록"):detail.index("용어 풀이")]
+    assert "매도는 세금 납부·생활 자금·미리 정한 계획 등 여러 이유로 일어나며, 주가 하락을 뜻하지 않아요." in sells
+    assert re.search(r'<div class="[^"]*\bthead\b[^"]*">.*<span class="[^"]*\bd-only\b[^"]*">신고일</span>.*보유↓', sells, re.S)
+    assert "9/25" in sells and "$20K" in sells and "−8%" in sells
+    assert '<span class="chip m-only">옵션 행사 후 매도</span>' in sells
+    assert re.search(r'<a class="small m-only" href="https://www.sec.gov/sell1"[^>]*>신고 9/26 · 원문 ↗</a>', sells)
+    assert re.search(r'<a class="src d-only" href="https://www.sec.gov/sell1"', sells)
+    assert "계획 매도 · 옵션 행사 후 매도" in sells
+    assert "장내 매도 신고는 없어요" not in sells
+    assert detail.index("거래 기록") < detail.index("매도 기록") < detail.index("용어 풀이")
+
+
+def test_detail_without_sales(tmp_path):
+    c = result()
+    render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+    detail = (tmp_path / "c" / "EXM" / "index.html").read_text()
+    sells = detail[detail.index("매도 기록"):detail.index("용어 풀이")]
+    assert "같은 기간 임원·이사의 장내 매도 신고는 없어요." in sells and "trow" not in sells
+    text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", detail))
+    assert "같은 기간 매도 0명 없음" in text
+
+
+def test_glossary_explains_sell_terms(tmp_path):
+    c = result()
+    render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+    text = re.sub(r"<[^>]+>", "", (tmp_path / "c" / "EXM" / "index.html").read_text())
+    assert "계획 매도 몇 달 전에 미리 정해 둔 계획(10b5-1)대로 판 것" in text
+    assert "옵션 행사 후 매도 스톡옵션으로 받은 주식을 같은 날 바로 판 것" in text
+    assert "보유↓ 원래 갖고 있던 주식 대비 이번에 줄어든 비율" in text

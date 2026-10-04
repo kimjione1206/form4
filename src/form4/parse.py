@@ -82,6 +82,11 @@ def parse_form4(xml_text: str, accession: str, filed: date) -> list[dict]:
         "plan": _b(root, "aff10b5One"),
         "url": filing_url(issuer_cik, accession),
     }
+    # 같은 날 스톡옵션 행사(M)가 있으면 그날 판 것은 '옵션 행사 후 매도'로 본다.
+    exercise_dates = {_t(tx, "transactionDate/value")[:10]
+                      for tx in root.findall("nonDerivativeTable/nonDerivativeTransaction")
+                      + root.findall("derivativeTable/derivativeTransaction")
+                      if _t(tx, "transactionCoding/transactionCode") == "M"}
     records = []
     for tx in root.findall("nonDerivativeTable/nonDerivativeTransaction"):
         code = _t(tx, "transactionCoding/transactionCode")
@@ -100,5 +105,6 @@ def parse_form4(xml_text: str, accession: str, filed: date) -> list[dict]:
             "direct": _t(tx, "ownershipNature/directOrIndirectOwnership/value") or "D",
             "offering": any(OFFERING_RE.search(notes.get(i, "")) for i in ids),
             "drip": any(DRIP_RE.search(notes.get(i, "")) for i in ids),
+            "exercise": _t(tx, "transactionDate/value")[:10] in exercise_dates,
         })
     return records

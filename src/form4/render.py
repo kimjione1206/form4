@@ -42,6 +42,14 @@ def fmt_increase(x) -> str:
     return f"+{x * 100:.0f}%"
 
 
+def fmt_decrease(x) -> str:
+    if x is None:
+        return "-"
+    if 0 < x < 0.01:
+        return "\u22121% 미만"
+    return f"\u2212{x * 100:.0f}%"
+
+
 def fmt_md(iso: str) -> str:
     _, m, d = iso.split("-")
     return f"{int(m)}/{int(d)}"
@@ -62,7 +70,11 @@ def summary_segments(c: dict, rate: float) -> list[tuple[str, bool]]:
         segs.append(("으로, 새로 보유를 시작한 거예요. ", False))
     else:
         segs.append(("이에요. ", False))
-    segs.append((f"같은 기간 매도 신고는 {c['sales']}건이에요.", False))
+    if c["sale_people"]:
+        segs.append((f"같은 기간 임원·이사 {c['sale_people']}명이 {fmt_krw(c['sale_usd'], rate)}어치를 "
+                     "장내 매도했어요.", False))
+    else:
+        segs.append(("같은 기간 장내 매도 신고는 없어요.", False))
     return segs
 
 
@@ -74,7 +86,7 @@ def find_forbidden(html: str) -> list[str]:
 def _env() -> Environment:
     env = Environment(loader=PackageLoader("form4", "templates"), autoescape=select_autoescape())
     env.filters.update(usd=fmt_usd, krw=fmt_krw, krw_short=fmt_krw_short,
-                       increase=fmt_increase, md=fmt_md)
+                       increase=fmt_increase, decrease=fmt_decrease, md=fmt_md)
     return env
 
 

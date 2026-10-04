@@ -2,7 +2,7 @@
 
 
 def form4_xml(issuer_cik="1000697", ticker="WAT", owners=None, txs=None, plan=False,
-              footnotes=None, doc_type="4"):
+              footnotes=None, doc_type="4", deriv_txs=None):
     owners = owners or [{"cik": "111", "director": True}]
     txs = txs or [{"code": "P", "date": "2026-09-30", "shares": 100, "price": 50, "after": 1000}]
     owner_xml = ""
@@ -42,6 +42,12 @@ def form4_xml(issuer_cik="1000697", ticker="WAT", owners=None, txs=None, plan=Fa
             f"<ownershipNature><directOrIndirectOwnership><value>{t.get('direct', 'D')}</value>"
             f"</directOrIndirectOwnership></ownershipNature></nonDerivativeTransaction>"
         )
+    deriv_xml = "".join(
+        f"<derivativeTransaction><securityTitle><value>Stock Option</value></securityTitle>"
+        f"<transactionDate><value>{t['date']}</value></transactionDate>"
+        f"<transactionCoding><transactionFormType>4</transactionFormType>"
+        f"<transactionCode>{t['code']}</transactionCode></transactionCoding></derivativeTransaction>"
+        for t in (deriv_txs or []))
     notes = "".join(f'<footnote id="{k}">{v}</footnote>' for k, v in (footnotes or {}).items())
     return (
         '<?xml version="1.0"?><ownershipDocument><schemaVersion>X0609</schemaVersion>'
@@ -50,6 +56,7 @@ def form4_xml(issuer_cik="1000697", ticker="WAT", owners=None, txs=None, plan=Fa
         f"<issuerTradingSymbol>{ticker}</issuerTradingSymbol></issuer>"
         f"{owner_xml}<aff10b5One>{1 if plan else 0}</aff10b5One>"
         f"<nonDerivativeTable>{tx_xml}</nonDerivativeTable>"
+        f"<derivativeTable>{deriv_xml}</derivativeTable>"
         f"<footnotes>{notes}</footnotes></ownershipDocument>"
     )
 
@@ -60,7 +67,8 @@ def submission(xml):
 
 def make_rec(accession="A1", issuer="900", owners=None, code="P", date="2026-09-30",
              shares=1000.0, price=20.0, after=5000.0, filed=None, form="4", plan=False,
-             direct="D", offering=False, drip=False, ticker="EXM", name="EXAMPLE CORP"):
+             direct="D", offering=False, drip=False, ticker="EXM", name="EXAMPLE CORP",
+             exercise=False):
     owners = owners or [{"cik": "1", "is_director": True, "is_officer": False,
                          "is_ten_pct": False, "title": ""}]
     return {
@@ -69,6 +77,7 @@ def make_rec(accession="A1", issuer="900", owners=None, code="P", date="2026-09-
         "owners": owners, "plan": plan, "url": f"https://www.sec.gov/{accession}",
         "code": code, "date": date, "shares": shares, "price": price,
         "after": after, "direct": direct, "offering": offering, "drip": drip,
+        "exercise": exercise,
     }
 
 

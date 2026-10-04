@@ -54,7 +54,25 @@ def test_sales_collapsed_to_one_per_filing_and_insider_only():
     merged = store.merge([], [s1, s2, fund_sale])
     assert len(merged) == 1
     assert merged[0]["accession"] == "S1" and merged[0]["date"] == "2026-09-29"
-    assert "shares" not in merged[0]
+
+
+def test_collapsed_sale_keeps_sums_last_holding_and_flags():
+    s1 = make_rec("S1", code="S", date="2026-09-29", shares=100, price=10.0, after=850.0,
+                  direct="I", exercise=True, plan=True)
+    s2 = make_rec("S1", code="S", date="2026-09-28", shares=50, price=12.0, after=900.0)
+    s3 = make_rec("S1", code="S", date="2026-09-29", shares=30, price=10.0, after=820.0)
+    [row] = store.merge([], [s1, s2, s3])
+    assert row["shares"] == 180 and row["value"] == 1900.0
+    assert row["after"] == 820.0 and row["direct"] == "D"  # 같은 날이면 뒤에 적힌 줄
+    assert row["plan"] is True and row["exercise"] is True and row["date"] == "2026-09-29"
+    assert "price" not in row
+
+
+def test_old_shape_sale_rows_still_merge_and_save(tmp_path):
+    old = {k: v for k, v in make_rec("S0", code="S").items() if k in store.SALE_KEYS}
+    merged = store.merge([old], [make_rec("P1")])
+    store.save(tmp_path / "t.jsonl", merged)
+    assert sorted(r["accession"] for r in store.load(tmp_path / "t.jsonl")) == ["P1", "S0"]
 
 
 def test_prune_keeps_window_by_trade_date():
