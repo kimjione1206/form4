@@ -456,7 +456,7 @@ def test_privacy_page_and_footer_link(tmp_path):
         assert s in text, s
     for f in ["index.html", "c/EXM/index.html", "criteria/index.html", "privacy/index.html", "404.html"]:
         foot = re.search(r'<footer class="foot">.*?</footer>', (tmp_path / f).read_text(), re.S).group(0)
-        assert '<a href="/privacy/">개인정보 안내</a> · <a href="/criteria/#about">만든 사람·기준</a>' in foot, f
+        assert '<a href="/privacy/">개인정보 안내</a> · <a href="/criteria/#about">만든 사람</a>' in foot, f
 
 
 BEACON = '<script defer src="https://static.cloudflareinsights.com/beacon.min.js"'

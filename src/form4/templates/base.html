@@ -23,7 +23,7 @@
 <body>
 <div class="page">
 {% block body %}{% endblock %}
-<footer class="foot">출처: SEC EDGAR · 원화는 {{ meta.fx_date }} 기준 환율(1달러 {{ meta.fx_rate|round|int }}원) 대략값 · 운영자는 금융투자업자가 아니며 수익을 받지 않아요 · 운영자는 목록·검색 결과의 종목을 따로 사고팔지 않아요 · <a href="/criteria/">기준 보기</a> · <a href="/privacy/">개인정보 안내</a> · <a href="/criteria/#about">만든 사람·기준</a> · 문의·삭제 요청 <a href="mailto:form4@jmheo.com">form4@jmheo.com</a></footer>
+<footer class="foot">출처: SEC EDGAR · 원화는 {{ meta.fx_date }} 기준 환율(1달러 {{ meta.fx_rate|round|int }}원) 대략값 · 운영자는 금융투자업자가 아니며 수익을 받지 않아요 · 운영자는 목록·검색 결과의 종목을 따로 사고팔지 않아요 · <a href="/criteria/">기준 보기</a> · <a href="/privacy/">개인정보 안내</a> · <a href="/criteria/#about">만든 사람</a> · 문의·삭제 요청 <a href="mailto:form4@jmheo.com">form4@jmheo.com</a></footer>
 </div>
 {% if meta.beacon_token %}<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ meta.beacon_token }}"}'></script>
 {% endif %}</body>
