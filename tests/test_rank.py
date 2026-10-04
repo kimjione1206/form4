@@ -102,11 +102,16 @@ def test_owner_label():
     assert owner_label(director("1"), TITLES) == "이사"
 
 
-def test_slug_placeholder_tickers_use_cik():
-    recs = (buys(3, issuer="11", ticker="NONE") + buys(3, issuer="22", ticker="NONE")
-            + buys(3, issuer="33", ticker="..") + buys(3, issuer="44", ticker="N/A"))
-    slugs = {c["issuer_cik"]: c["slug"] for c in rank(recs, AS_OF, TITLES)}
-    assert slugs == {"11": "cik11", "22": "cik22", "33": "cik33", "44": "cik44"}
+def test_company_without_ticker_excluded():
+    assert rank(buys(3, ticker=""), AS_OF, TITLES) == []
+    assert rank(buys(3, ticker="NONE"), AS_OF, TITLES) == []
+    assert rank(buys(3, ticker=" n/a "), AS_OF, TITLES) == []
+    assert rank(buys(3, ticker="EXM"), AS_OF, TITLES)[0]["ticker"] == "EXM"
+
+
+def test_slug_unusable_ticker_uses_cik():
+    recs = buys(3, issuer="33", ticker="..")
+    assert rank(recs, AS_OF, TITLES)[0]["slug"] == "cik33"
 
 
 def test_slug_same_ticker_later_gets_cik_suffix():

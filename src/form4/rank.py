@@ -45,7 +45,7 @@ def owner_label(o: dict, titles: dict[str, str]) -> str:
 
 def _slug(ticker: str, cik: str) -> str:
     s = SLUG_RE.sub("", ticker.upper())
-    if ticker.upper() in PLACEHOLDER_TICKERS or not s.strip("."):
+    if not s.strip("."):
         return f"cik{cik}"
     return s
 
@@ -112,6 +112,10 @@ def _same_day(counted: list[dict], qualified: set[str], info: dict[str, dict]) -
 
 def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
     rs = [r for r in rs if not (r["code"] == "P" and r.get("drip"))]  # 배당 재투자는 아예 안 셈
+    ticker = next((r["ticker"] for r in sorted(rs, key=lambda r: r["filed"], reverse=True)
+                   if r["ticker"]), "")
+    if ticker.strip().upper() in PLACEHOLDER_TICKERS:
+        return None  # 종목 코드가 없는 비상장 펀드·BDC는 방문자가 살 수 없음
     buys = [r for r in rs if r["code"] == "P" and _has_person(r)]
     per_person, info = defaultdict(float), {}
     for r in buys:
@@ -125,8 +129,6 @@ def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
     counted = [r for r in buys if any(o["cik"] in qualified for o in r["owners"])]
     rows = _rows(counted, qualified, titles)
     latest = max(rs, key=lambda r: (r["filed"], r["accession"]))
-    ticker = next((r["ticker"] for r in sorted(rs, key=lambda r: r["filed"], reverse=True)
-                   if r["ticker"]), "")
     tags = []
     if any(r["ceo"] for r in rows):
         tags.append("대표이사 포함")
