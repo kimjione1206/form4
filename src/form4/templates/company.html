@@ -11,7 +11,7 @@
   </div>
 </header>
 {% if not c.qualified %}
-<p class="note band-note">조건 충족 목록에는 없는 회사예요 (기준: 최근 60일 임원·이사 3명 이상이 각각 1만 달러 이상 장내 매수).</p>
+<p class="note band-note">이 회사는 매수 조건 목록(최근 60일 동안 임원·이사 3명 이상이 각각 1만 달러 이상 장내 매수)에는 없어요. 아래에서 이 회사 임원·이사의 매수·매도 기록을 그대로 볼 수 있어요.</p>
 {% endif %}
 
 <div class="cols cols-detail">
@@ -29,8 +29,10 @@
 </div>
 
 <div class="col col-main">
+{# 매수가 없고 매도만 있는 회사는 있는 것(매도 기록)을 먼저 보여 준다 #}
+{% macro buy_section() %}
 <section class="card trades">
-  <div class="row-between"><h2>거래 기록</h2>{% if c.rows %}<span class="small dim">최근 거래일 순</span>{% endif %}</div>
+  <div class="row-between"><h2>매수 기록</h2>{% if c.rows %}<span class="small dim">최근 거래일 순</span>{% endif %}</div>
   {% if c.rows %}
   <div class="trow thead small dim"><span>거래일</span><span class="d-only">신고일</span><span>누가</span><span class="r">금액</span><span class="r">보유↑</span><span class="d-only">구분</span><span class="d-only r">원문</span></div>
   {% for r in c.rows %}
@@ -48,7 +50,8 @@
   <p class="small trades-note">최근 60일 동안 임원·이사의 장내 매수 신고는 없어요.</p>
   {% endif %}
 </section>
-
+{% endmacro %}
+{% macro sale_section() %}
 <section class="card trades">
   <div class="row-between"><h2>매도 기록</h2>{% if c.sale_rows %}<span class="small dim">최근 거래일 순</span>{% endif %}</div>
   <p class="small dim trades-note">매도는 세금 납부·생활 자금·미리 정한 계획 등 여러 이유로 일어나며, 주가 하락을 뜻하지 않아요.</p>
@@ -69,6 +72,10 @@
   <p class="small trades-note">같은 기간 임원·이사의 장내 매도 신고는 없어요.</p>
   {% endif %}
 </section>
+{% endmacro %}
+{% if c.people == 0 and c.sale_rows %}{{ sale_section() }}
+{{ buy_section() }}{% else %}{{ buy_section() }}
+{{ sale_section() }}{% endif %}
 </div>
 
 <div class="col col-bottom">

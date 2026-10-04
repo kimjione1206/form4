@@ -185,7 +185,7 @@ def test_detail_sell_tile_and_table(tmp_path):
     assert re.search(r'<a class="src d-only" href="https://www.sec.gov/sell1"', sells)
     assert "계획 매도 · 옵션 행사 후 매도" in sells
     assert "장내 매도 신고는 없어요" not in sells
-    assert detail.index("<h2>거래 기록") < detail.index("<h2>매도 기록") < detail.index("용어 풀이")
+    assert detail.index("<h2>매수 기록") < detail.index("<h2>매도 기록") < detail.index("용어 풀이")
 
 
 def test_detail_without_sales(tmp_path):
@@ -212,7 +212,8 @@ def plain(html):
     return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html))
 
 
-NOT_LISTED = "조건 충족 목록에는 없는 회사예요 (기준: 최근 60일 임원·이사 3명 이상이 각각 1만 달러 이상 장내 매수)."
+NOT_LISTED = ("이 회사는 매수 조건 목록(최근 60일 동안 임원·이사 3명 이상이 각각 1만 달러 이상 장내 매수)에는 없어요. "
+              "아래에서 이 회사 임원·이사의 매수·매도 기록을 그대로 볼 수 있어요.")
 
 
 def test_pages_for_companies_outside_the_list(tmp_path):
@@ -234,9 +235,14 @@ def test_pages_for_companies_outside_the_list(tmp_path):
     assert ("최근 60일 동안 임원·이사의 장내 매수 신고는 없어요. "
             "같은 기간 임원·이사 2명이 약 2,800만 원어치를 장내 매도했어요.") in text
     assert "장내 매수 0명" in text
-    buys = page[page.index("<h2>거래 기록"):page.index("<h2>매도 기록")]
+    # 매수가 없고 매도만 있는 회사는 있는 것(매도 기록)을 먼저 보여 준다
+    assert page.index("<h2>매도 기록") < page.index("<h2>매수 기록") < page.index("용어 풀이")
+    buys = page[page.index("<h2>매수 기록"):page.index("용어 풀이")]
     assert "trow" not in buys and "장내 매수 신고는 없어요" in buys
-    assert "$20K" in page[page.index("<h2>매도 기록"):]
+    assert "$20K" in page[page.index("<h2>매도 기록"):page.index("<h2>매수 기록")]
+    two_html = (tmp_path / "c" / "TWO" / "index.html").read_text()  # 매수가 있으면 매수 기록이 먼저
+    assert two_html.index("<h2>매수 기록") < two_html.index("<h2>매도 기록")
+    assert "거래 기록" not in page and "조건 충족 목록에는 없는 회사예요" not in page
 
 
 def test_forbidden_word_checked_on_pages_outside_the_list(tmp_path):

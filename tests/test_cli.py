@@ -189,7 +189,7 @@ def test_pages_for_companies_outside_the_list_without_extra_sec_requests(tmp_pat
     sec = RecordingSec(pages)
     cli.run([day], day, NOW, sec, fx(), data, dist, log=lambda m: None)
     assert "조건 충족 1곳" in (dist / "index.html").read_text()
-    assert "조건 충족 목록에는 없는 회사예요" in (dist / "c" / "ONE" / "index.html").read_text()
+    assert "이 회사는 매수 조건 목록(" in (dist / "c" / "ONE" / "index.html").read_text()
     assert [e["t"] for e in json.loads((dist / "search.json").read_text())] == ["EXM", "ONE"]
     assert not any("CIK0000000901" in u for u in sec.calls)  # 목록 밖 회사는 SEC 회사 정보를 받지 않음
     assert "901" not in json.loads((data / "companies.json").read_text())
