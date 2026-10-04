@@ -2,6 +2,12 @@
 
 비밀값(토큰)은 운영자가 직접 입력해요. Claude는 화면 안내와 확인만 해요.
 
+비밀값을 넣는 방법은 둘 중 하나만 쓰면 돼요(결과는 같아요).
+- 웹: 저장소 Settings → Secrets and variables → Actions → New repository secret → 이름과 값 입력 → Add secret
+- 터미널: 아래의 `gh secret set 이름 -R kimjione1206/form4` 실행 후 값 붙여 넣기
+
+값은 이름마다 다르니 섞지 마세요. 토큰은 `*_TOKEN`에만 넣고, `CLOUDFLARE_ACCOUNT_ID`와 `ROUTINE_FIRE_URL`은 토큰이 아니라 계정 번호와 주소예요.
+
 ## 1. GitHub 공개 저장소
 - `gh repo create kimjione1206/form4 --public --source . --push` (Claude가 운영자 확인 후 실행)
 
@@ -31,7 +37,7 @@ GitHub → Actions → backfill → Run workflow 를 두 번(각각 약 1~2시�
 1. https://claude.ai/code/routines → 새 루틴 → 이름 `form4 관리`
 2. 지시문: `ops/routine-prompt.md` 의 본문 붙여 넣기, 모델: Sonnet
 3. 저장소: kimjione1206/form4
-4. 환경: 편집 → 네트워크 접근 "사용자 지정" → 허용 도메인 `sec.gov`, `www.sec.gov`, `data.sec.gov` 추가, "기본 목록 함께 포함" 체크
+4. 환경: 편집 → 네트워크 접근 "사용자 지정" → 허용 도메인 `sec.gov`, `www.sec.gov`, `data.sec.gov` 추가, "기본 목록 함께 포함" 체크, 설정 스크립트 `command -v uv >/dev/null 2>&1 || pip install --quiet uv`
 5. 트리거: 예약 매일 06:37 + API 추가 → 저장 후 URL 복사, 토큰 생성 → 복사
 6. 운영자가 직접:
    ```bash
