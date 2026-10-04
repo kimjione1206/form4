@@ -68,11 +68,12 @@ def us_federal_holidays(year: int) -> set[date]:
 def collect(dates, client, log):
     new, skipped, total = [], [], 0
     for d in dates:
+        if d in us_federal_holidays(d.year):
+            # SEC는 없는 색인에 404가 아니라 403을 주므로, 휴일은 요청하지 않고 건너뛴다
+            log(f"{d}: 미국 휴일, 건너뜀")
+            continue
         text = client.get_text(index_url(d))
         if text is None:
-            if d in us_federal_holidays(d.year):
-                log(f"{d}: 색인 없음(미국 휴일)")
-                continue
             raise RuntimeError(f"{d}: 일일 색인 없음(게시 지연?)")
         refs = parse_master_index(text)
         failed = 0

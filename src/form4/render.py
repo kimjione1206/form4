@@ -14,7 +14,7 @@ TAG_RE = re.compile(r"<[^>]+>")
 
 
 def fmt_usd(v: float) -> str:
-    if v >= 1e6:
+    if round(v / 1e3) >= 1000:
         return f"${v / 1e6:.1f}M"
     if v >= 1e4:
         return f"${v / 1e3:.0f}K"
@@ -23,7 +23,7 @@ def fmt_usd(v: float) -> str:
 
 def fmt_krw_short(usd: float, rate: float) -> str:
     won = usd * rate
-    if won >= 1e8:
+    if round(won / 1e4) >= 10000:
         eok = won / 1e8
         s = f"{eok:.0f}" if eok >= 10 else f"{eok:.1f}".rstrip("0").rstrip(".")
         return f"{s}억"

@@ -102,6 +102,22 @@ def test_collect_holiday_without_index_continues():
     assert cli.collect([date(2026, 11, 26)], FakeSec({}), log=lambda m: None) == ([], [], 0)
 
 
+class RecordingSec(FakeSec):
+    def __init__(self, pages):
+        super().__init__(pages)
+        self.calls = []
+
+    def get_text(self, url):
+        self.calls.append(url)
+        return super().get_text(url)
+
+
+def test_collect_skips_holiday_without_requesting_index():
+    sec = RecordingSec({})  # SEC는 없는 색인에 404가 아니라 403을 준다 → 휴일은 아예 요청하지 않는다
+    assert cli.collect([date(2026, 9, 7)], sec, log=lambda m: None) == ([], [], 0)
+    assert sec.calls == []
+
+
 def test_collect_weekday_without_index_raises():
     with pytest.raises(RuntimeError, match="일일 색인 없음"):
         cli.collect([date(2026, 10, 2)], FakeSec({}), log=lambda m: None)

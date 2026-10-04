@@ -29,6 +29,20 @@ def test_formatters():
     assert fmt_increase(0.18) == "+18%" and fmt_increase("new") == "신규 보유" and fmt_increase(None) == "-"
 
 
+def test_formatters_round_up_to_next_unit():
+    assert fmt_usd(999_950) == "$1.0M" and fmt_usd(1_000_000) == "$1.0M"
+    assert fmt_krw_short(71_425, 1400) == "1억"  # 99,995,000원
+
+
+def test_briefing_lists_at_most_three_new(tmp_path):
+    news = [result(issuer_cik=str(i), name=f"CO{i}", slug=f"S{i}") for i in range(5)]
+    brief = {"count": 5, "new": news, "dropped": [], "top": news[0]}
+    render_site(news, brief, META, {}, tmp_path)
+    home = (tmp_path / "index.html").read_text()
+    assert "CO2 — 임원" in home and "CO3 — 임원" not in home
+    assert "외 2곳" in home
+
+
 def test_summary_segments_text():
     text = "".join(t for t, _ in summary_segments(result(), 1400))
     assert text == ("최근 60일 동안 임원·이사 5명이 시장에서 직접 약 34억 원($2.4M)어치를 샀어요. "
