@@ -120,13 +120,15 @@ def test_touch_targets_44px(tmp_path):
     assert ".replay[hidden] { display: none; }" in css
 
 
-def test_pages_ask_search_engines_not_to_index(tmp_path):
-    # 금감원 확인 전까지 검색 노출 막기. 정식 개설 때 base.html 의 robots 줄을 지우고 이 테스트도 지운다.
+def test_open_to_search_and_operator_trading_policy(tmp_path):
+    # 정식 개설(2026-10-04): 검색 차단 해제 + 운영자 매매 원칙을 모든 페이지 바닥글과 기준 페이지에 밝힌다
     c = result()
     render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+    policy = "운영자는 목록·검색 결과의 종목을 따로 사고팔지 않아요"
     for f in ["index.html", "c/EXM/index.html", "criteria/index.html", "404.html"]:
-        assert '<meta name="robots" content="noindex, nofollow">' in (tmp_path / f).read_text()
-
+        html = (tmp_path / f).read_text()
+        assert 'name="robots"' not in html
+        assert policy in html
 
 def test_desktop_layout(tmp_path):
     a = result()
