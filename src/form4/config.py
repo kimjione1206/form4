@@ -17,3 +17,6 @@ FORBIDDEN_WORDS = ("주목", "급등", "신호", "기회", "유망", "추천", "
 
 REPO_URL = "https://github.com/kimjione1206/form4"
 SITE_URL = "https://form4.jmheo.com"
+
+# 네이버 서치어드바이저 소유 확인(공개 값, 페이지 소스에 그대로 보임)
+NAVER_SITE_VERIFICATION = "76ff0971f874a151b2def597c7325102fc0b6f7d"

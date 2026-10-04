@@ -114,6 +114,7 @@ def _env() -> Environment:
     env.filters.update(usd=fmt_usd, krw=fmt_krw, krw_short=fmt_krw_short,
                        increase=fmt_increase, decrease=fmt_decrease, md=fmt_md)
     env.globals["site"] = config.SITE_URL
+    env.globals["naver_verification"] = config.NAVER_SITE_VERIFICATION
     return env
 
 

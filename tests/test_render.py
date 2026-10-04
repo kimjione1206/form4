@@ -481,3 +481,11 @@ def test_home_dropped_tile_uses_korean_name(tmp_path):
     render_site([c], {"count": 1, "new": [], "dropped": gone, "top": c}, META, {}, tmp_path, {"GON": "곤"})
     home = (tmp_path / "index.html").read_text()
     assert re.search(r'빠짐</span>.*?<span class="small">([^<]*)</span>', home, re.S).group(1) == "GONE CO"
+
+
+def test_naver_site_verification_meta_on_home(tmp_path):
+    from form4 import config
+    c = result()
+    render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+    tag = f'<meta name="naver-site-verification" content="{config.NAVER_SITE_VERIFICATION}">'
+    assert tag in (tmp_path / "index.html").read_text()
