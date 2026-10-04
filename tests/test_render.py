@@ -117,3 +117,18 @@ def test_pages_ask_search_engines_not_to_index(tmp_path):
     render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
     for f in ["index.html", "c/EXM/index.html", "criteria/index.html", "404.html"]:
         assert '<meta name="robots" content="noindex, nofollow">' in (tmp_path / f).read_text()
+
+
+def test_desktop_layout(tmp_path):
+    a = result()
+    b = result(issuer_cik="901", name="SECOND CO", slug="SEC2", last_date="2026-08-27")
+    render_site([a, b], {"count": 2, "new": [], "dropped": [], "top": a}, META, {}, tmp_path)
+    assert "@media (min-width: 1024px)" in (tmp_path / "style.css").read_text()
+    home = (tmp_path / "index.html").read_text()
+    assert re.search(r'<div class="list-cols[^"]*">.*<span class="r">최근 거래</span>', home, re.S)
+    rows = re.findall(r'<a class="item".*?</a>', home, re.S)
+    assert len(rows) == 2
+    assert '<span class="mono small r d-only col-last">9/29</span>' in rows[0]
+    assert '<span class="mono small r d-only col-last">8/27</span>' in rows[1]
+    detail = (tmp_path / "c" / "EXM" / "index.html").read_text()
+    assert re.search(r'<div class="trow thead[^"]*">.*<span class="d-only">신고일</span>', detail, re.S)

@@ -40,3 +40,45 @@ a { color: var(--accent); } a:hover { color: #142660; }
 .foot { margin: 0 16px; font-size: 11px; color: var(--dim); line-height: 1.7; }
 .replay, .back, .who a, .notice a, .foot a { display: inline-flex; align-items: center; min-height: 44px; margin: -13px 0; }
 .replay[hidden] { display: none; }
+/* 컴퓨터 화면용 묶음: 휴대폰에서는 상자가 없는 것처럼(display: contents) 두어 모양이 그대로다 */
+.band-in, .band-main, .cols, .col { display: contents; }
+.d-only { display: none; }
+
+@media (min-width: 1024px) {
+  .m-only, .who .m-only { display: none; }
+  .d-only { display: block; }
+  .page { max-width: none; gap: 28px; }
+  .band { padding: 28px 0; }
+  .band-in, .cols, .foot { width: min(1200px, 100% - 48px); margin-left: auto; margin-right: auto; }
+  .band-in { display: flex; flex-direction: column; gap: 6px; }
+  .band h1 { font-size: 32px; } .band-home h1 { font-size: 34px; }
+  .band h1 .small { font-size: 15px; }
+  .band .sub, .band .intro { font-size: 14px; }
+  .band-home .band-in { flex-direction: row; justify-content: space-between; align-items: flex-end; gap: 40px; }
+  .band-main { display: flex; flex-direction: column; gap: 6px; max-width: 760px; }
+  .band-side { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; flex: none; }
+  .band-side a { color: #CBD3E0; }
+  .card, .notice, .note { margin: 0; }
+  .card { padding: 16px 18px; }
+  .pad-x { padding: 0; }
+  .cols { display: grid; gap: 16px 24px; align-items: start; }
+  .col { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+  .cols-home { grid-template-columns: 340px minmax(0, 1fr); }
+  .cols-detail { grid-template-columns: 380px minmax(0, 1fr); grid-template-rows: auto 1fr; }
+  .col-top { grid-column: 1; grid-row: 1; } .col-bottom { grid-column: 1; grid-row: 2; }
+  .trades { grid-column: 2; grid-row: 1 / 3; }
+  .cols-one { display: flex; flex-direction: column; align-items: stretch; gap: 16px; }
+  .cols-one > * { max-width: 800px; }
+  .list, .trades { padding: 0; gap: 0; overflow: hidden; }
+  .list-head, .trades > .row-between { display: flex; padding: 16px 20px; border-bottom: 1px solid var(--line); }
+  .list-head h2, .trades h2 { font-size: 16px; }
+  .list-cols, .item { grid-template-columns: 28px minmax(0, 1fr) 52px 96px 64px 64px 44px; gap: 10px; align-items: center; padding: 12px 20px; }
+  .list-cols { display: grid; padding: 10px 20px; background: #F8F9FB; border-bottom: 1px solid var(--soft); white-space: nowrap; }
+  .item:hover { background: #F8F9FB; }
+  .item .num { padding-top: 0; }
+  .item-nums { display: contents; }
+  .item-nums > span { text-align: right; white-space: nowrap; }
+  .trow { grid-template-columns: 56px 56px minmax(0, 1.4fr) 76px 72px minmax(0, 1fr) 64px; gap: 10px; align-items: center; padding: 2px 20px; font-size: 14px; }
+  .thead { padding: 10px 20px; font-size: 12px; background: #F8F9FB; border-top: 0; white-space: nowrap; }
+  .src { display: inline-flex; align-items: center; justify-content: flex-end; min-height: 44px; font-size: 13px; }
+}
