@@ -297,3 +297,14 @@ def test_company_with_only_price_error_filings_keeps_page_with_note():
     [c] = profiles([slbt], AS_OF, TITLES)
     assert c["ticker"] == "SLBT" and not c["qualified"] and c["people"] == 0 and c["total_usd"] == 0
     assert c["rows"] == [] and c["price_error_count"] == 1
+
+
+def test_price_error_filings_listed_newest_first_people_only():
+    old = make_rec("e1", owners=[director("88")], shares=10, price=50_000.0, date="2026-09-01", filed="2026-09-02")
+    new = make_rec("e2", owners=[director("89")], shares=10, price=50_000.0, date="2026-09-20", filed="2026-09-22")
+    fund_bad = make_rec("e3", owners=[fund("90")], shares=10, price=50_000.0)  # 사람 신고가 아니면 세지 않음
+    c = profiles(buys(3) + [old, new, fund_bad], AS_OF, TITLES)[0]
+    assert c["price_error_count"] == 2
+    assert c["price_error_filings"] == [{"filed": "2026-09-22", "url": "https://www.sec.gov/e2"},
+                                        {"filed": "2026-09-02", "url": "https://www.sec.gov/e1"}]
+    assert c["ten_pct_usd"] == 0  # 오류 줄은 대주주 금액에도 넣지 않는다

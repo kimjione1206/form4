@@ -22,7 +22,7 @@
   <div class="row-between"><h2>오늘의 정리</h2><span class="mono small dim m-only">미국 {{ meta.as_of_label }} 접수분까지</span></div>
   <div class="tiles">
     <div class="tile"><span class="small dim">새로</span><span class="mono big accent">+{{ brief.new|length }}</span><span class="small">{{ (knames[brief.new[0].issuer_cik] or brief.new[0].name) if brief.new else "없음" }}</span></div>
-    <div class="tile"><span class="small dim">빠짐</span><span class="mono big">−{{ brief.dropped|length }}</span><span class="small">{{ brief.dropped[0].name if brief.dropped else "없음" }}</span></div>
+    <div class="tile"><span class="small dim">빠짐</span><span class="mono big">−{{ brief.dropped|length }}</span><span class="small">{{ (knames[brief.dropped[0].issuer_cik] or brief.dropped[0].name) if brief.dropped else "없음" }}</span></div>
     <div class="tile"><span class="small dim">최대 금액</span><span class="mono big">{{ brief.top.total_usd|krw_short(meta.fx_rate) if brief.top else "-" }}</span><span class="small">{{ (knames[brief.top.issuer_cik] or brief.top.name) if brief.top else "" }}</span></div>
   </div>
   <p class="small dim">새로 = 오늘 목록에 처음 오른 회사 · 빠짐 = 기간(60일)이 지나 목록에서 빠진 회사</p>

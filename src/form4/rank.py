@@ -148,14 +148,16 @@ def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
         return None  # 종목 코드가 없는 비상장 펀드·BDC는 방문자가 살 수 없음
     latest = max(rs, key=lambda r: (r["filed"], r["accession"]))
     # 주당 가격이 비정상적으로 큰 매수 줄·매도 신고는 원문 오류로 보고 뺀다(매도는 저장할 때 이미 해당 줄을 뺐음)
-    error_accessions = {r["accession"] for r in rs
-                        if (r["code"] == "P" and bad_price(r)) or (r["code"] == "S" and r.get("price_error"))}
+    # 안내·원문 링크에는 임원·이사 개인이 낀 신고만(목록에 보이는 것과 건수가 같게)
+    error_filings = {r["accession"]: {"filed": r["filed"], "url": r["url"]} for r in rs
+                     if ((r["code"] == "P" and bad_price(r)) or (r["code"] == "S" and r.get("price_error")))
+                     and _has_person(r)}
     rs = [r for r in rs if not ((r["code"] == "P" and bad_price(r))
                                 or (r["code"] == "S" and r.get("price_error") and not r.get("shares")))]
     person_buys = [r for r in rs if r["code"] == "P" and _has_person(r)]
     buys = [r for r in person_buys if not r["offering"]]  # 증자 참여는 시장 매수가 아님
     sells = [r for r in rs if r["code"] == "S" and _has_person(r)]
-    if not buys and not sells and not error_accessions:
+    if not buys and not sells and not error_filings:
         return None
     per_person, info = defaultdict(float), {}
     for r in buys:
@@ -192,7 +194,8 @@ def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
         "offering_usd": sum(_value(r) for r in person_buys if r["offering"]),
         "ten_pct_usd": sum(_value(r) for r in rs if r["code"] == "P" and not _has_person(r)
                            and any(_is_holder(o) for o in r["owners"])),
-        "price_error_count": len(error_accessions),
+        "price_error_count": len(error_filings),
+        "price_error_filings": sorted(error_filings.values(), key=lambda f: f["filed"], reverse=True),
         "first_date": min((r["date"] for r in counted), default=None),
         "last_date": max((r["date"] for r in counted), default=None),
         "tags": tags,

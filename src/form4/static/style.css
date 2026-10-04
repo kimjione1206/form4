@@ -14,6 +14,8 @@ a { color: var(--accent); } a:hover { color: #142660; }
 .back { color: #CBD3E0; text-decoration: none; }
 .copy { align-self: flex-start; min-height: 44px; margin-top: 6px; padding: 0 14px; font: inherit; font-size: 13px; color: #CBD3E0; background: none; border: 1px solid #4B5563; border-radius: 6px; cursor: pointer; }
 .copy[hidden] { display: none; }
+.note-links { display: flex; flex-wrap: wrap; gap: 0 16px; }
+.note-links a { display: inline-flex; align-items: center; min-height: 44px; }
 .card { margin: 0 16px; background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; }
 .card h2 { margin: 0; font-size: 15px; } .card p { margin: 0; }
 .row-between { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }

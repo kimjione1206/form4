@@ -116,7 +116,7 @@ def test_touch_targets_44px(tmp_path):
     rules = re.findall(r"([^{}]+)\{([^}]*)\}", css)
     covered = {s.strip() for sel, body in rules if "min-height: 44px" in body for s in sel.split(",")}
     assert {".replay", ".who a", ".back", ".notice a", ".foot a", ".band-side a", ".src",
-            ".search button", ".explain summary", ".copy"} <= covered
+            ".search button", ".explain summary", ".copy", ".note-links a"} <= covered
     assert ".replay[hidden] { display: none; }" in css
 
 
@@ -455,7 +455,29 @@ PRICE_NOTE = ("신고서의 주당 가격이 비정상적으로 큰 신고 2건�
 
 
 def test_price_error_note_only_when_present(tmp_path):
+    filings = [{"filed": "2026-09-22", "url": "https://www.sec.gov/e2"},
+               {"filed": "2026-09-02", "url": "https://www.sec.gov/e1"}]
     for count, shown in [(0, False), (2, True)]:
-        c = result(price_error_count=count)
+        c = result(price_error_count=count, price_error_filings=filings[:count])
         render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
-        assert (PRICE_NOTE in plain((tmp_path / "c" / "EXM" / "index.html").read_text())) is shown
+        detail = (tmp_path / "c" / "EXM" / "index.html").read_text()
+        assert (PRICE_NOTE in plain(detail)) is shown
+    note = re.search(r'<div class="note">.*?</div>', detail, re.S).group(0)
+    links = re.findall(r'<a href="([^"]+)" target="_blank" rel="noopener">([^<]+)</a>', note)
+    assert links == [("https://www.sec.gov/e2", "신고 9/22 · 원문 ↗"), ("https://www.sec.gov/e1", "신고 9/2 · 원문 ↗")]
+    assert 'class="note-links"' in note
+
+
+def test_home_dropped_tile_uses_korean_name(tmp_path):
+    c = result()
+    dropped = [{"issuer_cik": "1045810", "name": "NVIDIA CORP", "ticker": "NVDA"}]
+    nv = result(**NVDA, qualified=False)
+    render_site([c, nv], {"count": 1, "new": [], "dropped": dropped, "top": c}, META, {}, tmp_path,
+                {"NVDA": "엔비디아"})
+    home = (tmp_path / "index.html").read_text()
+    tile = re.search(r'빠짐</span>.*?<span class="small">([^<]*)</span>', home, re.S).group(1)
+    assert tile == "엔비디아"
+    gone = [{"issuer_cik": "555", "name": "GONE CO", "ticker": "GON"}]  # 페이지가 없어진 회사는 영어 이름 그대로
+    render_site([c], {"count": 1, "new": [], "dropped": gone, "top": c}, META, {}, tmp_path, {"GON": "곤"})
+    home = (tmp_path / "index.html").read_text()
+    assert re.search(r'빠짐</span>.*?<span class="small">([^<]*)</span>', home, re.S).group(1) == "GONE CO"
