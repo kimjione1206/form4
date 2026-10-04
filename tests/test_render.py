@@ -14,6 +14,7 @@ def result(**kw):
            "increase": 0.18, "tags": ["계획 매수"], "url": "https://www.sec.gov/x", "ceo": True}
     c = {"issuer_cik": "900", "name": "EXAMPLE CORP", "ticker": "EXM", "slug": "EXM",
          "people": 5, "total_usd": 2_400_000.0, "sales": 0, "ten_pct_usd": 5_000_000.0,
+         "offering_usd": 0.0,
          "first_date": "2026-09-12", "last_date": "2026-09-29", "tags": ["대표이사 포함"],
          "officer_titles": [], "rows": [row], "top": row}
     c.update(kw)
@@ -63,6 +64,18 @@ def test_render_site_writes_pages(tmp_path):
     assert "data-typing" in detail and "+18%" in detail and "대주주(펀드)" in detail
     for f in ["criteria/index.html", "404.html", "style.css", "typing.js"]:
         assert (tmp_path / f).exists()
+
+
+def test_offering_note_only_when_present(tmp_path):
+    note = "공모·사모 등 증자에 참여해 받은 매수"
+    for offering_usd, shown in [(0.0, False), (250_000.0, True)]:
+        c = result(offering_usd=offering_usd)
+        render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+        detail = (tmp_path / "c" / "EXM" / "index.html").read_text()
+        assert (note in detail) is shown
+    assert ("참고 · 같은 기간 임원·이사가 공모·사모 등 증자에 참여해 받은 매수 $250K는 시장에서 직접 산 게 "
+            "아니라서 위 인원·금액에 넣지 않았어요.") in re.sub(r"<[^>]+>", "", detail)
+    assert "증자 참여</b>" not in detail
 
 
 def test_render_rejects_forbidden_words(tmp_path):

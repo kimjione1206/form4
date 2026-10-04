@@ -45,14 +45,14 @@ def test_sort_by_people_then_total():
 def test_sales_count_and_tags():
     recs = buys(2) + [
         make_rec("ceo", owners=[officer("5", "Chief Executive Officer")], plan=True,
-                 direct="I", offering=True, shares=1000, price=20.0),
+                 direct="I", shares=1000, price=20.0),
         make_rec("s1", code="S", owners=[director("0")]),
     ]
     c = rank(recs, AS_OF, TITLES)[0]
     assert c["sales"] == 1
-    assert c["tags"] == ["대표이사 포함", "계획 매수 포함", "증자 참여 포함"]
+    assert c["tags"] == ["대표이사 포함", "계획 매수 포함"]
     row = [r for r in c["rows"] if r["ceo"]][0]
-    assert row["who"] == "대표이사" and row["tags"] == ["계획 매수", "간접", "증자 참여"]
+    assert row["who"] == "대표이사" and row["tags"] == ["계획 매수", "간접"]
 
 
 def test_same_day_batch_tag():
@@ -145,3 +145,13 @@ def test_dividend_reinvestment_ignored():
     assert c["total_usd"] == 60_000.0 and len(c["rows"]) == 3
     fund_drip = make_rec("FD", owners=[fund("50")], drip=True, shares=1000, price=100.0)
     assert rank(buys(3) + [fund_drip], AS_OF, TITLES)[0]["ten_pct_usd"] == 0.0
+
+
+def test_offering_not_counted_but_reported():
+    offer = make_rec("O", owners=[director("7")], offering=True, shares=1000, price=30.0)
+    assert rank(buys(2) + [offer], AS_OF, TITLES) == []
+    fund_offer = make_rec("FO", owners=[fund("50")], offering=True, shares=1000, price=100.0)
+    c = rank(buys(3) + [offer, fund_offer], AS_OF, TITLES)[0]
+    assert c["people"] == 3 and c["total_usd"] == 60_000.0 and len(c["rows"]) == 3
+    assert c["offering_usd"] == 30_000.0 and c["ten_pct_usd"] == 100_000.0
+    assert rank(buys(3), AS_OF, TITLES)[0]["offering_usd"] == 0.0

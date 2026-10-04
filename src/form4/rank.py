@@ -80,8 +80,6 @@ def _rows(counted: list[dict], qualified: set[str], titles: dict[str, str]) -> l
             tags.append("계획 매수")
         if any(r["direct"] == "I" for r in rs):
             tags.append("간접")
-        if any(r["offering"] for r in rs):
-            tags.append("증자 참여")
         rows.append({
             "date": rs[-1]["date"], "filed": rs[0]["filed"], "who": who,
             "value": sum(_value(r) for r in rs), "increase": _increase(rs),
@@ -116,7 +114,8 @@ def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
                    if r["ticker"]), "")
     if ticker.strip().upper() in PLACEHOLDER_TICKERS:
         return None  # 종목 코드가 없는 비상장 펀드·BDC는 방문자가 살 수 없음
-    buys = [r for r in rs if r["code"] == "P" and _has_person(r)]
+    person_buys = [r for r in rs if r["code"] == "P" and _has_person(r)]
+    buys = [r for r in person_buys if not r["offering"]]  # 증자 참여는 시장 매수가 아님
     per_person, info = defaultdict(float), {}
     for r in buys:
         for o in r["owners"]:
@@ -136,8 +135,6 @@ def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
         tags.append("같은 날 여러 명 매수")
     if any("계획 매수" in r["tags"] for r in rows):
         tags.append("계획 매수 포함")
-    if any("증자 참여" in r["tags"] for r in rows):
-        tags.append("증자 참여 포함")
     return {
         "issuer_cik": cik,
         "name": latest["issuer_name"],
@@ -146,6 +143,7 @@ def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
         "people": len(qualified),
         "total_usd": sum(_value(r) for r in counted),
         "sales": len({r["accession"] for r in rs if r["code"] == "S"}),
+        "offering_usd": sum(_value(r) for r in person_buys if r["offering"]),
         "ten_pct_usd": sum(_value(r) for r in rs if r["code"] == "P" and not _has_person(r)
                            and any(_is_holder(o) for o in r["owners"])),
         "first_date": min(r["date"] for r in counted),
