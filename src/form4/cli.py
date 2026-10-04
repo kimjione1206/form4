@@ -115,7 +115,7 @@ def run(dates, as_of, now_utc, client, fx_client, data_dir: Path, dist_dir: Path
 
     store.save(data_dir / "transactions.jsonl", records)
     save_json(data_dir / "companies.json", companies)
-    save_json(data_dir / "todo.json", build_todo(results, companies, titles))
+    save_json(data_dir / "todo.json", build_todo(results, companies, titles, all_profiles))
     save_json(data_dir / "ranking_prev.json", snapshot(results))
     (data_dir / "skipped.log").write_text("".join(s + "\n" for s in skipped))
     last = max(filter(None, [state.get("last_date"), *(d.isoformat() for d in dates)]),

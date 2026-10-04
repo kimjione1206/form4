@@ -53,9 +53,18 @@ def test_build_todo():
                  "2": {"name": "B", "sic_description": "y", "summary": "은행"}}
     results = [{"issuer_cik": "1", "officer_titles": ["SVP Sales", "CFO"]},
                {"issuer_cik": "2", "officer_titles": []}]
-    todo = build_todo(results, companies, {"CFO": "재무이사(CFO)"})
+    todo = build_todo(results, companies, {"CFO": "재무이사(CFO)"}, results)
     assert todo == {"companies": [{"cik": "1", "name": "A", "sic_description": "x"}],
                     "titles": ["SVP Sales"]}
+
+
+def test_build_todo_titles_from_all_profiles_companies_from_list_only():
+    companies = {"1": {"name": "A", "sic_description": "x", "summary": None}}
+    results = [{"issuer_cik": "1", "officer_titles": ["CFO"]}]
+    profiles = results + [{"issuer_cik": "9", "officer_titles": ["Chief Legal Officer", "CFO"]}]
+    todo = build_todo(results, companies, {}, profiles)
+    assert todo == {"companies": [{"cik": "1", "name": "A", "sic_description": "x"}],
+                    "titles": ["CFO", "Chief Legal Officer"]}
 
 
 def test_null_industry_name_stored_as_empty():

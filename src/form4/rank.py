@@ -13,6 +13,7 @@ from form4.tables import guard_text
 
 CEO_RE = re.compile(r"chief executive|\bceo\b", re.I)
 VP_RE = re.compile(r"vice[\s-]*president|\b[se]?vp\b", re.I)
+REMARKS_RE = re.compile(r"^\s*see\s+remarks?\s*$", re.I)  # 직함 칸에 "비고 참조"만 적은 신고
 SLUG_RE = re.compile(r"[^A-Z0-9.-]")
 ALNUM_RE = re.compile(r"[A-Z0-9]")
 PLACEHOLDER_TICKERS = {"", "NONE", "N/A"}
@@ -34,11 +35,13 @@ def _is_holder(o: dict) -> bool:
 def owner_label(o: dict, titles: dict[str, str]) -> str:
     if o["is_officer"]:
         title = o["title"].strip()
+        if not title or REMARKS_RE.match(title):
+            return "임원"
         if title in titles and guard_text(titles[title], 30):
             return titles[title]
         if CEO_RE.search(title):
             return "대표이사"
-        return title or "임원"
+        return title
     if o["is_director"]:
         return "이사"
     return "대주주"
@@ -154,27 +157,29 @@ def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
             if _is_insider(o):
                 per_person[o["cik"]] += _value(r)
                 info[o["cik"]] = o
-    qualified = {c for c, v in per_person.items() if v >= config.MIN_PERSON_USD}
-    is_listed = len(qualified) >= config.MIN_PEOPLE
+    counted_people = {c for c, v in per_person.items() if v >= config.MIN_PERSON_USD}
+    is_listed = len(counted_people) >= config.MIN_PEOPLE
     if not is_listed:
-        qualified = set(per_person)  # 목록 밖 회사는 기준 없이 있는 그대로 보여 준다
-    counted = [r for r in buys if any(o["cik"] in qualified for o in r["owners"])]
-    rows = _rows(counted, qualified, titles)
+        counted_people = set(per_person)  # 목록 밖 회사는 기준 없이 있는 그대로 보여 준다
+    counted = [r for r in buys if any(o["cik"] in counted_people for o in r["owners"])]
+    rows = _rows(counted, counted_people, titles)
     latest = max(rs, key=lambda r: (r["filed"], r["accession"]))
     tags = []
     if any(r["ceo"] for r in rows):
         tags.append("대표이사 포함")
-    if _same_day(counted, qualified, info):
+    if _same_day(counted, counted_people, info):
         tags.append("같은 날 여러 명 매수")
     if any("계획 매수" in r["tags"] for r in rows):
         tags.append("계획 매수 포함")
+    # 페이지에 직함이 보이는 사람(매수 표 + 매도 표) — 직함 번역 할 일에 쓴다
+    shown = [info[c] for c in counted_people] + [o for r in sells for o in r["owners"] if _is_insider(o)]
     return {
         "issuer_cik": cik,
         "name": latest["issuer_name"],
         "ticker": ticker,
         "slug": _slug(ticker),
         "qualified": is_listed,
-        "people": len(qualified),
+        "people": len(counted_people),
         "total_usd": sum(_value(r) for r in counted),
         "sale_people": len({o["cik"] for r in sells for o in r["owners"] if _is_insider(o)}),
         "sale_usd": sum(r.get("value", 0.0) for r in sells),
@@ -185,8 +190,8 @@ def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
         "first_date": min((r["date"] for r in counted), default=None),
         "last_date": max((r["date"] for r in counted), default=None),
         "tags": tags,
-        "officer_titles": sorted({info[c]["title"] for c in qualified
-                                  if info[c]["is_officer"] and info[c]["title"]}),
+        "officer_titles": sorted({o["title"] for o in shown if o["is_officer"] and o["title"].strip()
+                                  and not REMARKS_RE.match(o["title"])}),
         "rows": rows,
         "top": max(rows, key=lambda x: x["value"], default=None),
     }

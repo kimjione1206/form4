@@ -77,6 +77,11 @@ a { color: var(--accent); } a:hover { color: #142660; }
   .card, .notice, .note, .explain { margin: 0; }
   .band-note { width: min(1200px, 100% - 48px); margin: 0 auto; }
   .band-search { margin-top: 10px; max-width: 520px; }
+  /* 머리띠 안 검색 결과는 아래 내용 위에 겹쳐 띄운다(머리띠 높이가 그대로라 오른쪽 정보가 안 밀림).
+     flex 안의 absolute 는 맨 위로 붙으므로 이 form 만 block 으로 두고 간격은 margin 으로 */
+  .band-search .search { display: block; position: relative; }
+  .band-search .search > * + * { margin-top: 6px; }
+  .band-search .search-out { position: absolute; left: 0; right: 0; z-index: 10; box-shadow: 0 8px 24px rgba(17, 24, 39, 0.25); }
   .card { padding: 16px 18px; }
   .pad-x { padding: 0; }
   .cols { display: grid; gap: 16px 24px; align-items: start; }

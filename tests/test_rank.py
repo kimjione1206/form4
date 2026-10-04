@@ -101,6 +101,17 @@ def test_owner_label():
     assert owner_label(officer("1", "SVP Sales"), TITLES) == "SVP Sales"
     assert owner_label(officer("1", ""), TITLES) == "임원"
     assert owner_label(director("1"), TITLES) == "이사"
+    for t in ["See Remarks", " see remark ", "SEE REMARKS", "   "]:
+        assert owner_label(officer("1", t), {"See Remarks": "비고 참조"}) == "임원"
+    assert owner_label(officer("1", "See Remarks below"), TITLES) == "See Remarks below"
+
+
+def test_officer_titles_include_sellers_and_skip_see_remarks():
+    recs = buys(2) + [make_rec("r", owners=[officer("8", "See Remarks")], shares=1000, price=20.0)] + sold(
+        "s", [officer("9", "Chief Legal Officer")], issuer="X", ticker="SEL")
+    ps = {p["issuer_cik"]: p for p in profiles(recs, AS_OF, TITLES)}
+    assert ps["900"]["officer_titles"] == []
+    assert ps["X"]["officer_titles"] == ["Chief Legal Officer"]
 
 
 def test_company_without_ticker_excluded():

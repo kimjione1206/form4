@@ -55,12 +55,13 @@ def ensure_company_info(results: list[dict], companies: dict, client) -> None:
                           "summary": None}
 
 
-def build_todo(results: list[dict], companies: dict, titles: dict) -> dict:
+def build_todo(results: list[dict], companies: dict, titles: dict, profiles: list[dict]) -> dict:
+    """회사 소개는 조건 충족 목록(results)만, 직함 번역은 페이지가 있는 모든 회사(profiles)에서."""
     todo_companies = [
         {"cik": c["issuer_cik"], "name": companies[c["issuer_cik"]]["name"],
          "sic_description": companies[c["issuer_cik"]]["sic_description"]}
         for c in results
         if companies.get(c["issuer_cik"], {}).get("summary") is None
     ]
-    todo_titles = sorted({t for c in results for t in c["officer_titles"] if t not in titles})
+    todo_titles = sorted({t for c in profiles for t in c["officer_titles"] if t not in titles})
     return {"companies": todo_companies, "titles": todo_titles}

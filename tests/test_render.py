@@ -132,7 +132,12 @@ def test_desktop_layout(tmp_path):
     a = result()
     b = result(issuer_cik="901", name="SECOND CO", slug="SEC2", last_date="2026-08-27")
     render_site([a, b], {"count": 2, "new": [], "dropped": [], "top": a}, META, {}, tmp_path)
-    assert "@media (min-width: 1024px)" in (tmp_path / "style.css").read_text()
+    css = (tmp_path / "style.css").read_text()
+    assert "@media (min-width: 1024px)" in css
+    desktop = css[css.index("@media (min-width: 1024px)"):]
+    # 머리띠 안 검색 결과는 겹쳐 떠서 머리띠 오른쪽 정보를 밀어내지 않는다 (휴대폰은 그대로)
+    assert re.search(r"\.band-search \.search-out \{[^}]*position: absolute[^}]*z-index", desktop)
+    assert "position: absolute" not in css[:css.index("@media (min-width: 1024px)")]
     home = (tmp_path / "index.html").read_text()
     assert re.search(r'<div class="[^"]*\blist-cols\b[^"]*">.*<span class="[^"]*\br\b[^"]*">최근 거래</span>', home, re.S)
     rows = re.findall(r'<a class="[^"]*\bitem\b[^"]*".*?</a>', home, re.S)
