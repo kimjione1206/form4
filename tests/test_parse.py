@@ -98,3 +98,22 @@ def test_offering_word_alone_detected():
                           "footnotes": ["F1"]}],
                     footnotes={"F1": "Shares purchased in the Offering."})
     assert parse_form4(xml, "a", FILED)[0]["offering"] is True
+
+
+def test_dividend_reinvestment_footnote_marked_drip():
+    xml = form4_xml(
+        txs=[{"code": "P", "date": "2026-09-30", "shares": 1, "price": 1, "after": 2, "footnotes": ["F1"]},
+             {"code": "P", "date": "2026-09-30", "shares": 1, "price": 1, "after": 3, "footnotes": ["F2"]}],
+        footnotes={"F1": "Represents shares of common stock acquired through the reinvestment of "
+                         "dividends received on restricted stock",
+                   "F2": "Weighted average price"},
+    )
+    assert [r["drip"] for r in parse_form4(xml, "a", FILED)] == [True, False]
+
+
+def test_footnote_text_read_past_inner_elements():
+    xml = form4_xml(txs=[{"code": "P", "date": "2026-09-30", "shares": 1, "price": 1, "after": 2,
+                          "footnotes": ["F1"]}],
+                    footnotes={"F1": "Price note.<b>x</b> Purchased in the Offering; dividend reinvestment."})
+    r = parse_form4(xml, "a", FILED)[0]
+    assert r["offering"] is True and r["drip"] is True

@@ -7,6 +7,9 @@ from datetime import date
 OFFERING_RE = re.compile(
     r"public offering|private placement|underwritten|registered direct|\bIPO\b|\boffering\b", re.I
 )
+DRIP_RE = re.compile(
+    r"reinvest\w*\s+(of\s+)?(the\s+)?dividends?|dividends?\s+reinvest\w*|\bDRIP\b|dividend equivalent", re.I
+)
 # 신고자 이름에 이 단어가 있으면 사람이 아닌 법인(펀드·회사)으로 본다. 이름 자체는 저장하지 않는다.
 ENTITY_RE = re.compile(
     r"(?<![A-Z0-9])(?:LLC|L\.L\.C\.|LP|L\.P\.|FUNDS?|PARTNERS|PARTNERSHIP|TRUST|HOLDINGS|CAPITAL"
@@ -67,7 +70,7 @@ def parse_form4(xml_text: str, accession: str, filed: date) -> list[dict]:
             "title": _t(rel, "officerTitle"),
             "is_entity": bool(ENTITY_RE.search(_t(ro, "reportingOwnerId/rptOwnerName"))),
         })
-    notes = {fn.get("id"): (fn.text or "") for fn in root.findall("footnotes/footnote")}
+    notes = {fn.get("id"): "".join(fn.itertext()) for fn in root.findall("footnotes/footnote")}
     base = {
         "accession": accession,
         "form": _t(root, "documentType") or "4",
@@ -94,5 +97,6 @@ def parse_form4(xml_text: str, accession: str, filed: date) -> list[dict]:
             "after": _f(tx, "postTransactionAmounts/sharesOwnedFollowingTransaction/value"),
             "direct": _t(tx, "ownershipNature/directOrIndirectOwnership/value") or "D",
             "offering": any(OFFERING_RE.search(notes.get(i, "")) for i in ids),
+            "drip": any(DRIP_RE.search(notes.get(i, "")) for i in ids),
         })
     return records

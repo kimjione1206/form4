@@ -111,6 +111,7 @@ def _same_day(counted: list[dict], qualified: set[str], info: dict[str, dict]) -
 
 
 def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
+    rs = [r for r in rs if not (r["code"] == "P" and r.get("drip"))]  # 배당 재투자는 아예 안 셈
     buys = [r for r in rs if r["code"] == "P" and _has_person(r)]
     per_person, info = defaultdict(float), {}
     for r in buys:

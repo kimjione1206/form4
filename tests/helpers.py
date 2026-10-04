@@ -57,7 +57,7 @@ def submission(xml):
 
 def make_rec(accession="A1", issuer="900", owners=None, code="P", date="2026-09-30",
              shares=1000.0, price=20.0, after=5000.0, filed=None, form="4", plan=False,
-             direct="D", offering=False, ticker="EXM", name="EXAMPLE CORP"):
+             direct="D", offering=False, drip=False, ticker="EXM", name="EXAMPLE CORP"):
     owners = owners or [{"cik": "1", "is_director": True, "is_officer": False,
                          "is_ten_pct": False, "title": ""}]
     return {
@@ -65,7 +65,7 @@ def make_rec(accession="A1", issuer="900", owners=None, code="P", date="2026-09-
         "issuer_cik": issuer, "issuer_name": name, "ticker": ticker,
         "owners": owners, "plan": plan, "url": f"https://www.sec.gov/{accession}",
         "code": code, "date": date, "shares": shares, "price": price,
-        "after": after, "direct": direct, "offering": offering,
+        "after": after, "direct": direct, "offering": offering, "drip": drip,
     }
 
 

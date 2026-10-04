@@ -131,3 +131,12 @@ def test_entity_director_not_third_person_but_reported():
 def test_owner_label_ignores_title_translation_failing_guard():
     titles = {"Chief Growth Officer": "최고성장책임자"}  # 금지어 '성장'
     assert owner_label(officer("1", "Chief Growth Officer"), titles) == "Chief Growth Officer"
+
+
+def test_dividend_reinvestment_ignored():
+    assert rank(buys(3, drip=True), AS_OF, TITLES) == []
+    recs = buys(3) + [make_rec("D", owners=[director("0")], drip=True, shares=1000, price=20.0)]
+    c = rank(recs, AS_OF, TITLES)[0]
+    assert c["total_usd"] == 60_000.0 and len(c["rows"]) == 3
+    fund_drip = make_rec("FD", owners=[fund("50")], drip=True, shares=1000, price=100.0)
+    assert rank(buys(3) + [fund_drip], AS_OF, TITLES)[0]["ten_pct_usd"] == 0.0
