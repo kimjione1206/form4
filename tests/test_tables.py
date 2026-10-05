@@ -122,6 +122,14 @@ def test_build_todo_names_capped_at_300():
     assert len(names) == 300 and names[0]["t"] == "T349" and names[-1]["t"] == "T050"
 
 
+def test_build_todo_companies_capped_at_100_in_list_order():
+    results = [{"issuer_cik": str(i)} for i in range(150)]
+    companies = {str(i): {"name": f"Co {i}", "sic_description": "", "summary": None} for i in range(150)}
+    companies["0"]["summary"] = "지역 은행"  # 소개가 있는 회사는 할 일에서 빠짐
+    todo = build_todo(results, companies, {}, [], {})["companies"]
+    assert len(todo) == 100 and todo[0]["cik"] == "1" and todo[-1]["cik"] == "100"
+
+
 def test_company_line_uses_korean_industry_before_english():
     companies = {"1": {"summary": "지역 은행", "sic_description": "State Commercial Banks"},
                  "2": {"summary": None, "sic_description": "State Commercial Banks"},

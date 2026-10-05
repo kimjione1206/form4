@@ -10,6 +10,7 @@ from form4.sec import submissions_url
 DIGIT_RE = re.compile(r"\d")
 TICKER_RE = re.compile(r"[A-Z0-9.\-]{1,10}")  # 할 일에 올릴 수 있는 깨끗한 종목 코드
 MAX_NAME_TODO = 300  # 한국어 이름 할 일은 금액 큰 회사부터 이만큼만
+MAX_COMPANY_TODO = 100  # 회사 소개 할 일은 목록 순서(매수 목록 → 매도 목록)로 하루 이만큼만
 
 
 def load_json(path: Path, default):
@@ -93,5 +94,5 @@ def build_todo(results: list[dict], companies: dict, titles: dict, profiles: lis
             todo_names.append({"t": t, "n": c["name"]})
     todo_industries = sorted({c["sic_description"] for c in companies.values()
                               if c.get("sic_description") and c["sic_description"] not in (industries or {})})
-    return {"companies": todo_companies, "titles": todo_titles, "names": todo_names[:MAX_NAME_TODO],
+    return {"companies": todo_companies[:MAX_COMPANY_TODO], "titles": todo_titles, "names": todo_names[:MAX_NAME_TODO],
             "industries": todo_industries}
