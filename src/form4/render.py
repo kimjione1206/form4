@@ -224,4 +224,5 @@ def render_site(profiles: list[dict], brief: dict, meta: dict, companies: dict, 
     static = files("form4") / "static"
     for name in ("style.css", "typing.js", "search.js", "share.js", "sort.js"):
         (out_dir / name).write_text((static / name).read_text())
-    (out_dir / "og.png").write_bytes((static / "og.png").read_bytes())
+    for name in ("og.png", "favicon.svg", "favicon.ico", "apple-touch-icon.png"):
+        (out_dir / name).write_bytes((static / name).read_bytes())
