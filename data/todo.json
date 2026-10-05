@@ -29,9 +29,614 @@
       "cik": "65433",
       "name": "MEXICO FUND INC",
       "sic_description": ""
+    },
+    {
+      "cik": "1395064",
+      "name": "TAKEDA PHARMACEUTICAL CO LTD",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "80424",
+      "name": "PROCTER & GAMBLE Co",
+      "sic_description": "Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics"
+    },
+    {
+      "cik": "1561550",
+      "name": "Datadog, Inc.",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "703351",
+      "name": "BRINKER INTERNATIONAL, INC",
+      "sic_description": "Retail-Eating  Places"
+    },
+    {
+      "cik": "1595974",
+      "name": "MAGNITE, INC.",
+      "sic_description": "Services-Computer Programming, Data Processing, Etc."
+    },
+    {
+      "cik": "1471055",
+      "name": "Banco Santander (Brasil) S.A.",
+      "sic_description": "Commercial Banks, NEC"
+    },
+    {
+      "cik": "1830487",
+      "name": "Pharvaris N.V.",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "1070985",
+      "name": "CoreCivic, Inc.",
+      "sic_description": "Real Estate Investment Trusts"
+    },
+    {
+      "cik": "1261333",
+      "name": "DOCUSIGN, INC.",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "1023512",
+      "name": "DRDGOLD LTD",
+      "sic_description": "Gold and Silver Ores"
+    },
+    {
+      "cik": "1703399",
+      "name": "Sea Ltd",
+      "sic_description": "Services-Miscellaneous Business Services"
+    },
+    {
+      "cik": "1437107",
+      "name": "Warner Bros. Discovery, Inc.",
+      "sic_description": "Cable & Other Pay Television Services"
+    },
+    {
+      "cik": "1628171",
+      "name": "Revolution Medicines, Inc.",
+      "sic_description": "Biological Products, (No Diagnostic Substances)"
+    },
+    {
+      "cik": "1717115",
+      "name": "Tempus AI, Inc.",
+      "sic_description": "Services-Computer Programming, Data Processing, Etc."
+    },
+    {
+      "cik": "1438533",
+      "name": "Travere Therapeutics, Inc.",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "316709",
+      "name": "SCHWAB CHARLES CORP",
+      "sic_description": "Security Brokers, Dealers & Flotation Companies"
+    },
+    {
+      "cik": "1576280",
+      "name": "Guardant Health, Inc.",
+      "sic_description": "Services-Medical Laboratories"
+    },
+    {
+      "cik": "1694426",
+      "name": "Delek US Holdings, Inc.",
+      "sic_description": "Petroleum Refining"
+    },
+    {
+      "cik": "1591698",
+      "name": "Paylocity Holding Corp",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "1040470",
+      "name": "AEHR TEST SYSTEMS",
+      "sic_description": "Instruments For Meas & Testing of  Electricity & Elec Signals"
+    },
+    {
+      "cik": "3453",
+      "name": "Matson, Inc.",
+      "sic_description": "Water Transportation"
+    },
+    {
+      "cik": "1060955",
+      "name": "ICON PLC",
+      "sic_description": "Services-Commercial Physical & Biological Research"
+    },
+    {
+      "cik": "1514416",
+      "name": "Bandwidth Inc.",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "1535527",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "1640147",
+      "name": "Snowflake Inc.",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "1769628",
+      "name": "CoreWeave, Inc.",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "1581280",
+      "name": "Twist Bioscience Corp",
+      "sic_description": "Biological Products, (No Diagnostic Substances)"
+    },
+    {
+      "cik": "1795586",
+      "name": "Chime Financial, Inc.",
+      "sic_description": "Finance Services"
+    },
+    {
+      "cik": "1792789",
+      "name": "DoorDash, Inc.",
+      "sic_description": "Services-Business Services, NEC"
+    },
+    {
+      "cik": "70318",
+      "name": "TENET HEALTHCARE CORP",
+      "sic_description": "Services-General Medical & Surgical Hospitals, NEC"
+    },
+    {
+      "cik": "1088856",
+      "name": "CORCEPT THERAPEUTICS INC",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "1517413",
+      "name": "Fastly, Inc.",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "1876042",
+      "name": "Circle Internet Group, Inc.",
+      "sic_description": "Finance Services"
+    },
+    {
+      "cik": "1467623",
+      "name": "DROPBOX, INC.",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "76334",
+      "name": "Parker-Hannifin Corp",
+      "sic_description": "Miscellaneous Fabricated Metal Products"
+    },
+    {
+      "cik": "1438472",
+      "name": "MIAMI INTERNATIONAL HOLDINGS, INC.",
+      "sic_description": "Security Brokers, Dealers & Flotation Companies"
+    },
+    {
+      "cik": "936395",
+      "name": "CIENA CORP",
+      "sic_description": "Telephone & Telegraph Apparatus"
+    },
+    {
+      "cik": "1849056",
+      "name": "Oklo Inc.",
+      "sic_description": "Electric Services"
+    },
+    {
+      "cik": "1315098",
+      "name": "Roblox Corp",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "780571",
+      "name": "ITRON, INC.",
+      "sic_description": "Instruments For Meas & Testing of  Electricity & Elec Signals"
+    },
+    {
+      "cik": "1654126",
+      "name": "ZIM Integrated Shipping Services Ltd.",
+      "sic_description": "Deep Sea Foreign Transportation of  Freight"
+    },
+    {
+      "cik": "1877184",
+      "name": "KESTRA MEDICAL TECHNOLOGIES, LTD.",
+      "sic_description": "Surgical & Medical Instruments & Apparatus"
+    },
+    {
+      "cik": "1530979",
+      "name": "Honest Company, Inc.",
+      "sic_description": "Retail-Catalog & Mail-Order Houses"
+    },
+    {
+      "cik": "1617640",
+      "name": "ZILLOW GROUP, INC.",
+      "sic_description": "Services-Business Services, NEC"
+    },
+    {
+      "cik": "1571996",
+      "name": "Dell Technologies Inc.",
+      "sic_description": "Electronic Computers"
+    },
+    {
+      "cik": "2021728",
+      "name": "Cerebras Systems Inc.",
+      "sic_description": "Semiconductors & Related Devices"
+    },
+    {
+      "cik": "1326801",
+      "name": "Meta Platforms, Inc.",
+      "sic_description": "Services-Computer Programming, Data Processing, Etc."
+    },
+    {
+      "cik": "1477333",
+      "name": "Cloudflare, Inc.",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "2007855",
+      "name": "Venture Global, Inc.",
+      "sic_description": "Natural Gas Distribution"
+    },
+    {
+      "cik": "1800667",
+      "name": "JFrog Ltd",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "721371",
+      "name": "CARDINAL HEALTH INC",
+      "sic_description": "Wholesale-Drugs, Proprietaries & Druggists' Sundries"
+    },
+    {
+      "cik": "921582",
+      "name": "IMAX CORP",
+      "sic_description": "Photographic Equipment & Supplies"
+    },
+    {
+      "cik": "1069258",
+      "name": "KRATOS DEFENSE & SECURITY SOLUTIONS, INC.",
+      "sic_description": "Guided Missiles & Space Vehicles & Parts"
+    },
+    {
+      "cik": "1539838",
+      "name": "Diamondback Energy, Inc.",
+      "sic_description": "Crude Petroleum & Natural Gas"
+    },
+    {
+      "cik": "821483",
+      "name": "PAR PACIFIC HOLDINGS, INC.",
+      "sic_description": "Crude Petroleum & Natural Gas"
+    },
+    {
+      "cik": "1304492",
+      "name": "Anterix Inc.",
+      "sic_description": "Telephone Communications (No Radiotelephone)"
+    },
+    {
+      "cik": "946581",
+      "name": "TAKE TWO INTERACTIVE SOFTWARE INC",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "1428439",
+      "name": "ROKU, INC",
+      "sic_description": "Cable & Other Pay Television Services"
+    },
+    {
+      "cik": "1571949",
+      "name": "Intercontinental Exchange, Inc.",
+      "sic_description": "Security & Commodity Brokers, Dealers, Exchanges & Services"
+    },
+    {
+      "cik": "858877",
+      "name": "CISCO SYSTEMS, INC.",
+      "sic_description": "Computer Communications Equipment"
+    },
+    {
+      "cik": "1657573",
+      "name": "Xometry, Inc.",
+      "sic_description": "Services-Business Services, NEC"
+    },
+    {
+      "cik": "1816581",
+      "name": "Ouster, Inc.",
+      "sic_description": "General Industrial Machinery & Equipment, NEC"
+    },
+    {
+      "cik": "1001385",
+      "name": "NWPX Infrastructure, Inc.",
+      "sic_description": "Steel Pipe & Tubes"
+    },
+    {
+      "cik": "1169561",
+      "name": "COMMVAULT SYSTEMS INC",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "1720420",
+      "name": "IBEX Ltd",
+      "sic_description": "Services-Computer Processing & Data Preparation"
+    },
+    {
+      "cik": "906107",
+      "name": "VIVMARK RESIDENTIAL",
+      "sic_description": "Real Estate Investment Trusts"
+    },
+    {
+      "cik": "1333986",
+      "name": "Equitable Holdings, Inc.",
+      "sic_description": "Insurance Agents, Brokers & Service"
+    },
+    {
+      "cik": "1840706",
+      "name": "SOPHiA GENETICS SA",
+      "sic_description": "Services-Computer Processing & Data Preparation"
+    },
+    {
+      "cik": "1640428",
+      "name": "EverQuote, Inc.",
+      "sic_description": "Services-Computer Programming, Data Processing, Etc."
+    },
+    {
+      "cik": "1375205",
+      "name": "UR-ENERGY INC",
+      "sic_description": "Gold and Silver Ores"
+    },
+    {
+      "cik": "106532",
+      "name": "WEYCO GROUP INC",
+      "sic_description": "Wholesale-Apparel, Piece Goods & Notions"
+    },
+    {
+      "cik": "1437402",
+      "name": "ARDELYX, INC.",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "1137789",
+      "name": "Seagate Technology Holdings plc",
+      "sic_description": "Computer Storage Devices"
+    },
+    {
+      "cik": "1668397",
+      "name": "Medpace Holdings, Inc.",
+      "sic_description": "Services-Commercial Physical & Biological Research"
+    },
+    {
+      "cik": "2488",
+      "name": "ADVANCED MICRO DEVICES INC",
+      "sic_description": "Semiconductors & Related Devices"
+    },
+    {
+      "cik": "1707753",
+      "name": "Elastic N.V.",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "1534504",
+      "name": "PBF Energy Inc.",
+      "sic_description": "Petroleum Refining"
+    },
+    {
+      "cik": "1783879",
+      "name": "Robinhood Markets, Inc.",
+      "sic_description": "Security Brokers, Dealers & Flotation Companies"
+    },
+    {
+      "cik": "319201",
+      "name": "KLA CORP",
+      "sic_description": "Optical Instruments & Lenses"
+    },
+    {
+      "cik": "1642896",
+      "name": "Samsara Inc.",
+      "sic_description": "Services-Computer Integrated Systems Design"
+    },
+    {
+      "cik": "1649904",
+      "name": "RHYTHM PHARMACEUTICALS, INC.",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "1898718",
+      "name": "GMR Solutions Inc.",
+      "sic_description": "Transportation Services"
+    },
+    {
+      "cik": "1568651",
+      "name": "Oscar Health, Inc.",
+      "sic_description": "Hospital & Medical Service Plans"
+    },
+    {
+      "cik": "1690585",
+      "name": "Dianthus Therapeutics, Inc. /DE/",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "1100682",
+      "name": "CHARLES RIVER LABORATORIES INTERNATIONAL, INC.",
+      "sic_description": "Services-Commercial Physical & Biological Research"
+    },
+    {
+      "cik": "1478320",
+      "name": "Adaptive Biotechnologies Corp",
+      "sic_description": "Biological Products, (No Diagnostic Substances)"
+    },
+    {
+      "cik": "1418819",
+      "name": "Iridium Communications Inc.",
+      "sic_description": "Communications Services, NEC"
+    },
+    {
+      "cik": "1851112",
+      "name": "RISKIFIED LTD.",
+      "sic_description": "Services-Business Services, NEC"
+    },
+    {
+      "cik": "1664703",
+      "name": "Bloom Energy Corp",
+      "sic_description": "Electrical Industrial Apparatus"
+    },
+    {
+      "cik": "1018724",
+      "name": "AMAZON COM INC",
+      "sic_description": "Retail-Catalog & Mail-Order Houses"
+    },
+    {
+      "cik": "1581760",
+      "name": "Life360, Inc.",
+      "sic_description": "Services-Computer Processing & Data Preparation"
+    },
+    {
+      "cik": "1690820",
+      "name": "CARVANA CO.",
+      "sic_description": "Retail-Auto Dealers & Gasoline Stations"
+    },
+    {
+      "cik": "1451809",
+      "name": "SITIME Corp",
+      "sic_description": "Semiconductors & Related Devices"
+    },
+    {
+      "cik": "1770787",
+      "name": "10x Genomics, Inc.",
+      "sic_description": "Laboratory Analytical Instruments"
     }
   ],
-  "industries": [],
+  "industries": [
+    "Accident & Health Insurance",
+    "Air Transportation, Nonscheduled",
+    "Air Transportation, Scheduled",
+    "Aircraft",
+    "Books: Publishing or  Publishing & Printing",
+    "Cable & Other Pay Television Services",
+    "Canned, Fruits, Veg, Preserves, Jams & Jellies",
+    "Carpets & Rugs",
+    "Commercial Banks, NEC",
+    "Communications Equipment, NEC",
+    "Communications Services, NEC",
+    "Computer & office Equipment",
+    "Computer Communications Equipment",
+    "Computer Storage Devices",
+    "Electric & Other Services Combined",
+    "Electric Lighting & Wiring Equipment",
+    "Electrical Industrial Apparatus",
+    "Electrical Work",
+    "Electronic Components & Accessories",
+    "Electronic Components, NEC",
+    "Electronic Computers",
+    "Fabricated Plate Work (Boiler Shops)",
+    "Farm Machinery & Equipment",
+    "Fats & Oils",
+    "Footwear, (No Rubber)",
+    "Games, Toys & Children's Vehicles (No Dolls & Bicycles)",
+    "General Bldg Contractors - Nonresidential Bldgs",
+    "General Bldg Contractors - Residential Bldgs",
+    "General Industrial Machinery & Equipment, NEC",
+    "Gold and Silver Ores",
+    "Guided Missiles & Space Vehicles & Parts",
+    "Hospital & Medical Service Plans",
+    "Hotels & Motels",
+    "Household Appliances",
+    "Household Audio & Video Equipment",
+    "Household Furniture",
+    "Industrial Instruments For Measurement, Display, and Control",
+    "Industrial Organic Chemicals",
+    "Instruments For Meas & Testing of  Electricity & Elec Signals",
+    "Insurance Agents, Brokers & Service",
+    "Laboratory Analytical Instruments",
+    "Lumber & Wood Products (No Furniture)",
+    "Measuring & Controlling Devices, NEC",
+    "Medicinal Chemicals & Botanical Products",
+    "Metal Doors, Sash, Frames, Moldings & Trim",
+    "Metal Forgings & Stampings",
+    "Metal Mining",
+    "Metal Shipping Barrels, Drums, Kegs & Pails",
+    "Mining & Quarrying of  Nonmetallic Minerals (No Fuels)",
+    "Miscellaneous Chemical Products",
+    "Miscellaneous Electrical Machinery, Equipment & Supplies",
+    "Miscellaneous Fabricated Metal Products",
+    "Motors & Generators",
+    "Natural Gas Distribution",
+    "Natural Gas Transmission",
+    "Newspapers: Publishing or  Publishing & Printing",
+    "Office Machines, NEC",
+    "Oil & Gas Field Services, NEC",
+    "Optical Instruments & Lenses",
+    "Ordnance & Accessories, (No Vehicles/Guided Missiles)",
+    "Orthopedic, Prosthetic & Surgical Appliances & Supplies",
+    "Patent Owners & Lessors",
+    "Perfumes, Cosmetics & Other Toilet Preparations",
+    "Personal Credit Institutions",
+    "Petroleum Refining",
+    "Photographic Equipment & Supplies",
+    "Plastics Products, NEC",
+    "Primary Production of  Aluminum",
+    "Printed Circuit Boards",
+    "Radio & Tv Broadcasting & Communications Equipment",
+    "Railroad Equipment",
+    "Real Estate Agents & Managers (For Others)",
+    "Refuse Systems",
+    "Retail-Auto Dealers & Gasoline Stations",
+    "Retail-Building Materials, Hardware, Garden Supply",
+    "Retail-Family Clothing Stores",
+    "Retail-Grocery Stores",
+    "Retail-Home Furniture, Furnishings & Equipment Stores",
+    "Retail-Lumber & Other Building Materials Dealers",
+    "Retail-Miscellaneous Retail",
+    "Retail-Variety Stores",
+    "Rolling Drawing & Extruding of  Nonferrous Metals",
+    "Rubber & Plastics Footwear",
+    "Search, Detection, Navigation, Guidance, Aeronautical Sys",
+    "Security & Commodity Brokers, Dealers, Exchanges & Services",
+    "Security Brokers, Dealers & Flotation Companies",
+    "Services-Advertising",
+    "Services-Advertising Agencies",
+    "Services-Commercial Physical & Biological Research",
+    "Services-Computer Processing & Data Preparation",
+    "Services-Consumer Credit Reporting, Collection Agencies",
+    "Services-Educational Services",
+    "Services-Engineering, Accounting, Research, Management",
+    "Services-Equipment Rental & Leasing, NEC",
+    "Services-General Medical & Surgical Hospitals, NEC",
+    "Services-Health Services",
+    "Services-Help Supply Services",
+    "Services-Home Health Care Services",
+    "Services-Hospitals",
+    "Services-Management Consulting Services",
+    "Services-Management Services",
+    "Services-Membership Sports & Recreation Clubs",
+    "Services-Miscellaneous Amusement & Recreation",
+    "Services-Miscellaneous Business Services",
+    "Services-Miscellaneous Equipment Rental & Leasing",
+    "Services-Offices & Clinics of  Doctors of  Medicine",
+    "Services-Personal Services",
+    "Services-Prepackaged Software",
+    "Services-Skilled Nursing Care Facilities",
+    "Services-To Dwellings & Other Buildings",
+    "Services-Video Tape Rental",
+    "Silver Ores",
+    "Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics",
+    "Special Industry Machinery (No Metalworking Machinery)",
+    "Special Industry Machinery, NEC",
+    "Sporting & Athletic Goods, NEC",
+    "Steel Pipe & Tubes",
+    "Steel Works, Blast Furnaces & Rolling Mills (Coke Ovens)",
+    "Surety Insurance",
+    "Switchgear & Switchboard Apparatus",
+    "Telegraph & Other Message Communications",
+    "Telephone & Telegraph Apparatus",
+    "Telephone Communications (No Radiotelephone)",
+    "Television Broadcasting Stations",
+    "Trucking (No Local)",
+    "Water Transportation",
+    "Wholesale-Apparel, Piece Goods & Notions",
+    "Wholesale-Computers & Peripheral Equipment & Software",
+    "Wholesale-Drugs, Proprietaries & Druggists' Sundries",
+    "Wholesale-Groceries, General Line",
+    "Wholesale-Industrial Machinery & Equipment",
+    "Wholesale-Jewelry, Watches, Precious Stones & Metals",
+    "Wholesale-Machinery, Equipment & Supplies",
+    "X-Ray Apparatus & Tubes & Related Irradiation Apparatus"
+  ],
   "names": [
     {
       "n": "EQT Corp",

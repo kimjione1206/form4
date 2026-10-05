@@ -1,17 +1,147 @@
 {
+  "1001250": {
+    "name": "ESTEE LAUDER COMPANIES INC",
+    "sic_description": "Perfumes, Cosmetics & Other Toilet Preparations",
+    "summary": null
+  },
+  "1001385": {
+    "name": "NWPX Infrastructure, Inc.",
+    "sic_description": "Steel Pipe & Tubes",
+    "summary": null
+  },
+  "1001614": {
+    "name": "Riley Exploration Permian, Inc.",
+    "sic_description": "Crude Petroleum & Natural Gas",
+    "summary": null
+  },
+  "1002047": {
+    "name": "NetApp, Inc.",
+    "sic_description": "Computer Storage Devices",
+    "summary": null
+  },
+  "1002910": {
+    "name": "AMEREN CORP",
+    "sic_description": "Electric & Other Services Combined",
+    "summary": null
+  },
+  "1013488": {
+    "name": "BJs RESTAURANTS INC",
+    "sic_description": "Retail-Eating  Places",
+    "summary": null
+  },
+  "101382": {
+    "name": "UMB FINANCIAL CORP",
+    "sic_description": "National Commercial Banks",
+    "summary": null
+  },
+  "1013857": {
+    "name": "PEGASYSTEMS INC",
+    "sic_description": "Services-Computer Processing & Data Preparation",
+    "summary": null
+  },
   "101538": {
     "name": "UNITED STATES ANTIMONY CORP",
     "sic_description": "Primary Smelting & Refining of  Nonferrous Metals",
     "summary": "안티모니를 채굴·가공하는 회사"
+  },
+  "1018164": {
+    "name": "WILLIS LEASE FINANCE CORP",
+    "sic_description": "Wholesale-Machinery, Equipment & Supplies",
+    "summary": null
+  },
+  "1018724": {
+    "name": "AMAZON COM INC",
+    "sic_description": "Retail-Catalog & Mail-Order Houses",
+    "summary": null
+  },
+  "1018840": {
+    "name": "ABERCROMBIE & FITCH CO /DE/",
+    "sic_description": "Retail-Family Clothing Stores",
+    "summary": null
+  },
+  "1018963": {
+    "name": "ATI INC",
+    "sic_description": "Steel Pipe & Tubes",
+    "summary": null
+  },
+  "1020569": {
+    "name": "IRON MOUNTAIN INC",
+    "sic_description": "Real Estate Investment Trusts",
+    "summary": null
+  },
+  "1023024": {
+    "name": "ANI PHARMACEUTICALS INC",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1023313": {
+    "name": "FORRESTER RESEARCH, INC.",
+    "sic_description": "Services-Engineering, Accounting, Research, Management",
+    "summary": null
+  },
+  "1023512": {
+    "name": "DRDGOLD LTD",
+    "sic_description": "Gold and Silver Ores",
+    "summary": null
+  },
+  "1023731": {
+    "name": "8X8 INC /DE/",
+    "sic_description": "Services-Computer Processing & Data Preparation",
+    "summary": null
+  },
+  "1024478": {
+    "name": "ROCKWELL AUTOMATION, INC",
+    "sic_description": "Measuring & Controlling Devices, NEC",
+    "summary": null
+  },
+  "1035267": {
+    "name": "INTUITIVE SURGICAL INC",
+    "sic_description": "Orthopedic, Prosthetic & Surgical Appliances & Supplies",
+    "summary": null
+  },
+  "1035983": {
+    "name": "COMFORT SYSTEMS USA INC",
+    "sic_description": "Electrical Work",
+    "summary": null
+  },
+  "1040470": {
+    "name": "AEHR TEST SYSTEMS",
+    "sic_description": "Instruments For Meas & Testing of  Electricity & Elec Signals",
+    "summary": null
+  },
+  "1041061": {
+    "name": "YUM BRANDS INC",
+    "sic_description": "Retail-Eating  Places",
+    "summary": null
   },
   "1041368": {
     "name": "RIVERVIEW BANCORP INC",
     "sic_description": "Savings Institution, Federally Chartered",
     "summary": "지역 은행"
   },
+  "104169": {
+    "name": "Walmart Inc.",
+    "sic_description": "Retail-Variety Stores",
+    "summary": null
+  },
   "1041934": {
     "name": "EDAP TMS SA",
     "sic_description": "Electromedical & Electrotherapeutic Apparatus",
+    "summary": null
+  },
+  "1042046": {
+    "name": "AMERICAN FINANCIAL GROUP INC",
+    "sic_description": "Fire, Marine & Casualty Insurance",
+    "summary": null
+  },
+  "1045810": {
+    "name": "NVIDIA CORP",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "1046025": {
+    "name": "HERITAGE FINANCIAL CORP /WA/",
+    "sic_description": "Savings Institutions, Not Federally Chartered",
     "summary": null
   },
   "1046179": {
@@ -19,9 +149,74 @@
     "sic_description": "Semiconductors & Related Devices",
     "summary": "반도체 위탁 생산 회사"
   },
+  "1047127": {
+    "name": "AMKOR TECHNOLOGY, INC.",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "1047335": {
+    "name": "NATIONAL HEALTHCARE CORP",
+    "sic_description": "Services-Skilled Nursing Care Facilities",
+    "summary": null
+  },
+  "1048695": {
+    "name": "F5, INC.",
+    "sic_description": "Computer Communications Equipment",
+    "summary": null
+  },
+  "1049521": {
+    "name": "MERCURY SYSTEMS INC",
+    "sic_description": "Electronic Components & Accessories",
+    "summary": null
+  },
+  "106040": {
+    "name": "WESTERN DIGITAL CORP",
+    "sic_description": "Computer Storage Devices",
+    "summary": null
+  },
+  "1060955": {
+    "name": "ICON PLC",
+    "sic_description": "Services-Commercial Physical & Biological Research",
+    "summary": null
+  },
+  "1061983": {
+    "name": "CYTOKINETICS INC",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
   "1063761": {
     "name": "SIMON PROPERTY GROUP INC.",
     "sic_description": "Real Estate Investment Trusts",
+    "summary": null
+  },
+  "1065088": {
+    "name": "EBAY INC",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
+  "1065280": {
+    "name": "NETFLIX INC",
+    "sic_description": "Services-Video Tape Rental",
+    "summary": null
+  },
+  "106532": {
+    "name": "WEYCO GROUP INC",
+    "sic_description": "Wholesale-Apparel, Piece Goods & Notions",
+    "summary": null
+  },
+  "1069157": {
+    "name": "EAST WEST BANCORP INC",
+    "sic_description": "State Commercial Banks",
+    "summary": null
+  },
+  "1069183": {
+    "name": "AXON ENTERPRISE, INC.",
+    "sic_description": "Ordnance & Accessories, (No Vehicles/Guided Missiles)",
+    "summary": null
+  },
+  "1069258": {
+    "name": "KRATOS DEFENSE & SECURITY SOLUTIONS, INC.",
+    "sic_description": "Guided Missiles & Space Vehicles & Parts",
     "summary": null
   },
   "1069533": {
@@ -29,20 +224,210 @@
     "sic_description": "Natural Gas Transmisison & Distribution",
     "summary": "천연가스 공급 회사"
   },
+  "1070081": {
+    "name": "PTC THERAPEUTICS, INC.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1070985": {
+    "name": "CoreCivic, Inc.",
+    "sic_description": "Real Estate Investment Trusts",
+    "summary": null
+  },
+  "1075531": {
+    "name": "Booking Holdings Inc.",
+    "sic_description": "Transportation Services",
+    "summary": null
+  },
+  "1078075": {
+    "name": "NETSCOUT SYSTEMS INC",
+    "sic_description": "Services-Computer Integrated Systems Design",
+    "summary": null
+  },
+  "1078271": {
+    "name": "EXTREME NETWORKS INC",
+    "sic_description": "Computer Communications Equipment",
+    "summary": null
+  },
+  "10795": {
+    "name": "BECTON DICKINSON & CO",
+    "sic_description": "Surgical & Medical Instruments & Apparatus",
+    "summary": null
+  },
+  "1082324": {
+    "name": "VirnetX Holding Corp",
+    "sic_description": "Patent Owners & Lessors",
+    "summary": null
+  },
+  "1082554": {
+    "name": "UNITED THERAPEUTICS Corp",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1083301": {
+    "name": "TERAWULF INC.",
+    "sic_description": "Finance Services",
+    "summary": null
+  },
+  "108385": {
+    "name": "WORLD ACCEPTANCE CORP",
+    "sic_description": "Personal Credit Institutions",
+    "summary": null
+  },
+  "1084048": {
+    "name": "ZIFF DAVIS, INC.",
+    "sic_description": "Telegraph & Other Message Communications",
+    "summary": null
+  },
+  "1086222": {
+    "name": "AKAMAI TECHNOLOGIES INC",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
+  "1086434": {
+    "name": "AUDIOCODES LTD",
+    "sic_description": "Telephone & Telegraph Apparatus",
+    "summary": null
+  },
+  "1088856": {
+    "name": "CORCEPT THERAPEUTICS INC",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
   "1089063": {
     "name": "DICK'S SPORTING GOODS, INC.",
     "sic_description": "Retail-Miscellaneous Shopping Goods Stores",
     "summary": "스포츠용품 소매 회사"
+  },
+  "1090009": {
+    "name": "SOUTHERN FIRST BANCSHARES INC",
+    "sic_description": "National Commercial Banks",
+    "summary": null
+  },
+  "1093557": {
+    "name": "DEXCOM INC",
+    "sic_description": "Surgical & Medical Instruments & Apparatus",
+    "summary": null
+  },
+  "1093672": {
+    "name": "PEOPLES BANCORP OF NORTH CAROLINA INC",
+    "sic_description": "State Commercial Banks",
+    "summary": null
+  },
+  "1094972": {
+    "name": "ULTRAPAR HOLDINGS INC",
+    "sic_description": "Natural Gas Distribution",
+    "summary": null
+  },
+  "1099800": {
+    "name": "Edwards Lifesciences Corp",
+    "sic_description": "Orthopedic, Prosthetic & Surgical Appliances & Supplies",
+    "summary": null
+  },
+  "1100682": {
+    "name": "CHARLES RIVER LABORATORIES INTERNATIONAL, INC.",
+    "sic_description": "Services-Commercial Physical & Biological Research",
+    "summary": null
+  },
+  "1101239": {
+    "name": "EQUINIX INC",
+    "sic_description": "Real Estate Investment Trusts",
+    "summary": null
+  },
+  "1101302": {
+    "name": "ENTEGRIS INC",
+    "sic_description": "Plastics Products, NEC",
+    "summary": null
+  },
+  "1104506": {
+    "name": "INSMED Inc",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1104657": {
+    "name": "MATERION Corp",
+    "sic_description": "Metal Forgings & Stampings",
+    "summary": null
+  },
+  "1107843": {
+    "name": "QUALYS, INC.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1109138": {
+    "name": "CAMTEK LTD",
+    "sic_description": "Optical Instruments & Lenses",
+    "summary": null
+  },
+  "1111485": {
+    "name": "RxSight, Inc.",
+    "sic_description": "Ophthalmic Goods",
+    "summary": null
+  },
+  "1117297": {
+    "name": "QUINSTREET, INC",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
+  "1120193": {
+    "name": "NASDAQ, INC.",
+    "sic_description": "Security & Commodity Brokers, Dealers, Exchanges & Services",
+    "summary": null
+  },
+  "1124796": {
+    "name": "NLIGHT, INC.",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "1127537": {
+    "name": "Pulmonx Corp",
+    "sic_description": "Surgical & Medical Instruments & Apparatus",
+    "summary": null
   },
   "1130713": {
     "name": "BED BATH & BEYOND, INC.",
     "sic_description": "Retail-Catalog & Mail-Order Houses",
     "summary": "가정용품 소매 회사"
   },
+  "1137789": {
+    "name": "Seagate Technology Holdings plc",
+    "sic_description": "Computer Storage Devices",
+    "summary": null
+  },
+  "1140859": {
+    "name": "Cencora, Inc.",
+    "sic_description": "Wholesale-Drugs, Proprietaries & Druggists' Sundries",
+    "summary": null
+  },
+  "1141391": {
+    "name": "Mastercard Inc",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
+  "1142417": {
+    "name": "NEXSTAR MEDIA GROUP, INC.",
+    "sic_description": "Television Broadcasting Stations",
+    "summary": null
+  },
+  "1145255": {
+    "name": "HENNESSY ADVISORS INC",
+    "sic_description": "Investment Advice",
+    "summary": null
+  },
+  "1158114": {
+    "name": "APPLIED OPTOELECTRONICS, INC.",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
   "1158172": {
     "name": "COMSCORE, INC.",
     "sic_description": "Services-Business Services, NEC",
     "summary": "시청 데이터 측정·분석 회사"
+  },
+  "1159036": {
+    "name": "HALOZYME THERAPEUTICS, INC.",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
   },
   "1160330": {
     "name": "BANK BRADESCO",
@@ -54,60 +439,585 @@
     "sic_description": "State Commercial Banks",
     "summary": "지역 은행"
   },
+  "1164727": {
+    "name": "NEWMONT Corp /DE/",
+    "sic_description": "Gold and Silver Ores",
+    "summary": null
+  },
+  "1166003": {
+    "name": "XPO, Inc.",
+    "sic_description": "Transportation Services",
+    "summary": null
+  },
+  "1169561": {
+    "name": "COMMVAULT SYSTEMS INC",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
   "1175151": {
     "name": "Cytosorbents Corp",
     "sic_description": "Surgical & Medical Instruments & Apparatus",
     "summary": "혈액 정화 의료기기 회사"
+  },
+  "1175454": {
+    "name": "CORPAY, INC.",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
+  "1177609": {
+    "name": "FIVE BELOW, INC",
+    "sic_description": "Retail-Variety Stores",
+    "summary": null
+  },
+  "1178970": {
+    "name": "PROVIDENT FINANCIAL SERVICES INC",
+    "sic_description": "Savings Institution, Federally Chartered",
+    "summary": null
+  },
+  "1192448": {
+    "name": "GLAUKOS Corp",
+    "sic_description": "Surgical & Medical Instruments & Apparatus",
+    "summary": null
+  },
+  "1211583": {
+    "name": "FENNEC PHARMACEUTICALS INC.",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
+  },
+  "1224608": {
+    "name": "CNO Financial Group, Inc.",
+    "sic_description": "Accident & Health Insurance",
+    "summary": null
+  },
+  "1231457": {
+    "name": "GENELUX Corp",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1232524": {
+    "name": "Jazz Pharmaceuticals plc",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1253689": {
+    "name": "CRESCENT BIOPHARMA, INC.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1261333": {
+    "name": "DOCUSIGN, INC.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1274494": {
+    "name": "FIRST SOLAR, INC.",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "1276520": {
+    "name": "GENWORTH FINANCIAL INC",
+    "sic_description": "Life Insurance",
+    "summary": null
+  },
+  "1280058": {
+    "name": "BLACKBAUD INC",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1280263": {
+    "name": "AMBARELLA INC",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "1280452": {
+    "name": "MONOLITHIC POWER SYSTEMS, INC.",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "1281895": {
+    "name": "ROCKET PHARMACEUTICALS, INC.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1285819": {
+    "name": "OMEROS CORP",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1288847": {
+    "name": "Five9, Inc.",
+    "sic_description": "Services-Computer Processing & Data Preparation",
+    "summary": null
+  },
+  "1289460": {
+    "name": "Texas Roadhouse, Inc.",
+    "sic_description": "Retail-Eating  Places",
+    "summary": null
+  },
+  "1297184": {
+    "name": "Amphastar Pharmaceuticals, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1304492": {
+    "name": "Anterix Inc.",
+    "sic_description": "Telephone Communications (No Radiotelephone)",
+    "summary": null
   },
   "1306830": {
     "name": "Celanese Corp",
     "sic_description": "Plastic Material, Synth Resin/Rubber, Cellulos (No Glass)",
     "summary": "화학 소재를 만드는 회사"
   },
+  "1308547": {
+    "name": "Dolby Laboratories, Inc.",
+    "sic_description": "Patent Owners & Lessors",
+    "summary": null
+  },
+  "1315098": {
+    "name": "Roblox Corp",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1315257": {
+    "name": "Koppers Holdings Inc.",
+    "sic_description": "Lumber & Wood Products (No Furniture)",
+    "summary": null
+  },
+  "1317685": {
+    "name": "Alliance Laundry Holdings Inc.",
+    "sic_description": "Refrigeration & Service Industry Machinery",
+    "summary": null
+  },
+  "1318220": {
+    "name": "Waste Connections, Inc.",
+    "sic_description": "Refuse Systems",
+    "summary": null
+  },
+  "1321655": {
+    "name": "Palantir Technologies Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1323885": {
+    "name": "AtriCure, Inc.",
+    "sic_description": "Surgical & Medical Instruments & Apparatus",
+    "summary": null
+  },
+  "1324424": {
+    "name": "Expedia Group, Inc.",
+    "sic_description": "Transportation Services",
+    "summary": null
+  },
   "1326380": {
     "name": "GameStop Corp.",
     "sic_description": "Retail-Computer & Computer Software Stores",
     "summary": "게임·수집품 소매 회사"
+  },
+  "1326801": {
+    "name": "Meta Platforms, Inc.",
+    "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+    "summary": null
+  },
+  "1327567": {
+    "name": "Palo Alto Networks Inc",
+    "sic_description": "Computer Peripheral Equipment, NEC",
+    "summary": null
+  },
+  "1327688": {
+    "name": "OOMA INC",
+    "sic_description": "Services-Computer Processing & Data Preparation",
+    "summary": null
+  },
+  "1331284": {
+    "name": "DHT Holdings, Inc.",
+    "sic_description": "Deep Sea Foreign Transportation of  Freight",
+    "summary": null
+  },
+  "1333986": {
+    "name": "Equitable Holdings, Inc.",
+    "sic_description": "Insurance Agents, Brokers & Service",
+    "summary": null
+  },
+  "1337634": {
+    "name": "StubHub Holdings, Inc.",
+    "sic_description": "Services-Miscellaneous Amusement & Recreation",
+    "summary": null
   },
   "1339005": {
     "name": "FEMASYS INC",
     "sic_description": "Surgical & Medical Instruments & Apparatus",
     "summary": "여성 건강 의료기기 회사"
   },
+  "1341317": {
+    "name": "Bridgewater Bancshares Inc",
+    "sic_description": "State Commercial Banks",
+    "summary": null
+  },
   "1341766": {
     "name": "Celsius Holdings, Inc.",
     "sic_description": "Bottled & Canned Soft Drinks & Carbonated Waters",
     "summary": "에너지 음료를 만드는 회사"
+  },
+  "1345016": {
+    "name": "YELP INC",
+    "sic_description": "Services-Personal Services",
+    "summary": null
+  },
+  "1350593": {
+    "name": "Mueller Water Products, Inc.",
+    "sic_description": "Miscellaneous Fabricated Metal Products",
+    "summary": null
+  },
+  "1356090": {
+    "name": "PRECIGEN, INC.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1365767": {
+    "name": "Allot Ltd.",
+    "sic_description": "Computer Communications Equipment",
+    "summary": null
+  },
+  "1366868": {
+    "name": "Globalstar, Inc.",
+    "sic_description": "Communications Services, NEC",
+    "summary": null
+  },
+  "1370637": {
+    "name": "ETSY INC",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
+  "1371285": {
+    "name": "TRUPANION, INC.",
+    "sic_description": "Hospital & Medical Service Plans",
+    "summary": null
+  },
+  "1372612": {
+    "name": "BOX INC",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1373715": {
+    "name": "ServiceNow, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1375205": {
+    "name": "UR-ENERGY INC",
+    "sic_description": "Gold and Silver Ores",
+    "summary": null
+  },
+  "1377630": {
+    "name": "National CineMedia, Inc.",
+    "sic_description": "Services-Advertising",
+    "summary": null
+  },
+  "1377789": {
+    "name": "AVIAT NETWORKS, INC.",
+    "sic_description": "Radio & Tv Broadcasting & Communications Equipment",
+    "summary": null
   },
   "1378950": {
     "name": "CarParts.com, Inc.",
     "sic_description": "Retail-Auto & Home Supply Stores",
     "summary": "자동차 부품 온라인 판매 회사"
   },
+  "1381668": {
+    "name": "TFS Financial CORP",
+    "sic_description": "Savings Institution, Federally Chartered",
+    "summary": null
+  },
+  "1384101": {
+    "name": "VERACYTE, INC.",
+    "sic_description": "Services-Medical Laboratories",
+    "summary": null
+  },
+  "1384905": {
+    "name": "RingCentral, Inc.",
+    "sic_description": "Services-Computer Processing & Data Preparation",
+    "summary": null
+  },
   "1386716": {
     "name": "Star Bulk Carriers Corp.",
     "sic_description": "Deep Sea Foreign Transportation of  Freight",
     "summary": "화물 해운 회사"
+  },
+  "1388658": {
+    "name": "iRhythm Holdings, Inc.",
+    "sic_description": "Surgical & Medical Instruments & Apparatus",
+    "summary": null
+  },
+  "1389170": {
+    "name": "Targa Resources Corp.",
+    "sic_description": "Natural Gas Transmission",
+    "summary": null
+  },
+  "1392380": {
+    "name": "Gevo, Inc.",
+    "sic_description": "Industrial Organic Chemicals",
+    "summary": null
+  },
+  "1393434": {
+    "name": "OCULAR THERAPEUTIX, INC",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1393818": {
+    "name": "Blackstone Inc.",
+    "sic_description": "Investment Advice",
+    "summary": null
+  },
+  "1395064": {
+    "name": "TAKEDA PHARMACEUTICAL CO LTD",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1397911": {
+    "name": "LPL Financial Holdings Inc.",
+    "sic_description": "Security & Commodity Brokers, Dealers, Exchanges & Services",
+    "summary": null
+  },
+  "1398659": {
+    "name": "Genpact LTD",
+    "sic_description": "Services-Management Consulting Services",
+    "summary": null
+  },
+  "1401257": {
+    "name": "FORUM ENERGY TECHNOLOGIES, INC.",
+    "sic_description": "Oil & Gas Field Machinery & Equipment",
+    "summary": null
+  },
+  "1403161": {
+    "name": "VISA INC.",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
   },
   "1408534": {
     "name": "First Guaranty Bancshares, Inc.",
     "sic_description": "Savings Institution, Federally Chartered",
     "summary": "지역 은행"
   },
+  "1409970": {
+    "name": "Happen, Inc.",
+    "sic_description": "Personal Credit Institutions",
+    "summary": null
+  },
+  "1410384": {
+    "name": "Q2 Holdings, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1411207": {
+    "name": "Allison Transmission Holdings Inc",
+    "sic_description": "Motor Vehicle Parts & Accessories",
+    "summary": null
+  },
+  "1418819": {
+    "name": "Iridium Communications Inc.",
+    "sic_description": "Communications Services, NEC",
+    "summary": null
+  },
+  "1419945": {
+    "name": "TEEKAY TANKERS LTD.",
+    "sic_description": "Water Transportation",
+    "summary": null
+  },
+  "1420520": {
+    "name": "Atomera Inc",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "1422143": {
+    "name": "Kura Oncology, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1422930": {
+    "name": "PubMatic, Inc.",
+    "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+    "summary": null
+  },
+  "1428439": {
+    "name": "ROKU, INC",
+    "sic_description": "Cable & Other Pay Television Services",
+    "summary": null
+  },
+  "1430725": {
+    "name": "Global Ship Lease, Inc.",
+    "sic_description": "Deep Sea Foreign Transportation of  Freight",
+    "summary": null
+  },
+  "1432133": {
+    "name": "KALTURA INC",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1433195": {
+    "name": "APPFOLIO INC",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1437107": {
+    "name": "Warner Bros. Discovery, Inc.",
+    "sic_description": "Cable & Other Pay Television Services",
+    "summary": null
+  },
+  "1437402": {
+    "name": "ARDELYX, INC.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
   "1437958": {
     "name": "COASTAL FINANCIAL CORP",
     "sic_description": "State Commercial Banks",
     "summary": "지역 은행"
+  },
+  "1438472": {
+    "name": "MIAMI INTERNATIONAL HOLDINGS, INC.",
+    "sic_description": "Security Brokers, Dealers & Flotation Companies",
+    "summary": null
+  },
+  "1438533": {
+    "name": "Travere Therapeutics, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1447362": {
+    "name": "CASTLE BIOSCIENCES INC",
+    "sic_description": "Services-Medical Laboratories",
+    "summary": null
+  },
+  "1447669": {
+    "name": "TWILIO INC",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1448893": {
+    "name": "Essent Group Ltd.",
+    "sic_description": "Surety Insurance",
+    "summary": null
+  },
+  "1451809": {
+    "name": "SITIME Corp",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "1459839": {
+    "name": "SI-BONE, Inc.",
+    "sic_description": "Surgical & Medical Instruments & Apparatus",
+    "summary": null
+  },
+  "1462120": {
+    "name": "Live Oak Bancshares, Inc.",
+    "sic_description": "State Commercial Banks",
+    "summary": null
+  },
+  "1464521": {
+    "name": "Heartflow, Inc.",
+    "sic_description": "Surgical & Medical Instruments & Apparatus",
+    "summary": null
+  },
+  "1467623": {
+    "name": "DROPBOX, INC.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1468642": {
+    "name": "Aura Minerals Inc.",
+    "sic_description": "Metal Mining",
+    "summary": null
   },
   "1469395": {
     "name": "Pampa Energy Inc.",
     "sic_description": "Electric Services",
     "summary": "아르헨티나 전력 회사"
   },
+  "1471055": {
+    "name": "Banco Santander (Brasil) S.A.",
+    "sic_description": "Commercial Banks, NEC",
+    "summary": null
+  },
+  "1474432": {
+    "name": "Everpure, Inc.",
+    "sic_description": "Computer Storage Devices",
+    "summary": null
+  },
+  "1474735": {
+    "name": "GENERAC HOLDINGS INC.",
+    "sic_description": "Motors & Generators",
+    "summary": null
+  },
+  "1475922": {
+    "name": "Primerica, Inc.",
+    "sic_description": "Life Insurance",
+    "summary": null
+  },
+  "1476150": {
+    "name": "Terreno Realty Corp",
+    "sic_description": "Real Estate",
+    "summary": null
+  },
+  "1477333": {
+    "name": "Cloudflare, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1477449": {
+    "name": "Teladoc Health, Inc.",
+    "sic_description": "Services-Offices & Clinics of  Doctors of  Medicine",
+    "summary": null
+  },
+  "1477720": {
+    "name": "Asana, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1478320": {
+    "name": "Adaptive Biotechnologies Corp",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
+  },
+  "1483934": {
+    "name": "Scorpio Tankers Inc.",
+    "sic_description": "Deep Sea Foreign Transportation of  Freight",
+    "summary": null
+  },
+  "1484612": {
+    "name": "Outset Medical, Inc.",
+    "sic_description": "Electromedical & Electrotherapeutic Apparatus",
+    "summary": null
+  },
+  "1484778": {
+    "name": "ThredUp Inc.",
+    "sic_description": "Retail-Catalog & Mail-Order Houses",
+    "summary": null
+  },
+  "1486159": {
+    "name": "Chord Energy Corp",
+    "sic_description": "Crude Petroleum & Natural Gas",
+    "summary": null
+  },
   "1488139": {
     "name": "Ameresco, Inc.",
     "sic_description": "Construction - Special Trade Contractors",
     "summary": "에너지 효율·인프라 솔루션 회사"
+  },
+  "1494259": {
+    "name": "CarGurus, Inc.",
+    "sic_description": "Services-Computer Processing & Data Preparation",
+    "summary": null
+  },
+  "1496443": {
+    "name": "Paysign, Inc.",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
+  "1500412": {
+    "name": "Ambiq Micro, Inc.",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
   },
   "1502292": {
     "name": "Presurance Holdings, Inc.",
@@ -119,15 +1029,115 @@
     "sic_description": "State Commercial Banks",
     "summary": "지역 은행"
   },
+  "1506293": {
+    "name": "PINTEREST, INC.",
+    "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+    "summary": null
+  },
+  "1507605": {
+    "name": "MARA Holdings, Inc.",
+    "sic_description": "Finance Services",
+    "summary": null
+  },
+  "1509745": {
+    "name": "CYPHERPUNK TECHNOLOGIES INC.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1510295": {
+    "name": "Marathon Petroleum Corp",
+    "sic_description": "Petroleum Refining",
+    "summary": null
+  },
+  "1512673": {
+    "name": "Block, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1513845": {
+    "name": "Nebius Group N.V.",
+    "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+    "summary": null
+  },
+  "1514416": {
+    "name": "Bandwidth Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1516513": {
+    "name": "Doximity, Inc.",
+    "sic_description": "Services-Computer Programming Services",
+    "summary": null
+  },
+  "1517175": {
+    "name": "Chefs' Warehouse, Inc.",
+    "sic_description": "Wholesale-Groceries, General Line",
+    "summary": null
+  },
+  "1517413": {
+    "name": "Fastly, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
   "1520006": {
     "name": "Matador Resources Co",
     "sic_description": "Crude Petroleum & Natural Gas",
     "summary": "석유·천연가스를 생산하는 회사"
   },
+  "1520262": {
+    "name": "Alkermes plc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
   "1521332": {
     "name": "Aptiv PLC",
     "sic_description": "Motor Vehicle Parts & Accessories",
     "summary": "자동차 부품을 만드는 회사"
+  },
+  "1524358": {
+    "name": "MARRIOTT VACATIONS WORLDWIDE Corp",
+    "sic_description": "Real Estate Agents & Managers (For Others)",
+    "summary": null
+  },
+  "1524566": {
+    "name": "WEALTHFRONT CORP",
+    "sic_description": "Finance Services",
+    "summary": null
+  },
+  "1525221": {
+    "name": "Bristow Group Inc.",
+    "sic_description": "Air Transportation, Nonscheduled",
+    "summary": null
+  },
+  "1527636": {
+    "name": "Autohome Inc.",
+    "sic_description": "Services-Computer Processing & Data Preparation",
+    "summary": null
+  },
+  "1527753": {
+    "name": "Personalis, Inc.",
+    "sic_description": "Services-Medical Laboratories",
+    "summary": null
+  },
+  "1528396": {
+    "name": "Guidewire Software, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1529628": {
+    "name": "Smart Sand, Inc.",
+    "sic_description": "Mining & Quarrying of  Nonmetallic Minerals (No Fuels)",
+    "summary": null
+  },
+  "1530979": {
+    "name": "Honest Company, Inc.",
+    "sic_description": "Retail-Catalog & Mail-Order Houses",
+    "summary": null
+  },
+  "1531152": {
+    "name": "BJ's Wholesale Club Holdings, Inc.",
+    "sic_description": "Retail-Variety Stores",
+    "summary": null
   },
   "1533040": {
     "name": "Phio Pharmaceuticals Corp.",
@@ -138,6 +1148,36 @@
     "name": "Chiron Real Estate Inc.",
     "sic_description": "Real Estate Investment Trusts",
     "summary": "의료시설 임대 부동산투자 회사"
+  },
+  "1534120": {
+    "name": "Avalo Therapeutics, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1534504": {
+    "name": "PBF Energy Inc.",
+    "sic_description": "Petroleum Refining",
+    "summary": null
+  },
+  "1534701": {
+    "name": "Phillips 66",
+    "sic_description": "Petroleum Refining",
+    "summary": null
+  },
+  "1535527": {
+    "name": "CrowdStrike Holdings, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1538379": {
+    "name": "Ibotta, Inc.",
+    "sic_description": "Services-Advertising",
+    "summary": null
+  },
+  "1539838": {
+    "name": "Diamondback Energy, Inc.",
+    "sic_description": "Crude Petroleum & Natural Gas",
+    "summary": null
   },
   "1547546": {
     "name": "Lument Finance Trust, Inc.",
@@ -154,10 +1194,100 @@
     "sic_description": "",
     "summary": null
   },
+  "1552033": {
+    "name": "TransUnion",
+    "sic_description": "Services-Consumer Credit Reporting, Collection Agencies",
+    "summary": null
+  },
   "1552797": {
     "name": "Delek Logistics Partners, LP",
     "sic_description": "Pipe Lines (No Natural Gas)",
     "summary": "석유 파이프라인·저장 사업 회사"
+  },
+  "1555279": {
+    "name": "908 Devices Inc.",
+    "sic_description": "Laboratory Analytical Instruments",
+    "summary": null
+  },
+  "1557860": {
+    "name": "Globant S.A.",
+    "sic_description": "Services-Computer Processing & Data Preparation",
+    "summary": null
+  },
+  "1559720": {
+    "name": "Airbnb, Inc.",
+    "sic_description": "Services-To Dwellings & Other Buildings",
+    "summary": null
+  },
+  "1559865": {
+    "name": "EVERTEC, Inc.",
+    "sic_description": "Services-Computer Processing & Data Preparation",
+    "summary": null
+  },
+  "1561550": {
+    "name": "Datadog, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1562088": {
+    "name": "Duolingo, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1564408": {
+    "name": "Snap Inc",
+    "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+    "summary": null
+  },
+  "1564708": {
+    "name": "NEWS CORP",
+    "sic_description": "Newspapers: Publishing or  Publishing & Printing",
+    "summary": null
+  },
+  "1565687": {
+    "name": "Intapp, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1568651": {
+    "name": "Oscar Health, Inc.",
+    "sic_description": "Hospital & Medical Service Plans",
+    "summary": null
+  },
+  "1569345": {
+    "name": "Sprinklr, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1571949": {
+    "name": "Intercontinental Exchange, Inc.",
+    "sic_description": "Security & Commodity Brokers, Dealers, Exchanges & Services",
+    "summary": null
+  },
+  "1571996": {
+    "name": "Dell Technologies Inc.",
+    "sic_description": "Electronic Computers",
+    "summary": null
+  },
+  "1573221": {
+    "name": "TheRealReal, Inc.",
+    "sic_description": "Retail-Miscellaneous Retail",
+    "summary": null
+  },
+  "1575515": {
+    "name": "Sprouts Farmers Market, Inc.",
+    "sic_description": "Retail-Grocery Stores",
+    "summary": null
+  },
+  "1576280": {
+    "name": "Guardant Health, Inc.",
+    "sic_description": "Services-Medical Laboratories",
+    "summary": null
+  },
+  "1576427": {
+    "name": "Criteo S.A.",
+    "sic_description": "Services-Advertising Agencies",
+    "summary": null
   },
   "1576789": {
     "name": "Wix.com Ltd.",
@@ -169,44 +1299,514 @@
     "sic_description": "Services-Computer Integrated Systems Design",
     "summary": null
   },
+  "1577552": {
+    "name": "Alibaba Group Holding Ltd",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
+  "1579091": {
+    "name": "Maplebear Inc.",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
+  "1579877": {
+    "name": "OUTFRONT Media Inc.",
+    "sic_description": "Real Estate Investment Trusts",
+    "summary": null
+  },
+  "1579878": {
+    "name": "Figma, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1580560": {
+    "name": "Flywire Corp",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
+  "1581280": {
+    "name": "Twist Bioscience Corp",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
+  },
+  "1581760": {
+    "name": "Life360, Inc.",
+    "sic_description": "Services-Computer Processing & Data Preparation",
+    "summary": null
+  },
+  "1582961": {
+    "name": "DigitalOcean Holdings, Inc.",
+    "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+    "summary": null
+  },
+  "1583648": {
+    "name": "PALVELLA THERAPEUTICS, INC.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1583708": {
+    "name": "SentinelOne, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1585521": {
+    "name": "Zoom Communications, Inc.",
+    "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+    "summary": null
+  },
+  "1587523": {
+    "name": "Knowles Corp",
+    "sic_description": "Household Audio & Video Equipment",
+    "summary": null
+  },
+  "1590895": {
+    "name": "Caesars Entertainment, Inc.",
+    "sic_description": "Hotels & Motels",
+    "summary": null
+  },
+  "1591588": {
+    "name": "Gold.com, Inc.",
+    "sic_description": "Wholesale-Jewelry, Watches, Precious Stones & Metals",
+    "summary": null
+  },
+  "1591698": {
+    "name": "Paylocity Holding Corp",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1592386": {
+    "name": "Virtu Financial, Inc.",
+    "sic_description": "Security Brokers, Dealers & Flotation Companies",
+    "summary": null
+  },
+  "1595097": {
+    "name": "Corbus Pharmaceuticals Holdings, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1595974": {
+    "name": "MAGNITE, INC.",
+    "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+    "summary": null
+  },
+  "1596532": {
+    "name": "Arista Networks, Inc.",
+    "sic_description": "Computer Communications Equipment",
+    "summary": null
+  },
+  "1596993": {
+    "name": "DORIAN LPG LTD.",
+    "sic_description": "Deep Sea Foreign Transportation of  Freight",
+    "summary": null
+  },
+  "1598665": {
+    "name": "Heritage Insurance Holdings, Inc.",
+    "sic_description": "Fire, Marine & Casualty Insurance",
+    "summary": null
+  },
+  "1599617": {
+    "name": "DNOW Inc.",
+    "sic_description": "Oil & Gas Field Machinery & Equipment",
+    "summary": null
+  },
+  "1600033": {
+    "name": "e.l.f. Beauty, Inc.",
+    "sic_description": "Perfumes, Cosmetics & Other Toilet Preparations",
+    "summary": null
+  },
+  "1601046": {
+    "name": "Keysight Technologies, Inc.",
+    "sic_description": "Industrial Instruments For Measurement, Display, and Control",
+    "summary": null
+  },
+  "1604778": {
+    "name": "Qorvo, Inc.",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "1604821": {
+    "name": "Natera, Inc.",
+    "sic_description": "Services-Medical Laboratories",
+    "summary": null
+  },
   "1606163": {
     "name": "Limbach Holdings, Inc.",
     "sic_description": "Construction - Special Trade Contractors",
     "summary": "건물 설비 공사·관리 회사"
+  },
+  "1609711": {
+    "name": "GoDaddy Inc.",
+    "sic_description": "Services-Computer Integrated Systems Design",
+    "summary": null
+  },
+  "1611052": {
+    "name": "PROCORE TECHNOLOGIES, INC.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1611115": {
+    "name": "Omada Health, Inc.",
+    "sic_description": "Services-Health Services",
+    "summary": null
+  },
+  "1616707": {
+    "name": "Wayfair Inc.",
+    "sic_description": "Retail-Catalog & Mail-Order Houses",
+    "summary": null
+  },
+  "1617553": {
+    "name": "ZIPRECRUITER, INC.",
+    "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+    "summary": null
+  },
+  "1617640": {
+    "name": "ZILLOW GROUP, INC.",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
+  "1618673": {
+    "name": "Performance Food Group Co",
+    "sic_description": "Wholesale-Groceries, General Line",
+    "summary": null
+  },
+  "1623526": {
+    "name": "Stoke Therapeutics, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1624322": {
+    "name": "Business First Bancshares, Inc.",
+    "sic_description": "State Commercial Banks",
+    "summary": null
+  },
+  "1624794": {
+    "name": "CSW INDUSTRIALS, INC.",
+    "sic_description": "Adhesives & Sealants",
+    "summary": null
+  },
+  "1625641": {
+    "name": "CS Disco, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1626115": {
+    "name": "PJT Partners Inc.",
+    "sic_description": "Investment Advice",
+    "summary": null
   },
   "1627223": {
     "name": "Chemours Co",
     "sic_description": "Chemicals & Allied Products",
     "summary": "화학 소재를 만드는 회사"
   },
+  "1627475": {
+    "name": "UPWORK, INC",
+    "sic_description": "Services-Computer Processing & Data Preparation",
+    "summary": null
+  },
+  "1628171": {
+    "name": "Revolution Medicines, Inc.",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
+  },
+  "1631574": {
+    "name": "Wave Life Sciences, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1633917": {
+    "name": "PayPal Holdings, Inc.",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
+  "1633978": {
+    "name": "Lumentum Holdings Inc.",
+    "sic_description": "Communications Equipment, NEC",
+    "summary": null
+  },
   "1635077": {
     "name": "Aclarion, Inc.",
     "sic_description": "Services-Medical Laboratories",
     "summary": "자기공명 기술 의료 진단 회사"
+  },
+  "1635088": {
+    "name": "Roivant Sciences Ltd.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1635327": {
+    "name": "Flutter Entertainment plc",
+    "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+    "summary": null
+  },
+  "1636282": {
+    "name": "Spyre Therapeutics, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
   },
   "1638290": {
     "name": "MasterCraft Boat Holdings, Inc.",
     "sic_description": "Ship & Boat Building & Repairing",
     "summary": "레저용 보트를 만드는 회사"
   },
+  "1638826": {
+    "name": "ServiceTitan, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1639691": {
+    "name": "LivaNova PLC",
+    "sic_description": "Electromedical & Electrotherapeutic Apparatus",
+    "summary": null
+  },
+  "1639723": {
+    "name": "Navan, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1639825": {
+    "name": "PELOTON INTERACTIVE, INC.",
+    "sic_description": "Sporting & Athletic Goods, NEC",
+    "summary": null
+  },
+  "1640147": {
+    "name": "Snowflake Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1640428": {
+    "name": "EverQuote, Inc.",
+    "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+    "summary": null
+  },
+  "1641281": {
+    "name": "Bolt Biotherapeutics, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
   "1641614": {
     "name": "CPI Card Group Inc.",
     "sic_description": "Commercial Printing",
     "summary": "결제 카드를 만드는 회사"
+  },
+  "1642896": {
+    "name": "Samsara Inc.",
+    "sic_description": "Services-Computer Integrated Systems Design",
+    "summary": null
+  },
+  "1645460": {
+    "name": "Cue Biopharma, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1645469": {
+    "name": "Monopar Therapeutics",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1645590": {
+    "name": "Hewlett Packard Enterprise Co",
+    "sic_description": "Computer & office Equipment",
+    "summary": null
+  },
+  "1647639": {
+    "name": "Upstart Holdings, Inc.",
+    "sic_description": "Finance Services",
+    "summary": null
+  },
+  "1649904": {
+    "name": "RHYTHM PHARMACEUTICALS, INC.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1650164": {
+    "name": "Toast, Inc.",
+    "sic_description": "Services-Computer Processing & Data Preparation",
+    "summary": null
+  },
+  "1650372": {
+    "name": "Atlassian Corp",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1651308": {
+    "name": "BeOne Medicines Ltd.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1652535": {
+    "name": "ICHOR HOLDINGS, LTD.",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "1653087": {
+    "name": "Alector, Inc.",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
+  },
+  "1653242": {
+    "name": "Bank of N.T. Butterfield & Son Ltd",
+    "sic_description": "Commercial Banks, NEC",
+    "summary": null
   },
   "1653384": {
     "name": "Runway Growth Finance Corp.",
     "sic_description": "",
     "summary": "기업 대출 전문 투자 회사"
   },
+  "1653482": {
+    "name": "Gitlab Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1653653": {
+    "name": "Red Rock Resorts, Inc.",
+    "sic_description": "Hotels & Motels",
+    "summary": null
+  },
+  "1654126": {
+    "name": "ZIM Integrated Shipping Services Ltd.",
+    "sic_description": "Deep Sea Foreign Transportation of  Freight",
+    "summary": null
+  },
+  "1657573": {
+    "name": "Xometry, Inc.",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
+  "1658551": {
+    "name": "Amylyx Pharmaceuticals, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1658566": {
+    "name": "Permian Resources Corp",
+    "sic_description": "Crude Petroleum & Natural Gas",
+    "summary": null
+  },
+  "1660134": {
+    "name": "Okta, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
   "1660334": {
     "name": "Verrica Pharmaceuticals Inc.",
     "sic_description": "Pharmaceutical Preparations",
     "summary": "피부질환 치료제를 개발하는 회사"
   },
+  "1661998": {
+    "name": "Q32 Bio Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1664703": {
+    "name": "Bloom Energy Corp",
+    "sic_description": "Electrical Industrial Apparatus",
+    "summary": null
+  },
+  "1664710": {
+    "name": "Keros Therapeutics, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1667011": {
+    "name": "Arteris, Inc.",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "1668397": {
+    "name": "Medpace Holdings, Inc.",
+    "sic_description": "Services-Commercial Physical & Biological Research",
+    "summary": null
+  },
+  "1670076": {
+    "name": "Frontier Group Holdings, Inc.",
+    "sic_description": "Air Transportation, Scheduled",
+    "summary": null
+  },
   "1671502": {
     "name": "Quoin Pharmaceuticals, Ltd.",
     "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1673743": {
+    "name": "Hinge Health, Inc.",
+    "sic_description": "Services-Computer Processing & Data Preparation",
+    "summary": null
+  },
+  "1674632": {
+    "name": "Beta Bionics, Inc.",
+    "sic_description": "Surgical & Medical Instruments & Apparatus",
+    "summary": null
+  },
+  "1675149": {
+    "name": "Alcoa Corp",
+    "sic_description": "Primary Production of  Aluminum",
+    "summary": null
+  },
+  "1676238": {
+    "name": "Braze, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1679788": {
+    "name": "Coinbase Global, Inc.",
+    "sic_description": "Finance Services",
+    "summary": null
+  },
+  "1680062": {
+    "name": "ACM Research, Inc.",
+    "sic_description": "Special Industry Machinery, NEC",
+    "summary": null
+  },
+  "1682852": {
+    "name": "Moderna, Inc.",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
+  },
+  "1690585": {
+    "name": "Dianthus Therapeutics, Inc. /DE/",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1690820": {
+    "name": "CARVANA CO.",
+    "sic_description": "Retail-Auto Dealers & Gasoline Stations",
+    "summary": null
+  },
+  "1691303": {
+    "name": "WARRIOR MET COAL, INC.",
+    "sic_description": "Silver Ores",
+    "summary": null
+  },
+  "1691421": {
+    "name": "Lemonade, Inc.",
+    "sic_description": "Fire, Marine & Casualty Insurance",
+    "summary": null
+  },
+  "1692376": {
+    "name": "Velocity Financial, Inc.",
+    "sic_description": "Finance Services",
+    "summary": null
+  },
+  "1694426": {
+    "name": "Delek US Holdings, Inc.",
+    "sic_description": "Petroleum Refining",
+    "summary": null
+  },
+  "1698514": {
+    "name": "National Energy Services Reunited Corp.",
+    "sic_description": "Oil & Gas Field Services, NEC",
+    "summary": null
+  },
+  "1699136": {
+    "name": "Cactus, Inc.",
+    "sic_description": "Oil & Gas Field Machinery & Equipment",
+    "summary": null
+  },
+  "1702750": {
+    "name": "BYLINE BANCORP, INC.",
+    "sic_description": "State Commercial Banks",
     "summary": null
   },
   "1703057": {
@@ -214,15 +1814,115 @@
     "sic_description": "Pharmaceutical Preparations",
     "summary": "항체 의약품을 개발하는 회사"
   },
+  "1703399": {
+    "name": "Sea Ltd",
+    "sic_description": "Services-Miscellaneous Business Services",
+    "summary": null
+  },
+  "1704711": {
+    "name": "Funko, Inc.",
+    "sic_description": "Games, Toys & Children's Vehicles (No Dolls & Bicycles)",
+    "summary": null
+  },
   "1704715": {
     "name": "Alpha Metallurgical Resources, Inc.",
     "sic_description": "Bituminous Coal & Lignite Surface Mining",
     "summary": "제철용 석탄을 캐는 회사"
   },
+  "1707753": {
+    "name": "Elastic N.V.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1710072": {
+    "name": "Edgewise Therapeutics, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1710340": {
+    "name": "Eton Pharmaceuticals, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1711279": {
+    "name": "Krystal Biotech, Inc.",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
+  },
+  "1713445": {
+    "name": "Reddit, Inc.",
+    "sic_description": "Services-Computer Processing & Data Preparation",
+    "summary": null
+  },
+  "1713683": {
+    "name": "Zscaler, Inc.",
+    "sic_description": "Services-Computer Programming Services",
+    "summary": null
+  },
+  "1714899": {
+    "name": "Denali Therapeutics Inc.",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
+  },
   "1715497": {
     "name": "Borr Drilling Ltd",
     "sic_description": "Drilling Oil & Gas Wells",
     "summary": "해상 석유·가스 시추 회사"
+  },
+  "1717115": {
+    "name": "Tempus AI, Inc.",
+    "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+    "summary": null
+  },
+  "1720420": {
+    "name": "IBEX Ltd",
+    "sic_description": "Services-Computer Processing & Data Preparation",
+    "summary": null
+  },
+  "1720635": {
+    "name": "nVent Electric plc",
+    "sic_description": "Special Industry Machinery (No Metalworking Machinery)",
+    "summary": null
+  },
+  "1723128": {
+    "name": "Amneal Pharmaceuticals, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1724965": {
+    "name": "TALOS ENERGY INC.",
+    "sic_description": "Crude Petroleum & Natural Gas",
+    "summary": null
+  },
+  "1727263": {
+    "name": "Frontdoor, Inc.",
+    "sic_description": "Services-To Dwellings & Other Buildings",
+    "summary": null
+  },
+  "1731388": {
+    "name": "EuroDry Ltd.",
+    "sic_description": "Water Transportation",
+    "summary": null
+  },
+  "1734722": {
+    "name": "UiPath, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1736297": {
+    "name": "Astera Labs, Inc.",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "1737927": {
+    "name": "Canopy Growth Corp",
+    "sic_description": "Medicinal Chemicals & Botanical Products",
+    "summary": null
+  },
+  "1737953": {
+    "name": "Replimune Group, Inc.",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
   },
   "1739104": {
     "name": "Elanco Animal Health Inc",
@@ -234,14 +1934,149 @@
     "sic_description": "Wholesale-Hardware",
     "summary": "주택 관리·보안 기기 회사"
   },
+  "1750704": {
+    "name": "HawkEye 360, Inc.",
+    "sic_description": "Services-Computer Processing & Data Preparation",
+    "summary": null
+  },
+  "1753539": {
+    "name": "BlackSky Technology Inc.",
+    "sic_description": "Radio & Tv Broadcasting & Communications Equipment",
+    "summary": null
+  },
+  "1759425": {
+    "name": "Mirum Pharmaceuticals, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1759509": {
+    "name": "Lyft, Inc.",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
+  "1761312": {
+    "name": "Palomar Holdings, Inc.",
+    "sic_description": "Fire, Marine & Casualty Insurance",
+    "summary": null
+  },
+  "1764013": {
+    "name": "Immunovant, Inc.",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
+  },
+  "1766400": {
+    "name": "Pennant Group, Inc.",
+    "sic_description": "Services-Health Services",
+    "summary": null
+  },
+  "1767042": {
+    "name": "Kodiak Gas Services, Inc.",
+    "sic_description": "Natural Gas Transmission",
+    "summary": null
+  },
+  "1769628": {
+    "name": "CoreWeave, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1770787": {
+    "name": "10x Genomics, Inc.",
+    "sic_description": "Laboratory Analytical Instruments",
+    "summary": null
+  },
+  "1773751": {
+    "name": "Hims & Hers Health, Inc.",
+    "sic_description": "Services-Offices & Clinics of  Doctors of  Medicine",
+    "summary": null
+  },
+  "1777393": {
+    "name": "ChargePoint Holdings, Inc.",
+    "sic_description": "Miscellaneous Electrical Machinery, Equipment & Supplies",
+    "summary": null
+  },
+  "1782170": {
+    "name": "Remitly Global, Inc.",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
+  "1783879": {
+    "name": "Robinhood Markets, Inc.",
+    "sic_description": "Security Brokers, Dealers & Flotation Companies",
+    "summary": null
+  },
+  "17843": {
+    "name": "CARPENTER TECHNOLOGY CORP",
+    "sic_description": "Steel Works, Blast Furnaces & Rolling Mills (Coke Ovens)",
+    "summary": null
+  },
+  "1784535": {
+    "name": "Porch Group, Inc.",
+    "sic_description": "Accident & Health Insurance",
+    "summary": null
+  },
+  "1786352": {
+    "name": "BILL Holdings, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1787306": {
+    "name": "Arcutis Biotherapeutics, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
   "1788257": {
     "name": "BETTERWARE DE MEXICO, S.A.P.I. DE C.V",
     "sic_description": "Retail-Catalog & Mail-Order Houses",
     "summary": "멕시코 생활용품 방문판매 회사"
   },
+  "1788451": {
+    "name": "Ethos Technologies Inc.",
+    "sic_description": "Insurance Agents, Brokers & Service",
+    "summary": null
+  },
+  "1789029": {
+    "name": "Aeva Technologies, Inc.",
+    "sic_description": "Motor Vehicle Parts & Accessories",
+    "summary": null
+  },
   "1791145": {
     "name": "GBank Financial Holdings Inc.",
     "sic_description": "State Commercial Banks",
+    "summary": null
+  },
+  "1792789": {
+    "name": "DoorDash, Inc.",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
+  "1793229": {
+    "name": "Claritev Corp",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
+  "1793659": {
+    "name": "Rush Street Interactive, Inc.",
+    "sic_description": "Services-Miscellaneous Amusement & Recreation",
+    "summary": null
+  },
+  "1793663": {
+    "name": "VTEX",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1795586": {
+    "name": "Chime Financial, Inc.",
+    "sic_description": "Finance Services",
+    "summary": null
+  },
+  "1800667": {
+    "name": "JFrog Ltd",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1801170": {
+    "name": "CLOVER HEALTH INVESTMENTS, CORP. /DE",
+    "sic_description": "Hospital & Medical Service Plans",
     "summary": null
   },
   "1802369": {
@@ -249,20 +2084,225 @@
     "sic_description": "Pharmaceutical Preparations",
     "summary": null
   },
+  "1802768": {
+    "name": "Royalty Pharma plc",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1804176": {
+    "name": "Butterfly Network, Inc.",
+    "sic_description": "X-Ray Apparatus & Tubes & Related Irradiation Apparatus",
+    "summary": null
+  },
   "1805385": {
     "name": "Evolv Technologies Holdings, Inc.",
     "sic_description": "Computer Peripheral Equipment, NEC",
     "summary": "보안 검색 기술 회사"
+  },
+  "1806952": {
+    "name": "Lyell Immunopharma, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1807794": {
+    "name": "Credo Technology Group Holding Ltd",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "1808377": {
+    "name": "Innovative Eyewear Inc",
+    "sic_description": "Ophthalmic Goods",
+    "summary": null
+  },
+  "1810019": {
+    "name": "Rackspace Technology, Inc.",
+    "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+    "summary": null
+  },
+  "1810546": {
+    "name": "Eastern Bankshares, Inc.",
+    "sic_description": "Savings Institution, Federally Chartered",
+    "summary": null
+  },
+  "1810806": {
+    "name": "Unity Software Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1812364": {
+    "name": "Relay Therapeutics, Inc.",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
+  },
+  "1813814": {
+    "name": "Definium Therapeutics, Inc.",
+    "sic_description": "Medicinal Chemicals & Botanical Products",
+    "summary": null
+  },
+  "1816017": {
+    "name": "Spire Global, Inc.",
+    "sic_description": "Communications Services, NEC",
+    "summary": null
+  },
+  "1816581": {
+    "name": "Ouster, Inc.",
+    "sic_description": "General Industrial Machinery & Equipment, NEC",
+    "summary": null
+  },
+  "1816736": {
+    "name": "Disc Medicine, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1817241": {
+    "name": "Artiva Biotherapeutics, Inc.",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
+  },
+  "1818383": {
+    "name": "MediaAlpha, Inc.",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
+  "1818502": {
+    "name": "OppFi Inc.",
+    "sic_description": "Finance Services",
+    "summary": null
+  },
+  "1818794": {
+    "name": "Dyne Therapeutics, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1819493": {
+    "name": "Xos, Inc.",
+    "sic_description": "Motor Vehicle Parts & Accessories",
+    "summary": null
+  },
+  "1819576": {
+    "name": "Liquidia Corp",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1819790": {
+    "name": "Tarsus Pharmaceuticals, Inc.",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
+  },
+  "1819848": {
+    "name": "Joby Aviation, Inc.",
+    "sic_description": "Aircraft",
+    "summary": null
+  },
+  "1819994": {
+    "name": "Rocket Lab Corp",
+    "sic_description": "Guided Missiles & Space Vehicles & Parts",
+    "summary": null
+  },
+  "1820144": {
+    "name": "Grindr Inc.",
+    "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+    "summary": null
+  },
+  "1820872": {
+    "name": "Global Business Travel Group, Inc.",
+    "sic_description": "Transportation Services",
+    "summary": null
+  },
+  "1820953": {
+    "name": "Affirm Holdings, Inc.",
+    "sic_description": "Personal Credit Institutions",
+    "summary": null
+  },
+  "1822966": {
+    "name": "NUSCALE POWER Corp",
+    "sic_description": "Fabricated Plate Work (Boiler Shops)",
+    "summary": null
+  },
+  "1823608": {
+    "name": "Amalgamated Financial Corp.",
+    "sic_description": "State Commercial Banks",
+    "summary": null
+  },
+  "1824502": {
+    "name": "Archer Aviation Inc.",
+    "sic_description": "Aircraft",
+    "summary": null
+  },
+  "1826681": {
+    "name": "Palladyne AI Corp.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1827635": {
+    "name": "Veradermics, Inc",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1830487": {
+    "name": "Pharvaris N.V.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1832038": {
+    "name": "Invivyd, Inc.",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
+  },
+  "1832332": {
+    "name": "Aveanna Healthcare Holdings, Inc.",
+    "sic_description": "Services-Home Health Care Services",
+    "summary": null
+  },
+  "1832466": {
+    "name": "Alignment Healthcare, Inc.",
+    "sic_description": "Hospital & Medical Service Plans",
+    "summary": null
+  },
+  "1832483": {
+    "name": "Serve Robotics Inc. /DE/",
+    "sic_description": "General Industrial Machinery & Equipment, NEC",
+    "summary": null
   },
   "1833141": {
     "name": "Helus Pharma Inc.",
     "sic_description": "Pharmaceutical Preparations",
     "summary": "의약품을 개발하는 회사"
   },
+  "1835830": {
+    "name": "Klaviyo, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1835963": {
+    "name": "Global-E Online Ltd.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1836833": {
+    "name": "Planet Labs PBC",
+    "sic_description": "Radio & Tv Broadcasting & Communications Equipment",
+    "summary": null
+  },
   "1837014": {
     "name": "SmartRent, Inc.",
     "sic_description": "Services-Computer Integrated Systems Design",
     "summary": "스마트 주택 기술 회사"
+  },
+  "1837240": {
+    "name": "Symbotic Inc.",
+    "sic_description": "General Industrial Machinery & Equipment, NEC",
+    "summary": null
+  },
+  "1838359": {
+    "name": "Rigetti Computing, Inc.",
+    "sic_description": "Services-Computer Programming Services",
+    "summary": null
+  },
+  "1838406": {
+    "name": "BKV Corp",
+    "sic_description": "Crude Petroleum & Natural Gas",
+    "summary": null
   },
   "1839530": {
     "name": "XBP Global Holdings, Inc.",
@@ -279,14 +2319,44 @@
     "sic_description": "Services-Amusement & Recreation Services",
     "summary": "볼링 등 오락 시설 운영 회사"
   },
+  "1840706": {
+    "name": "SOPHiA GENETICS SA",
+    "sic_description": "Services-Computer Processing & Data Preparation",
+    "summary": null
+  },
+  "1840856": {
+    "name": "SOUNDHOUND AI, INC.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
   "1841761": {
     "name": "Grove Collaborative Holdings, Inc.",
     "sic_description": "Retail-Catalog & Mail-Order Houses",
     "summary": "친환경 생활용품 온라인 판매 회사"
   },
+  "1841925": {
+    "name": "indie Semiconductor, Inc.",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "1842295": {
+    "name": "Maze Therapeutics, Inc.",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
+  },
+  "1842827": {
+    "name": "Kanzhun Ltd",
+    "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+    "summary": null
+  },
   "1843162": {
     "name": "Chicago Atlantic BDC, Inc.",
     "sic_description": "",
+    "summary": null
+  },
+  "1844452": {
+    "name": "Intuitive Machines, Inc.",
+    "sic_description": "Search, Detection, Navigation, Guidance, Aeronautical Sys",
     "summary": null
   },
   "1844971": {
@@ -294,15 +2364,95 @@
     "sic_description": "Finance Services",
     "summary": "데이터센터를 운영하는 회사"
   },
+  "1845257": {
+    "name": "LifeStance Health Group, Inc.",
+    "sic_description": "Services-Health Services",
+    "summary": null
+  },
+  "1847590": {
+    "name": "Bowman Consulting Group Ltd.",
+    "sic_description": "Services-Management Consulting Services",
+    "summary": null
+  },
+  "1849056": {
+    "name": "Oklo Inc.",
+    "sic_description": "Electric Services",
+    "summary": null
+  },
+  "1849853": {
+    "name": "Stevanato Group S.p.A.",
+    "sic_description": "Surgical & Medical Instruments & Apparatus",
+    "summary": null
+  },
+  "1851112": {
+    "name": "RISKIFIED LTD.",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
+  "1852131": {
+    "name": "Nextpower Inc.",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "1853145": {
+    "name": "EverCommerce Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1854587": {
+    "name": "Cellebrite DI Ltd.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1855612": {
+    "name": "Grab Holdings Ltd",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
+  "1855747": {
+    "name": "Blend Labs, Inc.",
+    "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+    "summary": null
+  },
+  "1856314": {
+    "name": "Clear Secure, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1857816": {
+    "name": "GigaCloud Technology Inc",
+    "sic_description": "Retail-Catalog & Mail-Order Houses",
+    "summary": null
+  },
+  "1861107": {
+    "name": "Ceribell, Inc.",
+    "sic_description": "Electromedical & Electrotherapeutic Apparatus",
+    "summary": null
+  },
   "1865200": {
     "name": "Angel Studios, Inc.",
     "sic_description": "Services-Motion Picture & Video Tape Production",
     "summary": "영화·영상 콘텐츠 제작 회사"
   },
+  "1865631": {
+    "name": "NEXTNAV INC.",
+    "sic_description": "Search, Detection, Navigation, Guidance, Aeronautical Sys",
+    "summary": null
+  },
+  "1866364": {
+    "name": "Webull Corp",
+    "sic_description": "Security Brokers, Dealers & Flotation Companies",
+    "summary": null
+  },
   "1866757": {
     "name": "Brilliant Earth Group, Inc.",
     "sic_description": "Jewelry, Silverware & Plated Ware",
     "summary": "보석·주얼리를 파는 회사"
+  },
+  "1867096": {
+    "name": "Xeris Biopharma Holdings, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
   },
   "1867949": {
     "name": "Chicago Atlantic Real Estate Finance, Inc.",
@@ -314,10 +2464,70 @@
     "sic_description": "Services-Computer Programming Services",
     "summary": "소프트웨어 개발 서비스 회사"
   },
+  "1869198": {
+    "name": "Life Time Group Holdings, Inc.",
+    "sic_description": "Services-Membership Sports & Recreation Clubs",
+    "summary": null
+  },
   "1872789": {
     "name": "Embecta Corp.",
     "sic_description": "Surgical & Medical Instruments & Apparatus",
     "summary": "당뇨 관리 의료기기 회사"
+  },
+  "1876042": {
+    "name": "Circle Internet Group, Inc.",
+    "sic_description": "Finance Services",
+    "summary": null
+  },
+  "1877184": {
+    "name": "KESTRA MEDICAL TECHNOLOGIES, LTD.",
+    "sic_description": "Surgical & Medical Instruments & Apparatus",
+    "summary": null
+  },
+  "1883085": {
+    "name": "Pagaya Technologies Ltd.",
+    "sic_description": "Finance Services",
+    "summary": null
+  },
+  "1883313": {
+    "name": "Savers Value Village, Inc.",
+    "sic_description": "Retail-Miscellaneous Retail",
+    "summary": null
+  },
+  "1886428": {
+    "name": "Slide Insurance Holdings, Inc.",
+    "sic_description": "Fire, Marine & Casualty Insurance",
+    "summary": null
+  },
+  "1898718": {
+    "name": "GMR Solutions Inc.",
+    "sic_description": "Transportation Services",
+    "summary": null
+  },
+  "1899287": {
+    "name": "Amprius Technologies, Inc.",
+    "sic_description": "Miscellaneous Electrical Machinery, Equipment & Supplies",
+    "summary": null
+  },
+  "1901279": {
+    "name": "Nayax Ltd.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1902733": {
+    "name": "nCino, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "1903508": {
+    "name": "Public Policy Holding Company, Inc.",
+    "sic_description": "Services-Management Consulting Services",
+    "summary": null
+  },
+  "1921865": {
+    "name": "ASP Isotopes Inc.",
+    "sic_description": "Miscellaneous Chemical Products",
+    "summary": null
   },
   "1925309": {
     "name": "Sixth Street Lending Partners",
@@ -334,9 +2544,34 @@
     "sic_description": "",
     "summary": null
   },
+  "1933414": {
+    "name": "Mineralys Therapeutics, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1943896": {
+    "name": "Rubrik, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
   "1944885": {
     "name": "Apollomics Inc.",
     "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1956955": {
+    "name": "Unusual Machines, Inc.",
+    "sic_description": "Radio & Tv Broadcasting & Communications Equipment",
+    "summary": null
+  },
+  "1957132": {
+    "name": "SharkNinja, Inc.",
+    "sic_description": "Household Appliances",
+    "summary": null
+  },
+  "1958140": {
+    "name": "Atlanta Braves Holdings, Inc.",
+    "sic_description": "Services-Amusement & Recreation Services",
     "summary": null
   },
   "1963088": {
@@ -344,25 +2579,105 @@
     "sic_description": "Finance Services",
     "summary": "금융 거래·청산 플랫폼 회사"
   },
+  "1968915": {
+    "name": "PHINIA INC.",
+    "sic_description": "Motor Vehicle Parts & Accessories",
+    "summary": null
+  },
+  "1969302": {
+    "name": "Pony AI Inc.",
+    "sic_description": "Services-Computer Integrated Systems Design",
+    "summary": null
+  },
+  "1969373": {
+    "name": "Vesta Real Estate Corporation, S.A.B. de C.V.",
+    "sic_description": "Real Estate",
+    "summary": null
+  },
+  "1973266": {
+    "name": "TKO Group Holdings, Inc.",
+    "sic_description": "Services-Amusement & Recreation Services",
+    "summary": null
+  },
   "1982518": {
     "name": "Smith Douglas Homes Corp.",
     "sic_description": "Operative Builders",
     "summary": "단독주택을 짓는 회사"
+  },
+  "1984086": {
+    "name": "Septerna, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1997350": {
+    "name": "Accelerant Holdings",
+    "sic_description": "Insurance Agents, Brokers & Service",
+    "summary": null
+  },
+  "1997464": {
+    "name": "Marex Group Ltd",
+    "sic_description": "Security & Commodity Brokers, Dealers, Exchanges & Services",
+    "summary": null
   },
   "1998768": {
     "name": "Proficient Auto Logistics, Inc",
     "sic_description": "Transportation Services",
     "summary": "자동차 운송·물류 회사"
   },
+  "2001184": {
+    "name": "PACS Group, Inc.",
+    "sic_description": "Services-Skilled Nursing Care Facilities",
+    "summary": null
+  },
   "2001557": {
     "name": "Innventure, Inc.",
     "sic_description": "Blank Checks",
     "summary": "신기술 기업을 세우고 운영하는 회사"
   },
+  "200406": {
+    "name": "JOHNSON & JOHNSON",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "2007855": {
+    "name": "Venture Global, Inc.",
+    "sic_description": "Natural Gas Distribution",
+    "summary": null
+  },
   "2007919": {
     "name": "Inhibrx Biosciences, Inc.",
     "sic_description": "Biological Products, (No Diagnostic Substances)",
     "summary": "바이오 의약품을 개발하는 회사"
+  },
+  "2012593": {
+    "name": "Rapport Therapeutics, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "2018064": {
+    "name": "TechTarget, Inc.",
+    "sic_description": "Telegraph & Other Message Communications",
+    "summary": null
+  },
+  "2019410": {
+    "name": "Caris Life Sciences, Inc.",
+    "sic_description": "Services-Medical Laboratories",
+    "summary": null
+  },
+  "2021728": {
+    "name": "Cerebras Systems Inc.",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "2023554": {
+    "name": "Sandisk Corp",
+    "sic_description": "Computer Storage Devices",
+    "summary": null
+  },
+  "2023658": {
+    "name": "Bicara Therapeutics Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
   },
   "2035989": {
     "name": "Amrize Ltd",
@@ -379,6 +2694,11 @@
     "sic_description": "Savings Institutions, Not Federally Chartered",
     "summary": "지역 은행"
   },
+  "2070849": {
+    "name": "BillionToOne, Inc.",
+    "sic_description": "Services-Medical Laboratories",
+    "summary": null
+  },
   "2079999": {
     "name": "Cardinal Infrastructure Group Inc.",
     "sic_description": "Heavy Construction Other Than Bldg Const - Contractors",
@@ -394,6 +2714,11 @@
     "sic_description": "Investment Advice",
     "summary": null
   },
+  "2098": {
+    "name": "ACME UNITED CORP",
+    "sic_description": "Cutlery, Handtools & General Hardware",
+    "summary": null
+  },
   "2123955": {
     "name": "Pinnacle Acquisition Corp",
     "sic_description": "Blank Checks",
@@ -404,40 +2729,240 @@
     "sic_description": "Pharmaceutical Preparations",
     "summary": "의약품을 개발하는 회사"
   },
+  "2132582": {
+    "name": "Lyntris Inc.",
+    "sic_description": "Search, Detection, Navigation, Guidance, Aeronautical Sys",
+    "summary": null
+  },
+  "21535": {
+    "name": "COHU INC",
+    "sic_description": "Instruments For Meas & Testing of  Electricity & Elec Signals",
+    "summary": null
+  },
+  "215466": {
+    "name": "Coeur Mining, Inc.",
+    "sic_description": "Gold and Silver Ores",
+    "summary": null
+  },
+  "21665": {
+    "name": "COLGATE PALMOLIVE CO",
+    "sic_description": "Perfumes, Cosmetics & Other Toilet Preparations",
+    "summary": null
+  },
   "24090": {
     "name": "CITIZENS, INC.",
     "sic_description": "Life Insurance",
     "summary": "생명보험 회사"
+  },
+  "2488": {
+    "name": "ADVANCED MICRO DEVICES INC",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "27419": {
+    "name": "TARGET CORP",
+    "sic_description": "Retail-Variety Stores",
+    "summary": null
+  },
+  "310158": {
+    "name": "Merck & Co., Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "310354": {
+    "name": "STANDEX INTERNATIONAL CORP/DE/",
+    "sic_description": "Refrigeration & Service Industry Machinery",
+    "summary": null
+  },
+  "310764": {
+    "name": "STRYKER CORP",
+    "sic_description": "Surgical & Medical Instruments & Apparatus",
+    "summary": null
   },
   "31107": {
     "name": "EASTERN CO",
     "sic_description": "Cutlery, Handtools & General Hardware",
     "summary": "산업용 철물·잠금장치를 만드는 회사"
   },
+  "313838": {
+    "name": "Sony Group Corp",
+    "sic_description": "Household Audio & Video Equipment",
+    "summary": null
+  },
+  "313927": {
+    "name": "CHURCH & DWIGHT CO INC /DE/",
+    "sic_description": "Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics",
+    "summary": null
+  },
+  "314590": {
+    "name": "SASOL LTD",
+    "sic_description": "Crude Petroleum & Natural Gas",
+    "summary": null
+  },
+  "316709": {
+    "name": "SCHWAB CHARLES CORP",
+    "sic_description": "Security Brokers, Dealers & Flotation Companies",
+    "summary": null
+  },
+  "31791": {
+    "name": "REVVITY, INC.",
+    "sic_description": "Laboratory Analytical Instruments",
+    "summary": null
+  },
+  "318154": {
+    "name": "AMGEN INC",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
+  },
+  "318306": {
+    "name": "ABEONA THERAPEUTICS INC.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
   "318833": {
     "name": "TEAM INC",
     "sic_description": "Services-Miscellaneous Repair Services",
     "summary": "산업 설비 점검·수리 서비스 회사"
+  },
+  "319201": {
+    "name": "KLA CORP",
+    "sic_description": "Optical Instruments & Lenses",
+    "summary": null
+  },
+  "320121": {
+    "name": "TELOS CORP",
+    "sic_description": "Services-Computer Integrated Systems Design",
+    "summary": null
+  },
+  "320187": {
+    "name": "NIKE, Inc.",
+    "sic_description": "Rubber & Plastics Footwear",
+    "summary": null
+  },
+  "3453": {
+    "name": "Matson, Inc.",
+    "sic_description": "Water Transportation",
+    "summary": null
   },
   "34956": {
     "name": "TENAX THERAPEUTICS, INC.",
     "sic_description": "Pharmaceutical Preparations",
     "summary": "의약품을 개발하는 회사"
   },
+  "350894": {
+    "name": "SEI INVESTMENTS CO",
+    "sic_description": "Security Brokers, Dealers & Flotation Companies",
+    "summary": null
+  },
+  "354190": {
+    "name": "Arthur J. Gallagher & Co.",
+    "sic_description": "Insurance Agents, Brokers & Service",
+    "summary": null
+  },
+  "354950": {
+    "name": "HOME DEPOT, INC.",
+    "sic_description": "Retail-Lumber & Other Building Materials Dealers",
+    "summary": null
+  },
+  "357173": {
+    "name": "OLD SECOND BANCORP INC",
+    "sic_description": "State Commercial Banks",
+    "summary": null
+  },
+  "36270": {
+    "name": "M&T BANK CORP",
+    "sic_description": "State Commercial Banks",
+    "summary": null
+  },
+  "37472": {
+    "name": "FLEXSTEEL INDUSTRIES INC",
+    "sic_description": "Household Furniture",
+    "summary": null
+  },
+  "39311": {
+    "name": "INDEPENDENT BANK CORP /MI/",
+    "sic_description": "State Commercial Banks",
+    "summary": null
+  },
   "39368": {
     "name": "FULLER H B CO",
     "sic_description": "Adhesives & Sealants",
     "summary": "접착제·실란트를 만드는 회사"
+  },
+  "40211": {
+    "name": "GATX CORP",
+    "sic_description": "Transportation Services",
+    "summary": null
   },
   "40417": {
     "name": "GENERAL AMERICAN INVESTORS CO INC",
     "sic_description": "",
     "summary": null
   },
+  "40533": {
+    "name": "GENERAL DYNAMICS CORP",
+    "sic_description": "Ship & Boat Building & Repairing",
+    "summary": null
+  },
+  "43920": {
+    "name": "GREIF, INC",
+    "sic_description": "Metal Shipping Barrels, Drums, Kegs & Pails",
+    "summary": null
+  },
+  "45012": {
+    "name": "HALLIBURTON CO",
+    "sic_description": "Oil & Gas Field Services, NEC",
+    "summary": null
+  },
+  "46080": {
+    "name": "HASBRO, INC.",
+    "sic_description": "Games, Toys & Children's Vehicles (No Dolls & Bicycles)",
+    "summary": null
+  },
+  "46765": {
+    "name": "Helmerich & Payne, Inc.",
+    "sic_description": "Drilling Oil & Gas Wells",
+    "summary": null
+  },
+  "50725": {
+    "name": "GRIFFON CORP",
+    "sic_description": "Metal Doors, Sash, Frames, Moldings & Trim",
+    "summary": null
+  },
+  "51253": {
+    "name": "INTERNATIONAL FLAVORS & FRAGRANCES INC",
+    "sic_description": "Industrial Organic Chemicals",
+    "summary": null
+  },
+  "5513": {
+    "name": "Unum Group",
+    "sic_description": "Accident & Health Insurance",
+    "summary": null
+  },
+  "59478": {
+    "name": "ELI LILLY & Co",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "62709": {
+    "name": "MARSH & MCLENNAN COMPANIES, INC.",
+    "sic_description": "Insurance Agents, Brokers & Service",
+    "summary": null
+  },
+  "6281": {
+    "name": "ANALOG DEVICES INC",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
   "63296": {
     "name": "MATTHEWS INTERNATIONAL CORP",
     "sic_description": "Nonferrous Foundries (Castings)",
     "summary": "기념물·산업 장비를 만드는 회사"
+  },
+  "64463": {
+    "name": "Soluna Holdings, Inc",
+    "sic_description": "Finance Services",
+    "summary": null
   },
   "65433": {
     "name": "MEXICO FUND INC",
@@ -449,10 +2974,40 @@
     "sic_description": "Water, Sewer, Pipeline, Comm & Power Line Construction",
     "summary": "통신·전력망 공사 회사"
   },
+  "68505": {
+    "name": "Motorola Solutions, Inc.",
+    "sic_description": "Radio & Tv Broadcasting & Communications Equipment",
+    "summary": null
+  },
+  "700841": {
+    "name": "RCM TECHNOLOGIES, INC.",
+    "sic_description": "Services-Help Supply Services",
+    "summary": null
+  },
+  "70318": {
+    "name": "TENET HEALTHCARE CORP",
+    "sic_description": "Services-General Medical & Surgical Hospitals, NEC",
+    "summary": null
+  },
+  "703351": {
+    "name": "BRINKER INTERNATIONAL, INC",
+    "sic_description": "Retail-Eating  Places",
+    "summary": null
+  },
+  "707549": {
+    "name": "LAM RESEARCH CORP",
+    "sic_description": "Special Industry Machinery, NEC",
+    "summary": null
+  },
   "711404": {
     "name": "COOPER COMPANIES, INC.",
     "sic_description": "Ophthalmic Goods",
     "summary": "콘택트렌즈·의료기기 회사"
+  },
+  "712537": {
+    "name": "FIRST COMMONWEALTH FINANCIAL CORP /PA/",
+    "sic_description": "National Commercial Banks",
+    "summary": null
   },
   "714395": {
     "name": "GERMAN AMERICAN BANCORP, INC.",
@@ -464,14 +3019,99 @@
     "sic_description": "Pharmaceutical Preparations",
     "summary": "암 치료제를 개발하는 회사"
   },
+  "715787": {
+    "name": "INTERFACE INC",
+    "sic_description": "Carpets & Rugs",
+    "summary": null
+  },
+  "71829": {
+    "name": "NPK International Inc.",
+    "sic_description": "Services-Miscellaneous Equipment Rental & Leasing",
+    "summary": null
+  },
+  "719955": {
+    "name": "WILLIAMS SONOMA INC",
+    "sic_description": "Retail-Home Furniture, Furnishings & Equipment Stores",
+    "summary": null
+  },
+  "721371": {
+    "name": "CARDINAL HEALTH INC",
+    "sic_description": "Wholesale-Drugs, Proprietaries & Druggists' Sundries",
+    "summary": null
+  },
   "723188": {
     "name": "COMMUNITY FINANCIAL SYSTEM, INC.",
     "sic_description": "National Commercial Banks",
     "summary": "지역 은행"
   },
+  "72331": {
+    "name": "NORDSON CORP",
+    "sic_description": "General Industrial Machinery & Equipment, NEC",
+    "summary": null
+  },
+  "730464": {
+    "name": "Covista Inc.",
+    "sic_description": "Services-Educational Services",
+    "summary": null
+  },
   "73290": {
     "name": "BIOMERICA INC",
     "sic_description": "In Vitro & In Vivo Diagnostic Substances",
+    "summary": null
+  },
+  "748268": {
+    "name": "Red Cat Holdings, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "749251": {
+    "name": "GARTNER INC",
+    "sic_description": "Services-Management Services",
+    "summary": null
+  },
+  "750004": {
+    "name": "Light & Wonder, Inc.",
+    "sic_description": "Services-Computer Integrated Systems Design",
+    "summary": null
+  },
+  "751978": {
+    "name": "VICOR CORP",
+    "sic_description": "Electronic Components, NEC",
+    "summary": null
+  },
+  "752714": {
+    "name": "MCGRATH RENTCORP",
+    "sic_description": "Services-Equipment Rental & Leasing, NEC",
+    "summary": null
+  },
+  "76282": {
+    "name": "PARK OHIO HOLDINGS CORP",
+    "sic_description": "Metal Forgings & Stampings",
+    "summary": null
+  },
+  "76334": {
+    "name": "Parker-Hannifin Corp",
+    "sic_description": "Miscellaneous Fabricated Metal Products",
+    "summary": null
+  },
+  "763532": {
+    "name": "LSI INDUSTRIES INC",
+    "sic_description": "Electric Lighting & Wiring Equipment",
+    "summary": null
+  },
+  "763901": {
+    "name": "POPULAR, INC.",
+    "sic_description": "State Commercial Banks",
+    "summary": null
+  },
+  "77543": {
+    "name": "TUTOR PERINI CORP",
+    "sic_description": "General Bldg Contractors - Nonresidential Bldgs",
+    "summary": null
+  },
+  "7789": {
+    "name": "ASSOCIATED BANC-CORP",
+    "sic_description": "State Commercial Banks",
     "summary": null
   },
   "78003": {
@@ -479,9 +3119,129 @@
     "sic_description": "Pharmaceutical Preparations",
     "summary": "의약품을 만드는 회사"
   },
+  "780571": {
+    "name": "ITRON, INC.",
+    "sic_description": "Instruments For Meas & Testing of  Electricity & Elec Signals",
+    "summary": null
+  },
+  "784199": {
+    "name": "ARTIVION, INC.",
+    "sic_description": "Surgical & Medical Instruments & Apparatus",
+    "summary": null
+  },
+  "785161": {
+    "name": "Encompass Health Corp",
+    "sic_description": "Services-Hospitals",
+    "summary": null
+  },
+  "785786": {
+    "name": "PLEXUS CORP",
+    "sic_description": "Printed Circuit Boards",
+    "summary": null
+  },
+  "78749": {
+    "name": "AGILYSYS INC",
+    "sic_description": "Services-Computer Integrated Systems Design",
+    "summary": null
+  },
+  "78814": {
+    "name": "PITNEY BOWES INC /DE/",
+    "sic_description": "Office Machines, NEC",
+    "summary": null
+  },
+  "789019": {
+    "name": "MICROSOFT CORP",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "797721": {
+    "name": "VIASAT INC",
+    "sic_description": "Communications Services, NEC",
+    "summary": null
+  },
+  "800457": {
+    "name": "DONEGAL GROUP INC",
+    "sic_description": "Fire, Marine & Casualty Insurance",
+    "summary": null
+  },
+  "80420": {
+    "name": "POWELL INDUSTRIES INC",
+    "sic_description": "Switchgear & Switchboard Apparatus",
+    "summary": null
+  },
+  "80424": {
+    "name": "PROCTER & GAMBLE Co",
+    "sic_description": "Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics",
+    "summary": null
+  },
+  "804328": {
+    "name": "QUALCOMM INC/DE",
+    "sic_description": "Radio & Tv Broadcasting & Communications Equipment",
+    "summary": null
+  },
+  "805928": {
+    "name": "Axogen, Inc.",
+    "sic_description": "Electromedical & Electrotherapeutic Apparatus",
+    "summary": null
+  },
+  "80661": {
+    "name": "PROGRESSIVE CORP/OH/",
+    "sic_description": "Fire, Marine & Casualty Insurance",
+    "summary": null
+  },
   "813623": {
     "name": "Total Return Securities Fund",
     "sic_description": "",
+    "summary": null
+  },
+  "813672": {
+    "name": "CADENCE DESIGN SYSTEMS INC",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "815556": {
+    "name": "FASTENAL CO",
+    "sic_description": "Retail-Building Materials, Hardware, Garden Supply",
+    "summary": null
+  },
+  "817720": {
+    "name": "SYNAPTICS Inc",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "818686": {
+    "name": "TEVA PHARMACEUTICAL INDUSTRIES LTD",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "820318": {
+    "name": "COHERENT CORP.",
+    "sic_description": "Optical Instruments & Lenses",
+    "summary": null
+  },
+  "821189": {
+    "name": "EOG RESOURCES INC",
+    "sic_description": "Crude Petroleum & Natural Gas",
+    "summary": null
+  },
+  "821483": {
+    "name": "PAR PACIFIC HOLDINGS, INC.",
+    "sic_description": "Crude Petroleum & Natural Gas",
+    "summary": null
+  },
+  "831259": {
+    "name": "FREEPORT-MCMORAN INC",
+    "sic_description": "Metal Mining",
+    "summary": null
+  },
+  "840489": {
+    "name": "FirstCash Holdings, Inc.",
+    "sic_description": "Retail-Miscellaneous Retail",
+    "summary": null
+  },
+  "846617": {
+    "name": "Dime Commercial Bancshares, Inc. /NY/",
+    "sic_description": "National Commercial Banks",
     "summary": null
   },
   "849145": {
@@ -489,19 +3249,209 @@
     "sic_description": "Services-Business Services, NEC",
     "summary": "자산 경매·중개 서비스 회사"
   },
+  "849399": {
+    "name": "Gen Digital Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
+  "850141": {
+    "name": "HORACE MANN EDUCATORS CORP /DE/",
+    "sic_description": "Fire, Marine & Casualty Insurance",
+    "summary": null
+  },
+  "855658": {
+    "name": "LATTICE SEMICONDUCTOR CORP",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "858877": {
+    "name": "CISCO SYSTEMS, INC.",
+    "sic_description": "Computer Communications Equipment",
+    "summary": null
+  },
   "860748": {
     "name": "KEMPER Corp",
     "sic_description": "Fire, Marine & Casualty Insurance",
     "summary": "자동차 등 손해보험 회사"
+  },
+  "866729": {
+    "name": "SCHOLASTIC CORP",
+    "sic_description": "Books: Publishing or  Publishing & Printing",
+    "summary": null
+  },
+  "8670": {
+    "name": "AUTOMATIC DATA PROCESSING INC",
+    "sic_description": "Services-Computer Processing & Data Preparation",
+    "summary": null
+  },
+  "872589": {
+    "name": "REGENERON PHARMACEUTICALS, INC.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "876437": {
+    "name": "MGIC INVESTMENT CORP",
+    "sic_description": "Surety Insurance",
+    "summary": null
   },
   "88000": {
     "name": "Horizon Kinetics Holding Corp",
     "sic_description": "Investment Advice",
     "summary": "자산 운용 회사"
   },
+  "880266": {
+    "name": "AGCO CORP /DE",
+    "sic_description": "Farm Machinery & Equipment",
+    "summary": null
+  },
+  "882095": {
+    "name": "GILEAD SCIENCES, INC.",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
+  },
+  "882508": {
+    "name": "QUICKLOGIC Corp",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "883984": {
+    "name": "ICU MEDICAL INC/DE",
+    "sic_description": "Surgical & Medical Instruments & Apparatus",
+    "summary": null
+  },
+  "886163": {
+    "name": "LIGAND PHARMACEUTICALS INC",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "887596": {
+    "name": "CHEESECAKE FACTORY INC",
+    "sic_description": "Retail-Eating  Places",
+    "summary": null
+  },
+  "88941": {
+    "name": "SEMTECH CORP",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "889609": {
+    "name": "CONSUMER PORTFOLIO SERVICES, INC.",
+    "sic_description": "Finance Services",
+    "summary": null
+  },
+  "889900": {
+    "name": "PATTERSON UTI ENERGY INC",
+    "sic_description": "Drilling Oil & Gas Wells",
+    "summary": null
+  },
+  "891103": {
+    "name": "Match Group, Inc.",
+    "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+    "summary": null
+  },
+  "89439": {
+    "name": "MUELLER INDUSTRIES INC",
+    "sic_description": "Rolling Drawing & Extruding of  Nonferrous Metals",
+    "summary": null
+  },
+  "894405": {
+    "name": "ARCBEST CORP /TX/",
+    "sic_description": "Trucking (No Local)",
+    "summary": null
+  },
   "896493": {
     "name": "Hyperscale Data, Inc.",
     "sic_description": "Oil & Gas Field Machinery & Equipment",
+    "summary": null
+  },
+  "898173": {
+    "name": "O REILLY AUTOMOTIVE INC",
+    "sic_description": "Retail-Auto & Home Supply Stores",
+    "summary": null
+  },
+  "906107": {
+    "name": "VIVMARK RESIDENTIAL",
+    "sic_description": "Real Estate Investment Trusts",
+    "summary": null
+  },
+  "907654": {
+    "name": "Oruka Therapeutics, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "908255": {
+    "name": "BORGWARNER INC",
+    "sic_description": "Motor Vehicle Parts & Accessories",
+    "summary": null
+  },
+  "910612": {
+    "name": "CBL & ASSOCIATES PROPERTIES INC",
+    "sic_description": "Real Estate Investment Trusts",
+    "summary": null
+  },
+  "911971": {
+    "name": "TEEKAY CORP LTD",
+    "sic_description": "Deep Sea Foreign Transportation of  Freight",
+    "summary": null
+  },
+  "912093": {
+    "name": "VIAVI SOLUTIONS INC.",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "912615": {
+    "name": "URBAN OUTFITTERS INC",
+    "sic_description": "Retail-Family Clothing Stores",
+    "summary": null
+  },
+  "913241": {
+    "name": "STEVEN MADDEN, LTD.",
+    "sic_description": "Footwear, (No Rubber)",
+    "summary": null
+  },
+  "913341": {
+    "name": "C & F FINANCIAL CORP",
+    "sic_description": "State Commercial Banks",
+    "summary": null
+  },
+  "913760": {
+    "name": "StoneX Group Inc.",
+    "sic_description": "Security & Commodity Brokers, Dealers, Exchanges & Services",
+    "summary": null
+  },
+  "914156": {
+    "name": "UFP TECHNOLOGIES INC",
+    "sic_description": "Surgical & Medical Instruments & Apparatus",
+    "summary": null
+  },
+  "91419": {
+    "name": "J M SMUCKER Co",
+    "sic_description": "Canned, Fruits, Veg, Preserves, Jams & Jellies",
+    "summary": null
+  },
+  "914208": {
+    "name": "Invesco Ltd.",
+    "sic_description": "Investment Advice",
+    "summary": null
+  },
+  "91440": {
+    "name": "Snap-on Inc",
+    "sic_description": "Cutlery, Handtools & General Hardware",
+    "summary": null
+  },
+  "914475": {
+    "name": "NEUROCRINE BIOSCIENCES INC",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
+  },
+  "916540": {
+    "name": "DARLING INGREDIENTS INC.",
+    "sic_description": "Fats & Oils",
+    "summary": null
+  },
+  "916793": {
+    "name": "SILICOM LTD.",
+    "sic_description": "Computer Communications Equipment",
     "summary": null
   },
   "917251": {
@@ -509,19 +3459,99 @@
     "sic_description": "Real Estate Investment Trusts",
     "summary": "소매 시설 임대 부동산투자 회사"
   },
+  "918965": {
+    "name": "SCANSOURCE, INC.",
+    "sic_description": "Wholesale-Computers & Peripheral Equipment & Software",
+    "summary": null
+  },
+  "92122": {
+    "name": "SOUTHERN CO",
+    "sic_description": "Electric Services",
+    "summary": null
+  },
+  "921582": {
+    "name": "IMAX CORP",
+    "sic_description": "Photographic Equipment & Supplies",
+    "summary": null
+  },
+  "923796": {
+    "name": "GEO GROUP INC",
+    "sic_description": "General Bldg Contractors - Residential Bldgs",
+    "summary": null
+  },
+  "924805": {
+    "name": "Freedom Holding Corp.",
+    "sic_description": "Security Brokers, Dealers & Flotation Companies",
+    "summary": null
+  },
+  "927003": {
+    "name": "ADVANCED ENERGY INDUSTRIES INC",
+    "sic_description": "Electronic Components, NEC",
+    "summary": null
+  },
+  "927628": {
+    "name": "CAPITAL ONE FINANCIAL CORP",
+    "sic_description": "National Commercial Banks",
+    "summary": null
+  },
   "930236": {
     "name": "REDWOOD TRUST INC",
     "sic_description": "Real Estate Investment Trusts",
     "summary": "주택 관련 대출·투자 금융 회사"
+  },
+  "93410": {
+    "name": "CHEVRON CORP",
+    "sic_description": "Petroleum Refining",
+    "summary": null
   },
   "935419": {
     "name": "RCI HOSPITALITY HOLDINGS, INC.",
     "sic_description": "Retail-Eating  Places",
     "summary": "식당·성인 유흥 시설 운영 회사"
   },
+  "936395": {
+    "name": "CIENA CORP",
+    "sic_description": "Telephone & Telegraph Apparatus",
+    "summary": null
+  },
+  "937098": {
+    "name": "TRINET GROUP, INC.",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
+  "943452": {
+    "name": "WESTINGHOUSE AIR BRAKE TECHNOLOGIES CORP",
+    "sic_description": "Railroad Equipment",
+    "summary": null
+  },
+  "945114": {
+    "name": "GLOBAL INDUSTRIAL Co",
+    "sic_description": "Wholesale-Industrial Machinery & Equipment",
+    "summary": null
+  },
+  "946581": {
+    "name": "TAKE TWO INTERACTIVE SOFTWARE INC",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
   "97134": {
     "name": "TENNANT CO",
     "sic_description": "Refrigeration & Service Industry Machinery",
     "summary": "청소 장비를 만드는 회사"
+  },
+  "97210": {
+    "name": "TERADYNE, INC",
+    "sic_description": "Instruments For Meas & Testing of  Electricity & Elec Signals",
+    "summary": null
+  },
+  "97745": {
+    "name": "THERMO FISHER SCIENTIFIC INC.",
+    "sic_description": "Measuring & Controlling Devices, NEC",
+    "summary": null
+  },
+  "98222": {
+    "name": "TIDEWATER INC",
+    "sic_description": "Water Transportation",
+    "summary": null
   }
 }
