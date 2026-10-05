@@ -2,7 +2,7 @@
 {% from "_search.html" import search_form %}
 {% from "_parts.html" import brand, chips %}
 {# 매도 목록: 첫 화면(index.html)과 같은 짜임새. 칸만 매도 쪽(sell_*)을 쓴다. #}
-{% block title %}임원 매도 목록 · 미국 임원 매수 정리{% endblock %}
+{% block title %}임원 매도 목록 · {{ site_name }}{% endblock %}
 {% block description %}최근 {{ cfg.WINDOW_DAYS }}일 동안 미국 상장사 임원·이사 {{ cfg.MIN_PEOPLE }}명 이상이 각자 1만 달러 이상 장내 매도한 회사를 매일 아침 한국어로 정리해요. 무료, 광고 없음, 투자 권유 아님.{% endblock %}
 {% block body %}
 <header class="band band-home">
@@ -10,11 +10,11 @@
     <div class="band-main">
       <div class="band-top">{{ brand() }}<span class="mono dim m-only">{{ meta.updated }} 갱신</span></div>
       <h1>임원 매도 목록</h1>
-      <p class="sub">미국 임원 매수 정리 · 내부자 거래 공시(Form 4) 한국어 정리</p>
+      <p class="sub">{{ site_name }} · {{ site_tagline }}</p>
       <p class="intro">임원의 자기 회사 주식 거래는 합법이고, 이틀 안에 SEC에 공개 신고돼요.</p>
       <div class="d-only band-search">{{ search_form("q-d") }}</div>
     </div>
-    <div class="band-side mono small dim d-only"><span>{{ meta.updated }} 갱신</span><span>미국 {{ meta.as_of_label }} 접수분까지</span><a href="/criteria/#sell">기준 보기 →</a></div>
+    <div class="band-side mono small dim d-only"><span>{{ meta.updated }} 갱신</span><span>미국 {{ meta.as_of_label }} 접수분까지</span><a href="/criteria/#sell-rules">기준 보기 →</a></div>
   </div>
 </header>
 <div class="m-only pad-x">{{ search_form("q-m", compact=True) }}</div>
@@ -75,7 +75,7 @@
   {% for c in recent %}<p class="small recent"><a href="/c/{{ c.slug }}/">{{ knames[c.issuer_cik] or c.name }}</a> — 임원·이사 {{ c.sell_people }}명 · 최근 거래 {{ c.sell_last_date|md }}</p>{% endfor %}
 </section>
 {% endif %}
-<p class="notice">매도는 세금 납부·생활 자금·미리 정한 계획(10b5-1)·옵션 행사 등 여러 이유로 일어나며, 주가 하락을 뜻하지 않아요. 특정 종목의 매수·매도를 권하지 않아요. <a href="/criteria/#sell">기준 보기</a></p>
+<p class="notice">매도는 세금 납부·생활 자금·미리 정한 계획(10b5-1)·옵션 행사 등 여러 이유로 일어나며, 주가 하락을 뜻하지 않아요. 특정 종목의 매수·매도를 권하지 않아요. <a href="/criteria/#sell-rules">기준 보기</a></p>
 </div>
 </div>
 <script src="/search.js" defer></script>

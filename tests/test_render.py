@@ -1,3 +1,4 @@
+import html
 import json
 import re
 
@@ -390,7 +391,7 @@ def test_share_meta_tags(tmp_path):
     assert props["description"] == default and props["og:description"] == default
     assert props["og:title"] == title and props["og:url"] == SITE + "/"
     assert props["og:type"] == "website" and props["og:site_name"] == "미국 임원 매수 정리"
-    assert props["og:image"] == SITE + "/og.png" and props["og:locale"] == "ko_KR"
+    assert props["og:image"] == SITE + "/og/home.png" and props["og:locale"] == "ko_KR"
     assert props["twitter:card"] == "summary_large_image"
 
     title, props, canonical = head_meta((tmp_path / "c" / "EXM" / "index.html").read_text())
@@ -914,7 +915,7 @@ def test_company_band_note_for_sell_list(tmp_path):
 def test_criteria_sell_section(tmp_path):
     render_site([], {"count": 0, "new": [], "dropped": [], "top": None}, META, {}, tmp_path)
     page = (tmp_path / "criteria" / "index.html").read_text()
-    sec = re.search(r'<section class="card" id="sell">(.*?)</section>', page, re.S)
+    sec = re.search(r'<section class="card" id="sell-rules">(.*?)</section>', page, re.S)
     assert sec
     text = plain(sec.group(1))
     for s in ["매도 목록 조건",
@@ -928,7 +929,7 @@ def test_criteria_sell_section(tmp_path):
               "하루 N명 일괄 매도(같은 거래일에 10명 이상이 매도)",
               "주가 하락을 뜻하지 않아요"]:
         assert s in text, s
-    assert page.index("목록에 오르는 조건") < page.index('id="sell"') < page.index("왜 이 기준인가요?")
+    assert page.index('id="buy-rules"') < page.index('id="sell-rules"') < page.index('id="why"')
     for word in ["위험", "팔아라", "매도 신호", "자기 돈"]:
         assert word not in page
 
@@ -1258,3 +1259,54 @@ def test_long_officer_title_clamped_on_desktop(tmp_path):
     desktop = css[css.index("@media (min-width: 1024px)"):]
     assert re.search(r"\.who b \{[^}]*-webkit-line-clamp: 2", desktop)
     assert "-webkit-line-clamp" not in css[:css.index("@media (min-width: 1024px)")].split(".who b")[-1][:200]
+
+
+# ---- 디자인 묶음 C (2026-10-05): 사이트 이름 상수 · 페이지별 공유 카드 · 기준 페이지 목차·개정 이력 ----
+
+def test_templates_have_no_literal_site_name():
+    from importlib.resources import files
+    from form4 import config
+    for t in (files("form4") / "templates").iterdir():
+        text = t.read_text()
+        assert config.SITE_NAME not in text and config.SITE_TAGLINE not in text, t.name
+
+
+def test_og_image_per_page(tmp_path):
+    buy = result()
+    other = result(issuer_cik="902", name="OTHER CO", ticker="OTH", slug="OTH", qualified=False)
+    sold = seller("903", "SLL", 3, 90_000.0, "2026-09-30")
+    render_site([buy, other, sold], {"count": 1, "new": [], "dropped": [], "top": buy}, META, {}, tmp_path,
+                sells=[sold])
+    expect = {"index.html": "/og/home.png", "sell/index.html": "/og/sell.png", "c/EXM/index.html": "/og/c/EXM.png",
+              "c/SLL/index.html": "/og/c/SLL.png", "c/OTH/index.html": "/og.png",
+              "criteria/index.html": "/og.png", "privacy/index.html": "/og.png", "404.html": "/og.png"}
+    for f, img in expect.items():
+        _, props, _ = head_meta((tmp_path / f).read_text())
+        assert props["og:image"] == SITE + img and props["twitter:image"] == SITE + img, f
+        assert props["og:image:width"] == "1200" and props["og:image:height"] == "630", f
+        assert (tmp_path / img.lstrip("/")).is_file(), img
+    assert not (tmp_path / "og" / "c" / "OTH.png").exists()
+
+
+def test_criteria_methods_document(tmp_path):
+    from form4 import config
+    render_site([], {"count": 0, "new": [], "dropped": [], "top": None}, META, {}, tmp_path)
+    page = (tmp_path / "criteria" / "index.html").read_text()
+    ids = ["buy-rules", "sell-rules", "why", "update", "ai", "about", "notice", "history"]
+    pos = [page.index(f'<section class="card" id="{i}">') for i in ids]
+    assert pos == sorted(pos)
+    toc = re.search(r'<nav class="card toc" aria-label="목차">(.*?)</nav>', page, re.S).group(1)
+    assert re.findall(r'<a href="#([a-z-]+)">', toc) == ids
+    assert page.index('class="card toc"') < pos[0]
+    hist = plain(re.search(r'<section class="card" id="history">(.*?)</section>', page, re.S).group(1))
+    assert "기준 개정 이력" in hist
+    for d, text in config.CRITERIA_HISTORY:
+        assert f"{d} {text}" in html.unescape(hist)
+    assert hist.index("2026-10-05") < hist.index("2026-10-04")
+    css = (tmp_path / "style.css").read_text()
+    desktop = css[css.index("@media (min-width: 1024px)"):]
+    assert re.search(r"\.cols-doc \{[^}]*grid-template-columns: minmax\(0, 720px\) 240px", desktop)
+    assert re.search(r"\.toc \{[^}]*position: sticky", desktop)
+    assert "sticky" not in css[:css.index("@media (min-width: 1024px)")]
+    sell = (tmp_path / "sell" / "index.html").read_text()
+    assert 'href="/criteria/#sell-rules"' in sell and 'href="/criteria/#sell"' not in sell

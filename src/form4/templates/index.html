@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 {% from "_search.html" import search_form %}
 {% from "_parts.html" import brand, chips %}
-{% block title %}미국 임원 매수 정리 · 내부자 거래 공시(Form 4) 한국어 정리{% endblock %}
+{% block title %}{{ site_name }} · {{ site_tagline }}{% endblock %}
 {% block body %}
 <header class="band band-home">
   <div class="band-in">
     <div class="band-main">
       <div class="band-top">{{ brand() }}<span class="mono dim m-only">{{ meta.updated }} 갱신</span></div>
-      <h1>미국 임원 매수 정리</h1>
-      <p class="sub">내부자 거래 공시(Form 4) 한국어 정리</p>
+      <h1>{{ site_name }}</h1>
+      <p class="sub">{{ site_tagline }}</p>
       <p class="intro">임원의 자기 회사 주식 거래는 합법이고, 이틀 안에 SEC에 공개 신고돼요.</p>
       <div class="d-only band-search">{{ search_form("q-d") }}</div>
     </div>

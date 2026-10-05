@@ -212,6 +212,8 @@ def _env() -> Environment:
     env.filters["group_rows"] = group_rows
     env.globals["bar_width"] = bar_width
     env.globals["site"] = config.SITE_URL
+    env.globals["site_name"] = config.SITE_NAME
+    env.globals["site_tagline"] = config.SITE_TAGLINE
     env.globals["naver_verification"] = config.NAVER_SITE_VERIFICATION
     return env
 
@@ -246,19 +248,21 @@ def render_site(profiles: list[dict], brief: dict, meta: dict, companies: dict, 
     recent_buys = [] if brief["new"] else recent(results, date.fromisoformat(meta["as_of"]))
     recent_sells = [] if sell_brief["new"] else recent(sells, date.fromisoformat(meta["as_of"]),
                                                        last="sell_last_date", people="sell_people")
+    carded = {c["slug"] for c in results + sells}  # 공유 카드를 따로 만드는 회사(두 목록에 있는 회사)
     checked = {"index.html": env.get_template("index.html").render(
         meta=meta, path="/", brief=brief, results=results, lines=lines, knames=knames, new_ciks=new_ciks,
-        recent=recent_buys, sell_count=len(sells)),
+        recent=recent_buys, sell_count=len(sells), og_image=f"{config.SITE_URL}/og/home.png"),
         "sell/index.html": env.get_template("sell.html").render(
         meta=meta, path="/sell/", brief=sell_brief, results=sells, lines=lines, knames=knames,
         new_ciks={c["issuer_cik"] for c in sell_brief["new"]}, recent=recent_sells, buy_count=len(results),
-        cfg=config)}
+        cfg=config, og_image=f"{config.SITE_URL}/og/sell.png")}
     for c in profiles:
         summary = summary_segments(c, meta["fx_rate"])
         checked[f"c/{c['slug']}/index.html"] = env.get_template("company.html").render(
             meta=meta, path=f"/c/{c['slug']}/", c=c, k=knames[c["issuer_cik"]], line=lines[c["issuer_cik"]],
             summary=summary, timeline=timeline(c["rows"], c["sale_rows"], date.fromisoformat(meta["as_of"])),
-            description=page_description(company_description(c, knames[c["issuer_cik"]], meta["fx_rate"])))
+            description=page_description(company_description(c, knames[c["issuer_cik"]], meta["fx_rate"])),
+            og_image=f"{config.SITE_URL}/og/c/{c['slug']}.png" if c["slug"] in carded else None)
     for name, html in checked.items():
         bad = find_forbidden(html)
         if bad:
@@ -281,5 +285,7 @@ def render_site(profiles: list[dict], brief: dict, meta: dict, companies: dict, 
     static = files("form4") / "static"
     for name in ("style.css", "typing.js", "search.js", "share.js", "sort.js"):
         (out_dir / name).write_text((static / name).read_text())
-    for name in ("og.png", "favicon.svg", "favicon.ico", "apple-touch-icon.png"):
+    for name in ("favicon.svg", "favicon.ico", "apple-touch-icon.png"):
         (out_dir / name).write_bytes((static / name).read_bytes())
+    from form4.og import write_cards  # og 가 이 파일의 금액 표기 함수를 쓰므로 여기서 불러온다(서로 부르기)
+    write_cards(out_dir, meta, results, sells, knames)

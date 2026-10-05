@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% from "_search.html" import search_form %}
 {% from "_parts.html" import brand, chips %}
-{% block title %}{{ k or c.name }}({{ c.ticker }}) 임원 매수·매도 기록 · 미국 임원 매수 정리{% endblock %}
+{% block title %}{{ k or c.name }}({{ c.ticker }}) 임원 매수·매도 기록 · {{ site_name }}{% endblock %}
 {% block description %}{{ description }}{% endblock %}
 {% block body %}
 <header class="band">

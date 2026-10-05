@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% from "_parts.html" import brand %}
-{% block title %}기준 · 미국 임원 매수 정리{% endblock %}
+{% block title %}기준 · {{ site_name }}{% endblock %}
 {% block description %}목록에 오르는 조건, 갱신 시각과 출처, AI를 쓰는 범위를 설명해요.{% endblock %}
 {% block body %}
 <header class="band">
@@ -9,8 +9,14 @@
   <h1>정리 기준</h1>
   </div>
 </header>
-<div class="cols cols-one">
-<section class="card">
+{# 방법 문서: 휴대폰은 맨 위 '목차' 링크 묶음, 컴퓨터(1024px 이상)는 오른쪽 칸에 따라다니는 목차 #}
+<div class="cols cols-doc">
+<nav class="card toc" aria-label="목차">
+  <h2>목차</h2>
+  <ol>{% for id, label in [("buy-rules", "목록에 오르는 조건"), ("sell-rules", "매도 목록 조건"), ("why", "왜 이 기준인가요?"), ("update", "갱신과 출처"), ("ai", "AI 사용 범위"), ("about", "만든 사람"), ("notice", "고지"), ("history", "기준 개정 이력")] %}<li><a href="#{{ id }}">{{ label }}</a></li>{% endfor %}</ol>
+</nav>
+<div class="col doc">
+<section class="card" id="buy-rules">
   <h2>목록에 오르는 조건</h2>
   <p>1. 미국 SEC 내부자 거래 공시(Form 4) 중 거래 코드 P(장내 매수)만 셉니다. 다음은 시장에서 직접 산 매수가 아니라서 세지 않아요: 각주에 배당 재투자로 적힌 매수, 공모·사모 등 증자 참여(상세 페이지에 참고로 표시), 종목 코드가 없는 비상장 회사.</p>
   <p>2. 임원 또는 이사만 셉니다. 지분 10% 이상 대주주만인 경우는 상세 페이지에 참고로만 보여 줍니다.</p>
@@ -20,7 +26,7 @@
   <p>6. 꼬리표: 대표이사 포함 / 같은 날 여러 명 매수(같은 거래일에 3명 이상, 금액 차이 20% 안, 절반 넘게 부사장급) / 하루 N명 일괄 매수(같은 거래일에 {{ cfg.BULK_MIN_PEOPLE }}명 이상이 매수, 회사 제도에 따른 매수일 수 있음) / 계획 매수 포함(10b5-1).</p>
   <p>7. 정정 신고(4/A)는 원래 신고를 대체하고, 한 신고서에 여러 사람이 함께 신고하면 금액은 한 번만 더합니다.</p>
 </section>
-<section class="card" id="sell">
+<section class="card" id="sell-rules">
   <h2>매도 목록 조건</h2>
   <p>1. 같은 공시 중 거래 코드 S(장내 매도)만 셉니다. 신고서의 주당 가격이 비정상적으로 큰 매도는 원문 오류로 보고 빼고, 종목 코드가 없는 비상장 회사도 뺍니다.</p>
   <p>2. 임원 또는 이사만 셉니다. 이사 자리를 가진 펀드·법인과 지분 10% 이상 대주주만인 경우는 세지 않습니다.</p>
@@ -30,17 +36,17 @@
   <p>6. 꼬리표: 대표이사 포함 / 계획 매도 포함(10b5-1) / 옵션 행사 후 매도 포함(스톡옵션으로 받은 주식을 같은 날 판 매도가 있음) / 하루 N명 일괄 매도(같은 거래일에 {{ cfg.BULK_MIN_PEOPLE }}명 이상이 매도).</p>
   <p>7. 매도는 세금 납부·생활 자금·미리 정한 계획(10b5-1)·옵션 행사 등 여러 이유로 일어나며, 주가 하락을 뜻하지 않아요.</p>
 </section>
-<section class="card">
+<section class="card" id="why">
   <h2>왜 이 기준인가요?</h2>
   <p>한 사람의 매수는 개인 사정일 수 있어서, 같은 회사에서 여러 임원·이사가 비슷한 시기에 시장에서 산 경우만 모았어요. 1만 달러 미만의 소액은 뺐어요. 이 기준은 주가를 예측하지 않아요.</p>
 </section>
-<section class="card">
+<section class="card" id="update">
   <h2>갱신과 출처</h2>
   <p>매일 한국 시간 아침 6시쯤, 완전히 끝난 미국 날짜까지의 SEC EDGAR 공시를 반영합니다.</p>
   <p>원화 금액은 유럽중앙은행 기준 환율로 계산한 대략값입니다.</p>
   <p>계산 코드는 모두 공개되어 있습니다: <a href="https://github.com/kimjione1206/form4">github.com/kimjione1206/form4</a></p>
 </section>
-<section class="card">
+<section class="card" id="ai">
   <h2>AI 사용 범위</h2>
   <p>금액·인원·날짜·목록·요약 문장은 정해진 규칙으로 만들며 AI를 쓰지 않습니다. 회사 한 줄 소개, 직함·업종 번역, 한국어 회사 이름만 AI(Claude)가 만들고, 숫자나 평가하는 말이 들어가면 쓰지 않습니다.</p>
 </section>
@@ -48,9 +54,14 @@
   <h2>만든 사람</h2>
   <p>개인이 만들어 운영해요. 광고·후원·유료 기능이 없고, 운영자는 이 사이트로 수익을 받지 않아요. 운영자는 목록·검색 결과의 종목을 따로 사고팔지 않아요. 문의: <a href="mailto:form4@jmheo.com">form4@jmheo.com</a></p>
 </section>
-<section class="card">
+<section class="card" id="notice">
   <h2>고지</h2>
   <p>이 사이트는 미국 SEC에 제출된 내부자 거래 공시(Form 4)를 정해진 기준으로 자동 정리해 보여줍니다. 특정 종목의 매수·매도를 권유하지 않으며, 투자 판단과 결과의 책임은 본인에게 있습니다. 공시 원문에 오류나 정정이 있을 수 있으니 반드시 원문(↗)을 확인하세요. 운영자는 금융투자업자가 아니며 어떤 수익도 받지 않습니다. 운영자는 목록·검색 결과의 종목을 따로 사고팔지 않아요. 원화 금액은 {{ meta.fx_date }} 환율 기준 대략값입니다. 문의·삭제 요청: form4@jmheo.com</p>
 </section>
+<section class="card" id="history">
+  <h2>기준 개정 이력</h2>
+  <ul class="history">{% for d, text in cfg.CRITERIA_HISTORY %}<li><span class="mono">{{ d }}</span> {{ text }}</li>{% endfor %}</ul>
+</section>
+</div>
 </div>
 {% endblock %}
