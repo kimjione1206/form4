@@ -86,6 +86,7 @@ def _rows(counted: list[dict], qualified: set[str], titles: dict[str, str]) -> l
             "value": value, "shares": shares, "avg_price": value / shares if shares else None,
             "increase": _increase(rs), "tags": tags, "url": rs[0]["url"],
             "ceo": any(o["is_officer"] and CEO_RE.search(o["title"]) for o in owners),
+            "ciks": [o["cik"] for o in owners],  # 같은 날 줄 묶음의 'N명' 세기용(화면에 안 보임)
         })
         if len(owners) == 1:
             solo[id(rows[-1])] = owners[0]["cik"]
@@ -129,9 +130,10 @@ def _sale_rows(sells: list[dict], titles: dict[str, str]) -> list[dict]:
             tags.append("옵션 행사 후 매도")
         if r.get("direct") == "I":
             tags.append("간접")
+        insiders = [o for o in r["owners"] if _is_insider(o)]
         rows.append({
             "date": r["date"], "filed": r["filed"],
-            "who": _who([o for o in r["owners"] if _is_insider(o)], titles),
+            "who": _who(insiders, titles), "ciks": [o["cik"] for o in insiders],
             "value": r.get("value", 0.0), "shares": r.get("shares", 0.0),
             "avg_price": r["value"] / r["shares"] if r.get("shares") and r.get("value") else None,
             "decrease": _decrease(r), "tags": tags, "url": r["url"],

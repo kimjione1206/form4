@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% from "_search.html" import search_form %}
-{% from "_parts.html" import brand %}
+{% from "_parts.html" import brand, chips %}
 {% block title %}{{ k or c.name }}({{ c.ticker }}) 임원 매수·매도 기록 · 미국 임원 매수 정리{% endblock %}
 {% block description %}{{ description }}{% endblock %}
 {% block body %}
@@ -29,6 +29,17 @@
   <div class="tile card-lite"><span class="small dim">같은 기간 매도</span><span class="mono big">{{ c.sale_people }}명</span><span class="small dim">{{ c.sale_usd|krw(meta.fx_rate) if c.sale_people else "없음" }}</span></div>
 </section>
 
+{% if timeline %}
+<div class="strip card-lite" role="img" aria-label="{{ timeline.label }}">
+  <svg class="strip-svg" width="100%" height="{{ timeline.height }}" aria-hidden="true" focusable="false">
+    <line x1="0" x2="100%" y1="{{ timeline.base }}" y2="{{ timeline.base }}" stroke="#CBD2DC" stroke-width="1"/>
+    {% for m in timeline.marks %}<circle cx="{{ m.x }}" cy="{{ m.y }}" r="4" {% if m.buy %}fill="#1F3A8A"{% else %}fill="#fff" stroke="#1F3A8A" stroke-width="1.5"{% endif %}/>{% endfor %}
+    {% for p in timeline.plus %}<text x="{{ p.x }}" y="{{ p.y }}" text-anchor="middle">+</text>{% endfor %}
+  </svg>
+  <div class="strip-labels small dim"><span class="mono">{{ timeline.start }}</span><span><span class="accent">●</span> 매수 <span class="accent">○</span> 매도</span><span class="mono">{{ timeline.end }}</span></div>
+</div>
+{% endif %}
+
 <section class="card">
   <div class="row-between"><h2>요약</h2><span><span class="mono small accent" data-typing-status>자동 정리</span> <button type="button" class="replay" data-replay hidden><span>다시 보기</span></button></span></div>
   <p class="sr-only">{% for text, bold in summary %}{% if bold %}<strong>{{ text }}</strong>{% else %}{{ text }}{% endif %}{% endfor %}</p>
@@ -37,6 +48,44 @@
 </div>
 
 <div class="col col-main">
+{# 같은 날·같은 가격 신고가 3줄 이상 붙어 있으면 요약 한 줄(펼치기)로 묶는다. 펼치면 원래 줄이 그대로 보인다.
+   표 역할: details = rowgroup(줄 묶음), summary = row(요약 줄, 펼침 상태는 브라우저가 알려 줌) #}
+{% macro buy_row(r) %}  <div class="trow" role="row">
+    <span class="mono small" role="cell">{{ r.date|md }}</span>
+    <span class="mono small dim d-only" role="cell">{{ r.filed|md }}</span>
+    <span class="who" role="cell"><b title="{{ r.who }}">{{ r.who }}</b>{% if r.same %}<span class="chip same">같은 사람 {{ r.same }}</span>{% endif %}{% for t in r.tags %}<span class="chip m-only">{{ t }}</span>{% endfor %}{% if r.avg_price %}<span class="pps small dim m-only">주당 {{ r.avg_price|price }} · {{ r.shares|shares }}</span>{% endif %}<a class="small m-only" href="{{ r.url }}" target="_blank" rel="noopener">신고 {{ r.filed|md }} · 원문 ↗</a></span>
+    <span class="mono r" role="cell">{{ r.value|usd }}{% if r.avg_price %}<span class="shares small dim d-only">{{ r.shares|shares }}</span>{% endif %}</span>
+    <span class="mono r d-only" role="cell">{{ r.avg_price|price if r.avg_price else "-" }}</span>
+    <span class="mono r accent" role="cell">{{ r.increase|increase }}</span>
+    <span class="d-only" role="cell"><span class="chips">{% for t in r.tags %}<span class="chip">{{ t }}</span>{% endfor %}</span></span>
+    <span class="d-only r" role="cell"><a class="src" href="{{ r.url }}" target="_blank" rel="noopener">원문 ↗</a></span>
+  </div>
+{% endmacro %}
+{% macro sale_row(r) %}  <div class="trow" role="row">
+    <span class="mono small" role="cell">{{ r.date|md }}</span>
+    <span class="mono small dim d-only" role="cell">{{ r.filed|md }}</span>
+    <span class="who" role="cell"><b title="{{ r.who }}">{{ r.who }}</b>{% for t in r.tags %}<span class="chip m-only">{{ t }}</span>{% endfor %}{% if "계획 매도" not in r.tags %}<span class="small dim m-only">계획 표시 없음</span>{% endif %}{% if r.avg_price %}<span class="pps small dim m-only">주당 {{ r.avg_price|price }} · {{ r.shares|shares }}</span>{% endif %}<a class="small m-only" href="{{ r.url }}" target="_blank" rel="noopener">신고 {{ r.filed|md }} · 원문 ↗</a></span>
+    <span class="mono r" role="cell">{{ r.value|usd }}{% if r.avg_price %}<span class="shares small dim d-only">{{ r.shares|shares }}</span>{% endif %}</span>
+    <span class="mono r d-only" role="cell">{{ r.avg_price|price if r.avg_price else "-" }}</span>
+    <span class="mono r" role="cell">{{ r.decrease|decrease }}</span>
+    <span class="d-only" role="cell"><span class="chips">{% for t in r.tags %}<span class="chip">{{ t }}</span>{% endfor %}{% if "계획 매도" not in r.tags %}<span class="small dim">계획 표시 없음</span>{% endif %}</span></span>
+    <span class="d-only r" role="cell"><a class="src" href="{{ r.url }}" target="_blank" rel="noopener">원문 ↗</a></span>
+  </div>
+{% endmacro %}
+{% macro group(g, sale) %}
+  <details class="tgroup" role="rowgroup">
+  <summary class="trow tsum" role="row">
+    <span class="mono small" role="cell">{{ g.date|md }}</span>
+    <span class="mono small dim d-only" role="cell">{{ g.filed|md }}</span>
+    <span class="who" role="cell"><b>임원·이사 {{ g.people }}명</b>{% if g.tags %}<span class="chips m-only">{{ chips(g.tags) }}</span>{% endif %}{% if sale and "계획 매도" not in g.tags %}<span class="small dim m-only">계획 표시 없음</span>{% endif %}<span class="pps small dim m-only">주당 {{ g.avg_price|price }} · {{ g.shares|shares }}</span><span class="g-act small m-only">{{ g.rows|length }}건 <span class="g-closed">펼치기</span><span class="g-open">접기</span></span></span>
+    <span class="mono r" role="cell">{{ g.value|usd }}<span class="shares small dim d-only">{{ g.shares|shares }}</span></span>
+    <span class="mono r d-only" role="cell">{{ g.avg_price|price }}</span>
+    <span class="mono r dim" role="cell">-</span>
+    <span class="d-only" role="cell"><span class="chips">{{ chips(g.tags) }}{% if sale and "계획 매도" not in g.tags %}<span class="small dim">계획 표시 없음</span>{% endif %}</span></span>
+    <span class="d-only r" role="cell"><span class="g-act"><span class="sr-only">{{ g.date|md }} {{ g.rows|length }}건 </span><span class="g-closed">펼치기</span><span class="g-open">접기</span></span></span>
+  </summary>
+{% for r in g.rows %}{{ sale_row(r) if sale else buy_row(r) }}{% endfor %}  </details>
+{% endmacro %}
 {# 매수가 없고 매도만 있는 회사는 있는 것(매도 기록)을 먼저 보여 준다 #}
 {% macro buy_section() %}
 <section class="card trades">
@@ -44,18 +93,7 @@
   {% if c.rows %}
   <div class="tbl" role="table" aria-label="매수 기록">
   <div class="trow thead small dim" role="row"><span role="columnheader">거래일</span><span class="d-only" role="columnheader">신고일</span><span role="columnheader">누가</span><span class="r" role="columnheader">금액</span><span class="r d-only" role="columnheader">주당</span><span class="r" role="columnheader">보유↑</span><span class="d-only" role="columnheader">구분</span><span class="d-only r" role="columnheader">원문</span></div>
-  {% for r in c.rows %}
-  <div class="trow" role="row">
-    <span class="mono small" role="cell">{{ r.date|md }}</span>
-    <span class="mono small dim d-only" role="cell">{{ r.filed|md }}</span>
-    <span class="who" role="cell"><b>{{ r.who }}</b>{% if r.same %}<span class="chip same">같은 사람 {{ r.same }}</span>{% endif %}{% for t in r.tags %}<span class="chip m-only">{{ t }}</span>{% endfor %}{% if r.avg_price %}<span class="pps small dim m-only">주당 {{ r.avg_price|price }} · {{ r.shares|shares }}</span>{% endif %}<a class="small m-only" href="{{ r.url }}" target="_blank" rel="noopener">신고 {{ r.filed|md }} · 원문 ↗</a></span>
-    <span class="mono r" role="cell">{{ r.value|usd }}{% if r.avg_price %}<span class="shares small dim d-only">{{ r.shares|shares }}</span>{% endif %}</span>
-    <span class="mono r d-only" role="cell">{{ r.avg_price|price if r.avg_price else "-" }}</span>
-    <span class="mono r accent" role="cell">{{ r.increase|increase }}</span>
-    <span class="d-only" role="cell"><span class="chips">{% for t in r.tags %}<span class="chip">{{ t }}</span>{% endfor %}</span></span>
-    <span class="d-only r" role="cell"><a class="src" href="{{ r.url }}" target="_blank" rel="noopener">원문 ↗</a></span>
-  </div>
-  {% endfor %}
+  {% for e in c.rows|group_rows %}{% if e.group %}{{ group(e, False) }}{% else %}{{ buy_row(e) }}{% endif %}{% endfor %}
   </div>
   {% else %}
   <p class="small trades-note">최근 60일 동안 임원·이사의 장내 매수 신고는 없어요.</p>
@@ -69,18 +107,7 @@
   {% if c.sale_rows %}
   <div class="tbl" role="table" aria-label="매도 기록">
   <div class="trow thead small dim" role="row"><span role="columnheader">거래일</span><span class="d-only" role="columnheader">신고일</span><span role="columnheader">누가</span><span class="r" role="columnheader">금액</span><span class="r d-only" role="columnheader">주당</span><span class="r" role="columnheader">보유↓</span><span class="d-only" role="columnheader">구분</span><span class="d-only r" role="columnheader">원문</span></div>
-  {% for r in c.sale_rows %}
-  <div class="trow" role="row">
-    <span class="mono small" role="cell">{{ r.date|md }}</span>
-    <span class="mono small dim d-only" role="cell">{{ r.filed|md }}</span>
-    <span class="who" role="cell"><b>{{ r.who }}</b>{% for t in r.tags %}<span class="chip m-only">{{ t }}</span>{% endfor %}{% if "계획 매도" not in r.tags %}<span class="small dim m-only">계획 표시 없음</span>{% endif %}{% if r.avg_price %}<span class="pps small dim m-only">주당 {{ r.avg_price|price }} · {{ r.shares|shares }}</span>{% endif %}<a class="small m-only" href="{{ r.url }}" target="_blank" rel="noopener">신고 {{ r.filed|md }} · 원문 ↗</a></span>
-    <span class="mono r" role="cell">{{ r.value|usd }}{% if r.avg_price %}<span class="shares small dim d-only">{{ r.shares|shares }}</span>{% endif %}</span>
-    <span class="mono r d-only" role="cell">{{ r.avg_price|price if r.avg_price else "-" }}</span>
-    <span class="mono r" role="cell">{{ r.decrease|decrease }}</span>
-    <span class="d-only" role="cell"><span class="chips">{% for t in r.tags %}<span class="chip">{{ t }}</span>{% endfor %}{% if "계획 매도" not in r.tags %}<span class="small dim">계획 표시 없음</span>{% endif %}</span></span>
-    <span class="d-only r" role="cell"><a class="src" href="{{ r.url }}" target="_blank" rel="noopener">원문 ↗</a></span>
-  </div>
-  {% endfor %}
+  {% for e in c.sale_rows|group_rows %}{% if e.group %}{{ group(e, True) }}{% else %}{{ sale_row(e) }}{% endif %}{% endfor %}
   </div>
   {% else %}
   <p class="small trades-note">같은 기간 임원·이사의 장내 매도 신고는 없어요.</p>

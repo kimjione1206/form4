@@ -13,7 +13,7 @@ META = {"as_of_label": "10/2", "as_of": "2026-10-02", "updated": "10/04 06:07", 
 def result(**kw):
     row = {"date": "2026-09-29", "filed": "2026-10-01", "who": "대표이사(CEO)", "value": 1_500_000.0,
            "shares": 61_450.0, "avg_price": 24.41, "same": None,
-           "increase": 0.18, "tags": ["계획 매수"], "url": "https://www.sec.gov/x", "ceo": True}
+           "increase": 0.18, "tags": ["계획 매수"], "url": "https://www.sec.gov/x", "ceo": True, "ciks": ["1"]}
     c = {"issuer_cik": "900", "name": "EXAMPLE CORP", "ticker": "EXM", "slug": "EXM", "qualified": True,
          "people": 5, "total_usd": 2_400_000.0, "ten_pct_usd": 5_000_000.0,
          "avg_price": 24.41, "top_person": {"label": "대표이사(CEO)", "share": 63}, "bulk": None,
@@ -74,7 +74,7 @@ def test_render_site_writes_pages(tmp_path):
     home = (tmp_path / "index.html").read_text()
     detail = (tmp_path / "c" / "EXM" / "index.html").read_text()
     assert "특정 종목의 매수·매도를 권하지 않아요" in home
-    assert "반도체 장비를 만드는 회사" in home and '<span class="nw">매도 0명</span>' in home
+    assert "반도체 장비를 만드는 회사" in home and '<span class="nw">매도 없음</span>' in home
     assert '<span class="chip">대표이사 포함</span><b class="accent">새로</b>' in home
     assert "data-typing" in detail and "+18%" in detail and "대주주(펀드)" in detail
     for f in ["criteria/index.html", "404.html", "style.css", "typing.js"]:
@@ -172,11 +172,11 @@ def test_home_shows_sale_people_and_amount(tmp_path):
     home = (tmp_path / "index.html").read_text()
     rows = re.findall(r'<a class="[^"]*\bitem\b[^"]*".*?</a>', home, re.S)
     assert '<span class="nw">매도 2명</span> · <span class="nw">약 2,800만 원</span>' in rows[0]
-    assert '<span class="nw">매도 0명</span></span>' in rows[1] and "매도 0명</span> ·" not in rows[1]
+    assert '<span class="nw">매도 없음</span></span>' in rows[1] and "매도 없음</span> ·" not in rows[1]
     cell = re.search(r'<span class="[^"]*\bcol-sale\b[^"]*">(.*?)</span>\s*</a>', rows[0], re.S).group(1)
     assert "2명" in cell and "2,800만" in cell
     cell = re.search(r'<span class="[^"]*\bcol-sale\b[^"]*">(.*?)</span>\s*</a>', rows[1], re.S).group(1)
-    assert "0명" in cell and "만" not in cell
+    assert "없음" in cell and "만" not in cell
     assert "건</span>" not in home
 
 
@@ -704,7 +704,8 @@ def test_company_tables_show_price_per_share_and_share_count(tmp_path):
 
 
 def test_same_person_chip_in_buy_table(tmp_path):
-    rows = [dict(result()["rows"][0], same=s, url=f"https://www.sec.gov/{i}") for i, s in enumerate(["A", None, "A"])]
+    rows = [dict(result()["rows"][0], same=s, url=f"https://www.sec.gov/{i}", date=f"2026-09-2{i}")
+            for i, s in enumerate(["A", None, "A"])]  # 거래일이 달라 묶이지 않는 줄
     c = result(rows=rows, top=rows[0])
     render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
     detail = (tmp_path / "c" / "EXM" / "index.html").read_text()
@@ -823,12 +824,12 @@ def test_sell_page_list(tmp_path):
     assert len(rows) == 3
     assert re.search(r'<a class="item" href="/c/SA/" data-rank="1" data-last="2026-09-30" data-total="3000000.0">', rows[0])
     assert re.search(r'href="/c/SB/" data-rank="2" data-last="2026-10-01" data-total="9000000.0"', rows[1])
-    assert '<span class="mono strong accent"><span class="sr-only">인원 </span>4명</span>' in rows[0]
+    assert '<span class="mono strong accent ppl"><span class="sr-only">인원 </span>4명<span class="pbar"' in rows[0]
     assert '<span class="sr-only">총액 </span>42억<span class="unit"> 원</span>' in rows[0]
     assert "$3.0M" in rows[0] and '<span class="mono small dim m-only">최근 9/30</span>' in rows[0]
     assert re.search(r'<span class="[^"]*\bcol-last\b[^"]*"><span class="sr-only">최근 거래 </span>9/30</span>', rows[0])
     assert "가나전자" in rows[0] and "반도체 장비를 만드는 회사" in rows[0] and "계획 매도 포함" in rows[0]
-    assert '<span class="nw">매수 0명</span>' in rows[0] and '<span class="nw">매수 5명</span>' in rows[2]  # 같은 기간 매수(꼬리표 아님)
+    assert '<span class="nw">매수 없음</span>' in rows[0] and '<span class="nw">매수 5명</span>' in rows[2]  # 같은 기간 매수(꼬리표 아님)
     assert re.search(r'<div class="[^"]*\blist-cols\b[^"]*">.*<span class="r">매수</span>', page, re.S)
     assert "조건 충족 3곳" in text and "조건 충족 = 최근 60일 임원·이사 3명 이상이 각자 1만 달러 이상 장내 매도" in text
     bar = re.search(r'<div class="sort" data-sort-bar hidden role="group" aria-label="정렬">(.*?)</div>', page, re.S)
@@ -1104,3 +1105,156 @@ def test_favicon_files_links_and_band_brand(tmp_path):
         top = re.search(r'<div class="band-top">(.*?)</div>', html, re.S)
         assert top and top.group(1).count(brand) == 1, f
         assert ">FORM 4 · KR<" not in html.replace(brand, ""), f  # 아이콘 없는 옛 표시는 없음
+
+
+# ---- 디자인 묶음 B (2026-10-05): 반복 줄 묶기 · 60일 띠 · 인원 막대 · 긴 직함 ----
+
+def buy_row(i, date="2026-09-18", price=17.98, cik=None, tags=(), filed="2026-09-22", same=None):
+    return {"date": date, "filed": filed, "who": "이사", "value": price * 1000, "shares": 1000.0,
+            "avg_price": price, "same": same, "increase": 0.1, "tags": list(tags),
+            "url": f"https://www.sec.gov/g{i}", "ceo": False, "ciks": [cik or str(i)]}
+
+
+def test_group_rows_same_day_same_price_three_or_more():
+    from form4.render import group_rows
+    rows = ([buy_row(i, price=17.981 if i % 2 else 17.979, filed=f"2026-09-2{i}", tags=t)
+             for i, t in enumerate([["계획 매수"], [], ["간접"], ["계획 매수", "간접"]])]
+            + [buy_row(9, price=18.5)]                                     # 가격이 다르면 따로
+            + [buy_row(10, date="2026-09-17"), buy_row(11, date="2026-09-17")]  # 2줄은 안 묶음
+            + [dict(buy_row(i, date="2026-09-16"), avg_price=None) for i in (12, 13, 14)])  # 가격 없음
+    out = group_rows(rows)
+    g = out[0]
+    assert g["group"] and len(g["rows"]) == 4 and g["rows"] == rows[:4]
+    assert (g["date"], g["filed"], g["avg_price"]) == ("2026-09-18", "2026-09-23", 17.98)
+    assert g["value"] == pytest.approx(sum(r["value"] for r in rows[:4])) and g["shares"] == 4000.0
+    assert g["people"] == 4 and g["tags"] == ["계획 매수", "간접"]
+    assert out[1:] == rows[4:]  # 나머지는 한 줄씩 그대로
+    # 같은 사람(번호)이 여러 줄이면 한 명, 공동 신고는 번호를 모두 센다
+    same = group_rows([buy_row(1, cik="7"), buy_row(2, cik="7"), dict(buy_row(3), ciks=["8", "7"])])
+    assert same[0]["people"] == 2
+    # 같은 날·같은 가격이라도 붙어 있지 않으면 따로(표 순서를 바꾸지 않는다)
+    split = [buy_row(1), buy_row(2), buy_row(3, price=20.0), buy_row(4), buy_row(5)]
+    assert [len(e["rows"]) if e.get("group") else 1 for e in group_rows(split)] == [1, 1, 1, 1, 1]
+
+
+def grouped_company():
+    rows = [buy_row(i, tags=t) for i, t in enumerate([["계획 매수"], ["간접"], [], []] + [[]] * 17)]
+    rows[5]["same"] = "A"
+    rows.append(buy_row(99, date="2026-09-10", price=30.0))
+    sales = [dict(SELL, url=f"https://www.sec.gov/s{i}", avg_price=125.0, value=20_000.0, shares=160.0,
+                  tags=["옵션 행사 후 매도"] if i else [], ciks=[str(i)]) for i in range(3)]
+    return result(rows=rows, top=rows[0], sale_people=3, sale_usd=60_000.0, sale_rows=sales)
+
+
+def test_company_table_collapses_repeated_rows(tmp_path):
+    c = grouped_company()
+    render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+    page = (tmp_path / "c" / "EXM" / "index.html").read_text()
+    buys = page[page.index("<h2>매수 기록"):page.index("<h2>매도 기록")]
+    group = re.search(r'<details class="tgroup" role="rowgroup">(.*?)</details>', buys, re.S).group(1)
+    summary = re.search(r'<summary class="trow tsum" role="row">(.*?)</summary>', group, re.S).group(1)
+    text = plain(summary)
+    assert "9/18" in text and "9/22" in text and "임원·이사 21명" in text
+    assert "$378K" in text and "21,000주" in text and "$17.98" in text
+    assert summary.count('role="cell"') == 8
+    assert '<span class="sr-only">9/18 21건 </span>' in summary and "펼치기" in summary and "접기" in summary
+    assert '<span class="g-act small m-only">21건 ' in summary  # 휴대폰: 누가 칸 아래 '21건 펼치기'
+    assert '<span class="chip">계획 매수</span><span class="chip">간접</span>' in summary
+    # 펼치면 원래 줄 21개가 그대로(같은 사람 칩 포함), 묶이지 않은 9/10 줄은 밖에
+    inner = re.findall(r'<div class="trow" role="row">', group)
+    assert len(inner) == 21 and '<span class="chip same">같은 사람 A</span>' in group
+    assert "https://www.sec.gov/g99" not in group and "https://www.sec.gov/g99" in buys
+    sells = page[page.index("<h2>매도 기록"):page.index("용어 풀이")]
+    sg = re.search(r'<summary class="trow tsum" role="row">(.*?)</summary>', sells, re.S).group(1)
+    assert "임원·이사 3명" in plain(sg) and '<span class="chip">옵션 행사 후 매도</span>' in sg
+    assert "계획 표시 없음" in sg
+    css = (tmp_path / "style.css").read_text()
+    assert ".tgroup > summary { list-style: none;" in css and ".tgroup[open] .g-closed" in css
+
+
+def test_group_tags_union_in_first_seen_order():
+    from form4.render import group_rows
+    rows = [dict(buy_row(i), tags=t) for i, t in enumerate([["계획 매도"], ["옵션 행사 후 매도"], ["간접"]])]
+    assert group_rows(rows)[0]["tags"] == ["계획 매도", "옵션 행사 후 매도", "간접"]
+
+
+def test_timeline_marks_and_label():
+    from datetime import date
+    from form4.render import timeline
+    buys = [buy_row(i, date="2026-09-18") for i in range(7)] + [buy_row(9, date="2026-08-04")]
+    sales = [dict(SELL, date="2026-10-02"), dict(SELL, date="2026-10-02"), dict(SELL, date="2026-09-01")]
+    t = timeline(buys, sales, date(2026, 10, 2))
+    assert (t["start"], t["end"]) == ("8/4", "10/2")
+    assert t["label"] == "최근 60일 거래 시점: 매수 8건(2일), 매도 3건(2일)"
+    buy = [m for m in t["marks"] if m["buy"]]
+    sell = [m for m in t["marks"] if not m["buy"]]
+    assert len(buy) == 6 and len(sell) == 3  # 9/18 은 5개까지만 쌓고 '+'
+    assert {m["x"] for m in buy} == {"0.00%", f"{45 / 59 * 100:.2f}%"}
+    assert {m["x"] for m in sell} == {"100.00%", f"{28 / 59 * 100:.2f}%"}
+    assert [p["x"] for p in t["plus"]] == [f"{45 / 59 * 100:.2f}%"]
+    day = sorted(m["y"] for m in buy if m["x"] != "0.00%")
+    assert len(set(day)) == 5 and all(y < t["base"] for y in day)  # 매수는 선 위로 쌓인다
+    assert all(m["y"] > t["base"] for m in sell) and t["base"] < t["height"]
+    assert len({m["y"] for m in sell if m["x"] == "100.00%"}) == 2  # 같은 날 매도 2개는 아래로 쌓인다
+    assert timeline([], [], date(2026, 10, 2)) is None
+    only = timeline(buys[-1:], [], date(2026, 10, 2))
+    assert only["label"] == "최근 60일 거래 시점: 매수 1건(1일), 매도 0건(0일)"
+
+
+def test_company_page_timeline_strip(tmp_path):
+    c = grouped_company()
+    render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+    page = (tmp_path / "c" / "EXM" / "index.html").read_text()
+    strip = re.search(r'<div class="strip card-lite" role="img" aria-label="([^"]+)">(.*?)</div>\s*</div>', page, re.S)
+    assert strip.group(1) == "최근 60일 거래 시점: 매수 22건(2일), 매도 3건(1일)"
+    body = strip.group(2)
+    assert page.index('class="tiles') < strip.start() < page.index("<h2>요약")
+    assert '<svg class="strip-svg" width="100%"' in body and 'aria-hidden="true"' in body
+    assert body.count('fill="#1F3A8A"') == 6 and body.count('stroke="#1F3A8A"') == 3
+    colors = set(re.findall(r'(?:fill|stroke)="(#[0-9A-Fa-f]{3,6})"', body))
+    assert colors <= {"#1F3A8A", "#fff", "#CBD2DC"}
+    assert ">+</text>" in body
+    labels = plain(body)
+    assert "8/4" in labels and "10/2" in labels and "● 매수" in labels and "○ 매도" in labels
+    empty = result(issuer_cik="905", slug="EMP", ticker="EMP", qualified=False, people=0, total_usd=0.0,
+                   rows=[], top=None, tags=[])
+    render_site([empty], {"count": 0, "new": [], "dropped": [], "top": None}, META, {}, tmp_path)
+    assert 'class="strip' not in (tmp_path / "c" / "EMP" / "index.html").read_text()
+
+
+def test_bar_width():
+    from form4.render import bar_width
+    assert bar_width(22, 22) == 48 and bar_width(11, 22) == 24 and bar_width(1, 22) == 4 and bar_width(3, 40) == 4
+    assert bar_width(5, 7) == 34
+
+
+def test_list_people_bars_and_none_wording(tmp_path):
+    a = result(people=10, sale_people=2, sale_usd=20_000.0, sale_rows=[SELL])
+    b = result(issuer_cik="901", name="SECOND CO", slug="SEC2", people=5)
+    render_site([a, b], {"count": 2, "new": [], "dropped": [], "top": a}, META, {}, tmp_path)
+    rows = re.findall(r'<a class="item"[^>]*>.*?</a>', (tmp_path / "index.html").read_text(), re.S)
+    assert '10명<span class="pbar" aria-hidden="true" style="width: 48px"></span>' in rows[0]
+    assert '5명<span class="pbar" aria-hidden="true" style="width: 24px"></span>' in rows[1]
+    assert '<span class="nw">매도 없음</span>' in rows[1] and "매도 0명" not in rows[1]
+    cell = re.search(r'<span class="[^"]*\bcol-sale\b[^"]*">(.*?)</span>\s*</a>', rows[1], re.S).group(1)
+    assert cell == '<span class="sr-only">매도 </span>없음'
+    sell = render_with_sells(tmp_path)
+    srows = re.findall(r'<a class="item"[^>]*>.*?</a>', sell, re.S)
+    assert '4명<span class="pbar" aria-hidden="true" style="width: 48px"></span>' in srows[0]
+    assert '3명<span class="pbar" aria-hidden="true" style="width: 36px"></span>' in srows[1]
+    assert '<span class="nw">매수 없음</span>' in srows[0] and "매수 0명" not in sell
+    css = (tmp_path / "style.css").read_text()
+    assert re.search(r"\.pbar \{[^}]*height: 4px;[^}]*background: #C9D1DC", css)
+
+
+def test_long_officer_title_clamped_on_desktop(tmp_path):
+    long = "사장 겸 대표이사(CEO)·이사회 의장"
+    row = dict(result()["rows"][0], who=long)
+    c = result(rows=[row], top=row, sale_people=1, sale_usd=20_000.0, sale_rows=[dict(SELL, who=long)])
+    render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+    page = (tmp_path / "c" / "EXM" / "index.html").read_text()
+    assert page.count(f'<b title="{long}">{long}</b>') == 2
+    css = (tmp_path / "style.css").read_text()
+    desktop = css[css.index("@media (min-width: 1024px)"):]
+    assert re.search(r"\.who b \{[^}]*-webkit-line-clamp: 2", desktop)
+    assert "-webkit-line-clamp" not in css[:css.index("@media (min-width: 1024px)")].split(".who b")[-1][:200]

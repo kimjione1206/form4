@@ -45,6 +45,7 @@
 <div class="card list">
 <div class="list-head"><h2>조건 충족 {{ results|length }}곳</h2><span class="small dim sort-label" data-sort-label>사람 수 ↓ · 금액 ↓</span>{% if results|length > 1 %}<div class="sort" data-sort-bar hidden role="group" aria-label="정렬"><span class="small dim sort-title">정렬</span><span class="seg"><button type="button" data-sort="people" aria-pressed="true">사람 수</button><button type="button" data-sort="last" aria-pressed="false">최근 거래</button><button type="button" data-sort="total" aria-pressed="false">금액</button></span></div>{% endif %}<p class="small dim list-hint">조건 충족 = 최근 60일 임원·이사 3명 이상이 각자 1만 달러 이상 장내 매도</p></div>
 {% if results %}<div class="list-cols small dim d-only"><span>#</span><span>회사</span><span class="r">인원</span><span class="r">총액(원)</span><span class="r">금액($)</span><span class="r">최근 거래</span><span class="r">매수</span></div>{% endif %}
+{% set most = results|map(attribute="sell_people")|max if results else 0 %}
 {% for c in results %}
   <a class="item" href="/c/{{ c.slug }}/" data-rank="{{ loop.index }}" data-last="{{ c.sell_last_date }}" data-total="{{ c.sell_total_usd }}">
     <span class="mono num">{{ "%02d"|format(loop.index) }}</span>
@@ -52,16 +53,16 @@
       <span class="name">{% if knames[c.issuer_cik] %}{{ knames[c.issuer_cik] }} <span class="small dim">{{ c.name }}</span> {% else %}{{ c.name }} {% endif %}<span class="mono small dim">{{ c.ticker }}</span></span>
       <span class="small dim">{{ lines[c.issuer_cik] }}</span>
       {% if c.sell_tags or c.issuer_cik in new_ciks %}<span class="chips">{{ chips(c.sell_tags) }}{% if c.issuer_cik in new_ciks %}<b class="accent">새로</b>{% endif %}</span>{% endif %}
-      <span class="small m-only"><span class="nw">매수 {{ c.people }}명</span>{% if c.people %} · <span class="nw">{{ c.total_usd|krw(meta.fx_rate) }}</span>{% endif %}</span>
+      <span class="small m-only"><span class="nw">매수 {{ "%d명"|format(c.people) if c.people else "없음" }}</span>{% if c.people %} · <span class="nw">{{ c.total_usd|krw(meta.fx_rate) }}</span>{% endif %}</span>
     </span>
     <span class="item-nums">
-      <span class="mono strong accent"><span class="sr-only">인원 </span>{{ c.sell_people }}명</span>
+      <span class="mono strong accent ppl"><span class="sr-only">인원 </span>{{ c.sell_people }}명<span class="pbar" aria-hidden="true" style="width: {{ bar_width(c.sell_people, most) }}px"></span></span>
       <span class="mono"><span class="sr-only">총액 </span>{{ c.sell_total_usd|krw_short(meta.fx_rate) }}<span class="unit"> 원</span></span>
       <span class="mono small dim"><span class="sr-only">달러 금액 </span>{{ c.sell_total_usd|usd }}</span>
       <span class="mono small dim m-only">최근 {{ c.sell_last_date|md }}</span>
     </span>
     <span class="mono small r d-only col-last"><span class="sr-only">최근 거래 </span>{{ c.sell_last_date|md }}</span>
-    <span class="mono small r d-only col-sale"><span class="sr-only">매수 </span>{{ c.people }}명{% if c.people %}<br><span class="dim">{{ c.total_usd|krw_short(meta.fx_rate) }}</span>{% endif %}</span>
+    <span class="mono small r d-only col-sale"><span class="sr-only">매수 </span>{{ "%d명"|format(c.people) if c.people else "없음" }}{% if c.people %}<br><span class="dim">{{ c.total_usd|krw_short(meta.fx_rate) }}</span>{% endif %}</span>
   </a>
 {% else %}
   <p class="pad">오늘은 조건에 맞는 회사가 없어요.</p>

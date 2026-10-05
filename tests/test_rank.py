@@ -485,3 +485,12 @@ def test_sell_list_sorted_like_buy_list_and_slugs_unchanged():
     assert [c["issuer_cik"] for c in sell_list(ps)] == ["C", "D", "A", "E"]
     assert {c["issuer_cik"]: c["slug"] for c in ps}["E"] == "BUY-E"
     assert [c["issuer_cik"] for c in rank(recs, AS_OF, TITLES)] == ["B"]
+
+
+def test_rows_keep_owner_ids_for_people_count():
+    # 회사 표에서 같은 날·같은 가격 줄을 묶을 때 '임원·이사 N명'을 세려고 줄마다 신고자 번호를 둔다(화면에는 안 보임)
+    recs = buys(2) + [make_rec("j", owners=[director("1"), director("7")], shares=1000, price=20.0)]
+    rows = rank(recs, AS_OF, TITLES)[0]["rows"]
+    assert sorted(map(tuple, (r["ciks"] for r in rows))) == [("0",), ("1",), ("1", "7")]
+    c = one(sells(2) + sold("x", [director("5"), fund("9")], shares=1000, price=20.0))
+    assert sorted(map(tuple, (r["ciks"] for r in c["sale_rows"]))) == [("0",), ("1",), ("5",)]

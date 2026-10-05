@@ -3,7 +3,8 @@
 import json
 import re
 import shutil
-from datetime import date
+from collections import Counter
+from datetime import date, timedelta
 from importlib.resources import files
 from pathlib import Path
 
@@ -144,6 +145,60 @@ def page_description(text: str, limit: int = 150) -> str:
     return out or text[:limit - 1] + "…"
 
 
+def group_rows(rows: list[dict]) -> list[dict]:
+    """회사 표: 붙어 있는 줄 중 거래일·주당 가격(센트 단위)이 같은 줄이 3개 이상이면 한 묶음으로.
+    가격 없는 줄은 묶지 않는다. 묶음이 아닌 줄은 그대로 돌려준다(표 순서 그대로)."""
+    out, i = [], 0
+    while i < len(rows):
+        r, j = rows[i], i + 1
+        if r["avg_price"]:
+            key = (r["date"], round(r["avg_price"], 2))
+            while j < len(rows) and rows[j]["avg_price"] and (rows[j]["date"], round(rows[j]["avg_price"], 2)) == key:
+                j += 1
+        if j - i >= 3:
+            rs = rows[i:j]
+            out.append({"group": True, "rows": rs, "date": r["date"], "filed": max(x["filed"] for x in rs),
+                        "avg_price": round(r["avg_price"], 2), "value": sum(x["value"] for x in rs),
+                        "shares": sum(x["shares"] for x in rs),
+                        "people": len({c for x in rs for c in x["ciks"]}),
+                        "tags": list(dict.fromkeys(t for x in rs for t in x["tags"]))})
+        else:
+            out.extend(rows[i:j])
+        i = j
+    return out
+
+
+def timeline(rows: list[dict], sale_rows: list[dict], as_of: date) -> dict | None:
+    """회사 페이지 60일 띠. 신고 줄마다 거래일에 점 하나: 매수는 선 위로, 매도는 선 아래로 쌓는다.
+    하루 한쪽에 5개까지 그리고 넘으면 '+'. x 는 SVG 폭의 %, y 는 px(점 크기가 화면 폭과 상관없이 같게)."""
+    if not rows and not sale_rows:
+        return None
+    start = as_of - timedelta(days=config.WINDOW_DAYS - 1)
+    buys, sells = Counter(r["date"] for r in rows), Counter(r["date"] for r in sale_rows)
+
+    def room(days: Counter) -> int:  # 선에서 바깥쪽으로 필요한 높이
+        most = max(days.values(), default=0)
+        return 13 + 9 * (min(most, 5) - 1) + (12 if most > 5 else 0) if most else 6
+    up = room(buys)
+    marks, plus = [], []
+    for days, buy in ((buys, True), (sells, False)):
+        for d, n in sorted(days.items()):
+            x = f"{(date.fromisoformat(d) - start).days / (config.WINDOW_DAYS - 1) * 100:.2f}%"
+            sign = -1 if buy else 1
+            marks += [{"x": x, "y": up + sign * (8 + 9 * k), "buy": buy} for k in range(min(n, 5))]
+            if n > 5:
+                plus.append({"x": x, "y": up - 50 if buy else up + 60})
+    return {"start": fmt_md(start.isoformat()), "end": fmt_md(as_of.isoformat()), "base": up,
+            "height": up + room(sells), "marks": marks, "plus": plus,
+            "label": f"최근 {config.WINDOW_DAYS}일 거래 시점: 매수 {len(rows)}건({len(buys)}일), "
+                     f"매도 {len(sale_rows)}건({len(sells)}일)"}
+
+
+def bar_width(n: int, most: int) -> int:
+    """목록 인원 옆 회색 막대 폭(px): 목록에서 가장 많은 인원이 48, 최소 4."""
+    return max(4, round(48 * n / most))
+
+
 def find_forbidden(html: str) -> list[str]:
     text = TAG_RE.sub(" ", html)
     return [w for w in config.FORBIDDEN_WORDS if w in text]
@@ -154,6 +209,8 @@ def _env() -> Environment:
     env.filters.update(usd=fmt_usd, krw=fmt_krw, krw_short=fmt_krw_short,
                        increase=fmt_increase, decrease=fmt_decrease, md=fmt_md,
                        price=fmt_price, shares=fmt_shares)
+    env.filters["group_rows"] = group_rows
+    env.globals["bar_width"] = bar_width
     env.globals["site"] = config.SITE_URL
     env.globals["naver_verification"] = config.NAVER_SITE_VERIFICATION
     return env
@@ -200,7 +257,7 @@ def render_site(profiles: list[dict], brief: dict, meta: dict, companies: dict, 
         summary = summary_segments(c, meta["fx_rate"])
         checked[f"c/{c['slug']}/index.html"] = env.get_template("company.html").render(
             meta=meta, path=f"/c/{c['slug']}/", c=c, k=knames[c["issuer_cik"]], line=lines[c["issuer_cik"]],
-            summary=summary,
+            summary=summary, timeline=timeline(c["rows"], c["sale_rows"], date.fromisoformat(meta["as_of"])),
             description=page_description(company_description(c, knames[c["issuer_cik"]], meta["fx_rate"])))
     for name, html in checked.items():
         bad = find_forbidden(html)
