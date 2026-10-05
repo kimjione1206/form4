@@ -12,7 +12,7 @@ def test_thresholds_match_spec():
 
 
 def test_site_name_constants():
-    assert config.SITE_NAME == "미국 임원 매수 정리"
+    assert config.SITE_NAME == "미국 임원 거래 정리"
     assert config.SITE_TAGLINE == "내부자 거래 공시(Form 4) 한국어 정리"
     dates = [d for d, _ in config.CRITERIA_HISTORY]
     assert dates == sorted(dates, reverse=True) and dates[0] == "2026-10-05"

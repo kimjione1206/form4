@@ -352,7 +352,7 @@ def test_korean_name_shown_first(tmp_path):
     names = {"NVDA": "엔비디아", "OTH": "추천 회사"}  # 금지어가 든 이름은 쓰지 않는다
     render_site([c, other], {"count": 2, "new": [], "dropped": [], "top": c}, META, {}, tmp_path, names)
     detail = (tmp_path / "c" / "NVDA" / "index.html").read_text()
-    assert "<title>엔비디아(NVDA) 임원 매수·매도 기록 · 미국 임원 매수 정리</title>" in detail
+    assert "<title>엔비디아(NVDA) 임원 매수·매도 기록 · 미국 임원 거래 정리</title>" in detail
     h1 = re.search(r"<h1>(.*?)</h1>", detail, re.S).group(1)
     assert h1.startswith("엔비디아 <span") and plain(h1).split() == ["엔비디아", "NVIDIA", "CORP", "·", "NVDA"]
     home = (tmp_path / "index.html").read_text()
@@ -362,7 +362,7 @@ def test_korean_name_shown_first(tmp_path):
     name1 = re.search(r'<span class="name">(.*?)</span>\s*<span class="small dim">', rows[1], re.S).group(1)
     assert name1.startswith("OTHER CO <span") and "추천" not in home
     other_page = (tmp_path / "c" / "OTH" / "index.html").read_text()
-    assert "<title>OTHER CO(OTH) 임원 매수·매도 기록 · 미국 임원 매수 정리</title>" in other_page
+    assert "<title>OTHER CO(OTH) 임원 매수·매도 기록 · 미국 임원 거래 정리</title>" in other_page
     assert "<h1>OTHER CO <span" in other_page
     index = {e["t"]: e for e in json.loads((tmp_path / "search.json").read_text())}
     assert index["NVDA"]["k"] == "엔비디아" and index["OTH"]["k"] == ""
@@ -386,11 +386,11 @@ def test_share_meta_tags(tmp_path):
     render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
     default = "미국 상장사 임원의 자기 회사 주식 거래(합법·공개 신고)를 매일 아침 한국어로 정리해요. 무료, 광고 없음, 투자 권유 아님."
     title, props, canonical = head_meta((tmp_path / "index.html").read_text())
-    assert title == "미국 임원 매수 정리 · 내부자 거래 공시(Form 4) 한국어 정리"
+    assert title == "미국 임원 거래 정리 · 내부자 거래 공시(Form 4) 한국어 정리"
     assert canonical == SITE + "/"
     assert props["description"] == default and props["og:description"] == default
     assert props["og:title"] == title and props["og:url"] == SITE + "/"
-    assert props["og:type"] == "website" and props["og:site_name"] == "미국 임원 매수 정리"
+    assert props["og:type"] == "website" and props["og:site_name"] == "미국 임원 거래 정리"
     assert props["og:image"] == SITE + "/og/home.png" and props["og:locale"] == "ko_KR"
     assert props["twitter:card"] == "summary_large_image"
 
@@ -399,7 +399,7 @@ def test_share_meta_tags(tmp_path):
             "매일 아침 한국어로 정리 · 무료 · 광고 없음")
     assert canonical == SITE + "/c/EXM/" and props["og:url"] == canonical
     assert props["description"] == desc and props["og:description"] == desc
-    assert props["og:title"] == title == "EXAMPLE CORP(EXM) 임원 매수·매도 기록 · 미국 임원 매수 정리"
+    assert props["og:title"] == title == "EXAMPLE CORP(EXM) 임원 매수·매도 기록 · 미국 임원 거래 정리"
 
     for f, path in [("criteria/index.html", "/criteria/"), ("privacy/index.html", "/privacy/")]:
         title, props, canonical = head_meta((tmp_path / f).read_text())
@@ -811,10 +811,10 @@ def render_with_sells(tmp_path, sell_brief=None, names=None):
 def test_sell_page_list(tmp_path):
     page = render_with_sells(tmp_path, names={"SA": "가나전자"})
     title, props, canonical = head_meta(page)
-    assert title == "임원 매도 목록 · 미국 임원 매수 정리" and canonical == SITE + "/sell/"
+    assert title == "임원 매도 목록 · 미국 임원 거래 정리" and canonical == SITE + "/sell/"
     assert props["description"] == ("최근 60일 동안 미국 상장사 임원·이사 3명 이상이 각자 1만 달러 이상 장내 매도한 회사를 "
                                     "매일 아침 한국어로 정리해요. 무료, 광고 없음, 투자 권유 아님.")
-    assert props["og:site_name"] == "미국 임원 매수 정리"
+    assert props["og:site_name"] == "미국 임원 거래 정리"
     assert re.search(r"<h1>임원 매도 목록</h1>", page)
     text = plain(page)
     assert SELL_NOTICE in text
