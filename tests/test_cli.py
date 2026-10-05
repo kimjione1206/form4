@@ -260,7 +260,7 @@ def test_daily_sell_list_info_todo_and_prev_snapshot(tmp_path):
     assert [p["ticker"] for p in json.loads((data / "ranking_prev.json").read_text())] == ["EXM"]
     sell = (dist / "sell" / "index.html").read_text()
     assert 'href="/c/SEL/"' in sell and "매수 목록 (1곳)" in sell and "매도 목록 (1곳)" in sell
-    assert "+0" in sell  # 처음 실행(이전 목록 없음)에는 '새로' 없음
+    assert "오늘 새로 오르거나 빠진 곳은 없어요." in sell and "+0" not in sell  # 처음 실행(이전 목록 없음)에는 '새로' 없음
     assert "매도 목록 (1곳)" in (dist / "index.html").read_text()
     (data / "ranking_prev_sell.json").write_text("[]")
     cli.run([day], day, NOW, FakeSec(pages), fx(), data, dist, log=lambda m: None)

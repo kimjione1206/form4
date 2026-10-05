@@ -1,10 +1,11 @@
 {% extends "base.html" %}
+{% from "_parts.html" import brand %}
 {% block title %}개인정보 안내 · 미국 임원 매수 정리{% endblock %}
 {% block description %}이 사이트는 개인정보를 모으지 않아요. 회원가입·댓글·구독이 없고, 검색어는 브라우저 안에서만 처리해요.{% endblock %}
 {% block body %}
 <header class="band">
   <div class="band-in">
-  <div class="band-top"><a class="back" href="/">← 오늘의 정리</a><span class="mono dim">개인정보</span></div>
+  <div class="band-top"><span class="band-nav">{{ brand() }}<a class="back" href="/">← 오늘의 정리</a></span><span class="mono dim">개인정보</span></div>
   <h1>개인정보 안내</h1>
   </div>
 </header>

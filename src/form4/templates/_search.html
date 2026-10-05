@@ -1,7 +1,8 @@
-{# 검색 상자. 검색어는 search.js 가 브라우저 안에서만 쓴다: input 에 name 이 없어서 JS 가 없어도 주소에 실려 서버로 가지 않는다. #}
-{% macro search_form(id) %}
-<form role="search" class="search" action="#" data-search>
-  <label for="{{ id }}" class="small">종목 검색</label>
+{# 검색 상자. 검색어는 search.js 가 브라우저 안에서만 쓴다: input 에 name 이 없어서 JS 가 없어도 주소에 실려 서버로 가지 않는다.
+   compact: 회사 페이지용 한 줄 상자(제목 글자는 화면 읽기 프로그램에만 읽힌다). #}
+{% macro search_form(id, compact=False) %}
+<form role="search" class="search{% if compact %} search-compact{% endif %}" action="#" data-search>
+  <label for="{{ id }}" class="{{ 'sr-only' if compact else 'small' }}">종목 검색</label>
   <div class="search-row"><input id="{{ id }}" type="search" placeholder="종목 코드 또는 회사 이름 (예: AAPL)" autocomplete="off" spellcheck="false"><button type="submit">찾기</button></div>
   <div class="search-out" data-search-out aria-live="polite" hidden></div>
   <p class="small dim search-note">검색어는 이 브라우저 안에서만 처리돼요.</p>

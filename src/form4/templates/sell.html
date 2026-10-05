@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% from "_search.html" import search_form %}
+{% from "_parts.html" import brand, chips %}
 {# 매도 목록: 첫 화면(index.html)과 같은 짜임새. 칸만 매도 쪽(sell_*)을 쓴다. #}
 {% block title %}임원 매도 목록 · 미국 임원 매수 정리{% endblock %}
 {% block description %}최근 {{ cfg.WINDOW_DAYS }}일 동안 미국 상장사 임원·이사 {{ cfg.MIN_PEOPLE }}명 이상이 각자 1만 달러 이상 장내 매도한 회사를 매일 아침 한국어로 정리해요. 무료, 광고 없음, 투자 권유 아님.{% endblock %}
@@ -7,68 +8,73 @@
 <header class="band band-home">
   <div class="band-in">
     <div class="band-main">
-      <div class="band-top"><span class="mono dim">FORM 4 · KR</span><span class="mono dim m-only">{{ meta.updated }} 갱신</span></div>
+      <div class="band-top">{{ brand() }}<span class="mono dim m-only">{{ meta.updated }} 갱신</span></div>
       <h1>임원 매도 목록</h1>
       <p class="sub">미국 임원 매수 정리 · 내부자 거래 공시(Form 4) 한국어 정리</p>
-      <p class="intro">임원의 자기 회사 주식 거래는 합법이에요. 사고팔면 이틀 안에 미국 증권거래위원회(SEC)에 공개 신고해야 하고, 그 신고를 정리해요.</p>
+      <p class="intro">임원의 자기 회사 주식 거래는 합법이고, 이틀 안에 SEC에 공개 신고돼요.</p>
       <div class="d-only band-search">{{ search_form("q-d") }}</div>
     </div>
     <div class="band-side mono small dim d-only"><span>{{ meta.updated }} 갱신</span><span>미국 {{ meta.as_of_label }} 접수분까지</span><a href="/criteria/#sell">기준 보기 →</a></div>
   </div>
 </header>
-<div class="m-only pad-x">{{ search_form("q-m") }}</div>
+<div class="m-only pad-x">{{ search_form("q-m", compact=True) }}</div>
 
 <div class="cols cols-home">
-<div class="col">
-<section class="card">
+<div class="col col-top">
+<section class="card brief">
   <div class="row-between"><h2>오늘의 정리</h2><span class="mono small dim m-only">미국 {{ meta.as_of_label }} 접수분까지</span></div>
+  {% if brief.new or brief.dropped %}
   <div class="tiles">
     <div class="tile"><span class="small dim">새로</span><span class="mono big accent">+{{ brief.new|length }}</span><span class="small">{{ (knames[brief.new[0].issuer_cik] or brief.new[0].name) if brief.new else "없음" }}</span></div>
     <div class="tile"><span class="small dim">빠짐</span><span class="mono big">−{{ brief.dropped|length }}</span><span class="small">{{ (knames[brief.dropped[0].issuer_cik] or brief.dropped[0].name) if brief.dropped else "없음" }}</span></div>
-    <div class="tile"><span class="small dim">최대 금액</span><span class="mono big">{{ brief.top.sell_total_usd|krw_short(meta.fx_rate) if brief.top else "-" }}</span><span class="small">{{ (knames[brief.top.issuer_cik] or brief.top.name) if brief.top else "" }}</span></div>
+    <div class="tile"><span class="small dim">최대 금액</span><span class="mono big">{{ brief.top.sell_total_usd|krw_short(meta.fx_rate) if brief.top else "없음" }}</span><span class="small">{{ (knames[brief.top.issuer_cik] or brief.top.name) if brief.top else "" }}</span></div>
   </div>
   <p class="small dim">새로 = 오늘 목록에 처음 오른 회사 · 빠짐 = 기간(60일)이 지나 목록에서 빠진 회사</p>
   {% for c in brief.new[:3] %}<p class="small">{{ knames[c.issuer_cik] or c.name }} — 임원·이사 {{ c.sell_people }}명 장내 매도 (거래 {{ c.sell_first_date|md }}~{{ c.sell_last_date|md }})</p>{% endfor %}
   {% if brief.new|length > 3 %}<p class="small dim">외 {{ brief.new|length - 3 }}곳은 아래 목록에서 '새로' 표시로 볼 수 있어요.</p>{% endif %}
-  {% if recent %}<p class="small dim">최근 7일 안에 매도가 있었던 곳</p>
-  {% for c in recent %}<p class="small recent"><a href="/c/{{ c.slug }}/">{{ knames[c.issuer_cik] or c.name }}</a> — 임원·이사 {{ c.sell_people }}명 · 최근 거래 {{ c.sell_last_date|md }}</p>{% endfor %}{% endif %}
+  {% else %}
+  <p class="brief-none">오늘 새로 오르거나 빠진 곳은 없어요.</p>
+  <p class="small">최대 금액 · {% if brief.top %}<span class="mono strong">{{ brief.top.sell_total_usd|krw_short(meta.fx_rate) }}</span> {{ knames[brief.top.issuer_cik] or brief.top.name }}{% else %}없음{% endif %}</p>
+  {% endif %}
   {% if meta.new_filings == 0 %}<p class="small dim">새로 들어온 신고가 없어요 (미국 주말·휴일).</p>{% endif %}
 </section>
 </div>
-<div class="col">
+<div class="col col-main">
 <nav class="tabs" aria-label="목록 고르기"><a href="/">매수 목록 ({{ buy_count }}곳)</a><a href="/sell/" aria-current="page">매도 목록 ({{ results|length }}곳)</a></nav>
-<p class="notice">매도는 세금 납부·생활 자금·미리 정한 계획(10b5-1)·옵션 행사 등 여러 이유로 일어나며, 주가 하락을 뜻하지 않아요. 특정 종목의 매수·매도를 권하지 않아요. <a href="/criteria/#sell">기준 보기</a></p>
-<div class="pad-x m-only">
-  <div class="row-between small dim"><span>조건 충족 {{ results|length }}곳</span><span data-sort-label>사람 수 ↓ · 금액 ↓</span></div>
-  <p class="small dim list-hint">조건 충족 = 최근 60일 임원·이사 3명 이상이 각자 1만 달러 이상 장내 매도</p>
-</div>
 
 <div class="card list">
-<div class="row-between list-head d-only"><div><h2>조건 충족 {{ results|length }}곳</h2><p class="small dim">조건 충족 = 최근 60일 임원·이사 3명 이상이 각자 1만 달러 이상 장내 매도</p></div><span class="small dim" data-sort-label>사람 수 ↓ · 금액 ↓</span></div>
-{% if results|length > 1 %}<div class="sort" data-sort-bar hidden role="group" aria-label="정렬"><span class="small dim">정렬</span><button type="button" data-sort="people" aria-pressed="true">사람 수</button><button type="button" data-sort="last" aria-pressed="false">최근 거래</button><button type="button" data-sort="total" aria-pressed="false">금액</button></div>{% endif %}
-{% if results %}<div class="list-cols small dim d-only"><span>#</span><span>회사</span><span class="r">인원</span><span class="r">총액</span><span class="r">달러</span><span class="r">최근 거래</span><span class="r">매수</span></div>{% endif %}
+<div class="list-head"><h2>조건 충족 {{ results|length }}곳</h2><span class="small dim sort-label" data-sort-label>사람 수 ↓ · 금액 ↓</span>{% if results|length > 1 %}<div class="sort" data-sort-bar hidden role="group" aria-label="정렬"><span class="small dim sort-title">정렬</span><span class="seg"><button type="button" data-sort="people" aria-pressed="true">사람 수</button><button type="button" data-sort="last" aria-pressed="false">최근 거래</button><button type="button" data-sort="total" aria-pressed="false">금액</button></span></div>{% endif %}<p class="small dim list-hint">조건 충족 = 최근 60일 임원·이사 3명 이상이 각자 1만 달러 이상 장내 매도</p></div>
+{% if results %}<div class="list-cols small dim d-only"><span>#</span><span>회사</span><span class="r">인원</span><span class="r">총액(원)</span><span class="r">금액($)</span><span class="r">최근 거래</span><span class="r">매수</span></div>{% endif %}
 {% for c in results %}
   <a class="item" href="/c/{{ c.slug }}/" data-rank="{{ loop.index }}" data-last="{{ c.sell_last_date }}" data-total="{{ c.sell_total_usd }}">
     <span class="mono num">{{ "%02d"|format(loop.index) }}</span>
     <span class="item-main">
       <span class="name">{% if knames[c.issuer_cik] %}{{ knames[c.issuer_cik] }} <span class="small dim">{{ c.name }}</span> {% else %}{{ c.name }} {% endif %}<span class="mono small dim">{{ c.ticker }}</span></span>
       <span class="small dim">{{ lines[c.issuer_cik] }}</span>
-      <span class="small m-only">{% for t in c.sell_tags %}{{ t }} · {% endfor %}매수 {{ c.people }}명{% if c.people %} · {{ c.total_usd|krw(meta.fx_rate) }}{% endif %}{% if c.issuer_cik in new_ciks %} · <b class="accent">새로 · 거래 {{ c.sell_last_date|md }}</b>{% endif %}</span>
-      {% if c.sell_tags or c.issuer_cik in new_ciks %}<span class="small d-only">{% for t in c.sell_tags %}{{ t }}{% if not loop.last %} · {% endif %}{% endfor %}{% if c.issuer_cik in new_ciks %}{% if c.sell_tags %} · {% endif %}<b class="accent">새로</b>{% endif %}</span>{% endif %}
+      {% if c.sell_tags or c.issuer_cik in new_ciks %}<span class="chips">{{ chips(c.sell_tags) }}{% if c.issuer_cik in new_ciks %}<b class="accent">새로</b>{% endif %}</span>{% endif %}
+      <span class="small m-only"><span class="nw">매수 {{ c.people }}명</span>{% if c.people %} · <span class="nw">{{ c.total_usd|krw(meta.fx_rate) }}</span>{% endif %}</span>
     </span>
     <span class="item-nums">
-      <span class="mono strong accent">{{ c.sell_people }}명</span>
-      <span class="mono">{{ c.sell_total_usd|krw_short(meta.fx_rate) }} 원</span>
-      <span class="mono small dim">{{ c.sell_total_usd|usd }}</span>
+      <span class="mono strong accent"><span class="sr-only">인원 </span>{{ c.sell_people }}명</span>
+      <span class="mono"><span class="sr-only">총액 </span>{{ c.sell_total_usd|krw_short(meta.fx_rate) }}<span class="unit"> 원</span></span>
+      <span class="mono small dim"><span class="sr-only">달러 금액 </span>{{ c.sell_total_usd|usd }}</span>
       <span class="mono small dim m-only">최근 {{ c.sell_last_date|md }}</span>
     </span>
-    <span class="mono small r d-only col-last">{{ c.sell_last_date|md }}</span>
-    <span class="mono small r d-only col-sale">{{ c.people }}명{% if c.people %}<br><span class="dim">{{ c.total_usd|krw_short(meta.fx_rate) }}</span>{% endif %}</span>
+    <span class="mono small r d-only col-last"><span class="sr-only">최근 거래 </span>{{ c.sell_last_date|md }}</span>
+    <span class="mono small r d-only col-sale"><span class="sr-only">매수 </span>{{ c.people }}명{% if c.people %}<br><span class="dim">{{ c.total_usd|krw_short(meta.fx_rate) }}</span>{% endif %}</span>
   </a>
 {% else %}
   <p class="pad">오늘은 조건에 맞는 회사가 없어요.</p>
 {% endfor %}
 </div>
+</div>
+<div class="col col-bottom">
+{% if recent %}<section class="card recent-box">
+  <h2>최근 7일 안에 매도가 있었던 곳</h2>
+  {% for c in recent %}<p class="small recent"><a href="/c/{{ c.slug }}/">{{ knames[c.issuer_cik] or c.name }}</a> — 임원·이사 {{ c.sell_people }}명 · 최근 거래 {{ c.sell_last_date|md }}</p>{% endfor %}
+</section>
+{% endif %}
+<p class="notice">매도는 세금 납부·생활 자금·미리 정한 계획(10b5-1)·옵션 행사 등 여러 이유로 일어나며, 주가 하락을 뜻하지 않아요. 특정 종목의 매수·매도를 권하지 않아요. <a href="/criteria/#sell">기준 보기</a></p>
 </div>
 </div>
 <script src="/search.js" defer></script>

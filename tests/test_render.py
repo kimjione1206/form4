@@ -74,8 +74,8 @@ def test_render_site_writes_pages(tmp_path):
     home = (tmp_path / "index.html").read_text()
     detail = (tmp_path / "c" / "EXM" / "index.html").read_text()
     assert "특정 종목의 매수·매도를 권하지 않아요" in home
-    assert "반도체 장비를 만드는 회사" in home and "매도 0명 · <b" in home
-    assert "새로 · 거래 9/29" in home
+    assert "반도체 장비를 만드는 회사" in home and '<span class="nw">매도 0명</span>' in home
+    assert '<span class="chip">대표이사 포함</span><b class="accent">새로</b>' in home
     assert "data-typing" in detail and "+18%" in detail and "대주주(펀드)" in detail
     for f in ["criteria/index.html", "404.html", "style.css", "typing.js"]:
         assert (tmp_path / f).exists()
@@ -120,11 +120,14 @@ def test_empty_day(tmp_path):
 def test_touch_targets_44px(tmp_path):
     render_site([], {"count": 0, "new": [], "dropped": [], "top": None}, META, {}, tmp_path)
     css = (tmp_path / "style.css").read_text()
-    rules = re.findall(r"([^{}]+)\{([^}]*)\}", css)
+    rules = re.findall(r"([^{}]+)\{([^}]*)\}", re.sub(r"/\*.*?\*/", "", css, flags=re.S))
     covered = {s.strip() for sel, body in rules if "min-height: 44px" in body for s in sel.split(",")}
     assert {".replay", ".who a", ".back", ".notice a", ".foot a", ".band-side a", ".src",
             ".search button", ".explain summary", ".copy", ".note-links a"} <= covered
     assert ".replay[hidden] { display: none; }" in css
+    # 음수 여백으로 누르는 곳을 넓혀 이웃과 겹치게 하지 않는다(누르는 곳 44px 규칙에 음수 여백 없음)
+    assert not [sel for sel, body in rules if "min-height: 44px" in body and re.search(r"margin[^;]*: -", body)]
+    assert "-13px" not in css
 
 
 def test_open_to_search_and_operator_trading_policy(tmp_path):
@@ -146,15 +149,15 @@ def test_desktop_layout(tmp_path):
     desktop = css[css.index("@media (min-width: 1024px)"):]
     # 머리띠 안 검색 결과는 겹쳐 떠서 머리띠 오른쪽 정보를 밀어내지 않는다 (휴대폰은 그대로)
     assert re.search(r"\.band-search \.search-out \{[^}]*position: absolute[^}]*z-index", desktop)
-    assert "position: absolute" not in css[:css.index("@media (min-width: 1024px)")]
+    assert not re.search(r"\.search-out[^{]*\{[^}]*position: absolute", css[:css.index("@media (min-width: 1024px)")])
     home = (tmp_path / "index.html").read_text()
     assert re.search(r'<div class="[^"]*\blist-cols\b[^"]*">.*<span class="[^"]*\br\b[^"]*">최근 거래</span>', home, re.S)
     rows = re.findall(r'<a class="[^"]*\bitem\b[^"]*".*?</a>', home, re.S)
     assert len(rows) == 2
-    assert re.search(r'<span class="[^"]*\bcol-last\b[^"]*">9/29</span>', rows[0])
-    assert re.search(r'<span class="[^"]*\bcol-last\b[^"]*">8/27</span>', rows[1])
+    assert re.search(r'<span class="[^"]*\bcol-last\b[^"]*"><span class="sr-only">최근 거래 </span>9/29</span>', rows[0])
+    assert re.search(r'<span class="[^"]*\bcol-last\b[^"]*"><span class="sr-only">최근 거래 </span>8/27</span>', rows[1])
     detail = (tmp_path / "c" / "EXM" / "index.html").read_text()
-    assert re.search(r'<div class="[^"]*\bthead\b[^"]*">.*<span class="[^"]*\bd-only\b[^"]*">신고일</span>', detail, re.S)
+    assert re.search(r'<div class="[^"]*\bthead\b[^"]*"[^>]*>.*<span class="[^"]*\bd-only\b[^"]*"[^>]*>신고일</span>', detail, re.S)
 
 
 SELL = {"date": "2026-09-25", "filed": "2026-09-26", "who": "재무이사(CFO)", "value": 20_000.0,
@@ -168,8 +171,8 @@ def test_home_shows_sale_people_and_amount(tmp_path):
     render_site([a, b], {"count": 2, "new": [], "dropped": [], "top": a}, META, {}, tmp_path)
     home = (tmp_path / "index.html").read_text()
     rows = re.findall(r'<a class="[^"]*\bitem\b[^"]*".*?</a>', home, re.S)
-    assert "대표이사 포함 · 매도 2명 · 약 2,800만 원" in rows[0]
-    assert "대표이사 포함 · 매도 0명<" in rows[1] and "매도 0명 ·" not in rows[1]
+    assert '<span class="nw">매도 2명</span> · <span class="nw">약 2,800만 원</span>' in rows[0]
+    assert '<span class="nw">매도 0명</span></span>' in rows[1] and "매도 0명</span> ·" not in rows[1]
     cell = re.search(r'<span class="[^"]*\bcol-sale\b[^"]*">(.*?)</span>\s*</a>', rows[0], re.S).group(1)
     assert "2명" in cell and "2,800만" in cell
     cell = re.search(r'<span class="[^"]*\bcol-sale\b[^"]*">(.*?)</span>\s*</a>', rows[1], re.S).group(1)
@@ -186,12 +189,12 @@ def test_detail_sell_tile_and_table(tmp_path):
     assert "같은 기간 임원·이사 2명이 약 2,800만 원어치를 장내 매도했어요." in text
     sells = detail[detail.index("<h2>매도 기록"):detail.index("용어 풀이")]
     assert "매도는 세금 납부·생활 자금·미리 정한 계획 등 여러 이유로 일어나며, 주가 하락을 뜻하지 않아요." in sells
-    assert re.search(r'<div class="[^"]*\bthead\b[^"]*">.*<span class="[^"]*\bd-only\b[^"]*">신고일</span>.*보유↓', sells, re.S)
+    assert re.search(r'<div class="[^"]*\bthead\b[^"]*"[^>]*>.*<span class="[^"]*\bd-only\b[^"]*"[^>]*>신고일</span>.*보유↓', sells, re.S)
     assert "9/25" in sells and "$20K" in sells and "−8%" in sells
     assert '<span class="chip m-only">옵션 행사 후 매도</span>' in sells
     assert re.search(r'<a class="small m-only" href="https://www.sec.gov/sell1"[^>]*>신고 9/26 · 원문 ↗</a>', sells)
-    assert re.search(r'<a class="src d-only" href="https://www.sec.gov/sell1"', sells)
-    assert "계획 매도 · 옵션 행사 후 매도" in sells
+    assert re.search(r'<span class="d-only r" role="cell"><a class="src" href="https://www.sec.gov/sell1"', sells)
+    assert '<span class="chips"><span class="chip">계획 매도</span><span class="chip">옵션 행사 후 매도</span></span>' in sells
     assert "장내 매도 신고는 없어요" not in sells
     assert detail.index("<h2>매수 기록") < detail.index("<h2>매도 기록") < detail.index("용어 풀이")
 
@@ -302,7 +305,7 @@ def test_company_page_search_box_near_top(tmp_path):
         form_at = page.index('<form role="search"')
         assert page.index("</header>") < form_at < page.index('<section class="tiles')
         if slug == "TWO":
-            assert page.index('class="note band-note"') < form_at
+            assert form_at < page.index('class="note band-note"')
         assert 'id="q-c"' in page and 'class="c-search' in page
         assert '<script src="/search.js" defer></script>' in page
     home = (tmp_path / "index.html").read_text()
@@ -315,19 +318,18 @@ def test_home_explanations(tmp_path):
     home = (tmp_path / "index.html").read_text()
     text = plain(home)
     assert "(합법)" not in home
-    assert ('<p class="intro">임원의 자기 회사 주식 거래는 합법이에요. 사고팔면 이틀 안에 미국 증권거래위원회(SEC)에 '
-            '공개 신고해야 하고, 그 신고를 정리해요.</p>') in home
+    assert '<p class="intro">임원의 자기 회사 주식 거래는 합법이고, 이틀 안에 SEC에 공개 신고돼요.</p>' in home
     css = (tmp_path / "style.css").read_text()
-    assert ".band .intro { margin: 6px 0 0; font-size: 15px;" in css  # 본문과 같은 크기(작은 글씨 아님)
+    assert re.search(r"\.band \.intro \{[^}]*font-size: 1rem;", css)  # 본문과 같은 크기(작은 글씨 아님)
     assert ".band .sub, .band .intro" not in css
-    assert "새로 = 오늘 목록에 처음 오른 회사 · 빠짐 = 기간(60일)이 지나 목록에서 빠진 회사" in text
     assert "조건 충족 = 최근 60일 임원·이사 3명 이상이 각자 1만 달러 이상 장내 매수" in text
     details = re.search(r"<details[^>]*>\s*<summary[^>]*>매도는 왜 일어나요\?</summary>(.*?)</details>", home, re.S)
     assert details and ("임원은 월급·보너스를 회사 주식으로 받는 경우가 많아요. 그래서 세금 납부, 생활 자금, 분산 투자를 위해 "
                         "팔기도 하고, 몇 달 전에 미리 정해 둔 계획(10b5-1)대로 자동으로 팔기도 해요. 매도가 많다고 주가 "
                         "하락을 뜻하지 않아요. 반대로 매수는 이유가 비교적 단순해서 이 사이트는 매수를 중심으로 정리해요.") \
         in plain(details.group(1))
-    assert home.index('class="notice"') < home.index("<details")
+    # 휴대폰에서 목록이 먼저 보이도록 안내·접기 상자는 목록 뒤(컴퓨터에서는 왼쪽 칸 아래)
+    assert home.index('<div class="card list">') < home.index('class="notice"') < home.index("<details")
 
 
 def test_krw_jo_unit():
@@ -540,9 +542,11 @@ def test_summary_full_text_in_html_and_typing_never_collapses(tmp_path):
     c = result(sale_people=2, sale_usd=20_000.0, sale_rows=[SELL])
     render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
     detail = (tmp_path / "c" / "EXM" / "index.html").read_text()
-    box = re.search(r"<p class=\"summary\" data-typing>(.*?)</p>", detail, re.S).group(1)
+    box = re.search(r"<p class=\"summary\" data-typing aria-hidden=\"true\">(.*?)</p>", detail, re.S).group(1)
     full = "".join(t for t, _ in summary_segments(c, META["fx_rate"]))
     assert re.sub(r"<[^>]+>", "", box) == full  # JS 가 없어도 문장 전체가 보인다
+    sr = re.search(r'<p class="sr-only">(.*?)</p>\s*<p class="summary"', detail, re.S).group(1)
+    assert re.sub(r"<[^>]+>", "", sr) == full  # 화면 읽기 프로그램은 써지는 연출 대신 완성된 문장을 읽는다
     js = (tmp_path / "typing.js").read_text()
     assert "minHeight" in js and "offsetHeight" in js  # 지우기 전에 높이를 고정해 상자가 접히지 않게
     assert "1200" in js  # 길이와 상관없이 약 1.2초 안에 끝
@@ -559,10 +563,10 @@ def test_sale_rows_without_plan_tag_say_so(tmp_path):
     render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
     detail = (tmp_path / "c" / "EXM" / "index.html").read_text()
     sells = detail[detail.index("<h2>매도 기록"):detail.index("용어 풀이")]
-    rows = re.findall(r'<div class="trow">.*?</div>', sells, re.S)
+    rows = re.findall(r'<div class="trow" role="row">.*?\n  </div>', sells, re.S)
     assert len(rows) == 2
     assert "계획 표시 없음" not in rows[0]  # 계획 매도 줄
-    assert '<span class="small d-only">간접 · <span class="dim">계획 표시 없음</span></span>' in rows[1]
+    assert '<span class="chips"><span class="chip">간접</span><span class="small dim">계획 표시 없음</span></span>' in rows[1]
     assert re.search(r'<span class="chip m-only">간접</span><span class="small dim m-only">계획 표시 없음</span>'
                      r'<a class="small m-only"', rows[1])
     buys = detail[detail.index("<h2>매수 기록"):detail.index("<h2>매도 기록")]
@@ -612,24 +616,33 @@ def test_readable_text_sizes_and_contrast(tmp_path):
     render_site([], {"count": 0, "new": [], "dropped": [], "top": None}, META, {}, tmp_path)
     css = (tmp_path / "style.css").read_text()
     rules = {}
-    for sel, body in re.findall(r"([^{}]+)\{([^}]*)\}", css):
+    for sel, body in re.findall(r"([^{}]+)\{([^}]*)\}", re.sub(r"/\*.*?\*/", "", css, flags=re.S)):
         rules.setdefault(sel.strip(), []).append(body)
 
     def size(sel):
-        return next(m.group(1) for body in rules[sel] if (m := re.search(r"font-size: ([\d.]+)px", body)))
-    assert size(".small") == "13"
-    for sel in [".chip", ".replay", ".item .num", ".foot", ".col-sale .dim"]:
-        assert size(sel) == "12", sel
+        return next(m.group(1) for body in rules[sel] if (m := re.search(r"font-size: ([\d.]+)rem", body)))
+    # 글자 크기는 rem(브라우저 글자 설정을 따름), 14·16·18·20·24·32·34px 단계만, 14px 미만 없음
+    assert "html { font-size: 100%; }" in css and "font-size: 1rem;" in rules["body"][0]
+    assert not re.findall(r"font-size: [\d.]+px", css)
+    assert {float(x) * 16 for x in re.findall(r"font-size: ([\d.]+)rem", css)} <= {14, 16, 18, 20, 24, 32, 34}
+    for sel in [".small", ".chip", ".replay", ".item .num", ".foot", ".notice", ".note", ".copy"]:
+        assert size(sel) == "0.875", sel
+    assert size(".card h2") == "1.125" and size(".big") == "1.25"
     num = next(m.group(1) for body in rules[".item .num"] if (m := re.search(r"color: (#\w{6}|var\(--\w+\))", body)))
     num = dict(re.findall(r"--(\w+):(#[0-9A-Fa-f]{6})", css)).get(num[6:-1], num) if num.startswith("var") else num
     assert _contrast(num, "#FFFFFF") >= 4.5 and _contrast(num, "#F8F9FB") >= 4.5  # 첫 화면 순번(01) 글자
-    assert size(".notice") == size(".note") == "13.5"
-    assert min(float(x) for x in re.findall(r"font-size: ([\d.]+)px", css)) >= 12
     var = dict(re.findall(r"--(\w+):(#[0-9A-Fa-f]{6})", css))
     assert _contrast(var["dim"], var["ground"]) >= 4.5  # 바닥글 글자
     notice = rules[".notice"][0]
     assert _contrast(re.search(r"color: (#\w{6})", notice).group(1),
                      re.search(r"background: (#\w{6})", notice).group(1)) >= 4.5
+    # 입력·정렬·링크 복사 테두리는 흰 바탕·남색 띠 모두에서 3:1 이상
+    assert _contrast(var["edge"], "#FFFFFF") >= 3 and _contrast(var["edge"], var["ink"]) >= 3
+    for sel in [".search input", ".seg", ".sort button", ".copy::before"]:
+        assert "var(--edge)" in " ".join(rules[sel]), sel
+    # 키보드 초점 표시: 남색 3px, 남색 띠 안에서는 흰색
+    assert ":focus-visible { outline: 3px solid #1F3A8A; outline-offset: 2px; }" in css
+    assert ".band :focus-visible { outline-color: #fff; }" in css
 
 
 def test_company_description_snippet(tmp_path):
@@ -676,18 +689,18 @@ def test_company_tables_show_price_per_share_and_share_count(tmp_path):
     buys = detail[detail.index("<h2>매수 기록"):detail.index("<h2>매도 기록")]
     sells = detail[detail.index("<h2>매도 기록"):detail.index("용어 풀이")]
     for part in (buys, sells):
-        head = re.search(r'<div class="trow thead[^"]*">(.*?)</div>', part, re.S).group(1)
+        head = re.search(r'<div class="trow thead[^"]*" role="row">(.*?)</div>', part, re.S).group(1)
         cols = re.findall(r"<span[^>]*>([^<]*)</span>", head)
         assert cols[cols.index("금액") + 1] == "주당"
-        assert '<span class="r d-only">주당</span>' in head
-    [row] = re.findall(r'<div class="trow">.*?</div>', buys, re.S)
-    assert '<span class="mono r d-only">$24.41</span>' in row
-    assert re.search(r'<span class="mono r">\$1\.5M<span class="shares small dim d-only">61,450주</span></span>', row)
+        assert '<span class="r d-only" role="columnheader">주당</span>' in head
+    [row] = re.findall(r'<div class="trow" role="row">.*?\n  </div>', buys, re.S)
+    assert '<span class="mono r d-only" role="cell">$24.41</span>' in row
+    assert re.search(r'<span class="mono r" role="cell">\$1\.5M<span class="shares small dim d-only">61,450주</span></span>', row)
     assert '<span class="pps small dim m-only">주당 $24.41 · 61,450주</span>' in row
-    sell_rows = re.findall(r'<div class="trow">.*?</div>', sells, re.S)
+    sell_rows = re.findall(r'<div class="trow" role="row">.*?\n  </div>', sells, re.S)
     assert '<span class="pps small dim m-only">주당 $125 · 160주</span>' in sell_rows[0]
-    assert '<span class="mono r d-only">$125</span>' in sell_rows[0]
-    assert "주당 " not in sell_rows[1] and '<span class="mono r d-only">-</span>' in sell_rows[1]  # 수량 없음
+    assert '<span class="mono r d-only" role="cell">$125</span>' in sell_rows[0]
+    assert "주당 " not in sell_rows[1] and '<span class="mono r d-only" role="cell">-</span>' in sell_rows[1]  # 수량 없음
 
 
 def test_same_person_chip_in_buy_table(tmp_path):
@@ -695,7 +708,7 @@ def test_same_person_chip_in_buy_table(tmp_path):
     c = result(rows=rows, top=rows[0])
     render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
     detail = (tmp_path / "c" / "EXM" / "index.html").read_text()
-    trs = re.findall(r'<div class="trow">.*?</div>', detail[detail.index("<h2>매수 기록"):detail.index("<h2>매도 기록")], re.S)
+    trs = re.findall(r'<div class="trow" role="row">.*?\n  </div>', detail[detail.index("<h2>매수 기록"):detail.index("<h2>매도 기록")], re.S)
     assert ['<span class="chip same">같은 사람 A</span>' in r for r in trs] == [True, False, True]
 
 
@@ -749,7 +762,7 @@ def test_brief_recent_fallback_when_nothing_new(tmp_path):
     old = result(issuer_cik="902", name="OLD CO", slug="OLD", last_date="2026-09-20")
     render_site([a, b, old], {"count": 3, "new": [], "dropped": [], "top": a}, META, {}, tmp_path)
     home = (tmp_path / "index.html").read_text()
-    card = home[home.index("<h2>오늘의 정리"):home.index('class="notice"')]
+    card = re.search(r'<section class="card recent-box">(.*?)</section>', home, re.S).group(1)
     assert RECENT_HEAD in card
     links = re.findall(r'<p class="small recent"><a href="(/c/[^"]+/)">([^<]+)</a> — ([^<]+)</p>', card)
     assert links == [("/c/SEC2/", "SECOND CO", "임원·이사 3명 · 최근 거래 10/1"),
@@ -804,16 +817,18 @@ def test_sell_page_list(tmp_path):
     text = plain(page)
     assert SELL_NOTICE in text
     assert "<details" not in page  # 접지 않고 항상 보인다
-    assert page.index(SELL_NOTICE[:20]) < page.index('<div class="card list">')
+    # 휴대폰에서 목록이 먼저 보이도록 안내는 목록 뒤(컴퓨터에서는 왼쪽 칸 아래)
+    assert page.index('<div class="card list">') < page.index(SELL_NOTICE[:20])
     rows = re.findall(r'<a class="item"[^>]*>.*?</a>', page, re.S)
     assert len(rows) == 3
     assert re.search(r'<a class="item" href="/c/SA/" data-rank="1" data-last="2026-09-30" data-total="3000000.0">', rows[0])
     assert re.search(r'href="/c/SB/" data-rank="2" data-last="2026-10-01" data-total="9000000.0"', rows[1])
-    assert '<span class="mono strong accent">4명</span>' in rows[0]
-    assert "42억 원" in rows[0] and "$3.0M" in rows[0] and '<span class="mono small dim m-only">최근 9/30</span>' in rows[0]
-    assert re.search(r'<span class="[^"]*\bcol-last\b[^"]*">9/30</span>', rows[0])
+    assert '<span class="mono strong accent"><span class="sr-only">인원 </span>4명</span>' in rows[0]
+    assert '<span class="sr-only">총액 </span>42억<span class="unit"> 원</span>' in rows[0]
+    assert "$3.0M" in rows[0] and '<span class="mono small dim m-only">최근 9/30</span>' in rows[0]
+    assert re.search(r'<span class="[^"]*\bcol-last\b[^"]*"><span class="sr-only">최근 거래 </span>9/30</span>', rows[0])
     assert "가나전자" in rows[0] and "반도체 장비를 만드는 회사" in rows[0] and "계획 매도 포함" in rows[0]
-    assert "매수 0명" in rows[0] and "매수 5명" in rows[2]  # 같은 기간 매수 칸
+    assert '<span class="nw">매수 0명</span>' in rows[0] and '<span class="nw">매수 5명</span>' in rows[2]  # 같은 기간 매수(꼬리표 아님)
     assert re.search(r'<div class="[^"]*\blist-cols\b[^"]*">.*<span class="r">매수</span>', page, re.S)
     assert "조건 충족 3곳" in text and "조건 충족 = 최근 60일 임원·이사 3명 이상이 각자 1만 달러 이상 장내 매도" in text
     bar = re.search(r'<div class="sort" data-sort-bar hidden role="group" aria-label="정렬">(.*?)</div>', page, re.S)
@@ -837,21 +852,21 @@ def test_sell_page_briefing_card(tmp_path):
     assert "SELL 911 CO — 임원·이사 3명 장내 매도 (거래 9/10~10/1)" in plain(card)
     assert "새로 = 오늘 목록에 처음 오른 회사 · 빠짐 = 기간(60일)이 지나 목록에서 빠진 회사" in plain(card)
     rows = re.findall(r'<a class="item"[^>]*>.*?</a>', page, re.S)
-    assert '<b class="accent">새로</b>' in rows[1] and "새로 · 거래 10/1" in rows[1]
+    assert '<span class="chip">계획 매도 포함</span><b class="accent">새로</b>' in rows[1]
     assert "최근 7일 안에" not in card
 
 
 def test_sell_page_recent_fallback_and_empty(tmp_path):
     page = render_with_sells(tmp_path)
-    card = page[page.index("<h2>오늘의 정리"):page.index("</section>")]
-    assert "최근 7일 안에 매도가 있었던 곳" in card
+    card = re.search(r'<section class="card recent-box">(.*?)</section>', page, re.S).group(1)
+    assert "<h2>최근 7일 안에 매도가 있었던 곳</h2>" in card
     links = re.findall(r'<p class="small recent"><a href="(/c/[^"]+/)">([^<]+)</a> — ([^<]+)</p>', card)
     assert links == [("/c/SB/", "SELL 911 CO", "임원·이사 3명 · 최근 거래 10/1"),
                      ("/c/SA/", "SELL 910 CO", "임원·이사 4명 · 최근 거래 9/30")]
     render_site([result()], {"count": 1, "new": [], "dropped": [], "top": None}, META, {}, tmp_path)
     empty = (tmp_path / "sell" / "index.html").read_text()
     assert "오늘은 조건에 맞는 회사가 없어요." in empty and "조건 충족 0곳" in plain(empty)
-    assert re.search(r'<span class="mono big">-</span>', empty)
+    assert '최대 금액 · 없음' in plain(empty) and '<span class="mono big">-</span>' not in empty
 
 
 def tabs(html):
@@ -892,7 +907,7 @@ def test_company_band_note_for_sell_list(tmp_path):
     exm = (tmp_path / "c" / "EXM" / "index.html").read_text()
     assert "band-note" not in exm  # 매수 목록만: 지금처럼 안내 없음
     sa = (tmp_path / "c" / "SA" / "index.html").read_text()
-    assert sa.index('class="note band-note"') < sa.index('<form role="search"')
+    assert sa.index('<form role="search"') < sa.index('class="note band-note"')
 
 
 def test_criteria_sell_section(tmp_path):
@@ -947,3 +962,145 @@ def test_krw_thousands_separator_everywhere(tmp_path):
     home = (tmp_path / "index.html").read_text()
     assert "1,030억" in home and "1030억" not in home
     assert "1,030억" in (tmp_path / "c" / "EXM" / "index.html").read_text()
+
+
+def test_empty_briefing_collapses_to_one_line(tmp_path):
+    nv = result(**NVDA, total_usd=1_000_000_000.0)
+    render_site([nv], {"count": 1, "new": [], "dropped": [], "top": nv}, META, {}, tmp_path, {"NVDA": "엔비디아"})
+    for f in ["index.html", "sell/index.html"]:
+        page = (tmp_path / f).read_text()
+        card = page[page.index("<h2>오늘의 정리"):page.index("</section>")]
+        assert '<div class="tiles">' not in card and "+0" not in card and "−0" not in card, f
+        assert "오늘 새로 오르거나 빠진 곳은 없어요." in card, f
+    home = (tmp_path / "index.html").read_text()
+    assert "최대 금액 · 1.4조 엔비디아" in plain(home)
+    assert "최대 금액 · 없음" in plain((tmp_path / "sell" / "index.html").read_text())  # 매도 목록이 비었을 때
+    # 바뀐 게 있으면 타일 그대로, 빈 값은 '-' 대신 '없음'
+    gone = [{"issuer_cik": "555", "name": "GONE CO", "ticker": "GON"}]
+    render_site([nv], {"count": 1, "new": [], "dropped": gone, "top": None}, META, {}, tmp_path)
+    home = (tmp_path / "index.html").read_text()
+    tiles = re.findall(r'<span class="small dim">([^<]+)</span><span class="mono big[^"]*">([^<]+)</span>', home)
+    assert tiles == [("새로", "+0"), ("빠짐", "−1"), ("최대 금액", "없음")]
+    assert "오늘 새로 오르거나 빠진 곳은 없어요." not in home
+
+
+def test_phone_order_list_before_notices(tmp_path):
+    a = result(last_date="2026-10-01")
+    render_site([a], {"count": 1, "new": [], "dropped": [], "top": a}, META, {}, tmp_path)
+    home = (tmp_path / "index.html").read_text()
+    order = ['<section class="card brief">', '<nav class="tabs"', '<div class="card list">',
+             '<section class="card recent-box">', 'class="notice"', "<details"]
+    assert [home.index(x) for x in order] == sorted(home.index(x) for x in order)
+    assert '<div class="col col-top">' in home and '<div class="col col-bottom">' in home
+    css = (tmp_path / "style.css").read_text()
+    desktop = css[css.index("@media (min-width: 1024px)"):]
+    assert ".cols-home { grid-template-columns: 300px minmax(0, 1fr); grid-template-rows: auto 1fr; }" in desktop
+    # 휴대폰 첫 화면 검색은 한 줄(제목은 읽기 프로그램용)
+    assert re.search(r'<div class="m-only pad-x">\s*<form role="search" class="search search-compact"', home)
+
+
+def test_list_columns_units_and_screen_reader_labels(tmp_path):
+    a = result(sale_people=2, sale_usd=20_000.0, sale_rows=[SELL])
+    page = render_with_sells(tmp_path)
+    home = (tmp_path / "index.html").read_text()
+    for html, other in [(home, "매도"), (page, "매수")]:
+        cols = re.search(r'<div class="list-cols[^"]*">(.*?)</div>', html, re.S).group(1)
+        assert re.findall(r"<span[^>]*>([^<]+)</span>", cols) == ["#", "회사", "인원", "총액(원)", "금액($)", "최근 거래", other]
+        row = re.findall(r'<a class="item"[^>]*>.*?</a>', html, re.S)[0]
+        for label in ["인원 ", "총액 ", "달러 금액 ", "최근 거래 ", f"{other} "]:
+            assert f'<span class="sr-only">{label}</span>' in row, label
+        assert '<span class="unit"> 원</span>' in row and "억 원</span>" not in row.split("item-nums")[1].split("m-only")[0]
+        # 휴대폰 목록 제목도 h2 하나(폭과 상관없이)
+        assert len(re.findall(r"<h2>조건 충족 \d+곳</h2>", html)) == 1 and "list-head d-only" not in html
+    css = (tmp_path / "style.css").read_text()
+    desktop = css[css.index("@media (min-width: 1024px)"):]
+    assert re.search(r"\.unit \{[^}]*clip: rect", desktop) and ".unit" not in css[:css.index("@media (min-width: 1024px)")]
+    assert re.search(r"\.sr-only \{[^}]*clip: rect", css)
+
+
+def test_list_chips_at_most_two(tmp_path):
+    many = result(tags=["대표이사 포함", "같은 날 여러 명 매수", "계획 매수 포함"])
+    two = result(issuer_cik="901", name="SECOND CO", slug="SEC2", tags=["대표이사 포함"])
+    render_site([many, two], {"count": 2, "new": [two], "dropped": [], "top": many}, META, {}, tmp_path)
+    rows = re.findall(r'<a class="item"[^>]*>.*?</a>', (tmp_path / "index.html").read_text(), re.S)
+    chips = re.search(r'<span class="chips">(.*?)</span>\s*<span class="small m-only">', rows[0], re.S).group(1)
+    assert re.findall(r'<span class="chip"[^>]*>([^<]+)', chips) == ["대표이사 포함", "같은 날 여러 명 매수", "+1"]
+    assert '<span class="chip" title="계획 매수 포함">+1<span class="sr-only"> 계획 매수 포함</span></span>' in chips
+    assert '<span class="chip">대표이사 포함</span><b class="accent">새로</b>' in rows[1]
+    assert rows[0].count('class="chips"') == 1  # 휴대폰·컴퓨터 같은 칩 줄 하나
+    sell = render_with_sells(tmp_path)
+    srow = re.findall(r'<a class="item"[^>]*>.*?</a>', sell, re.S)[2]
+    assert '<span class="small m-only"><span class="nw">매수 5명</span> · <span class="nw">약 34억 원</span></span>' in srow
+    assert '<span class="chip">매수' not in sell  # '매수 N명'은 꼬리표가 아니다
+
+
+def test_tabs_sort_and_filled_button_styles(tmp_path):
+    a, b = result(), result(issuer_cik="901", name="SECOND CO", slug="SEC2")
+    render_site([a, b], {"count": 2, "new": [], "dropped": [], "top": a}, META, {}, tmp_path)
+    home = (tmp_path / "index.html").read_text()
+    assert re.search(r'<div class="sort" data-sort-bar hidden role="group" aria-label="정렬"><span class="small dim sort-title">정렬</span>'
+                     r'<span class="seg"><button', home)
+    css = (tmp_path / "style.css").read_text()
+    body = lambda sel: re.search(re.escape(sel) + r" \{([^}]*)\}", css).group(1)
+    tab = body('.tabs a[aria-current="page"]')
+    assert "color: var(--accent)" in tab and "border-bottom-color: var(--accent)" in tab and "background" not in tab
+    assert "border-bottom: 2px solid transparent" in body(".tabs a") and "background" not in body(".tabs a")
+    picked = body('.sort button[aria-pressed="true"]')
+    assert "background: var(--picked)" in picked and "color: var(--accent)" in picked and "--picked:#E3E9F8" in css
+    assert "background: #fff" in body(".sort button") and "border: 1px solid var(--edge)" in body(".seg")
+    filled = [sel.strip() for sel, b in re.findall(r"([^{}]+)\{([^}]*)\}", re.sub(r"/\*.*?\*/", "", css, flags=re.S))
+              if "background: var(--accent)" in b]
+    assert filled == [".search button"]  # 남색 채움은 찾기 버튼만
+    desktop = css[css.index("@media (min-width: 1024px)"):]
+    assert ".sort button { min-height: 36px;" in desktop and re.search(r"\.tabs a \{[^}]*min-height: 36px", desktop)
+
+
+def test_company_page_top_is_compact(tmp_path):
+    c = result(issuer_cik="901", name="TWO CO", ticker="TWO", slug="TWO", qualified=False)
+    render_site([result(), c], {"count": 1, "new": [], "dropped": [], "top": None}, META, {}, tmp_path)
+    page = (tmp_path / "c" / "TWO" / "index.html").read_text()
+    top = re.search(r'<div class="band-top">(.*?)</div>', page, re.S).group(1)
+    assert '<a class="back" href="/">← 오늘의 정리</a>' in top
+    assert top.endswith('<button type="button" class="copy" data-copy-link hidden>링크 복사</button>')
+    assert "최근 60일 · 10/04 06:07" in page[:page.index("</header>")]
+    form = re.search(r'<form role="search" class="search search-compact"[^>]*>(.*?)</form>', page, re.S).group(1)
+    assert '<label for="q-c" class="sr-only">종목 검색</label>' in form
+    assert re.search(r'</header>\s*<div class="c-search pad-x">\s*<form', page)
+    assert page.index("</form>") < page.index('class="note band-note"')
+    home = (tmp_path / "index.html").read_text()
+    assert '<label for="q-d" class="small">종목 검색</label>' in home  # 첫 화면 머리띠 검색은 제목 그대로
+    css = (tmp_path / "style.css").read_text()
+    desktop = css[css.index("@media (min-width: 1024px)"):]
+    assert ".search input, .search button { min-height: 40px; }" in desktop and ".search-compact {" in desktop
+
+
+def test_company_tables_have_table_roles(tmp_path):
+    c = result(sale_people=2, sale_usd=1_000_000.0, sale_rows=[SELL, UNPLANNED])
+    render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+    page = (tmp_path / "c" / "EXM" / "index.html").read_text()
+    assert page.count('role="table"') == 2 and '<div class="tbl" role="table" aria-label="매수 기록">' in page
+    assert page.count('role="row"') == 2 + 1 + 2  # 머리 줄 2 + 매수 1 + 매도 2
+    assert page.count('role="columnheader"') == 16 and page.count('role="cell"') == 8 * 3
+    assert '<a class="src" href="https://www.sec.gov/x"' in page and 'role="cell"><a class="src"' in page
+
+
+def test_favicon_files_links_and_band_brand(tmp_path):
+    import struct
+    c = result()
+    render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+    svg = (tmp_path / "favicon.svg").read_text()
+    assert 'viewBox="0 0 64 64"' in svg and 'fill="#1F3A8A"' in svg and ">F4</text>" in svg and "monospace" in svg
+    png = (tmp_path / "apple-touch-icon.png").read_bytes()
+    assert png[:8] == b"\x89PNG\r\n\x1a\n" and struct.unpack(">II", png[16:24]) == (180, 180)
+    ico = (tmp_path / "favicon.ico").read_bytes()
+    assert struct.unpack("<HHH", ico[:6]) == (0, 1, 1) and ico[6:8] == bytes([32, 32])
+    offset = struct.unpack("<I", ico[18:22])[0]
+    assert ico[offset:offset + 8] == b"\x89PNG\r\n\x1a\n"  # 32×32 PNG 를 담은 ICO
+    brand = '<span class="brand mono"><img src="/favicon.svg" width="18" height="18" alt="">FORM 4 · KR</span>'
+    for f in ["index.html", "sell/index.html", "c/EXM/index.html", "criteria/index.html", "privacy/index.html", "404.html"]:
+        html = (tmp_path / f).read_text()
+        assert '<link rel="icon" type="image/svg+xml" href="/favicon.svg">' in html, f
+        assert '<link rel="apple-touch-icon" href="/apple-touch-icon.png">' in html, f
+        top = re.search(r'<div class="band-top">(.*?)</div>', html, re.S)
+        assert top and top.group(1).count(brand) == 1, f
+        assert ">FORM 4 · KR<" not in html.replace(brand, ""), f  # 아이콘 없는 옛 표시는 없음

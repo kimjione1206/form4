@@ -1,0 +1,5 @@
+{# 여러 페이지가 같이 쓰는 작은 조각 #}
+{# 머리띠 맨 위 표시: 18px 아이콘 + FORM 4 · KR. 머리띠가 있는 모든 페이지에 같은 모양으로 쓴다. #}
+{% macro brand() %}<span class="brand mono"><img src="/favicon.svg" width="18" height="18" alt="">FORM 4 · KR</span>{% endmacro %}
+{# 목록 꼬리표: 2개까지 보이고 나머지는 '+N' 칩(마우스를 올리면 이름, 화면 읽기 프로그램은 그대로 읽음) #}
+{% macro chips(tags) %}{% for t in tags[:2] %}<span class="chip">{{ t }}</span>{% endfor %}{% if tags|length > 2 %}<span class="chip" title="{{ tags[2:]|join(', ') }}">+{{ tags|length - 2 }}<span class="sr-only"> {{ tags[2:]|join(', ') }}</span></span>{% endif %}{% endmacro %}
