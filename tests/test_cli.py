@@ -239,3 +239,29 @@ def test_daily_uses_industries_table(tmp_path):
     assert "소매업" in (dist / "index.html").read_text()
     assert json.loads((data / "todo.json").read_text())["industries"] == []
     assert json.loads((data / "industries.json").read_text()) == {"Retail": "소매업"}  # 읽기만 한다
+
+
+def test_daily_sell_list_info_todo_and_prev_snapshot(tmp_path):
+    data, dist = tmp_path / "data", tmp_path / "dist"
+    seed(data)
+    pages = site_pages()
+    day = date(2026, 10, 2)
+    for i in range(3):  # 902 회사: 이사 3명이 각자 2만 달러 장내 매도 → 매도 목록에만 오른다
+        acc, path = f"0000000902-26-{i:06d}", f"edgar/data/902/0000000902-26-{i:06d}.txt"
+        pages[index_url(day)] += f"\n902|SELLER CO|4|{day:%Y%m%d}|{path}"
+        pages["https://www.sec.gov/Archives/" + path] = submission(form4_xml(
+            issuer_cik="902", ticker="SEL", owners=[{"cik": str(80 + i), "director": True}],
+            txs=[{"code": "S", "date": "2026-09-30", "shares": 1000, "price": 20, "after": 500}]))
+    pages["https://data.sec.gov/submissions/CIK0000000902.json"] = json.dumps({"sicDescription": "Banks"})
+    cli.run([day], day, NOW, FakeSec(pages), fx(), data, dist, log=lambda m: None)
+    assert json.loads((data / "companies.json").read_text())["902"]["sic_description"] == "Banks"
+    assert [c["cik"] for c in json.loads((data / "todo.json").read_text())["companies"]] == ["900", "902"]
+    assert [p["ticker"] for p in json.loads((data / "ranking_prev_sell.json").read_text())] == ["SEL"]
+    assert [p["ticker"] for p in json.loads((data / "ranking_prev.json").read_text())] == ["EXM"]
+    sell = (dist / "sell" / "index.html").read_text()
+    assert 'href="/c/SEL/"' in sell and "매수 목록 (1곳)" in sell and "매도 목록 (1곳)" in sell
+    assert "+0" in sell  # 처음 실행(이전 목록 없음)에는 '새로' 없음
+    assert "매도 목록 (1곳)" in (dist / "index.html").read_text()
+    (data / "ranking_prev_sell.json").write_text("[]")
+    cli.run([day], day, NOW, FakeSec(pages), fx(), data, dist, log=lambda m: None)
+    assert "EXAMPLE CORP — 임원·이사 3명 장내 매도 (거래 9/30~9/30)" in (dist / "sell" / "index.html").read_text()

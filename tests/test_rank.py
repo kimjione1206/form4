@@ -385,3 +385,103 @@ def test_same_person_chip_letters_only_for_repeat_solo_rows():
     rows = rank(recs, AS_OF, TITLES)[0]["rows"]
     assert [(r["url"][-2:], r["same"]) for r in rows] == [
         ("a1", "A"), ("b1", "B"), ("a2", "A"), ("c1", None), ("b2", "B"), ("/j", None)]
+
+
+# ---- 매도 목록 (2026-10-05): 매수 목록과 같은 규칙을 장내 매도(S)에 ----
+
+def sells(n, value_each=20_000.0, issuer="900", ticker="EXM", **kw):
+    """사람 n명이 각자 혼자 신고한 매도(저장될 때처럼 신고서당 한 줄)."""
+    return [r for i in range(n) for r in sold(f"{issuer}-s{i}", [director(str(i))], issuer=issuer, ticker=ticker,
+                                                shares=value_each / 20, price=20.0, **kw)]
+
+
+def one(recs):
+    [c] = profiles(recs, AS_OF, TITLES)
+    return c
+
+
+def test_sell_needs_three_people_each_10k():
+    from form4.rank import sell_list
+    assert one(sells(2))["sell_qualified"] is False
+    c = one(sells(3))
+    assert c["sell_qualified"] is True and c["sell_people"] == 3 and c["sell_total_usd"] == 60_000.0
+    assert c["qualified"] is False  # 매수 목록과는 따로
+    small = sells(2) + sold("tiny", [director("9")], shares=495, price=20.0)  # 9,900달러
+    c = one(small)
+    assert c["sell_qualified"] is False and c["sell_people"] == 2
+    assert sell_list(profiles(small, AS_OF, TITLES)) == []
+
+
+def test_sell_counts_people_only_not_entities_or_funds():
+    recs = sells(2) + sold("e", [entity_director("E")], shares=10_000, price=20.0) + sold(
+        "f", [director("8"), fund("F")], shares=1_000, price=20.0)
+    c = one(recs)
+    assert c["sell_people"] == 3 and c["sell_qualified"]  # 법인은 빠지고, 대주주와 함께 낸 이사 8은 셈
+    assert one(sells(2) + sold("e", [entity_director("E")], shares=10_000, price=20.0))["sell_qualified"] is False
+
+
+def test_sell_joint_filing_split_for_person_and_counted_once_in_total():
+    joint = sold("j", [director("1"), director("2"), officer("3", "Chief Financial Officer")],
+                 shares=1_500, price=20.0)  # 30,000달러 → 각자 10,000달러
+    c = one(joint)
+    assert c["sell_qualified"] and c["sell_people"] == 3 and c["sell_total_usd"] == 30_000.0
+    smaller = sold("j", [director("1"), director("2"), director("3")], shares=1_200, price=20.0)  # 각자 8,000달러
+    c = one(smaller)
+    assert c["sell_qualified"] is False and c["sell_people"] == 0 and c["sell_total_usd"] == 0.0
+    # 기준을 넘는 사람이 낀 공동 신고는 회사 합계에 한 번만
+    recs = sells(2) + sold("k", [director("7"), director("8")], shares=2_000, price=20.0)
+    c = one(recs)
+    assert c["sell_people"] == 4 and c["sell_total_usd"] == 80_000.0
+
+
+def test_sell_dates_tags_and_top():
+    recs = (sold("a", [officer("1", "Chief Executive Officer")], date="2026-09-10", shares=1_000, price=20.0,
+                 plan=True)
+            + sold("b", [director("2")], date="2026-09-20", shares=2_000, price=20.0, exercise=True)
+            + sold("c", [director("3")], date="2026-09-25", shares=1_500, price=20.0)
+            + sold("d", [director("4")], date="2026-09-28", shares=10, price=20.0))  # 200달러 → 안 셈
+    c = one(recs)
+    assert (c["sell_first_date"], c["sell_last_date"]) == ("2026-09-10", "2026-09-25")
+    assert c["sell_tags"] == ["대표이사 포함", "계획 매도 포함", "옵션 행사 후 매도 포함"]
+    assert c["sell_top"]["value"] == 40_000.0 and c["sell_top"]["url"].endswith("/b")
+    # 기존 매도 칸(모든 매도)은 그대로
+    assert c["sale_people"] == 4 and c["sale_usd"] == 90_200.0 and len(c["sale_rows"]) == 4
+    plain = one(sells(3))
+    assert plain["sell_tags"] == [] and plain["sell_top"]["value"] == 20_000.0
+
+
+def test_sell_ceo_and_plan_tags_only_from_counted_sellers():
+    recs = sells(3) + sold("x", [officer("9", "Chief Executive Officer")], shares=10, price=20.0, plan=True,
+                           exercise=True)
+    assert one(recs)["sell_tags"] == []
+
+
+def test_sell_bulk_tag_same_trade_date():
+    day = [r for i in range(10) for r in sold(f"d{i}", [director(str(i))], date="2026-09-18",
+                                              filed=f"2026-09-2{1 + i % 2}", shares=1_000, price=20.0)]
+    c = one(day)
+    assert "하루 10명 일괄 매도" in c["sell_tags"]
+    assert not any("일괄" in t for t in one(day[:9])["sell_tags"])
+
+
+def test_sell_without_sales_and_old_shape_rows():
+    c = rank(buys(3), AS_OF, TITLES)[0]
+    assert (c["sell_qualified"], c["sell_people"], c["sell_total_usd"], c["sell_tags"], c["sell_top"],
+            c["sell_first_date"], c["sell_last_date"]) == (False, 0, 0.0, [], None, None, None)
+    old = [{k: v for k, v in make_rec(f"o{i}", code="S", owners=[director(str(i))]).items() if k in store.SALE_KEYS}
+           for i in range(3)]
+    assert one(old)["sell_qualified"] is False  # 금액 없는 예전 모양 줄은 0달러
+
+
+def test_sell_list_sorted_like_buy_list_and_slugs_unchanged():
+    from form4.rank import sell_list
+    recs = (buys(3, issuer="B", ticker="BUY")
+            + sells(3, value_each=50_000, issuer="A", ticker="AAA")
+            + sells(4, value_each=11_000, issuer="C", ticker="CCC")
+            + sells(3, value_each=90_000, issuer="D", ticker="DDD")
+            + sells(3, value_each=50_000, issuer="E", ticker="BUY"))  # 같은 종목 코드 → 뒤에 오는 쪽이 -cik
+    ps = profiles(recs, AS_OF, TITLES)
+    assert ps[0]["issuer_cik"] == "B" and ps[0]["slug"] == "BUY"  # 매수 목록이 먼저(주소 그대로)
+    assert [c["issuer_cik"] for c in sell_list(ps)] == ["C", "D", "A", "E"]
+    assert {c["issuer_cik"]: c["slug"] for c in ps}["E"] == "BUY-E"
+    assert [c["issuer_cik"] for c in rank(recs, AS_OF, TITLES)] == ["B"]

@@ -20,7 +20,9 @@ def result(**kw):
          "sale_people": 0, "sale_usd": 0.0, "sale_rows": [],
          "offering_usd": 0.0,
          "first_date": "2026-09-12", "last_date": "2026-09-29", "tags": ["대표이사 포함"],
-         "officer_titles": [], "rows": [row], "top": row}
+         "officer_titles": [], "rows": [row], "top": row,
+         "sell_qualified": False, "sell_people": 0, "sell_total_usd": 0.0, "sell_first_date": None,
+         "sell_last_date": None, "sell_tags": [], "sell_top": None}
     c.update(kw)
     return c
 
@@ -265,8 +267,8 @@ def test_search_index_and_forms(tmp_path):
           result(issuer_cik="901", name="Apple Inc.", ticker="AAPL", slug="AAPL", qualified=False)]
     render_site(ps, {"count": 1, "new": [], "dropped": [], "top": None}, META, {}, tmp_path)
     assert json.loads((tmp_path / "search.json").read_text()) == [
-        {"t": "AAPL", "n": "Apple Inc.", "k": "", "s": "AAPL", "q": False},
-        {"t": "ZZZ", "n": "EXAMPLE CORP", "k": "", "s": "ZZZ", "q": True}]
+        {"t": "AAPL", "n": "Apple Inc.", "k": "", "s": "AAPL", "q": False, "qs": False},
+        {"t": "ZZZ", "n": "EXAMPLE CORP", "k": "", "s": "ZZZ", "q": True, "qs": False}]
     assert (tmp_path / "search.js").exists()
     for f in ["index.html", "404.html", "c/AAPL/index.html", "c/ZZZ/index.html"]:
         page = (tmp_path / f).read_text()
@@ -443,8 +445,9 @@ def test_sitemap_and_robots(tmp_path):
     assert xml.startswith('<?xml version="1.0" encoding="UTF-8"?>')
     assert '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' in xml
     locs = re.findall(r"<url><loc>([^<]+)</loc><lastmod>2026-10-02</lastmod></url>", xml)
-    assert locs == [SITE + "/", SITE + "/criteria/", SITE + "/privacy/", SITE + "/c/EXM/", SITE + "/c/TWO/"]
-    assert xml.count("<url>") == 5
+    assert locs == [SITE + "/", SITE + "/sell/", SITE + "/criteria/", SITE + "/privacy/", SITE + "/c/EXM/",
+                    SITE + "/c/TWO/"]
+    assert xml.count("<url>") == 6
     assert (tmp_path / "robots.txt").read_text() == (
         "User-agent: *\nAllow: /\nSitemap: https://form4.jmheo.com/sitemap.xml\n")
 
@@ -759,3 +762,174 @@ def test_brief_recent_fallback_when_nothing_new(tmp_path):
     covered = {s.strip() for sel, body in re.findall(r"([^{}]+)\{([^}]*)\}", css) if "min-height: 44px" in body
                for s in sel.split(",")}
     assert ".recent a" in covered
+
+
+# ---- 매도 목록 (2026-10-05) ----
+
+def seller(cik, slug, people, total, last, **kw):
+    return result(**{**dict(issuer_cik=cik, name=f"SELL {cik} CO", ticker=slug, slug=slug, qualified=False, people=0,
+                            total_usd=0.0, rows=[], top=None, tags=[], first_date=None, last_date=None,
+                            sale_people=people, sale_usd=total, sale_rows=[SELL], sell_qualified=True,
+                            sell_people=people, sell_total_usd=total, sell_first_date="2026-09-10",
+                            sell_last_date=last, sell_tags=["계획 매도 포함"], sell_top=SELL), **kw})
+
+
+SELL_NOTICE = ("매도는 세금 납부·생활 자금·미리 정한 계획(10b5-1)·옵션 행사 등 여러 이유로 일어나며, "
+               "주가 하락을 뜻하지 않아요. 특정 종목의 매수·매도를 권하지 않아요.")
+
+
+def render_with_sells(tmp_path, sell_brief=None, names=None):
+    buy = result()
+    a = seller("910", "SA", 4, 3_000_000.0, "2026-09-30")
+    b = seller("911", "SB", 3, 9_000_000.0, "2026-10-01")
+    both = result(issuer_cik="912", name="BOTH CO", ticker="BOTH", slug="BOTH", sell_qualified=True,
+                  sell_people=3, sell_total_usd=500_000.0, sell_first_date="2026-09-01",
+                  sell_last_date="2026-09-05", sell_tags=[])
+    sells = [a, b, both]
+    sell_brief = sell_brief or {"count": 3, "new": [], "dropped": [], "top": b}
+    companies = {"910": {"name": "SELL 910 CO", "sic_description": "Retail", "summary": "반도체 장비를 만드는 회사"}}
+    render_site([buy, both, a, b], {"count": 2, "new": [], "dropped": [], "top": buy}, META, companies, tmp_path,
+                names, None, sells, sell_brief)
+    return (tmp_path / "sell" / "index.html").read_text()
+
+
+def test_sell_page_list(tmp_path):
+    page = render_with_sells(tmp_path, names={"SA": "가나전자"})
+    title, props, canonical = head_meta(page)
+    assert title == "임원 매도 목록 · 미국 임원 매수 정리" and canonical == SITE + "/sell/"
+    assert props["description"] == ("최근 60일 동안 미국 상장사 임원·이사 3명 이상이 각자 1만 달러 이상 장내 매도한 회사를 "
+                                    "매일 아침 한국어로 정리해요. 무료, 광고 없음, 투자 권유 아님.")
+    assert props["og:site_name"] == "미국 임원 매수 정리"
+    assert re.search(r"<h1>임원 매도 목록</h1>", page)
+    text = plain(page)
+    assert SELL_NOTICE in text
+    assert "<details" not in page  # 접지 않고 항상 보인다
+    assert page.index(SELL_NOTICE[:20]) < page.index('<div class="card list">')
+    rows = re.findall(r'<a class="item"[^>]*>.*?</a>', page, re.S)
+    assert len(rows) == 3
+    assert re.search(r'<a class="item" href="/c/SA/" data-rank="1" data-last="2026-09-30" data-total="3000000.0">', rows[0])
+    assert re.search(r'href="/c/SB/" data-rank="2" data-last="2026-10-01" data-total="9000000.0"', rows[1])
+    assert '<span class="mono strong accent">4명</span>' in rows[0]
+    assert "42억 원" in rows[0] and "$3.0M" in rows[0] and '<span class="mono small dim m-only">최근 9/30</span>' in rows[0]
+    assert re.search(r'<span class="[^"]*\bcol-last\b[^"]*">9/30</span>', rows[0])
+    assert "가나전자" in rows[0] and "반도체 장비를 만드는 회사" in rows[0] and "계획 매도 포함" in rows[0]
+    assert "매수 0명" in rows[0] and "매수 5명" in rows[2]  # 같은 기간 매수 칸
+    assert re.search(r'<div class="[^"]*\blist-cols\b[^"]*">.*<span class="r">매수</span>', page, re.S)
+    assert "조건 충족 3곳" in text and "조건 충족 = 최근 60일 임원·이사 3명 이상이 각자 1만 달러 이상 장내 매도" in text
+    bar = re.search(r'<div class="sort" data-sort-bar hidden role="group" aria-label="정렬">(.*?)</div>', page, re.S)
+    assert bar and 'data-sort="last"' in bar.group(1)
+    for js in ["/search.js", "/sort.js"]:
+        assert f'<script src="{js}" defer></script>' in page
+    assert len(re.findall(r'<form role="search"', page)) == 2  # 컴퓨터용·휴대폰용(첫 화면과 같음)
+    for word in ["위험", "팔아라", "매도 신호", "자기 돈"]:
+        assert word not in page
+
+
+def test_sell_page_briefing_card(tmp_path):
+    b = seller("911", "SB", 3, 9_000_000.0, "2026-10-01")
+    news = [b, seller("910", "SA", 4, 3_000_000.0, "2026-09-30")]
+    dropped = [{"issuer_cik": "555", "name": "GONE CO", "ticker": "GON"}]
+    page = render_with_sells(tmp_path, {"count": 3, "new": news, "dropped": dropped, "top": b})
+    card = page[page.index("<h2>오늘의 정리"):page.index("</section>")]
+    tiles = re.findall(r'<span class="small dim">([^<]+)</span><span class="mono big[^"]*">([^<]+)</span>'
+                       r'<span class="small">([^<]*)</span>', card)
+    assert tiles == [("새로", "+2", "SELL 911 CO"), ("빠짐", "−1", "GONE CO"), ("최대 금액", "126억", "SELL 911 CO")]
+    assert "SELL 911 CO — 임원·이사 3명 장내 매도 (거래 9/10~10/1)" in plain(card)
+    assert "새로 = 오늘 목록에 처음 오른 회사 · 빠짐 = 기간(60일)이 지나 목록에서 빠진 회사" in plain(card)
+    rows = re.findall(r'<a class="item"[^>]*>.*?</a>', page, re.S)
+    assert '<b class="accent">새로</b>' in rows[1] and "새로 · 거래 10/1" in rows[1]
+    assert "최근 7일 안에" not in card
+
+
+def test_sell_page_recent_fallback_and_empty(tmp_path):
+    page = render_with_sells(tmp_path)
+    card = page[page.index("<h2>오늘의 정리"):page.index("</section>")]
+    assert "최근 7일 안에 매도가 있었던 곳" in card
+    links = re.findall(r'<p class="small recent"><a href="(/c/[^"]+/)">([^<]+)</a> — ([^<]+)</p>', card)
+    assert links == [("/c/SB/", "SELL 911 CO", "임원·이사 3명 · 최근 거래 10/1"),
+                     ("/c/SA/", "SELL 910 CO", "임원·이사 4명 · 최근 거래 9/30")]
+    render_site([result()], {"count": 1, "new": [], "dropped": [], "top": None}, META, {}, tmp_path)
+    empty = (tmp_path / "sell" / "index.html").read_text()
+    assert "오늘은 조건에 맞는 회사가 없어요." in empty and "조건 충족 0곳" in plain(empty)
+    assert re.search(r'<span class="mono big">-</span>', empty)
+
+
+def tabs(html):
+    nav = re.search(r'<nav class="tabs" aria-label="목록 고르기">(.*?)</nav>', html, re.S)
+    assert nav
+    return re.findall(r'<a href="([^"]+)"( aria-current="page")?>([^<]+)</a>', nav.group(1))
+
+
+def test_list_tabs_on_home_and_sell_page(tmp_path):
+    sell = render_with_sells(tmp_path)
+    home = (tmp_path / "index.html").read_text()
+    assert tabs(home) == [("/", ' aria-current="page"', "매수 목록 (2곳)"), ("/sell/", "", "매도 목록 (3곳)")]
+    assert tabs(sell) == [("/", "", "매수 목록 (2곳)"), ("/sell/", ' aria-current="page"', "매도 목록 (3곳)")]
+    for html in (home, sell):
+        assert html.index("</section>") < html.index('<nav class="tabs"') < html.index('<div class="card list">')
+    assert home.index('<nav class="tabs"') < home.index("조건 충족 2곳")
+    css = (tmp_path / "style.css").read_text()
+    assert re.search(r"\.tabs a \{[^}]*min-height: 44px", css)
+    assert "tabs" not in (tmp_path / "c" / "EXM" / "index.html").read_text()
+
+
+SELL_ONLY_NOTE = ("이 회사는 매도 조건 목록(최근 60일 동안 임원·이사 3명 이상이 각각 1만 달러 이상 장내 매도)에 있어요. "
+                  "매수 조건 목록에는 없어요.")
+BOTH_NOTE = ("이 회사는 매수 조건 목록과 매도 조건 목록(최근 60일 동안 임원·이사 3명 이상이 각각 1만 달러 이상 장내 매도)에 "
+             "모두 있어요.")
+
+
+def test_company_band_note_for_sell_list(tmp_path):
+    render_with_sells(tmp_path)
+    neither = result(issuer_cik="913", name="NEITHER CO", ticker="NEI", slug="NEI", qualified=False)
+    render_site([result(), neither, seller("910", "SA", 4, 3_000_000.0, "2026-09-30"),
+                 result(issuer_cik="912", name="BOTH CO", ticker="BOTH", slug="BOTH", sell_qualified=True)],
+                {"count": 2, "new": [], "dropped": [], "top": None}, META, {}, tmp_path)
+    page = lambda slug: plain((tmp_path / "c" / slug / "index.html").read_text())
+    assert SELL_ONLY_NOTE in page("SA") and NOT_LISTED not in page("SA")
+    assert BOTH_NOTE in page("BOTH") and SELL_ONLY_NOTE not in page("BOTH")
+    assert NOT_LISTED in page("NEI") and SELL_ONLY_NOTE not in page("NEI") and BOTH_NOTE not in page("NEI")
+    exm = (tmp_path / "c" / "EXM" / "index.html").read_text()
+    assert "band-note" not in exm  # 매수 목록만: 지금처럼 안내 없음
+    sa = (tmp_path / "c" / "SA" / "index.html").read_text()
+    assert sa.index('class="note band-note"') < sa.index('<form role="search"')
+
+
+def test_criteria_sell_section(tmp_path):
+    render_site([], {"count": 0, "new": [], "dropped": [], "top": None}, META, {}, tmp_path)
+    page = (tmp_path / "criteria" / "index.html").read_text()
+    sec = re.search(r'<section class="card" id="sell">(.*?)</section>', page, re.S)
+    assert sec
+    text = plain(sec.group(1))
+    for s in ["매도 목록 조건",
+              "거래 코드 S(장내 매도)만 셉니다",
+              "임원 또는 이사만 셉니다",
+              "최근 60일(거래한 날짜 기준, 달력 날짜) 동안 1인 합계 10,000달러 미만은 세지 않습니다.",
+              "금액을 함께 신고한 사람 수로 나눠",
+              "남은 사람이 3명 이상인 회사만 매도 목록에 올립니다.",
+              "정렬: 매도한 사람 많은 순, 같으면 금액 큰 순.",
+              "대표이사 포함", "계획 매도 포함(10b5-1)", "옵션 행사 후 매도 포함",
+              "하루 N명 일괄 매도(같은 거래일에 10명 이상이 매도)",
+              "주가 하락을 뜻하지 않아요"]:
+        assert s in text, s
+    assert page.index("목록에 오르는 조건") < page.index('id="sell"') < page.index("왜 이 기준인가요?")
+    for word in ["위험", "팔아라", "매도 신호", "자기 돈"]:
+        assert word not in page
+
+
+def test_search_index_sell_flag_and_chips(tmp_path):
+    render_with_sells(tmp_path)
+    index = {e["t"]: e for e in json.loads((tmp_path / "search.json").read_text())}
+    assert (index["EXM"]["q"], index["EXM"]["qs"]) == (True, False)
+    assert (index["SA"]["q"], index["SA"]["qs"]) == (False, True)
+    assert (index["BOTH"]["q"], index["BOTH"]["qs"]) == (True, True)
+    js = (tmp_path / "search.js").read_text()
+    assert '"매수 목록"' in js and '"매도 목록"' in js and "e.qs" in js and "조건 충족" not in js
+    assert "chip" in js
+
+
+def test_sell_page_rejects_forbidden_words(tmp_path):
+    bad = seller("910", "SA", 4, 3_000_000.0, "2026-09-30", sell_tags=["급등"])
+    with pytest.raises(ValueError, match="sell/index.html: 금지어"):
+        render_site([result(), bad], {"count": 1, "new": [], "dropped": [], "top": None}, META, {}, tmp_path,
+                    None, None, [bad], {"count": 1, "new": [], "dropped": [], "top": bad})

@@ -2,6 +2,7 @@
 
 공동 신고(한 신고서에 신고자 여럿)는 금액을 회사 총액에 한 번만 더하고,
 1인 1만 달러 판정에는 신고자 각자에게 금액 전체를 붙인다.
+매도 목록은 같은 기준을 장내 매도(S)에 쓰되, 공동 신고 금액은 함께 신고한 사람 수로 나눠 1인 판정을 한다.
 """
 
 import re
@@ -185,6 +186,39 @@ def _top_person(counted: list[dict], qualified: set[str], info: dict[str, dict],
     return {"label": owner_label(info[cik], titles), "share": round(per[cik] / total * 100)}
 
 
+def _sell(sells: list[dict], titles: dict[str, str]) -> dict:
+    """매도 목록 판정. 1인 합계는 공동 신고 금액을 함께 신고한 임원·이사 수로 나눠 두 번 세지 않는다."""
+    per = defaultdict(float)
+    for r in sells:
+        owners = [o["cik"] for o in r["owners"] if _is_insider(o)]
+        for c in owners:
+            per[c] += r.get("value", 0.0) / len(owners)
+    sellers = {c for c, v in per.items() if v >= config.MIN_PERSON_USD}
+    counted = [r for r in sells if any(o["cik"] in sellers for o in r["owners"])]
+    tags = []
+    if any(o["cik"] in sellers and o["is_officer"] and CEO_RE.search(o["title"]) for r in counted for o in r["owners"]):
+        tags.append("대표이사 포함")
+    if any(r.get("plan") for r in counted):
+        tags.append("계획 매도 포함")
+    if any(r.get("exercise") for r in counted):
+        tags.append("옵션 행사 후 매도 포함")
+    by_date = defaultdict(set)
+    for r in counted:
+        by_date[r["date"]] |= {o["cik"] for o in r["owners"] if o["cik"] in sellers}
+    most = max((len(people) for people in by_date.values()), default=0)
+    if most >= config.BULK_MIN_PEOPLE:
+        tags.append(f"하루 {most}명 일괄 매도")
+    return {
+        "sell_qualified": len(sellers) >= config.MIN_PEOPLE,
+        "sell_people": len(sellers),
+        "sell_total_usd": sum(r.get("value", 0.0) for r in counted),
+        "sell_first_date": min((r["date"] for r in counted), default=None),
+        "sell_last_date": max((r["date"] for r in counted), default=None),
+        "sell_tags": tags,
+        "sell_top": max(_sale_rows(counted, titles), key=lambda x: x["value"], default=None),
+    }
+
+
 def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
     """임원·이사 개인의 장내 매수·매도가 하나라도 있고 종목 코드가 있는 회사. 조건 충족이면 qualified."""
     rs = [r for r in rs if not (r["code"] == "P" and r.get("drip"))]  # 배당 재투자는 아예 안 셈
@@ -256,6 +290,7 @@ def _company(cik: str, rs: list[dict], titles: dict[str, str]) -> dict | None:
                                   and not REMARKS_RE.match(o["title"])}),
         "rows": rows,
         "top": max(rows, key=lambda x: x["value"], default=None),
+        **_sell(sells, titles),
     }
 
 
@@ -279,3 +314,9 @@ def profiles(records: list[dict], as_of: date, titles: dict[str, str]) -> list[d
 
 def rank(records: list[dict], as_of: date, titles: dict[str, str]) -> list[dict]:
     return [c for c in profiles(records, as_of, titles) if c["qualified"]]
+
+
+def sell_list(profiles: list[dict]) -> list[dict]:
+    """매도 목록: 매도한 사람 많은 순, 같으면 금액 큰 순, 같으면 이름 순(매수 목록과 같은 정렬)."""
+    return sorted((c for c in profiles if c["sell_qualified"]),
+                  key=lambda c: (-c["sell_people"], -c["sell_total_usd"], c["name"]))

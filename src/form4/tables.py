@@ -74,7 +74,7 @@ def ensure_company_info(results: list[dict], companies: dict, client) -> None:
 
 def build_todo(results: list[dict], companies: dict, titles: dict, profiles: list[dict],
                names: dict, industries: dict | None = None) -> dict:
-    """회사 소개는 조건 충족 목록(results)만, 직함 번역·한국어 이름은 페이지가 있는 모든 회사(profiles)에서.
+    """회사 소개는 매수·매도 목록에 오른 회사(results)만, 직함 번역·한국어 이름은 페이지가 있는 모든 회사(profiles)에서.
     한국어 이름은 표에 아직 없는(빈 문자열로 건너뛴 것도 제외) 깨끗한 종목 코드만.
     업종은 companies.json 의 영어 업종 중 한국어 업종 표에 아직 없는 것."""
     todo_companies = [

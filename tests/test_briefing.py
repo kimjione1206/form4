@@ -33,3 +33,18 @@ def test_recent_within_seven_days_newest_first_then_people():
     assert [x["issuer_cik"] for x in recent(rs, date(2026, 10, 2))] == ["c", "b", "d"]
     assert [x["issuer_cik"] for x in recent(rs[:2], date(2026, 10, 2))] == ["a"]  # 9/26 = 기준일 − 6일
     assert recent([c("old", "2026-09-25", 9)], date(2026, 10, 2)) == []
+
+
+def test_briefing_and_recent_for_sell_list():
+    from datetime import date
+    from form4.briefing import recent
+
+    def s(cik, total, last, people):
+        return {"issuer_cik": cik, "name": f"CO{cik}", "ticker": f"T{cik}", "total_usd": 0.0,
+                "sell_total_usd": total, "sell_last_date": last, "sell_people": people, "last_date": None,
+                "people": 0}
+    rs = [s("1", 10, "2026-09-30", 3), s("2", 99, "2026-10-01", 3), s("3", 50, "2026-10-01", 5)]
+    b = briefing(rs, snapshot(rs[:1]), total="sell_total_usd")
+    assert b["top"]["issuer_cik"] == "2" and [c["issuer_cik"] for c in b["new"]] == ["2", "3"]
+    hits = recent(rs, date(2026, 10, 2), last="sell_last_date", people="sell_people")
+    assert [c["issuer_cik"] for c in hits] == ["3", "2", "1"]

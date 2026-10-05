@@ -11,7 +11,11 @@
   <button type="button" class="copy" data-copy-link hidden>링크 복사</button>
   </div>
 </header>
-{% if not c.qualified %}
+{% if c.qualified and c.sell_qualified %}
+<p class="note band-note">이 회사는 매수 조건 목록과 매도 조건 목록(최근 60일 동안 임원·이사 3명 이상이 각각 1만 달러 이상 장내 매도)에 모두 있어요.</p>
+{% elif c.sell_qualified %}
+<p class="note band-note">이 회사는 매도 조건 목록(최근 60일 동안 임원·이사 3명 이상이 각각 1만 달러 이상 장내 매도)에 있어요. 매수 조건 목록에는 없어요.</p>
+{% elif not c.qualified %}
 <p class="note band-note">이 회사는 매수 조건 목록(최근 60일 동안 임원·이사 3명 이상이 각각 1만 달러 이상 장내 매수)에는 없어요. 아래에서 이 회사 임원·이사의 매수·매도 기록을 그대로 볼 수 있어요.</p>
 {% endif %}
 <div class="c-search pad-x">{{ search_form("q-c") }}</div>

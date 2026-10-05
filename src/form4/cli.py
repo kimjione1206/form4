@@ -14,7 +14,7 @@ from form4.briefing import briefing, snapshot
 from form4.fx import current_rate
 from form4.index import parse_master_index
 from form4.parse import extract_xml, parse_form4
-from form4.rank import profiles
+from form4.rank import profiles, sell_list
 from form4.render import render_site
 from form4.sec import SecClient, SecError, index_url
 from form4.tables import (build_todo, check_tables, ensure_company_info, load_json,
@@ -105,9 +105,12 @@ def run(dates, as_of, now_utc, client, fx_client, data_dir: Path, dist_dir: Path
     names = load_json(data_dir / "korean_names.json", {})
     industries = load_json(data_dir / "industries.json", {})
     all_profiles = profiles(records, as_of, titles)
-    results = [c for c in all_profiles if c["qualified"]]  # 조건 충족 목록(회사 정보·AI 할 일은 이것만)
-    ensure_company_info(results, companies, client)
+    results = [c for c in all_profiles if c["qualified"]]  # 매수 조건 충족 목록
+    sells = sell_list(all_profiles)  # 매도 조건 충족 목록
+    listed = results + [c for c in sells if not c["qualified"]]  # 회사 정보·AI 할 일은 두 목록만(겹치지 않게)
+    ensure_company_info(listed, companies, client)
     brief = briefing(results, load_json(data_dir / "ranking_prev.json", None))
+    sell_brief = briefing(sells, load_json(data_dir / "ranking_prev_sell.json", None), total="sell_total_usd")
     fx = current_rate(fx_client, state.get("fx"))
     meta = {
         "as_of_label": f"{as_of.month}/{as_of.day}", "as_of": as_of.isoformat(),
@@ -115,18 +118,19 @@ def run(dates, as_of, now_utc, client, fx_client, data_dir: Path, dist_dir: Path
         "fx_rate": fx["rate"], "fx_date": fx["date"], "new_filings": total,
         "beacon_token": os.environ.get("FORM4_BEACON_TOKEN", ""),  # 쿠키 없는 방문 통계(비우면 안 넣음)
     }
-    render_site(all_profiles, brief, meta, companies, dist_dir, names, industries)
+    render_site(all_profiles, brief, meta, companies, dist_dir, names, industries, sells, sell_brief)
 
     store.save(data_dir / "transactions.jsonl", records)
     save_json(data_dir / "companies.json", companies)
-    save_json(data_dir / "todo.json", build_todo(results, companies, titles, all_profiles, names,
+    save_json(data_dir / "todo.json", build_todo(listed, companies, titles, all_profiles, names,
                                                             industries))
     save_json(data_dir / "ranking_prev.json", snapshot(results))
+    save_json(data_dir / "ranking_prev_sell.json", snapshot(sells))
     (data_dir / "skipped.log").write_text("".join(s + "\n" for s in skipped))
     last = max(filter(None, [state.get("last_date"), *(d.isoformat() for d in dates)]),
                default=as_of.isoformat())
     save_json(data_dir / "state.json", {"last_date": last, "fx": fx})
-    log(f"완료: 기준 {as_of}, 조건 충족 {len(results)}곳, 거래 줄 {len(records)}개")
+    log(f"완료: 기준 {as_of}, 조건 충족 {len(results)}곳, 매도 목록 {len(sells)}곳, 거래 줄 {len(records)}개")
 
 
 def main(argv=None) -> int:

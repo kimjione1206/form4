@@ -40,6 +40,8 @@
   <p>임원은 월급·보너스를 회사 주식으로 받는 경우가 많아요. 그래서 세금 납부, 생활 자금, 분산 투자를 위해 팔기도 하고, 몇 달 전에 미리 정해 둔 계획(10b5-1)대로 자동으로 팔기도 해요. 매도가 많다고 주가 하락을 뜻하지 않아요. 반대로 매수는 이유가 비교적 단순해서 이 사이트는 매수를 중심으로 정리해요.</p>
 </details>
 </div>
+<div class="col">
+<nav class="tabs" aria-label="목록 고르기"><a href="/" aria-current="page">매수 목록 ({{ results|length }}곳)</a><a href="/sell/">매도 목록 ({{ sell_count }}곳)</a></nav>
 <div class="pad-x m-only">
   <div class="row-between small dim"><span>조건 충족 {{ results|length }}곳</span><span data-sort-label>사람 수 ↓ · 금액 ↓</span></div>
   <p class="small dim list-hint">조건 충족 = 최근 60일 임원·이사 3명 이상이 각자 1만 달러 이상 장내 매수</p>
@@ -70,6 +72,7 @@
 {% else %}
   <p class="pad">오늘은 조건에 맞는 회사가 없어요.</p>
 {% endfor %}
+</div>
 </div>
 </div>
 <script src="/search.js" defer></script>

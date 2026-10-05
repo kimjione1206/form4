@@ -161,31 +161,41 @@ def _env() -> Environment:
 
 def search_index(profiles: list[dict], knames: dict) -> list[dict]:
     return sorted(({"t": c["ticker"], "n": c["name"], "k": knames[c["issuer_cik"]], "s": c["slug"],
-                    "q": c["qualified"]} for c in profiles),
+                    "q": c["qualified"], "qs": c["sell_qualified"]} for c in profiles),
                   key=lambda e: (e["t"], e["s"]))
 
 
 def sitemap(profiles: list[dict], as_of: str) -> str:
-    paths = ["/", "/criteria/", "/privacy/"] + [f"/c/{c['slug']}/" for c in profiles]
+    paths = ["/", "/sell/", "/criteria/", "/privacy/"] + [f"/c/{c['slug']}/" for c in profiles]
     urls = "".join(f"<url><loc>{config.SITE_URL}{p}</loc><lastmod>{as_of}</lastmod></url>\n" for p in paths)
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n')
 
 
 def render_site(profiles: list[dict], brief: dict, meta: dict, companies: dict, out_dir: Path,
-                names: dict | None = None, industries: dict | None = None) -> None:
+                names: dict | None = None, industries: dict | None = None,
+                sells: list[dict] | None = None, sell_brief: dict | None = None) -> None:
     """profiles: 회사 페이지를 만들 모든 회사. 그중 qualified 인 것이 첫 화면 목록(순서 그대로).
     names: 종목 코드 → 한국어 회사 이름 표(data/korean_names.json).
-    industries: SEC 영어 업종 → 한국어 업종 표(data/industries.json)."""
+    industries: SEC 영어 업종 → 한국어 업종 표(data/industries.json).
+    sells: 매도 목록(rank.sell_list 순서 그대로), sell_brief: 매도 목록의 '오늘의 정리'."""
     env = _env()
     results = [c for c in profiles if c["qualified"]]
+    sells = sells or []
+    sell_brief = sell_brief or {"count": 0, "new": [], "dropped": [], "top": None}
     lines = {c["issuer_cik"]: company_line(c["issuer_cik"], companies, industries) for c in profiles}
     knames = {c["issuer_cik"]: korean_name(c["ticker"], names or {}) for c in profiles}
     new_ciks = {c["issuer_cik"] for c in brief["new"]}
     recent_buys = [] if brief["new"] else recent(results, date.fromisoformat(meta["as_of"]))
+    recent_sells = [] if sell_brief["new"] else recent(sells, date.fromisoformat(meta["as_of"]),
+                                                       last="sell_last_date", people="sell_people")
     checked = {"index.html": env.get_template("index.html").render(
         meta=meta, path="/", brief=brief, results=results, lines=lines, knames=knames, new_ciks=new_ciks,
-        recent=recent_buys)}
+        recent=recent_buys, sell_count=len(sells)),
+        "sell/index.html": env.get_template("sell.html").render(
+        meta=meta, path="/sell/", brief=sell_brief, results=sells, lines=lines, knames=knames,
+        new_ciks={c["issuer_cik"] for c in sell_brief["new"]}, recent=recent_sells, buy_count=len(results),
+        cfg=config)}
     for c in profiles:
         summary = summary_segments(c, meta["fx_rate"])
         checked[f"c/{c['slug']}/index.html"] = env.get_template("company.html").render(

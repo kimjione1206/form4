@@ -67,6 +67,9 @@ a { color: var(--accent); } a:hover { color: #142660; }
 .explain { margin: 0 16px; background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 0 16px; }
 .explain summary { min-height: 44px; padding: 12px 0; font-weight: 700; cursor: pointer; }
 .explain p { margin: 0 0 14px; font-size: 13px; }
+.tabs { display: flex; gap: 8px; margin: 0 16px; }
+.tabs a { flex: 1; display: flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 14px; font-size: 14px; font-weight: 500; color: #374151; background: #fff; border: 1px solid var(--line); border-radius: 6px; text-decoration: none; }
+.tabs a[aria-current="page"] { color: #fff; background: var(--accent); border-color: var(--accent); font-weight: 700; }
 /* 컴퓨터 화면용 묶음: 휴대폰에서는 상자가 없는 것처럼(display: contents) 두어 모양이 그대로다 */
 .band-in, .band-main, .cols, .col { display: contents; }
 .d-only { display: none; }
@@ -85,6 +88,7 @@ a { color: var(--accent); } a:hover { color: #142660; }
   .band-side { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; flex: none; }
   .band-side a { color: #CBD3E0; display: inline-flex; align-items: center; min-height: 44px; margin: -13px 0; }
   .card, .notice, .note, .explain { margin: 0; }
+  .tabs { margin: 0; } .tabs a { flex: none; padding: 0 20px; }
   .band-note { width: min(1200px, 100% - 48px); margin: 0 auto; }
   .band-search { margin-top: 10px; max-width: 520px; }
   .c-search { width: min(1200px, 100% - 48px); margin: 0 auto; }

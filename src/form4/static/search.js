@@ -50,8 +50,15 @@
           a.textContent = (e.k ? e.k + " " : "") + e.n + " ";
           var t = document.createElement("span");
           t.className = "mono small dim";
-          t.textContent = e.t + (e.q ? " · 조건 충족" : "");
+          t.textContent = e.t;
           a.appendChild(t);
+          [[e.q, "매수 목록"], [e.qs, "매도 목록"]].forEach(function (x) {
+            if (!x[0]) return;
+            var chip = document.createElement("span");
+            chip.className = "chip";
+            chip.textContent = x[1];
+            a.appendChild(chip);
+          });
           out.appendChild(a);
         });
       }, function () {
