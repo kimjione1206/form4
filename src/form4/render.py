@@ -33,7 +33,7 @@ def fmt_krw_short(usd: float, rate: float) -> str:
         return f"{s}조"
     if round(won / 1e4) >= 10000:
         eok = won / 1e8
-        s = f"{eok:.0f}" if eok >= 10 else f"{eok:.1f}".rstrip("0").rstrip(".")
+        s = f"{eok:,.0f}" if eok >= 10 else f"{eok:.1f}".rstrip("0").rstrip(".")
         return f"{s}억"
     return f"{won / 1e4:,.0f}만"
 

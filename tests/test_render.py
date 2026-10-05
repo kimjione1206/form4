@@ -335,7 +335,7 @@ def test_krw_jo_unit():
     assert fmt_krw_short(999_950_000_000, 1) == "1조"       # 9999.5억 → 반올림하면 1조
     assert fmt_krw_short(2_000_000_000_000, 1) == "2조"
     assert fmt_krw_short(13_046_000_000_000, 1) == "13조"
-    assert fmt_krw_short(999_900_000_000, 1) == "9999억"
+    assert fmt_krw_short(999_900_000_000, 1) == "9,999억"
     assert fmt_krw(1_304_600_000_000, 1) == "약 1.3조 원"
     assert fmt_krw_short(2_400_000, 1400) == "34억" and fmt_krw_short(71_425, 1400) == "1억"
 
@@ -933,3 +933,17 @@ def test_sell_page_rejects_forbidden_words(tmp_path):
     with pytest.raises(ValueError, match="sell/index.html: 금지어"):
         render_site([result(), bad], {"count": 1, "new": [], "dropped": [], "top": None}, META, {}, tmp_path,
                     None, None, [bad], {"count": 1, "new": [], "dropped": [], "top": bad})
+
+
+# ---- 디자인 묶음 A (2026-10-05) ----
+
+def test_krw_thousands_separator_everywhere(tmp_path):
+    assert fmt_krw_short(103_000_000_000, 1) == "1,030억" and fmt_krw(103_000_000_000, 1) == "약 1,030억 원"
+    assert fmt_krw_short(840_000_000, 1) == "8.4억" and fmt_krw_short(1_304_600_000_000, 1) == "1.3조"
+    c = result(total_usd=103_000_000_000 / 1400, people=5)
+    text = "".join(t for t, _ in summary_segments(c, 1400))
+    assert "약 1,030억 원" in text
+    render_site([c], {"count": 1, "new": [], "dropped": [], "top": c}, META, {}, tmp_path)
+    home = (tmp_path / "index.html").read_text()
+    assert "1,030억" in home and "1030억" not in home
+    assert "1,030억" in (tmp_path / "c" / "EXM" / "index.html").read_text()
