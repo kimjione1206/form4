@@ -95,11 +95,6 @@
     "ticker": "HELP"
   },
   {
-    "issuer_cik": "1521332",
-    "name": "Aptiv PLC",
-    "ticker": "APTV"
-  },
-  {
     "issuer_cik": "896493",
     "name": "Hyperscale Data, Inc.",
     "ticker": "GPUS"
@@ -220,9 +215,9 @@
     "ticker": "ADC"
   },
   {
-    "issuer_cik": "78003",
-    "name": "PFIZER INC",
-    "ticker": "PFE"
+    "issuer_cik": "1521332",
+    "name": "Aptiv PLC",
+    "ticker": "APTV"
   },
   {
     "issuer_cik": "1788257",
@@ -265,14 +260,14 @@
     "ticker": "FGBI"
   },
   {
-    "issuer_cik": "1437958",
-    "name": "COASTAL FINANCIAL CORP",
-    "ticker": "CCB"
-  },
-  {
     "issuer_cik": "2040127",
     "name": "Karman Holdings Inc.",
     "ticker": "KRMN"
+  },
+  {
+    "issuer_cik": "1437958",
+    "name": "COASTAL FINANCIAL CORP",
+    "ticker": "CCB"
   },
   {
     "issuer_cik": "1840572",
@@ -330,11 +325,6 @@
     "ticker": "MATW"
   },
   {
-    "issuer_cik": "1130713",
-    "name": "NEIGHBORHOOD INTELLIGENCE, INC.",
-    "ticker": "NXH"
-  },
-  {
     "issuer_cik": "24090",
     "name": "CITIZENS, INC.",
     "ticker": "CIA"
@@ -358,6 +348,11 @@
     "issuer_cik": "1306830",
     "name": "Celanese Corp",
     "ticker": "CE"
+  },
+  {
+    "issuer_cik": "1130713",
+    "name": "BED BATH & BEYOND, INC.",
+    "ticker": "BBBY"
   },
   {
     "issuer_cik": "1841761",

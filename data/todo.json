@@ -111,11 +111,6 @@
       "sic_description": "Security Brokers, Dealers & Flotation Companies"
     },
     {
-      "cik": "1576280",
-      "name": "Guardant Health, Inc.",
-      "sic_description": "Services-Medical Laboratories"
-    },
-    {
       "cik": "1694426",
       "name": "Delek US Holdings, Inc.",
       "sic_description": "Petroleum Refining"
@@ -176,11 +171,6 @@
       "sic_description": "Services-Business Services, NEC"
     },
     {
-      "cik": "70318",
-      "name": "TENET HEALTHCARE CORP",
-      "sic_description": "Services-General Medical & Surgical Hospitals, NEC"
-    },
-    {
       "cik": "1088856",
       "name": "CORCEPT THERAPEUTICS INC",
       "sic_description": "Pharmaceutical Preparations"
@@ -189,6 +179,11 @@
       "cik": "1517413",
       "name": "Fastly, Inc.",
       "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "1576280",
+      "name": "Guardant Health, Inc.",
+      "sic_description": "Services-Medical Laboratories"
     },
     {
       "cik": "1876042",
@@ -266,11 +261,6 @@
       "sic_description": "Services-Computer Programming, Data Processing, Etc."
     },
     {
-      "cik": "1477333",
-      "name": "Cloudflare, Inc.",
-      "sic_description": "Services-Prepackaged Software"
-    },
-    {
       "cik": "2007855",
       "name": "Venture Global, Inc.",
       "sic_description": "Natural Gas Distribution"
@@ -286,14 +276,14 @@
       "sic_description": "Wholesale-Drugs, Proprietaries & Druggists' Sundries"
     },
     {
+      "cik": "70318",
+      "name": "TENET HEALTHCARE CORP",
+      "sic_description": "Services-General Medical & Surgical Hospitals, NEC"
+    },
+    {
       "cik": "921582",
       "name": "IMAX CORP",
       "sic_description": "Photographic Equipment & Supplies"
-    },
-    {
-      "cik": "1069258",
-      "name": "KRATOS DEFENSE & SECURITY SOLUTIONS, INC.",
-      "sic_description": "Guided Missiles & Space Vehicles & Parts"
     },
     {
       "cik": "1539838",
@@ -321,11 +311,6 @@
       "sic_description": "Cable & Other Pay Television Services"
     },
     {
-      "cik": "1571949",
-      "name": "Intercontinental Exchange, Inc.",
-      "sic_description": "Security & Commodity Brokers, Dealers, Exchanges & Services"
-    },
-    {
       "cik": "858877",
       "name": "CISCO SYSTEMS, INC.",
       "sic_description": "Computer Communications Equipment"
@@ -334,6 +319,11 @@
       "cik": "1657573",
       "name": "Xometry, Inc.",
       "sic_description": "Services-Business Services, NEC"
+    },
+    {
+      "cik": "1571949",
+      "name": "Intercontinental Exchange, Inc.",
+      "sic_description": "Security & Commodity Brokers, Dealers, Exchanges & Services"
     },
     {
       "cik": "1816581",
@@ -421,14 +411,19 @@
       "sic_description": "Security Brokers, Dealers & Flotation Companies"
     },
     {
-      "cik": "319201",
-      "name": "KLA CORP",
-      "sic_description": "Optical Instruments & Lenses"
+      "cik": "1477333",
+      "name": "Cloudflare, Inc.",
+      "sic_description": "Services-Prepackaged Software"
     },
     {
       "cik": "1642896",
       "name": "Samsara Inc.",
       "sic_description": "Services-Computer Integrated Systems Design"
+    },
+    {
+      "cik": "319201",
+      "name": "KLA CORP",
+      "sic_description": "Optical Instruments & Lenses"
     },
     {
       "cik": "1649904",
@@ -454,6 +449,11 @@
       "cik": "1100682",
       "name": "CHARLES RIVER LABORATORIES INTERNATIONAL, INC.",
       "sic_description": "Services-Commercial Physical & Biological Research"
+    },
+    {
+      "cik": "1069258",
+      "name": "KRATOS DEFENSE & SECURITY SOLUTIONS, INC.",
+      "sic_description": "Guided Missiles & Space Vehicles & Parts"
     },
     {
       "cik": "1478320",
@@ -501,142 +501,7 @@
       "sic_description": "Laboratory Analytical Instruments"
     }
   ],
-  "industries": [
-    "Accident & Health Insurance",
-    "Air Transportation, Nonscheduled",
-    "Air Transportation, Scheduled",
-    "Aircraft",
-    "Books: Publishing or  Publishing & Printing",
-    "Cable & Other Pay Television Services",
-    "Canned, Fruits, Veg, Preserves, Jams & Jellies",
-    "Carpets & Rugs",
-    "Commercial Banks, NEC",
-    "Communications Equipment, NEC",
-    "Communications Services, NEC",
-    "Computer & office Equipment",
-    "Computer Communications Equipment",
-    "Computer Storage Devices",
-    "Electric & Other Services Combined",
-    "Electric Lighting & Wiring Equipment",
-    "Electrical Industrial Apparatus",
-    "Electrical Work",
-    "Electronic Components & Accessories",
-    "Electronic Components, NEC",
-    "Electronic Computers",
-    "Fabricated Plate Work (Boiler Shops)",
-    "Farm Machinery & Equipment",
-    "Fats & Oils",
-    "Footwear, (No Rubber)",
-    "Games, Toys & Children's Vehicles (No Dolls & Bicycles)",
-    "General Bldg Contractors - Nonresidential Bldgs",
-    "General Bldg Contractors - Residential Bldgs",
-    "General Industrial Machinery & Equipment, NEC",
-    "Gold and Silver Ores",
-    "Guided Missiles & Space Vehicles & Parts",
-    "Hospital & Medical Service Plans",
-    "Hotels & Motels",
-    "Household Appliances",
-    "Household Audio & Video Equipment",
-    "Household Furniture",
-    "Industrial Instruments For Measurement, Display, and Control",
-    "Industrial Organic Chemicals",
-    "Instruments For Meas & Testing of  Electricity & Elec Signals",
-    "Insurance Agents, Brokers & Service",
-    "Laboratory Analytical Instruments",
-    "Lumber & Wood Products (No Furniture)",
-    "Measuring & Controlling Devices, NEC",
-    "Medicinal Chemicals & Botanical Products",
-    "Metal Doors, Sash, Frames, Moldings & Trim",
-    "Metal Forgings & Stampings",
-    "Metal Mining",
-    "Metal Shipping Barrels, Drums, Kegs & Pails",
-    "Mining & Quarrying of  Nonmetallic Minerals (No Fuels)",
-    "Miscellaneous Chemical Products",
-    "Miscellaneous Electrical Machinery, Equipment & Supplies",
-    "Miscellaneous Fabricated Metal Products",
-    "Motors & Generators",
-    "Natural Gas Distribution",
-    "Natural Gas Transmission",
-    "Newspapers: Publishing or  Publishing & Printing",
-    "Office Machines, NEC",
-    "Oil & Gas Field Services, NEC",
-    "Optical Instruments & Lenses",
-    "Ordnance & Accessories, (No Vehicles/Guided Missiles)",
-    "Orthopedic, Prosthetic & Surgical Appliances & Supplies",
-    "Patent Owners & Lessors",
-    "Perfumes, Cosmetics & Other Toilet Preparations",
-    "Personal Credit Institutions",
-    "Petroleum Refining",
-    "Photographic Equipment & Supplies",
-    "Plastics Products, NEC",
-    "Primary Production of  Aluminum",
-    "Printed Circuit Boards",
-    "Radio & Tv Broadcasting & Communications Equipment",
-    "Railroad Equipment",
-    "Real Estate Agents & Managers (For Others)",
-    "Refuse Systems",
-    "Retail-Auto Dealers & Gasoline Stations",
-    "Retail-Building Materials, Hardware, Garden Supply",
-    "Retail-Family Clothing Stores",
-    "Retail-Grocery Stores",
-    "Retail-Home Furniture, Furnishings & Equipment Stores",
-    "Retail-Lumber & Other Building Materials Dealers",
-    "Retail-Miscellaneous Retail",
-    "Retail-Variety Stores",
-    "Rolling Drawing & Extruding of  Nonferrous Metals",
-    "Rubber & Plastics Footwear",
-    "Search, Detection, Navigation, Guidance, Aeronautical Sys",
-    "Security & Commodity Brokers, Dealers, Exchanges & Services",
-    "Security Brokers, Dealers & Flotation Companies",
-    "Services-Advertising",
-    "Services-Advertising Agencies",
-    "Services-Commercial Physical & Biological Research",
-    "Services-Computer Processing & Data Preparation",
-    "Services-Consumer Credit Reporting, Collection Agencies",
-    "Services-Educational Services",
-    "Services-Engineering, Accounting, Research, Management",
-    "Services-Equipment Rental & Leasing, NEC",
-    "Services-General Medical & Surgical Hospitals, NEC",
-    "Services-Health Services",
-    "Services-Help Supply Services",
-    "Services-Home Health Care Services",
-    "Services-Hospitals",
-    "Services-Management Consulting Services",
-    "Services-Management Services",
-    "Services-Membership Sports & Recreation Clubs",
-    "Services-Miscellaneous Amusement & Recreation",
-    "Services-Miscellaneous Business Services",
-    "Services-Miscellaneous Equipment Rental & Leasing",
-    "Services-Offices & Clinics of  Doctors of  Medicine",
-    "Services-Personal Services",
-    "Services-Prepackaged Software",
-    "Services-Skilled Nursing Care Facilities",
-    "Services-To Dwellings & Other Buildings",
-    "Services-Video Tape Rental",
-    "Silver Ores",
-    "Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics",
-    "Special Industry Machinery (No Metalworking Machinery)",
-    "Special Industry Machinery, NEC",
-    "Sporting & Athletic Goods, NEC",
-    "Steel Pipe & Tubes",
-    "Steel Works, Blast Furnaces & Rolling Mills (Coke Ovens)",
-    "Surety Insurance",
-    "Switchgear & Switchboard Apparatus",
-    "Telegraph & Other Message Communications",
-    "Telephone & Telegraph Apparatus",
-    "Telephone Communications (No Radiotelephone)",
-    "Television Broadcasting Stations",
-    "Trucking (No Local)",
-    "Water Transportation",
-    "Wholesale-Apparel, Piece Goods & Notions",
-    "Wholesale-Computers & Peripheral Equipment & Software",
-    "Wholesale-Drugs, Proprietaries & Druggists' Sundries",
-    "Wholesale-Groceries, General Line",
-    "Wholesale-Industrial Machinery & Equipment",
-    "Wholesale-Jewelry, Watches, Precious Stones & Metals",
-    "Wholesale-Machinery, Equipment & Supplies",
-    "X-Ray Apparatus & Tubes & Related Irradiation Apparatus"
-  ],
+  "industries": [],
   "names": [
     {
       "n": "EQT Corp",
@@ -671,10 +536,6 @@
       "t": "RCMT"
     },
     {
-      "n": "Karooooo Ltd.",
-      "t": "KARO"
-    },
-    {
       "n": "Nano Nuclear Energy Inc.",
       "t": "NNE"
     },
@@ -691,12 +552,12 @@
       "t": "ORCL"
     },
     {
-      "n": "ADVANCED ENERGY INDUSTRIES INC",
-      "t": "AEIS"
-    },
-    {
       "n": "Gold.com, Inc.",
       "t": "GOLD"
+    },
+    {
+      "n": "ADVANCED ENERGY INDUSTRIES INC",
+      "t": "AEIS"
     },
     {
       "n": "Voyager Technologies, Inc./TX",
@@ -735,10 +596,6 @@
       "t": "BETA"
     },
     {
-      "n": "Aptiv PLC",
-      "t": "APTV"
-    },
-    {
       "n": "VERISIGN INC/CA",
       "t": "VRSN"
     },
@@ -757,10 +614,6 @@
     {
       "n": "AbbVie Inc.",
       "t": "ABBV"
-    },
-    {
-      "n": "ANALOG DEVICES INC",
-      "t": "ADI"
     },
     {
       "n": "Marvell Technology, Inc.",
@@ -785,10 +638,6 @@
     {
       "n": "QUEST DIAGNOSTICS INC",
       "t": "DGX"
-    },
-    {
-      "n": "FREEPORT-MCMORAN INC",
-      "t": "FCX"
     },
     {
       "n": "DORIAN LPG LTD.",
@@ -855,10 +704,6 @@
       "t": "IBTA"
     },
     {
-      "n": "Global Business Travel Group, Inc.",
-      "t": "GBTG"
-    },
-    {
       "n": "ECOLAB INC.",
       "t": "ECL"
     },
@@ -883,8 +728,12 @@
       "t": "DGNX"
     },
     {
-      "n": "INCYTE CORP",
-      "t": "INCY"
+      "n": "Global Business Travel Group, Inc.",
+      "t": "GBTG"
+    },
+    {
+      "n": "ANALOG DEVICES INC",
+      "t": "ADI"
     },
     {
       "n": "Global Water Resources, Inc.",
@@ -923,16 +772,16 @@
       "t": "PG"
     },
     {
-      "n": "COHU INC",
-      "t": "COHU"
-    },
-    {
       "n": "RENAISSANCERE HOLDINGS LTD",
       "t": "RNR"
     },
     {
       "n": "ICU MEDICAL INC/DE",
       "t": "ICUI"
+    },
+    {
+      "n": "FREEPORT-MCMORAN INC",
+      "t": "FCX"
     },
     {
       "n": "MADRIGAL PHARMACEUTICALS, INC.",
@@ -945,10 +794,6 @@
     {
       "n": "TYLER TECHNOLOGIES INC",
       "t": "TYL"
-    },
-    {
-      "n": "Intercontinental Exchange, Inc.",
-      "t": "ICE"
     },
     {
       "n": "BORGWARNER INC",
@@ -1003,10 +848,6 @@
       "t": "XMTR"
     },
     {
-      "n": "Bridgewater Bancshares Inc",
-      "t": "BWB"
-    },
-    {
       "n": "GLOBE LIFE INC.",
       "t": "GL"
     },
@@ -1027,10 +868,6 @@
       "t": "HIMS"
     },
     {
-      "n": "GENERAL DYNAMICS CORP",
-      "t": "GD"
-    },
-    {
       "n": "Inhibrx Biosciences, Inc.",
       "t": "INBX"
     },
@@ -1045,6 +882,10 @@
     {
       "n": "Q2 Holdings, Inc.",
       "t": "QTWO"
+    },
+    {
+      "n": "COHU INC",
+      "t": "COHU"
     },
     {
       "n": "Versigent PLC",
@@ -1065,10 +906,6 @@
     {
       "n": "Nu Holdings Ltd.",
       "t": "NU"
-    },
-    {
-      "n": "CASTLE BIOSCIENCES INC",
-      "t": "CSTL"
     },
     {
       "n": "DICK'S SPORTING GOODS, INC.",
@@ -1115,12 +952,12 @@
       "t": "CHRD"
     },
     {
-      "n": "CHURCH & DWIGHT CO INC /DE/",
-      "t": "CHD"
-    },
-    {
       "n": "Mineralys Therapeutics, Inc.",
       "t": "MLYS"
+    },
+    {
+      "n": "INCYTE CORP",
+      "t": "INCY"
     },
     {
       "n": "WEST PHARMACEUTICAL SERVICES INC",
@@ -1133,6 +970,10 @@
     {
       "n": "APPLIED OPTOELECTRONICS, INC.",
       "t": "AAOI"
+    },
+    {
+      "n": "Intercontinental Exchange, Inc.",
+      "t": "ICE"
     },
     {
       "n": "EBAY INC",
@@ -1153,6 +994,10 @@
     {
       "n": "Vulcan Infrastructure & Power Inc.",
       "t": "GREE"
+    },
+    {
+      "n": "Karooooo Ltd.",
+      "t": "KARO"
     },
     {
       "n": "WEALTHFRONT CORP",
@@ -1259,10 +1104,6 @@
       "t": "NP"
     },
     {
-      "n": "PC CONNECTION INC",
-      "t": "CNXN"
-    },
-    {
       "n": "Okeanis Eco Tankers Corp.",
       "t": "ECO"
     },
@@ -1277,10 +1118,6 @@
     {
       "n": "MARSH & MCLENNAN COMPANIES, INC.",
       "t": "MRSH"
-    },
-    {
-      "n": "EverCommerce Inc.",
-      "t": "EVCM"
     },
     {
       "n": "Braveheart Bio, Inc.",
@@ -1299,16 +1136,8 @@
       "t": "AZO"
     },
     {
-      "n": "M/I HOMES, INC.",
-      "t": "MHO"
-    },
-    {
       "n": "HUNTINGTON INGALLS INDUSTRIES, INC.",
       "t": "HII"
-    },
-    {
-      "n": "PITNEY BOWES INC /DE/",
-      "t": "PBI"
     },
     {
       "n": "COMMVAULT SYSTEMS INC",
@@ -1333,6 +1162,10 @@
     {
       "n": "GLOBUS MEDICAL INC",
       "t": "GMED"
+    },
+    {
+      "n": "CASTLE BIOSCIENCES INC",
+      "t": "CSTL"
     },
     {
       "n": "CBL & ASSOCIATES PROPERTIES INC",
@@ -1371,10 +1204,6 @@
       "t": "HSTM"
     },
     {
-      "n": "GATX CORP",
-      "t": "GATX"
-    },
-    {
       "n": "Texas Roadhouse, Inc.",
       "t": "TXRH"
     },
@@ -1399,10 +1228,6 @@
       "t": "SBRA"
     },
     {
-      "n": "RESMED INC",
-      "t": "RMD"
-    },
-    {
       "n": "Kymera Therapeutics, Inc.",
       "t": "KYMR"
     },
@@ -1423,12 +1248,12 @@
       "t": "AMGN"
     },
     {
-      "n": "TERADYNE, INC",
-      "t": "TER"
+      "n": "CHURCH & DWIGHT CO INC /DE/",
+      "t": "CHD"
     },
     {
-      "n": "Fortrea Holdings Inc.",
-      "t": "FTRE"
+      "n": "TERADYNE, INC",
+      "t": "TER"
     },
     {
       "n": "Keysight Technologies, Inc.",
@@ -1439,20 +1264,8 @@
       "t": "PWP"
     },
     {
-      "n": "MediaAlpha, Inc.",
-      "t": "MAX"
-    },
-    {
-      "n": "DELTA AIR LINES, INC.",
-      "t": "DAL"
-    },
-    {
       "n": "ETSY INC",
       "t": "ETSY"
-    },
-    {
-      "n": "Cricut, Inc.",
-      "t": "CRCT"
     },
     {
       "n": "APPLIED MATERIALS INC /DE",
@@ -1471,6 +1284,14 @@
       "t": "ICLR"
     },
     {
+      "n": "EverCommerce Inc.",
+      "t": "EVCM"
+    },
+    {
+      "n": "PITNEY BOWES INC /DE/",
+      "t": "PBI"
+    },
+    {
       "n": "Safe Pro Group Inc.",
       "t": "SPAI"
     },
@@ -1485,10 +1306,6 @@
     {
       "n": "New Oriental Education & Technology Group Inc.",
       "t": "EDU"
-    },
-    {
-      "n": "F5, INC.",
-      "t": "FFIV"
     },
     {
       "n": "OLD DOMINION FREIGHT LINE, INC.",
@@ -1559,10 +1376,6 @@
       "t": "VMRK"
     },
     {
-      "n": "Happen, Inc.",
-      "t": "HAPN"
-    },
-    {
       "n": "PHINIA INC.",
       "t": "PHIN"
     },
@@ -1575,16 +1388,16 @@
       "t": "AVAH"
     },
     {
+      "n": "MediaAlpha, Inc.",
+      "t": "MAX"
+    },
+    {
       "n": "CDW Corp",
       "t": "CDW"
     },
     {
       "n": "CHEMED CORP",
       "t": "CHE"
-    },
-    {
-      "n": "NEWMONT Corp /DE/",
-      "t": "NEM"
     },
     {
       "n": "US Foods Holding Corp.",
@@ -1623,6 +1436,10 @@
       "t": "GLW"
     },
     {
+      "n": "PC CONNECTION INC",
+      "t": "CNXN"
+    },
+    {
       "n": "Immunome Inc.",
       "t": "IMNM"
     },
@@ -1639,10 +1456,6 @@
       "t": "NEGG"
     },
     {
-      "n": "WESTINGHOUSE AIR BRAKE TECHNOLOGIES CORP",
-      "t": "WAB"
-    },
-    {
       "n": "Edwards Lifesciences Corp",
       "t": "EW"
     },
@@ -1653,6 +1466,10 @@
     {
       "n": "Monopar Therapeutics",
       "t": "MNPR"
+    },
+    {
+      "n": "GENERAL DYNAMICS CORP",
+      "t": "GD"
     },
     {
       "n": "HOME DEPOT, INC.",
@@ -1673,6 +1490,10 @@
     {
       "n": "eToro Group Ltd.",
       "t": "ETOR"
+    },
+    {
+      "n": "Aptiv PLC",
+      "t": "APTV"
     },
     {
       "n": "Accelerant Holdings",
@@ -1719,12 +1540,16 @@
       "t": "ALRM"
     },
     {
-      "n": "SouthState Bank Corp",
-      "t": "SSB"
-    },
-    {
       "n": "APPIAN CORP",
       "t": "APPN"
+    },
+    {
+      "n": "Happen, Inc.",
+      "t": "HAPN"
+    },
+    {
+      "n": "Cricut, Inc.",
+      "t": "CRCT"
     },
     {
       "n": "WESTLAKE CORP",
@@ -1769,10 +1594,6 @@
     {
       "n": "Red Rock Resorts, Inc.",
       "t": "RRR"
-    },
-    {
-      "n": "PFIZER INC",
-      "t": "PFE"
     },
     {
       "n": "LATTICE SEMICONDUCTOR CORP",
@@ -1837,6 +1658,50 @@
     {
       "n": "TransUnion",
       "t": "TRU"
+    },
+    {
+      "n": "BJ's Wholesale Club Holdings, Inc.",
+      "t": "BJ"
+    },
+    {
+      "n": "BlueLinx Holdings Inc.",
+      "t": "BXC"
+    },
+    {
+      "n": "Dynatrace, Inc.",
+      "t": "DT"
+    },
+    {
+      "n": "Abacus Global Management, Inc.",
+      "t": "ABX"
+    },
+    {
+      "n": "Relay Therapeutics, Inc.",
+      "t": "RLAY"
+    },
+    {
+      "n": "Five9, Inc.",
+      "t": "FIVN"
+    },
+    {
+      "n": "OOMA INC",
+      "t": "OOMA"
+    },
+    {
+      "n": "HOST HOTELS & RESORTS, INC.",
+      "t": "HST"
+    },
+    {
+      "n": "NORTHPOINTE BANCSHARES INC",
+      "t": "NPB"
+    },
+    {
+      "n": "HawkEye 360, Inc.",
+      "t": "HAWK"
+    },
+    {
+      "n": "Xenon Pharmaceuticals Inc.",
+      "t": "XENE"
     }
   ],
   "titles": []
