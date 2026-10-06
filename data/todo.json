@@ -1,11 +1,6 @@
 {
   "companies": [
     {
-      "cik": "896493",
-      "name": "Hyperscale Data, Inc.",
-      "sic_description": "Oil & Gas Field Machinery & Equipment"
-    },
-    {
       "cik": "40417",
       "name": "GENERAL AMERICAN INVESTORS CO INC",
       "sic_description": ""
@@ -13,11 +8,6 @@
     {
       "cik": "1551047",
       "name": "Bluerock Private Real Estate Fund",
-      "sic_description": ""
-    },
-    {
-      "cik": "1843162",
-      "name": "Chicago Atlantic BDC, Inc.",
       "sic_description": ""
     },
     {
@@ -31,419 +21,9 @@
       "sic_description": ""
     },
     {
-      "cik": "1395064",
-      "name": "TAKEDA PHARMACEUTICAL CO LTD",
-      "sic_description": "Pharmaceutical Preparations"
-    },
-    {
-      "cik": "80424",
-      "name": "PROCTER & GAMBLE Co",
-      "sic_description": "Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics"
-    },
-    {
-      "cik": "1561550",
-      "name": "Datadog, Inc.",
-      "sic_description": "Services-Prepackaged Software"
-    },
-    {
-      "cik": "703351",
-      "name": "BRINKER INTERNATIONAL, INC",
-      "sic_description": "Retail-Eating  Places"
-    },
-    {
-      "cik": "1595974",
-      "name": "MAGNITE, INC.",
-      "sic_description": "Services-Computer Programming, Data Processing, Etc."
-    },
-    {
-      "cik": "1471055",
-      "name": "Banco Santander (Brasil) S.A.",
-      "sic_description": "Commercial Banks, NEC"
-    },
-    {
-      "cik": "1830487",
-      "name": "Pharvaris N.V.",
-      "sic_description": "Pharmaceutical Preparations"
-    },
-    {
-      "cik": "1070985",
-      "name": "CoreCivic, Inc.",
-      "sic_description": "Real Estate Investment Trusts"
-    },
-    {
-      "cik": "1261333",
-      "name": "DOCUSIGN, INC.",
-      "sic_description": "Services-Prepackaged Software"
-    },
-    {
-      "cik": "1023512",
-      "name": "DRDGOLD LTD",
-      "sic_description": "Gold and Silver Ores"
-    },
-    {
-      "cik": "1703399",
-      "name": "Sea Ltd",
-      "sic_description": "Services-Miscellaneous Business Services"
-    },
-    {
-      "cik": "1437107",
-      "name": "Warner Bros. Discovery, Inc.",
-      "sic_description": "Cable & Other Pay Television Services"
-    },
-    {
-      "cik": "1628171",
-      "name": "Revolution Medicines, Inc.",
-      "sic_description": "Biological Products, (No Diagnostic Substances)"
-    },
-    {
-      "cik": "1717115",
-      "name": "Tempus AI, Inc.",
-      "sic_description": "Services-Computer Programming, Data Processing, Etc."
-    },
-    {
-      "cik": "1438533",
-      "name": "Travere Therapeutics, Inc.",
-      "sic_description": "Pharmaceutical Preparations"
-    },
-    {
-      "cik": "316709",
-      "name": "SCHWAB CHARLES CORP",
-      "sic_description": "Security Brokers, Dealers & Flotation Companies"
-    },
-    {
-      "cik": "1694426",
-      "name": "Delek US Holdings, Inc.",
-      "sic_description": "Petroleum Refining"
-    },
-    {
-      "cik": "1591698",
-      "name": "Paylocity Holding Corp",
-      "sic_description": "Services-Prepackaged Software"
-    },
-    {
-      "cik": "1040470",
-      "name": "AEHR TEST SYSTEMS",
-      "sic_description": "Instruments For Meas & Testing of  Electricity & Elec Signals"
-    },
-    {
-      "cik": "3453",
-      "name": "Matson, Inc.",
-      "sic_description": "Water Transportation"
-    },
-    {
-      "cik": "1060955",
-      "name": "ICON PLC",
-      "sic_description": "Services-Commercial Physical & Biological Research"
-    },
-    {
-      "cik": "1514416",
-      "name": "Bandwidth Inc.",
-      "sic_description": "Services-Prepackaged Software"
-    },
-    {
-      "cik": "1535527",
-      "name": "CrowdStrike Holdings, Inc.",
-      "sic_description": "Services-Prepackaged Software"
-    },
-    {
-      "cik": "1640147",
-      "name": "Snowflake Inc.",
-      "sic_description": "Services-Prepackaged Software"
-    },
-    {
-      "cik": "1769628",
-      "name": "CoreWeave, Inc.",
-      "sic_description": "Services-Prepackaged Software"
-    },
-    {
-      "cik": "1581280",
-      "name": "Twist Bioscience Corp",
-      "sic_description": "Biological Products, (No Diagnostic Substances)"
-    },
-    {
-      "cik": "1795586",
-      "name": "Chime Financial, Inc.",
-      "sic_description": "Finance Services"
-    },
-    {
-      "cik": "1792789",
-      "name": "DoorDash, Inc.",
-      "sic_description": "Services-Business Services, NEC"
-    },
-    {
-      "cik": "1088856",
-      "name": "CORCEPT THERAPEUTICS INC",
-      "sic_description": "Pharmaceutical Preparations"
-    },
-    {
-      "cik": "1517413",
-      "name": "Fastly, Inc.",
-      "sic_description": "Services-Prepackaged Software"
-    },
-    {
-      "cik": "1576280",
-      "name": "Guardant Health, Inc.",
-      "sic_description": "Services-Medical Laboratories"
-    },
-    {
-      "cik": "1876042",
-      "name": "Circle Internet Group, Inc.",
-      "sic_description": "Finance Services"
-    },
-    {
-      "cik": "1467623",
-      "name": "DROPBOX, INC.",
-      "sic_description": "Services-Prepackaged Software"
-    },
-    {
-      "cik": "76334",
-      "name": "Parker-Hannifin Corp",
-      "sic_description": "Miscellaneous Fabricated Metal Products"
-    },
-    {
-      "cik": "1438472",
-      "name": "MIAMI INTERNATIONAL HOLDINGS, INC.",
-      "sic_description": "Security Brokers, Dealers & Flotation Companies"
-    },
-    {
-      "cik": "936395",
-      "name": "CIENA CORP",
-      "sic_description": "Telephone & Telegraph Apparatus"
-    },
-    {
-      "cik": "1849056",
-      "name": "Oklo Inc.",
-      "sic_description": "Electric Services"
-    },
-    {
-      "cik": "1315098",
-      "name": "Roblox Corp",
-      "sic_description": "Services-Prepackaged Software"
-    },
-    {
-      "cik": "780571",
-      "name": "ITRON, INC.",
-      "sic_description": "Instruments For Meas & Testing of  Electricity & Elec Signals"
-    },
-    {
-      "cik": "1654126",
-      "name": "ZIM Integrated Shipping Services Ltd.",
-      "sic_description": "Deep Sea Foreign Transportation of  Freight"
-    },
-    {
-      "cik": "1877184",
-      "name": "KESTRA MEDICAL TECHNOLOGIES, LTD.",
-      "sic_description": "Surgical & Medical Instruments & Apparatus"
-    },
-    {
-      "cik": "1530979",
-      "name": "Honest Company, Inc.",
-      "sic_description": "Retail-Catalog & Mail-Order Houses"
-    },
-    {
-      "cik": "1617640",
-      "name": "ZILLOW GROUP, INC.",
-      "sic_description": "Services-Business Services, NEC"
-    },
-    {
-      "cik": "1571996",
-      "name": "Dell Technologies Inc.",
-      "sic_description": "Electronic Computers"
-    },
-    {
-      "cik": "2021728",
-      "name": "Cerebras Systems Inc.",
-      "sic_description": "Semiconductors & Related Devices"
-    },
-    {
-      "cik": "1326801",
-      "name": "Meta Platforms, Inc.",
-      "sic_description": "Services-Computer Programming, Data Processing, Etc."
-    },
-    {
-      "cik": "2007855",
-      "name": "Venture Global, Inc.",
-      "sic_description": "Natural Gas Distribution"
-    },
-    {
-      "cik": "1800667",
-      "name": "JFrog Ltd",
-      "sic_description": "Services-Prepackaged Software"
-    },
-    {
-      "cik": "721371",
-      "name": "CARDINAL HEALTH INC",
-      "sic_description": "Wholesale-Drugs, Proprietaries & Druggists' Sundries"
-    },
-    {
-      "cik": "70318",
-      "name": "TENET HEALTHCARE CORP",
-      "sic_description": "Services-General Medical & Surgical Hospitals, NEC"
-    },
-    {
-      "cik": "921582",
-      "name": "IMAX CORP",
-      "sic_description": "Photographic Equipment & Supplies"
-    },
-    {
-      "cik": "1539838",
-      "name": "Diamondback Energy, Inc.",
-      "sic_description": "Crude Petroleum & Natural Gas"
-    },
-    {
-      "cik": "821483",
-      "name": "PAR PACIFIC HOLDINGS, INC.",
-      "sic_description": "Crude Petroleum & Natural Gas"
-    },
-    {
-      "cik": "1304492",
-      "name": "Anterix Inc.",
-      "sic_description": "Telephone Communications (No Radiotelephone)"
-    },
-    {
-      "cik": "946581",
-      "name": "TAKE TWO INTERACTIVE SOFTWARE INC",
-      "sic_description": "Services-Prepackaged Software"
-    },
-    {
-      "cik": "1428439",
-      "name": "ROKU, INC",
-      "sic_description": "Cable & Other Pay Television Services"
-    },
-    {
-      "cik": "858877",
-      "name": "CISCO SYSTEMS, INC.",
-      "sic_description": "Computer Communications Equipment"
-    },
-    {
-      "cik": "1657573",
-      "name": "Xometry, Inc.",
-      "sic_description": "Services-Business Services, NEC"
-    },
-    {
-      "cik": "1571949",
-      "name": "Intercontinental Exchange, Inc.",
-      "sic_description": "Security & Commodity Brokers, Dealers, Exchanges & Services"
-    },
-    {
-      "cik": "1816581",
-      "name": "Ouster, Inc.",
-      "sic_description": "General Industrial Machinery & Equipment, NEC"
-    },
-    {
-      "cik": "1001385",
-      "name": "NWPX Infrastructure, Inc.",
-      "sic_description": "Steel Pipe & Tubes"
-    },
-    {
-      "cik": "1169561",
-      "name": "COMMVAULT SYSTEMS INC",
-      "sic_description": "Services-Prepackaged Software"
-    },
-    {
-      "cik": "1720420",
-      "name": "IBEX Ltd",
-      "sic_description": "Services-Computer Processing & Data Preparation"
-    },
-    {
-      "cik": "906107",
-      "name": "VIVMARK RESIDENTIAL",
-      "sic_description": "Real Estate Investment Trusts"
-    },
-    {
-      "cik": "1333986",
-      "name": "Equitable Holdings, Inc.",
-      "sic_description": "Insurance Agents, Brokers & Service"
-    },
-    {
-      "cik": "1840706",
-      "name": "SOPHiA GENETICS SA",
-      "sic_description": "Services-Computer Processing & Data Preparation"
-    },
-    {
-      "cik": "1640428",
-      "name": "EverQuote, Inc.",
-      "sic_description": "Services-Computer Programming, Data Processing, Etc."
-    },
-    {
-      "cik": "1375205",
-      "name": "UR-ENERGY INC",
-      "sic_description": "Gold and Silver Ores"
-    },
-    {
-      "cik": "106532",
-      "name": "WEYCO GROUP INC",
-      "sic_description": "Wholesale-Apparel, Piece Goods & Notions"
-    },
-    {
-      "cik": "1437402",
-      "name": "ARDELYX, INC.",
-      "sic_description": "Pharmaceutical Preparations"
-    },
-    {
-      "cik": "1137789",
-      "name": "Seagate Technology Holdings plc",
-      "sic_description": "Computer Storage Devices"
-    },
-    {
-      "cik": "1668397",
-      "name": "Medpace Holdings, Inc.",
-      "sic_description": "Services-Commercial Physical & Biological Research"
-    },
-    {
-      "cik": "2488",
-      "name": "ADVANCED MICRO DEVICES INC",
-      "sic_description": "Semiconductors & Related Devices"
-    },
-    {
-      "cik": "1707753",
-      "name": "Elastic N.V.",
-      "sic_description": "Services-Prepackaged Software"
-    },
-    {
-      "cik": "1534504",
-      "name": "PBF Energy Inc.",
-      "sic_description": "Petroleum Refining"
-    },
-    {
-      "cik": "1783879",
-      "name": "Robinhood Markets, Inc.",
-      "sic_description": "Security Brokers, Dealers & Flotation Companies"
-    },
-    {
-      "cik": "1477333",
-      "name": "Cloudflare, Inc.",
-      "sic_description": "Services-Prepackaged Software"
-    },
-    {
-      "cik": "1642896",
-      "name": "Samsara Inc.",
-      "sic_description": "Services-Computer Integrated Systems Design"
-    },
-    {
-      "cik": "319201",
-      "name": "KLA CORP",
-      "sic_description": "Optical Instruments & Lenses"
-    },
-    {
-      "cik": "1649904",
-      "name": "RHYTHM PHARMACEUTICALS, INC.",
-      "sic_description": "Pharmaceutical Preparations"
-    },
-    {
       "cik": "1898718",
       "name": "GMR Solutions Inc.",
       "sic_description": "Transportation Services"
-    },
-    {
-      "cik": "1568651",
-      "name": "Oscar Health, Inc.",
-      "sic_description": "Hospital & Medical Service Plans"
-    },
-    {
-      "cik": "1690585",
-      "name": "Dianthus Therapeutics, Inc. /DE/",
-      "sic_description": "Pharmaceutical Preparations"
     },
     {
       "cik": "1100682",
@@ -451,1257 +31,1677 @@
       "sic_description": "Services-Commercial Physical & Biological Research"
     },
     {
-      "cik": "1069258",
-      "name": "KRATOS DEFENSE & SECURITY SOLUTIONS, INC.",
-      "sic_description": "Guided Missiles & Space Vehicles & Parts"
-    },
-    {
-      "cik": "1478320",
-      "name": "Adaptive Biotechnologies Corp",
-      "sic_description": "Biological Products, (No Diagnostic Substances)"
-    },
-    {
-      "cik": "1418819",
-      "name": "Iridium Communications Inc.",
-      "sic_description": "Communications Services, NEC"
-    },
-    {
-      "cik": "1851112",
-      "name": "RISKIFIED LTD.",
+      "cik": "1579091",
+      "name": "Maplebear Inc.",
       "sic_description": "Services-Business Services, NEC"
     },
     {
-      "cik": "1664703",
-      "name": "Bloom Energy Corp",
-      "sic_description": "Electrical Industrial Apparatus"
+      "cik": "1331284",
+      "name": "DHT Holdings, Inc.",
+      "sic_description": "Deep Sea Foreign Transportation of  Freight"
     },
     {
-      "cik": "1018724",
-      "name": "AMAZON COM INC",
-      "sic_description": "Retail-Catalog & Mail-Order Houses"
-    },
-    {
-      "cik": "1581760",
-      "name": "Life360, Inc.",
+      "cik": "8670",
+      "name": "AUTOMATIC DATA PROCESSING INC",
       "sic_description": "Services-Computer Processing & Data Preparation"
     },
     {
-      "cik": "1690820",
-      "name": "CARVANA CO.",
-      "sic_description": "Retail-Auto Dealers & Gasoline Stations"
+      "cik": "820318",
+      "name": "COHERENT CORP.",
+      "sic_description": "Optical Instruments & Lenses"
     },
     {
-      "cik": "1451809",
-      "name": "SITIME Corp",
+      "cik": "1596993",
+      "name": "DORIAN LPG LTD.",
+      "sic_description": "Deep Sea Foreign Transportation of  Freight"
+    },
+    {
+      "cik": "1422930",
+      "name": "PubMatic, Inc.",
+      "sic_description": "Services-Computer Programming, Data Processing, Etc."
+    },
+    {
+      "cik": "1388658",
+      "name": "iRhythm Holdings, Inc.",
+      "sic_description": "Surgical & Medical Instruments & Apparatus"
+    },
+    {
+      "cik": "883984",
+      "name": "ICU MEDICAL INC/DE",
+      "sic_description": "Surgical & Medical Instruments & Apparatus"
+    },
+    {
+      "cik": "1583708",
+      "name": "SentinelOne, Inc.",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "1713683",
+      "name": "Zscaler, Inc.",
+      "sic_description": "Services-Computer Programming Services"
+    },
+    {
+      "cik": "1604778",
+      "name": "Qorvo, Inc.",
       "sic_description": "Semiconductors & Related Devices"
     },
     {
-      "cik": "1770787",
-      "name": "10x Genomics, Inc.",
-      "sic_description": "Laboratory Analytical Instruments"
+      "cik": "908255",
+      "name": "BORGWARNER INC",
+      "sic_description": "Motor Vehicle Parts & Accessories"
+    },
+    {
+      "cik": "1047335",
+      "name": "NATIONAL HEALTHCARE CORP",
+      "sic_description": "Services-Skilled Nursing Care Facilities"
+    },
+    {
+      "cik": "1524566",
+      "name": "WEALTHFRONT CORP",
+      "sic_description": "Finance Services"
+    },
+    {
+      "cik": "1109138",
+      "name": "CAMTEK LTD",
+      "sic_description": "Optical Instruments & Lenses"
+    },
+    {
+      "cik": "1861107",
+      "name": "Ceribell, Inc.",
+      "sic_description": "Electromedical & Electrotherapeutic Apparatus"
+    },
+    {
+      "cik": "1289460",
+      "name": "Texas Roadhouse, Inc.",
+      "sic_description": "Retail-Eating  Places"
+    },
+    {
+      "cik": "1093557",
+      "name": "DEXCOM INC",
+      "sic_description": "Surgical & Medical Instruments & Apparatus"
+    },
+    {
+      "cik": "1370637",
+      "name": "ETSY INC",
+      "sic_description": "Services-Business Services, NEC"
+    },
+    {
+      "cik": "927628",
+      "name": "CAPITAL ONE FINANCIAL CORP",
+      "sic_description": "National Commercial Banks"
+    },
+    {
+      "cik": "1968915",
+      "name": "PHINIA INC.",
+      "sic_description": "Motor Vehicle Parts & Accessories"
+    },
+    {
+      "cik": "1801170",
+      "name": "CLOVER HEALTH INVESTMENTS, CORP. /DE",
+      "sic_description": "Hospital & Medical Service Plans"
+    },
+    {
+      "cik": "715787",
+      "name": "INTERFACE INC",
+      "sic_description": "Carpets & Rugs"
+    },
+    {
+      "cik": "1823608",
+      "name": "Amalgamated Financial Corp.",
+      "sic_description": "State Commercial Banks"
+    },
+    {
+      "cik": "1552033",
+      "name": "TransUnion",
+      "sic_description": "Services-Consumer Credit Reporting, Collection Agencies"
+    },
+    {
+      "cik": "88941",
+      "name": "SEMTECH CORP",
+      "sic_description": "Semiconductors & Related Devices"
+    },
+    {
+      "cik": "1609711",
+      "name": "GoDaddy Inc.",
+      "sic_description": "Services-Computer Integrated Systems Design"
+    },
+    {
+      "cik": "1674632",
+      "name": "Beta Bionics, Inc.",
+      "sic_description": "Surgical & Medical Instruments & Apparatus"
+    },
+    {
+      "cik": "1569345",
+      "name": "Sprinklr, Inc.",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "1422143",
+      "name": "Kura Oncology, Inc.",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "800457",
+      "name": "DONEGAL GROUP INC",
+      "sic_description": "Fire, Marine & Casualty Insurance"
+    },
+    {
+      "cik": "1384101",
+      "name": "VERACYTE, INC.",
+      "sic_description": "Services-Medical Laboratories"
+    },
+    {
+      "cik": "1759509",
+      "name": "Lyft, Inc.",
+      "sic_description": "Services-Business Services, NEC"
+    },
+    {
+      "cik": "1816017",
+      "name": "Spire Global, Inc.",
+      "sic_description": "Communications Services, NEC"
+    },
+    {
+      "cik": "1253689",
+      "name": "CRESCENT BIOPHARMA, INC.",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "1596532",
+      "name": "Arista Networks, Inc.",
+      "sic_description": "Computer Communications Equipment"
+    },
+    {
+      "cik": "1736297",
+      "name": "Astera Labs, Inc.",
+      "sic_description": "Semiconductors & Related Devices"
+    },
+    {
+      "cik": "1651308",
+      "name": "BeOne Medicines Ltd.",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "1321655",
+      "name": "Palantir Technologies Inc.",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "1633978",
+      "name": "Lumentum Holdings Inc.",
+      "sic_description": "Communications Equipment, NEC"
+    },
+    {
+      "cik": "1604821",
+      "name": "Natera, Inc.",
+      "sic_description": "Services-Medical Laboratories"
+    },
+    {
+      "cik": "1673743",
+      "name": "Hinge Health, Inc.",
+      "sic_description": "Services-Computer Processing & Data Preparation"
+    },
+    {
+      "cik": "1818794",
+      "name": "Dyne Therapeutics, Inc.",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "1366868",
+      "name": "Globalstar, Inc.",
+      "sic_description": "Communications Services, NEC"
+    },
+    {
+      "cik": "97745",
+      "name": "THERMO FISHER SCIENTIFIC INC.",
+      "sic_description": "Measuring & Controlling Devices, NEC"
+    },
+    {
+      "cik": "1049521",
+      "name": "MERCURY SYSTEMS INC",
+      "sic_description": "Electronic Components & Accessories"
+    },
+    {
+      "cik": "1002047",
+      "name": "NetApp, Inc.",
+      "sic_description": "Computer Storage Devices"
+    },
+    {
+      "cik": "1528396",
+      "name": "Guidewire Software, Inc.",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "1124796",
+      "name": "NLIGHT, INC.",
+      "sic_description": "Semiconductors & Related Devices"
+    },
+    {
+      "cik": "1819994",
+      "name": "Rocket Lab Corp",
+      "sic_description": "Guided Missiles & Space Vehicles & Parts"
+    },
+    {
+      "cik": "1564408",
+      "name": "Snap Inc",
+      "sic_description": "Services-Computer Programming, Data Processing, Etc."
+    },
+    {
+      "cik": "1804176",
+      "name": "Butterfly Network, Inc.",
+      "sic_description": "X-Ray Apparatus & Tubes & Related Irradiation Apparatus"
+    },
+    {
+      "cik": "1562088",
+      "name": "Duolingo, Inc.",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "797721",
+      "name": "VIASAT INC",
+      "sic_description": "Communications Services, NEC"
+    },
+    {
+      "cik": "1327567",
+      "name": "Palo Alto Networks Inc",
+      "sic_description": "Computer Peripheral Equipment, NEC"
+    },
+    {
+      "cik": "907654",
+      "name": "Oruka Therapeutics, Inc.",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "1820953",
+      "name": "Affirm Holdings, Inc.",
+      "sic_description": "Personal Credit Institutions"
+    },
+    {
+      "cik": "1506293",
+      "name": "PINTEREST, INC.",
+      "sic_description": "Services-Computer Programming, Data Processing, Etc."
+    },
+    {
+      "cik": "1819576",
+      "name": "Liquidia Corp",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "1075531",
+      "name": "Booking Holdings Inc.",
+      "sic_description": "Transportation Services"
+    },
+    {
+      "cik": "818686",
+      "name": "TEVA PHARMACEUTICAL INDUSTRIES LTD",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "91440",
+      "name": "Snap-on Inc",
+      "sic_description": "Cutlery, Handtools & General Hardware"
+    },
+    {
+      "cik": "882095",
+      "name": "GILEAD SCIENCES, INC.",
+      "sic_description": "Biological Products, (No Diagnostic Substances)"
+    },
+    {
+      "cik": "914156",
+      "name": "UFP TECHNOLOGIES INC",
+      "sic_description": "Surgical & Medical Instruments & Apparatus"
+    },
+    {
+      "cik": "1782170",
+      "name": "Remitly Global, Inc.",
+      "sic_description": "Services-Business Services, NEC"
+    },
+    {
+      "cik": "1061983",
+      "name": "CYTOKINETICS INC",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "1852131",
+      "name": "Nextpower Inc.",
+      "sic_description": "Semiconductors & Related Devices"
+    },
+    {
+      "cik": "1104657",
+      "name": "MATERION Corp",
+      "sic_description": "Metal Forgings & Stampings"
+    },
+    {
+      "cik": "1591588",
+      "name": "Gold.com, Inc.",
+      "sic_description": "Wholesale-Jewelry, Watches, Precious Stones & Metals"
+    },
+    {
+      "cik": "912093",
+      "name": "VIAVI SOLUTIONS INC.",
+      "sic_description": "Semiconductors & Related Devices"
+    },
+    {
+      "cik": "1611052",
+      "name": "PROCORE TECHNOLOGIES, INC.",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "1883313",
+      "name": "Savers Value Village, Inc.",
+      "sic_description": "Retail-Miscellaneous Retail"
+    },
+    {
+      "cik": "1565687",
+      "name": "Intapp, Inc.",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "1773751",
+      "name": "Hims & Hers Health, Inc.",
+      "sic_description": "Services-Offices & Clinics of  Doctors of  Medicine"
+    },
+    {
+      "cik": "1177609",
+      "name": "FIVE BELOW, INC",
+      "sic_description": "Retail-Variety Stores"
+    },
+    {
+      "cik": "1933414",
+      "name": "Mineralys Therapeutics, Inc.",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "1035267",
+      "name": "INTUITIVE SURGICAL INC",
+      "sic_description": "Orthopedic, Prosthetic & Surgical Appliances & Supplies"
+    },
+    {
+      "cik": "1448893",
+      "name": "Essent Group Ltd.",
+      "sic_description": "Surety Insurance"
+    },
+    {
+      "cik": "910612",
+      "name": "CBL & ASSOCIATES PROPERTIES INC",
+      "sic_description": "Real Estate Investment Trusts"
+    },
+    {
+      "cik": "1618673",
+      "name": "Performance Food Group Co",
+      "sic_description": "Wholesale-Groceries, General Line"
+    },
+    {
+      "cik": "1601046",
+      "name": "Keysight Technologies, Inc.",
+      "sic_description": "Industrial Instruments For Measurement, Display, and Control"
+    },
+    {
+      "cik": "1580560",
+      "name": "Flywire Corp",
+      "sic_description": "Services-Business Services, NEC"
+    },
+    {
+      "cik": "1099800",
+      "name": "Edwards Lifesciences Corp",
+      "sic_description": "Orthopedic, Prosthetic & Surgical Appliances & Supplies"
+    },
+    {
+      "cik": "813672",
+      "name": "CADENCE DESIGN SYSTEMS INC",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "1564708",
+      "name": "NEWS CORP",
+      "sic_description": "Newspapers: Publishing or  Publishing & Printing"
+    },
+    {
+      "cik": "1409970",
+      "name": "Happen, Inc.",
+      "sic_description": "Personal Credit Institutions"
+    },
+    {
+      "cik": "1813814",
+      "name": "Definium Therapeutics, Inc.",
+      "sic_description": "Medicinal Chemicals & Botanical Products"
+    },
+    {
+      "cik": "1658551",
+      "name": "Amylyx Pharmaceuticals, Inc.",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "1327688",
+      "name": "OOMA INC",
+      "sic_description": "Services-Computer Processing & Data Preparation"
+    },
+    {
+      "cik": "37472",
+      "name": "FLEXSTEEL INDUSTRIES INC",
+      "sic_description": "Household Furniture"
+    },
+    {
+      "cik": "1855612",
+      "name": "Grab Holdings Ltd",
+      "sic_description": "Services-Business Services, NEC"
+    },
+    {
+      "cik": "1525221",
+      "name": "Bristow Group Inc.",
+      "sic_description": "Air Transportation, Nonscheduled"
+    },
+    {
+      "cik": "1598665",
+      "name": "Heritage Insurance Holdings, Inc.",
+      "sic_description": "Fire, Marine & Casualty Insurance"
+    },
+    {
+      "cik": "1810019",
+      "name": "Rackspace Technology, Inc.",
+      "sic_description": "Services-Computer Programming, Data Processing, Etc."
     }
   ],
   "industries": [],
   "names": [
     {
-      "n": "EQT Corp",
-      "t": "EQT"
+      "n": "EMERSON ELECTRIC CO",
+      "t": "EMR"
     },
     {
-      "n": "Grindr Inc.",
-      "t": "GRND"
+      "n": "PROSPECT CAPITAL CORP",
+      "t": "PSEC"
     },
     {
-      "n": "Knowles Corp",
-      "t": "KN"
+      "n": "WESTINGHOUSE AIR BRAKE TECHNOLOGIES CORP",
+      "t": "WAB"
     },
     {
-      "n": "Lyntris Inc.",
-      "t": "LYNX"
+      "n": "AMETEK INC/",
+      "t": "AME"
     },
     {
-      "n": "Cadre Holdings, Inc.",
-      "t": "CDRE"
+      "n": "SEMTECH CORP",
+      "t": "SMTC"
     },
     {
-      "n": "Fortinet, Inc.",
-      "t": "FTNT"
+      "n": "FLEXSTEEL INDUSTRIES INC",
+      "t": "FLXS"
     },
     {
-      "n": "MATERION Corp",
-      "t": "MTRN"
+      "n": "Arteris, Inc.",
+      "t": "AIP"
     },
     {
-      "n": "RCM TECHNOLOGIES, INC.",
-      "t": "RCMT"
+      "n": "908 Devices Inc.",
+      "t": "MASS"
     },
     {
-      "n": "Nano Nuclear Energy Inc.",
-      "t": "NNE"
+      "n": "GoDaddy Inc.",
+      "t": "GDDY"
     },
     {
-      "n": "Nayax Ltd.",
-      "t": "NYAX"
+      "n": "CNO Financial Group, Inc.",
+      "t": "CNO"
     },
     {
-      "n": "NUCOR CORP",
-      "t": "NUE"
+      "n": "Amrize Ltd",
+      "t": "AMRZ"
     },
     {
-      "n": "ORACLE CORP",
-      "t": "ORCL"
+      "n": "Bridgewater Bancshares Inc",
+      "t": "BWB"
     },
     {
-      "n": "Gold.com, Inc.",
-      "t": "GOLD"
+      "n": "Bowman Consulting Group Ltd.",
+      "t": "BWMN"
     },
     {
-      "n": "ADVANCED ENERGY INDUSTRIES INC",
-      "t": "AEIS"
+      "n": "ARTIVION, INC.",
+      "t": "AORT"
     },
     {
-      "n": "Voyager Technologies, Inc./TX",
-      "t": "VOYG"
+      "n": "PRECIGEN, INC.",
+      "t": "PGEN"
     },
     {
-      "n": "Mondelez International, Inc.",
-      "t": "MDLZ"
+      "n": "Bristow Group Inc.",
+      "t": "VTOL"
     },
     {
-      "n": "WILLIAMS SONOMA INC",
-      "t": "WSM"
+      "n": "Chiron Real Estate Inc.",
+      "t": "XRN"
     },
     {
-      "n": "Cardinal Infrastructure Group Inc.",
-      "t": "CDNL"
+      "n": "Marti Technologies, Inc.",
+      "t": "MRT"
     },
     {
-      "n": "Motorola Solutions, Inc.",
-      "t": "MSI"
+      "n": "Howard Hughes Holdings Inc.",
+      "t": "HHH"
     },
     {
-      "n": "VIAVI SOLUTIONS INC.",
-      "t": "VIAV"
+      "n": "Rigetti Computing, Inc.",
+      "t": "RGTI"
     },
     {
-      "n": "Eaton Corp plc",
-      "t": "ETN"
+      "n": "Varex Imaging Corp",
+      "t": "VREX"
     },
     {
-      "n": "NMI Holdings, Inc.",
-      "t": "NMIH"
+      "n": "Camp4 Therapeutics Corp",
+      "t": "CAMP"
     },
     {
-      "n": "BETA Technologies, Inc.",
-      "t": "BETA"
+      "n": "JBS N.V.",
+      "t": "JBS"
     },
     {
-      "n": "VERISIGN INC/CA",
-      "t": "VRSN"
+      "n": "Latigo Biotherapeutics, Inc.",
+      "t": "LTGO"
     },
     {
-      "n": "Enova International, Inc.",
-      "t": "ENVA"
+      "n": "TELOS CORP",
+      "t": "TLS"
     },
     {
-      "n": "Walmart Inc.",
-      "t": "WMT"
+      "n": "Hut 8 Corp.",
+      "t": "HUT"
     },
     {
-      "n": "COHERENT CORP.",
-      "t": "COHR"
+      "n": "MACOM Technology Solutions Holdings, Inc.",
+      "t": "MTSI"
     },
     {
-      "n": "AbbVie Inc.",
-      "t": "ABBV"
+      "n": "JACOBS SOLUTIONS INC.",
+      "t": "J"
     },
     {
-      "n": "Marvell Technology, Inc.",
-      "t": "MRVL"
+      "n": "Equitable Holdings, Inc.",
+      "t": "EQH"
     },
     {
-      "n": "PROCORE TECHNOLOGIES, INC.",
-      "t": "PCOR"
+      "n": "Heritage Insurance Holdings, Inc.",
+      "t": "HRTG"
     },
     {
-      "n": "ALLIENT INC",
-      "t": "ALNT"
+      "n": "HNI CORP",
+      "t": "HNI"
     },
     {
-      "n": "AVNET INC",
-      "t": "AVT"
+      "n": "MARRIOTT INTERNATIONAL INC /MD/",
+      "t": "MAR"
     },
     {
-      "n": "Greenwave Technology Solutions, Inc.",
-      "t": "GWAV"
+      "n": "LABCORP HOLDINGS INC.",
+      "t": "LH"
     },
     {
-      "n": "QUEST DIAGNOSTICS INC",
-      "t": "DGX"
+      "n": "ICHOR HOLDINGS, LTD.",
+      "t": "ICHR"
     },
     {
-      "n": "DORIAN LPG LTD.",
-      "t": "LPG"
+      "n": "XP Inc.",
+      "t": "XP"
     },
     {
-      "n": "EOG RESOURCES INC",
-      "t": "EOG"
+      "n": "WELLTOWER INC.",
+      "t": "WELL"
     },
     {
-      "n": "MongoDB, Inc.",
-      "t": "MDB"
+      "n": "Rackspace Technology, Inc.",
+      "t": "RXT"
     },
     {
-      "n": "HALLIBURTON CO",
-      "t": "HAL"
+      "n": "Hilton Worldwide Holdings Inc.",
+      "t": "HLT"
     },
     {
-      "n": "SHERWIN WILLIAMS CO",
-      "t": "SHW"
+      "n": "MACH NATURAL RESOURCES LP",
+      "t": "MNR"
     },
     {
-      "n": "LifeStance Health Group, Inc.",
-      "t": "LFST"
+      "n": "Webull Corp",
+      "t": "BULL"
     },
     {
-      "n": "Matson, Inc.",
-      "t": "MATX"
+      "n": "Cellebrite DI Ltd.",
+      "t": "CLBT"
     },
     {
-      "n": "Arthur J. Gallagher & Co.",
-      "t": "AJG"
+      "n": "Eastern Bankshares, Inc.",
+      "t": "EBC"
     },
     {
-      "n": "Immatics N.V.",
-      "t": "IMTX"
+      "n": "RESMED INC",
+      "t": "RMD"
     },
     {
-      "n": "GRAIL, Inc.",
-      "t": "GRAL"
+      "n": "GeoPark Ltd",
+      "t": "GPRK"
     },
     {
-      "n": "DNOW Inc.",
-      "t": "DNOW"
+      "n": "POWELL INDUSTRIES INC",
+      "t": "POWL"
     },
     {
-      "n": "ABERCROMBIE & FITCH CO /DE/",
-      "t": "ANF"
+      "n": "SILICOM LTD.",
+      "t": "SILC"
     },
     {
-      "n": "Star Bulk Carriers Corp.",
-      "t": "SBLK"
+      "n": "Beta Bionics, Inc.",
+      "t": "BBNX"
     },
     {
-      "n": "Nutanix, Inc.",
-      "t": "NTNX"
+      "n": "SL GREEN REALTY CORP",
+      "t": "SLG"
     },
     {
-      "n": "PARK AEROSPACE CORP",
-      "t": "PKE"
+      "n": "OppFi Inc.",
+      "t": "OPFI"
     },
     {
-      "n": "Ibotta, Inc.",
-      "t": "IBTA"
+      "n": "GENERAC HOLDINGS INC.",
+      "t": "GNRC"
     },
     {
-      "n": "ECOLAB INC.",
-      "t": "ECL"
+      "n": "Omada Health, Inc.",
+      "t": "OMDA"
     },
     {
-      "n": "PubMatic, Inc.",
-      "t": "PUBM"
+      "n": "Donnelley Financial Solutions, Inc.",
+      "t": "DFIN"
     },
     {
-      "n": "PTC THERAPEUTICS, INC.",
-      "t": "PTCT"
+      "n": "Bandwidth Inc.",
+      "t": "BAND"
     },
     {
-      "n": "Invesco Ltd.",
-      "t": "IVZ"
+      "n": "Genpact LTD",
+      "t": "G"
     },
     {
-      "n": "Amneal Pharmaceuticals, Inc.",
-      "t": "AMRX"
+      "n": "BETTERWARE DE MEXICO, S.A.P.I. DE C.V",
+      "t": "BWMX"
     },
     {
-      "n": "Diginex Ltd",
-      "t": "DGNX"
+      "n": "HEXCEL CORP /DE/",
+      "t": "HXL"
     },
     {
-      "n": "Global Business Travel Group, Inc.",
-      "t": "GBTG"
+      "n": "BLACKLINE, INC.",
+      "t": "BL"
     },
     {
-      "n": "ANALOG DEVICES INC",
-      "t": "ADI"
+      "n": "TRAVELERS COMPANIES, INC.",
+      "t": "TRV"
     },
     {
-      "n": "Global Water Resources, Inc.",
-      "t": "GWRS"
+      "n": "Ralliant Corp",
+      "t": "RAL"
     },
     {
-      "n": "Savers Value Village, Inc.",
-      "t": "SVV"
+      "n": "XPO, Inc.",
+      "t": "XPO"
     },
     {
-      "n": "GigaCloud Technology Inc",
-      "t": "GCT"
+      "n": "OCEANFIRST FINANCIAL CORP",
+      "t": "OCFC"
     },
     {
-      "n": "CENTENE CORP",
-      "t": "CNC"
+      "n": "UNIVERSAL ELECTRONICS INC",
+      "t": "UEIC"
     },
     {
-      "n": "POPULAR, INC.",
-      "t": "BPOP"
+      "n": "UNITED STATES LIME & MINERALS INC",
+      "t": "USLM"
     },
     {
-      "n": "iRhythm Holdings, Inc.",
-      "t": "IRTC"
+      "n": "WINTRUST FINANCIAL CORP",
+      "t": "WTFC"
     },
     {
-      "n": "Rapport Therapeutics, Inc.",
-      "t": "RAPP"
+      "n": "Main Street Capital CORP",
+      "t": "MAIN"
     },
     {
-      "n": "StubHub Holdings, Inc.",
-      "t": "STUB"
+      "n": "OMEROS CORP",
+      "t": "OMER"
     },
     {
-      "n": "PROCTER & GAMBLE Co",
-      "t": "PG"
+      "n": "FORUM ENERGY TECHNOLOGIES, INC.",
+      "t": "FET"
     },
     {
-      "n": "RENAISSANCERE HOLDINGS LTD",
-      "t": "RNR"
+      "n": "HANOVER INSURANCE GROUP, INC.",
+      "t": "THG"
     },
     {
-      "n": "ICU MEDICAL INC/DE",
-      "t": "ICUI"
+      "n": "Fortrea Holdings Inc.",
+      "t": "FTRE"
     },
     {
-      "n": "FREEPORT-MCMORAN INC",
-      "t": "FCX"
+      "n": "Salesforce, Inc.",
+      "t": "CRM"
     },
     {
-      "n": "MADRIGAL PHARMACEUTICALS, INC.",
-      "t": "MDGL"
+      "n": "ARCBEST CORP /TX/",
+      "t": "ARCB"
     },
     {
-      "n": "Aon plc",
-      "t": "AON"
+      "n": "Bakkt, Inc.",
+      "t": "BKKT"
     },
     {
-      "n": "TYLER TECHNOLOGIES INC",
-      "t": "TYL"
+      "n": "Targa Resources Corp.",
+      "t": "TRGP"
     },
     {
-      "n": "BORGWARNER INC",
-      "t": "BWA"
+      "n": "REX AMERICAN RESOURCES Corp",
+      "t": "REX"
     },
     {
-      "n": "Roblox Corp",
-      "t": "RBLX"
+      "n": "DARLING INGREDIENTS INC.",
+      "t": "DAR"
     },
     {
-      "n": "Hyperscale Data, Inc.",
-      "t": "GPUS"
+      "n": "TEEKAY CORP LTD",
+      "t": "TK"
     },
     {
-      "n": "SentinelOne, Inc.",
-      "t": "S"
+      "n": "REINSURANCE GROUP OF AMERICA INC",
+      "t": "RGA"
     },
     {
-      "n": "Zscaler, Inc.",
-      "t": "ZS"
+      "n": "SOUTHERN FIRST BANCSHARES INC",
+      "t": "SFST"
     },
     {
-      "n": "Qorvo, Inc.",
-      "t": "QRVO"
+      "n": "Sprinklr, Inc.",
+      "t": "CXM"
     },
     {
-      "n": "Amplitude, Inc.",
-      "t": "AMPL"
+      "n": "CarGurus, Inc.",
+      "t": "CARG"
     },
     {
-      "n": "RingCentral, Inc.",
-      "t": "RNG"
+      "n": "Advanced Flower Capital Inc.",
+      "t": "AFCG"
     },
     {
-      "n": "National Energy Services Reunited Corp.",
-      "t": "NESR"
+      "n": "Dime Commercial Bancshares, Inc. /NY/",
+      "t": "DCOM"
     },
     {
-      "n": "Braze, Inc.",
-      "t": "BRZE"
+      "n": "IMPINJ INC",
+      "t": "PI"
     },
     {
-      "n": "CISCO SYSTEMS, INC.",
-      "t": "CSCO"
+      "n": "ROYAL GOLD INC",
+      "t": "RGLD"
     },
     {
-      "n": "WEX Inc.",
-      "t": "WEX"
+      "n": "Fortune Brands Innovations, Inc.",
+      "t": "FBIN"
     },
     {
-      "n": "Xometry, Inc.",
-      "t": "XMTR"
+      "n": "Cue Biopharma, Inc.",
+      "t": "CUE"
     },
     {
-      "n": "GLOBE LIFE INC.",
-      "t": "GL"
+      "n": "SYNAPTICS Inc",
+      "t": "SYNA"
     },
     {
-      "n": "Willdan Group, Inc.",
-      "t": "WLDN"
+      "n": "Planet Labs PBC",
+      "t": "PL"
     },
     {
-      "n": "Empery Digital Inc.",
-      "t": "EMPD"
+      "n": "Funko, Inc.",
+      "t": "FNKO"
     },
     {
-      "n": "Angel Studios, Inc.",
-      "t": "ANGX"
+      "n": "Arcutis Biotherapeutics, Inc.",
+      "t": "ARQT"
     },
     {
-      "n": "Hims & Hers Health, Inc.",
-      "t": "HIMS"
+      "n": "BLACKBAUD INC",
+      "t": "BLKB"
     },
     {
-      "n": "Inhibrx Biosciences, Inc.",
-      "t": "INBX"
+      "n": "CarParts.com, Inc.",
+      "t": "PRTS"
     },
     {
-      "n": "ARM HOLDINGS PLC /UK",
-      "t": "ARM"
+      "n": "PEGASYSTEMS INC",
+      "t": "PEGA"
     },
     {
-      "n": "INTERNATIONAL BUSINESS MACHINES CORP",
-      "t": "IBM"
+      "n": "Sprouts Farmers Market, Inc.",
+      "t": "SFM"
     },
     {
-      "n": "Q2 Holdings, Inc.",
-      "t": "QTWO"
+      "n": "4D Molecular Therapeutics, Inc.",
+      "t": "FDMT"
     },
     {
-      "n": "COHU INC",
-      "t": "COHU"
+      "n": "LSI INDUSTRIES INC",
+      "t": "LYTS"
     },
     {
-      "n": "Versigent PLC",
-      "t": "VGNT"
+      "n": "PLEXUS CORP",
+      "t": "PLXS"
     },
     {
-      "n": "Upstart Holdings, Inc.",
-      "t": "UPST"
+      "n": "ASSOCIATED BANC-CORP",
+      "t": "ASB"
     },
     {
-      "n": "FIVE BELOW, INC",
-      "t": "FIVE"
+      "n": "Starling Oncology, Inc.",
+      "t": "STLN"
     },
     {
-      "n": "TXO Partners, L.P.",
-      "t": "TXO"
+      "n": "ITRON, INC.",
+      "t": "ITRI"
     },
     {
-      "n": "Nu Holdings Ltd.",
-      "t": "NU"
+      "n": "ZIM Integrated Shipping Services Ltd.",
+      "t": "ZIM"
     },
     {
-      "n": "DICK'S SPORTING GOODS, INC.",
-      "t": "DKS"
+      "n": "Swarmer, Inc",
+      "t": "SWMR"
     },
     {
-      "n": "NATIONAL HEALTHCARE CORP",
-      "t": "NHC"
+      "n": "Ameresco, Inc.",
+      "t": "AMRC"
     },
     {
-      "n": "Genius Sports Ltd",
-      "t": "GENI"
+      "n": "ServiceNow, Inc.",
+      "t": "NOW"
     },
     {
-      "n": "Academy Sports & Outdoors, Inc.",
-      "t": "ASO"
+      "n": "Avalo Therapeutics, Inc.",
+      "t": "AVTX"
     },
     {
-      "n": "PALVELLA THERAPEUTICS, INC.",
-      "t": "PVLA"
+      "n": "Figure Technology Solutions, Inc.",
+      "t": "FIGR"
     },
     {
-      "n": "DigitalOcean Holdings, Inc.",
-      "t": "DOCN"
+      "n": "NOVA LTD.",
+      "t": "NVMI"
     },
     {
-      "n": "Helmerich & Payne, Inc.",
-      "t": "HP"
+      "n": "TheRealReal, Inc.",
+      "t": "REAL"
     },
     {
-      "n": "TERAWULF INC.",
-      "t": "WULF"
+      "n": "Edgewise Therapeutics, Inc.",
+      "t": "EWTX"
     },
     {
-      "n": "SCANSOURCE, INC.",
-      "t": "SCSC"
+      "n": "F5, INC.",
+      "t": "FFIV"
     },
     {
-      "n": "TIDEWATER INC",
-      "t": "TDW"
+      "n": "Chubb Ltd",
+      "t": "CB"
     },
     {
-      "n": "Chord Energy Corp",
-      "t": "CHRD"
+      "n": "SOMNIGROUP INTERNATIONAL INC.",
+      "t": "SGI"
     },
     {
-      "n": "Mineralys Therapeutics, Inc.",
-      "t": "MLYS"
+      "n": "COOPER COMPANIES, INC.",
+      "t": "COO"
     },
     {
-      "n": "INCYTE CORP",
-      "t": "INCY"
+      "n": "PERDOCEO EDUCATION Corp",
+      "t": "PRDO"
     },
     {
-      "n": "WEST PHARMACEUTICAL SERVICES INC",
-      "t": "WST"
+      "n": "PROVIDENT FINANCIAL SERVICES INC",
+      "t": "PFS"
     },
     {
-      "n": "Lazard, Inc.",
-      "t": "LAZ"
+      "n": "TEXAS INSTRUMENTS INC",
+      "t": "TXN"
     },
     {
-      "n": "APPLIED OPTOELECTRONICS, INC.",
-      "t": "AAOI"
+      "n": "PJT Partners Inc.",
+      "t": "PJT"
     },
     {
-      "n": "Intercontinental Exchange, Inc.",
-      "t": "ICE"
+      "n": "GeneDx Holdings Corp.",
+      "t": "WGS"
     },
     {
-      "n": "EBAY INC",
-      "t": "EBAY"
+      "n": "ALEXANDRIA REAL ESTATE EQUITIES, INC.",
+      "t": "ARE"
     },
     {
-      "n": "Ouster, Inc.",
-      "t": "OUST"
+      "n": "Yum China Holdings, Inc.",
+      "t": "YUMC"
     },
     {
-      "n": "TTM TECHNOLOGIES INC",
-      "t": "TTMI"
+      "n": "Celsius Holdings, Inc.",
+      "t": "CELH"
     },
     {
-      "n": "Cascade Real Assets Fund",
-      "t": "CRAFX"
+      "n": "SOUNDHOUND AI, INC.",
+      "t": "SOUN"
     },
     {
-      "n": "Vulcan Infrastructure & Power Inc.",
-      "t": "GREE"
+      "n": "SPROTT FOCUS TRUST INC.",
+      "t": "FUND"
     },
     {
-      "n": "Karooooo Ltd.",
-      "t": "KARO"
+      "n": "Ranger Energy Services, Inc.",
+      "t": "RNGR"
     },
     {
-      "n": "WEALTHFRONT CORP",
-      "t": "WLTH"
+      "n": "QUALYS, INC.",
+      "t": "QLYS"
     },
     {
-      "n": "Zoom Communications, Inc.",
-      "t": "ZM"
+      "n": "Lineage, Inc.",
+      "t": "LINE"
     },
     {
-      "n": "Rush Street Interactive, Inc.",
-      "t": "RSI"
+      "n": "MCGRATH RENTCORP",
+      "t": "MGRC"
     },
     {
-      "n": "Tarsus Pharmaceuticals, Inc.",
-      "t": "TARS"
+      "n": "Callaway Golf Co",
+      "t": "CALY"
     },
     {
-      "n": "BlossomHill Therapeutics, Inc.",
-      "t": "BLSM"
+      "n": "Destiny Tech100 Inc.",
+      "t": "DXYZ"
     },
     {
-      "n": "Slide Insurance Holdings, Inc.",
-      "t": "SLDE"
+      "n": "Core Scientific, Inc./tx",
+      "t": "CORZ"
     },
     {
-      "n": "Integer Holdings Corp",
-      "t": "ITGR"
+      "n": "First Tracks Biotherapeutics, Inc.",
+      "t": "TRAX"
     },
     {
-      "n": "M&T BANK CORP",
-      "t": "MTB"
+      "n": "TERADATA CORP /DE/",
+      "t": "TDC"
     },
     {
-      "n": "CAMTEK LTD",
-      "t": "CAMT"
+      "n": "PagerDuty, Inc.",
+      "t": "PD"
     },
     {
-      "n": "QUALCOMM INC/DE",
-      "t": "QCOM"
+      "n": "NEXSTAR MEDIA GROUP, INC.",
+      "t": "NXST"
     },
     {
-      "n": "Freedom Holding Corp.",
-      "t": "FRHC"
+      "n": "LPL Financial Holdings Inc.",
+      "t": "LPLA"
     },
     {
-      "n": "Maze Therapeutics, Inc.",
-      "t": "MAZE"
+      "n": "TIMKEN CO",
+      "t": "TKR"
     },
     {
-      "n": "STANDEX INTERNATIONAL CORP/DE/",
-      "t": "SXI"
+      "n": "BWX Technologies, Inc.",
+      "t": "BWXT"
     },
     {
-      "n": "INTUITIVE SURGICAL INC",
-      "t": "ISRG"
+      "n": "EquipmentShare.com Inc",
+      "t": "EQPT"
     },
     {
-      "n": "REPLIGEN CORP",
-      "t": "RGEN"
+      "n": "Viking Holdings Ltd",
+      "t": "VIK"
     },
     {
-      "n": "Essent Group Ltd.",
-      "t": "ESNT"
+      "n": "CASELLA WASTE SYSTEMS INC",
+      "t": "CWST"
     },
     {
-      "n": "Qfin Holdings, Inc.",
-      "t": "QFIN"
+      "n": "RYAN SPECIALTY HOLDINGS, INC.",
+      "t": "RYAN"
     },
     {
-      "n": "NewAmsterdam Pharma Co N.V.",
-      "t": "NAMS"
+      "n": "MESA LABORATORIES INC /CO/",
+      "t": "MLAB"
     },
     {
-      "n": "Unity Software Inc.",
-      "t": "U"
+      "n": "KESTRA MEDICAL TECHNOLOGIES, LTD.",
+      "t": "KMTS"
     },
     {
-      "n": "Paysign, Inc.",
-      "t": "PAYS"
+      "n": "US BANCORP \\DE\\",
+      "t": "USB"
     },
     {
-      "n": "Koppers Holdings Inc.",
-      "t": "KOP"
+      "n": "Archer Aviation Inc.",
+      "t": "ACHR"
     },
     {
-      "n": "Asana, Inc.",
-      "t": "ASAN"
+      "n": "Cogent Biosciences, Inc.",
+      "t": "COGT"
     },
     {
-      "n": "NWPX Infrastructure, Inc.",
-      "t": "NWPX"
+      "n": "CRA INTERNATIONAL, INC.",
+      "t": "CRAI"
     },
     {
-      "n": "Crocs, Inc.",
-      "t": "CROX"
+      "n": "WATTS WATER TECHNOLOGIES INC",
+      "t": "WTS"
     },
     {
-      "n": "TELEDYNE TECHNOLOGIES INC",
-      "t": "TDY"
+      "n": "Aeluma, Inc.",
+      "t": "ALMU"
     },
     {
-      "n": "Neptune Insurance Holdings Inc.",
-      "t": "NP"
+      "n": "Rimini Street, Inc.",
+      "t": "RMNI"
     },
     {
-      "n": "Okeanis Eco Tankers Corp.",
-      "t": "ECO"
+      "n": "Honest Company, Inc.",
+      "t": "HNST"
     },
     {
-      "n": "Axogen, Inc.",
-      "t": "AXGN"
+      "n": "RELMADA THERAPEUTICS, INC.",
+      "t": "RLMD"
     },
     {
-      "n": "TALOS ENERGY INC.",
-      "t": "TALO"
+      "n": "CLARIVATE PLC",
+      "t": "CLVT"
     },
     {
-      "n": "MARSH & MCLENNAN COMPANIES, INC.",
-      "t": "MRSH"
+      "n": "DUCOMMUN INC /DE/",
+      "t": "DCO"
     },
     {
-      "n": "Braveheart Bio, Inc.",
-      "t": "BRVE"
+      "n": "i-80 Gold Corp.",
+      "t": "IAUX"
     },
     {
-      "n": "Rocket Companies, Inc.",
-      "t": "RKT"
+      "n": "KAMADA LTD",
+      "t": "KMDA"
     },
     {
-      "n": "VSE CORP",
-      "t": "VSEC"
+      "n": "MEDIFAST INC",
+      "t": "MED"
     },
     {
-      "n": "AUTOZONE INC",
-      "t": "AZO"
+      "n": "LOGITECH INTERNATIONAL S.A.",
+      "t": "LOGI"
     },
     {
-      "n": "HUNTINGTON INGALLS INDUSTRIES, INC.",
-      "t": "HII"
+      "n": "TORM plc",
+      "t": "TRMD"
     },
     {
-      "n": "COMMVAULT SYSTEMS INC",
-      "t": "CVLT"
+      "n": "BOX INC",
+      "t": "BOX"
     },
     {
-      "n": "Live Oak Bancshares, Inc.",
-      "t": "LOB"
+      "n": "Banco Santander (Brasil) S.A.",
+      "t": "BSBR"
     },
     {
-      "n": "Vulcan Materials CO",
-      "t": "VMC"
+      "n": "NEWMONT Corp /DE/",
+      "t": "NEM"
     },
     {
-      "n": "KROGER CO",
-      "t": "KR"
+      "n": "AFLAC INC",
+      "t": "AFL"
     },
     {
-      "n": "BridgeBio Pharma, Inc.",
-      "t": "BBIO"
+      "n": "AtriCure, Inc.",
+      "t": "ATRC"
     },
     {
-      "n": "GLOBUS MEDICAL INC",
-      "t": "GMED"
+      "n": "Covista Inc.",
+      "t": "CVSA"
     },
     {
-      "n": "CASTLE BIOSCIENCES INC",
-      "t": "CSTL"
+      "n": "AMERIPRISE FINANCIAL INC",
+      "t": "AMP"
     },
     {
-      "n": "CBL & ASSOCIATES PROPERTIES INC",
-      "t": "CBL"
+      "n": "COGNEX CORP",
+      "t": "CGNX"
     },
     {
-      "n": "Cencora, Inc.",
-      "t": "COR"
+      "n": "GENWORTH FINANCIAL INC",
+      "t": "GNW"
     },
     {
-      "n": "TAPESTRY, INC.",
-      "t": "TPR"
+      "n": "NISOURCE INC.",
+      "t": "NI"
     },
     {
-      "n": "OLD SECOND BANCORP INC",
-      "t": "OSBC"
+      "n": "ANI PHARMACEUTICALS INC",
+      "t": "ANIP"
     },
     {
-      "n": "Performance Food Group Co",
-      "t": "PFGC"
+      "n": "Himalaya Shipping Ltd.",
+      "t": "HSHP"
     },
     {
-      "n": "Ceribell, Inc.",
-      "t": "CBLL"
+      "n": "ONESPAWORLD HOLDINGS Ltd",
+      "t": "OSW"
     },
     {
-      "n": "Aramark",
-      "t": "ARMK"
+      "n": "Clipper Realty Inc.",
+      "t": "CLPR"
     },
     {
-      "n": "CME GROUP INC.",
-      "t": "CME"
+      "n": "EAST WEST BANCORP INC",
+      "t": "EWBC"
     },
     {
-      "n": "HEALTHSTREAM INC",
-      "t": "HSTM"
+      "n": "Bicara Therapeutics Inc.",
+      "t": "BCAX"
     },
     {
-      "n": "Texas Roadhouse, Inc.",
-      "t": "TXRH"
+      "n": "Leidos Holdings, Inc.",
+      "t": "LDOS"
     },
     {
-      "n": "DEXCOM INC",
-      "t": "DXCM"
+      "n": "AbCellera Biologics Inc.",
+      "t": "ABCL"
     },
     {
-      "n": "Waystar Holding Corp.",
-      "t": "WAY"
+      "n": "GAP INC",
+      "t": "GAP"
     },
     {
-      "n": "Red Cat Holdings, Inc.",
-      "t": "RCAT"
+      "n": "J.Jill, Inc.",
+      "t": "JILL"
     },
     {
-      "n": "Allison Transmission Holdings Inc",
-      "t": "ALSN"
+      "n": "Ingevity Corp",
+      "t": "NGVT"
     },
     {
-      "n": "Sabra Health Care REIT, Inc.",
-      "t": "SBRA"
+      "n": "DONEGAL GROUP INC",
+      "t": "DGICA"
     },
     {
-      "n": "Kymera Therapeutics, Inc.",
-      "t": "KYMR"
+      "n": "EVERTEC, Inc.",
+      "t": "EVTC"
     },
     {
-      "n": "HUBSPOT INC",
-      "t": "HUBS"
+      "n": "UMB FINANCIAL CORP",
+      "t": "UMBF"
     },
     {
-      "n": "AGREE REALTY CORP",
-      "t": "ADC"
+      "n": "ACME UNITED CORP",
+      "t": "ACU"
     },
     {
-      "n": "FORMFACTOR INC",
-      "t": "FORM"
+      "n": "UPWORK, INC",
+      "t": "UPWK"
     },
     {
-      "n": "AMGEN INC",
-      "t": "AMGN"
+      "n": "ZEBRA TECHNOLOGIES CORP",
+      "t": "ZBRA"
     },
     {
-      "n": "CHURCH & DWIGHT CO INC /DE/",
-      "t": "CHD"
+      "n": "Travel & Leisure Co.",
+      "t": "TNL"
     },
     {
-      "n": "TERADYNE, INC",
-      "t": "TER"
+      "n": "FIRST BANCORP /NC/",
+      "t": "FBNC"
     },
     {
-      "n": "Keysight Technologies, Inc.",
-      "t": "KEYS"
+      "n": "CCH Holdings Ltd",
+      "t": "CCHH"
     },
     {
-      "n": "Perella Weinberg Partners",
-      "t": "PWP"
+      "n": "Elanco Animal Health Inc",
+      "t": "ELAN"
     },
     {
-      "n": "ETSY INC",
-      "t": "ETSY"
+      "n": "AKAMAI TECHNOLOGIES INC",
+      "t": "AKAM"
     },
     {
-      "n": "APPLIED MATERIALS INC /DE",
-      "t": "AMAT"
+      "n": "Virtu Financial, Inc.",
+      "t": "VIRT"
     },
     {
-      "n": "Kura Oncology, Inc.",
-      "t": "KURA"
+      "n": "Vistance Networks, Inc.",
+      "t": "VISN"
     },
     {
-      "n": "On Holding AG",
-      "t": "ONON"
+      "n": "WATERS CORP /DE/",
+      "t": "WAT"
     },
     {
-      "n": "ICON PLC",
-      "t": "ICLR"
+      "n": "SILICON LABORATORIES INC.",
+      "t": "SLAB"
     },
     {
-      "n": "EverCommerce Inc.",
-      "t": "EVCM"
+      "n": "Mueller Water Products, Inc.",
+      "t": "MWA"
     },
     {
-      "n": "PITNEY BOWES INC /DE/",
-      "t": "PBI"
+      "n": "Verisk Analytics, Inc.",
+      "t": "VRSK"
     },
     {
-      "n": "Safe Pro Group Inc.",
-      "t": "SPAI"
+      "n": "Arlo Technologies, Inc.",
+      "t": "ARLO"
     },
     {
-      "n": "SLB LIMITED/NV",
-      "t": "SLB"
+      "n": "Dream Finders Homes, Inc.",
+      "t": "DFH"
     },
     {
-      "n": "CAPITAL ONE FINANCIAL CORP",
-      "t": "COF"
+      "n": "Strategy Inc",
+      "t": "MSTR"
     },
     {
-      "n": "New Oriental Education & Technology Group Inc.",
-      "t": "EDU"
+      "n": "Ulta Beauty, Inc.",
+      "t": "ULTA"
     },
     {
-      "n": "OLD DOMINION FREIGHT LINE, INC.",
-      "t": "ODFL"
+      "n": "WYNDHAM HOTELS & RESORTS, INC.",
+      "t": "WH"
     },
     {
-      "n": "IBEX Ltd",
-      "t": "IBEX"
+      "n": "MARA Holdings, Inc.",
+      "t": "MARA"
     },
     {
-      "n": "Expedia Group, Inc.",
-      "t": "EXPE"
+      "n": "CRISPR Therapeutics AG",
+      "t": "CRSP"
     },
     {
-      "n": "Vertiv Holdings Co",
-      "t": "VRT"
+      "n": "MARCUS CORP",
+      "t": "MCS"
     },
     {
-      "n": "MSA Safety Inc",
-      "t": "MSA"
+      "n": "TEEKAY TANKERS LTD.",
+      "t": "TNK"
     },
     {
-      "n": "Flywire Corp",
-      "t": "FLYW"
+      "n": "NEXTNAV INC.",
+      "t": "NN"
     },
     {
-      "n": "Infleqtion, Inc.",
-      "t": "INFQ"
+      "n": "GARTNER INC",
+      "t": "IT"
     },
     {
-      "n": "PARK OHIO HOLDINGS CORP",
-      "t": "PKOH"
+      "n": "BOSTON OMAHA Corp",
+      "t": "BOC"
     },
     {
-      "n": "JONES LANG LASALLE INC",
-      "t": "JLL"
+      "n": "Porch Group, Inc.",
+      "t": "PRCH"
     },
     {
-      "n": "Sagimet Biosciences Inc.",
-      "t": "SGMT"
+      "n": "Climb Bio, Inc.",
+      "t": "CLYM"
     },
     {
-      "n": "GENERAL ELECTRIC CO",
-      "t": "GE"
+      "n": "Ascendis Pharma A/S",
+      "t": "ASND"
     },
     {
-      "n": "Hamilton Insurance Group, Ltd.",
-      "t": "HG"
+      "n": "PRO DEX INC",
+      "t": "PDEX"
     },
     {
-      "n": "PRIMEENERGY RESOURCES CORP",
-      "t": "PNRG"
+      "n": "Eos Energy Enterprises, Inc.",
+      "t": "EOSE"
     },
     {
-      "n": "Global Ship Lease, Inc.",
-      "t": "GSL"
+      "n": "WESCO INTERNATIONAL INC",
+      "t": "WCC"
     },
     {
-      "n": "Atlassian Corp",
-      "t": "TEAM"
+      "n": "Garrett Motion Inc.",
+      "t": "GTX"
     },
     {
-      "n": "RALPH LAUREN CORP",
-      "t": "RL"
+      "n": "METTLER TOLEDO INTERNATIONAL INC/",
+      "t": "MTD"
     },
     {
-      "n": "VIVMARK RESIDENTIAL",
-      "t": "VMRK"
+      "n": "SOUTHERN MISSOURI BANCORP, INC.",
+      "t": "SMBC"
     },
     {
-      "n": "PHINIA INC.",
-      "t": "PHIN"
+      "n": "Keurig Dr Pepper Inc.",
+      "t": "KDP"
     },
     {
-      "n": "AST SpaceMobile, Inc.",
-      "t": "ASTS"
+      "n": "Jefferson Capital, Inc. / DE",
+      "t": "JCAP"
     },
     {
-      "n": "Aveanna Healthcare Holdings, Inc.",
-      "t": "AVAH"
+      "n": "Vera Therapeutics, Inc.",
+      "t": "VERA"
     },
     {
-      "n": "MediaAlpha, Inc.",
-      "t": "MAX"
+      "n": "RAYMOND JAMES FINANCIAL INC",
+      "t": "RJF"
     },
     {
-      "n": "CDW Corp",
-      "t": "CDW"
+      "n": "Oric Pharmaceuticals, Inc.",
+      "t": "ORIC"
     },
     {
-      "n": "CHEMED CORP",
-      "t": "CHE"
+      "n": "FIRST BANCORP /PR/",
+      "t": "FBP"
     },
     {
-      "n": "US Foods Holding Corp.",
-      "t": "USFD"
+      "n": "BANCFIRST CORP /OK/",
+      "t": "BANF"
     },
     {
-      "n": "Klaviyo, Inc.",
-      "t": "KVYO"
+      "n": "INTERNATIONAL FLAVORS & FRAGRANCES INC",
+      "t": "IFF"
     },
     {
-      "n": "Alto Neuroscience, Inc.",
-      "t": "ANRO"
+      "n": "TD SYNNEX CORP",
+      "t": "SNX"
     },
     {
-      "n": "TDH Holdings, Inc.",
-      "t": "PETZ"
+      "n": "NASDAQ, INC.",
+      "t": "NDAQ"
     },
     {
-      "n": "Frontdoor, Inc.",
-      "t": "FTDR"
+      "n": "VERACYTE, INC.",
+      "t": "VCYT"
     },
     {
-      "n": "Marex Group Ltd",
-      "t": "MRX"
+      "n": "CONSUMER PORTFOLIO SERVICES, INC.",
+      "t": "CPSS"
     },
     {
-      "n": "Wix.com Ltd.",
-      "t": "WIX"
+      "n": "SYSCO CORP",
+      "t": "SYY"
     },
     {
-      "n": "Voya Financial, Inc.",
-      "t": "VOYA"
+      "n": "VICOR CORP",
+      "t": "VICR"
     },
     {
-      "n": "CORNING INC /NY",
-      "t": "GLW"
+      "n": "APPLIED INDUSTRIAL TECHNOLOGIES INC",
+      "t": "AIT"
     },
     {
-      "n": "PC CONNECTION INC",
-      "t": "CNXN"
+      "n": "Chicago Atlantic Real Estate Finance, Inc.",
+      "t": "REFI"
     },
     {
-      "n": "Immunome Inc.",
-      "t": "IMNM"
+      "n": "ASP Isotopes Inc.",
+      "t": "ASPI"
     },
     {
-      "n": "CLOVER HEALTH INVESTMENTS, CORP. /DE",
-      "t": "CLOV"
+      "n": "indie Semiconductor, Inc.",
+      "t": "INDI"
     },
     {
-      "n": "AMKOR TECHNOLOGY, INC.",
-      "t": "AMKR"
+      "n": "California Resources Corp",
+      "t": "CRC"
     },
     {
-      "n": "Newegg Commerce, Inc.",
-      "t": "NEGG"
+      "n": "REVVITY, INC.",
+      "t": "RVTY"
     },
     {
-      "n": "Edwards Lifesciences Corp",
-      "t": "EW"
+      "n": "HF Sinclair Corp",
+      "t": "DINO"
     },
     {
-      "n": "LEGALZOOM.COM, INC.",
-      "t": "LZ"
+      "n": "ENTEGRIS INC",
+      "t": "ENTG"
     },
     {
-      "n": "Monopar Therapeutics",
-      "t": "MNPR"
+      "n": "Amprius Technologies, Inc.",
+      "t": "AMPX"
     },
     {
-      "n": "GENERAL DYNAMICS CORP",
-      "t": "GD"
+      "n": "Artiva Biotherapeutics, Inc.",
+      "t": "ARTV"
     },
     {
-      "n": "HOME DEPOT, INC.",
-      "t": "HD"
+      "n": "PMA Graphene Technology Group Inc.",
+      "t": "PMA"
     },
     {
-      "n": "Kinetik Holdings Inc.",
-      "t": "KNTK"
+      "n": "Lyft, Inc.",
+      "t": "LYFT"
     },
     {
-      "n": "REGENERON PHARMACEUTICALS, INC.",
-      "t": "REGN"
+      "n": "AMERICAN VANGUARD CORP",
+      "t": "AVD"
     },
     {
-      "n": "CONOCOPHILLIPS",
-      "t": "COP"
+      "n": "Unusual Machines, Inc.",
+      "t": "UMAC"
     },
     {
-      "n": "eToro Group Ltd.",
-      "t": "ETOR"
+      "n": "Bankwell Financial Group, Inc.",
+      "t": "BWFG"
     },
     {
-      "n": "Aptiv PLC",
-      "t": "APTV"
+      "n": "WILLIAMS COMPANIES, INC.",
+      "t": "WMB"
     },
     {
-      "n": "Accelerant Holdings",
-      "t": "ARX"
+      "n": "KENNAMETAL INC",
+      "t": "KMT"
     },
     {
-      "n": "Candel Therapeutics, Inc.",
-      "t": "CADL"
+      "n": "AvePoint, Inc.",
+      "t": "AVPT"
     },
     {
-      "n": "Mission Produce, Inc.",
-      "t": "AVO"
+      "n": "BECTON DICKINSON & CO",
+      "t": "BDX"
     },
     {
-      "n": "CADENCE DESIGN SYSTEMS INC",
-      "t": "CDNS"
+      "n": "FIRST SOLAR, INC.",
+      "t": "FSLR"
     },
     {
-      "n": "Coupang, Inc.",
-      "t": "CPNG"
+      "n": "Via Transportation, Inc.",
+      "t": "VIA"
     },
     {
-      "n": "NEWS CORP",
-      "t": "NWS"
+      "n": "ON SEMICONDUCTOR CORP",
+      "t": "ON"
     },
     {
-      "n": "DONALDSON Co INC",
-      "t": "DCI"
+      "n": "Kodiak Gas Services, Inc.",
+      "t": "KGS"
     },
     {
-      "n": "INTERFACE INC",
-      "t": "TILE"
+      "n": "Esquire Financial Holdings, Inc.",
+      "t": "ESQ"
     },
     {
-      "n": "Warby Parker Inc.",
-      "t": "WRBY"
+      "n": "EchoStar CORP",
+      "t": "ECHO"
     },
     {
-      "n": "Amer Sports, Inc.",
-      "t": "AS"
+      "n": "SOPHiA GENETICS SA",
+      "t": "SOPH"
     },
     {
-      "n": "Alarm.com Holdings, Inc.",
-      "t": "ALRM"
+      "n": "Korro Bio, Inc.",
+      "t": "KRRO"
     },
     {
-      "n": "APPIAN CORP",
-      "t": "APPN"
+      "n": "FULLER H B CO",
+      "t": "FUL"
     },
     {
-      "n": "Happen, Inc.",
-      "t": "HAPN"
+      "n": "Matador Resources Co",
+      "t": "MTDR"
     },
     {
-      "n": "Cricut, Inc.",
-      "t": "CRCT"
+      "n": "LAMAR ADVERTISING CO/NEW",
+      "t": "LAMR"
     },
     {
-      "n": "WESTLAKE CORP",
-      "t": "WLK"
+      "n": "CSW INDUSTRIALS, INC.",
+      "t": "CSW"
     },
     {
-      "n": "StandardAero, Inc.",
-      "t": "SARO"
+      "n": "Enliven Therapeutics, Inc.",
+      "t": "ELVN"
     },
     {
-      "n": "Harmony Biosciences Holdings, Inc.",
-      "t": "HRMY"
+      "n": "Dreamland Ltd",
+      "t": "TDIC"
     },
     {
-      "n": "MKS INC",
-      "t": "MKSI"
+      "n": "Ferguson Enterprises Inc. /DE/",
+      "t": "FERG"
     },
     {
-      "n": "AGI Inc",
-      "t": "AGBK"
+      "n": "Bausch & Lomb Corp",
+      "t": "BLCO"
     },
     {
-      "n": "Amalgamated Financial Corp.",
-      "t": "AMAL"
+      "n": "FENNEC PHARMACEUTICALS INC.",
+      "t": "FENC"
     },
     {
-      "n": "VORNADO REALTY TRUST",
-      "t": "VNO"
+      "n": "ASSURANT, INC.",
+      "t": "AIZ"
     },
     {
-      "n": "RTX Corp",
-      "t": "RTX"
+      "n": "ARROWHEAD PHARMACEUTICALS, INC.",
+      "t": "ARWR"
     },
     {
-      "n": "FirstCash Holdings, Inc.",
-      "t": "FCFS"
+      "n": "Hilltop Holdings Inc.",
+      "t": "HTH"
     },
     {
-      "n": "BJs RESTAURANTS INC",
-      "t": "BJRI"
+      "n": "First Guaranty Bancshares, Inc.",
+      "t": "FGBI"
     },
     {
-      "n": "Red Rock Resorts, Inc.",
-      "t": "RRR"
+      "n": "IDEXX LABORATORIES INC /DE",
+      "t": "IDXX"
     },
     {
-      "n": "LATTICE SEMICONDUCTOR CORP",
-      "t": "LSCC"
+      "n": "Claritev Corp",
+      "t": "CTEV"
     },
     {
-      "n": "EXTREME NETWORKS INC",
-      "t": "EXTR"
+      "n": "ROCKWELL AUTOMATION, INC",
+      "t": "ROK"
     },
     {
-      "n": "Definium Therapeutics, Inc.",
-      "t": "DFTX"
+      "n": "BIOMARIN PHARMACEUTICAL INC",
+      "t": "BMRN"
     },
     {
-      "n": "CIMPRESS plc",
-      "t": "CMPR"
+      "n": "MOODYS CORP /DE/",
+      "t": "MCO"
     },
     {
-      "n": "SI-BONE, Inc.",
-      "t": "SIBN"
+      "n": "GCM Grosvenor Inc.",
+      "t": "GCMG"
     },
     {
-      "n": "BlackSky Technology Inc.",
-      "t": "BKSY"
+      "n": "ITT INC.",
+      "t": "ITT"
     },
     {
-      "n": "GARMIN LTD",
-      "t": "GRMN"
+      "n": "KINGSWAY Corp",
+      "t": "KWY"
     },
     {
-      "n": "e.l.f. Beauty, Inc.",
-      "t": "ELF"
+      "n": "Palomar Holdings, Inc.",
+      "t": "PLMR"
     },
     {
-      "n": "AMERICAN EXPRESS CO",
-      "t": "AXP"
+      "n": "Alcoa Corp",
+      "t": "AA"
     },
     {
-      "n": "TELEPHONE & DATA SYSTEMS INC /DE/",
-      "t": "TDS"
+      "n": "Primerica, Inc.",
+      "t": "PRI"
     },
     {
-      "n": "UroGen Pharma Ltd.",
-      "t": "URGN"
+      "n": "EverQuote, Inc.",
+      "t": "EVER"
     },
     {
-      "n": "TriplePoint Venture Growth BDC Corp.",
-      "t": "TPVG"
+      "n": "VEON Ltd.",
+      "t": "VEON"
     },
     {
-      "n": "NVE CORP /NEW/",
-      "t": "NVEC"
+      "n": "PRICE T ROWE GROUP INC",
+      "t": "TROW"
     },
     {
-      "n": "Amylyx Pharmaceuticals, Inc.",
-      "t": "AMLX"
+      "n": "G III APPAREL GROUP LTD /DE/",
+      "t": "GIII"
     },
     {
-      "n": "HASBRO, INC.",
-      "t": "HAS"
+      "n": "PHOTRONICS INC",
+      "t": "PLAB"
     },
     {
-      "n": "TransUnion",
-      "t": "TRU"
+      "n": "Metropolitan Bank Holding Corp.",
+      "t": "MCB"
     },
     {
-      "n": "BJ's Wholesale Club Holdings, Inc.",
-      "t": "BJ"
+      "n": "Terreno Realty Corp",
+      "t": "TRNO"
     },
     {
-      "n": "BlueLinx Holdings Inc.",
-      "t": "BXC"
+      "n": "OUTFRONT Media Inc.",
+      "t": "OUT"
     },
     {
-      "n": "Dynatrace, Inc.",
-      "t": "DT"
+      "n": "Bank of New York Mellon Corp",
+      "t": "BNY"
     },
     {
-      "n": "Abacus Global Management, Inc.",
-      "t": "ABX"
+      "n": "ARCH CAPITAL GROUP LTD.",
+      "t": "ACGL"
     },
     {
-      "n": "Relay Therapeutics, Inc.",
-      "t": "RLAY"
+      "n": "Match Group, Inc.",
+      "t": "MTCH"
     },
     {
-      "n": "Five9, Inc.",
-      "t": "FIVN"
+      "n": "KKR & Co. Inc.",
+      "t": "KKR"
     },
     {
-      "n": "OOMA INC",
-      "t": "OOMA"
+      "n": "INNODATA INC",
+      "t": "INOD"
     },
     {
-      "n": "HOST HOTELS & RESORTS, INC.",
-      "t": "HST"
+      "n": "STARZ ENTERTAINMENT CORP /CN/",
+      "t": "STRZ"
     },
     {
-      "n": "NORTHPOINTE BANCSHARES INC",
-      "t": "NPB"
+      "n": "Entrada Therapeutics, Inc.",
+      "t": "TRDA"
     },
     {
-      "n": "HawkEye 360, Inc.",
-      "t": "HAWK"
+      "n": "PROKIDNEY CORP.",
+      "t": "PROK"
     },
     {
-      "n": "Xenon Pharmaceuticals Inc.",
-      "t": "XENE"
+      "n": "AMBARELLA INC",
+      "t": "AMBA"
     }
   ],
   "titles": []
