@@ -25,11 +25,6 @@
     "ticker": "FUL"
   },
   {
-    "issuer_cik": "1627223",
-    "name": "Chemours Co",
-    "ticker": "CC"
-  },
-  {
     "issuer_cik": "2131524",
     "name": "Braveheart Bio, Inc.",
     "ticker": "BRVE"
@@ -43,6 +38,11 @@
     "issuer_cik": "930236",
     "name": "REDWOOD TRUST INC",
     "ticker": "RWT"
+  },
+  {
+    "issuer_cik": "1627223",
+    "name": "Chemours Co",
+    "ticker": "CC"
   },
   {
     "issuer_cik": "1576789",
@@ -185,6 +185,11 @@
     "ticker": "PAM"
   },
   {
+    "issuer_cik": "1551047",
+    "name": "Bluerock Private Real Estate Fund",
+    "ticker": "BPRE"
+  },
+  {
     "issuer_cik": "1715497",
     "name": "Borr Drilling Ltd",
     "ticker": "BORR"
@@ -193,11 +198,6 @@
     "issuer_cik": "1704715",
     "name": "Alpha Metallurgical Resources, Inc.",
     "ticker": "AMR"
-  },
-  {
-    "issuer_cik": "1551047",
-    "name": "Bluerock Private Real Estate Fund",
-    "ticker": "BPRE"
   },
   {
     "issuer_cik": "1865200",
@@ -263,11 +263,6 @@
     "issuer_cik": "2040127",
     "name": "Karman Holdings Inc.",
     "ticker": "KRMN"
-  },
-  {
-    "issuer_cik": "1437958",
-    "name": "COASTAL FINANCIAL CORP",
-    "ticker": "CCB"
   },
   {
     "issuer_cik": "1840572",
@@ -340,6 +335,11 @@
     "ticker": "UAMY"
   },
   {
+    "issuer_cik": "1095435",
+    "name": "Alpha Compute Corp",
+    "ticker": "ALP"
+  },
+  {
     "issuer_cik": "1982518",
     "name": "Smith Douglas Homes Corp.",
     "ticker": "SDHC"
@@ -348,11 +348,6 @@
     "issuer_cik": "1306830",
     "name": "Celanese Corp",
     "ticker": "CE"
-  },
-  {
-    "issuer_cik": "1130713",
-    "name": "BED BATH & BEYOND, INC.",
-    "ticker": "BBBY"
   },
   {
     "issuer_cik": "1841761",
@@ -438,6 +433,11 @@
     "issuer_cik": "65433",
     "name": "MEXICO FUND INC",
     "ticker": "MXF"
+  },
+  {
+    "issuer_cik": "838875",
+    "name": "WILLAMETTE VALLEY VINEYARDS INC",
+    "ticker": "WVVI"
   },
   {
     "issuer_cik": "1041368",

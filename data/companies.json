@@ -24,6 +24,11 @@
     "sic_description": "Electric & Other Services Combined",
     "summary": null
   },
+  "1005731": {
+    "name": "IDT CORP",
+    "sic_description": "Telephone Communications (No Radiotelephone)",
+    "summary": null
+  },
   "1013488": {
     "name": "BJs RESTAURANTS INC",
     "sic_description": "Retail-Eating  Places",
@@ -229,6 +234,11 @@
     "sic_description": "Pharmaceutical Preparations",
     "summary": null
   },
+  "1070235": {
+    "name": "BLACKBERRY Ltd",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
   "1070985": {
     "name": "CoreCivic, Inc.",
     "sic_description": "Real Estate Investment Trusts",
@@ -317,6 +327,11 @@
   "1094972": {
     "name": "ULTRAPAR HOLDINGS INC",
     "sic_description": "Natural Gas Distribution",
+    "summary": null
+  },
+  "1095435": {
+    "name": "Alpha Compute Corp",
+    "sic_description": "Finance Services",
     "summary": null
   },
   "1099800": {
@@ -644,6 +659,11 @@
     "sic_description": "Services-Miscellaneous Amusement & Recreation",
     "summary": null
   },
+  "1338940": {
+    "name": "Perion Network Ltd.",
+    "sic_description": "Services-Computer Programming Services",
+    "summary": null
+  },
   "1339005": {
     "name": "FEMASYS INC",
     "sic_description": "Surgical & Medical Instruments & Apparatus",
@@ -759,9 +779,19 @@
     "sic_description": "Industrial Organic Chemicals",
     "summary": null
   },
+  "1393052": {
+    "name": "VEEVA SYSTEMS INC",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
   "1393434": {
     "name": "OCULAR THERAPEUTIX, INC",
     "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1393584": {
+    "name": "American Well Corp",
+    "sic_description": "Services-Business Services, NEC",
     "summary": null
   },
   "1393818": {
@@ -873,6 +903,11 @@
     "name": "COASTAL FINANCIAL CORP",
     "sic_description": "State Commercial Banks",
     "summary": "지역 은행"
+  },
+  "1438423": {
+    "name": "EVERSPIN TECHNOLOGIES INC.",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
   },
   "1438472": {
     "name": "MIAMI INTERNATIONAL HOLDINGS, INC.",
@@ -1004,6 +1039,11 @@
     "sic_description": "Construction - Special Trade Contractors",
     "summary": "에너지 효율·인프라 솔루션 회사"
   },
+  "1493594": {
+    "name": "MACOM Technology Solutions Holdings, Inc.",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
   "1494259": {
     "name": "CarGurus, Inc.",
     "sic_description": "Services-Computer Processing & Data Preparation",
@@ -1017,6 +1057,11 @@
   "1500412": {
     "name": "Ambiq Micro, Inc.",
     "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "1501697": {
+    "name": "X4 Pharmaceuticals, Inc",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
     "summary": null
   },
   "1502292": {
@@ -1137,6 +1182,11 @@
   "1531152": {
     "name": "BJ's Wholesale Club Holdings, Inc.",
     "sic_description": "Retail-Variety Stores",
+    "summary": null
+  },
+  "1531177": {
+    "name": "Sight Sciences, Inc.",
+    "sic_description": "Surgical & Medical Instruments & Apparatus",
     "summary": null
   },
   "1533040": {
@@ -1726,6 +1776,11 @@
   },
   "1671502": {
     "name": "Quoin Pharmaceuticals, Ltd.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "1672619": {
+    "name": "Enliven Therapeutics, Inc.",
     "sic_description": "Pharmaceutical Preparations",
     "summary": null
   },
@@ -2499,6 +2554,11 @@
     "sic_description": "Fire, Marine & Casualty Insurance",
     "summary": null
   },
+  "1889109": {
+    "name": "BELITE BIO, INC",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
   "1898718": {
     "name": "GMR Solutions Inc.",
     "sic_description": "Transportation Services",
@@ -2524,9 +2584,19 @@
     "sic_description": "Services-Management Consulting Services",
     "summary": null
   },
+  "1920406": {
+    "name": "Strive, Inc.",
+    "sic_description": "Finance Services",
+    "summary": null
+  },
   "1921865": {
     "name": "ASP Isotopes Inc.",
     "sic_description": "Miscellaneous Chemical Products",
+    "summary": null
+  },
+  "1922641": {
+    "name": "Enlight Renewable Energy Ltd.",
+    "sic_description": "Electric Services",
     "summary": null
   },
   "1925309": {
@@ -2694,6 +2764,11 @@
     "sic_description": "Savings Institutions, Not Federally Chartered",
     "summary": "지역 은행"
   },
+  "2067129": {
+    "name": "Neptune Insurance Holdings Inc.",
+    "sic_description": "Insurance Agents, Brokers & Service",
+    "summary": null
+  },
   "2070849": {
     "name": "BillionToOne, Inc.",
     "sic_description": "Services-Medical Laboratories",
@@ -2839,6 +2914,11 @@
     "sic_description": "Rubber & Plastics Footwear",
     "summary": null
   },
+  "320193": {
+    "name": "Apple Inc.",
+    "sic_description": "Electronic Computers",
+    "summary": null
+  },
   "3453": {
     "name": "Matson, Inc.",
     "sic_description": "Water Transportation",
@@ -2977,6 +3057,11 @@
   "68505": {
     "name": "Motorola Solutions, Inc.",
     "sic_description": "Radio & Tv Broadcasting & Communications Equipment",
+    "summary": null
+  },
+  "6951": {
+    "name": "APPLIED MATERIALS INC /DE",
+    "sic_description": "Semiconductors & Related Devices",
     "summary": null
   },
   "700841": {
@@ -3232,6 +3317,11 @@
   "831259": {
     "name": "FREEPORT-MCMORAN INC",
     "sic_description": "Metal Mining",
+    "summary": null
+  },
+  "838875": {
+    "name": "WILLAMETTE VALLEY VINEYARDS INC",
+    "sic_description": "Beverages",
     "summary": null
   },
   "840489": {
