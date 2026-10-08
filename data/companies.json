@@ -2479,6 +2479,11 @@
     "sic_description": "Retail-Catalog & Mail-Order Houses",
     "summary": "온라인 대형 상품 판매 회사"
   },
+  "1859690": {
+    "name": "Arqit Quantum Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
   "1861107": {
     "name": "Ceribell, Inc.",
     "sic_description": "Electromedical & Electrotherapeutic Apparatus",
@@ -2582,6 +2587,11 @@
   "1903508": {
     "name": "Public Policy Holding Company, Inc.",
     "sic_description": "Services-Management Consulting Services",
+    "summary": null
+  },
+  "1919246": {
+    "name": "Pelthos Therapeutics Inc.",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
     "summary": null
   },
   "1920406": {
@@ -3402,6 +3412,11 @@
   "882508": {
     "name": "QUICKLOGIC Corp",
     "sic_description": "Semiconductors & Related Devices",
+    "summary": null
+  },
+  "883241": {
+    "name": "SYNOPSYS INC",
+    "sic_description": "Services-Prepackaged Software",
     "summary": null
   },
   "883984": {

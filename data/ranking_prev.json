@@ -25,11 +25,6 @@
     "ticker": "FUL"
   },
   {
-    "issuer_cik": "2131524",
-    "name": "Braveheart Bio, Inc.",
-    "ticker": "BRVE"
-  },
-  {
     "issuer_cik": "1386716",
     "name": "Star Bulk Carriers Corp.",
     "ticker": "SBLK"
@@ -40,11 +35,6 @@
     "ticker": "RWT"
   },
   {
-    "issuer_cik": "1627223",
-    "name": "Chemours Co",
-    "ticker": "CC"
-  },
-  {
     "issuer_cik": "1576789",
     "name": "Wix.com Ltd.",
     "ticker": "WIX"
@@ -53,11 +43,6 @@
     "issuer_cik": "1326380",
     "name": "GameStop Corp.",
     "ticker": "GME"
-  },
-  {
-    "issuer_cik": "1739104",
-    "name": "Elanco Animal Health Inc",
-    "ticker": "ELAN"
   },
   {
     "issuer_cik": "1552797",
@@ -78,11 +63,6 @@
     "issuer_cik": "1502292",
     "name": "Presurance Holdings, Inc.",
     "ticker": "PRHI"
-  },
-  {
-    "issuer_cik": "1339005",
-    "name": "FEMASYS INC",
-    "ticker": "FEMY"
   },
   {
     "issuer_cik": "1635077",
@@ -120,11 +100,6 @@
     "ticker": "AMRC"
   },
   {
-    "issuer_cik": "1505732",
-    "name": "Bankwell Financial Group, Inc.",
-    "ticker": "BWFG"
-  },
-  {
     "issuer_cik": "2001557",
     "name": "Innventure, Inc.",
     "ticker": "INV"
@@ -138,6 +113,11 @@
     "issuer_cik": "318833",
     "name": "TEAM INC",
     "ticker": "TISI"
+  },
+  {
+    "issuer_cik": "1505732",
+    "name": "Bankwell Financial Group, Inc.",
+    "ticker": "BWFG"
   },
   {
     "issuer_cik": "1872789",
@@ -160,11 +140,6 @@
     "ticker": "ANIX"
   },
   {
-    "issuer_cik": "1046179",
-    "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
-    "ticker": "TSM"
-  },
-  {
     "issuer_cik": "1660334",
     "name": "Verrica Pharmaceuticals Inc.",
     "ticker": "VRCA"
@@ -180,6 +155,11 @@
     "ticker": "EML"
   },
   {
+    "issuer_cik": "1715497",
+    "name": "Borr Drilling Ltd",
+    "ticker": "BORR"
+  },
+  {
     "issuer_cik": "1469395",
     "name": "Pampa Energy Inc.",
     "ticker": "PAM"
@@ -188,11 +168,6 @@
     "issuer_cik": "1551047",
     "name": "Bluerock Private Real Estate Fund",
     "ticker": "BPRE"
-  },
-  {
-    "issuer_cik": "1715497",
-    "name": "Borr Drilling Ltd",
-    "ticker": "BORR"
   },
   {
     "issuer_cik": "1704715",
@@ -258,6 +233,11 @@
     "issuer_cik": "1408534",
     "name": "First Guaranty Bancshares, Inc.",
     "ticker": "FGBI"
+  },
+  {
+    "issuer_cik": "1739104",
+    "name": "Elanco Animal Health Inc",
+    "ticker": "ELAN"
   },
   {
     "issuer_cik": "2040127",
@@ -370,11 +350,6 @@
     "ticker": "RWAY"
   },
   {
-    "issuer_cik": "1550913",
-    "name": "MacKenzie Realty Capital, Inc.",
-    "ticker": "MKZR"
-  },
-  {
     "issuer_cik": "1638290",
     "name": "MasterCraft Boat Holdings, Inc.",
     "ticker": "MCFT"
@@ -395,9 +370,9 @@
     "ticker": "GRNT"
   },
   {
-    "issuer_cik": "1163389",
-    "name": "NEW PEOPLES BANKSHARES INC",
-    "ticker": "NWPP"
+    "issuer_cik": "1550913",
+    "name": "MacKenzie Realty Capital, Inc.",
+    "ticker": "MKZR"
   },
   {
     "issuer_cik": "1547546",
