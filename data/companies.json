@@ -589,6 +589,11 @@
     "sic_description": "Patent Owners & Lessors",
     "summary": null
   },
+  "1309108": {
+    "name": "WEX Inc.",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
   "1315098": {
     "name": "Roblox Corp",
     "sic_description": "Services-Prepackaged Software",
@@ -643,6 +648,11 @@
     "name": "OOMA INC",
     "sic_description": "Services-Computer Processing & Data Preparation",
     "summary": "인터넷 전화 서비스 회사"
+  },
+  "1327811": {
+    "name": "Workday, Inc.",
+    "sic_description": "Services-Computer Processing & Data Preparation",
+    "summary": null
   },
   "1331284": {
     "name": "DHT Holdings, Inc.",
@@ -963,6 +973,11 @@
     "name": "Aura Minerals Inc.",
     "sic_description": "Metal Mining",
     "summary": "금속 광산 회사"
+  },
+  "1469367": {
+    "name": "Sunrun Inc.",
+    "sic_description": "Construction - Special Trade Contractors",
+    "summary": null
   },
   "1469395": {
     "name": "Pampa Energy Inc.",
@@ -1469,6 +1484,11 @@
     "sic_description": "Industrial Instruments For Measurement, Display, and Control",
     "summary": "전자 계측 장비를 만드는 회사"
   },
+  "1601830": {
+    "name": "RECURSION PHARMACEUTICALS, INC.",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
+  },
   "1604778": {
     "name": "Qorvo, Inc.",
     "sic_description": "Semiconductors & Related Devices",
@@ -1852,6 +1872,11 @@
   "1698514": {
     "name": "National Energy Services Reunited Corp.",
     "sic_description": "Oil & Gas Field Services, NEC",
+    "summary": null
+  },
+  "1699031": {
+    "name": "GRAIL, Inc.",
+    "sic_description": "Services-Medical Laboratories",
     "summary": null
   },
   "1699136": {
@@ -2742,6 +2767,11 @@
   "2019410": {
     "name": "Caris Life Sciences, Inc.",
     "sic_description": "Services-Medical Laboratories",
+    "summary": null
+  },
+  "2020932": {
+    "name": "AgomAb Therapeutics NV",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
     "summary": null
   },
   "2021728": {

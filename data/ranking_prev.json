@@ -320,6 +320,11 @@
     "ticker": "ALP"
   },
   {
+    "issuer_cik": "2020932",
+    "name": "AgomAb Therapeutics NV",
+    "ticker": "AGMB"
+  },
+  {
     "issuer_cik": "1982518",
     "name": "Smith Douglas Homes Corp.",
     "ticker": "SDHC"
