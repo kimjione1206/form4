@@ -2,7 +2,7 @@
   "1001250": {
     "name": "ESTEE LAUDER COMPANIES INC",
     "sic_description": "Perfumes, Cosmetics & Other Toilet Preparations",
-    "summary": null
+    "summary": "화장품과 향수를 만드는 회사"
   },
   "1001385": {
     "name": "NWPX Infrastructure, Inc.",
@@ -67,12 +67,12 @@
   "1018963": {
     "name": "ATI INC",
     "sic_description": "Steel Pipe & Tubes",
-    "summary": null
+    "summary": "특수 금속 소재를 만드는 회사"
   },
   "1020569": {
     "name": "IRON MOUNTAIN INC",
     "sic_description": "Real Estate Investment Trusts",
-    "summary": null
+    "summary": "기록물 보관·관리 서비스 회사"
   },
   "1023024": {
     "name": "ANI PHARMACEUTICALS INC",
@@ -137,7 +137,7 @@
   "1042046": {
     "name": "AMERICAN FINANCIAL GROUP INC",
     "sic_description": "Fire, Marine & Casualty Insurance",
-    "summary": null
+    "summary": "특수 손해보험 회사"
   },
   "1045810": {
     "name": "NVIDIA CORP",
@@ -197,7 +197,7 @@
   "1065088": {
     "name": "EBAY INC",
     "sic_description": "Services-Business Services, NEC",
-    "summary": null
+    "summary": "온라인 거래 장터 회사"
   },
   "1065280": {
     "name": "NETFLIX INC",
@@ -232,7 +232,7 @@
   "1070081": {
     "name": "PTC THERAPEUTICS, INC.",
     "sic_description": "Pharmaceutical Preparations",
-    "summary": null
+    "summary": "희귀 질환 치료제를 개발하는 제약회사"
   },
   "1070235": {
     "name": "BLACKBERRY Ltd",
@@ -277,12 +277,12 @@
   "1083301": {
     "name": "TERAWULF INC.",
     "sic_description": "Finance Services",
-    "summary": null
+    "summary": "고성능 컴퓨팅용 데이터센터 회사"
   },
   "108385": {
     "name": "WORLD ACCEPTANCE CORP",
     "sic_description": "Personal Credit Institutions",
-    "summary": null
+    "summary": "소액 개인 대출을 하는 금융회사"
   },
   "1084048": {
     "name": "ZIFF DAVIS, INC.",
@@ -357,7 +357,7 @@
   "1104506": {
     "name": "INSMED Inc",
     "sic_description": "Pharmaceutical Preparations",
-    "summary": null
+    "summary": "희귀 질환 치료제를 개발하는 제약회사"
   },
   "1104657": {
     "name": "MATERION Corp",
@@ -412,7 +412,7 @@
   "1140859": {
     "name": "Cencora, Inc.",
     "sic_description": "Wholesale-Drugs, Proprietaries & Druggists' Sundries",
-    "summary": null
+    "summary": "의약품 유통 회사"
   },
   "1141391": {
     "name": "Mastercard Inc",
@@ -432,7 +432,7 @@
   "1158114": {
     "name": "APPLIED OPTOELECTRONICS, INC.",
     "sic_description": "Semiconductors & Related Devices",
-    "summary": null
+    "summary": "광통신 부품을 만드는 회사"
   },
   "1158172": {
     "name": "COMSCORE, INC.",
@@ -442,7 +442,7 @@
   "1159036": {
     "name": "HALOZYME THERAPEUTICS, INC.",
     "sic_description": "Biological Products, (No Diagnostic Substances)",
-    "summary": null
+    "summary": "약물 전달 기술을 개발하는 바이오 회사"
   },
   "1160330": {
     "name": "BANK BRADESCO",
@@ -592,7 +592,7 @@
   "1309108": {
     "name": "WEX Inc.",
     "sic_description": "Services-Business Services, NEC",
-    "summary": null
+    "summary": "기업용 결제 서비스 회사"
   },
   "1315098": {
     "name": "Roblox Corp",
@@ -627,7 +627,7 @@
   "1324424": {
     "name": "Expedia Group, Inc.",
     "sic_description": "Transportation Services",
-    "summary": null
+    "summary": "온라인 여행 예약 회사"
   },
   "1326380": {
     "name": "GameStop Corp.",
@@ -792,7 +792,7 @@
   "1393052": {
     "name": "VEEVA SYSTEMS INC",
     "sic_description": "Services-Prepackaged Software",
-    "summary": null
+    "summary": "제약·바이오용 클라우드 소프트웨어 회사"
   },
   "1393434": {
     "name": "OCULAR THERAPEUTIX, INC",
@@ -807,7 +807,7 @@
   "1393818": {
     "name": "Blackstone Inc.",
     "sic_description": "Investment Advice",
-    "summary": null
+    "summary": "대체자산 운용 회사"
   },
   "1395064": {
     "name": "TAKEDA PHARMACEUTICAL CO LTD",
@@ -832,7 +832,7 @@
   "1403161": {
     "name": "VISA INC.",
     "sic_description": "Services-Business Services, NEC",
-    "summary": null
+    "summary": "전자 결제 네트워크 회사"
   },
   "1408534": {
     "name": "First Guaranty Bancshares, Inc.",
@@ -847,12 +847,12 @@
   "1410384": {
     "name": "Q2 Holdings, Inc.",
     "sic_description": "Services-Prepackaged Software",
-    "summary": null
+    "summary": "은행용 디지털 뱅킹 소프트웨어 회사"
   },
   "1411207": {
     "name": "Allison Transmission Holdings Inc",
     "sic_description": "Motor Vehicle Parts & Accessories",
-    "summary": null
+    "summary": "상용차용 변속기를 만드는 회사"
   },
   "1418819": {
     "name": "Iridium Communications Inc.",
@@ -957,12 +957,12 @@
   "1462120": {
     "name": "Live Oak Bancshares, Inc.",
     "sic_description": "State Commercial Banks",
-    "summary": null
+    "summary": "은행 지주회사"
   },
   "1464521": {
     "name": "Heartflow, Inc.",
     "sic_description": "Surgical & Medical Instruments & Apparatus",
-    "summary": null
+    "summary": "심장질환 진단 소프트웨어 회사"
   },
   "1467623": {
     "name": "DROPBOX, INC.",
@@ -977,7 +977,7 @@
   "1469367": {
     "name": "Sunrun Inc.",
     "sic_description": "Construction - Special Trade Contractors",
-    "summary": null
+    "summary": "주택용 태양광 에너지 서비스 회사"
   },
   "1469395": {
     "name": "Pampa Energy Inc.",
@@ -1022,7 +1022,7 @@
   "1477720": {
     "name": "Asana, Inc.",
     "sic_description": "Services-Prepackaged Software",
-    "summary": null
+    "summary": "업무 협업 소프트웨어 회사"
   },
   "1478320": {
     "name": "Adaptive Biotechnologies Corp",
@@ -1132,7 +1132,7 @@
   "1517175": {
     "name": "Chefs' Warehouse, Inc.",
     "sic_description": "Wholesale-Groceries, General Line",
-    "summary": null
+    "summary": "요리사 대상 특수 식자재 유통 회사"
   },
   "1517413": {
     "name": "Fastly, Inc.",
@@ -1342,7 +1342,7 @@
   "1575515": {
     "name": "Sprouts Farmers Market, Inc.",
     "sic_description": "Retail-Grocery Stores",
-    "summary": null
+    "summary": "건강식품 중심 식료품 체인 회사"
   },
   "1576280": {
     "name": "Guardant Health, Inc.",
@@ -1382,12 +1382,12 @@
   "1579878": {
     "name": "Figma, Inc.",
     "sic_description": "Services-Prepackaged Software",
-    "summary": null
+    "summary": "디자인 협업 소프트웨어 회사"
   },
   "1580560": {
     "name": "Flywire Corp",
     "sic_description": "Services-Business Services, NEC",
-    "summary": null
+    "summary": "글로벌 결제 서비스 회사"
   },
   "1581280": {
     "name": "Twist Bioscience Corp",
@@ -1407,7 +1407,7 @@
   "1583648": {
     "name": "PALVELLA THERAPEUTICS, INC.",
     "sic_description": "Pharmaceutical Preparations",
-    "summary": null
+    "summary": "희귀 피부질환 치료제를 개발하는 제약회사"
   },
   "1583708": {
     "name": "SentinelOne, Inc.",
@@ -1417,12 +1417,12 @@
   "1585521": {
     "name": "Zoom Communications, Inc.",
     "sic_description": "Services-Computer Programming, Data Processing, Etc.",
-    "summary": null
+    "summary": "화상회의 소프트웨어 회사"
   },
   "1587523": {
     "name": "Knowles Corp",
     "sic_description": "Household Audio & Video Equipment",
-    "summary": null
+    "summary": "음향 부품을 만드는 회사"
   },
   "1590895": {
     "name": "Caesars Entertainment, Inc.",
@@ -1472,7 +1472,7 @@
   "1599617": {
     "name": "DNOW Inc.",
     "sic_description": "Oil & Gas Field Machinery & Equipment",
-    "summary": null
+    "summary": "에너지 산업용 배관·자재 유통 회사"
   },
   "1600033": {
     "name": "e.l.f. Beauty, Inc.",
@@ -1632,7 +1632,7 @@
   "1639723": {
     "name": "Navan, Inc.",
     "sic_description": "Services-Prepackaged Software",
-    "summary": null
+    "summary": "기업 출장·경비 관리 플랫폼 회사"
   },
   "1639825": {
     "name": "PELOTON INTERACTIVE, INC.",
@@ -1677,7 +1677,7 @@
   "1645590": {
     "name": "Hewlett Packard Enterprise Co",
     "sic_description": "Computer & office Equipment",
-    "summary": null
+    "summary": "기업용 서버와 네트워크 장비 회사"
   },
   "1647639": {
     "name": "Upstart Holdings, Inc.",
@@ -1697,7 +1697,7 @@
   "1650372": {
     "name": "Atlassian Corp",
     "sic_description": "Services-Prepackaged Software",
-    "summary": null
+    "summary": "팀 협업 소프트웨어 회사"
   },
   "1651308": {
     "name": "BeOne Medicines Ltd.",
@@ -1757,7 +1757,7 @@
   "1660134": {
     "name": "Okta, Inc.",
     "sic_description": "Services-Prepackaged Software",
-    "summary": null
+    "summary": "기업용 계정 보안 소프트웨어 회사"
   },
   "1660334": {
     "name": "Verrica Pharmaceuticals Inc.",
@@ -1822,7 +1822,7 @@
   "1676238": {
     "name": "Braze, Inc.",
     "sic_description": "Services-Prepackaged Software",
-    "summary": null
+    "summary": "고객 소통 마케팅 소프트웨어 회사"
   },
   "1679788": {
     "name": "Coinbase Global, Inc.",
@@ -1832,12 +1832,12 @@
   "1680062": {
     "name": "ACM Research, Inc.",
     "sic_description": "Special Industry Machinery, NEC",
-    "summary": null
+    "summary": "반도체 세정 장비를 만드는 회사"
   },
   "1682852": {
     "name": "Moderna, Inc.",
     "sic_description": "Biological Products, (No Diagnostic Substances)",
-    "summary": null
+    "summary": "mRNA 의약품을 개발하는 바이오 회사"
   },
   "1690585": {
     "name": "Dianthus Therapeutics, Inc. /DE/",
@@ -1852,7 +1852,7 @@
   "1691303": {
     "name": "WARRIOR MET COAL, INC.",
     "sic_description": "Silver Ores",
-    "summary": null
+    "summary": "제철용 석탄을 생산하는 회사"
   },
   "1691421": {
     "name": "Lemonade, Inc.",
@@ -1862,7 +1862,7 @@
   "1692376": {
     "name": "Velocity Financial, Inc.",
     "sic_description": "Finance Services",
-    "summary": null
+    "summary": "부동산 담보 대출을 하는 금융회사"
   },
   "1694426": {
     "name": "Delek US Holdings, Inc.",
@@ -1872,12 +1872,12 @@
   "1698514": {
     "name": "National Energy Services Reunited Corp.",
     "sic_description": "Oil & Gas Field Services, NEC",
-    "summary": null
+    "summary": "중동·북아프리카 유전 서비스 회사"
   },
   "1699031": {
     "name": "GRAIL, Inc.",
     "sic_description": "Services-Medical Laboratories",
-    "summary": null
+    "summary": "암 조기 검진 검사를 하는 회사"
   },
   "1699136": {
     "name": "Cactus, Inc.",
@@ -1922,17 +1922,17 @@
   "1710340": {
     "name": "Eton Pharmaceuticals, Inc.",
     "sic_description": "Pharmaceutical Preparations",
-    "summary": null
+    "summary": "희귀 질환 치료제를 만드는 제약회사"
   },
   "1711279": {
     "name": "Krystal Biotech, Inc.",
     "sic_description": "Biological Products, (No Diagnostic Substances)",
-    "summary": null
+    "summary": "유전자 치료제를 개발하는 바이오 회사"
   },
   "1713445": {
     "name": "Reddit, Inc.",
     "sic_description": "Services-Computer Processing & Data Preparation",
-    "summary": null
+    "summary": "온라인 커뮤니티 플랫폼 회사"
   },
   "1713683": {
     "name": "Zscaler, Inc.",
@@ -1967,17 +1967,17 @@
   "1723128": {
     "name": "Amneal Pharmaceuticals, Inc.",
     "sic_description": "Pharmaceutical Preparations",
-    "summary": null
+    "summary": "복제약과 전문의약품을 만드는 회사"
   },
   "1724965": {
     "name": "TALOS ENERGY INC.",
     "sic_description": "Crude Petroleum & Natural Gas",
-    "summary": null
+    "summary": "멕시코만 원유·천연가스 생산 회사"
   },
   "1727263": {
     "name": "Frontdoor, Inc.",
     "sic_description": "Services-To Dwellings & Other Buildings",
-    "summary": null
+    "summary": "주택 관리 서비스 회사"
   },
   "1731388": {
     "name": "EuroDry Ltd.",
@@ -2027,7 +2027,7 @@
   "1759425": {
     "name": "Mirum Pharmaceuticals, Inc.",
     "sic_description": "Pharmaceutical Preparations",
-    "summary": null
+    "summary": "희귀 질환 치료제를 개발하는 제약회사"
   },
   "1759509": {
     "name": "Lyft, Inc.",
@@ -2092,12 +2092,12 @@
   "1784535": {
     "name": "Porch Group, Inc.",
     "sic_description": "Accident & Health Insurance",
-    "summary": null
+    "summary": "주택 관련 소프트웨어와 보험 서비스 회사"
   },
   "1786352": {
     "name": "BILL Holdings, Inc.",
     "sic_description": "Services-Prepackaged Software",
-    "summary": null
+    "summary": "기업용 결제·재무 관리 소프트웨어 회사"
   },
   "1787306": {
     "name": "Arcutis Biotherapeutics, Inc.",
@@ -2137,7 +2137,7 @@
   "1793659": {
     "name": "Rush Street Interactive, Inc.",
     "sic_description": "Services-Miscellaneous Amusement & Recreation",
-    "summary": null
+    "summary": "온라인 카지노·스포츠 베팅 회사"
   },
   "1793663": {
     "name": "VTEX",
@@ -2167,7 +2167,7 @@
   "1802768": {
     "name": "Royalty Pharma plc",
     "sic_description": "Pharmaceutical Preparations",
-    "summary": null
+    "summary": "의약품 로열티를 사들이는 투자 회사"
   },
   "1804176": {
     "name": "Butterfly Network, Inc.",
@@ -2232,7 +2232,7 @@
   "1816736": {
     "name": "Disc Medicine, Inc.",
     "sic_description": "Pharmaceutical Preparations",
-    "summary": null
+    "summary": "혈액 질환 치료제를 개발하는 제약회사"
   },
   "1817241": {
     "name": "Artiva Biotherapeutics, Inc.",
@@ -2317,7 +2317,7 @@
   "1827635": {
     "name": "Veradermics, Inc",
     "sic_description": "Pharmaceutical Preparations",
-    "summary": null
+    "summary": "피부과 질환 치료제를 개발하는 제약회사"
   },
   "1830487": {
     "name": "Pharvaris N.V.",
@@ -2332,12 +2332,12 @@
   "1832332": {
     "name": "Aveanna Healthcare Holdings, Inc.",
     "sic_description": "Services-Home Health Care Services",
-    "summary": null
+    "summary": "가정 방문 간호·돌봄 서비스 회사"
   },
   "1832466": {
     "name": "Alignment Healthcare, Inc.",
     "sic_description": "Hospital & Medical Service Plans",
-    "summary": null
+    "summary": "노인 대상 건강보험 서비스 회사"
   },
   "1832483": {
     "name": "Serve Robotics Inc. /DE/",
@@ -2437,7 +2437,7 @@
   "1844452": {
     "name": "Intuitive Machines, Inc.",
     "sic_description": "Search, Detection, Navigation, Guidance, Aeronautical Sys",
-    "summary": null
+    "summary": "우주 인프라와 서비스 회사"
   },
   "1844971": {
     "name": "Vulcan Infrastructure & Power Inc.",
@@ -2572,7 +2572,7 @@
   "1883085": {
     "name": "Pagaya Technologies Ltd.",
     "sic_description": "Finance Services",
-    "summary": null
+    "summary": "인공지능 기반 대출 연결 회사"
   },
   "1883313": {
     "name": "Savers Value Village, Inc.",
@@ -2587,7 +2587,7 @@
   "1889109": {
     "name": "BELITE BIO, INC",
     "sic_description": "Pharmaceutical Preparations",
-    "summary": null
+    "summary": "의약품을 개발하는 바이오 회사"
   },
   "1898718": {
     "name": "GMR Solutions Inc.",
@@ -2622,7 +2622,7 @@
   "1920406": {
     "name": "Strive, Inc.",
     "sic_description": "Finance Services",
-    "summary": null
+    "summary": "자산운용 사업을 하는 회사"
   },
   "1921865": {
     "name": "ASP Isotopes Inc.",
@@ -2677,7 +2677,7 @@
   "1958140": {
     "name": "Atlanta Braves Holdings, Inc.",
     "sic_description": "Services-Amusement & Recreation Services",
-    "summary": null
+    "summary": "프로야구 구단과 부대사업 회사"
   },
   "1963088": {
     "name": "AtlasClear Holdings, Inc.",
@@ -2757,22 +2757,22 @@
   "2012593": {
     "name": "Rapport Therapeutics, Inc.",
     "sic_description": "Pharmaceutical Preparations",
-    "summary": null
+    "summary": "신경계 질환 치료제를 개발하는 제약회사"
   },
   "2018064": {
     "name": "TechTarget, Inc.",
     "sic_description": "Telegraph & Other Message Communications",
-    "summary": null
+    "summary": "기업용 구매 의사결정 정보를 제공하는 회사"
   },
   "2019410": {
     "name": "Caris Life Sciences, Inc.",
     "sic_description": "Services-Medical Laboratories",
-    "summary": null
+    "summary": "정밀의학 분자 검사를 하는 회사"
   },
   "2020932": {
     "name": "AgomAb Therapeutics NV",
     "sic_description": "Biological Products, (No Diagnostic Substances)",
-    "summary": null
+    "summary": "생물학적 제제 의약품을 연구하는 바이오 회사"
   },
   "2021728": {
     "name": "Cerebras Systems Inc.",
@@ -2807,7 +2807,7 @@
   "2067129": {
     "name": "Neptune Insurance Holdings Inc.",
     "sic_description": "Insurance Agents, Brokers & Service",
-    "summary": null
+    "summary": "홍수보험을 중개하는 보험 대리 회사"
   },
   "2070849": {
     "name": "BillionToOne, Inc.",
@@ -2877,12 +2877,12 @@
   "27419": {
     "name": "TARGET CORP",
     "sic_description": "Retail-Variety Stores",
-    "summary": null
+    "summary": "종합 소매점을 운영하는 회사"
   },
   "310158": {
     "name": "Merck & Co., Inc.",
     "sic_description": "Pharmaceutical Preparations",
-    "summary": null
+    "summary": "처방 의약품과 백신을 만드는 제약회사"
   },
   "310354": {
     "name": "STANDEX INTERNATIONAL CORP/DE/",
@@ -2907,7 +2907,7 @@
   "313927": {
     "name": "CHURCH & DWIGHT CO INC /DE/",
     "sic_description": "Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics",
-    "summary": null
+    "summary": "생활용품을 만드는 회사"
   },
   "314590": {
     "name": "SASOL LTD",
@@ -2992,7 +2992,7 @@
   "36270": {
     "name": "M&T BANK CORP",
     "sic_description": "State Commercial Banks",
-    "summary": null
+    "summary": "은행 지주회사"
   },
   "37472": {
     "name": "FLEXSTEEL INDUSTRIES INC",
@@ -3032,7 +3032,7 @@
   "45012": {
     "name": "HALLIBURTON CO",
     "sic_description": "Oil & Gas Field Services, NEC",
-    "summary": null
+    "summary": "에너지 산업용 서비스·장비 회사"
   },
   "46080": {
     "name": "HASBRO, INC.",
@@ -3047,7 +3047,7 @@
   "50725": {
     "name": "GRIFFON CORP",
     "sic_description": "Metal Doors, Sash, Frames, Moldings & Trim",
-    "summary": null
+    "summary": "여러 사업을 가진 지주회사"
   },
   "51253": {
     "name": "INTERNATIONAL FLAVORS & FRAGRANCES INC",
@@ -3102,12 +3102,12 @@
   "6951": {
     "name": "APPLIED MATERIALS INC /DE",
     "sic_description": "Semiconductors & Related Devices",
-    "summary": null
+    "summary": "반도체 제조 장비를 만드는 회사"
   },
   "700841": {
     "name": "RCM TECHNOLOGIES, INC.",
     "sic_description": "Services-Help Supply Services",
-    "summary": null
+    "summary": "기술·엔지니어링 인력 서비스 회사"
   },
   "70318": {
     "name": "TENET HEALTHCARE CORP",
@@ -3187,7 +3187,7 @@
   "748268": {
     "name": "Red Cat Holdings, Inc.",
     "sic_description": "Services-Prepackaged Software",
-    "summary": null
+    "summary": "군사·상업용 드론을 만드는 회사"
   },
   "749251": {
     "name": "GARTNER INC",
@@ -3197,7 +3197,7 @@
   "750004": {
     "name": "Light & Wonder, Inc.",
     "sic_description": "Services-Computer Integrated Systems Design",
-    "summary": null
+    "summary": "게임 기기와 소프트웨어를 만드는 회사"
   },
   "751978": {
     "name": "VICOR CORP",
@@ -3227,7 +3227,7 @@
   "763901": {
     "name": "POPULAR, INC.",
     "sic_description": "State Commercial Banks",
-    "summary": null
+    "summary": "푸에르토리코 중심 은행 지주회사"
   },
   "77543": {
     "name": "TUTOR PERINI CORP",
@@ -3272,7 +3272,7 @@
   "78814": {
     "name": "PITNEY BOWES INC /DE/",
     "sic_description": "Office Machines, NEC",
-    "summary": null
+    "summary": "우편·배송 장비와 솔루션 회사"
   },
   "789019": {
     "name": "MICROSOFT CORP",
@@ -3302,17 +3302,17 @@
   "804328": {
     "name": "QUALCOMM INC/DE",
     "sic_description": "Radio & Tv Broadcasting & Communications Equipment",
-    "summary": null
+    "summary": "무선통신 반도체와 기술 회사"
   },
   "805928": {
     "name": "Axogen, Inc.",
     "sic_description": "Electromedical & Electrotherapeutic Apparatus",
-    "summary": null
+    "summary": "말초신경 재생 치료 제품 회사"
   },
   "80661": {
     "name": "PROGRESSIVE CORP/OH/",
     "sic_description": "Fire, Marine & Casualty Insurance",
-    "summary": null
+    "summary": "자동차 보험을 주로 파는 보험회사"
   },
   "813623": {
     "name": "Total Return Securities Fund",
@@ -3347,7 +3347,7 @@
   "821189": {
     "name": "EOG RESOURCES INC",
     "sic_description": "Crude Petroleum & Natural Gas",
-    "summary": null
+    "summary": "원유와 천연가스를 생산하는 회사"
   },
   "821483": {
     "name": "PAR PACIFIC HOLDINGS, INC.",
@@ -3382,7 +3382,7 @@
   "849399": {
     "name": "Gen Digital Inc.",
     "sic_description": "Services-Prepackaged Software",
-    "summary": null
+    "summary": "소비자용 사이버 보안 소프트웨어 회사"
   },
   "850141": {
     "name": "HORACE MANN EDUCATORS CORP /DE/",
@@ -3462,7 +3462,7 @@
   "887596": {
     "name": "CHEESECAKE FACTORY INC",
     "sic_description": "Retail-Eating  Places",
-    "summary": null
+    "summary": "레스토랑을 운영하는 회사"
   },
   "88941": {
     "name": "SEMTECH CORP",
@@ -3487,7 +3487,7 @@
   "89439": {
     "name": "MUELLER INDUSTRIES INC",
     "sic_description": "Rolling Drawing & Extruding of  Nonferrous Metals",
-    "summary": null
+    "summary": "구리·황동·알루미늄 제품을 만드는 회사"
   },
   "894405": {
     "name": "ARCBEST CORP /TX/",
@@ -3562,7 +3562,7 @@
   "91419": {
     "name": "J M SMUCKER Co",
     "sic_description": "Canned, Fruits, Veg, Preserves, Jams & Jellies",
-    "summary": null
+    "summary": "잼과 커피 등 식품을 만드는 회사"
   },
   "914208": {
     "name": "Invesco Ltd.",
@@ -3622,7 +3622,7 @@
   "927003": {
     "name": "ADVANCED ENERGY INDUSTRIES INC",
     "sic_description": "Electronic Components, NEC",
-    "summary": null
+    "summary": "정밀 전력 변환 장비를 만드는 회사"
   },
   "927628": {
     "name": "CAPITAL ONE FINANCIAL CORP",
@@ -3677,7 +3677,7 @@
   "97210": {
     "name": "TERADYNE, INC",
     "sic_description": "Instruments For Meas & Testing of  Electricity & Elec Signals",
-    "summary": null
+    "summary": "반도체 검사 장비를 만드는 회사"
   },
   "97745": {
     "name": "THERMO FISHER SCIENTIFIC INC.",
