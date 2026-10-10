@@ -10,6 +10,11 @@
     "ticker": "AMRZ"
   },
   {
+    "issuer_cik": "39368",
+    "name": "FULLER H B CO",
+    "ticker": "FUL"
+  },
+  {
     "issuer_cik": "2079999",
     "name": "Cardinal Infrastructure Group Inc.",
     "ticker": "CDNL"
@@ -18,11 +23,6 @@
     "issuer_cik": "1089063",
     "name": "DICK'S SPORTING GOODS, INC.",
     "ticker": "DKS"
-  },
-  {
-    "issuer_cik": "39368",
-    "name": "FULLER H B CO",
-    "ticker": "FUL"
   },
   {
     "issuer_cik": "1386716",
@@ -138,6 +138,11 @@
     "issuer_cik": "715446",
     "name": "Anixa Biosciences Inc",
     "ticker": "ANIX"
+  },
+  {
+    "issuer_cik": "1046179",
+    "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
+    "ticker": "TSM"
   },
   {
     "issuer_cik": "1660334",
@@ -280,6 +285,11 @@
     "ticker": "LMB"
   },
   {
+    "issuer_cik": "1510599",
+    "name": "PIMCO Dynamic Income Fund",
+    "ticker": "PDI"
+  },
+  {
     "issuer_cik": "1837014",
     "name": "SmartRent, Inc.",
     "ticker": "SMRT"
@@ -365,6 +375,11 @@
     "ticker": "TENX"
   },
   {
+    "issuer_cik": "1868995",
+    "name": "CI&T Inc",
+    "ticker": "CINT"
+  },
+  {
     "issuer_cik": "1175151",
     "name": "Cytosorbents Corp",
     "ticker": "CTSO"
@@ -395,11 +410,6 @@
     "ticker": "RICK"
   },
   {
-    "issuer_cik": "1868995",
-    "name": "CI&T Inc",
-    "ticker": "CINT"
-  },
-  {
     "issuer_cik": "723188",
     "name": "COMMUNITY FINANCIAL SYSTEM, INC.",
     "ticker": "CBU"
@@ -410,14 +420,14 @@
     "ticker": "PHIO"
   },
   {
-    "issuer_cik": "65433",
-    "name": "MEXICO FUND INC",
-    "ticker": "MXF"
-  },
-  {
     "issuer_cik": "838875",
     "name": "WILLAMETTE VALLEY VINEYARDS INC",
     "ticker": "WVVI"
+  },
+  {
+    "issuer_cik": "65433",
+    "name": "MEXICO FUND INC",
+    "ticker": "MXF"
   },
   {
     "issuer_cik": "1041368",

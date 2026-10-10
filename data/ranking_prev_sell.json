@@ -120,14 +120,14 @@
     "ticker": "CRWD"
   },
   {
-    "issuer_cik": "1769628",
-    "name": "CoreWeave, Inc.",
-    "ticker": "CRWV"
-  },
-  {
     "issuer_cik": "1640147",
     "name": "Snowflake Inc.",
     "ticker": "SNOW"
+  },
+  {
+    "issuer_cik": "1769628",
+    "name": "CoreWeave, Inc.",
+    "ticker": "CRWV"
   },
   {
     "issuer_cik": "1513845",
@@ -295,6 +295,11 @@
     "ticker": "ROKU"
   },
   {
+    "issuer_cik": "2030781",
+    "name": "SailPoint, Inc.",
+    "ticker": "SAIL"
+  },
+  {
     "issuer_cik": "1001385",
     "name": "NWPX Infrastructure, Inc.",
     "ticker": "NWPX"
@@ -435,6 +440,11 @@
     "ticker": "IRDM"
   },
   {
+    "issuer_cik": "1581760",
+    "name": "Life360, Inc.",
+    "ticker": "LIF"
+  },
+  {
     "issuer_cik": "1851112",
     "name": "RISKIFIED LTD.",
     "ticker": "RSKD"
@@ -448,11 +458,6 @@
     "issuer_cik": "1018724",
     "name": "AMAZON COM INC",
     "ticker": "AMZN"
-  },
-  {
-    "issuer_cik": "1581760",
-    "name": "Life360, Inc.",
-    "ticker": "LIF"
   },
   {
     "issuer_cik": "1690820",
@@ -658,6 +663,11 @@
     "issuer_cik": "1596532",
     "name": "Arista Networks, Inc.",
     "ticker": "ANET"
+  },
+  {
+    "issuer_cik": "1474432",
+    "name": "Everpure, Inc.",
+    "ticker": "P"
   },
   {
     "issuer_cik": "1736297",
@@ -1050,6 +1060,11 @@
     "ticker": "BORR"
   },
   {
+    "issuer_cik": "1859690",
+    "name": "Arqit Quantum Inc.",
+    "ticker": "ARQQ"
+  },
+  {
     "issuer_cik": "318306",
     "name": "ABEONA THERAPEUTICS INC.",
     "ticker": "ABEO"
@@ -1060,19 +1075,9 @@
     "ticker": "TTGT"
   },
   {
-    "issuer_cik": "1859690",
-    "name": "Arqit Quantum Inc.",
-    "ticker": "ARQQ"
-  },
-  {
     "issuer_cik": "1832038",
     "name": "Invivyd, Inc.",
     "ticker": "IVVD"
-  },
-  {
-    "issuer_cik": "1474432",
-    "name": "Everpure, Inc.",
-    "ticker": "P"
   },
   {
     "issuer_cik": "1447669",
@@ -1090,14 +1095,14 @@
     "ticker": "CPAY"
   },
   {
-    "issuer_cik": "1321655",
-    "name": "Palantir Technologies Inc.",
-    "ticker": "PLTR"
-  },
-  {
     "issuer_cik": "320193",
     "name": "Apple Inc.",
     "ticker": "AAPL"
+  },
+  {
+    "issuer_cik": "1321655",
+    "name": "Palantir Technologies Inc.",
+    "ticker": "PLTR"
   },
   {
     "issuer_cik": "93410",
@@ -1420,6 +1425,11 @@
     "ticker": "EVCM"
   },
   {
+    "issuer_cik": "1812364",
+    "name": "Relay Therapeutics, Inc.",
+    "ticker": "RLAY"
+  },
+  {
     "issuer_cik": "1645469",
     "name": "Monopar Therapeutics",
     "ticker": "MNPR"
@@ -1475,11 +1485,6 @@
     "ticker": "BJ"
   },
   {
-    "issuer_cik": "1812364",
-    "name": "Relay Therapeutics, Inc.",
-    "ticker": "RLAY"
-  },
-  {
     "issuer_cik": "1288847",
     "name": "Five9, Inc.",
     "ticker": "FIVN"
@@ -1490,14 +1495,14 @@
     "ticker": "HAWK"
   },
   {
-    "issuer_cik": "1611115",
-    "name": "Omada Health, Inc.",
-    "ticker": "OMDA"
-  },
-  {
     "issuer_cik": "1555279",
     "name": "908 Devices Inc.",
     "ticker": "MASS"
+  },
+  {
+    "issuer_cik": "1611115",
+    "name": "Omada Health, Inc.",
+    "ticker": "OMDA"
   },
   {
     "issuer_cik": "1160330",
@@ -1780,6 +1785,11 @@
     "ticker": "MPWR"
   },
   {
+    "issuer_cik": "1618732",
+    "name": "Nutanix, Inc.",
+    "ticker": "NTNX"
+  },
+  {
     "issuer_cik": "1104506",
     "name": "INSMED Inc",
     "ticker": "INSM"
@@ -1830,6 +1840,11 @@
     "ticker": "MANE"
   },
   {
+    "issuer_cik": "1159036",
+    "name": "HALOZYME THERAPEUTICS, INC.",
+    "ticker": "HALO"
+  },
+  {
     "issuer_cik": "1018963",
     "name": "ATI INC",
     "ticker": "ATI"
@@ -1853,11 +1868,6 @@
     "issuer_cik": "849399",
     "name": "Gen Digital Inc.",
     "ticker": "GEN"
-  },
-  {
-    "issuer_cik": "1159036",
-    "name": "HALOZYME THERAPEUTICS, INC.",
-    "ticker": "HALO"
   },
   {
     "issuer_cik": "1680062",
@@ -2005,6 +2015,11 @@
     "ticker": "AEIS"
   },
   {
+    "issuer_cik": "1441816",
+    "name": "MongoDB, Inc.",
+    "ticker": "MDB"
+  },
+  {
     "issuer_cik": "821189",
     "name": "EOG RESOURCES INC",
     "ticker": "EOG"
@@ -2045,14 +2060,14 @@
     "ticker": "NP"
   },
   {
-    "issuer_cik": "763901",
-    "name": "POPULAR, INC.",
-    "ticker": "BPOP"
-  },
-  {
     "issuer_cik": "2012593",
     "name": "Rapport Therapeutics, Inc.",
     "ticker": "RAPP"
+  },
+  {
+    "issuer_cik": "763901",
+    "name": "POPULAR, INC.",
+    "ticker": "BPOP"
   },
   {
     "issuer_cik": "78814",

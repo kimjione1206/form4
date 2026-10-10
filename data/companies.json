@@ -929,6 +929,11 @@
     "sic_description": "Pharmaceutical Preparations",
     "summary": "희귀질환 치료제를 개발하는 제약회사"
   },
+  "1441816": {
+    "name": "MongoDB, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
   "1447362": {
     "name": "CASTLE BIOSCIENCES INC",
     "sic_description": "Services-Medical Laboratories",
@@ -1108,6 +1113,11 @@
     "name": "Marathon Petroleum Corp",
     "sic_description": "Petroleum Refining",
     "summary": "석유 정제·판매 회사"
+  },
+  "1510599": {
+    "name": "PIMCO Dynamic Income Fund",
+    "sic_description": "",
+    "summary": null
   },
   "1512673": {
     "name": "Block, Inc.",
@@ -1538,6 +1548,11 @@
     "name": "Performance Food Group Co",
     "sic_description": "Wholesale-Groceries, General Line",
     "summary": "식자재를 도매로 공급하는 회사"
+  },
+  "1618732": {
+    "name": "Nutanix, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
   },
   "1623526": {
     "name": "Stoke Therapeutics, Inc.",
@@ -2787,6 +2802,11 @@
   "2023658": {
     "name": "Bicara Therapeutics Inc.",
     "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "2030781": {
+    "name": "SailPoint, Inc.",
+    "sic_description": "Services-Prepackaged Software",
     "summary": null
   },
   "2035989": {
