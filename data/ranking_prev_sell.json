@@ -1,10 +1,5 @@
 [
   {
-    "issuer_cik": "1395064",
-    "name": "TAKEDA PHARMACEUTICAL CO LTD",
-    "ticker": "TAK"
-  },
-  {
     "issuer_cik": "80424",
     "name": "PROCTER & GAMBLE Co",
     "ticker": "PG"
@@ -40,11 +35,6 @@
     "ticker": "DOCU"
   },
   {
-    "issuer_cik": "1595974",
-    "name": "MAGNITE, INC.",
-    "ticker": "MGNI"
-  },
-  {
     "issuer_cik": "1471055",
     "name": "Banco Santander (Brasil) S.A.",
     "ticker": "BSBR"
@@ -58,11 +48,6 @@
     "issuer_cik": "1703399",
     "name": "Sea Ltd",
     "ticker": "SE"
-  },
-  {
-    "issuer_cik": "1437107",
-    "name": "Warner Bros. Discovery, Inc.",
-    "ticker": "WBD"
   },
   {
     "issuer_cik": "1628171",
@@ -90,19 +75,9 @@
     "ticker": "PCTY"
   },
   {
-    "issuer_cik": "1040470",
-    "name": "AEHR TEST SYSTEMS",
-    "ticker": "AEHR"
-  },
-  {
     "issuer_cik": "3453",
     "name": "Matson, Inc.",
     "ticker": "MATX"
-  },
-  {
-    "issuer_cik": "1060955",
-    "name": "ICON PLC",
-    "ticker": "ICLR"
   },
   {
     "issuer_cik": "1514416",
@@ -140,14 +115,9 @@
     "ticker": "DASH"
   },
   {
-    "issuer_cik": "316709",
-    "name": "SCHWAB CHARLES CORP",
-    "ticker": "SCHW"
-  },
-  {
-    "issuer_cik": "1088856",
-    "name": "CORCEPT THERAPEUTICS INC",
-    "ticker": "CORT"
+    "issuer_cik": "1437107",
+    "name": "Warner Bros. Discovery, Inc.",
+    "ticker": "WBD"
   },
   {
     "issuer_cik": "1467623",
@@ -158,11 +128,6 @@
     "issuer_cik": "1539838",
     "name": "Diamondback Energy, Inc.",
     "ticker": "FANG"
-  },
-  {
-    "issuer_cik": "1576280",
-    "name": "Guardant Health, Inc.",
-    "ticker": "GH"
   },
   {
     "issuer_cik": "1849056",
@@ -180,6 +145,11 @@
     "ticker": "MIAX"
   },
   {
+    "issuer_cik": "1040470",
+    "name": "AEHR TEST SYSTEMS",
+    "ticker": "AEHR"
+  },
+  {
     "issuer_cik": "1819848",
     "name": "Joby Aviation, Inc.",
     "ticker": "JOBY"
@@ -188,6 +158,16 @@
     "issuer_cik": "1315098",
     "name": "Roblox Corp",
     "ticker": "RBLX"
+  },
+  {
+    "issuer_cik": "1595974",
+    "name": "MAGNITE, INC.",
+    "ticker": "MGNI"
+  },
+  {
+    "issuer_cik": "1060955",
+    "name": "ICON PLC",
+    "ticker": "ICLR"
   },
   {
     "issuer_cik": "780571",
@@ -255,6 +235,16 @@
     "ticker": "CAH"
   },
   {
+    "issuer_cik": "316709",
+    "name": "SCHWAB CHARLES CORP",
+    "ticker": "SCHW"
+  },
+  {
+    "issuer_cik": "1088856",
+    "name": "CORCEPT THERAPEUTICS INC",
+    "ticker": "CORT"
+  },
+  {
     "issuer_cik": "1002047",
     "name": "NetApp, Inc.",
     "ticker": "NTAP"
@@ -275,19 +265,14 @@
     "ticker": "ADPT"
   },
   {
+    "issuer_cik": "1576280",
+    "name": "Guardant Health, Inc.",
+    "ticker": "GH"
+  },
+  {
     "issuer_cik": "1304492",
     "name": "Anterix Inc.",
     "ticker": "ATEX"
-  },
-  {
-    "issuer_cik": "946581",
-    "name": "TAKE TWO INTERACTIVE SOFTWARE INC",
-    "ticker": "TTWO"
-  },
-  {
-    "issuer_cik": "1451809",
-    "name": "SITIME Corp",
-    "ticker": "SITM"
   },
   {
     "issuer_cik": "1428439",
@@ -300,24 +285,19 @@
     "ticker": "SAIL"
   },
   {
-    "issuer_cik": "1001385",
-    "name": "NWPX Infrastructure, Inc.",
-    "ticker": "NWPX"
-  },
-  {
     "issuer_cik": "858877",
     "name": "CISCO SYSTEMS, INC.",
     "ticker": "CSCO"
   },
   {
+    "issuer_cik": "1001385",
+    "name": "NWPX Infrastructure, Inc.",
+    "ticker": "NWPX"
+  },
+  {
     "issuer_cik": "1571949",
     "name": "Intercontinental Exchange, Inc.",
     "ticker": "ICE"
-  },
-  {
-    "issuer_cik": "1169561",
-    "name": "COMMVAULT SYSTEMS INC",
-    "ticker": "CVLT"
   },
   {
     "issuer_cik": "1720420",
@@ -328,6 +308,11 @@
     "issuer_cik": "906107",
     "name": "VIVMARK RESIDENTIAL",
     "ticker": "VMRK"
+  },
+  {
+    "issuer_cik": "88941",
+    "name": "SEMTECH CORP",
+    "ticker": "SMTC"
   },
   {
     "issuer_cik": "1576789",
@@ -375,19 +360,9 @@
     "ticker": "AMD"
   },
   {
-    "issuer_cik": "1477333",
-    "name": "Cloudflare, Inc.",
-    "ticker": "NET"
-  },
-  {
     "issuer_cik": "1534504",
     "name": "PBF Energy Inc.",
     "ticker": "PBF"
-  },
-  {
-    "issuer_cik": "319201",
-    "name": "KLA CORP",
-    "ticker": "KLAC"
   },
   {
     "issuer_cik": "1642896",
@@ -440,11 +415,6 @@
     "ticker": "IRDM"
   },
   {
-    "issuer_cik": "1581760",
-    "name": "Life360, Inc.",
-    "ticker": "LIF"
-  },
-  {
     "issuer_cik": "1851112",
     "name": "RISKIFIED LTD.",
     "ticker": "RSKD"
@@ -475,6 +445,11 @@
     "ticker": "TXG"
   },
   {
+    "issuer_cik": "1451809",
+    "name": "SITIME Corp",
+    "ticker": "SITM"
+  },
+  {
     "issuer_cik": "1579091",
     "name": "Maplebear Inc.",
     "ticker": "CART"
@@ -495,11 +470,6 @@
     "ticker": "LPG"
   },
   {
-    "issuer_cik": "1388658",
-    "name": "iRhythm Holdings, Inc.",
-    "ticker": "IRTC"
-  },
-  {
     "issuer_cik": "883984",
     "name": "ICU MEDICAL INC/DE",
     "ticker": "ICUI"
@@ -513,11 +483,6 @@
     "issuer_cik": "1604778",
     "name": "Qorvo, Inc.",
     "ticker": "QRVO"
-  },
-  {
-    "issuer_cik": "1422930",
-    "name": "PubMatic, Inc.",
-    "ticker": "PUBM"
   },
   {
     "issuer_cik": "908255",
@@ -535,6 +500,11 @@
     "ticker": "NHC"
   },
   {
+    "issuer_cik": "1422930",
+    "name": "PubMatic, Inc.",
+    "ticker": "PUBM"
+  },
+  {
     "issuer_cik": "1524566",
     "name": "WEALTHFRONT CORP",
     "ticker": "WLTH"
@@ -548,11 +518,6 @@
     "issuer_cik": "1109138",
     "name": "CAMTEK LTD",
     "ticker": "CAMT"
-  },
-  {
-    "issuer_cik": "1370637",
-    "name": "ETSY INC",
-    "ticker": "ETSY"
   },
   {
     "issuer_cik": "1861107",
@@ -570,6 +535,11 @@
     "ticker": "DXCM"
   },
   {
+    "issuer_cik": "1370637",
+    "name": "ETSY INC",
+    "ticker": "ETSY"
+  },
+  {
     "issuer_cik": "1658551",
     "name": "Amylyx Pharmaceuticals, Inc.",
     "ticker": "AMLX"
@@ -578,11 +548,6 @@
     "issuer_cik": "1968915",
     "name": "PHINIA INC.",
     "ticker": "PHIN"
-  },
-  {
-    "issuer_cik": "1801170",
-    "name": "CLOVER HEALTH INVESTMENTS, CORP. /DE",
-    "ticker": "CLOV"
   },
   {
     "issuer_cik": "1609711",
@@ -600,19 +565,14 @@
     "ticker": "ASST"
   },
   {
-    "issuer_cik": "1569345",
-    "name": "Sprinklr, Inc.",
-    "ticker": "CXM"
+    "issuer_cik": "1801170",
+    "name": "CLOVER HEALTH INVESTMENTS, CORP. /DE",
+    "ticker": "CLOV"
   },
   {
-    "issuer_cik": "1823608",
-    "name": "Amalgamated Financial Corp.",
-    "ticker": "AMAL"
-  },
-  {
-    "issuer_cik": "88941",
-    "name": "SEMTECH CORP",
-    "ticker": "SMTC"
+    "issuer_cik": "946581",
+    "name": "TAKE TWO INTERACTIVE SOFTWARE INC",
+    "ticker": "TTWO"
   },
   {
     "issuer_cik": "1552033",
@@ -620,14 +580,14 @@
     "ticker": "TRU"
   },
   {
+    "issuer_cik": "1569345",
+    "name": "Sprinklr, Inc.",
+    "ticker": "CXM"
+  },
+  {
     "issuer_cik": "1674632",
     "name": "Beta Bionics, Inc.",
     "ticker": "BBNX"
-  },
-  {
-    "issuer_cik": "1333986",
-    "name": "Equitable Holdings, Inc.",
-    "ticker": "EQH"
   },
   {
     "issuer_cik": "1422143",
@@ -665,11 +625,6 @@
     "ticker": "ANET"
   },
   {
-    "issuer_cik": "1474432",
-    "name": "Everpure, Inc.",
-    "ticker": "P"
-  },
-  {
     "issuer_cik": "1736297",
     "name": "Astera Labs, Inc.",
     "ticker": "ALAB"
@@ -680,14 +635,19 @@
     "ticker": "ONC"
   },
   {
+    "issuer_cik": "1474432",
+    "name": "Everpure, Inc.",
+    "ticker": "P"
+  },
+  {
+    "issuer_cik": "1477333",
+    "name": "Cloudflare, Inc.",
+    "ticker": "NET"
+  },
+  {
     "issuer_cik": "1633978",
     "name": "Lumentum Holdings Inc.",
     "ticker": "LITE"
-  },
-  {
-    "issuer_cik": "1604821",
-    "name": "Natera, Inc.",
-    "ticker": "NTRA"
   },
   {
     "issuer_cik": "1673743",
@@ -710,6 +670,11 @@
     "ticker": "MRCY"
   },
   {
+    "issuer_cik": "1562088",
+    "name": "Duolingo, Inc.",
+    "ticker": "DUOL"
+  },
+  {
     "issuer_cik": "1528396",
     "name": "Guidewire Software, Inc.",
     "ticker": "GWRE"
@@ -728,11 +693,6 @@
     "issuer_cik": "1804176",
     "name": "Butterfly Network, Inc.",
     "ticker": "BFLY"
-  },
-  {
-    "issuer_cik": "1562088",
-    "name": "Duolingo, Inc.",
-    "ticker": "DUOL"
   },
   {
     "issuer_cik": "1327567",
@@ -760,6 +720,11 @@
     "ticker": "AFRM"
   },
   {
+    "issuer_cik": "1581760",
+    "name": "Life360, Inc.",
+    "ticker": "LIF"
+  },
+  {
     "issuer_cik": "1075531",
     "name": "Booking Holdings Inc.",
     "ticker": "BKNG"
@@ -780,11 +745,6 @@
     "ticker": "GILD"
   },
   {
-    "issuer_cik": "1650164",
-    "name": "Toast, Inc.",
-    "ticker": "TOST"
-  },
-  {
     "issuer_cik": "1782170",
     "name": "Remitly Global, Inc.",
     "ticker": "RELY"
@@ -800,16 +760,6 @@
     "ticker": "CYTK"
   },
   {
-    "issuer_cik": "1852131",
-    "name": "Nextpower Inc.",
-    "ticker": "NXT"
-  },
-  {
-    "issuer_cik": "1611052",
-    "name": "PROCORE TECHNOLOGIES, INC.",
-    "ticker": "PCOR"
-  },
-  {
     "issuer_cik": "1591588",
     "name": "Gold.com, Inc.",
     "ticker": "GOLD"
@@ -820,9 +770,9 @@
     "ticker": "VIAV"
   },
   {
-    "issuer_cik": "1690585",
-    "name": "Dianthus Therapeutics, Inc. /DE/",
-    "ticker": "DNTH"
+    "issuer_cik": "1650164",
+    "name": "Toast, Inc.",
+    "ticker": "TOST"
   },
   {
     "issuer_cik": "1384905",
@@ -840,29 +790,19 @@
     "ticker": "HIMS"
   },
   {
+    "issuer_cik": "1611052",
+    "name": "PROCORE TECHNOLOGIES, INC.",
+    "ticker": "PCOR"
+  },
+  {
     "issuer_cik": "1177609",
     "name": "FIVE BELOW, INC",
     "ticker": "FIVE"
   },
   {
-    "issuer_cik": "1933414",
-    "name": "Mineralys Therapeutics, Inc.",
-    "ticker": "MLYS"
-  },
-  {
-    "issuer_cik": "1035267",
-    "name": "INTUITIVE SURGICAL INC",
-    "ticker": "ISRG"
-  },
-  {
     "issuer_cik": "1448893",
     "name": "Essent Group Ltd.",
     "ticker": "ESNT"
-  },
-  {
-    "issuer_cik": "927628",
-    "name": "CAPITAL ONE FINANCIAL CORP",
-    "ticker": "COF"
   },
   {
     "issuer_cik": "910612",
@@ -900,9 +840,9 @@
     "ticker": "NWS"
   },
   {
-    "issuer_cik": "1409970",
-    "name": "Happen, Inc.",
-    "ticker": "HAPN"
+    "issuer_cik": "1823608",
+    "name": "Amalgamated Financial Corp.",
+    "ticker": "AMAL"
   },
   {
     "issuer_cik": "1813814",
@@ -915,11 +855,6 @@
     "ticker": "OOMA"
   },
   {
-    "issuer_cik": "1855612",
-    "name": "Grab Holdings Ltd",
-    "ticker": "GRAB"
-  },
-  {
     "issuer_cik": "37472",
     "name": "FLEXSTEEL INDUSTRIES INC",
     "ticker": "FLXS"
@@ -928,11 +863,6 @@
     "issuer_cik": "1525221",
     "name": "Bristow Group Inc.",
     "ticker": "VTOL"
-  },
-  {
-    "issuer_cik": "1598665",
-    "name": "Heritage Insurance Holdings, Inc.",
-    "ticker": "HRTG"
   },
   {
     "issuer_cik": "1494259",
@@ -950,9 +880,14 @@
     "ticker": "EBC"
   },
   {
-    "issuer_cik": "916540",
-    "name": "DARLING INGREDIENTS INC.",
-    "ticker": "DAR"
+    "issuer_cik": "1768267",
+    "name": "Cerence Inc.",
+    "ticker": "CRNC"
+  },
+  {
+    "issuer_cik": "1333986",
+    "name": "Equitable Holdings, Inc.",
+    "ticker": "EQH"
   },
   {
     "issuer_cik": "1573221",
@@ -978,11 +913,6 @@
     "issuer_cik": "1372612",
     "name": "BOX INC",
     "ticker": "BOX"
-  },
-  {
-    "issuer_cik": "1023024",
-    "name": "ANI PHARMACEUTICALS INC",
-    "ticker": "ANIP"
   },
   {
     "issuer_cik": "1865631",
@@ -1023,6 +953,11 @@
     "issuer_cik": "1381668",
     "name": "TFS Financial CORP",
     "ticker": "TFSL"
+  },
+  {
+    "issuer_cik": "1764013",
+    "name": "Immunovant, Inc.",
+    "ticker": "IMVT"
   },
   {
     "issuer_cik": "1531177",
@@ -1080,11 +1015,6 @@
     "ticker": "IVVD"
   },
   {
-    "issuer_cik": "1447669",
-    "name": "TWILIO INC",
-    "ticker": "TWLO"
-  },
-  {
     "issuer_cik": "2023554",
     "name": "Sandisk Corp",
     "ticker": "SNDK"
@@ -1110,6 +1040,11 @@
     "ticker": "CVX"
   },
   {
+    "issuer_cik": "1604821",
+    "name": "Natera, Inc.",
+    "ticker": "NTRA"
+  },
+  {
     "issuer_cik": "1984086",
     "name": "Septerna, Inc.",
     "ticker": "SEPN"
@@ -1118,6 +1053,11 @@
     "issuer_cik": "1807794",
     "name": "Credo Technology Group Holding Ltd",
     "ticker": "CRDO"
+  },
+  {
+    "issuer_cik": "319201",
+    "name": "KLA CORP",
+    "ticker": "KLAC"
   },
   {
     "issuer_cik": "1635088",
@@ -1145,6 +1085,11 @@
     "ticker": "TMO"
   },
   {
+    "issuer_cik": "1618732",
+    "name": "Nutanix, Inc.",
+    "ticker": "NTNX"
+  },
+  {
     "issuer_cik": "707549",
     "name": "LAM RESEARCH CORP",
     "ticker": "LRCX"
@@ -1160,24 +1105,14 @@
     "ticker": "PATH"
   },
   {
-    "issuer_cik": "1534701",
-    "name": "Phillips 66",
-    "ticker": "PSX"
-  },
-  {
-    "issuer_cik": "785161",
-    "name": "Encompass Health Corp",
-    "ticker": "EHC"
+    "issuer_cik": "1660134",
+    "name": "Okta, Inc.",
+    "ticker": "OKTA"
   },
   {
     "issuer_cik": "1232524",
     "name": "Jazz Pharmaceuticals plc",
     "ticker": "JAZZ"
-  },
-  {
-    "issuer_cik": "1100682",
-    "name": "CHARLES RIVER LABORATORIES INTERNATIONAL, INC.",
-    "ticker": "CRL"
   },
   {
     "issuer_cik": "1512673",
@@ -1205,14 +1140,14 @@
     "ticker": "COIN"
   },
   {
-    "issuer_cik": "2070849",
-    "name": "BillionToOne, Inc.",
-    "ticker": "BLLN"
-  },
-  {
     "issuer_cik": "1973266",
     "name": "TKO Group Holdings, Inc.",
     "ticker": "TKO"
+  },
+  {
+    "issuer_cik": "2070849",
+    "name": "BillionToOne, Inc.",
+    "ticker": "BLLN"
   },
   {
     "issuer_cik": "1820144",
@@ -1245,9 +1180,9 @@
     "ticker": "SNEX"
   },
   {
-    "issuer_cik": "1832466",
-    "name": "Alignment Healthcare, Inc.",
-    "ticker": "ALHC"
+    "issuer_cik": "1100682",
+    "name": "CHARLES RIVER LABORATORIES INTERNATIONAL, INC.",
+    "ticker": "CRL"
   },
   {
     "issuer_cik": "106040",
@@ -1270,11 +1205,6 @@
     "ticker": "PTEN"
   },
   {
-    "issuer_cik": "1789029",
-    "name": "Aeva Technologies, Inc.",
-    "ticker": "AEVA"
-  },
-  {
     "issuer_cik": "1018164",
     "name": "WILLIS LEASE FINANCE CORP",
     "ticker": "WLFC"
@@ -1288,6 +1218,11 @@
     "issuer_cik": "1590895",
     "name": "Caesars Entertainment, Inc.",
     "ticker": "CZR"
+  },
+  {
+    "issuer_cik": "1832466",
+    "name": "Alignment Healthcare, Inc.",
+    "ticker": "ALHC"
   },
   {
     "issuer_cik": "2132582",
@@ -1315,34 +1250,14 @@
     "ticker": "ELF"
   },
   {
-    "issuer_cik": "1845257",
-    "name": "LifeStance Health Group, Inc.",
-    "ticker": "LFST"
-  },
-  {
     "issuer_cik": "354190",
     "name": "Arthur J. Gallagher & Co.",
     "ticker": "AJG"
   },
   {
-    "issuer_cik": "1018840",
-    "name": "ABERCROMBIE & FITCH CO /DE/",
-    "ticker": "ANF"
-  },
-  {
-    "issuer_cik": "914156",
-    "name": "UFP TECHNOLOGIES INC",
-    "ticker": "UFPT"
-  },
-  {
     "issuer_cik": "914208",
     "name": "Invesco Ltd.",
     "ticker": "IVZ"
-  },
-  {
-    "issuer_cik": "1857816",
-    "name": "GigaCloud Technology Inc",
-    "ticker": "GCT"
   },
   {
     "issuer_cik": "1337634",
@@ -1355,9 +1270,9 @@
     "ticker": "AIP"
   },
   {
-    "issuer_cik": "46765",
-    "name": "Helmerich & Payne, Inc.",
-    "ticker": "HP"
+    "issuer_cik": "1018840",
+    "name": "ABERCROMBIE & FITCH CO /DE/",
+    "ticker": "ANF"
   },
   {
     "issuer_cik": "918965",
@@ -1365,9 +1280,19 @@
     "ticker": "SCSC"
   },
   {
-    "issuer_cik": "98222",
-    "name": "TIDEWATER INC",
-    "ticker": "TDW"
+    "issuer_cik": "1933414",
+    "name": "Mineralys Therapeutics, Inc.",
+    "ticker": "MLYS"
+  },
+  {
+    "issuer_cik": "46765",
+    "name": "Helmerich & Payne, Inc.",
+    "ticker": "HP"
+  },
+  {
+    "issuer_cik": "1835830",
+    "name": "Klaviyo, Inc.",
+    "ticker": "KVYO"
   },
   {
     "issuer_cik": "1819790",
@@ -1383,6 +1308,11 @@
     "issuer_cik": "1886428",
     "name": "Slide Insurance Holdings, Inc.",
     "ticker": "SLDE"
+  },
+  {
+    "issuer_cik": "98222",
+    "name": "TIDEWATER INC",
+    "ticker": "TDW"
   },
   {
     "issuer_cik": "924805",
@@ -1405,6 +1335,11 @@
     "ticker": "U"
   },
   {
+    "issuer_cik": "1035267",
+    "name": "INTUITIVE SURGICAL INC",
+    "ticker": "ISRG"
+  },
+  {
     "issuer_cik": "1647639",
     "name": "Upstart Holdings, Inc.",
     "ticker": "UPST"
@@ -1413,6 +1348,11 @@
     "issuer_cik": "357173",
     "name": "OLD SECOND BANCORP INC",
     "ticker": "OSBC"
+  },
+  {
+    "issuer_cik": "1169561",
+    "name": "COMMVAULT SYSTEMS INC",
+    "ticker": "CVLT"
   },
   {
     "issuer_cik": "1784535",
@@ -1435,24 +1375,29 @@
     "ticker": "MNPR"
   },
   {
-    "issuer_cik": "76282",
-    "name": "PARK OHIO HOLDINGS CORP",
-    "ticker": "PKOH"
-  },
-  {
     "issuer_cik": "1818383",
     "name": "MediaAlpha, Inc.",
     "ticker": "MAX"
   },
   {
-    "issuer_cik": "1835830",
-    "name": "Klaviyo, Inc.",
-    "ticker": "KVYO"
+    "issuer_cik": "76282",
+    "name": "PARK OHIO HOLDINGS CORP",
+    "ticker": "PKOH"
+  },
+  {
+    "issuer_cik": "1395064",
+    "name": "TAKEDA PHARMACEUTICAL CO LTD",
+    "ticker": "TAK"
   },
   {
     "issuer_cik": "1459839",
     "name": "SI-BONE, Inc.",
     "ticker": "SIBN"
+  },
+  {
+    "issuer_cik": "927628",
+    "name": "CAPITAL ONE FINANCIAL CORP",
+    "ticker": "COF"
   },
   {
     "issuer_cik": "943452",
@@ -1465,14 +1410,14 @@
     "ticker": "HD"
   },
   {
-    "issuer_cik": "1997350",
-    "name": "Accelerant Holdings",
-    "ticker": "ARX"
-  },
-  {
     "issuer_cik": "1580560",
     "name": "Flywire Corp",
     "ticker": "FLYW"
+  },
+  {
+    "issuer_cik": "1555279",
+    "name": "908 Devices Inc.",
+    "ticker": "MASS"
   },
   {
     "issuer_cik": "840489",
@@ -1485,6 +1430,16 @@
     "ticker": "BJ"
   },
   {
+    "issuer_cik": "1409970",
+    "name": "Happen, Inc.",
+    "ticker": "HAPN"
+  },
+  {
+    "issuer_cik": "1852131",
+    "name": "Nextpower Inc.",
+    "ticker": "NXT"
+  },
+  {
     "issuer_cik": "1288847",
     "name": "Five9, Inc.",
     "ticker": "FIVN"
@@ -1493,16 +1448,6 @@
     "issuer_cik": "1750704",
     "name": "HawkEye 360, Inc.",
     "ticker": "HAWK"
-  },
-  {
-    "issuer_cik": "1555279",
-    "name": "908 Devices Inc.",
-    "ticker": "MASS"
-  },
-  {
-    "issuer_cik": "1611115",
-    "name": "Omada Health, Inc.",
-    "ticker": "OMDA"
   },
   {
     "issuer_cik": "1160330",
@@ -1545,14 +1490,19 @@
     "ticker": "OMER"
   },
   {
+    "issuer_cik": "1611115",
+    "name": "Omada Health, Inc.",
+    "ticker": "OMDA"
+  },
+  {
     "issuer_cik": "817720",
     "name": "SYNAPTICS Inc",
     "ticker": "SYNA"
   },
   {
-    "issuer_cik": "1013857",
-    "name": "PEGASYSTEMS INC",
-    "ticker": "PEGA"
+    "issuer_cik": "916540",
+    "name": "DARLING INGREDIENTS INC.",
+    "ticker": "DAR"
   },
   {
     "issuer_cik": "1787306",
@@ -1563,6 +1513,16 @@
     "issuer_cik": "1817241",
     "name": "Artiva Biotherapeutics, Inc.",
     "ticker": "ARTV"
+  },
+  {
+    "issuer_cik": "1598665",
+    "name": "Heritage Insurance Holdings, Inc.",
+    "ticker": "HRTG"
+  },
+  {
+    "issuer_cik": "1013857",
+    "name": "PEGASYSTEMS INC",
+    "ticker": "PEGA"
   },
   {
     "issuer_cik": "752714",
@@ -1590,6 +1550,16 @@
     "ticker": "KGS"
   },
   {
+    "issuer_cik": "1023024",
+    "name": "ANI PHARMACEUTICALS INC",
+    "ticker": "ANIP"
+  },
+  {
+    "issuer_cik": "1855612",
+    "name": "Grab Holdings Ltd",
+    "ticker": "GRAB"
+  },
+  {
     "issuer_cik": "1024478",
     "name": "ROCKWELL AUTOMATION, INC",
     "ticker": "ROK"
@@ -1610,24 +1580,14 @@
     "ticker": "UGP"
   },
   {
-    "issuer_cik": "1793663",
-    "name": "VTEX",
-    "ticker": "NYSE: VTEX"
-  },
-  {
-    "issuer_cik": "1737953",
-    "name": "Replimune Group, Inc.",
-    "ticker": "REPL"
-  },
-  {
     "issuer_cik": "882508",
     "name": "QUICKLOGIC Corp",
     "ticker": "QUIK"
   },
   {
-    "issuer_cik": "1315257",
-    "name": "Koppers Holdings Inc.",
-    "ticker": "KOP"
+    "issuer_cik": "1793663",
+    "name": "VTEX",
+    "ticker": "NYSE: VTEX"
   },
   {
     "issuer_cik": "1078075",
@@ -1655,11 +1615,6 @@
     "ticker": "SLNH"
   },
   {
-    "issuer_cik": "1433195",
-    "name": "APPFOLIO INC",
-    "ticker": "APPF"
-  },
-  {
     "issuer_cik": "1617553",
     "name": "ZIPRECRUITER, INC.",
     "ticker": "ZIP"
@@ -1670,9 +1625,9 @@
     "ticker": "RCKT"
   },
   {
-    "issuer_cik": "1764013",
-    "name": "Immunovant, Inc.",
-    "ticker": "IMVT"
+    "issuer_cik": "1005731",
+    "name": "IDT CORP",
+    "ticker": "IDT"
   },
   {
     "issuer_cik": "106532",
@@ -1685,14 +1640,14 @@
     "ticker": "PSNL"
   },
   {
-    "issuer_cik": "1692376",
-    "name": "Velocity Financial, Inc.",
-    "ticker": "VEL"
-  },
-  {
     "issuer_cik": "1127537",
     "name": "Pulmonx Corp",
     "ticker": "LUNG"
+  },
+  {
+    "issuer_cik": "1692376",
+    "name": "Velocity Financial, Inc.",
+    "ticker": "VEL"
   },
   {
     "issuer_cik": "1777393",
@@ -1730,19 +1685,24 @@
     "ticker": "NVDA"
   },
   {
-    "issuer_cik": "1869198",
-    "name": "Life Time Group Holdings, Inc.",
-    "ticker": "LTH"
-  },
-  {
     "issuer_cik": "1317685",
     "name": "Alliance Laundry Holdings Inc.",
     "ticker": "ALH"
   },
   {
+    "issuer_cik": "1869198",
+    "name": "Life Time Group Holdings, Inc.",
+    "ticker": "LTH"
+  },
+  {
     "issuer_cik": "1082554",
     "name": "UNITED THERAPEUTICS Corp",
     "ticker": "UTHR"
+  },
+  {
+    "issuer_cik": "1447669",
+    "name": "TWILIO INC",
+    "ticker": "TWLO"
   },
   {
     "issuer_cik": "1468642",
@@ -1785,16 +1745,6 @@
     "ticker": "MPWR"
   },
   {
-    "issuer_cik": "1618732",
-    "name": "Nutanix, Inc.",
-    "ticker": "NTNX"
-  },
-  {
-    "issuer_cik": "1104506",
-    "name": "INSMED Inc",
-    "ticker": "INSM"
-  },
-  {
     "issuer_cik": "1645590",
     "name": "Hewlett Packard Enterprise Co",
     "ticker": "HPE"
@@ -1825,24 +1775,9 @@
     "ticker": "KRYS"
   },
   {
-    "issuer_cik": "108385",
-    "name": "WORLD ACCEPTANCE CORP",
-    "ticker": "WRLD"
-  },
-  {
-    "issuer_cik": "1660134",
-    "name": "Okta, Inc.",
-    "ticker": "OKTA"
-  },
-  {
     "issuer_cik": "1827635",
     "name": "Veradermics, Inc",
     "ticker": "MANE"
-  },
-  {
-    "issuer_cik": "1159036",
-    "name": "HALOZYME THERAPEUTICS, INC.",
-    "ticker": "HALO"
   },
   {
     "issuer_cik": "1018963",
@@ -1935,11 +1870,6 @@
     "ticker": "SYRE"
   },
   {
-    "issuer_cik": "1464521",
-    "name": "Heartflow, Inc.",
-    "ticker": "HTFL"
-  },
-  {
     "issuer_cik": "1699031",
     "name": "GRAIL, Inc.",
     "ticker": "GRAL"
@@ -1948,6 +1878,11 @@
     "issuer_cik": "1001250",
     "name": "ESTEE LAUDER COMPANIES INC",
     "ticker": "EL"
+  },
+  {
+    "issuer_cik": "1464521",
+    "name": "Heartflow, Inc.",
+    "ticker": "HTFL"
   },
   {
     "issuer_cik": "1691303",
@@ -1965,29 +1900,14 @@
     "ticker": "ETON"
   },
   {
-    "issuer_cik": "1759425",
-    "name": "Mirum Pharmaceuticals, Inc.",
-    "ticker": "MIRM"
-  },
-  {
     "issuer_cik": "1020569",
     "name": "IRON MOUNTAIN INC",
     "ticker": "IRM"
   },
   {
-    "issuer_cik": "1844452",
-    "name": "Intuitive Machines, Inc.",
-    "ticker": "LUNR"
-  },
-  {
     "issuer_cik": "80661",
     "name": "PROGRESSIVE CORP/OH/",
     "ticker": "PGR"
-  },
-  {
-    "issuer_cik": "1579878",
-    "name": "Figma, Inc.",
-    "ticker": "FIG"
   },
   {
     "issuer_cik": "1816736",
@@ -1998,6 +1918,16 @@
     "issuer_cik": "1587523",
     "name": "Knowles Corp",
     "ticker": "KN"
+  },
+  {
+    "issuer_cik": "1789029",
+    "name": "Aeva Technologies, Inc.",
+    "ticker": "AEVA"
+  },
+  {
+    "issuer_cik": "2067129",
+    "name": "Neptune Insurance Holdings Inc.",
+    "ticker": "NP"
   },
   {
     "issuer_cik": "1793659",
@@ -2013,6 +1943,16 @@
     "issuer_cik": "927003",
     "name": "ADVANCED ENERGY INDUSTRIES INC",
     "ticker": "AEIS"
+  },
+  {
+    "issuer_cik": "1759425",
+    "name": "Mirum Pharmaceuticals, Inc.",
+    "ticker": "MIRM"
+  },
+  {
+    "issuer_cik": "1835632",
+    "name": "Marvell Technology, Inc.",
+    "ticker": "MRVL"
   },
   {
     "issuer_cik": "1441816",
@@ -2040,11 +1980,6 @@
     "ticker": "ASX:LNW"
   },
   {
-    "issuer_cik": "1599617",
-    "name": "DNOW Inc.",
-    "ticker": "DNOW"
-  },
-  {
     "issuer_cik": "1070081",
     "name": "PTC THERAPEUTICS, INC.",
     "ticker": "PTCT"
@@ -2055,24 +1990,24 @@
     "ticker": "AMRX"
   },
   {
-    "issuer_cik": "2067129",
-    "name": "Neptune Insurance Holdings Inc.",
-    "ticker": "NP"
-  },
-  {
     "issuer_cik": "2012593",
     "name": "Rapport Therapeutics, Inc.",
     "ticker": "RAPP"
   },
   {
-    "issuer_cik": "763901",
-    "name": "POPULAR, INC.",
-    "ticker": "BPOP"
+    "issuer_cik": "1845257",
+    "name": "LifeStance Health Group, Inc.",
+    "ticker": "LFST"
   },
   {
     "issuer_cik": "78814",
     "name": "PITNEY BOWES INC /DE/",
     "ticker": "PBI"
+  },
+  {
+    "issuer_cik": "1857816",
+    "name": "GigaCloud Technology Inc",
+    "ticker": "GCT"
   },
   {
     "issuer_cik": "1309108",
@@ -2085,14 +2020,9 @@
     "ticker": "NESR"
   },
   {
-    "issuer_cik": "1158114",
-    "name": "APPLIED OPTOELECTRONICS, INC.",
-    "ticker": "AAOI"
-  },
-  {
-    "issuer_cik": "1676238",
-    "name": "Braze, Inc.",
-    "ticker": "BRZE"
+    "issuer_cik": "1844452",
+    "name": "Intuitive Machines, Inc.",
+    "ticker": "LUNR"
   },
   {
     "issuer_cik": "876437",
@@ -2100,9 +2030,9 @@
     "ticker": "MTG"
   },
   {
-    "issuer_cik": "1410384",
-    "name": "Q2 Holdings, Inc.",
-    "ticker": "QTWO"
+    "issuer_cik": "1158114",
+    "name": "APPLIED OPTOELECTRONICS, INC.",
+    "ticker": "AAOI"
   },
   {
     "issuer_cik": "1583648",
@@ -2113,11 +2043,6 @@
     "issuer_cik": "1585521",
     "name": "Zoom Communications, Inc.",
     "ticker": "ZM"
-  },
-  {
-    "issuer_cik": "1065088",
-    "name": "EBAY INC",
-    "ticker": "EBAY"
   },
   {
     "issuer_cik": "1083301",
@@ -2145,6 +2070,11 @@
     "ticker": "ASAN"
   },
   {
+    "issuer_cik": "1690585",
+    "name": "Dianthus Therapeutics, Inc. /DE/",
+    "ticker": "DNTH"
+  },
+  {
     "issuer_cik": "1140859",
     "name": "Cencora, Inc.",
     "ticker": "COR"
@@ -2165,9 +2095,9 @@
     "ticker": "LOB"
   },
   {
-    "issuer_cik": "1486159",
-    "name": "Chord Energy Corp",
-    "ticker": "CHRD"
+    "issuer_cik": "1676238",
+    "name": "Braze, Inc.",
+    "ticker": "BRZE"
   },
   {
     "issuer_cik": "748268",
@@ -2175,29 +2105,19 @@
     "ticker": "RCAT"
   },
   {
-    "issuer_cik": "1411207",
-    "name": "Allison Transmission Holdings Inc",
-    "ticker": "ALSN"
-  },
-  {
     "issuer_cik": "313927",
     "name": "CHURCH & DWIGHT CO INC /DE/",
     "ticker": "CHD"
   },
   {
+    "issuer_cik": "1486159",
+    "name": "Chord Energy Corp",
+    "ticker": "CHRD"
+  },
+  {
     "issuer_cik": "97210",
     "name": "TERADYNE, INC",
     "ticker": "TER"
-  },
-  {
-    "issuer_cik": "887596",
-    "name": "CHEESECAKE FACTORY INC",
-    "ticker": "CAKE"
-  },
-  {
-    "issuer_cik": "805928",
-    "name": "Axogen, Inc.",
-    "ticker": "AXGN"
   },
   {
     "issuer_cik": "1324424",
@@ -2220,29 +2140,14 @@
     "ticker": "AVAH"
   },
   {
-    "issuer_cik": "1727263",
-    "name": "Frontdoor, Inc.",
-    "ticker": "FTDR"
-  },
-  {
-    "issuer_cik": "1997464",
-    "name": "Marex Group Ltd",
-    "ticker": "MRX"
-  },
-  {
-    "issuer_cik": "50725",
-    "name": "GRIFFON CORP",
-    "ticker": "GFF"
-  },
-  {
     "issuer_cik": "1575515",
     "name": "Sprouts Farmers Market, Inc.",
     "ticker": "SFM"
   },
   {
-    "issuer_cik": "872589",
-    "name": "REGENERON PHARMACEUTICALS, INC.",
-    "ticker": "REGN"
+    "issuer_cik": "914156",
+    "name": "UFP TECHNOLOGIES INC",
+    "ticker": "UFPT"
   },
   {
     "issuer_cik": "1496443",
@@ -2255,9 +2160,9 @@
     "ticker": "LSCC"
   },
   {
-    "issuer_cik": "1078271",
-    "name": "EXTREME NETWORKS INC",
-    "ticker": "EXTR"
+    "issuer_cik": "1668243",
+    "name": "UroGen Pharma Ltd.",
+    "ticker": "URGN"
   },
   {
     "issuer_cik": "1753539",
@@ -2285,6 +2190,11 @@
     "ticker": "WDAY"
   },
   {
+    "issuer_cik": "1997464",
+    "name": "Marex Group Ltd",
+    "ticker": "MRX"
+  },
+  {
     "issuer_cik": "1474735",
     "name": "GENERAC HOLDINGS INC.",
     "ticker": "GNRC"
@@ -2305,14 +2215,14 @@
     "ticker": "PGEN"
   },
   {
+    "issuer_cik": "1997350",
+    "name": "Accelerant Holdings",
+    "ticker": "ARX"
+  },
+  {
     "issuer_cik": "1166003",
     "name": "XPO, Inc.",
     "ticker": "XPO"
-  },
-  {
-    "issuer_cik": "1401257",
-    "name": "FORUM ENERGY TECHNOLOGIES, INC.",
-    "ticker": "FET"
   },
   {
     "issuer_cik": "1389170",
@@ -2328,6 +2238,11 @@
     "issuer_cik": "1090009",
     "name": "SOUTHERN FIRST BANCSHARES INC",
     "ticker": "SFST"
+  },
+  {
+    "issuer_cik": "1401257",
+    "name": "FORUM ENERGY TECHNOLOGIES, INC.",
+    "ticker": "FET"
   },
   {
     "issuer_cik": "1645460",
@@ -2360,24 +2275,19 @@
     "ticker": "NOW"
   },
   {
-    "issuer_cik": "1534120",
-    "name": "Avalo Therapeutics, Inc.",
-    "ticker": "AVTX"
-  },
-  {
     "issuer_cik": "763532",
     "name": "LSI INDUSTRIES INC",
     "ticker": "LYTS"
   },
   {
+    "issuer_cik": "1534120",
+    "name": "Avalo Therapeutics, Inc.",
+    "ticker": "AVTX"
+  },
+  {
     "issuer_cik": "1178970",
     "name": "PROVIDENT FINANCIAL SERVICES INC",
     "ticker": "PFS"
-  },
-  {
-    "issuer_cik": "1626115",
-    "name": "PJT Partners Inc.",
-    "ticker": "PJT"
   },
   {
     "issuer_cik": "1672619",
@@ -2410,24 +2320,9 @@
     "ticker": "GNW"
   },
   {
-    "issuer_cik": "2023658",
-    "name": "Bicara Therapeutics Inc.",
-    "ticker": "BCAX"
-  },
-  {
-    "issuer_cik": "1704711",
-    "name": "Funko, Inc.",
-    "ticker": "FNKO"
-  },
-  {
     "issuer_cik": "1559865",
     "name": "EVERTEC, Inc.",
     "ticker": "EVTC"
-  },
-  {
-    "issuer_cik": "2098",
-    "name": "ACME UNITED CORP",
-    "ticker": "ACU"
   },
   {
     "issuer_cik": "1086222",
@@ -2440,9 +2335,9 @@
     "ticker": "VIRT"
   },
   {
-    "issuer_cik": "1350593",
-    "name": "Mueller Water Products, Inc.",
-    "ticker": "MWA"
+    "issuer_cik": "1704711",
+    "name": "Funko, Inc.",
+    "ticker": "FNKO"
   },
   {
     "issuer_cik": "1507605",
@@ -2475,11 +2370,6 @@
     "ticker": "AMPX"
   },
   {
-    "issuer_cik": "1308547",
-    "name": "Dolby Laboratories, Inc.",
-    "ticker": "DLB"
-  },
-  {
     "issuer_cik": "1956955",
     "name": "Unusual Machines, Inc.",
     "ticker": "UMAC"
@@ -2505,14 +2395,14 @@
     "ticker": "FENC"
   },
   {
+    "issuer_cik": "1308547",
+    "name": "Dolby Laboratories, Inc.",
+    "ticker": "DLB"
+  },
+  {
     "issuer_cik": "1675149",
     "name": "Alcoa Corp",
     "ticker": "AA"
-  },
-  {
-    "issuer_cik": "1475922",
-    "name": "Primerica, Inc.",
-    "ticker": "PRI"
   },
   {
     "issuer_cik": "1579877",
@@ -2525,14 +2415,14 @@
     "ticker": "CDE"
   },
   {
+    "issuer_cik": "50725",
+    "name": "GRIFFON CORP",
+    "ticker": "GFF"
+  },
+  {
     "issuer_cik": "923796",
     "name": "GEO GROUP INC",
     "ticker": "GEO"
-  },
-  {
-    "issuer_cik": "749251",
-    "name": "GARTNER INC",
-    "ticker": "IT"
   },
   {
     "issuer_cik": "1280058",
@@ -2573,11 +2463,6 @@
     "issuer_cik": "797721",
     "name": "VIASAT INC",
     "ticker": "VSAT"
-  },
-  {
-    "issuer_cik": "1793229",
-    "name": "Claritev Corp",
-    "ticker": "CTEV"
   },
   {
     "issuer_cik": "1691421",
@@ -2640,14 +2525,14 @@
     "ticker": "ENLT"
   },
   {
+    "issuer_cik": "1315257",
+    "name": "Koppers Holdings Inc.",
+    "ticker": "KOP"
+  },
+  {
     "issuer_cik": "1633917",
     "name": "PayPal Holdings, Inc.",
     "ticker": "PYPL"
-  },
-  {
-    "issuer_cik": "1001614",
-    "name": "Riley Exploration Permian, Inc.",
-    "ticker": "REPX"
   },
   {
     "issuer_cik": "1484778",
@@ -2668,6 +2553,11 @@
     "issuer_cik": "880266",
     "name": "AGCO CORP /DE",
     "ticker": "AGCO"
+  },
+  {
+    "issuer_cik": "1433195",
+    "name": "APPFOLIO INC",
+    "ticker": "APPF"
   },
   {
     "issuer_cik": "1557860",
@@ -2725,11 +2615,6 @@
     "ticker": "DNLI"
   },
   {
-    "issuer_cik": "1084048",
-    "name": "ZIFF DAVIS, INC.",
-    "ticker": "ZD"
-  },
-  {
     "issuer_cik": "1093672",
     "name": "PEOPLES BANCORP OF NORTH CAROLINA INC",
     "ticker": "PEBK"
@@ -2743,11 +2628,6 @@
     "issuer_cik": "1819493",
     "name": "Xos, Inc.",
     "ticker": "XOS"
-  },
-  {
-    "issuer_cik": "1086434",
-    "name": "AUDIOCODES LTD",
-    "ticker": "AUDC"
   },
   {
     "issuer_cik": "1658566",
@@ -2768,11 +2648,6 @@
     "issuer_cik": "1501697",
     "name": "X4 Pharmaceuticals, Inc",
     "ticker": "XFOR"
-  },
-  {
-    "issuer_cik": "1005731",
-    "name": "IDT CORP",
-    "ticker": "IDT"
   },
   {
     "issuer_cik": "1377789",
@@ -2868,11 +2743,6 @@
     "issuer_cik": "1576427",
     "name": "Criteo S.A.",
     "ticker": "CRTO"
-  },
-  {
-    "issuer_cik": "39311",
-    "name": "INDEPENDENT BANK CORP /MI/",
-    "ticker": "IBCP"
   },
   {
     "issuer_cik": "1901279",

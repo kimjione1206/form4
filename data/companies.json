@@ -1799,6 +1799,11 @@
     "sic_description": "Semiconductors & Related Devices",
     "summary": "반도체 설계 자산(IP) 회사"
   },
+  "1668243": {
+    "name": "UroGen Pharma Ltd.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
   "1668397": {
     "name": "Medpace Holdings, Inc.",
     "sic_description": "Services-Commercial Physical & Biological Research",
@@ -2068,6 +2073,11 @@
     "name": "Kodiak Gas Services, Inc.",
     "sic_description": "Natural Gas Transmission",
     "summary": "천연가스 압축 설비를 운영하는 회사"
+  },
+  "1768267": {
+    "name": "Cerence Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
   },
   "1769628": {
     "name": "CoreWeave, Inc.",
@@ -2363,6 +2373,11 @@
     "name": "Helus Pharma Inc.",
     "sic_description": "Pharmaceutical Preparations",
     "summary": "의약품을 개발하는 회사"
+  },
+  "1835632": {
+    "name": "Marvell Technology, Inc.",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
   },
   "1835830": {
     "name": "Klaviyo, Inc.",

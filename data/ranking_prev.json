@@ -55,11 +55,6 @@
     "ticker": "AVBC"
   },
   {
-    "issuer_cik": "860748",
-    "name": "KEMPER Corp",
-    "ticker": "KMPR"
-  },
-  {
     "issuer_cik": "1502292",
     "name": "Presurance Holdings, Inc.",
     "ticker": "PRHI"
@@ -85,24 +80,19 @@
     "ticker": "GREE"
   },
   {
-    "issuer_cik": "1839970",
-    "name": "BlossomHill Therapeutics, Inc.",
-    "ticker": "BLSM"
-  },
-  {
     "issuer_cik": "1533615",
     "name": "Chiron Real Estate Inc.",
     "ticker": "XRN"
   },
   {
-    "issuer_cik": "1488139",
-    "name": "Ameresco, Inc.",
-    "ticker": "AMRC"
-  },
-  {
     "issuer_cik": "2001557",
     "name": "Innventure, Inc.",
     "ticker": "INV"
+  },
+  {
+    "issuer_cik": "1488139",
+    "name": "Ameresco, Inc.",
+    "ticker": "AMRC"
   },
   {
     "issuer_cik": "1641614",
@@ -135,6 +125,11 @@
     "ticker": "GAM"
   },
   {
+    "issuer_cik": "860748",
+    "name": "KEMPER Corp",
+    "ticker": "KMPR"
+  },
+  {
     "issuer_cik": "715446",
     "name": "Anixa Biosciences Inc",
     "ticker": "ANIX"
@@ -165,14 +160,14 @@
     "ticker": "BORR"
   },
   {
-    "issuer_cik": "1469395",
-    "name": "Pampa Energy Inc.",
-    "ticker": "PAM"
-  },
-  {
     "issuer_cik": "1551047",
     "name": "Bluerock Private Real Estate Fund",
     "ticker": "BPRE"
+  },
+  {
+    "issuer_cik": "1469395",
+    "name": "Pampa Energy Inc.",
+    "ticker": "PAM"
   },
   {
     "issuer_cik": "1704715",
@@ -193,11 +188,6 @@
     "issuer_cik": "917251",
     "name": "AGREE REALTY CORP",
     "ticker": "ADC"
-  },
-  {
-    "issuer_cik": "1521332",
-    "name": "Aptiv PLC",
-    "ticker": "APTV"
   },
   {
     "issuer_cik": "1788257",
@@ -228,11 +218,6 @@
     "issuer_cik": "1867949",
     "name": "Chicago Atlantic Real Estate Finance, Inc.",
     "ticker": "REFI"
-  },
-  {
-    "issuer_cik": "1520006",
-    "name": "Matador Resources Co",
-    "ticker": "MTDR"
   },
   {
     "issuer_cik": "1408534",
@@ -305,14 +290,9 @@
     "ticker": "PAL"
   },
   {
-    "issuer_cik": "63296",
-    "name": "MATTHEWS INTERNATIONAL CORP",
-    "ticker": "MATW"
-  },
-  {
-    "issuer_cik": "24090",
-    "name": "CITIZENS, INC.",
-    "ticker": "CIA"
+    "issuer_cik": "2020932",
+    "name": "AgomAb Therapeutics NV",
+    "ticker": "AGMB"
   },
   {
     "issuer_cik": "1805385",
@@ -328,11 +308,6 @@
     "issuer_cik": "1095435",
     "name": "Alpha Compute Corp",
     "ticker": "ALP"
-  },
-  {
-    "issuer_cik": "2020932",
-    "name": "AgomAb Therapeutics NV",
-    "ticker": "AGMB"
   },
   {
     "issuer_cik": "1982518",
@@ -355,14 +330,19 @@
     "ticker": "RGCO"
   },
   {
+    "issuer_cik": "1653384",
+    "name": "Runway Growth Finance Corp.",
+    "ticker": "RWAY"
+  },
+  {
     "issuer_cik": "813623",
     "name": "Total Return Securities Fund",
     "ticker": "SWZ"
   },
   {
-    "issuer_cik": "1653384",
-    "name": "Runway Growth Finance Corp.",
-    "ticker": "RWAY"
+    "issuer_cik": "1868995",
+    "name": "CI&T Inc",
+    "ticker": "CINT"
   },
   {
     "issuer_cik": "1638290",
@@ -375,11 +355,6 @@
     "ticker": "TENX"
   },
   {
-    "issuer_cik": "1868995",
-    "name": "CI&T Inc",
-    "ticker": "CINT"
-  },
-  {
     "issuer_cik": "1175151",
     "name": "Cytosorbents Corp",
     "ticker": "CTSO"
@@ -390,9 +365,9 @@
     "ticker": "GRNT"
   },
   {
-    "issuer_cik": "1550913",
-    "name": "MacKenzie Realty Capital, Inc.",
-    "ticker": "MKZR"
+    "issuer_cik": "24090",
+    "name": "CITIZENS, INC.",
+    "ticker": "CIA"
   },
   {
     "issuer_cik": "1547546",
