@@ -25,11 +25,6 @@
     "ticker": "SBLK"
   },
   {
-    "issuer_cik": "2035989",
-    "name": "Amrize Ltd",
-    "ticker": "AMRZ"
-  },
-  {
     "issuer_cik": "930236",
     "name": "REDWOOD TRUST INC",
     "ticker": "RWT"
@@ -43,6 +38,11 @@
     "issuer_cik": "1326380",
     "name": "GameStop Corp.",
     "ticker": "GME"
+  },
+  {
+    "issuer_cik": "2035989",
+    "name": "Amrize Ltd",
+    "ticker": "AMRZ"
   },
   {
     "issuer_cik": "1552797",
@@ -98,11 +98,6 @@
     "issuer_cik": "1505732",
     "name": "Bankwell Financial Group, Inc.",
     "ticker": "BWFG"
-  },
-  {
-    "issuer_cik": "1872789",
-    "name": "Embecta Corp.",
-    "ticker": "EMBC"
   },
   {
     "issuer_cik": "849145",
@@ -165,14 +160,14 @@
     "ticker": "AMR"
   },
   {
-    "issuer_cik": "1865200",
-    "name": "Angel Studios, Inc.",
-    "ticker": "ANGX"
-  },
-  {
     "issuer_cik": "2007919",
     "name": "Inhibrx Biosciences, Inc.",
     "ticker": "INBX"
+  },
+  {
+    "issuer_cik": "1865200",
+    "name": "Angel Studios, Inc.",
+    "ticker": "ANGX"
   },
   {
     "issuer_cik": "917251",
@@ -200,11 +195,6 @@
     "ticker": "CELH"
   },
   {
-    "issuer_cik": "1703057",
-    "name": "AbCellera Biologics Inc.",
-    "ticker": "ABCL"
-  },
-  {
     "issuer_cik": "1867949",
     "name": "Chicago Atlantic Real Estate Finance, Inc.",
     "ticker": "REFI"
@@ -215,9 +205,9 @@
     "ticker": "FGBI"
   },
   {
-    "issuer_cik": "1739104",
-    "name": "Elanco Animal Health Inc",
-    "ticker": "ELAN"
+    "issuer_cik": "1703057",
+    "name": "AbCellera Biologics Inc.",
+    "ticker": "ABCL"
   },
   {
     "issuer_cik": "2040127",
@@ -228,11 +218,6 @@
     "issuer_cik": "1840572",
     "name": "Lucky Strike Entertainment Corp",
     "ticker": "LUCK"
-  },
-  {
-    "issuer_cik": "97134",
-    "name": "TENNANT CO",
-    "ticker": "TNC"
   },
   {
     "issuer_cik": "1740332",
@@ -353,11 +338,6 @@
     "issuer_cik": "88000",
     "name": "Horizon Kinetics Holding Corp",
     "ticker": "HKHC"
-  },
-  {
-    "issuer_cik": "935419",
-    "name": "RCI HOSPITALITY HOLDINGS, INC.",
-    "ticker": "RICK"
   },
   {
     "issuer_cik": "723188",
