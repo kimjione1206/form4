@@ -5,14 +5,14 @@
     "ticker": "BBD"
   },
   {
+    "issuer_cik": "46619",
+    "name": "HEICO CORP",
+    "ticker": "HEI, HEI.A"
+  },
+  {
     "issuer_cik": "39368",
     "name": "FULLER H B CO",
     "ticker": "FUL"
-  },
-  {
-    "issuer_cik": "2079999",
-    "name": "Cardinal Infrastructure Group Inc.",
-    "ticker": "CDNL"
   },
   {
     "issuer_cik": "1089063",
@@ -110,9 +110,9 @@
     "ticker": "TSM"
   },
   {
-    "issuer_cik": "1660334",
-    "name": "Verrica Pharmaceuticals Inc.",
-    "ticker": "VRCA"
+    "issuer_cik": "813623",
+    "name": "Total Return Securities Fund",
+    "ticker": "SWZ"
   },
   {
     "issuer_cik": "1963088",
@@ -123,6 +123,16 @@
     "issuer_cik": "31107",
     "name": "EASTERN CO",
     "ticker": "EML"
+  },
+  {
+    "issuer_cik": "1660334",
+    "name": "Verrica Pharmaceuticals Inc.",
+    "ticker": "VRCA"
+  },
+  {
+    "issuer_cik": "838875",
+    "name": "WILLAMETTE VALLEY VINEYARDS INC",
+    "ticker": "WVVI"
   },
   {
     "issuer_cik": "1551047",
@@ -148,11 +158,6 @@
     "issuer_cik": "917251",
     "name": "AGREE REALTY CORP",
     "ticker": "ADC"
-  },
-  {
-    "issuer_cik": "1865200",
-    "name": "Angel Studios, Inc.",
-    "ticker": "ANGX"
   },
   {
     "issuer_cik": "1788257",
@@ -185,11 +190,6 @@
     "ticker": "FGBI"
   },
   {
-    "issuer_cik": "1703057",
-    "name": "AbCellera Biologics Inc.",
-    "ticker": "ABCL"
-  },
-  {
     "issuer_cik": "2040127",
     "name": "Karman Holdings Inc.",
     "ticker": "KRMN"
@@ -198,11 +198,6 @@
     "issuer_cik": "1840572",
     "name": "Lucky Strike Entertainment Corp",
     "ticker": "LUCK"
-  },
-  {
-    "issuer_cik": "1740332",
-    "name": "RESIDEO TECHNOLOGIES, INC.",
-    "ticker": "REZI"
   },
   {
     "issuer_cik": "1839530",
@@ -245,19 +240,14 @@
     "ticker": "AGMB"
   },
   {
-    "issuer_cik": "1805385",
-    "name": "Evolv Technologies Holdings, Inc.",
-    "ticker": "EVLV"
+    "issuer_cik": "1095435",
+    "name": "Alpha Compute Corp",
+    "ticker": "ALP"
   },
   {
     "issuer_cik": "101538",
     "name": "UNITED STATES ANTIMONY CORP",
     "ticker": "UAMY"
-  },
-  {
-    "issuer_cik": "1095435",
-    "name": "Alpha Compute Corp",
-    "ticker": "ALP"
   },
   {
     "issuer_cik": "1982518",
@@ -273,11 +263,6 @@
     "issuer_cik": "1069533",
     "name": "RGC RESOURCES INC",
     "ticker": "RGCO"
-  },
-  {
-    "issuer_cik": "813623",
-    "name": "Total Return Securities Fund",
-    "ticker": "SWZ"
   },
   {
     "issuer_cik": "1868995",
@@ -323,16 +308,6 @@
     "issuer_cik": "1533040",
     "name": "Phio Pharmaceuticals Corp.",
     "ticker": "PHIO"
-  },
-  {
-    "issuer_cik": "838875",
-    "name": "WILLAMETTE VALLEY VINEYARDS INC",
-    "ticker": "WVVI"
-  },
-  {
-    "issuer_cik": "65433",
-    "name": "MEXICO FUND INC",
-    "ticker": "MXF"
   },
   {
     "issuer_cik": "1041368",

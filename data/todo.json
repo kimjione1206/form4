@@ -1,8 +1,18 @@
 {
   "companies": [
     {
+      "cik": "46619",
+      "name": "HEICO CORP",
+      "sic_description": "Aircraft Engines & Engine Parts"
+    },
+    {
       "cik": "40417",
       "name": "GENERAL AMERICAN INVESTORS CO INC",
+      "sic_description": ""
+    },
+    {
+      "cik": "813623",
+      "name": "Total Return Securities Fund",
       "sic_description": ""
     },
     {
@@ -16,19 +26,81 @@
       "sic_description": ""
     },
     {
-      "cik": "813623",
-      "name": "Total Return Securities Fund",
-      "sic_description": ""
+      "cik": "719955",
+      "name": "WILLIAMS SONOMA INC",
+      "sic_description": "Retail-Home Furniture, Furnishings & Equipment Stores"
     },
     {
-      "cik": "65433",
-      "name": "MEXICO FUND INC",
-      "sic_description": ""
+      "cik": "1141391",
+      "name": "Mastercard Inc",
+      "sic_description": "Services-Business Services, NEC"
     }
   ],
-  "industries": [],
-  "names": [],
+  "industries": [
+    "Aircraft Engines & Engine Parts"
+  ],
+  "names": [
+    {
+      "n": "Sharplink, Inc.",
+      "t": "SBET"
+    },
+    {
+      "n": "Agora, Inc.",
+      "t": "API"
+    },
+    {
+      "n": "Phoenix Education Partners, Inc.",
+      "t": "PXED"
+    },
+    {
+      "n": "SARATOGA INVESTMENT CORP.",
+      "t": "SAR"
+    },
+    {
+      "n": "Retension Pharmaceuticals, Inc.",
+      "t": "RTSN"
+    },
+    {
+      "n": "Zone Frontier Inc.",
+      "t": "ZONE"
+    },
+    {
+      "n": "HILLS BANCORPORATION",
+      "t": "HBIA.PK"
+    },
+    {
+      "n": "Terrestrial Energy Inc. /DE/",
+      "t": "IMSR"
+    },
+    {
+      "n": "EDISON INTERNATIONAL",
+      "t": "EIX"
+    },
+    {
+      "n": "FLOWERS FOODS INC",
+      "t": "FLO"
+    },
+    {
+      "n": "Angel Oak Financial Strategies Income Term Trust",
+      "t": "FINS"
+    },
+    {
+      "n": "KVH INDUSTRIES INC \\DE\\",
+      "t": "KVHI"
+    },
+    {
+      "n": "MOBIX LABS, INC",
+      "t": "MOBX"
+    }
+  ],
   "titles": [
-    "President and Co-CEO"
+    "COO - Travel Division",
+    "Chief Academic Off. & Provost",
+    "Chief Legal & Admin Officer",
+    "Co-COB and Co-CEO",
+    "Executive Vice-Chairman-Board",
+    "Pres. Finance and Operations",
+    "SVP, Pres Viasat Government",
+    "VP of Human Resources"
   ]
 }
