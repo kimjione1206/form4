@@ -16,11 +16,6 @@
       "sic_description": ""
     },
     {
-      "cik": "1095435",
-      "name": "Alpha Compute Corp",
-      "sic_description": "Finance Services"
-    },
-    {
       "cik": "813623",
       "name": "Total Return Securities Fund",
       "sic_description": ""
@@ -33,5 +28,7 @@
   ],
   "industries": [],
   "names": [],
-  "titles": []
+  "titles": [
+    "President and Co-CEO"
+  ]
 }

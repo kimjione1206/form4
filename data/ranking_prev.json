@@ -45,19 +45,9 @@
     "ticker": "AMRZ"
   },
   {
-    "issuer_cik": "1552797",
-    "name": "Delek Logistics Partners, LP",
-    "ticker": "DKL"
-  },
-  {
     "issuer_cik": "1502292",
     "name": "Presurance Holdings, Inc.",
     "ticker": "PRHI"
-  },
-  {
-    "issuer_cik": "1635077",
-    "name": "Aclarion, Inc.",
-    "ticker": "ACON"
   },
   {
     "issuer_cik": "1833141",
@@ -88,11 +78,6 @@
     "issuer_cik": "1641614",
     "name": "CPI Card Group Inc.",
     "ticker": "PMTS"
-  },
-  {
-    "issuer_cik": "318833",
-    "name": "TEAM INC",
-    "ticker": "TISI"
   },
   {
     "issuer_cik": "1505732",
@@ -140,11 +125,6 @@
     "ticker": "EML"
   },
   {
-    "issuer_cik": "1715497",
-    "name": "Borr Drilling Ltd",
-    "ticker": "BORR"
-  },
-  {
     "issuer_cik": "1551047",
     "name": "Bluerock Private Real Estate Fund",
     "ticker": "BPRE"
@@ -165,14 +145,14 @@
     "ticker": "INBX"
   },
   {
-    "issuer_cik": "1865200",
-    "name": "Angel Studios, Inc.",
-    "ticker": "ANGX"
-  },
-  {
     "issuer_cik": "917251",
     "name": "AGREE REALTY CORP",
     "ticker": "ADC"
+  },
+  {
+    "issuer_cik": "1865200",
+    "name": "Angel Studios, Inc.",
+    "ticker": "ANGX"
   },
   {
     "issuer_cik": "1788257",
@@ -235,6 +215,11 @@
     "ticker": "LIEN"
   },
   {
+    "issuer_cik": "318833",
+    "name": "TEAM INC",
+    "ticker": "TISI"
+  },
+  {
     "issuer_cik": "67215",
     "name": "DYCOM INDUSTRIES INC",
     "ticker": "DY"
@@ -253,11 +238,6 @@
     "issuer_cik": "1158172",
     "name": "COMSCORE, INC.",
     "ticker": "SCOR"
-  },
-  {
-    "issuer_cik": "1998768",
-    "name": "Proficient Auto Logistics, Inc",
-    "ticker": "PAL"
   },
   {
     "issuer_cik": "2020932",
@@ -293,11 +273,6 @@
     "issuer_cik": "1069533",
     "name": "RGC RESOURCES INC",
     "ticker": "RGCO"
-  },
-  {
-    "issuer_cik": "1653384",
-    "name": "Runway Growth Finance Corp.",
-    "ticker": "RWAY"
   },
   {
     "issuer_cik": "813623",
@@ -363,10 +338,5 @@
     "issuer_cik": "1041368",
     "name": "RIVERVIEW BANCORP INC",
     "ticker": "RVSB"
-  },
-  {
-    "issuer_cik": "1866757",
-    "name": "Brilliant Earth Group, Inc.",
-    "ticker": "BRLT"
   }
 ]
