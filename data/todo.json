@@ -1,11 +1,6 @@
 {
   "companies": [
     {
-      "cik": "46619",
-      "name": "HEICO CORP",
-      "sic_description": "Aircraft Engines & Engine Parts"
-    },
-    {
       "cik": "40417",
       "name": "GENERAL AMERICAN INVESTORS CO INC",
       "sic_description": ""
@@ -26,81 +21,44 @@
       "sic_description": ""
     },
     {
-      "cik": "719955",
-      "name": "WILLIAMS SONOMA INC",
-      "sic_description": "Retail-Home Furniture, Furnishings & Equipment Stores"
+      "cik": "2011641",
+      "name": "Ferguson Enterprises Inc. /DE/",
+      "sic_description": "Wholesale-Hardware & Plumbing & Heating Equipment & Supplies"
     },
     {
-      "cik": "1141391",
-      "name": "Mastercard Inc",
-      "sic_description": "Services-Business Services, NEC"
+      "cik": "909832",
+      "name": "COSTCO WHOLESALE CORP /NEW",
+      "sic_description": "Retail-Variety Stores"
+    },
+    {
+      "cik": "1549595",
+      "name": "Nurix Therapeutics, Inc.",
+      "sic_description": "Pharmaceutical Preparations"
     }
   ],
   "industries": [
-    "Aircraft Engines & Engine Parts"
+    "Wholesale-Hardware & Plumbing & Heating Equipment & Supplies"
   ],
   "names": [
     {
-      "n": "Sharplink, Inc.",
-      "t": "SBET"
+      "n": "ASE Technology Holding Co., Ltd.",
+      "t": "ASX"
     },
     {
-      "n": "Agora, Inc.",
-      "t": "API"
+      "n": "MiNK Therapeutics, Inc.",
+      "t": "INKT"
     },
     {
-      "n": "Phoenix Education Partners, Inc.",
-      "t": "PXED"
+      "n": "KKR Income Opportunities Fund",
+      "t": "KIO"
     },
     {
-      "n": "SARATOGA INVESTMENT CORP.",
-      "t": "SAR"
-    },
-    {
-      "n": "Retension Pharmaceuticals, Inc.",
-      "t": "RTSN"
-    },
-    {
-      "n": "Zone Frontier Inc.",
-      "t": "ZONE"
-    },
-    {
-      "n": "HILLS BANCORPORATION",
-      "t": "HBIA.PK"
-    },
-    {
-      "n": "Terrestrial Energy Inc. /DE/",
-      "t": "IMSR"
-    },
-    {
-      "n": "EDISON INTERNATIONAL",
-      "t": "EIX"
-    },
-    {
-      "n": "FLOWERS FOODS INC",
-      "t": "FLO"
-    },
-    {
-      "n": "Angel Oak Financial Strategies Income Term Trust",
-      "t": "FINS"
-    },
-    {
-      "n": "KVH INDUSTRIES INC \\DE\\",
-      "t": "KVHI"
-    },
-    {
-      "n": "MOBIX LABS, INC",
-      "t": "MOBX"
+      "n": "CODEXIS, INC.",
+      "t": "CDXS"
     }
   ],
   "titles": [
-    "COO - Travel Division",
-    "Chief Academic Off. & Provost",
-    "Chief Legal & Admin Officer",
-    "Co-COB and Co-CEO",
-    "Executive Vice-Chairman-Board",
-    "Pres. Finance and Operations",
-    "SVP, Pres Viasat Government",
-    "VP of Human Resources"
+    "Chief Administration Officer",
+    "Senior VP - Waterworks"
   ]
 }

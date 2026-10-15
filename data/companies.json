@@ -1259,6 +1259,11 @@
     "sic_description": "Real Estate Investment Trusts",
     "summary": "상업용 부동산 대출 투자 회사"
   },
+  "1549595": {
+    "name": "Nurix Therapeutics, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
   "1550913": {
     "name": "MacKenzie Realty Capital, Inc.",
     "sic_description": "Real Estate Investment Trusts",
@@ -2784,6 +2789,11 @@
     "sic_description": "Biological Products, (No Diagnostic Substances)",
     "summary": "바이오 의약품을 개발하는 회사"
   },
+  "2011641": {
+    "name": "Ferguson Enterprises Inc. /DE/",
+    "sic_description": "Wholesale-Hardware & Plumbing & Heating Equipment & Supplies",
+    "summary": null
+  },
   "2012593": {
     "name": "Rapport Therapeutics, Inc.",
     "sic_description": "Pharmaceutical Preparations",
@@ -3558,6 +3568,11 @@
     "name": "BORGWARNER INC",
     "sic_description": "Motor Vehicle Parts & Accessories",
     "summary": "자동차 부품을 만드는 회사"
+  },
+  "909832": {
+    "name": "COSTCO WHOLESALE CORP /NEW",
+    "sic_description": "Retail-Variety Stores",
+    "summary": null
   },
   "910612": {
     "name": "CBL & ASSOCIATES PROPERTIES INC",
