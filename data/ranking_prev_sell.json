@@ -810,14 +810,14 @@
     "ticker": "SOUN"
   },
   {
-    "issuer_cik": "1865631",
-    "name": "NEXTNAV INC.",
-    "ticker": "NN"
-  },
-  {
     "issuer_cik": "1107843",
     "name": "QUALYS, INC.",
     "ticker": "QLYS"
+  },
+  {
+    "issuer_cik": "1865631",
+    "name": "NEXTNAV INC.",
+    "ticker": "NN"
   },
   {
     "issuer_cik": "1070235",
@@ -920,14 +920,14 @@
     "ticker": "AAPL"
   },
   {
-    "issuer_cik": "1604821",
-    "name": "Natera, Inc.",
-    "ticker": "NTRA"
-  },
-  {
     "issuer_cik": "2007855",
     "name": "Venture Global, Inc.",
     "ticker": "VG"
+  },
+  {
+    "issuer_cik": "1604821",
+    "name": "Natera, Inc.",
+    "ticker": "NTRA"
   },
   {
     "issuer_cik": "1618732",
@@ -950,6 +950,11 @@
     "ticker": "STNG"
   },
   {
+    "issuer_cik": "1651308",
+    "name": "BeOne Medicines Ltd.",
+    "ticker": "ONC"
+  },
+  {
     "issuer_cik": "707549",
     "name": "LAM RESEARCH CORP",
     "ticker": "LRCX"
@@ -970,11 +975,6 @@
     "ticker": "OKTA"
   },
   {
-    "issuer_cik": "1651308",
-    "name": "BeOne Medicines Ltd.",
-    "ticker": "ONC"
-  },
-  {
     "issuer_cik": "1820953",
     "name": "Affirm Holdings, Inc.",
     "ticker": "AFRM"
@@ -983,6 +983,11 @@
     "issuer_cik": "1232524",
     "name": "Jazz Pharmaceuticals plc",
     "ticker": "JAZZ"
+  },
+  {
+    "issuer_cik": "1531152",
+    "name": "BJ's Wholesale Club Holdings, Inc.",
+    "ticker": "BJ"
   },
   {
     "issuer_cik": "1512673",
@@ -1010,14 +1015,19 @@
     "ticker": "COIN"
   },
   {
+    "issuer_cik": "1973266",
+    "name": "TKO Group Holdings, Inc.",
+    "ticker": "TKO"
+  },
+  {
     "issuer_cik": "1820144",
     "name": "Grindr Inc.",
     "ticker": "GRND"
   },
   {
-    "issuer_cik": "1973266",
-    "name": "TKO Group Holdings, Inc.",
-    "ticker": "TKO"
+    "issuer_cik": "913760",
+    "name": "StoneX Group Inc.",
+    "ticker": "SNEX"
   },
   {
     "issuer_cik": "751978",
@@ -1028,6 +1038,11 @@
     "issuer_cik": "1690820",
     "name": "CARVANA CO.",
     "ticker": "CVNA"
+  },
+  {
+    "issuer_cik": "1441816",
+    "name": "MongoDB, Inc.",
+    "ticker": "MDB"
   },
   {
     "issuer_cik": "1943896",
@@ -1043,11 +1058,6 @@
     "issuer_cik": "889900",
     "name": "PATTERSON UTI ENERGY INC",
     "ticker": "PTEN"
-  },
-  {
-    "issuer_cik": "913760",
-    "name": "StoneX Group Inc.",
-    "ticker": "SNEX"
   },
   {
     "issuer_cik": "1075531",
@@ -1170,9 +1180,19 @@
     "ticker": "PRCH"
   },
   {
+    "issuer_cik": "1430725",
+    "name": "Global Ship Lease, Inc.",
+    "ticker": "GSL"
+  },
+  {
     "issuer_cik": "1645469",
     "name": "Monopar Therapeutics",
     "ticker": "MNPR"
+  },
+  {
+    "issuer_cik": "1580560",
+    "name": "Flywire Corp",
+    "ticker": "FLYW"
   },
   {
     "issuer_cik": "1812364",
@@ -1198,11 +1218,6 @@
     "issuer_cik": "1853145",
     "name": "EverCommerce Inc.",
     "ticker": "EVCM"
-  },
-  {
-    "issuer_cik": "1580560",
-    "name": "Flywire Corp",
-    "ticker": "FLYW"
   },
   {
     "issuer_cik": "840489",
@@ -1273,11 +1288,6 @@
     "issuer_cik": "1810019",
     "name": "Rackspace Technology, Inc.",
     "ticker": "RXT"
-  },
-  {
-    "issuer_cik": "1531152",
-    "name": "BJ's Wholesale Club Holdings, Inc.",
-    "ticker": "BJ"
   },
   {
     "issuer_cik": "1836833",
@@ -1410,6 +1420,11 @@
     "ticker": "SLNH"
   },
   {
+    "issuer_cik": "1005731",
+    "name": "IDT CORP",
+    "ticker": "IDT"
+  },
+  {
     "issuer_cik": "1731388",
     "name": "EuroDry Ltd.",
     "ticker": "EDRY"
@@ -1420,14 +1435,14 @@
     "ticker": "ZIP"
   },
   {
-    "issuer_cik": "1005731",
-    "name": "IDT CORP",
-    "ticker": "IDT"
-  },
-  {
     "issuer_cik": "1969373",
     "name": "Vesta Real Estate Corporation, S.A.B. de C.V.",
     "ticker": "VTMX"
+  },
+  {
+    "issuer_cik": "1529192",
+    "name": "Vipshop Holdings Ltd",
+    "ticker": "VIPS"
   },
   {
     "issuer_cik": "1527753",
@@ -1508,6 +1523,11 @@
     "issuer_cik": "1524358",
     "name": "MARRIOTT VACATIONS WORLDWIDE Corp",
     "ticker": "VAC"
+  },
+  {
+    "issuer_cik": "723125",
+    "name": "MICRON TECHNOLOGY INC",
+    "ticker": "MU"
   },
   {
     "issuer_cik": "17843",
@@ -1613,11 +1633,6 @@
     "issuer_cik": "1042046",
     "name": "AMERICAN FINANCIAL GROUP INC",
     "ticker": "AFG"
-  },
-  {
-    "issuer_cik": "1441816",
-    "name": "MongoDB, Inc.",
-    "ticker": "MDB"
   },
   {
     "issuer_cik": "1464521",
@@ -1785,6 +1800,11 @@
     "ticker": "IBTA"
   },
   {
+    "issuer_cik": "872589",
+    "name": "REGENERON PHARMACEUTICALS, INC.",
+    "ticker": "REGN"
+  },
+  {
     "issuer_cik": "1083301",
     "name": "TERAWULF INC.",
     "ticker": "WULF"
@@ -1873,11 +1893,6 @@
     "issuer_cik": "909832",
     "name": "COSTCO WHOLESALE CORP /NEW",
     "ticker": "COST"
-  },
-  {
-    "issuer_cik": "1430725",
-    "name": "Global Ship Lease, Inc.",
-    "ticker": "GSL"
   },
   {
     "issuer_cik": "1832332",
@@ -2003,6 +2018,11 @@
     "issuer_cik": "1672619",
     "name": "Enliven Therapeutics, Inc.",
     "ticker": "ELVN"
+  },
+  {
+    "issuer_cik": "1674416",
+    "name": "CRISPR Therapeutics AG",
+    "ticker": "CRSP"
   },
   {
     "issuer_cik": "78749",
@@ -2145,14 +2165,14 @@
     "ticker": "CYPH"
   },
   {
-    "issuer_cik": "1623526",
-    "name": "Stoke Therapeutics, Inc.",
-    "ticker": "STOK"
-  },
-  {
     "issuer_cik": "1549595",
     "name": "Nurix Therapeutics, Inc.",
     "ticker": "NRIX"
+  },
+  {
+    "issuer_cik": "1623526",
+    "name": "Stoke Therapeutics, Inc.",
+    "ticker": "STOK"
   },
   {
     "issuer_cik": "916540",

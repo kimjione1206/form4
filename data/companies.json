@@ -1194,6 +1194,11 @@
     "sic_description": "Services-Prepackaged Software",
     "summary": "보험사용 소프트웨어 회사"
   },
+  "1529192": {
+    "name": "Vipshop Holdings Ltd",
+    "sic_description": "Retail-Catalog & Mail-Order Houses",
+    "summary": null
+  },
   "1529628": {
     "name": "Smart Sand, Inc.",
     "sic_description": "Mining & Quarrying of  Nonmetallic Minerals (No Fuels)",
@@ -1833,6 +1838,11 @@
     "name": "Hinge Health, Inc.",
     "sic_description": "Services-Computer Processing & Data Preparation",
     "summary": "디지털 근골격계 치료 서비스 회사"
+  },
+  "1674416": {
+    "name": "CRISPR Therapeutics AG",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
   },
   "1674632": {
     "name": "Beta Bionics, Inc.",
@@ -2809,6 +2819,11 @@
     "sic_description": "Services-Medical Laboratories",
     "summary": "정밀의학 분자 검사를 하는 회사"
   },
+  "2019804": {
+    "name": "Terrestrial Energy Inc. /DE/",
+    "sic_description": "Fabricated Plate Work (Boiler Shops)",
+    "summary": null
+  },
   "2020932": {
     "name": "AgomAb Therapeutics NV",
     "sic_description": "Biological Products, (No Diagnostic Substances)",
@@ -3213,6 +3228,11 @@
     "name": "CARDINAL HEALTH INC",
     "sic_description": "Wholesale-Drugs, Proprietaries & Druggists' Sundries",
     "summary": "의약품을 유통하는 회사"
+  },
+  "723125": {
+    "name": "MICRON TECHNOLOGY INC",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
   },
   "723188": {
     "name": "COMMUNITY FINANCIAL SYSTEM, INC.",

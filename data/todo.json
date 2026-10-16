@@ -21,44 +21,57 @@
       "sic_description": ""
     },
     {
-      "cik": "2011641",
-      "name": "Ferguson Enterprises Inc. /DE/",
-      "sic_description": "Wholesale-Hardware & Plumbing & Heating Equipment & Supplies"
+      "cik": "2019804",
+      "name": "Terrestrial Energy Inc. /DE/",
+      "sic_description": "Fabricated Plate Work (Boiler Shops)"
     },
     {
-      "cik": "909832",
-      "name": "COSTCO WHOLESALE CORP /NEW",
-      "sic_description": "Retail-Variety Stores"
+      "cik": "1529192",
+      "name": "Vipshop Holdings Ltd",
+      "sic_description": "Retail-Catalog & Mail-Order Houses"
     },
     {
-      "cik": "1549595",
-      "name": "Nurix Therapeutics, Inc.",
-      "sic_description": "Pharmaceutical Preparations"
+      "cik": "723125",
+      "name": "MICRON TECHNOLOGY INC",
+      "sic_description": "Semiconductors & Related Devices"
+    },
+    {
+      "cik": "1674416",
+      "name": "CRISPR Therapeutics AG",
+      "sic_description": "Biological Products, (No Diagnostic Substances)"
     }
   ],
-  "industries": [
-    "Wholesale-Hardware & Plumbing & Heating Equipment & Supplies"
-  ],
+  "industries": [],
   "names": [
     {
-      "n": "ASE Technology Holding Co., Ltd.",
-      "t": "ASX"
+      "n": "Frazier Life Sciences Acquisition Corp. II",
+      "t": "FLSC"
     },
     {
-      "n": "MiNK Therapeutics, Inc.",
-      "t": "INKT"
+      "n": "Applied Digital Corp.",
+      "t": "APLD"
     },
     {
-      "n": "KKR Income Opportunities Fund",
-      "t": "KIO"
+      "n": "KOHLS Corp",
+      "t": "KSS"
     },
     {
-      "n": "CODEXIS, INC.",
-      "t": "CDXS"
+      "n": "NeoVolta Inc.",
+      "t": "NEOV"
+    },
+    {
+      "n": "MDB Capital Holdings, LLC",
+      "t": "MDBH"
+    },
+    {
+      "n": "Valens Semiconductor Ltd.",
+      "t": "VLN"
     }
   ],
   "titles": [
-    "Chief Administration Officer",
-    "Senior VP - Waterworks"
+    "Chief Legal & Corp Affairs Off",
+    "Co-Chief Scientific Officer",
+    "Founder",
+    "Pres. of Finance & Operations"
   ]
 }

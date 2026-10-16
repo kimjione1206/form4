@@ -285,6 +285,11 @@
     "ticker": "CTSO"
   },
   {
+    "issuer_cik": "2019804",
+    "name": "Terrestrial Energy Inc. /DE/",
+    "ticker": "IMSR"
+  },
+  {
     "issuer_cik": "1928446",
     "name": "Granite Ridge Resources, Inc.",
     "ticker": "GRNT"
