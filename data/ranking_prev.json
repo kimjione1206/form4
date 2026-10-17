@@ -40,11 +40,6 @@
     "ticker": "GME"
   },
   {
-    "issuer_cik": "2035989",
-    "name": "Amrize Ltd",
-    "ticker": "AMRZ"
-  },
-  {
     "issuer_cik": "1502292",
     "name": "Presurance Holdings, Inc.",
     "ticker": "PRHI"
@@ -63,6 +58,11 @@
     "issuer_cik": "1844971",
     "name": "Vulcan Infrastructure & Power Inc.",
     "ticker": "GREE"
+  },
+  {
+    "issuer_cik": "2035989",
+    "name": "Amrize Ltd",
+    "ticker": "AMRZ"
   },
   {
     "issuer_cik": "2001557",
@@ -85,19 +85,9 @@
     "ticker": "BWFG"
   },
   {
-    "issuer_cik": "849145",
-    "name": "Heritage Global Inc.",
-    "ticker": "HGBL"
-  },
-  {
     "issuer_cik": "40417",
     "name": "GENERAL AMERICAN INVESTORS CO INC",
     "ticker": "GAM"
-  },
-  {
-    "issuer_cik": "2058758",
-    "name": "Avidia Bancorp, Inc.",
-    "ticker": "AVBC"
   },
   {
     "issuer_cik": "715446",
@@ -125,24 +115,24 @@
     "ticker": "EML"
   },
   {
-    "issuer_cik": "1660334",
-    "name": "Verrica Pharmaceuticals Inc.",
-    "ticker": "VRCA"
-  },
-  {
     "issuer_cik": "838875",
     "name": "WILLAMETTE VALLEY VINEYARDS INC",
     "ticker": "WVVI"
   },
   {
-    "issuer_cik": "1551047",
-    "name": "Bluerock Private Real Estate Fund",
-    "ticker": "BPRE"
-  },
-  {
     "issuer_cik": "1469395",
     "name": "Pampa Energy Inc.",
     "ticker": "PAM"
+  },
+  {
+    "issuer_cik": "1715497",
+    "name": "Borr Drilling Ltd",
+    "ticker": "BORR"
+  },
+  {
+    "issuer_cik": "1551047",
+    "name": "Bluerock Private Real Estate Fund",
+    "ticker": "BPRE"
   },
   {
     "issuer_cik": "1704715",
@@ -180,11 +170,6 @@
     "ticker": "CELH"
   },
   {
-    "issuer_cik": "1867949",
-    "name": "Chicago Atlantic Real Estate Finance, Inc.",
-    "ticker": "REFI"
-  },
-  {
     "issuer_cik": "1408534",
     "name": "First Guaranty Bancshares, Inc.",
     "ticker": "FGBI"
@@ -205,16 +190,6 @@
     "ticker": "XBP"
   },
   {
-    "issuer_cik": "1843162",
-    "name": "Chicago Atlantic BDC, Inc.",
-    "ticker": "LIEN"
-  },
-  {
-    "issuer_cik": "318833",
-    "name": "TEAM INC",
-    "ticker": "TISI"
-  },
-  {
     "issuer_cik": "67215",
     "name": "DYCOM INDUSTRIES INC",
     "ticker": "DY"
@@ -233,6 +208,11 @@
     "issuer_cik": "1158172",
     "name": "COMSCORE, INC.",
     "ticker": "SCOR"
+  },
+  {
+    "issuer_cik": "2058758",
+    "name": "Avidia Bancorp, Inc.",
+    "ticker": "AVBC"
   },
   {
     "issuer_cik": "2020932",

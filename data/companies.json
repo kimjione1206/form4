@@ -1279,6 +1279,11 @@
     "sic_description": "",
     "summary": null
   },
+  "1551306": {
+    "name": "Progyny, Inc.",
+    "sic_description": "Services-Misc Health & Allied Services, NEC",
+    "summary": null
+  },
   "1552033": {
     "name": "TransUnion",
     "sic_description": "Services-Consumer Credit Reporting, Collection Agencies",
@@ -1538,6 +1543,11 @@
     "name": "Omada Health, Inc.",
     "sic_description": "Services-Health Services",
     "summary": "디지털 건강관리 서비스 회사"
+  },
+  "1613103": {
+    "name": "Medtronic plc",
+    "sic_description": "Electromedical & Electrotherapeutic Apparatus",
+    "summary": null
   },
   "1616707": {
     "name": "Wayfair Inc.",
@@ -2098,6 +2108,11 @@
     "name": "CoreWeave, Inc.",
     "sic_description": "Services-Prepackaged Software",
     "summary": "AI용 클라우드 컴퓨팅 서비스 회사"
+  },
+  "1770069": {
+    "name": "MapLight Therapeutics, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
   },
   "1770787": {
     "name": "10x Genomics, Inc.",

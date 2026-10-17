@@ -21,57 +21,79 @@
       "sic_description": ""
     },
     {
-      "cik": "2019804",
-      "name": "Terrestrial Energy Inc. /DE/",
-      "sic_description": "Fabricated Plate Work (Boiler Shops)"
+      "cik": "1770069",
+      "name": "MapLight Therapeutics, Inc.",
+      "sic_description": "Pharmaceutical Preparations"
     },
     {
-      "cik": "1529192",
-      "name": "Vipshop Holdings Ltd",
-      "sic_description": "Retail-Catalog & Mail-Order Houses"
+      "cik": "1613103",
+      "name": "Medtronic plc",
+      "sic_description": "Electromedical & Electrotherapeutic Apparatus"
     },
     {
-      "cik": "723125",
-      "name": "MICRON TECHNOLOGY INC",
-      "sic_description": "Semiconductors & Related Devices"
-    },
-    {
-      "cik": "1674416",
-      "name": "CRISPR Therapeutics AG",
-      "sic_description": "Biological Products, (No Diagnostic Substances)"
+      "cik": "1551306",
+      "name": "Progyny, Inc.",
+      "sic_description": "Services-Misc Health & Allied Services, NEC"
     }
   ],
-  "industries": [],
+  "industries": [
+    "Services-Misc Health & Allied Services, NEC"
+  ],
   "names": [
     {
-      "n": "Frazier Life Sciences Acquisition Corp. II",
-      "t": "FLSC"
+      "n": "PEPSICO INC",
+      "t": "PEP"
     },
     {
-      "n": "Applied Digital Corp.",
-      "t": "APLD"
+      "n": "PAYCHEX INC",
+      "t": "PAYX"
     },
     {
-      "n": "KOHLS Corp",
-      "t": "KSS"
+      "n": "Oil-Dri Corp of America",
+      "t": "ODC"
     },
     {
-      "n": "NeoVolta Inc.",
-      "t": "NEOV"
+      "n": "Chewy, Inc.",
+      "t": "CHWY"
     },
     {
-      "n": "MDB Capital Holdings, LLC",
-      "t": "MDBH"
+      "n": "SIGNET JEWELERS LTD",
+      "t": "SIG"
     },
     {
-      "n": "Valens Semiconductor Ltd.",
-      "t": "VLN"
+      "n": "PPL Corp",
+      "t": "PPL"
+    },
+    {
+      "n": "AirJoule Technologies Corp.",
+      "t": "AIRJ"
+    },
+    {
+      "n": "Byrna Technologies Inc.",
+      "t": "BYRN"
+    },
+    {
+      "n": "Fidelity National Information Services, Inc.",
+      "t": "FIS"
+    },
+    {
+      "n": "Sportradar Group AG",
+      "t": "SRAD"
+    },
+    {
+      "n": "GrabAGun Digital Holdings Inc.",
+      "t": "PEW"
     }
   ],
   "titles": [
-    "Chief Legal & Corp Affairs Off",
-    "Co-Chief Scientific Officer",
-    "Founder",
-    "Pres. of Finance & Operations"
+    "* See Remarks",
+    "CAO and Interim CFO",
+    "Chief Discovery Officer",
+    "Chief Recurring Officer",
+    "EVP, GenCounsel&CorpSecretary",
+    "EVP, Pres MedSurg and Americas",
+    "Group Vice President",
+    "President, Data Center Group",
+    "SVP, Gen. Counsel, Secretary"
   ]
 }
