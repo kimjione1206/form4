@@ -1197,7 +1197,7 @@
   "1529192": {
     "name": "Vipshop Holdings Ltd",
     "sic_description": "Retail-Catalog & Mail-Order Houses",
-    "summary": null
+    "summary": "온라인 소매 회사"
   },
   "1529628": {
     "name": "Smart Sand, Inc.",
@@ -1842,7 +1842,7 @@
   "1674416": {
     "name": "CRISPR Therapeutics AG",
     "sic_description": "Biological Products, (No Diagnostic Substances)",
-    "summary": null
+    "summary": "유전자 편집 기반 의약품을 개발하는 회사"
   },
   "1674632": {
     "name": "Beta Bionics, Inc.",
@@ -2822,7 +2822,7 @@
   "2019804": {
     "name": "Terrestrial Energy Inc. /DE/",
     "sic_description": "Fabricated Plate Work (Boiler Shops)",
-    "summary": null
+    "summary": "용융염 원자로를 개발하는 회사"
   },
   "2020932": {
     "name": "AgomAb Therapeutics NV",
@@ -3232,7 +3232,7 @@
   "723125": {
     "name": "MICRON TECHNOLOGY INC",
     "sic_description": "Semiconductors & Related Devices",
-    "summary": null
+    "summary": "메모리 반도체를 만드는 회사"
   },
   "723188": {
     "name": "COMMUNITY FINANCIAL SYSTEM, INC.",
