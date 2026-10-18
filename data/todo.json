@@ -19,81 +19,9 @@
       "cik": "1510599",
       "name": "PIMCO Dynamic Income Fund",
       "sic_description": ""
-    },
-    {
-      "cik": "1770069",
-      "name": "MapLight Therapeutics, Inc.",
-      "sic_description": "Pharmaceutical Preparations"
-    },
-    {
-      "cik": "1613103",
-      "name": "Medtronic plc",
-      "sic_description": "Electromedical & Electrotherapeutic Apparatus"
-    },
-    {
-      "cik": "1551306",
-      "name": "Progyny, Inc.",
-      "sic_description": "Services-Misc Health & Allied Services, NEC"
     }
   ],
-  "industries": [
-    "Services-Misc Health & Allied Services, NEC"
-  ],
-  "names": [
-    {
-      "n": "PEPSICO INC",
-      "t": "PEP"
-    },
-    {
-      "n": "PAYCHEX INC",
-      "t": "PAYX"
-    },
-    {
-      "n": "Oil-Dri Corp of America",
-      "t": "ODC"
-    },
-    {
-      "n": "Chewy, Inc.",
-      "t": "CHWY"
-    },
-    {
-      "n": "SIGNET JEWELERS LTD",
-      "t": "SIG"
-    },
-    {
-      "n": "PPL Corp",
-      "t": "PPL"
-    },
-    {
-      "n": "AirJoule Technologies Corp.",
-      "t": "AIRJ"
-    },
-    {
-      "n": "Byrna Technologies Inc.",
-      "t": "BYRN"
-    },
-    {
-      "n": "Fidelity National Information Services, Inc.",
-      "t": "FIS"
-    },
-    {
-      "n": "Sportradar Group AG",
-      "t": "SRAD"
-    },
-    {
-      "n": "GrabAGun Digital Holdings Inc.",
-      "t": "PEW"
-    }
-  ],
-  "titles": [
-    "* See Remarks",
-    "CAO and Interim CFO",
-    "Chief Discovery Officer",
-    "Chief Recurring Officer",
-    "EVP, GenCounsel&CorpSecretary",
-    "EVP, Pres MedSurg and Americas",
-    "Group Vice President",
-    "President, Data Center Group",
-    "SVP, Gen. Counsel, Secretary"
-  ]
+  "industries": [],
+  "names": [],
+  "titles": []
 }

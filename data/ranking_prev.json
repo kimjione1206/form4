@@ -95,11 +95,6 @@
     "ticker": "ANIX"
   },
   {
-    "issuer_cik": "1046179",
-    "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
-    "ticker": "TSM"
-  },
-  {
     "issuer_cik": "813623",
     "name": "Total Return Securities Fund",
     "ticker": "SWZ"
@@ -108,6 +103,11 @@
     "issuer_cik": "1963088",
     "name": "AtlasClear Holdings, Inc.",
     "ticker": "ATCH"
+  },
+  {
+    "issuer_cik": "1046179",
+    "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
+    "ticker": "TSM"
   },
   {
     "issuer_cik": "31107",
@@ -120,14 +120,14 @@
     "ticker": "WVVI"
   },
   {
-    "issuer_cik": "1469395",
-    "name": "Pampa Energy Inc.",
-    "ticker": "PAM"
-  },
-  {
     "issuer_cik": "1715497",
     "name": "Borr Drilling Ltd",
     "ticker": "BORR"
+  },
+  {
+    "issuer_cik": "1469395",
+    "name": "Pampa Energy Inc.",
+    "ticker": "PAM"
   },
   {
     "issuer_cik": "1551047",
@@ -275,11 +275,6 @@
     "ticker": "GRNT"
   },
   {
-    "issuer_cik": "1547546",
-    "name": "Lument Finance Trust, Inc.",
-    "ticker": "LFT"
-  },
-  {
     "issuer_cik": "88000",
     "name": "Horizon Kinetics Holding Corp",
     "ticker": "HKHC"
@@ -290,9 +285,9 @@
     "ticker": "CBU"
   },
   {
-    "issuer_cik": "1533040",
-    "name": "Phio Pharmaceuticals Corp.",
-    "ticker": "PHIO"
+    "issuer_cik": "1547546",
+    "name": "Lument Finance Trust, Inc.",
+    "ticker": "LFT"
   },
   {
     "issuer_cik": "1041368",
