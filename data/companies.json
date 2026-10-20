@@ -2509,6 +2509,11 @@
     "sic_description": "Services-Health Services",
     "summary": "정신건강 진료 서비스 회사"
   },
+  "1846069": {
+    "name": "Nextdoor Holdings, Inc.",
+    "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+    "summary": null
+  },
   "1847590": {
     "name": "Bowman Consulting Group Ltd.",
     "sic_description": "Services-Management Consulting Services",
@@ -2908,6 +2913,11 @@
     "name": "ACME UNITED CORP",
     "sic_description": "Cutlery, Handtools & General Hardware",
     "summary": "가위·공구를 만드는 회사"
+  },
+  "2099039": {
+    "name": "Wise Group plc",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
   },
   "2123955": {
     "name": "Pinnacle Acquisition Corp",

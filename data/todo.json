@@ -19,9 +19,82 @@
       "cik": "1510599",
       "name": "PIMCO Dynamic Income Fund",
       "sic_description": ""
+    },
+    {
+      "cik": "2099039",
+      "name": "Wise Group plc",
+      "sic_description": "Services-Business Services, NEC"
+    },
+    {
+      "cik": "1846069",
+      "name": "Nextdoor Holdings, Inc.",
+      "sic_description": "Services-Computer Programming, Data Processing, Etc."
     }
   ],
   "industries": [],
-  "names": [],
-  "titles": []
+  "names": [
+    {
+      "n": "Iambic Therapeutics, Inc.",
+      "t": "IAM"
+    },
+    {
+      "n": "LINDBLAD EXPEDITIONS HOLDINGS, INC.",
+      "t": "LIND"
+    },
+    {
+      "n": "CITY THERAPEUTICS, INC.",
+      "t": "CTY"
+    },
+    {
+      "n": "Wise Group plc",
+      "t": "WSE"
+    },
+    {
+      "n": "COPART INC",
+      "t": "CPRT"
+    },
+    {
+      "n": "Conexeu Sciences Inc.",
+      "t": "CNXU"
+    },
+    {
+      "n": "BUCKLE INC",
+      "t": "BKE"
+    },
+    {
+      "n": "IONIS PHARMACEUTICALS INC",
+      "t": "IONS"
+    },
+    {
+      "n": "ENSIGN GROUP, INC",
+      "t": "ENSG"
+    },
+    {
+      "n": "FingerMotion, Inc.",
+      "t": "FNGR"
+    },
+    {
+      "n": "GRANDSTAND Ltd",
+      "t": "GRSD"
+    },
+    {
+      "n": "PETROBRAS - PETROLEO BRASILEIRO SA",
+      "t": "PBR"
+    },
+    {
+      "n": "EMCOR Group, Inc.",
+      "t": "EME"
+    }
+  ],
+  "titles": [
+    "CEO; Chairman",
+    "EVP & Chief Product & Tech",
+    "EVP Chief Prod & Strat Officer",
+    "EVP Research",
+    "EVP of Strategic&Legal Affairs",
+    "EVP, CIO and CTO",
+    "EVP, Chief Human Resources Ofc",
+    "Senior VP, BAS",
+    "Senior Vice President,  CFO"
+  ]
 }

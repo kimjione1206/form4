@@ -5,14 +5,14 @@
     "ticker": "BBD"
   },
   {
-    "issuer_cik": "46619",
-    "name": "HEICO CORP",
-    "ticker": "HEI, HEI.A"
-  },
-  {
     "issuer_cik": "39368",
     "name": "FULLER H B CO",
     "ticker": "FUL"
+  },
+  {
+    "issuer_cik": "46619",
+    "name": "HEICO CORP",
+    "ticker": "HEI, HEI.A"
   },
   {
     "issuer_cik": "1089063",
@@ -63,11 +63,6 @@
     "issuer_cik": "2035989",
     "name": "Amrize Ltd",
     "ticker": "AMRZ"
-  },
-  {
-    "issuer_cik": "2001557",
-    "name": "Innventure, Inc.",
-    "ticker": "INV"
   },
   {
     "issuer_cik": "1488139",
@@ -200,11 +195,6 @@
     "ticker": "PDI"
   },
   {
-    "issuer_cik": "1158172",
-    "name": "COMSCORE, INC.",
-    "ticker": "SCOR"
-  },
-  {
     "issuer_cik": "2058758",
     "name": "Avidia Bancorp, Inc.",
     "ticker": "AVBC"
@@ -278,11 +268,6 @@
     "issuer_cik": "723188",
     "name": "COMMUNITY FINANCIAL SYSTEM, INC.",
     "ticker": "CBU"
-  },
-  {
-    "issuer_cik": "1547546",
-    "name": "Lument Finance Trust, Inc.",
-    "ticker": "LFT"
   },
   {
     "issuer_cik": "1046179",
