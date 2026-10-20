@@ -105,11 +105,6 @@
     "ticker": "ATCH"
   },
   {
-    "issuer_cik": "1046179",
-    "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
-    "ticker": "TSM"
-  },
-  {
     "issuer_cik": "31107",
     "name": "EASTERN CO",
     "ticker": "EML"
@@ -170,14 +165,14 @@
     "ticker": "CELH"
   },
   {
-    "issuer_cik": "1408534",
-    "name": "First Guaranty Bancshares, Inc.",
-    "ticker": "FGBI"
-  },
-  {
     "issuer_cik": "2040127",
     "name": "Karman Holdings Inc.",
     "ticker": "KRMN"
+  },
+  {
+    "issuer_cik": "1408534",
+    "name": "First Guaranty Bancshares, Inc.",
+    "ticker": "FGBI"
   },
   {
     "issuer_cik": "1840572",
@@ -288,6 +283,11 @@
     "issuer_cik": "1547546",
     "name": "Lument Finance Trust, Inc.",
     "ticker": "LFT"
+  },
+  {
+    "issuer_cik": "1046179",
+    "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
+    "ticker": "TSM"
   },
   {
     "issuer_cik": "1041368",
