@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<!-- SEC 0001769628-26-000441 (CoreWeave) 축소본: 주소·서명·이름 제거, 판별에 쓰는 각주만 남김 -->
+<ownershipDocument>
+  <schemaVersion>X0609</schemaVersion>
+  <documentType>4</documentType>
+  <issuer>
+    <issuerCik>0001769628</issuerCik>
+    <issuerName>CoreWeave, Inc.</issuerName>
+    <issuerTradingSymbol>CRWV</issuerTradingSymbol>
+  </issuer>
+  <reportingOwner>
+    <reportingOwnerId>
+      <rptOwnerCik>0002058037</rptOwnerCik>
+      <rptOwnerName>REPORTING PERSON</rptOwnerName>
+    </reportingOwnerId>
+    <reportingOwnerRelationship>
+      <isDirector>1</isDirector>
+      <isOfficer>1</isOfficer>
+      <isTenPercentOwner>1</isTenPercentOwner>
+      <officerTitle>CEO and President</officerTitle>
+    </reportingOwnerRelationship>
+  </reportingOwner>
+  <aff10b5One>0</aff10b5One>
+  <nonDerivativeTable>
+    <nonDerivativeTransaction>
+      <securityTitle>
+        <value>Class A Common Stock</value>
+      </securityTitle>
+      <transactionDate>
+        <value>2026-09-30</value>
+      </transactionDate>
+      <transactionCoding>
+        <transactionFormType>4</transactionFormType>
+        <transactionCode>M</transactionCode>
+      </transactionCoding>
+      <transactionAmounts>
+        <transactionShares>
+          <value>109380</value>
+        </transactionShares>
+        <transactionPricePerShare>
+          <footnoteId id="F1" />
+        </transactionPricePerShare>
+        <transactionAcquiredDisposedCode>
+          <value>A</value>
+        </transactionAcquiredDisposedCode>
+      </transactionAmounts>
+      <postTransactionAmounts>
+        <sharesOwnedFollowingTransaction>
+          <value>596509</value>
+        </sharesOwnedFollowingTransaction>
+      </postTransactionAmounts>
+      <ownershipNature>
+        <directOrIndirectOwnership>
+          <value>D</value>
+        </directOrIndirectOwnership>
+      </ownershipNature>
+    </nonDerivativeTransaction>
+    <nonDerivativeTransaction>
+      <securityTitle>
+        <value>Class A Common Stock</value>
+      </securityTitle>
+      <transactionDate>
+        <value>2026-09-30</value>
+      </transactionDate>
+      <transactionCoding>
+        <transactionFormType>4</transactionFormType>
+        <transactionCode>M</transactionCode>
+      </transactionCoding>
+      <transactionAmounts>
+        <transactionShares>
+          <value>30978</value>
+        </transactionShares>
+        <transactionPricePerShare>
+          <footnoteId id="F1" />
+        </transactionPricePerShare>
+        <transactionAcquiredDisposedCode>
+          <value>A</value>
+        </transactionAcquiredDisposedCode>
+      </transactionAmounts>
+      <postTransactionAmounts>
+        <sharesOwnedFollowingTransaction>
+          <value>627487</value>
+        </sharesOwnedFollowingTransaction>
+      </postTransactionAmounts>
+      <ownershipNature>
+        <directOrIndirectOwnership>
+          <value>D</value>
+        </directOrIndirectOwnership>
+      </ownershipNature>
+    </nonDerivativeTransaction>
+    <nonDerivativeTransaction>
+      <securityTitle>
+        <value>Class A Common Stock</value>
+      </securityTitle>
+      <transactionDate>
+        <value>2026-09-30</value>
+      </transactionDate>
+      <transactionCoding>
+        <transactionFormType>4</transactionFormType>
+        <transactionCode>S</transactionCode>
+        <footnoteId id="F2" />
+      </transactionCoding>
+      <transactionAmounts>
+        <transactionShares>
+          <value>78552</value>
+        </transactionShares>
+        <transactionPricePerShare>
+          <value>87.69</value>
+        </transactionPricePerShare>
+        <transactionAcquiredDisposedCode>
+          <value>D</value>
+        </transactionAcquiredDisposedCode>
+      </transactionAmounts>
+      <postTransactionAmounts>
+        <sharesOwnedFollowingTransaction>
+          <value>548935</value>
+        </sharesOwnedFollowingTransaction>
+      </postTransactionAmounts>
+      <ownershipNature>
+        <directOrIndirectOwnership>
+          <value>D</value>
+        </directOrIndirectOwnership>
+      </ownershipNature>
+    </nonDerivativeTransaction>
+  </nonDerivativeTable>
+  <derivativeTable>
+    <derivativeTransaction>
+      <securityTitle>
+        <value>Restricted Stock Units</value>
+      </securityTitle>
+      <transactionDate>
+        <value>2026-09-30</value>
+      </transactionDate>
+      <transactionCoding>
+        <transactionFormType>4</transactionFormType>
+        <transactionCode>M</transactionCode>
+      </transactionCoding>
+      <transactionAmounts>
+        <transactionShares>
+          <value>109380</value>
+        </transactionShares>
+        <transactionPricePerShare>
+          <footnoteId id="F1" />
+        </transactionPricePerShare>
+        <transactionAcquiredDisposedCode>
+          <value>D</value>
+        </transactionAcquiredDisposedCode>
+      </transactionAmounts>
+    </derivativeTransaction>
+    <derivativeTransaction>
+      <securityTitle>
+        <value>Restricted Stock Units</value>
+      </securityTitle>
+      <transactionDate>
+        <value>2026-09-30</value>
+      </transactionDate>
+      <transactionCoding>
+        <transactionFormType>4</transactionFormType>
+        <transactionCode>M</transactionCode>
+      </transactionCoding>
+      <transactionAmounts>
+        <transactionShares>
+          <value>30978</value>
+        </transactionShares>
+        <transactionPricePerShare>
+          <footnoteId id="F1" />
+        </transactionPricePerShare>
+        <transactionAcquiredDisposedCode>
+          <value>D</value>
+        </transactionAcquiredDisposedCode>
+      </transactionAmounts>
+    </derivativeTransaction>
+  </derivativeTable>
+  <footnotes>
+    <footnote id="F1">Each restricted stock unit represents a contingent right to receive one share of the Issuer's Class A Common Stock upon settlement.</footnote>
+    <footnote id="F2">The reported transaction represents shares of Class A Common Stock of the Issuer sold to satisfy the reporting person's tax withholding obligations, which were incurred in connection with the vesting and settlement of restricted stock units.</footnote>
+  </footnotes>
+</ownershipDocument>

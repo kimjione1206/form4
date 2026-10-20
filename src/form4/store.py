@@ -25,13 +25,14 @@ def bad_price(r: dict) -> bool:
 
 
 def _collapse_sales(records: list[dict]) -> list[dict]:
-    """매도(S)는 신고서당 한 줄로 줄이고(수량·금액은 합계), 임원·이사가 낀 것만 남긴다."""
+    """매도(S)는 신고서당 한 줄로 줄이고(수량·금액은 합계), 임원·이사가 낀 것만 남긴다.
+    한 신고서에 계획 매도·세금 납부용 매도가 섞이면 그 이유별로 한 줄씩 남긴다."""
     out, sales = [], defaultdict(list)
     for r in records:
         if r["code"] != "S":
             out.append(r)
         elif has_insider(r):
-            sales[r["accession"]].append(r)
+            sales[(r["accession"], r["plan"], r.get("tax", False))].append(r)
     for lines in sales.values():
         last = max(enumerate(lines), key=lambda x: (x[1]["date"], x[0]))[1]  # 같은 날이면 뒤에 적힌 줄
         good = [r for r in lines if not bad_price(r)]
@@ -40,7 +41,7 @@ def _collapse_sales(records: list[dict]) -> list[dict]:
             "shares": sum(r["shares"] for r in good),
             "value": sum(r["shares"] * r["price"] for r in good),
             "after": last["after"], "direct": last["direct"],
-            "plan": any(r["plan"] for r in lines),
+            "plan": last["plan"], "tax": last.get("tax", False),
             "exercise": any(r["exercise"] for r in lines),
             **({"price_error": True} if len(good) < len(lines) else {}),
         })

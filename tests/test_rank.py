@@ -190,7 +190,7 @@ def test_sale_people_and_usd_count_only_insider_individuals():
 def test_sale_rows_decrease_tags_and_order():
     recs = buys(3) + (
         sold("a", [officer("8", "Chief Financial Officer"), director("2")], date="2026-09-20",
-             shares=200, price=10.0, after=800.0, plan=True, exercise=True, direct="I")
+             shares=200, price=10.0, after=800.0, plan=True, exercise=True, tax=True, direct="I")
         + sold("b", [director("0")], date="2026-09-25", shares=100, price=10.0, after=None)
         + sold("c", [director("1")], date="2026-09-25", shares=10, price=10.0, after=0.0)
     )
@@ -199,7 +199,7 @@ def test_sale_rows_decrease_tags_and_order():
     a = rows[2]
     assert a["who"] == "재무이사(CFO) 외 1명" and a["value"] == 2_000.0
     assert abs(a["decrease"] - 0.2) < 1e-9
-    assert a["tags"] == ["계획 매도", "옵션 행사 후 매도", "간접"]
+    assert a["tags"] == ["계획 매도", "옵션 행사 후 매도", "세금 납부용 매도", "간접"]
     assert (a["date"], a["filed"]) == ("2026-09-20", "2026-09-20")
     assert rows[0]["decrease"] is None and rows[0]["tags"] == []
     assert rows[1]["decrease"] == 1.0  # 전부 팜
@@ -438,11 +438,11 @@ def test_sell_dates_tags_and_top():
     recs = (sold("a", [officer("1", "Chief Executive Officer")], date="2026-09-10", shares=1_000, price=20.0,
                  plan=True)
             + sold("b", [director("2")], date="2026-09-20", shares=2_000, price=20.0, exercise=True)
-            + sold("c", [director("3")], date="2026-09-25", shares=1_500, price=20.0)
+            + sold("c", [director("3")], date="2026-09-25", shares=1_500, price=20.0, tax=True)
             + sold("d", [director("4")], date="2026-09-28", shares=10, price=20.0))  # 200달러 → 안 셈
     c = one(recs)
     assert (c["sell_first_date"], c["sell_last_date"]) == ("2026-09-10", "2026-09-25")
-    assert c["sell_tags"] == ["대표이사 포함", "계획 매도 포함", "옵션 행사 후 매도 포함"]
+    assert c["sell_tags"] == ["대표이사 포함", "계획 매도 포함", "옵션 행사 후 매도 포함", "세금 납부용 매도 포함"]
     assert c["sell_top"]["value"] == 40_000.0 and c["sell_top"]["url"].endswith("/b")
     # 기존 매도 칸(모든 매도)은 그대로
     assert c["sale_people"] == 4 and c["sale_usd"] == 90_200.0 and len(c["sale_rows"]) == 4

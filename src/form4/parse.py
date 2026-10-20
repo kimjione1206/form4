@@ -10,6 +10,10 @@ OFFERING_RE = re.compile(
 DRIP_RE = re.compile(
     r"reinvest\w*\s+(of\s+)?(the\s+)?dividends?|dividends?\s+reinvest\w*|\bDRIP\b|dividend equivalent", re.I
 )
+PLAN_RE = re.compile(r"10b5-1", re.I)
+# 주식 보상(RSU 등)을 받을 때 생긴 세금을 내려고 판 매도(sell-to-cover). 예: "sold to satisfy ... tax withholding obligations"
+TAX_RE = re.compile(r"tax(es)?\s+withholding|withholding\s+tax|sell[- ]to[- ]cover", re.I)
+RSU_RE = re.compile(r"restricted\s+stock\s+unit", re.I)
 # 신고자 이름에 이 단어가 있으면 사람이 아닌 법인(펀드·회사)으로 본다. 이름 자체는 저장하지 않는다.
 ENTITY_RE = re.compile(
     r"(?<![A-Z0-9])(?:LLC|L\.L\.C\.|LP|L\.P\.|FUNDS?|PARTNERS|PARTNERSHIP|TRUST|HOLDINGS|CAPITAL"
@@ -55,6 +59,12 @@ def _cik(text: str) -> str:
     return str(int(text)) if text.isdigit() else text
 
 
+def _tx_note_ids(tx) -> set[str]:
+    """이번 거래(증권 종류·날짜·코드·수량·가격)에 붙은 각주만 본다. 보유 수량 각주는 과거 취득분 설명이라 제외."""
+    return {f.get("id") for part in ("securityTitle", "transactionDate", "transactionCoding", "transactionAmounts")
+            for el in tx.findall(part) for f in el.iter("footnoteId")}
+
+
 def parse_form4(xml_text: str, accession: str, filed: date) -> list[dict]:
     root = ET.fromstring(xml_text)
     issuer = root.find("issuer")
@@ -79,22 +89,29 @@ def parse_form4(xml_text: str, accession: str, filed: date) -> list[dict]:
         "issuer_name": _t(issuer, "issuerName"),
         "ticker": _t(issuer, "issuerTradingSymbol").upper(),
         "owners": owners,
-        "plan": _b(root, "aff10b5One"),
         "url": filing_url(issuer_cik, accession),
     }
+    lines = root.findall("nonDerivativeTable/nonDerivativeTransaction")
+    deriv = root.findall("derivativeTable/derivativeTransaction")
+
+    def m_dates(txs):
+        return {_t(tx, "transactionDate/value")[:10] for tx in txs
+                if _t(tx, "transactionCoding/transactionCode") == "M"}
+
     # 같은 날 스톡옵션 행사(M)가 있으면 그날 판 것은 '옵션 행사 후 매도'로 본다.
-    exercise_dates = {_t(tx, "transactionDate/value")[:10]
-                      for tx in root.findall("nonDerivativeTable/nonDerivativeTransaction")
-                      + root.findall("derivativeTable/derivativeTransaction")
-                      if _t(tx, "transactionCoding/transactionCode") == "M"}
+    # 회사가 주는 주식 보상(RSU)이 지급되는 것도 코드 M이지만 옵션 행사가 아니므로 뺀다.
+    rsu = [tx for tx in deriv if RSU_RE.search(_t(tx, "securityTitle/value"))]
+    options = [tx for tx in deriv if tx not in rsu]
+    exercise_dates = m_dates(options) | (m_dates(lines) - m_dates(rsu))
+    # 계획(10b5-1) 각주를 줄마다 단 신고서면 줄별 각주로 판단하고, 그런 각주가 없을 때만 문서 표시를 쓴다.
+    doc_plan = _b(root, "aff10b5One")
+    plan_by_note = any(PLAN_RE.search(notes.get(i, "")) for tx in lines for i in _tx_note_ids(tx))
     records = []
-    for tx in root.findall("nonDerivativeTable/nonDerivativeTransaction"):
+    for tx in lines:
         code = _t(tx, "transactionCoding/transactionCode")
         if code not in ("P", "S"):
             continue
-        # 이번 거래(증권 종류·날짜·코드·수량·가격)에 붙은 각주만 본다. 보유 수량 각주는 과거 취득분 설명이라 제외.
-        ids = {f.get("id") for part in ("securityTitle", "transactionDate", "transactionCoding", "transactionAmounts")
-               for el in tx.findall(part) for f in el.iter("footnoteId")}
+        ids = _tx_note_ids(tx)
         records.append({
             **base,
             "code": code,
@@ -106,5 +123,7 @@ def parse_form4(xml_text: str, accession: str, filed: date) -> list[dict]:
             "offering": any(OFFERING_RE.search(notes.get(i, "")) for i in ids),
             "drip": any(DRIP_RE.search(notes.get(i, "")) for i in ids),
             "exercise": _t(tx, "transactionDate/value")[:10] in exercise_dates,
+            "plan": any(PLAN_RE.search(notes.get(i, "")) for i in ids) if plan_by_note else doc_plan,
+            "tax": any(TAX_RE.search(notes.get(i, "")) for i in ids),
         })
     return records

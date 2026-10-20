@@ -128,6 +128,8 @@ def _sale_rows(sells: list[dict], titles: dict[str, str]) -> list[dict]:
             tags.append("계획 매도")
         if r.get("exercise"):
             tags.append("옵션 행사 후 매도")
+        if r.get("tax"):
+            tags.append("세금 납부용 매도")
         if r.get("direct") == "I":
             tags.append("간접")
         insiders = [o for o in r["owners"] if _is_insider(o)]
@@ -204,6 +206,8 @@ def _sell(sells: list[dict], titles: dict[str, str]) -> dict:
         tags.append("계획 매도 포함")
     if any(r.get("exercise") for r in counted):
         tags.append("옵션 행사 후 매도 포함")
+    if any(r.get("tax") for r in counted):
+        tags.append("세금 납부용 매도 포함")
     by_date = defaultdict(set)
     for r in counted:
         by_date[r["date"]] |= {o["cik"] for o in r["owners"] if o["cik"] in sellers}

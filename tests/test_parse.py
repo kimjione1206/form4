@@ -1,4 +1,5 @@
 from datetime import date
+from pathlib import Path
 
 import pytest
 
@@ -151,3 +152,41 @@ def test_exercise_marks_lines_with_option_exercise_same_day():
     assert parse_form4(no_m, "a", FILED)[0]["exercise"] is False
     buy = form4_xml()
     assert parse_form4(buy, "a", FILED)[0]["exercise"] is False
+
+
+FIXTURES = Path(__file__).parent / "fixtures"
+
+
+def test_rsu_vesting_tax_sale_is_not_option_exercise():
+    # CRWV 2026-09-30 대표이사 신고(0001769628-26-000441 축소본): RSU 지급(M) + 세금 납부용 매도(F2)
+    xml = (FIXTURES / "crwv_rsu_tax_sale.xml").read_text()
+    [r] = parse_form4(xml, "0001769628-26-000441", FILED)
+    assert r["code"] == "S" and r["shares"] == 78552.0
+    assert (r["exercise"], r["tax"], r["plan"]) == (False, True, False)
+
+
+def test_plan_and_tax_judged_per_line_footnote():
+    # CRWV 매출 책임자(0001769628-26-000448 축소본): 10/12 세금 납부(F2), 10/13 세 줄은 10b5-1(F4). 문서 표시는 1.
+    xml = (FIXTURES / "crwv_mixed_tax_and_plan.xml").read_text()
+    recs = parse_form4(xml, "0001769628-26-000448", FILED)
+    assert [(r["date"], r["plan"], r["tax"], r["exercise"]) for r in recs] == [
+        ("2026-10-12", False, True, False),
+        ("2026-10-13", True, False, False), ("2026-10-13", True, False, False), ("2026-10-13", True, False, False)]
+
+
+def test_plan_falls_back_to_document_flag_without_plan_footnotes():
+    sale = {"code": "S", "date": "2026-09-30", "shares": 10, "price": 5, "after": 90, "footnotes": ["F1"]}
+    notes = {"F1": "The price reported is a weighted average price."}
+    assert parse_form4(form4_xml(txs=[sale], footnotes=notes, plan=True), "a", FILED)[0]["plan"] is True
+    assert parse_form4(form4_xml(txs=[sale], footnotes=notes), "a", FILED)[0]["plan"] is False
+    plan_note = {"F1": "Effected pursuant to a Rule 10b5-1 trading plan."}
+    assert parse_form4(form4_xml(txs=[sale], footnotes=plan_note), "a", FILED)[0]["plan"] is True
+
+
+def test_rsu_settlement_same_day_does_not_mark_exercise():
+    sale = {"code": "S", "date": "2026-09-30", "shares": 10, "price": 5, "after": 90}
+    vest = {"code": "M", "date": "2026-09-30", "shares": 10, "price": 0, "after": 100}
+    rsu = {"code": "M", "date": "2026-09-30", "title": "Restricted Stock Units"}
+    assert parse_form4(form4_xml(txs=[vest, sale], deriv_txs=[rsu]), "a", FILED)[0]["exercise"] is False
+    option = {"code": "M", "date": "2026-09-30", "title": "Stock Option (Right to Buy)"}
+    assert parse_form4(form4_xml(txs=[vest, sale], deriv_txs=[rsu, option]), "a", FILED)[0]["exercise"] is True

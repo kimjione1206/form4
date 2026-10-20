@@ -59,8 +59,8 @@ def test_sales_collapsed_to_one_per_filing_and_insider_only():
 def test_collapsed_sale_keeps_sums_last_holding_and_flags():
     s1 = make_rec("S1", code="S", date="2026-09-29", shares=100, price=10.0, after=850.0,
                   direct="I", exercise=True, plan=True)
-    s2 = make_rec("S1", code="S", date="2026-09-28", shares=50, price=12.0, after=900.0)
-    s3 = make_rec("S1", code="S", date="2026-09-29", shares=30, price=10.0, after=820.0)
+    s2 = make_rec("S1", code="S", date="2026-09-28", shares=50, price=12.0, after=900.0, plan=True)
+    s3 = make_rec("S1", code="S", date="2026-09-29", shares=30, price=10.0, after=820.0, plan=True)
     [row] = store.merge([], [s1, s2, s3])
     assert row["shares"] == 180 and row["value"] == 1900.0
     assert row["after"] == 820.0 and row["direct"] == "D"  # 같은 날이면 뒤에 적힌 줄
@@ -103,3 +103,13 @@ def test_collapsed_sale_skips_absurd_price_lines_and_flags():
 def test_collapsed_sale_allowlisted_ticker_keeps_high_price():
     [row] = store.merge([], [make_rec("S1", code="S", ticker="BRK.A", shares=2, price=700_000.0)])
     assert row["value"] == 1_400_000.0 and "price_error" not in row
+
+
+def test_sale_split_by_plan_and_tax_within_filing():
+    # 한 신고서에 세금 납부용 줄과 계획 매도 줄이 섞이면 이유별로 따로 남긴다(합쳐서 '계획 매도'로 보이지 않게).
+    tax = make_rec("S1", code="S", date="2026-10-12", shares=100, price=10.0, after=300.0, tax=True)
+    p1 = make_rec("S1", code="S", date="2026-10-13", shares=50, price=10.0, after=250.0, plan=True)
+    p2 = make_rec("S1", code="S", date="2026-10-13", shares=30, price=10.0, after=220.0, plan=True)
+    rows = sorted(store.merge([], [tax, p1, p2]), key=lambda r: r["date"])
+    assert [(r["date"], r["plan"], r["tax"], r["shares"], r["after"]) for r in rows] == [
+        ("2026-10-12", False, True, 100, 300.0), ("2026-10-13", True, False, 80, 220.0)]
