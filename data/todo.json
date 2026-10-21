@@ -6,11 +6,6 @@
       "sic_description": ""
     },
     {
-      "cik": "813623",
-      "name": "Total Return Securities Fund",
-      "sic_description": ""
-    },
-    {
       "cik": "1551047",
       "name": "Bluerock Private Real Estate Fund",
       "sic_description": ""
@@ -21,80 +16,48 @@
       "sic_description": ""
     },
     {
+      "cik": "826675",
+      "name": "DYNEX CAPITAL INC",
+      "sic_description": "Real Estate Investment Trusts"
+    },
+    {
+      "cik": "813623",
+      "name": "Total Return Securities Fund",
+      "sic_description": ""
+    },
+    {
       "cik": "2099039",
       "name": "Wise Group plc",
       "sic_description": "Services-Business Services, NEC"
-    },
-    {
-      "cik": "1846069",
-      "name": "Nextdoor Holdings, Inc.",
-      "sic_description": "Services-Computer Programming, Data Processing, Etc."
     }
   ],
   "industries": [],
   "names": [
     {
-      "n": "Iambic Therapeutics, Inc.",
-      "t": "IAM"
+      "n": "BRT Apartments Corp.",
+      "t": "BRT"
     },
     {
-      "n": "LINDBLAD EXPEDITIONS HOLDINGS, INC.",
-      "t": "LIND"
+      "n": "ENERGY CO OF PARANA",
+      "t": "ELPC"
     },
     {
-      "n": "CITY THERAPEUTICS, INC.",
-      "t": "CTY"
+      "n": "Nova Minerals Corp",
+      "t": "NVA"
     },
     {
-      "n": "Wise Group plc",
-      "t": "WSE"
+      "n": "Solid Biosciences Inc.",
+      "t": "SLDB"
     },
     {
-      "n": "COPART INC",
-      "t": "CPRT"
-    },
-    {
-      "n": "Conexeu Sciences Inc.",
-      "t": "CNXU"
-    },
-    {
-      "n": "BUCKLE INC",
-      "t": "BKE"
-    },
-    {
-      "n": "IONIS PHARMACEUTICALS INC",
-      "t": "IONS"
-    },
-    {
-      "n": "ENSIGN GROUP, INC",
-      "t": "ENSG"
-    },
-    {
-      "n": "FingerMotion, Inc.",
-      "t": "FNGR"
-    },
-    {
-      "n": "GRANDSTAND Ltd",
-      "t": "GRSD"
-    },
-    {
-      "n": "PETROBRAS - PETROLEO BRASILEIRO SA",
-      "t": "PBR"
-    },
-    {
-      "n": "EMCOR Group, Inc.",
-      "t": "EME"
+      "n": "Bath & Body Works, Inc.",
+      "t": "BBWI"
     }
   ],
   "titles": [
-    "CEO; Chairman",
-    "EVP & Chief Product & Tech",
-    "EVP Chief Prod & Strat Officer",
-    "EVP Research",
-    "EVP of Strategic&Legal Affairs",
-    "EVP, CIO and CTO",
-    "EVP, Chief Human Resources Ofc",
-    "Senior VP, BAS",
-    "Senior Vice President,  CFO"
+    "CFO, CCO, Secretary, Treasurer",
+    "Co-CEO and President",
+    "Corp Controller",
+    "Pres. & Chief Tech & Prod Offr"
   ]
 }

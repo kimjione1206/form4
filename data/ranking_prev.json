@@ -65,11 +65,6 @@
     "ticker": "AMRZ"
   },
   {
-    "issuer_cik": "1488139",
-    "name": "Ameresco, Inc.",
-    "ticker": "AMRC"
-  },
-  {
     "issuer_cik": "1641614",
     "name": "CPI Card Group Inc.",
     "ticker": "PMTS"
@@ -88,11 +83,6 @@
     "issuer_cik": "715446",
     "name": "Anixa Biosciences Inc",
     "ticker": "ANIX"
-  },
-  {
-    "issuer_cik": "813623",
-    "name": "Total Return Securities Fund",
-    "ticker": "SWZ"
   },
   {
     "issuer_cik": "1963088",
@@ -123,11 +113,6 @@
     "issuer_cik": "1551047",
     "name": "Bluerock Private Real Estate Fund",
     "ticker": "BPRE"
-  },
-  {
-    "issuer_cik": "1704715",
-    "name": "Alpha Metallurgical Resources, Inc.",
-    "ticker": "AMR"
   },
   {
     "issuer_cik": "2007919",
@@ -180,6 +165,11 @@
     "ticker": "XBP"
   },
   {
+    "issuer_cik": "1488139",
+    "name": "Ameresco, Inc.",
+    "ticker": "AMRC"
+  },
+  {
     "issuer_cik": "67215",
     "name": "DYCOM INDUSTRIES INC",
     "ticker": "DY"
@@ -220,6 +210,11 @@
     "ticker": "SDHC"
   },
   {
+    "issuer_cik": "826675",
+    "name": "DYNEX CAPITAL INC",
+    "ticker": "DX"
+  },
+  {
     "issuer_cik": "1841761",
     "name": "Grove Collaborative Holdings, Inc.",
     "ticker": "GROV"
@@ -228,6 +223,11 @@
     "issuer_cik": "1069533",
     "name": "RGC RESOURCES INC",
     "ticker": "RGCO"
+  },
+  {
+    "issuer_cik": "813623",
+    "name": "Total Return Securities Fund",
+    "ticker": "SWZ"
   },
   {
     "issuer_cik": "1868995",
