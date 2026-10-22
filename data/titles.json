@@ -1416,5 +1416,9 @@
   "co CFO": "공동 재무이사(CFO)",
   "executive vice president": "부사장",
   "president": "사장",
-  "president and CEO": "사장 겸 대표이사(CEO)"
+  "president and CEO": "사장 겸 대표이사(CEO)",
+  "CFO, CCO, Secretary, Treasurer": "재무이사(CFO) 겸 준법·총무·자금 담당",
+  "Co-CEO and President": "공동 대표이사(Co-CEO) 겸 사장",
+  "Corp Controller": "전사 경리 책임자",
+  "Pres. & Chief Tech & Prod Offr": "사장 겸 최고기술·제품 책임자"
 }
