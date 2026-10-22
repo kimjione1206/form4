@@ -425,14 +425,14 @@
     "ticker": "PINS"
   },
   {
-    "issuer_cik": "907654",
-    "name": "Oruka Therapeutics, Inc.",
-    "ticker": "ORKA"
-  },
-  {
     "issuer_cik": "1591698",
     "name": "Paylocity Holding Corp",
     "ticker": "PCTY"
+  },
+  {
+    "issuer_cik": "907654",
+    "name": "Oruka Therapeutics, Inc.",
+    "ticker": "ORKA"
   },
   {
     "issuer_cik": "1061983",
@@ -780,14 +780,14 @@
     "ticker": "RBRK"
   },
   {
-    "issuer_cik": "889900",
-    "name": "PATTERSON UTI ENERGY INC",
-    "ticker": "PTEN"
-  },
-  {
     "issuer_cik": "1835963",
     "name": "Global-E Online Ltd.",
     "ticker": "GLBE"
+  },
+  {
+    "issuer_cik": "889900",
+    "name": "PATTERSON UTI ENERGY INC",
+    "ticker": "PTEN"
   },
   {
     "issuer_cik": "8670",
@@ -810,6 +810,11 @@
     "ticker": "MRVL"
   },
   {
+    "issuer_cik": "1478320",
+    "name": "Adaptive Biotechnologies Corp",
+    "ticker": "ADPT"
+  },
+  {
     "issuer_cik": "350894",
     "name": "SEI INVESTMENTS CO",
     "ticker": "SEIC"
@@ -823,11 +828,6 @@
     "issuer_cik": "719955",
     "name": "WILLIAMS SONOMA INC",
     "ticker": "WSM"
-  },
-  {
-    "issuer_cik": "1478320",
-    "name": "Adaptive Biotechnologies Corp",
-    "ticker": "ADPT"
   },
   {
     "issuer_cik": "914208",
@@ -920,14 +920,14 @@
     "ticker": "XMTR"
   },
   {
-    "issuer_cik": "1842295",
-    "name": "Maze Therapeutics, Inc.",
-    "ticker": "MAZE"
-  },
-  {
     "issuer_cik": "1565687",
     "name": "Intapp, Inc.",
     "ticker": "INTA"
+  },
+  {
+    "issuer_cik": "1842295",
+    "name": "Maze Therapeutics, Inc.",
+    "ticker": "MAZE"
   },
   {
     "issuer_cik": "921582",
@@ -955,14 +955,14 @@
     "ticker": "FLYW"
   },
   {
-    "issuer_cik": "910612",
-    "name": "CBL & ASSOCIATES PROPERTIES INC",
-    "ticker": "CBL"
-  },
-  {
     "issuer_cik": "1818383",
     "name": "MediaAlpha, Inc.",
     "ticker": "MAX"
+  },
+  {
+    "issuer_cik": "910612",
+    "name": "CBL & ASSOCIATES PROPERTIES INC",
+    "ticker": "CBL"
   },
   {
     "issuer_cik": "1288847",
@@ -990,6 +990,11 @@
     "ticker": "BBD"
   },
   {
+    "issuer_cik": "715787",
+    "name": "INTERFACE INC",
+    "ticker": "TILE"
+  },
+  {
     "issuer_cik": "1601046",
     "name": "Keysight Technologies, Inc.",
     "ticker": "KEYS"
@@ -1003,11 +1008,6 @@
     "issuer_cik": "1773751",
     "name": "Hims & Hers Health, Inc.",
     "ticker": "HIMS"
-  },
-  {
-    "issuer_cik": "715787",
-    "name": "INTERFACE INC",
-    "ticker": "TILE"
   },
   {
     "issuer_cik": "1638826",
@@ -1055,6 +1055,11 @@
     "ticker": "PEGA"
   },
   {
+    "issuer_cik": "1107843",
+    "name": "QUALYS, INC.",
+    "ticker": "QLYS"
+  },
+  {
     "issuer_cik": "1023024",
     "name": "ANI PHARMACEUTICALS INC",
     "ticker": "ANIP"
@@ -1068,11 +1073,6 @@
     "issuer_cik": "1804176",
     "name": "Butterfly Network, Inc.",
     "ticker": "BFLY"
-  },
-  {
-    "issuer_cik": "1107843",
-    "name": "QUALYS, INC.",
-    "ticker": "QLYS"
   },
   {
     "issuer_cik": "797721",
@@ -1095,6 +1095,11 @@
     "ticker": "KTOS"
   },
   {
+    "issuer_cik": "1921865",
+    "name": "ASP Isotopes Inc.",
+    "ticker": "ASPI"
+  },
+  {
     "issuer_cik": "80424",
     "name": "PROCTER & GAMBLE Co",
     "ticker": "PG"
@@ -1108,6 +1113,11 @@
     "issuer_cik": "912615",
     "name": "URBAN OUTFITTERS INC",
     "ticker": "URBN"
+  },
+  {
+    "issuer_cik": "817720",
+    "name": "SYNAPTICS Inc",
+    "ticker": "SYNA"
   },
   {
     "issuer_cik": "1333986",
@@ -1128,6 +1138,11 @@
     "issuer_cik": "1767042",
     "name": "Kodiak Gas Services, Inc.",
     "ticker": "KGS"
+  },
+  {
+    "issuer_cik": "1830214",
+    "name": "Ginkgo Bioworks Holdings, Inc.",
+    "ticker": "DNA"
   },
   {
     "issuer_cik": "882508",
@@ -1155,24 +1170,19 @@
     "ticker": "UPWK"
   },
   {
-    "issuer_cik": "817720",
-    "name": "SYNAPTICS Inc",
-    "ticker": "SYNA"
-  },
-  {
     "issuer_cik": "858877",
     "name": "CISCO SYSTEMS, INC.",
     "ticker": "CSCO"
   },
   {
-    "issuer_cik": "1564408",
-    "name": "Snap Inc",
-    "ticker": "SNAP"
-  },
-  {
     "issuer_cik": "1617553",
     "name": "ZIPRECRUITER, INC.",
     "ticker": "ZIP"
+  },
+  {
+    "issuer_cik": "1564408",
+    "name": "Snap Inc",
+    "ticker": "SNAP"
   },
   {
     "issuer_cik": "1529192",
@@ -1260,6 +1270,11 @@
     "ticker": "DUOL"
   },
   {
+    "issuer_cik": "2001184",
+    "name": "PACS Group, Inc.",
+    "ticker": "PACS"
+  },
+  {
     "issuer_cik": "1645590",
     "name": "Hewlett Packard Enterprise Co",
     "ticker": "HPE"
@@ -1268,11 +1283,6 @@
     "issuer_cik": "1682852",
     "name": "Moderna, Inc.",
     "ticker": "MRNA"
-  },
-  {
-    "issuer_cik": "2001184",
-    "name": "PACS Group, Inc.",
-    "ticker": "PACS"
   },
   {
     "issuer_cik": "1889109",
@@ -1390,6 +1400,11 @@
     "ticker": "EOG"
   },
   {
+    "issuer_cik": "1538379",
+    "name": "Ibotta, Inc.",
+    "ticker": "IBTA"
+  },
+  {
     "issuer_cik": "821483",
     "name": "PAR PACIFIC HOLDINGS, INC.",
     "ticker": "PARR"
@@ -1480,14 +1495,14 @@
     "ticker": "VIAV"
   },
   {
+    "issuer_cik": "1447362",
+    "name": "CASTLE BIOSCIENCES INC",
+    "ticker": "CSTL"
+  },
+  {
     "issuer_cik": "1724965",
     "name": "TALOS ENERGY INC.",
     "ticker": "TALO"
-  },
-  {
-    "issuer_cik": "1538379",
-    "name": "Ibotta, Inc.",
-    "ticker": "IBTA"
   },
   {
     "issuer_cik": "6951",
@@ -1498,11 +1513,6 @@
     "issuer_cik": "2012593",
     "name": "Rapport Therapeutics, Inc.",
     "ticker": "RAPP"
-  },
-  {
-    "issuer_cik": "1447362",
-    "name": "CASTLE BIOSCIENCES INC",
-    "ticker": "CSTL"
   },
   {
     "issuer_cik": "1759425",
@@ -1585,11 +1595,6 @@
     "ticker": "ICLR"
   },
   {
-    "issuer_cik": "1853145",
-    "name": "EverCommerce Inc.",
-    "ticker": "EVCM"
-  },
-  {
     "issuer_cik": "1525221",
     "name": "Bristow Group Inc.",
     "ticker": "VTOL"
@@ -1620,6 +1625,11 @@
     "ticker": "ATRC"
   },
   {
+    "issuer_cik": "1672619",
+    "name": "Enliven Therapeutics, Inc.",
+    "ticker": "ELVN"
+  },
+  {
     "issuer_cik": "1787306",
     "name": "Arcutis Biotherapeutics, Inc.",
     "ticker": "ARQT"
@@ -1635,14 +1645,14 @@
     "ticker": "NCNO"
   },
   {
+    "issuer_cik": "1598665",
+    "name": "Heritage Insurance Holdings, Inc.",
+    "ticker": "HRTG"
+  },
+  {
     "issuer_cik": "31791",
     "name": "REVVITY, INC.",
     "ticker": "RVTY"
-  },
-  {
-    "issuer_cik": "1921865",
-    "name": "ASP Isotopes Inc.",
-    "ticker": "ASPI"
   },
   {
     "issuer_cik": "2099039",
@@ -1660,16 +1670,6 @@
     "ticker": "FENC"
   },
   {
-    "issuer_cik": "1598665",
-    "name": "Heritage Insurance Holdings, Inc.",
-    "ticker": "HRTG"
-  },
-  {
-    "issuer_cik": "1672619",
-    "name": "Enliven Therapeutics, Inc.",
-    "ticker": "ELVN"
-  },
-  {
     "issuer_cik": "1555279",
     "name": "908 Devices Inc.",
     "ticker": "MASS"
@@ -1678,6 +1678,11 @@
     "issuer_cik": "80420",
     "name": "POWELL INDUSTRIES INC",
     "ticker": "POWL"
+  },
+  {
+    "issuer_cik": "1507605",
+    "name": "MARA Holdings, Inc.",
+    "ticker": "MARA"
   },
   {
     "issuer_cik": "850141",
@@ -1708,11 +1713,6 @@
     "issuer_cik": "1024478",
     "name": "ROCKWELL AUTOMATION, INC",
     "ticker": "ROK"
-  },
-  {
-    "issuer_cik": "1507605",
-    "name": "MARA Holdings, Inc.",
-    "ticker": "MARA"
   },
   {
     "issuer_cik": "1867096",
@@ -1943,6 +1943,11 @@
     "issuer_cik": "1338940",
     "name": "Perion Network Ltd.",
     "ticker": "PERI"
+  },
+  {
+    "issuer_cik": "1519401",
+    "name": "Regional Management Corp.",
+    "ticker": "RM"
   },
   {
     "issuer_cik": "1919246",

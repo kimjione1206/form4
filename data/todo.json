@@ -16,48 +16,36 @@
       "sic_description": ""
     },
     {
-      "cik": "826675",
-      "name": "DYNEX CAPITAL INC",
-      "sic_description": "Real Estate Investment Trusts"
-    },
-    {
       "cik": "813623",
       "name": "Total Return Securities Fund",
       "sic_description": ""
     },
     {
+      "cik": "1830214",
+      "name": "Ginkgo Bioworks Holdings, Inc.",
+      "sic_description": "Biological Products, (No Diagnostic Substances)"
+    },
+    {
       "cik": "2099039",
       "name": "Wise Group plc",
       "sic_description": "Services-Business Services, NEC"
+    },
+    {
+      "cik": "1519401",
+      "name": "Regional Management Corp.",
+      "sic_description": "Personal Credit Institutions"
     }
   ],
   "industries": [],
   "names": [
     {
-      "n": "BRT Apartments Corp.",
-      "t": "BRT"
-    },
-    {
-      "n": "ENERGY CO OF PARANA",
-      "t": "ELPC"
-    },
-    {
-      "n": "Nova Minerals Corp",
-      "t": "NVA"
-    },
-    {
-      "n": "Solid Biosciences Inc.",
-      "t": "SLDB"
-    },
-    {
-      "n": "Bath & Body Works, Inc.",
-      "t": "BBWI"
+      "n": "FB Financial Corp",
+      "t": "FBK"
     }
   ],
   "titles": [
-    "CFO, CCO, Secretary, Treasurer",
-    "Co-CEO and President",
-    "Corp Controller",
-    "Pres. & Chief Tech & Prod Offr"
+    "Co-CEO & Chairman of the Board",
+    "President, North America",
+    "Vice Chairman and President"
   ]
 }
