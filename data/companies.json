@@ -429,6 +429,11 @@
     "sic_description": "Investment Advice",
     "summary": "뮤추얼 펀드 운용 회사"
   },
+  "1156375": {
+    "name": "CME GROUP INC.",
+    "sic_description": "Security & Commodity Brokers, Dealers, Exchanges & Services",
+    "summary": null
+  },
   "1158114": {
     "name": "APPLIED OPTOELECTRONICS, INC.",
     "sic_description": "Semiconductors & Related Devices",
@@ -968,6 +973,11 @@
     "name": "Heartflow, Inc.",
     "sic_description": "Surgical & Medical Instruments & Apparatus",
     "summary": "심장질환 진단 소프트웨어 회사"
+  },
+  "1467373": {
+    "name": "Accenture plc",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
   },
   "1467623": {
     "name": "DROPBOX, INC.",
@@ -3528,6 +3538,11 @@
     "name": "REGENERON PHARMACEUTICALS, INC.",
     "sic_description": "Pharmaceutical Preparations",
     "summary": "의약품을 개발하는 바이오 제약 회사"
+  },
+  "876167": {
+    "name": "PROGRESS SOFTWARE CORP /MA",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
   },
   "876437": {
     "name": "MGIC INVESTMENT CORP",

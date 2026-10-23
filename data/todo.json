@@ -21,9 +21,14 @@
       "sic_description": ""
     },
     {
-      "cik": "1830214",
-      "name": "Ginkgo Bioworks Holdings, Inc.",
-      "sic_description": "Biological Products, (No Diagnostic Substances)"
+      "cik": "1156375",
+      "name": "CME GROUP INC.",
+      "sic_description": "Security & Commodity Brokers, Dealers, Exchanges & Services"
+    },
+    {
+      "cik": "1467373",
+      "name": "Accenture plc",
+      "sic_description": "Services-Business Services, NEC"
     },
     {
       "cik": "2099039",
@@ -31,21 +36,45 @@
       "sic_description": "Services-Business Services, NEC"
     },
     {
-      "cik": "1519401",
-      "name": "Regional Management Corp.",
-      "sic_description": "Personal Credit Institutions"
+      "cik": "876167",
+      "name": "PROGRESS SOFTWARE CORP /MA",
+      "sic_description": "Services-Prepackaged Software"
     }
   ],
   "industries": [],
   "names": [
     {
-      "n": "FB Financial Corp",
-      "t": "FBK"
+      "n": "STATE STREET CORP",
+      "t": "STT"
+    },
+    {
+      "n": "Ally Financial Inc.",
+      "t": "ALLY"
+    },
+    {
+      "n": "AAR CORP",
+      "t": "AIR"
+    },
+    {
+      "n": "JABIL INC",
+      "t": "JBL"
+    },
+    {
+      "n": "Bank7 Corp.",
+      "t": "BSVN"
+    },
+    {
+      "n": "MANHATTAN BRIDGE CAPITAL, INC",
+      "t": "LOAN"
     }
   ],
   "titles": [
-    "Co-CEO & Chairman of the Board",
-    "President, North America",
-    "Vice Chairman and President"
+    "Chief HR & Corp Citizenship",
+    "Co-CEO Asia Pacific",
+    "EVP & President, Personal Ins.",
+    "EVP/GM Digital Experience",
+    "Executive Chairman of Board",
+    "President, Industries",
+    "SVP Stores"
   ]
 }

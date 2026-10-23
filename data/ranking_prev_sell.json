@@ -75,6 +75,11 @@
     "ticker": "JOBY"
   },
   {
+    "issuer_cik": "1877184",
+    "name": "KESTRA MEDICAL TECHNOLOGIES, LTD.",
+    "ticker": "KMTS"
+  },
+  {
     "issuer_cik": "1514416",
     "name": "Bandwidth Inc.",
     "ticker": "BAND"
@@ -360,11 +365,6 @@
     "ticker": "LYFT"
   },
   {
-    "issuer_cik": "1877184",
-    "name": "KESTRA MEDICAL TECHNOLOGIES, LTD.",
-    "ticker": "KMTS"
-  },
-  {
     "issuer_cik": "1393434",
     "name": "OCULAR THERAPEUTIX, INC",
     "ticker": "OCUL"
@@ -475,6 +475,11 @@
     "ticker": "EAT"
   },
   {
+    "issuer_cik": "1565687",
+    "name": "Intapp, Inc.",
+    "ticker": "INTA"
+  },
+  {
     "issuer_cik": "1384905",
     "name": "RingCentral, Inc.",
     "ticker": "RNG"
@@ -498,6 +503,11 @@
     "issuer_cik": "1694426",
     "name": "Delek US Holdings, Inc.",
     "ticker": "DK"
+  },
+  {
+    "issuer_cik": "1070235",
+    "name": "BLACKBERRY Ltd",
+    "ticker": "BB"
   },
   {
     "issuer_cik": "1099800",
@@ -583,11 +593,6 @@
     "issuer_cik": "1865631",
     "name": "NEXTNAV INC.",
     "ticker": "NN"
-  },
-  {
-    "issuer_cik": "1070235",
-    "name": "BLACKBERRY Ltd",
-    "ticker": "BB"
   },
   {
     "issuer_cik": "800457",
@@ -745,14 +750,14 @@
     "ticker": "JAZZ"
   },
   {
-    "issuer_cik": "1539838",
-    "name": "Diamondback Energy, Inc.",
-    "ticker": "FANG"
-  },
-  {
     "issuer_cik": "1512673",
     "name": "Block, Inc.",
     "ticker": "XYZ"
+  },
+  {
+    "issuer_cik": "1539838",
+    "name": "Diamondback Energy, Inc.",
+    "ticker": "FANG"
   },
   {
     "issuer_cik": "2070849",
@@ -855,6 +860,11 @@
     "ticker": "MDB"
   },
   {
+    "issuer_cik": "1784535",
+    "name": "Porch Group, Inc.",
+    "ticker": "PRCH"
+  },
+  {
     "issuer_cik": "1141391",
     "name": "Mastercard Inc",
     "ticker": "MA"
@@ -890,11 +900,6 @@
     "ticker": "TARS"
   },
   {
-    "issuer_cik": "1784535",
-    "name": "Porch Group, Inc.",
-    "ticker": "PRCH"
-  },
-  {
     "issuer_cik": "1886428",
     "name": "Slide Insurance Holdings, Inc.",
     "ticker": "SLDE"
@@ -918,11 +923,6 @@
     "issuer_cik": "1657573",
     "name": "Xometry, Inc.",
     "ticker": "XMTR"
-  },
-  {
-    "issuer_cik": "1565687",
-    "name": "Intapp, Inc.",
-    "ticker": "INTA"
   },
   {
     "issuer_cik": "1842295",
@@ -1070,14 +1070,14 @@
     "ticker": "DXCM"
   },
   {
-    "issuer_cik": "1804176",
-    "name": "Butterfly Network, Inc.",
-    "ticker": "BFLY"
-  },
-  {
     "issuer_cik": "797721",
     "name": "VIASAT INC",
     "ticker": "VSAT"
+  },
+  {
+    "issuer_cik": "1804176",
+    "name": "Butterfly Network, Inc.",
+    "ticker": "BFLY"
   },
   {
     "issuer_cik": "1611115",
@@ -1480,14 +1480,14 @@
     "ticker": "ASAN"
   },
   {
-    "issuer_cik": "1140859",
-    "name": "Cencora, Inc.",
-    "ticker": "COR"
-  },
-  {
     "issuer_cik": "106040",
     "name": "WESTERN DIGITAL CORP",
     "ticker": "WDC"
+  },
+  {
+    "issuer_cik": "1140859",
+    "name": "Cencora, Inc.",
+    "ticker": "COR"
   },
   {
     "issuer_cik": "912093",
@@ -1515,6 +1515,11 @@
     "ticker": "RAPP"
   },
   {
+    "issuer_cik": "1156375",
+    "name": "CME GROUP INC.",
+    "ticker": "CME"
+  },
+  {
     "issuer_cik": "1759425",
     "name": "Mirum Pharmaceuticals, Inc.",
     "ticker": "MIRM"
@@ -1535,6 +1540,11 @@
     "ticker": "TER"
   },
   {
+    "issuer_cik": "1753539",
+    "name": "BlackSky Technology Inc.",
+    "ticker": "BKSY"
+  },
+  {
     "issuer_cik": "1496443",
     "name": "Paysign, Inc.",
     "ticker": "PAYS"
@@ -1548,11 +1558,6 @@
     "issuer_cik": "927628",
     "name": "CAPITAL ONE FINANCIAL CORP",
     "ticker": "COF"
-  },
-  {
-    "issuer_cik": "1753539",
-    "name": "BlackSky Technology Inc.",
-    "ticker": "BKSY"
   },
   {
     "issuer_cik": "1462120",
@@ -1593,6 +1598,11 @@
     "issuer_cik": "1060955",
     "name": "ICON PLC",
     "ticker": "ICLR"
+  },
+  {
+    "issuer_cik": "1467373",
+    "name": "Accenture plc",
+    "ticker": "ACN"
   },
   {
     "issuer_cik": "1525221",
@@ -1685,6 +1695,11 @@
     "ticker": "MARA"
   },
   {
+    "issuer_cik": "1846069",
+    "name": "Nextdoor Holdings, Inc.",
+    "ticker": "NXDR"
+  },
+  {
     "issuer_cik": "850141",
     "name": "HORACE MANN EDUCATORS CORP /DE/",
     "ticker": "HMN"
@@ -1718,11 +1733,6 @@
     "issuer_cik": "1867096",
     "name": "Xeris Biopharma Holdings, Inc.",
     "ticker": "XERS"
-  },
-  {
-    "issuer_cik": "1846069",
-    "name": "Nextdoor Holdings, Inc.",
-    "ticker": "NXDR"
   },
   {
     "issuer_cik": "1509745",
@@ -1883,6 +1893,11 @@
     "issuer_cik": "106532",
     "name": "WEYCO GROUP INC",
     "ticker": "WEYS"
+  },
+  {
+    "issuer_cik": "876167",
+    "name": "PROGRESS SOFTWARE CORP /MA",
+    "ticker": "PRGS"
   },
   {
     "issuer_cik": "1345016",

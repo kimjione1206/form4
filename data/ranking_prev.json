@@ -40,6 +40,11 @@
     "ticker": "GME"
   },
   {
+    "issuer_cik": "2012593",
+    "name": "Rapport Therapeutics, Inc.",
+    "ticker": "RAPP"
+  },
+  {
     "issuer_cik": "1502292",
     "name": "Presurance Holdings, Inc.",
     "ticker": "PRHI"
@@ -190,14 +195,14 @@
     "ticker": "PDI"
   },
   {
-    "issuer_cik": "2058758",
-    "name": "Avidia Bancorp, Inc.",
-    "ticker": "AVBC"
-  },
-  {
     "issuer_cik": "2020932",
     "name": "AgomAb Therapeutics NV",
     "ticker": "AGMB"
+  },
+  {
+    "issuer_cik": "2058758",
+    "name": "Avidia Bancorp, Inc.",
+    "ticker": "AVBC"
   },
   {
     "issuer_cik": "1095435",
