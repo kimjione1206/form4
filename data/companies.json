@@ -484,6 +484,11 @@
     "sic_description": "Services-Business Services, NEC",
     "summary": "기업 결제 서비스 회사"
   },
+  "1177394": {
+    "name": "TD SYNNEX CORP",
+    "sic_description": "Wholesale-Computers & Peripheral Equipment & Software",
+    "summary": null
+  },
   "1177609": {
     "name": "FIVE BELOW, INC",
     "sic_description": "Retail-Variety Stores",
@@ -683,6 +688,11 @@
     "name": "FEMASYS INC",
     "sic_description": "Surgical & Medical Instruments & Apparatus",
     "summary": "여성 건강 의료기기 회사"
+  },
+  "1339688": {
+    "name": "Lion Copper Corp.",
+    "sic_description": "Metal Mining",
+    "summary": null
   },
   "1341317": {
     "name": "Bridgewater Bancshares Inc",
@@ -983,6 +993,11 @@
     "name": "DROPBOX, INC.",
     "sic_description": "Services-Prepackaged Software",
     "summary": "파일 저장·협업 소프트웨어 회사"
+  },
+  "1468327": {
+    "name": "Rent the Runway, Inc.",
+    "sic_description": "Retail-Retail Stores, NEC",
+    "summary": null
   },
   "1468642": {
     "name": "Aura Minerals Inc.",
@@ -2939,6 +2954,11 @@
     "sic_description": "Services-Business Services, NEC",
     "summary": null
   },
+  "2114459": {
+    "name": "Cascade Real Assets Fund",
+    "sic_description": "",
+    "summary": null
+  },
   "2123955": {
     "name": "Pinnacle Acquisition Corp",
     "sic_description": "Blank Checks",
@@ -3289,6 +3309,11 @@
     "sic_description": "General Industrial Machinery & Equipment, NEC",
     "summary": "정밀 산업 장비를 만드는 회사"
   },
+  "726854": {
+    "name": "CITY HOLDING CO",
+    "sic_description": "National Commercial Banks",
+    "summary": null
+  },
   "730464": {
     "name": "Covista Inc.",
     "sic_description": "Services-Educational Services",
@@ -3523,6 +3548,11 @@
     "name": "KEMPER Corp",
     "sic_description": "Fire, Marine & Casualty Insurance",
     "summary": "자동차 등 손해보험 회사"
+  },
+  "86312": {
+    "name": "TRAVELERS COMPANIES, INC.",
+    "sic_description": "Fire, Marine & Casualty Insurance",
+    "summary": null
   },
   "866729": {
     "name": "SCHOLASTIC CORP",

@@ -1,13 +1,28 @@
 {
   "companies": [
     {
+      "cik": "1468327",
+      "name": "Rent the Runway, Inc.",
+      "sic_description": "Retail-Retail Stores, NEC"
+    },
+    {
       "cik": "40417",
       "name": "GENERAL AMERICAN INVESTORS CO INC",
       "sic_description": ""
     },
     {
+      "cik": "726854",
+      "name": "CITY HOLDING CO",
+      "sic_description": "National Commercial Banks"
+    },
+    {
       "cik": "1551047",
       "name": "Bluerock Private Real Estate Fund",
+      "sic_description": ""
+    },
+    {
+      "cik": "2114459",
+      "name": "Cascade Real Assets Fund",
       "sic_description": ""
     },
     {
@@ -21,60 +36,64 @@
       "sic_description": ""
     },
     {
-      "cik": "1156375",
-      "name": "CME GROUP INC.",
-      "sic_description": "Security & Commodity Brokers, Dealers, Exchanges & Services"
+      "cik": "1339688",
+      "name": "Lion Copper Corp.",
+      "sic_description": "Metal Mining"
     },
     {
-      "cik": "1467373",
-      "name": "Accenture plc",
-      "sic_description": "Services-Business Services, NEC"
+      "cik": "86312",
+      "name": "TRAVELERS COMPANIES, INC.",
+      "sic_description": "Fire, Marine & Casualty Insurance"
+    },
+    {
+      "cik": "1177394",
+      "name": "TD SYNNEX CORP",
+      "sic_description": "Wholesale-Computers & Peripheral Equipment & Software"
     },
     {
       "cik": "2099039",
       "name": "Wise Group plc",
       "sic_description": "Services-Business Services, NEC"
-    },
-    {
-      "cik": "876167",
-      "name": "PROGRESS SOFTWARE CORP /MA",
-      "sic_description": "Services-Prepackaged Software"
     }
   ],
-  "industries": [],
+  "industries": [
+    "Retail-Retail Stores, NEC"
+  ],
   "names": [
     {
-      "n": "STATE STREET CORP",
-      "t": "STT"
+      "n": "Elevance Health, Inc.",
+      "t": "ELV"
     },
     {
-      "n": "Ally Financial Inc.",
-      "t": "ALLY"
+      "n": "WINMARK CORP",
+      "t": "WINA"
     },
     {
-      "n": "AAR CORP",
-      "t": "AIR"
+      "n": "PEOPLES BANCORP INC",
+      "t": "PEBO"
     },
     {
-      "n": "JABIL INC",
-      "t": "JBL"
+      "n": "CLEVELAND-CLIFFS INC.",
+      "t": "CLF"
     },
     {
-      "n": "Bank7 Corp.",
-      "t": "BSVN"
+      "n": "AGIOS PHARMACEUTICALS, INC.",
+      "t": "AGIO"
     },
     {
-      "n": "MANHATTAN BRIDGE CAPITAL, INC",
-      "t": "LOAN"
+      "n": "MSC INDUSTRIAL DIRECT CO INC",
+      "t": "MSM"
+    },
+    {
+      "n": "FIRST FINANCIAL CORP /IN/",
+      "t": "THFF"
     }
   ],
   "titles": [
-    "Chief HR & Corp Citizenship",
-    "Co-CEO Asia Pacific",
-    "EVP & President, Personal Ins.",
-    "EVP/GM Digital Experience",
-    "Executive Chairman of Board",
-    "President, Industries",
-    "SVP Stores"
+    "EVP & Co-Chief Invest. Officer",
+    "EVP & Pres., Bond & Spec. Ins.",
+    "EVP & President, Business Ins.",
+    "EVP,  Community Banking",
+    "VICE CHAIR,CHIEF LENDING OFC"
   ]
 }

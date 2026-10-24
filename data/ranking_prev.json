@@ -25,6 +25,11 @@
     "ticker": "SBLK"
   },
   {
+    "issuer_cik": "2012593",
+    "name": "Rapport Therapeutics, Inc.",
+    "ticker": "RAPP"
+  },
+  {
     "issuer_cik": "930236",
     "name": "REDWOOD TRUST INC",
     "ticker": "RWT"
@@ -38,11 +43,6 @@
     "issuer_cik": "1326380",
     "name": "GameStop Corp.",
     "ticker": "GME"
-  },
-  {
-    "issuer_cik": "2012593",
-    "name": "Rapport Therapeutics, Inc.",
-    "ticker": "RAPP"
   },
   {
     "issuer_cik": "1502292",
@@ -63,6 +63,11 @@
     "issuer_cik": "1844971",
     "name": "Vulcan Infrastructure & Power Inc.",
     "ticker": "GREE"
+  },
+  {
+    "issuer_cik": "1468327",
+    "name": "Rent the Runway, Inc.",
+    "ticker": "RENT"
   },
   {
     "issuer_cik": "2035989",
@@ -110,6 +115,11 @@
     "ticker": "WVVI"
   },
   {
+    "issuer_cik": "726854",
+    "name": "CITY HOLDING CO",
+    "ticker": "CHCO"
+  },
+  {
     "issuer_cik": "1715497",
     "name": "Borr Drilling Ltd",
     "ticker": "BORR"
@@ -128,6 +138,11 @@
     "issuer_cik": "2007919",
     "name": "Inhibrx Biosciences, Inc.",
     "ticker": "INBX"
+  },
+  {
+    "issuer_cik": "2114459",
+    "name": "Cascade Real Assets Fund",
+    "ticker": "CRAFX"
   },
   {
     "issuer_cik": "917251",
@@ -173,11 +188,6 @@
     "issuer_cik": "1839530",
     "name": "XBP Global Holdings, Inc.",
     "ticker": "XBP"
-  },
-  {
-    "issuer_cik": "1488139",
-    "name": "Ameresco, Inc.",
-    "ticker": "AMRC"
   },
   {
     "issuer_cik": "67215",
@@ -235,6 +245,11 @@
     "ticker": "SWZ"
   },
   {
+    "issuer_cik": "1339688",
+    "name": "Lion Copper Corp.",
+    "ticker": "LCU"
+  },
+  {
     "issuer_cik": "1868995",
     "name": "CI&T Inc",
     "ticker": "CINT"
@@ -263,16 +278,6 @@
     "issuer_cik": "1928446",
     "name": "Granite Ridge Resources, Inc.",
     "ticker": "GRNT"
-  },
-  {
-    "issuer_cik": "88000",
-    "name": "Horizon Kinetics Holding Corp",
-    "ticker": "HKHC"
-  },
-  {
-    "issuer_cik": "723188",
-    "name": "COMMUNITY FINANCIAL SYSTEM, INC.",
-    "ticker": "CBU"
   },
   {
     "issuer_cik": "1046179",
