@@ -432,7 +432,7 @@
   "1156375": {
     "name": "CME GROUP INC.",
     "sic_description": "Security & Commodity Brokers, Dealers, Exchanges & Services",
-    "summary": null
+    "summary": "선물·옵션 등을 거래하는 파생상품 거래소"
   },
   "1158114": {
     "name": "APPLIED OPTOELECTRONICS, INC.",
@@ -977,7 +977,7 @@
   "1467373": {
     "name": "Accenture plc",
     "sic_description": "Services-Business Services, NEC",
-    "summary": null
+    "summary": "기업 컨설팅·기술 서비스를 제공하는 회사"
   },
   "1467623": {
     "name": "DROPBOX, INC.",
@@ -3542,7 +3542,7 @@
   "876167": {
     "name": "PROGRESS SOFTWARE CORP /MA",
     "sic_description": "Services-Prepackaged Software",
-    "summary": null
+    "summary": "기업용 소프트웨어를 만드는 회사"
   },
   "876437": {
     "name": "MGIC INVESTMENT CORP",
