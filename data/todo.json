@@ -1,19 +1,9 @@
 {
   "companies": [
     {
-      "cik": "1468327",
-      "name": "Rent the Runway, Inc.",
-      "sic_description": "Retail-Retail Stores, NEC"
-    },
-    {
       "cik": "40417",
       "name": "GENERAL AMERICAN INVESTORS CO INC",
       "sic_description": ""
-    },
-    {
-      "cik": "726854",
-      "name": "CITY HOLDING CO",
-      "sic_description": "National Commercial Banks"
     },
     {
       "cik": "1551047",
@@ -34,66 +24,9 @@
       "cik": "813623",
       "name": "Total Return Securities Fund",
       "sic_description": ""
-    },
-    {
-      "cik": "1339688",
-      "name": "Lion Copper Corp.",
-      "sic_description": "Metal Mining"
-    },
-    {
-      "cik": "86312",
-      "name": "TRAVELERS COMPANIES, INC.",
-      "sic_description": "Fire, Marine & Casualty Insurance"
-    },
-    {
-      "cik": "1177394",
-      "name": "TD SYNNEX CORP",
-      "sic_description": "Wholesale-Computers & Peripheral Equipment & Software"
-    },
-    {
-      "cik": "2099039",
-      "name": "Wise Group plc",
-      "sic_description": "Services-Business Services, NEC"
     }
   ],
-  "industries": [
-    "Retail-Retail Stores, NEC"
-  ],
-  "names": [
-    {
-      "n": "Elevance Health, Inc.",
-      "t": "ELV"
-    },
-    {
-      "n": "WINMARK CORP",
-      "t": "WINA"
-    },
-    {
-      "n": "PEOPLES BANCORP INC",
-      "t": "PEBO"
-    },
-    {
-      "n": "CLEVELAND-CLIFFS INC.",
-      "t": "CLF"
-    },
-    {
-      "n": "AGIOS PHARMACEUTICALS, INC.",
-      "t": "AGIO"
-    },
-    {
-      "n": "MSC INDUSTRIAL DIRECT CO INC",
-      "t": "MSM"
-    },
-    {
-      "n": "FIRST FINANCIAL CORP /IN/",
-      "t": "THFF"
-    }
-  ],
-  "titles": [
-    "EVP & Co-Chief Invest. Officer",
-    "EVP & Pres., Bond & Spec. Ins.",
-    "EVP & President, Business Ins.",
-    "EVP,  Community Banking",
-    "VICE CHAIR,CHIEF LENDING OFC"
-  ]
+  "industries": [],
+  "names": [],
+  "titles": []
 }

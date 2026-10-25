@@ -70,24 +70,19 @@
     "ticker": "RENT"
   },
   {
-    "issuer_cik": "2035989",
-    "name": "Amrize Ltd",
-    "ticker": "AMRZ"
-  },
-  {
     "issuer_cik": "1641614",
     "name": "CPI Card Group Inc.",
     "ticker": "PMTS"
   },
   {
-    "issuer_cik": "1505732",
-    "name": "Bankwell Financial Group, Inc.",
-    "ticker": "BWFG"
-  },
-  {
     "issuer_cik": "40417",
     "name": "GENERAL AMERICAN INVESTORS CO INC",
     "ticker": "GAM"
+  },
+  {
+    "issuer_cik": "1505732",
+    "name": "Bankwell Financial Group, Inc.",
+    "ticker": "BWFG"
   },
   {
     "issuer_cik": "826675",
@@ -155,11 +150,6 @@
     "ticker": "BWMX"
   },
   {
-    "issuer_cik": "1378950",
-    "name": "CarParts.com, Inc.",
-    "ticker": "PRTS"
-  },
-  {
     "issuer_cik": "711404",
     "name": "COOPER COMPANIES, INC.",
     "ticker": "COO"
@@ -223,11 +213,6 @@
     "issuer_cik": "101538",
     "name": "UNITED STATES ANTIMONY CORP",
     "ticker": "UAMY"
-  },
-  {
-    "issuer_cik": "1982518",
-    "name": "Smith Douglas Homes Corp.",
-    "ticker": "SDHC"
   },
   {
     "issuer_cik": "1841761",
