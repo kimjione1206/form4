@@ -15,11 +15,6 @@
     "ticker": "HEI, HEI.A"
   },
   {
-    "issuer_cik": "1089063",
-    "name": "DICK'S SPORTING GOODS, INC.",
-    "ticker": "DKS"
-  },
-  {
     "issuer_cik": "1386716",
     "name": "Star Bulk Carriers Corp.",
     "ticker": "SBLK"
@@ -43,6 +38,11 @@
     "issuer_cik": "1326380",
     "name": "GameStop Corp.",
     "ticker": "GME"
+  },
+  {
+    "issuer_cik": "1089063",
+    "name": "DICK'S SPORTING GOODS, INC.",
+    "ticker": "DKS"
   },
   {
     "issuer_cik": "1502292",
@@ -198,11 +198,6 @@
     "issuer_cik": "2020932",
     "name": "AgomAb Therapeutics NV",
     "ticker": "AGMB"
-  },
-  {
-    "issuer_cik": "2058758",
-    "name": "Avidia Bancorp, Inc.",
-    "ticker": "AVBC"
   },
   {
     "issuer_cik": "1095435",
