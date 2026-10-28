@@ -21,12 +21,78 @@
       "sic_description": ""
     },
     {
+      "cik": "94344",
+      "name": "STEWART INFORMATION SERVICES CORP",
+      "sic_description": "Title Insurance"
+    },
+    {
       "cik": "813623",
       "name": "Total Return Securities Fund",
       "sic_description": ""
+    },
+    {
+      "cik": "62709",
+      "name": "MARSH & MCLENNAN COMPANIES, INC.",
+      "sic_description": "Insurance Agents, Brokers & Service"
+    },
+    {
+      "cik": "943819",
+      "name": "RESMED INC",
+      "sic_description": "Surgical & Medical Instruments & Apparatus"
     }
   ],
-  "industries": [],
-  "names": [],
-  "titles": []
+  "industries": [
+    "Title Insurance"
+  ],
+  "names": [
+    {
+      "n": "CHECK POINT SOFTWARE TECHNOLOGIES LTD",
+      "t": "CHKP"
+    },
+    {
+      "n": "SELECTIVE INSURANCE GROUP INC",
+      "t": "SIGI"
+    },
+    {
+      "n": "EASTGROUP PROPERTIES INC",
+      "t": "EGP"
+    },
+    {
+      "n": "Atlantic Union Bankshares Corp",
+      "t": "AUB"
+    },
+    {
+      "n": "Beacon Financial Corp",
+      "t": "BBT"
+    },
+    {
+      "n": "Third Coast Bancshares, Inc.",
+      "t": "TCBX"
+    },
+    {
+      "n": "Robinhood Ventures Fund II",
+      "t": "RVII"
+    },
+    {
+      "n": "Robinhood Ventures Fund I",
+      "t": "RVI"
+    },
+    {
+      "n": "CAPITAL CITY BANK GROUP INC",
+      "t": "CCBG"
+    },
+    {
+      "n": "XAI Floating Rate & Alternative Income Trust",
+      "t": "XFLT"
+    }
+  ],
+  "titles": [
+    "Chief Innov. & Tech Officer",
+    "EVP - Chief Strategy Officer",
+    "Executive Vice President, CFO",
+    "President & CEO, Marsh RE",
+    "President, Network Solutions",
+    "SVP Chief Human Resources Offi",
+    "SVP and Pres, Optimized LED"
+  ]
 }

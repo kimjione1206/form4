@@ -40,11 +40,6 @@
     "ticker": "GME"
   },
   {
-    "issuer_cik": "1089063",
-    "name": "DICK'S SPORTING GOODS, INC.",
-    "ticker": "DKS"
-  },
-  {
     "issuer_cik": "1502292",
     "name": "Presurance Holdings, Inc.",
     "ticker": "PRHI"
@@ -68,6 +63,11 @@
     "issuer_cik": "1468327",
     "name": "Rent the Runway, Inc.",
     "ticker": "RENT"
+  },
+  {
+    "issuer_cik": "1089063",
+    "name": "DICK'S SPORTING GOODS, INC.",
+    "ticker": "DKS"
   },
   {
     "issuer_cik": "1641614",
@@ -208,6 +208,11 @@
     "issuer_cik": "101538",
     "name": "UNITED STATES ANTIMONY CORP",
     "ticker": "UAMY"
+  },
+  {
+    "issuer_cik": "94344",
+    "name": "STEWART INFORMATION SERVICES CORP",
+    "ticker": "STC"
   },
   {
     "issuer_cik": "1841761",
