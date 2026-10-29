@@ -16,14 +16,14 @@
       "sic_description": ""
     },
     {
+      "cik": "1336706",
+      "name": "NORTHPOINTE BANCSHARES INC",
+      "sic_description": "State Commercial Banks"
+    },
+    {
       "cik": "1510599",
       "name": "PIMCO Dynamic Income Fund",
       "sic_description": ""
-    },
-    {
-      "cik": "94344",
-      "name": "STEWART INFORMATION SERVICES CORP",
-      "sic_description": "Title Insurance"
     },
     {
       "cik": "813623",
@@ -31,68 +31,87 @@
       "sic_description": ""
     },
     {
-      "cik": "62709",
-      "name": "MARSH & MCLENNAN COMPANIES, INC.",
-      "sic_description": "Insurance Agents, Brokers & Service"
+      "cik": "1228627",
+      "name": "Opus Genetics, Inc.",
+      "sic_description": "Pharmaceutical Preparations"
     },
     {
-      "cik": "943819",
-      "name": "RESMED INC",
-      "sic_description": "Surgical & Medical Instruments & Apparatus"
+      "cik": "1014473",
+      "name": "VERISIGN INC/CA",
+      "sic_description": "Services-Computer Programming Services"
+    },
+    {
+      "cik": "1120193",
+      "name": "NASDAQ, INC.",
+      "sic_description": "Security & Commodity Brokers, Dealers, Exchanges & Services"
+    },
+    {
+      "cik": "1341170",
+      "name": "EUROSEAS LTD.",
+      "sic_description": "Deep Sea Foreign Transportation of  Freight"
     }
   ],
-  "industries": [
-    "Title Insurance"
-  ],
+  "industries": [],
   "names": [
     {
-      "n": "CHECK POINT SOFTWARE TECHNOLOGIES LTD",
-      "t": "CHKP"
+      "n": "Stride, Inc.",
+      "t": "LRN"
     },
     {
-      "n": "SELECTIVE INSURANCE GROUP INC",
-      "t": "SIGI"
+      "n": "Scholar Rock Holding Corp",
+      "t": "SRRK"
     },
     {
-      "n": "EASTGROUP PROPERTIES INC",
-      "t": "EGP"
+      "n": "BENTLEY SYSTEMS INC",
+      "t": "BSY"
     },
     {
-      "n": "Atlantic Union Bankshares Corp",
-      "t": "AUB"
+      "n": "ROPER TECHNOLOGIES INC",
+      "t": "ROP"
     },
     {
-      "n": "Beacon Financial Corp",
-      "t": "BBT"
+      "n": "HONEYWELL INTERNATIONAL INC",
+      "t": "HON"
     },
     {
-      "n": "Third Coast Bancshares, Inc.",
-      "t": "TCBX"
+      "n": "Pluri Inc.",
+      "t": "PLUR"
     },
     {
-      "n": "Robinhood Ventures Fund II",
-      "t": "RVII"
+      "n": "AI OKTO Corp.",
+      "t": "AIOK"
     },
     {
-      "n": "Robinhood Ventures Fund I",
-      "t": "RVI"
+      "n": "NICOLET BANKSHARES INC",
+      "t": "NIC"
     },
     {
-      "n": "CAPITAL CITY BANK GROUP INC",
-      "t": "CCBG"
+      "n": "TIPTREE INC.",
+      "t": "TIPT"
     },
     {
-      "n": "XAI Floating Rate & Alternative Income Trust",
-      "t": "XFLT"
+      "n": "HEALTHCARE SERVICES GROUP INC",
+      "t": "HCSG"
+    },
+    {
+      "n": "ConnectOne Bancorp, Inc.",
+      "t": "CNOB"
+    },
+    {
+      "n": "Ategrity Specialty Insurance Co Holdings",
+      "t": "ASIC"
     }
   ],
   "titles": [
-    "Chief Innov. & Tech Officer",
-    "EVP - Chief Strategy Officer",
-    "Executive Vice President, CFO",
-    "President & CEO, Marsh RE",
-    "President, Network Solutions",
-    "SVP Chief Human Resources Offi",
-    "SVP and Pres, Optimized LED"
+    "Bank President",
+    "Director, President, CEO, CIO",
+    "EVP - Technology & CSO",
+    "EVP/Gen. Counsel/Corp. Secty.",
+    "Pres. Market Platforms",
+    "President and CFO",
+    "President-Intl & SVP-Allegion",
+    "SVP-Chief Info. & Digital Ofr",
+    "SrVP, General Counsel, CorpSec",
+    "Treasurer, CAO & CFO"
   ]
 }

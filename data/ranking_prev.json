@@ -40,6 +40,11 @@
     "ticker": "GME"
   },
   {
+    "issuer_cik": "94344",
+    "name": "STEWART INFORMATION SERVICES CORP",
+    "ticker": "STC"
+  },
+  {
     "issuer_cik": "1502292",
     "name": "Presurance Holdings, Inc.",
     "ticker": "PRHI"
@@ -140,6 +145,11 @@
     "ticker": "CRAFX"
   },
   {
+    "issuer_cik": "1336706",
+    "name": "NORTHPOINTE BANCSHARES INC",
+    "ticker": "NPB"
+  },
+  {
     "issuer_cik": "917251",
     "name": "AGREE REALTY CORP",
     "ticker": "ADC"
@@ -170,11 +180,6 @@
     "ticker": "FGBI"
   },
   {
-    "issuer_cik": "1840572",
-    "name": "Lucky Strike Entertainment Corp",
-    "ticker": "LUCK"
-  },
-  {
     "issuer_cik": "1839530",
     "name": "XBP Global Holdings, Inc.",
     "ticker": "XBP"
@@ -203,16 +208,6 @@
     "issuer_cik": "1095435",
     "name": "Alpha Compute Corp",
     "ticker": "ALP"
-  },
-  {
-    "issuer_cik": "101538",
-    "name": "UNITED STATES ANTIMONY CORP",
-    "ticker": "UAMY"
-  },
-  {
-    "issuer_cik": "94344",
-    "name": "STEWART INFORMATION SERVICES CORP",
-    "ticker": "STC"
   },
   {
     "issuer_cik": "1841761",
