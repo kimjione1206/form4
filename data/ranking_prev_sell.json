@@ -60,6 +60,11 @@
     "ticker": "OKLO"
   },
   {
+    "issuer_cik": "2030781",
+    "name": "SailPoint, Inc.",
+    "ticker": "SAIL"
+  },
+  {
     "issuer_cik": "1819848",
     "name": "Joby Aviation, Inc.",
     "ticker": "JOBY"
@@ -100,6 +105,11 @@
     "ticker": "P"
   },
   {
+    "issuer_cik": "86312",
+    "name": "TRAVELERS COMPANIES, INC.",
+    "ticker": "TRV"
+  },
+  {
     "issuer_cik": "1795586",
     "name": "Chime Financial, Inc.",
     "ticker": "CHYM"
@@ -120,11 +130,6 @@
     "ticker": "ROKU"
   },
   {
-    "issuer_cik": "2030781",
-    "name": "SailPoint, Inc.",
-    "ticker": "SAIL"
-  },
-  {
     "issuer_cik": "2011641",
     "name": "Ferguson Enterprises Inc. /DE/",
     "ticker": "FERG"
@@ -138,6 +143,16 @@
     "issuer_cik": "1005731",
     "name": "IDT CORP",
     "ticker": "IDT"
+  },
+  {
+    "issuer_cik": "1384101",
+    "name": "VERACYTE, INC.",
+    "ticker": "VCYT"
+  },
+  {
+    "issuer_cik": "1837240",
+    "name": "Symbotic Inc.",
+    "ticker": "SYM"
   },
   {
     "issuer_cik": "1640428",
@@ -173,11 +188,6 @@
     "issuer_cik": "1807794",
     "name": "Credo Technology Group Holding Ltd",
     "ticker": "CRDO"
-  },
-  {
-    "issuer_cik": "86312",
-    "name": "TRAVELERS COMPANIES, INC.",
-    "ticker": "TRV"
   },
   {
     "issuer_cik": "1642896",
@@ -300,11 +310,6 @@
     "ticker": "BBNX"
   },
   {
-    "issuer_cik": "1384101",
-    "name": "VERACYTE, INC.",
-    "ticker": "VCYT"
-  },
-  {
     "issuer_cik": "1422143",
     "name": "Kura Oncology, Inc.",
     "ticker": "KURA"
@@ -323,6 +328,11 @@
     "issuer_cik": "1253689",
     "name": "CRESCENT BIOPHARMA, INC.",
     "ticker": "CBIO"
+  },
+  {
+    "issuer_cik": "1326801",
+    "name": "Meta Platforms, Inc.",
+    "ticker": "META"
   },
   {
     "issuer_cik": "1703399",
@@ -413,6 +423,11 @@
     "issuer_cik": "1851112",
     "name": "RISKIFIED LTD.",
     "ticker": "RSKD"
+  },
+  {
+    "issuer_cik": "846617",
+    "name": "Dime Commercial Bancshares, Inc. /NY/",
+    "ticker": "DCOM"
   },
   {
     "issuer_cik": "1370637",
@@ -573,11 +588,6 @@
     "issuer_cik": "1604821",
     "name": "Natera, Inc.",
     "ticker": "NTRA"
-  },
-  {
-    "issuer_cik": "1326801",
-    "name": "Meta Platforms, Inc.",
-    "ticker": "META"
   },
   {
     "issuer_cik": "1616707",
@@ -795,14 +805,14 @@
     "ticker": "CBL"
   },
   {
-    "issuer_cik": "1393052",
-    "name": "VEEVA SYSTEMS INC",
-    "ticker": "VEEV"
-  },
-  {
     "issuer_cik": "1818383",
     "name": "MediaAlpha, Inc.",
     "ticker": "MAX"
+  },
+  {
+    "issuer_cik": "1393052",
+    "name": "VEEVA SYSTEMS INC",
+    "ticker": "VEEV"
   },
   {
     "issuer_cik": "1327811",
@@ -845,6 +855,11 @@
     "ticker": "RXT"
   },
   {
+    "issuer_cik": "1462120",
+    "name": "Live Oak Bancshares, Inc.",
+    "ticker": "LOB"
+  },
+  {
     "issuer_cik": "1861107",
     "name": "Ceribell, Inc.",
     "ticker": "CBLL"
@@ -880,6 +895,11 @@
     "ticker": "VSAT"
   },
   {
+    "issuer_cik": "1093557",
+    "name": "DEXCOM INC",
+    "ticker": "DXCM"
+  },
+  {
     "issuer_cik": "1459839",
     "name": "SI-BONE, Inc.",
     "ticker": "SIBN"
@@ -893,11 +913,6 @@
     "issuer_cik": "1694426",
     "name": "Delek US Holdings, Inc.",
     "ticker": "DK"
-  },
-  {
-    "issuer_cik": "1093557",
-    "name": "DEXCOM INC",
-    "ticker": "DXCM"
   },
   {
     "issuer_cik": "1611115",
@@ -1165,6 +1180,11 @@
     "ticker": "IRM"
   },
   {
+    "issuer_cik": "1014473",
+    "name": "VERISIGN INC/CA",
+    "ticker": "VRSN"
+  },
+  {
     "issuer_cik": "889900",
     "name": "PATTERSON UTI ENERGY INC",
     "ticker": "PTEN"
@@ -1178,11 +1198,6 @@
     "issuer_cik": "1478320",
     "name": "Adaptive Biotechnologies Corp",
     "ticker": "ADPT"
-  },
-  {
-    "issuer_cik": "1014473",
-    "name": "VERISIGN INC/CA",
-    "ticker": "VRSN"
   },
   {
     "issuer_cik": "1793659",
@@ -1330,14 +1345,14 @@
     "ticker": "TDW"
   },
   {
-    "issuer_cik": "1047335",
-    "name": "NATIONAL HEALTHCARE CORP",
-    "ticker": "NHC"
-  },
-  {
     "issuer_cik": "1565687",
     "name": "Intapp, Inc.",
     "ticker": "INTA"
+  },
+  {
+    "issuer_cik": "1047335",
+    "name": "NATIONAL HEALTHCARE CORP",
+    "ticker": "NHC"
   },
   {
     "issuer_cik": "1571949",
@@ -1415,11 +1430,6 @@
     "ticker": "VTOL"
   },
   {
-    "issuer_cik": "1462120",
-    "name": "Live Oak Bancshares, Inc.",
-    "ticker": "LOB"
-  },
-  {
     "issuer_cik": "1315098",
     "name": "Roblox Corp",
     "ticker": "RBLX"
@@ -1460,6 +1470,11 @@
     "ticker": "WSE"
   },
   {
+    "issuer_cik": "1069258",
+    "name": "KRATOS DEFENSE & SECURITY SOLUTIONS, INC.",
+    "ticker": "KTOS"
+  },
+  {
     "issuer_cik": "80420",
     "name": "POWELL INDUSTRIES INC",
     "ticker": "POWL"
@@ -1493,11 +1508,6 @@
     "issuer_cik": "703351",
     "name": "BRINKER INTERNATIONAL, INC",
     "ticker": "EAT"
-  },
-  {
-    "issuer_cik": "1069258",
-    "name": "KRATOS DEFENSE & SECURITY SOLUTIONS, INC.",
-    "ticker": "KTOS"
   },
   {
     "issuer_cik": "1598665",
@@ -1543,11 +1553,6 @@
     "issuer_cik": "1484778",
     "name": "ThredUp Inc.",
     "ticker": "TDUP"
-  },
-  {
-    "issuer_cik": "1837240",
-    "name": "Symbotic Inc.",
-    "ticker": "SYM"
   },
   {
     "issuer_cik": "880266",

@@ -6,6 +6,11 @@
       "sic_description": ""
     },
     {
+      "cik": "1108134",
+      "name": "Beacon Financial Corp",
+      "sic_description": "Savings Institutions, Not Federally Chartered"
+    },
+    {
       "cik": "1551047",
       "name": "Bluerock Private Real Estate Fund",
       "sic_description": ""
@@ -14,11 +19,6 @@
       "cik": "2114459",
       "name": "Cascade Real Assets Fund",
       "sic_description": ""
-    },
-    {
-      "cik": "1336706",
-      "name": "NORTHPOINTE BANCSHARES INC",
-      "sic_description": "State Commercial Banks"
     },
     {
       "cik": "1510599",
@@ -31,87 +31,63 @@
       "sic_description": ""
     },
     {
-      "cik": "1228627",
-      "name": "Opus Genetics, Inc.",
-      "sic_description": "Pharmaceutical Preparations"
-    },
-    {
-      "cik": "1014473",
-      "name": "VERISIGN INC/CA",
-      "sic_description": "Services-Computer Programming Services"
-    },
-    {
-      "cik": "1120193",
-      "name": "NASDAQ, INC.",
-      "sic_description": "Security & Commodity Brokers, Dealers, Exchanges & Services"
-    },
-    {
-      "cik": "1341170",
-      "name": "EUROSEAS LTD.",
-      "sic_description": "Deep Sea Foreign Transportation of  Freight"
+      "cik": "846617",
+      "name": "Dime Commercial Bancshares, Inc. /NY/",
+      "sic_description": "National Commercial Banks"
     }
   ],
   "industries": [],
   "names": [
     {
-      "n": "Stride, Inc.",
-      "t": "LRN"
+      "n": "RYDER SYSTEM INC",
+      "t": "R"
     },
     {
-      "n": "Scholar Rock Holding Corp",
-      "t": "SRRK"
+      "n": "FIFTH THIRD BANCORP",
+      "t": "FITB"
     },
     {
-      "n": "BENTLEY SYSTEMS INC",
-      "t": "BSY"
+      "n": "CSX CORP",
+      "t": "CSX"
     },
     {
-      "n": "ROPER TECHNOLOGIES INC",
-      "t": "ROP"
+      "n": "XBiotech Inc.",
+      "t": "XBIT"
     },
     {
-      "n": "HONEYWELL INTERNATIONAL INC",
-      "t": "HON"
+      "n": "HUNTINGTON BANCSHARES INC /MD/",
+      "t": "HBAN"
     },
     {
-      "n": "Pluri Inc.",
-      "t": "PLUR"
+      "n": "APOGEE ENTERPRISES, INC.",
+      "t": "APOG"
     },
     {
-      "n": "AI OKTO Corp.",
-      "t": "AIOK"
+      "n": "HYCROFT MINING HOLDING CORP",
+      "t": "HYMC"
     },
     {
-      "n": "NICOLET BANKSHARES INC",
-      "t": "NIC"
+      "n": "WASHINGTON TRUST BANCORP INC",
+      "t": "WASH"
     },
     {
-      "n": "TIPTREE INC.",
-      "t": "TIPT"
-    },
-    {
-      "n": "HEALTHCARE SERVICES GROUP INC",
-      "t": "HCSG"
-    },
-    {
-      "n": "ConnectOne Bancorp, Inc.",
-      "t": "CNOB"
-    },
-    {
-      "n": "Ategrity Specialty Insurance Co Holdings",
-      "t": "ASIC"
+      "n": "Rallybio Corp",
+      "t": "RLYB"
     }
   ],
   "titles": [
-    "Bank President",
-    "Director, President, CEO, CIO",
-    "EVP - Technology & CSO",
-    "EVP/Gen. Counsel/Corp. Secty.",
-    "Pres. Market Platforms",
-    "President and CFO",
-    "President-Intl & SVP-Allegion",
-    "SVP-Chief Info. & Digital Ofr",
-    "SrVP, General Counsel, CorpSec",
-    "Treasurer, CAO & CFO"
+    "CEO Americas Kloeckner Metals",
+    "Chief Technology & Ops Officer",
+    "EVP & Chief Tech & Ops Officer",
+    "EVP General Counsel & Corp Sec",
+    "EVP and Chief Risk Officer",
+    "EVP, Chief Legal Officer & Sec",
+    "Exec. VP, COO",
+    "Exec. VP, Operations",
+    "Executive Vice President*",
+    "President, Architectural Serv",
+    "SR VP Chief Accounting Officer",
+    "SVP, Commercial",
+    "SVP, Retail Operations & Sales"
   ]
 }
