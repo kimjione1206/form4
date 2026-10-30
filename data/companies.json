@@ -377,7 +377,7 @@
   "1108134": {
     "name": "Beacon Financial Corp",
     "sic_description": "Savings Institutions, Not Federally Chartered",
-    "summary": null
+    "summary": "은행과 자산관리 서비스를 하는 금융지주회사"
   },
   "1109138": {
     "name": "CAMTEK LTD",
@@ -3542,7 +3542,7 @@
   "846617": {
     "name": "Dime Commercial Bancshares, Inc. /NY/",
     "sic_description": "National Commercial Banks",
-    "summary": null
+    "summary": "상업은행을 거느린 금융지주회사"
   },
   "849145": {
     "name": "Heritage Global Inc.",
