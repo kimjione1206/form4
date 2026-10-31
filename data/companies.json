@@ -1259,6 +1259,11 @@
     "sic_description": "Mining & Quarrying of  Nonmetallic Minerals (No Fuels)",
     "summary": "모래를 채굴하는 회사"
   },
+  "1529864": {
+    "name": "Enova International, Inc.",
+    "sic_description": "Personal Credit Institutions",
+    "summary": null
+  },
   "1530979": {
     "name": "Honest Company, Inc.",
     "sic_description": "Retail-Catalog & Mail-Order Houses",
@@ -2284,6 +2289,11 @@
     "sic_description": "X-Ray Apparatus & Tubes & Related Irradiation Apparatus",
     "summary": "휴대용 초음파 기기를 만드는 회사"
   },
+  "1805077": {
+    "name": "Eos Energy Enterprises, Inc.",
+    "sic_description": "Miscellaneous Electrical Machinery, Equipment & Supplies",
+    "summary": null
+  },
   "1805385": {
     "name": "Evolv Technologies Holdings, Inc.",
     "sic_description": "Computer Peripheral Equipment, NEC",
@@ -2958,6 +2968,11 @@
     "name": "Cardinal Infrastructure Group Inc.",
     "sic_description": "Heavy Construction Other Than Bldg Const - Contractors",
     "summary": "토목·인프라 공사 회사"
+  },
+  "2082866": {
+    "name": "Pinnacle Financial Partners, Inc.",
+    "sic_description": "National Commercial Banks",
+    "summary": null
   },
   "2089975": {
     "name": "HPS Real Assets Lending Co LP",
@@ -3873,6 +3888,11 @@
     "name": "TERADYNE, INC",
     "sic_description": "Instruments For Meas & Testing of  Electricity & Elec Signals",
     "summary": "반도체 검사 장비를 만드는 회사"
+  },
+  "97476": {
+    "name": "TEXAS INSTRUMENTS INC",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
   },
   "97745": {
     "name": "THERMO FISHER SCIENTIFIC INC.",

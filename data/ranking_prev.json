@@ -45,6 +45,11 @@
     "ticker": "STC"
   },
   {
+    "issuer_cik": "1108134",
+    "name": "Beacon Financial Corp",
+    "ticker": "BBT"
+  },
+  {
     "issuer_cik": "1502292",
     "name": "Presurance Holdings, Inc.",
     "ticker": "PRHI"
@@ -68,6 +73,11 @@
     "issuer_cik": "1468327",
     "name": "Rent the Runway, Inc.",
     "ticker": "RENT"
+  },
+  {
+    "issuer_cik": "1336706",
+    "name": "NORTHPOINTE BANCSHARES INC",
+    "ticker": "NPB"
   },
   {
     "issuer_cik": "1089063",
@@ -98,11 +108,6 @@
     "issuer_cik": "715446",
     "name": "Anixa Biosciences Inc",
     "ticker": "ANIX"
-  },
-  {
-    "issuer_cik": "1108134",
-    "name": "Beacon Financial Corp",
-    "ticker": "BBT"
   },
   {
     "issuer_cik": "1963088",
@@ -150,11 +155,6 @@
     "ticker": "CRAFX"
   },
   {
-    "issuer_cik": "1336706",
-    "name": "NORTHPOINTE BANCSHARES INC",
-    "ticker": "NPB"
-  },
-  {
     "issuer_cik": "917251",
     "name": "AGREE REALTY CORP",
     "ticker": "ADC"
@@ -173,6 +173,11 @@
     "issuer_cik": "1341766",
     "name": "Celsius Holdings, Inc.",
     "ticker": "CELH"
+  },
+  {
+    "issuer_cik": "2082866",
+    "name": "Pinnacle Financial Partners, Inc.",
+    "ticker": "PNFP"
   },
   {
     "issuer_cik": "2040127",

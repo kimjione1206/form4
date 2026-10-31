@@ -6,11 +6,6 @@
       "sic_description": ""
     },
     {
-      "cik": "1108134",
-      "name": "Beacon Financial Corp",
-      "sic_description": "Savings Institutions, Not Federally Chartered"
-    },
-    {
       "cik": "1551047",
       "name": "Bluerock Private Real Estate Fund",
       "sic_description": ""
@@ -19,6 +14,11 @@
       "cik": "2114459",
       "name": "Cascade Real Assets Fund",
       "sic_description": ""
+    },
+    {
+      "cik": "2082866",
+      "name": "Pinnacle Financial Partners, Inc.",
+      "sic_description": "National Commercial Banks"
     },
     {
       "cik": "1510599",
@@ -31,63 +31,87 @@
       "sic_description": ""
     },
     {
-      "cik": "846617",
-      "name": "Dime Commercial Bancshares, Inc. /NY/",
-      "sic_description": "National Commercial Banks"
+      "cik": "1529864",
+      "name": "Enova International, Inc.",
+      "sic_description": "Personal Credit Institutions"
+    },
+    {
+      "cik": "97476",
+      "name": "TEXAS INSTRUMENTS INC",
+      "sic_description": "Semiconductors & Related Devices"
+    },
+    {
+      "cik": "1805077",
+      "name": "Eos Energy Enterprises, Inc.",
+      "sic_description": "Miscellaneous Electrical Machinery, Equipment & Supplies"
     }
   ],
   "industries": [],
   "names": [
     {
-      "n": "RYDER SYSTEM INC",
-      "t": "R"
+      "n": "Xylem Inc.",
+      "t": "XYL"
     },
     {
-      "n": "FIFTH THIRD BANCORP",
-      "t": "FITB"
+      "n": "KEYCORP /NEW/",
+      "t": "KEY"
     },
     {
-      "n": "CSX CORP",
-      "t": "CSX"
+      "n": "GROUP 1 AUTOMOTIVE INC",
+      "t": "GPI"
     },
     {
-      "n": "XBiotech Inc.",
-      "t": "XBIT"
+      "n": "SIERRA BANCORP",
+      "t": "BSRR"
     },
     {
-      "n": "HUNTINGTON BANCSHARES INC /MD/",
-      "t": "HBAN"
+      "n": "CIRCLE8 GROUP INC",
+      "t": "CIRC"
     },
     {
-      "n": "APOGEE ENTERPRISES, INC.",
-      "t": "APOG"
+      "n": "Ermenegildo Zegna N.V.",
+      "t": "ZGN"
     },
     {
-      "n": "HYCROFT MINING HOLDING CORP",
-      "t": "HYMC"
+      "n": "REPUBLIC BANCORP INC /KY/",
+      "t": "RBCAA"
     },
     {
-      "n": "WASHINGTON TRUST BANCORP INC",
-      "t": "WASH"
+      "n": "UTAH MEDICAL PRODUCTS INC",
+      "t": "UTMD"
     },
     {
-      "n": "Rallybio Corp",
-      "t": "RLYB"
+      "n": "ARES CAPITAL CORP",
+      "t": "ARCC"
+    },
+    {
+      "n": "Elevra Lithium Ltd",
+      "t": "ELVR"
+    },
+    {
+      "n": "AUDIOEYE INC",
+      "t": "AEYE"
+    },
+    {
+      "n": "TANDEM DIABETES CARE INC",
+      "t": "TNDM"
+    },
+    {
+      "n": "BitVentures Ltd",
+      "t": "BVC"
+    },
+    {
+      "n": "SHORE BANCSHARES INC",
+      "t": "SHBI"
     }
   ],
   "titles": [
-    "CEO Americas Kloeckner Metals",
-    "Chief Technology & Ops Officer",
-    "EVP & Chief Tech & Ops Officer",
-    "EVP General Counsel & Corp Sec",
-    "EVP and Chief Risk Officer",
-    "EVP, Chief Legal Officer & Sec",
-    "Exec. VP, COO",
-    "Exec. VP, Operations",
-    "Executive Vice President*",
-    "President, Architectural Serv",
-    "SR VP Chief Accounting Officer",
-    "SVP, Commercial",
-    "SVP, Retail Operations & Sales"
+    "EVP and Chief Admin Officer",
+    "EVP, CHIEF INFORMATION OFFICER",
+    "Executive VP Engineering",
+    "Head of Institutional Bank",
+    "Pres Imaging Prtng & Solutions",
+    "SEC. AND CHIEF LEGAL OFFICER",
+    "SVP, Chief Legal Officer & Sec"
   ]
 }

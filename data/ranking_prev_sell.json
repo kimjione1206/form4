@@ -40,6 +40,11 @@
     "ticker": "DOCU"
   },
   {
+    "issuer_cik": "1877184",
+    "name": "KESTRA MEDICAL TECHNOLOGIES, LTD.",
+    "ticker": "KMTS"
+  },
+  {
     "issuer_cik": "1840706",
     "name": "SOPHiA GENETICS SA",
     "ticker": "SOPH"
@@ -55,6 +60,11 @@
     "ticker": "TVTX"
   },
   {
+    "issuer_cik": "86312",
+    "name": "TRAVELERS COMPANIES, INC.",
+    "ticker": "TRV"
+  },
+  {
     "issuer_cik": "1849056",
     "name": "Oklo Inc.",
     "ticker": "OKLO"
@@ -68,11 +78,6 @@
     "issuer_cik": "1819848",
     "name": "Joby Aviation, Inc.",
     "ticker": "JOBY"
-  },
-  {
-    "issuer_cik": "1877184",
-    "name": "KESTRA MEDICAL TECHNOLOGIES, LTD.",
-    "ticker": "KMTS"
   },
   {
     "issuer_cik": "1514416",
@@ -105,9 +110,9 @@
     "ticker": "P"
   },
   {
-    "issuer_cik": "86312",
-    "name": "TRAVELERS COMPANIES, INC.",
-    "ticker": "TRV"
+    "issuer_cik": "1604821",
+    "name": "Natera, Inc.",
+    "ticker": "NTRA"
   },
   {
     "issuer_cik": "1795586",
@@ -180,14 +185,14 @@
     "ticker": "AAPL"
   },
   {
-    "issuer_cik": "1581280",
-    "name": "Twist Bioscience Corp",
-    "ticker": "TWST"
-  },
-  {
     "issuer_cik": "1807794",
     "name": "Credo Technology Group Holding Ltd",
     "ticker": "CRDO"
+  },
+  {
+    "issuer_cik": "1581280",
+    "name": "Twist Bioscience Corp",
+    "ticker": "TWST"
   },
   {
     "issuer_cik": "1642896",
@@ -410,6 +415,11 @@
     "ticker": "COHR"
   },
   {
+    "issuer_cik": "846617",
+    "name": "Dime Commercial Bancshares, Inc. /NY/",
+    "ticker": "DCOM"
+  },
+  {
     "issuer_cik": "1177609",
     "name": "FIVE BELOW, INC",
     "ticker": "FIVE"
@@ -423,11 +433,6 @@
     "issuer_cik": "1851112",
     "name": "RISKIFIED LTD.",
     "ticker": "RSKD"
-  },
-  {
-    "issuer_cik": "846617",
-    "name": "Dime Commercial Bancshares, Inc. /NY/",
-    "ticker": "DCOM"
   },
   {
     "issuer_cik": "1370637",
@@ -585,11 +590,6 @@
     "ticker": "HNGE"
   },
   {
-    "issuer_cik": "1604821",
-    "name": "Natera, Inc.",
-    "ticker": "NTRA"
-  },
-  {
     "issuer_cik": "1616707",
     "name": "Wayfair Inc.",
     "ticker": "W"
@@ -633,6 +633,11 @@
     "issuer_cik": "1531152",
     "name": "BJ's Wholesale Club Holdings, Inc.",
     "ticker": "BJ"
+  },
+  {
+    "issuer_cik": "927628",
+    "name": "CAPITAL ONE FINANCIAL CORP",
+    "ticker": "COF"
   },
   {
     "issuer_cik": "2070849",
@@ -1080,6 +1085,11 @@
     "ticker": "VG"
   },
   {
+    "issuer_cik": "1651308",
+    "name": "BeOne Medicines Ltd.",
+    "ticker": "ONC"
+  },
+  {
     "issuer_cik": "2001184",
     "name": "PACS Group, Inc.",
     "ticker": "PACS"
@@ -1093,11 +1103,6 @@
     "issuer_cik": "1562088",
     "name": "Duolingo, Inc.",
     "ticker": "DUOL"
-  },
-  {
-    "issuer_cik": "1651308",
-    "name": "BeOne Medicines Ltd.",
-    "ticker": "ONC"
   },
   {
     "issuer_cik": "1682852",
@@ -1145,6 +1150,11 @@
     "ticker": "AXON"
   },
   {
+    "issuer_cik": "1529864",
+    "name": "Enova International, Inc.",
+    "ticker": "ENVA"
+  },
+  {
     "issuer_cik": "1786352",
     "name": "BILL Holdings, Inc.",
     "ticker": "BILL"
@@ -1175,6 +1185,11 @@
     "ticker": "HTFL"
   },
   {
+    "issuer_cik": "1478320",
+    "name": "Adaptive Biotechnologies Corp",
+    "ticker": "ADPT"
+  },
+  {
     "issuer_cik": "1020569",
     "name": "IRON MOUNTAIN INC",
     "ticker": "IRM"
@@ -1193,11 +1208,6 @@
     "issuer_cik": "1451809",
     "name": "SITIME Corp",
     "ticker": "SITM"
-  },
-  {
-    "issuer_cik": "1478320",
-    "name": "Adaptive Biotechnologies Corp",
-    "ticker": "ADPT"
   },
   {
     "issuer_cik": "1793659",
@@ -1285,6 +1295,11 @@
     "ticker": "VIAV"
   },
   {
+    "issuer_cik": "97476",
+    "name": "TEXAS INSTRUMENTS INC",
+    "ticker": "TXN"
+  },
+  {
     "issuer_cik": "1232524",
     "name": "Jazz Pharmaceuticals plc",
     "ticker": "JAZZ"
@@ -1360,11 +1375,6 @@
     "ticker": "ICE"
   },
   {
-    "issuer_cik": "927628",
-    "name": "CAPITAL ONE FINANCIAL CORP",
-    "ticker": "COF"
-  },
-  {
     "issuer_cik": "1447362",
     "name": "CASTLE BIOSCIENCES INC",
     "ticker": "CSTL"
@@ -1415,6 +1425,11 @@
     "ticker": "TILE"
   },
   {
+    "issuer_cik": "1120193",
+    "name": "NASDAQ, INC.",
+    "ticker": "NDAQ"
+  },
+  {
     "issuer_cik": "1467373",
     "name": "Accenture plc",
     "ticker": "ACN"
@@ -1435,11 +1450,6 @@
     "ticker": "RBLX"
   },
   {
-    "issuer_cik": "1120193",
-    "name": "NASDAQ, INC.",
-    "ticker": "NDAQ"
-  },
-  {
     "issuer_cik": "1652535",
     "name": "ICHOR HOLDINGS, LTD.",
     "ticker": "ICHR"
@@ -1458,6 +1468,11 @@
     "issuer_cik": "1086222",
     "name": "AKAMAI TECHNOLOGIES INC",
     "ticker": "AKAM"
+  },
+  {
+    "issuer_cik": "1805077",
+    "name": "Eos Energy Enterprises, Inc.",
+    "ticker": "EOSE"
   },
   {
     "issuer_cik": "31791",
@@ -1590,6 +1605,11 @@
     "ticker": "PGNY"
   },
   {
+    "issuer_cik": "1093672",
+    "name": "PEOPLES BANCORP OF NORTH CAROLINA INC",
+    "ticker": "PEBK"
+  },
+  {
     "issuer_cik": "1393584",
     "name": "American Well Corp",
     "ticker": "AMWL"
@@ -1598,11 +1618,6 @@
     "issuer_cik": "1645460",
     "name": "Cue Biopharma, Inc.",
     "ticker": "CUE"
-  },
-  {
-    "issuer_cik": "1093672",
-    "name": "PEOPLES BANCORP OF NORTH CAROLINA INC",
-    "ticker": "PEBK"
   },
   {
     "issuer_cik": "1658566",
