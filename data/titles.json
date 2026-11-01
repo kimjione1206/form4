@@ -1472,5 +1472,21 @@
   "co CFO": "공동 재무이사(CFO)",
   "executive vice president": "부사장",
   "president": "사장",
-  "president and CEO": "사장 겸 대표이사(CEO)"
+  "president and CEO": "사장 겸 대표이사(CEO)",
+  "Accounting Officer": "회계책임자",
+  "CEO - Moody's Ratings": "무디스 레이팅스 대표이사(CEO)",
+  "CFO, CAO, Corporate Secretary": "재무이사(CFO)·회계책임자·이사회 간사",
+  "Chair, CEO & President": "이사회 의장·대표이사(CEO)·사장",
+  "Chief Legal Officer & Sec": "법무책임자(CLO)·이사회 간사",
+  "Chief US Domestic Officer": "미국 내수 부문 총괄임원",
+  "EVP - Chief People Officer": "인사총괄 부사장(CPO)",
+  "EVP and Head of Corp Dev": "기업개발 총괄 부사장",
+  "EVP, Chief Admin Ofr, GC & Sec": "경영관리 총괄 부사장·법무총괄(GC)·이사회 간사",
+  "EVP, GENERAL COUNSEL": "법무총괄(GC) 부사장",
+  "EVP, Global Business Units": "글로벌 사업부문 총괄 부사장",
+  "EXEC VP, CFO": "재무이사(CFO)·수석 부사장",
+  "SVP & GM Transportation Bus.": "운송사업 총괄 전무·사업부장",
+  "SVP and Chief Revenue Officer": "영업총괄(CRO) 전무",
+  "SVP,  CLO & Secretary": "법무책임자(CLO)·이사회 간사·전무",
+  "Senior EVP & CFO": "재무이사(CFO)·수석 부사장"
 }
