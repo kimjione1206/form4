@@ -15,14 +15,14 @@
     "ticker": "HEI, HEI.A"
   },
   {
-    "issuer_cik": "1386716",
-    "name": "Star Bulk Carriers Corp.",
-    "ticker": "SBLK"
-  },
-  {
     "issuer_cik": "2012593",
     "name": "Rapport Therapeutics, Inc.",
     "ticker": "RAPP"
+  },
+  {
+    "issuer_cik": "1386716",
+    "name": "Star Bulk Carriers Corp.",
+    "ticker": "SBLK"
   },
   {
     "issuer_cik": "930236",
@@ -30,9 +30,9 @@
     "ticker": "RWT"
   },
   {
-    "issuer_cik": "1576789",
-    "name": "Wix.com Ltd.",
-    "ticker": "WIX"
+    "issuer_cik": "1108134",
+    "name": "Beacon Financial Corp",
+    "ticker": "BBT"
   },
   {
     "issuer_cik": "1326380",
@@ -43,11 +43,6 @@
     "issuer_cik": "94344",
     "name": "STEWART INFORMATION SERVICES CORP",
     "ticker": "STC"
-  },
-  {
-    "issuer_cik": "1108134",
-    "name": "Beacon Financial Corp",
-    "ticker": "BBT"
   },
   {
     "issuer_cik": "1502292",
@@ -155,14 +150,14 @@
     "ticker": "CRAFX"
   },
   {
-    "issuer_cik": "917251",
-    "name": "AGREE REALTY CORP",
-    "ticker": "ADC"
-  },
-  {
     "issuer_cik": "1788257",
     "name": "BETTERWARE DE MEXICO, S.A.P.I. DE C.V",
     "ticker": "BWMX"
+  },
+  {
+    "issuer_cik": "917251",
+    "name": "AGREE REALTY CORP",
+    "ticker": "ADC"
   },
   {
     "issuer_cik": "711404",
@@ -230,14 +225,14 @@
     "ticker": "RGCO"
   },
   {
-    "issuer_cik": "813623",
-    "name": "Total Return Securities Fund",
-    "ticker": "SWZ"
-  },
-  {
     "issuer_cik": "1339688",
     "name": "Lion Copper Corp.",
     "ticker": "LCU"
+  },
+  {
+    "issuer_cik": "813623",
+    "name": "Total Return Securities Fund",
+    "ticker": "SWZ"
   },
   {
     "issuer_cik": "1868995",

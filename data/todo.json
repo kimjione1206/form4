@@ -16,11 +16,6 @@
       "sic_description": ""
     },
     {
-      "cik": "2082866",
-      "name": "Pinnacle Financial Partners, Inc.",
-      "sic_description": "National Commercial Banks"
-    },
-    {
       "cik": "1510599",
       "name": "PIMCO Dynamic Income Fund",
       "sic_description": ""
@@ -31,87 +26,128 @@
       "sic_description": ""
     },
     {
-      "cik": "1529864",
-      "name": "Enova International, Inc.",
-      "sic_description": "Personal Credit Institutions"
+      "cik": "1585689",
+      "name": "Hilton Worldwide Holdings Inc.",
+      "sic_description": "Hotels & Motels"
     },
     {
-      "cik": "97476",
-      "name": "TEXAS INSTRUMENTS INC",
+      "cik": "1144215",
+      "name": "ACUITY INC. (DE)",
+      "sic_description": "Electric Lighting & Wiring Equipment"
+    },
+    {
+      "cik": "87347",
+      "name": "SLB LIMITED/NV",
+      "sic_description": "Oil & Gas Field Services, NEC"
+    },
+    {
+      "cik": "1114995",
+      "name": "IMPINJ INC",
+      "sic_description": "Electronic Components, NEC"
+    },
+    {
+      "cik": "1743725",
+      "name": "GRID DYNAMICS HOLDINGS, INC.",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "1130144",
+      "name": "SIERRA BANCORP",
+      "sic_description": "State Commercial Banks"
+    },
+    {
+      "cik": "1616533",
+      "name": "Penguin Solutions, Inc.",
       "sic_description": "Semiconductors & Related Devices"
-    },
-    {
-      "cik": "1805077",
-      "name": "Eos Energy Enterprises, Inc.",
-      "sic_description": "Miscellaneous Electrical Machinery, Equipment & Supplies"
     }
   ],
   "industries": [],
   "names": [
     {
-      "n": "Xylem Inc.",
-      "t": "XYL"
+      "n": "FEDEX CORP",
+      "t": "FDX"
     },
     {
-      "n": "KEYCORP /NEW/",
-      "t": "KEY"
+      "n": "DELTA AIR LINES, INC.",
+      "t": "DAL"
     },
     {
-      "n": "GROUP 1 AUTOMOTIVE INC",
-      "t": "GPI"
+      "n": "M/I HOMES, INC.",
+      "t": "MHO"
     },
     {
-      "n": "SIERRA BANCORP",
-      "t": "BSRR"
+      "n": "UNITED PARCEL SERVICE INC",
+      "t": "UPS"
     },
     {
-      "n": "CIRCLE8 GROUP INC",
-      "t": "CIRC"
+      "n": "Carnival Corp Ltd.",
+      "t": "CCL"
     },
     {
-      "n": "Ermenegildo Zegna N.V.",
-      "t": "ZGN"
+      "n": "LITTELFUSE INC /DE",
+      "t": "LFUS"
     },
     {
-      "n": "REPUBLIC BANCORP INC /KY/",
-      "t": "RBCAA"
+      "n": "ROYAL CARIBBEAN CRUISES LTD",
+      "t": "RCL"
     },
     {
-      "n": "UTAH MEDICAL PRODUCTS INC",
-      "t": "UTMD"
+      "n": "COLUMBIA BANKING SYSTEM, INC.",
+      "t": "COLB"
     },
     {
-      "n": "ARES CAPITAL CORP",
-      "t": "ARCC"
+      "n": "ANGIODYNAMICS INC",
+      "t": "ANGO"
     },
     {
-      "n": "Elevra Lithium Ltd",
-      "t": "ELVR"
+      "n": "BREAD FINANCIAL HOLDINGS, INC.",
+      "t": "BFH"
     },
     {
-      "n": "AUDIOEYE INC",
-      "t": "AEYE"
+      "n": "Syndax Pharmaceuticals Inc",
+      "t": "SNDX"
     },
     {
-      "n": "TANDEM DIABETES CARE INC",
-      "t": "TNDM"
+      "n": "ACADIA PHARMACEUTICALS INC",
+      "t": "ACAD"
     },
     {
-      "n": "BitVentures Ltd",
-      "t": "BVC"
+      "n": "ADAMS NATURAL RESOURCES FUND, INC.",
+      "t": "PEO"
     },
     {
-      "n": "SHORE BANCSHARES INC",
-      "t": "SHBI"
+      "n": "Oncotelic Therapeutics, Inc.",
+      "t": "OTLC"
+    },
+    {
+      "n": "USCB FINANCIAL HOLDINGS, INC.",
+      "t": "USCB"
+    },
+    {
+      "n": "Vale S.A.",
+      "t": "VALE"
+    },
+    {
+      "n": "Bank of Marin Bancorp",
+      "t": "BMRC"
     }
   ],
   "titles": [
-    "EVP and Chief Admin Officer",
-    "EVP, CHIEF INFORMATION OFFICER",
-    "Executive VP Engineering",
-    "Head of Institutional Bank",
-    "Pres Imaging Prtng & Solutions",
-    "SEC. AND CHIEF LEGAL OFFICER",
-    "SVP, Chief Legal Officer & Sec"
+    "Accounting Officer",
+    "CEO - Moody's Ratings",
+    "CFO, CAO, Corporate Secretary",
+    "Chair, CEO & President",
+    "Chief Legal Officer & Sec",
+    "Chief US Domestic Officer",
+    "EVP - Chief People Officer",
+    "EVP and Head of Corp Dev",
+    "EVP, Chief Admin Ofr, GC & Sec",
+    "EVP, GENERAL COUNSEL",
+    "EVP, Global Business Units",
+    "EXEC VP, CFO",
+    "SVP & GM Transportation Bus.",
+    "SVP and Chief Revenue Officer",
+    "SVP,  CLO & Secretary",
+    "Senior EVP & CFO"
   ]
 }

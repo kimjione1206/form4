@@ -389,6 +389,11 @@
     "sic_description": "Ophthalmic Goods",
     "summary": "백내장 수술 후 시력 교정용 인공수정체 회사"
   },
+  "1114995": {
+    "name": "IMPINJ INC",
+    "sic_description": "Electronic Components, NEC",
+    "summary": null
+  },
   "1117297": {
     "name": "QUINSTREET, INC",
     "sic_description": "Services-Business Services, NEC",
@@ -408,6 +413,11 @@
     "name": "Pulmonx Corp",
     "sic_description": "Surgical & Medical Instruments & Apparatus",
     "summary": "중증 폐기종 치료 의료기기를 만드는 회사"
+  },
+  "1130144": {
+    "name": "SIERRA BANCORP",
+    "sic_description": "State Commercial Banks",
+    "summary": null
   },
   "1130713": {
     "name": "BED BATH & BEYOND, INC.",
@@ -433,6 +443,11 @@
     "name": "NEXSTAR MEDIA GROUP, INC.",
     "sic_description": "Television Broadcasting Stations",
     "summary": "지상파 TV 방송국을 운영하는 회사"
+  },
+  "1144215": {
+    "name": "ACUITY INC. (DE)",
+    "sic_description": "Electric Lighting & Wiring Equipment",
+    "summary": null
   },
   "1145255": {
     "name": "HENNESSY ADVISORS INC",
@@ -1504,6 +1519,11 @@
     "sic_description": "Services-Computer Programming, Data Processing, Etc.",
     "summary": "화상회의 소프트웨어 회사"
   },
+  "1585689": {
+    "name": "Hilton Worldwide Holdings Inc.",
+    "sic_description": "Hotels & Motels",
+    "summary": null
+  },
   "1587523": {
     "name": "Knowles Corp",
     "sic_description": "Household Audio & Video Equipment",
@@ -1608,6 +1628,11 @@
     "name": "Medtronic plc",
     "sic_description": "Electromedical & Electrotherapeutic Apparatus",
     "summary": "의료기기를 만드는 회사"
+  },
+  "1616533": {
+    "name": "Penguin Solutions, Inc.",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
   },
   "1616707": {
     "name": "Wayfair Inc.",
@@ -2118,6 +2143,11 @@
     "name": "RESIDEO TECHNOLOGIES, INC.",
     "sic_description": "Wholesale-Hardware",
     "summary": "주택 관리·보안 기기 회사"
+  },
+  "1743725": {
+    "name": "GRID DYNAMICS HOLDINGS, INC.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
   },
   "1750704": {
     "name": "HawkEye 360, Inc.",
@@ -3608,6 +3638,11 @@
     "name": "REGENERON PHARMACEUTICALS, INC.",
     "sic_description": "Pharmaceutical Preparations",
     "summary": "의약품을 개발하는 바이오 제약 회사"
+  },
+  "87347": {
+    "name": "SLB LIMITED/NV",
+    "sic_description": "Oil & Gas Field Services, NEC",
+    "summary": null
   },
   "876167": {
     "name": "PROGRESS SOFTWARE CORP /MA",
