@@ -75,11 +75,6 @@
     "ticker": "NPB"
   },
   {
-    "issuer_cik": "1089063",
-    "name": "DICK'S SPORTING GOODS, INC.",
-    "ticker": "DKS"
-  },
-  {
     "issuer_cik": "1641614",
     "name": "CPI Card Group Inc.",
     "ticker": "PMTS"
@@ -170,9 +165,9 @@
     "ticker": "CELH"
   },
   {
-    "issuer_cik": "2082866",
-    "name": "Pinnacle Financial Partners, Inc.",
-    "ticker": "PNFP"
+    "issuer_cik": "1089063",
+    "name": "DICK'S SPORTING GOODS, INC.",
+    "ticker": "DKS"
   },
   {
     "issuer_cik": "2040127",
@@ -188,11 +183,6 @@
     "issuer_cik": "1839530",
     "name": "XBP Global Holdings, Inc.",
     "ticker": "XBP"
-  },
-  {
-    "issuer_cik": "67215",
-    "name": "DYCOM INDUSTRIES INC",
-    "ticker": "DY"
   },
   {
     "issuer_cik": "1606163",
@@ -215,16 +205,6 @@
     "ticker": "ALP"
   },
   {
-    "issuer_cik": "1841761",
-    "name": "Grove Collaborative Holdings, Inc.",
-    "ticker": "GROV"
-  },
-  {
-    "issuer_cik": "1069533",
-    "name": "RGC RESOURCES INC",
-    "ticker": "RGCO"
-  },
-  {
     "issuer_cik": "1339688",
     "name": "Lion Copper Corp.",
     "ticker": "LCU"
@@ -233,6 +213,11 @@
     "issuer_cik": "813623",
     "name": "Total Return Securities Fund",
     "ticker": "SWZ"
+  },
+  {
+    "issuer_cik": "1069533",
+    "name": "RGC RESOURCES INC",
+    "ticker": "RGCO"
   },
   {
     "issuer_cik": "1868995",
@@ -258,11 +243,6 @@
     "issuer_cik": "2019804",
     "name": "Terrestrial Energy Inc. /DE/",
     "ticker": "IMSR"
-  },
-  {
-    "issuer_cik": "1928446",
-    "name": "Granite Ridge Resources, Inc.",
-    "ticker": "GRNT"
   },
   {
     "issuer_cik": "1046179",
