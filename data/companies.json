@@ -1292,7 +1292,7 @@
   "1531031": {
     "name": "Esquire Financial Holdings, Inc.",
     "sic_description": "Commercial Banks, NEC",
-    "summary": null
+    "summary": "상업은행"
   },
   "1531152": {
     "name": "BJ's Wholesale Club Holdings, Inc.",
@@ -1737,7 +1737,7 @@
   "1635282": {
     "name": "Rimini Street, Inc.",
     "sic_description": "Services-Business Services, NEC",
-    "summary": null
+    "summary": "기업용 소프트웨어 유지보수·지원 서비스 회사"
   },
   "1635327": {
     "name": "Flutter Entertainment plc",
@@ -3197,7 +3197,7 @@
   "35527": {
     "name": "FIFTH THIRD BANCORP",
     "sic_description": "State Commercial Banks",
-    "summary": null
+    "summary": "은행"
   },
   "357173": {
     "name": "OLD SECOND BANCORP INC",
