@@ -24,9 +24,102 @@
       "cik": "813623",
       "name": "Total Return Securities Fund",
       "sic_description": ""
+    },
+    {
+      "cik": "1531031",
+      "name": "Esquire Financial Holdings, Inc.",
+      "sic_description": "Commercial Banks, NEC"
+    },
+    {
+      "cik": "1094366",
+      "name": "RADWARE LTD",
+      "sic_description": "Services-Business Services, NEC"
+    },
+    {
+      "cik": "1635282",
+      "name": "Rimini Street, Inc.",
+      "sic_description": "Services-Business Services, NEC"
+    },
+    {
+      "cik": "35527",
+      "name": "FIFTH THIRD BANCORP",
+      "sic_description": "State Commercial Banks"
     }
   ],
   "industries": [],
-  "names": [],
-  "titles": []
+  "names": [
+    {
+      "n": "Bambusa Therapeutics, Inc.",
+      "t": "BBTX"
+    },
+    {
+      "n": "LINCOLN ELECTRIC HOLDINGS INC",
+      "t": "LECO"
+    },
+    {
+      "n": "AerCap Holdings N.V.",
+      "t": "AER"
+    },
+    {
+      "n": "LAKELAND FINANCIAL CORP",
+      "t": "LKFN"
+    },
+    {
+      "n": "LANDSTAR SYSTEM INC",
+      "t": "LSTR"
+    },
+    {
+      "n": "Wingstop Inc.",
+      "t": "WING"
+    },
+    {
+      "n": "AXIS CAPITAL HOLDINGS LTD",
+      "t": "AXS"
+    },
+    {
+      "n": "CULLEN/FROST BANKERS, INC.",
+      "t": "CFR"
+    },
+    {
+      "n": "Four Corners Property Trust, Inc.",
+      "t": "FCPT"
+    },
+    {
+      "n": "TRIMBLE INC.",
+      "t": "TRMB"
+    },
+    {
+      "n": "Seven Hills Realty Trust",
+      "t": "SEVN"
+    },
+    {
+      "n": "Ribbon Communications Inc.",
+      "t": "RBBN"
+    },
+    {
+      "n": "Steakholder Foods Ltd.",
+      "t": "STKH"
+    },
+    {
+      "n": "ProPetro Holding Corp.",
+      "t": "PUMP"
+    },
+    {
+      "n": "Narragansett Bancorp, Inc.",
+      "t": "NARA"
+    }
+  ],
+  "titles": [
+    "CHIEF LEGAL COUNSEL",
+    "Chief Audit Officer",
+    "EVP & Chief HR Officer",
+    "EVP & Chief Revenue Officer",
+    "Exec. Chairman",
+    "GEVP Research & Strategy",
+    "General Counsel & Corp. Secy.",
+    "HEAD OF COMMERCIAL BANKING",
+    "Sr MD Chief Commercial Officer",
+    "Sr VP Chief Tax Officer",
+    "VP - Chief Accounting Officer"
+  ]
 }

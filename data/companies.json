@@ -329,6 +329,11 @@
     "sic_description": "State Commercial Banks",
     "summary": "지역 은행"
   },
+  "1094366": {
+    "name": "RADWARE LTD",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
+  },
   "1094972": {
     "name": "ULTRAPAR HOLDINGS INC",
     "sic_description": "Natural Gas Distribution",
@@ -1284,6 +1289,11 @@
     "sic_description": "Retail-Catalog & Mail-Order Houses",
     "summary": "생활·개인 위생용품을 만드는 회사"
   },
+  "1531031": {
+    "name": "Esquire Financial Holdings, Inc.",
+    "sic_description": "Commercial Banks, NEC",
+    "summary": null
+  },
   "1531152": {
     "name": "BJ's Wholesale Club Holdings, Inc.",
     "sic_description": "Retail-Variety Stores",
@@ -1723,6 +1733,11 @@
     "name": "Roivant Sciences Ltd.",
     "sic_description": "Pharmaceutical Preparations",
     "summary": "의약품 개발 바이오 회사"
+  },
+  "1635282": {
+    "name": "Rimini Street, Inc.",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
   },
   "1635327": {
     "name": "Flutter Entertainment plc",
@@ -3178,6 +3193,11 @@
     "name": "HOME DEPOT, INC.",
     "sic_description": "Retail-Lumber & Other Building Materials Dealers",
     "summary": "주택 개조 용품을 파는 소매점"
+  },
+  "35527": {
+    "name": "FIFTH THIRD BANCORP",
+    "sic_description": "State Commercial Banks",
+    "summary": null
   },
   "357173": {
     "name": "OLD SECOND BANCORP INC",

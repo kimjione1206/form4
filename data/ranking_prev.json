@@ -120,6 +120,11 @@
     "ticker": "CHCO"
   },
   {
+    "issuer_cik": "1041368",
+    "name": "RIVERVIEW BANCORP INC",
+    "ticker": "RVSB"
+  },
+  {
     "issuer_cik": "1715497",
     "name": "Borr Drilling Ltd",
     "ticker": "BORR"
@@ -248,10 +253,5 @@
     "issuer_cik": "1046179",
     "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
     "ticker": "TSM"
-  },
-  {
-    "issuer_cik": "1041368",
-    "name": "RIVERVIEW BANCORP INC",
-    "ticker": "RVSB"
   }
 ]
