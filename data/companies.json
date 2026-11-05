@@ -24,6 +24,11 @@
     "sic_description": "Electric & Other Services Combined",
     "summary": "전기·가스를 공급하는 공익 회사"
   },
+  "1004702": {
+    "name": "OCEANFIRST FINANCIAL CORP",
+    "sic_description": "National Commercial Banks",
+    "summary": null
+  },
   "1005731": {
     "name": "IDT CORP",
     "sic_description": "Telephone Communications (No Radiotelephone)",
@@ -178,6 +183,11 @@
     "name": "MERCURY SYSTEMS INC",
     "sic_description": "Electronic Components & Accessories",
     "summary": "항공·방위용 전자장비를 만드는 회사"
+  },
+  "1059556": {
+    "name": "MOODYS CORP /DE/",
+    "sic_description": "Services-Consumer Credit Reporting, Collection Agencies",
+    "summary": null
   },
   "106040": {
     "name": "WESTERN DIGITAL CORP",
@@ -569,6 +579,11 @@
     "sic_description": "Services-Prepackaged Software",
     "summary": "전자서명·계약 관리 소프트웨어 회사"
   },
+  "1262039": {
+    "name": "Fortinet, Inc.",
+    "sic_description": "Computer Peripheral Equipment, NEC",
+    "summary": null
+  },
   "1274494": {
     "name": "FIRST SOLAR, INC.",
     "sic_description": "Semiconductors & Related Devices",
@@ -809,6 +824,11 @@
     "sic_description": "Radio & Tv Broadcasting & Communications Equipment",
     "summary": "마이크로웨이브 통신 장비를 만드는 회사"
   },
+  "1378789": {
+    "name": "AerCap Holdings N.V.",
+    "sic_description": "Services-Equipment Rental & Leasing, NEC",
+    "summary": null
+  },
   "1378950": {
     "name": "CarParts.com, Inc.",
     "sic_description": "Retail-Auto & Home Supply Stores",
@@ -938,6 +958,11 @@
     "name": "PubMatic, Inc.",
     "sic_description": "Services-Computer Programming, Data Processing, Etc.",
     "summary": "온라인 광고 기술 회사"
+  },
+  "1426800": {
+    "name": "ASSEMBLY BIOSCIENCES, INC.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
   },
   "1428439": {
     "name": "ROKU, INC",
@@ -1709,6 +1734,11 @@
     "sic_description": "Biological Products, (No Diagnostic Substances)",
     "summary": "항암 신약을 개발하는 바이오 회사"
   },
+  "1630472": {
+    "name": "TPG RE Finance Trust, Inc.",
+    "sic_description": "Real Estate Investment Trusts",
+    "summary": null
+  },
   "1631574": {
     "name": "Wave Life Sciences, Inc.",
     "sic_description": "Pharmaceutical Preparations",
@@ -2124,6 +2154,11 @@
     "sic_description": "Services-To Dwellings & Other Buildings",
     "summary": "주택 관리 서비스 회사"
   },
+  "1730430": {
+    "name": "Kiniksa Pharmaceuticals International, plc",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
   "1731388": {
     "name": "EuroDry Ltd.",
     "sic_description": "Water Transportation",
@@ -2304,6 +2339,11 @@
     "sic_description": "Services-Prepackaged Software",
     "summary": "소프트웨어를 만드는 회사"
   },
+  "1794515": {
+    "name": "ZoomInfo Technologies Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
   "1795586": {
     "name": "Chime Financial, Inc.",
     "sic_description": "Finance Services",
@@ -2328,6 +2368,11 @@
     "name": "Royalty Pharma plc",
     "sic_description": "Pharmaceutical Preparations",
     "summary": "의약품 로열티를 사들이는 투자 회사"
+  },
+  "1803914": {
+    "name": "Playboy, Inc.",
+    "sic_description": "Retail-Miscellaneous Retail",
+    "summary": null
   },
   "1804176": {
     "name": "Butterfly Network, Inc.",
@@ -2884,6 +2929,11 @@
     "sic_description": "Services-Amusement & Recreation Services",
     "summary": "스포츠·오락 사업 회사"
   },
+  "1976443": {
+    "name": "Silynxcom Ltd.",
+    "sic_description": "Household Audio & Video Equipment",
+    "summary": null
+  },
   "1982518": {
     "name": "Smith Douglas Homes Corp.",
     "sic_description": "Operative Builders",
@@ -2993,6 +3043,11 @@
     "name": "Karman Holdings Inc.",
     "sic_description": "Aircraft Parts & Auxiliary Equipment, NEC",
     "summary": "항공·방위 부품을 만드는 회사"
+  },
+  "2044950": {
+    "name": "Bambusa Therapeutics, Inc.",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
   },
   "2058758": {
     "name": "Avidia Bancorp, Inc.",
@@ -3204,6 +3259,11 @@
     "sic_description": "State Commercial Banks",
     "summary": "지역 은행"
   },
+  "36029": {
+    "name": "FIRST FINANCIAL BANKSHARES INC",
+    "sic_description": "State Commercial Banks",
+    "summary": null
+  },
   "36270": {
     "name": "M&T BANK CORP",
     "sic_description": "State Commercial Banks",
@@ -3412,6 +3472,11 @@
   "73290": {
     "name": "BIOMERICA INC",
     "sic_description": "In Vitro & In Vivo Diagnostic Substances",
+    "summary": null
+  },
+  "73309": {
+    "name": "NUCOR CORP",
+    "sic_description": "Steel Works, Blast Furnaces & Rolling Mills (Coke Ovens)",
     "summary": null
   },
   "748268": {
@@ -3633,6 +3698,11 @@
     "name": "CISCO SYSTEMS, INC.",
     "sic_description": "Computer Communications Equipment",
     "summary": "네트워크 장비와 보안 제품을 만드는 회사"
+  },
+  "85961": {
+    "name": "RYDER SYSTEM INC",
+    "sic_description": "Services-Auto Rental & Leasing (No Drivers)",
+    "summary": null
   },
   "860748": {
     "name": "KEMPER Corp",
@@ -3883,6 +3953,11 @@
     "name": "CAPITAL ONE FINANCIAL CORP",
     "sic_description": "National Commercial Banks",
     "summary": "신용카드 중심의 은행 지주회사"
+  },
+  "929351": {
+    "name": "STARZ ENTERTAINMENT CORP /CN/",
+    "sic_description": "Services-Motion Picture & Video Tape Production",
+    "summary": null
   },
   "930236": {
     "name": "REDWOOD TRUST INC",

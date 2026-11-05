@@ -1,9 +1,19 @@
 {
   "companies": [
     {
+      "cik": "1803914",
+      "name": "Playboy, Inc.",
+      "sic_description": "Retail-Miscellaneous Retail"
+    },
+    {
       "cik": "40417",
       "name": "GENERAL AMERICAN INVESTORS CO INC",
       "sic_description": ""
+    },
+    {
+      "cik": "2044950",
+      "name": "Bambusa Therapeutics, Inc.",
+      "sic_description": "Biological Products, (No Diagnostic Substances)"
     },
     {
       "cik": "1551047",
@@ -21,14 +31,44 @@
       "sic_description": ""
     },
     {
+      "cik": "1630472",
+      "name": "TPG RE Finance Trust, Inc.",
+      "sic_description": "Real Estate Investment Trusts"
+    },
+    {
+      "cik": "1004702",
+      "name": "OCEANFIRST FINANCIAL CORP",
+      "sic_description": "National Commercial Banks"
+    },
+    {
+      "cik": "929351",
+      "name": "STARZ ENTERTAINMENT CORP /CN/",
+      "sic_description": "Services-Motion Picture & Video Tape Production"
+    },
+    {
       "cik": "813623",
       "name": "Total Return Securities Fund",
       "sic_description": ""
     },
     {
-      "cik": "1531031",
-      "name": "Esquire Financial Holdings, Inc.",
-      "sic_description": "Commercial Banks, NEC"
+      "cik": "36029",
+      "name": "FIRST FINANCIAL BANKSHARES INC",
+      "sic_description": "State Commercial Banks"
+    },
+    {
+      "cik": "1976443",
+      "name": "Silynxcom Ltd.",
+      "sic_description": "Household Audio & Video Equipment"
+    },
+    {
+      "cik": "1730430",
+      "name": "Kiniksa Pharmaceuticals International, plc",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "85961",
+      "name": "RYDER SYSTEM INC",
+      "sic_description": "Services-Auto Rental & Leasing (No Drivers)"
     },
     {
       "cik": "1094366",
@@ -36,90 +76,190 @@
       "sic_description": "Services-Business Services, NEC"
     },
     {
-      "cik": "1635282",
-      "name": "Rimini Street, Inc.",
-      "sic_description": "Services-Business Services, NEC"
+      "cik": "1426800",
+      "name": "ASSEMBLY BIOSCIENCES, INC.",
+      "sic_description": "Pharmaceutical Preparations"
     },
     {
-      "cik": "35527",
-      "name": "FIFTH THIRD BANCORP",
-      "sic_description": "State Commercial Banks"
+      "cik": "1262039",
+      "name": "Fortinet, Inc.",
+      "sic_description": "Computer Peripheral Equipment, NEC"
+    },
+    {
+      "cik": "1378789",
+      "name": "AerCap Holdings N.V.",
+      "sic_description": "Services-Equipment Rental & Leasing, NEC"
+    },
+    {
+      "cik": "1059556",
+      "name": "MOODYS CORP /DE/",
+      "sic_description": "Services-Consumer Credit Reporting, Collection Agencies"
+    },
+    {
+      "cik": "73309",
+      "name": "NUCOR CORP",
+      "sic_description": "Steel Works, Blast Furnaces & Rolling Mills (Coke Ovens)"
+    },
+    {
+      "cik": "1794515",
+      "name": "ZoomInfo Technologies Inc.",
+      "sic_description": "Services-Prepackaged Software"
     }
   ],
-  "industries": [],
+  "industries": [
+    "Services-Auto Rental & Leasing (No Drivers)"
+  ],
   "names": [
     {
-      "n": "Bambusa Therapeutics, Inc.",
-      "t": "BBTX"
+      "n": "MGM Resorts International",
+      "t": "MGM"
     },
     {
-      "n": "LINCOLN ELECTRIC HOLDINGS INC",
-      "t": "LECO"
+      "n": "DOVER Corp",
+      "t": "DOV"
     },
     {
-      "n": "AerCap Holdings N.V.",
-      "t": "AER"
+      "n": "MASCO CORP /DE/",
+      "t": "MAS"
     },
     {
-      "n": "LAKELAND FINANCIAL CORP",
-      "t": "LKFN"
+      "n": "PIPER SANDLER COMPANIES",
+      "t": "PIPR"
     },
     {
-      "n": "LANDSTAR SYSTEM INC",
-      "t": "LSTR"
+      "n": "CubeSmart",
+      "t": "CUBE"
     },
     {
-      "n": "Wingstop Inc.",
-      "t": "WING"
+      "n": "BOEING CO",
+      "t": "BA"
     },
     {
-      "n": "AXIS CAPITAL HOLDINGS LTD",
-      "t": "AXS"
+      "n": "ANNALY CAPITAL MANAGEMENT INC",
+      "t": "NLY"
     },
     {
-      "n": "CULLEN/FROST BANKERS, INC.",
-      "t": "CFR"
+      "n": "LKQ CORP",
+      "t": "LKQ"
     },
     {
-      "n": "Four Corners Property Trust, Inc.",
-      "t": "FCPT"
+      "n": "NEXTERA ENERGY INC",
+      "t": "NEE"
     },
     {
-      "n": "TRIMBLE INC.",
-      "t": "TRMB"
+      "n": "Duke Energy CORP",
+      "t": "DUK"
     },
     {
-      "n": "Seven Hills Realty Trust",
-      "t": "SEVN"
+      "n": "TPG RE Finance Trust, Inc.",
+      "t": "TRTX"
     },
     {
-      "n": "Ribbon Communications Inc.",
-      "t": "RBBN"
+      "n": "KFORCE INC",
+      "t": "KFRC"
     },
     {
-      "n": "Steakholder Foods Ltd.",
-      "t": "STKH"
+      "n": "NorthEast Community Bancorp, Inc./MD/",
+      "t": "NECB"
     },
     {
-      "n": "ProPetro Holding Corp.",
-      "t": "PUMP"
+      "n": "ASSEMBLY BIOSCIENCES, INC.",
+      "t": "ASMB"
     },
     {
-      "n": "Narragansett Bancorp, Inc.",
-      "t": "NARA"
+      "n": "ENERPAC TOOL GROUP CORP",
+      "t": "EPAC"
+    },
+    {
+      "n": "FIVE STAR BANCORP",
+      "t": "FSBC"
+    },
+    {
+      "n": "National Bank Holdings Corp",
+      "t": "NBHC"
+    },
+    {
+      "n": "FIRST INTERSTATE BANCSYSTEM INC",
+      "t": "FIBK"
+    },
+    {
+      "n": "Silynxcom Ltd.",
+      "t": "SYNX"
+    },
+    {
+      "n": "Quanex Building Products CORP",
+      "t": "NX"
+    },
+    {
+      "n": "MID AMERICA APARTMENT COMMUNITIES INC.",
+      "t": "MAA"
+    },
+    {
+      "n": "RENASANT CORP",
+      "t": "RNST"
+    },
+    {
+      "n": "NORTHROP GRUMMAN CORP /DE/",
+      "t": "NOC"
+    },
+    {
+      "n": "Finwise Bancorp",
+      "t": "FINW"
+    },
+    {
+      "n": "FIRST UNITED CORP/MD/",
+      "t": "FUNC"
+    },
+    {
+      "n": "ProMIS Neurosciences Inc.",
+      "t": "PMN"
+    },
+    {
+      "n": "CONSTELLIUM SE",
+      "t": "CSTM"
+    },
+    {
+      "n": "COMMUNITY BANCORP /VT",
+      "t": "CMTV"
+    },
+    {
+      "n": "Proem Acquisition Corp. I",
+      "t": "PAAC"
+    },
+    {
+      "n": "BRUNSWICK CORP",
+      "t": "BC"
+    },
+    {
+      "n": "VNET Group, Inc.",
+      "t": "VNET"
     }
   ],
   "titles": [
-    "CHIEF LEGAL COUNSEL",
-    "Chief Audit Officer",
-    "EVP & Chief HR Officer",
-    "EVP & Chief Revenue Officer",
-    "Exec. Chairman",
-    "GEVP Research & Strategy",
-    "General Counsel & Corp. Secy.",
-    "HEAD OF COMMERCIAL BANKING",
-    "Sr MD Chief Commercial Officer",
-    "Sr VP Chief Tax Officer",
-    "VP - Chief Accounting Officer"
+    "CEO and  Co-CIO",
+    "Chief Acctg Off & Controller",
+    "Chief Manufacturing Officer",
+    "Corporate Vice President",
+    "EVP - CPTO",
+    "EVP GENL COUNSEL/SECTY",
+    "EVP of DTS",
+    "EVP, Brand President, HEYDUDE",
+    "EVP, Chief Ext Affairs Officer",
+    "EVP, Chief Investment Officer",
+    "EVP, Chief Op & Safety Officer",
+    "EVP, Finance & CFO",
+    "EXECUTIVE CHAIRMAN AND CPO",
+    "FOUNDER & CEO",
+    "Group Pres., GMNS",
+    "Pres/CEO/Dir of Company & Bank",
+    "President Canada & Group COO",
+    "President, FMS",
+    "SVP General Counsel, Secretary",
+    "SVP, Operational Finance",
+    "SVP, Pres. & CEO, CoreSite",
+    "VP Marketing & Israel Sales",
+    "VP, Engineering & CTO",
+    "VP, General Counsel and Sec.",
+    "Vice Pres. and Corp. Contro"
   ]
 }

@@ -50,19 +50,19 @@
     "ticker": "PRHI"
   },
   {
+    "issuer_cik": "1844971",
+    "name": "Vulcan Infrastructure & Power Inc.",
+    "ticker": "GREE"
+  },
+  {
     "issuer_cik": "1833141",
     "name": "Helus Pharma Inc.",
     "ticker": "HELP"
   },
   {
-    "issuer_cik": "896493",
-    "name": "Hyperscale Data, Inc.",
-    "ticker": "GPUS"
-  },
-  {
-    "issuer_cik": "1844971",
-    "name": "Vulcan Infrastructure & Power Inc.",
-    "ticker": "GREE"
+    "issuer_cik": "1803914",
+    "name": "Playboy, Inc.",
+    "ticker": "PLBY"
   },
   {
     "issuer_cik": "1468327",
@@ -105,6 +105,11 @@
     "ticker": "ATCH"
   },
   {
+    "issuer_cik": "1046179",
+    "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
+    "ticker": "TSM"
+  },
+  {
     "issuer_cik": "31107",
     "name": "EASTERN CO",
     "ticker": "EML"
@@ -123,6 +128,11 @@
     "issuer_cik": "1041368",
     "name": "RIVERVIEW BANCORP INC",
     "ticker": "RVSB"
+  },
+  {
+    "issuer_cik": "2044950",
+    "name": "Bambusa Therapeutics, Inc.",
+    "ticker": "BBTX"
   },
   {
     "issuer_cik": "1715497",
@@ -210,6 +220,21 @@
     "ticker": "ALP"
   },
   {
+    "issuer_cik": "1630472",
+    "name": "TPG RE Finance Trust, Inc.",
+    "ticker": "TRTX"
+  },
+  {
+    "issuer_cik": "1004702",
+    "name": "OCEANFIRST FINANCIAL CORP",
+    "ticker": "OCFC"
+  },
+  {
+    "issuer_cik": "929351",
+    "name": "STARZ ENTERTAINMENT CORP /CN/",
+    "ticker": "STRZ"
+  },
+  {
     "issuer_cik": "1339688",
     "name": "Lion Copper Corp.",
     "ticker": "LCU"
@@ -230,6 +255,11 @@
     "ticker": "CINT"
   },
   {
+    "issuer_cik": "36029",
+    "name": "FIRST FINANCIAL BANKSHARES INC",
+    "ticker": "FFIN"
+  },
+  {
     "issuer_cik": "1638290",
     "name": "MasterCraft Boat Holdings, Inc.",
     "ticker": "MCFT"
@@ -240,9 +270,9 @@
     "ticker": "TENX"
   },
   {
-    "issuer_cik": "1175151",
-    "name": "Cytosorbents Corp",
-    "ticker": "CTSO"
+    "issuer_cik": "1976443",
+    "name": "Silynxcom Ltd.",
+    "ticker": "SYNX"
   },
   {
     "issuer_cik": "2019804",
@@ -250,8 +280,8 @@
     "ticker": "IMSR"
   },
   {
-    "issuer_cik": "1046179",
-    "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
-    "ticker": "TSM"
+    "issuer_cik": "1175151",
+    "name": "Cytosorbents Corp",
+    "ticker": "CTSO"
   }
 ]
