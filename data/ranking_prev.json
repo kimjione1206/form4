@@ -25,6 +25,11 @@
     "ticker": "SBLK"
   },
   {
+    "issuer_cik": "933036",
+    "name": "UPBOUND GROUP, INC.",
+    "ticker": "UPBD"
+  },
+  {
     "issuer_cik": "930236",
     "name": "REDWOOD TRUST INC",
     "ticker": "RWT"
@@ -48,6 +53,11 @@
     "issuer_cik": "1502292",
     "name": "Presurance Holdings, Inc.",
     "ticker": "PRHI"
+  },
+  {
+    "issuer_cik": "1469395",
+    "name": "Pampa Energy Inc.",
+    "ticker": "PAM"
   },
   {
     "issuer_cik": "1844971",
@@ -140,11 +150,6 @@
     "ticker": "BORR"
   },
   {
-    "issuer_cik": "1469395",
-    "name": "Pampa Energy Inc.",
-    "ticker": "PAM"
-  },
-  {
     "issuer_cik": "1551047",
     "name": "Bluerock Private Real Estate Fund",
     "ticker": "BPRE"
@@ -183,6 +188,11 @@
     "issuer_cik": "1089063",
     "name": "DICK'S SPORTING GOODS, INC.",
     "ticker": "DKS"
+  },
+  {
+    "issuer_cik": "350698",
+    "name": "AUTONATION, INC.",
+    "ticker": "AN"
   },
   {
     "issuer_cik": "2040127",

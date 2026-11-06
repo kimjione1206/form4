@@ -184,6 +184,11 @@
     "sic_description": "Electronic Components & Accessories",
     "summary": "항공·방위용 전자장비를 만드는 회사"
   },
+  "1050797": {
+    "name": "COLUMBIA SPORTSWEAR CO",
+    "sic_description": "Apparel & Other Finishd Prods of  Fabrics & Similar Matl",
+    "summary": null
+  },
   "1059556": {
     "name": "MOODYS CORP /DE/",
     "sic_description": "Services-Consumer Credit Reporting, Collection Agencies",
@@ -724,6 +729,11 @@
     "sic_description": "Insurance Agents, Brokers & Service",
     "summary": "보험과 자산관리를 하는 금융회사"
   },
+  "1334036": {
+    "name": "Crocs, Inc.",
+    "sic_description": "Rubber & Plastics Footwear",
+    "summary": null
+  },
   "1336706": {
     "name": "NORTHPOINTE BANCSHARES INC",
     "sic_description": "State Commercial Banks",
@@ -1153,6 +1163,11 @@
     "name": "Ameresco, Inc.",
     "sic_description": "Construction - Special Trade Contractors",
     "summary": "에너지 효율·인프라 솔루션 회사"
+  },
+  "1488813": {
+    "name": "Customers Bancorp, Inc.",
+    "sic_description": "State Commercial Banks",
+    "summary": null
   },
   "1493594": {
     "name": "MACOM Technology Solutions Holdings, Inc.",
@@ -1603,6 +1618,11 @@
     "name": "DORIAN LPG LTD.",
     "sic_description": "Deep Sea Foreign Transportation of  Freight",
     "summary": "액화석유가스 운반선을 운영하는 회사"
+  },
+  "1598428": {
+    "name": "Metallus Inc.",
+    "sic_description": "Steel Works, Blast Furnaces & Rolling Mills (Coke Ovens)",
+    "summary": null
   },
   "1598665": {
     "name": "Heritage Insurance Holdings, Inc.",
@@ -2909,6 +2929,11 @@
     "sic_description": "Finance Services",
     "summary": "금융 거래·청산 플랫폼 회사"
   },
+  "1967680": {
+    "name": "Veralto Corp",
+    "sic_description": "Instruments For Meas & Testing of  Electricity & Elec Signals",
+    "summary": null
+  },
   "1968915": {
     "name": "PHINIA INC.",
     "sic_description": "Motor Vehicle Parts & Accessories",
@@ -3233,6 +3258,11 @@
     "name": "TENAX THERAPEUTICS, INC.",
     "sic_description": "Pharmaceutical Preparations",
     "summary": "의약품을 개발하는 회사"
+  },
+  "350698": {
+    "name": "AUTONATION, INC.",
+    "sic_description": "Retail-Auto Dealers & Gasoline Stations",
+    "summary": null
   },
   "350894": {
     "name": "SEI INVESTMENTS CO",
@@ -3963,6 +3993,11 @@
     "name": "REDWOOD TRUST INC",
     "sic_description": "Real Estate Investment Trusts",
     "summary": "주택 관련 대출·투자 금융 회사"
+  },
+  "933036": {
+    "name": "UPBOUND GROUP, INC.",
+    "sic_description": "Services-Equipment Rental & Leasing, NEC",
+    "summary": null
   },
   "93410": {
     "name": "CHEVRON CORP",
