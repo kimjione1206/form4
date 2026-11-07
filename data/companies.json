@@ -1074,6 +1074,11 @@
     "sic_description": "Services-Prepackaged Software",
     "summary": "파일 저장·협업 소프트웨어 회사"
   },
+  "1468174": {
+    "name": "Hyatt Hotels Corp",
+    "sic_description": "Hotels & Motels",
+    "summary": null
+  },
   "1468327": {
     "name": "Rent the Runway, Inc.",
     "sic_description": "Retail-Retail Stores, NEC",
@@ -1979,6 +1984,11 @@
     "sic_description": "Services-Commercial Physical & Biological Research",
     "summary": "임상시험을 대행하는 회사"
   },
+  "1669811": {
+    "name": "Donnelley Financial Solutions, Inc.",
+    "sic_description": "Services-Miscellaneous Business Services",
+    "summary": null
+  },
   "1670076": {
     "name": "Frontier Group Holdings, Inc.",
     "sic_description": "Air Transportation, Scheduled",
@@ -2058,6 +2068,11 @@
     "name": "Velocity Financial, Inc.",
     "sic_description": "Finance Services",
     "summary": "부동산 담보 대출을 하는 금융회사"
+  },
+  "1694028": {
+    "name": "Liberty Energy Inc.",
+    "sic_description": "Oil & Gas Field Services, NEC",
+    "summary": null
   },
   "1694426": {
     "name": "Delek US Holdings, Inc.",
@@ -2252,6 +2267,11 @@
   "1766400": {
     "name": "Pennant Group, Inc.",
     "sic_description": "Services-Health Services",
+    "summary": null
+  },
+  "1766478": {
+    "name": "Angel Oak Mortgage REIT, Inc.",
+    "sic_description": "Real Estate",
     "summary": null
   },
   "1767042": {
@@ -3764,6 +3784,11 @@
     "sic_description": "Oil & Gas Field Services, NEC",
     "summary": "유전 개발 기술과 서비스를 제공하는 회사"
   },
+  "874716": {
+    "name": "IDEXX LABORATORIES INC /DE",
+    "sic_description": "In Vitro & In Vivo Diagnostic Substances",
+    "summary": null
+  },
   "876167": {
     "name": "PROGRESS SOFTWARE CORP /MA",
     "sic_description": "Services-Prepackaged Software",
@@ -3793,6 +3818,11 @@
     "name": "QUICKLOGIC Corp",
     "sic_description": "Semiconductors & Related Devices",
     "summary": "프로그래밍 가능 반도체 기술을 만드는 회사"
+  },
+  "882835": {
+    "name": "ROPER TECHNOLOGIES INC",
+    "sic_description": "Industrial Instruments For Measurement, Display, and Control",
+    "summary": null
   },
   "883241": {
     "name": "SYNOPSYS INC",
@@ -3848,6 +3878,11 @@
     "name": "Hyperscale Data, Inc.",
     "sic_description": "Oil & Gas Field Machinery & Equipment",
     "summary": "비트코인 채굴 데이터센터를 운영하는 회사"
+  },
+  "89800": {
+    "name": "SHERWIN WILLIAMS CO",
+    "sic_description": "Retail-Building Materials, Hardware, Garden Supply",
+    "summary": null
   },
   "898173": {
     "name": "O REILLY AUTOMOTIVE INC",

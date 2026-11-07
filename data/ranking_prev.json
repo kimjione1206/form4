@@ -20,14 +20,14 @@
     "ticker": "RAPP"
   },
   {
-    "issuer_cik": "1386716",
-    "name": "Star Bulk Carriers Corp.",
-    "ticker": "SBLK"
-  },
-  {
     "issuer_cik": "933036",
     "name": "UPBOUND GROUP, INC.",
     "ticker": "UPBD"
+  },
+  {
+    "issuer_cik": "1386716",
+    "name": "Star Bulk Carriers Corp.",
+    "ticker": "SBLK"
   },
   {
     "issuer_cik": "930236",
@@ -210,6 +210,11 @@
     "ticker": "XBP"
   },
   {
+    "issuer_cik": "1694028",
+    "name": "Liberty Energy Inc.",
+    "ticker": "LBRT"
+  },
+  {
     "issuer_cik": "1606163",
     "name": "Limbach Holdings, Inc.",
     "ticker": "LMB"
@@ -223,6 +228,11 @@
     "issuer_cik": "2020932",
     "name": "AgomAb Therapeutics NV",
     "ticker": "AGMB"
+  },
+  {
+    "issuer_cik": "1766478",
+    "name": "Angel Oak Mortgage REIT, Inc.",
+    "ticker": "AOMR"
   },
   {
     "issuer_cik": "1095435",
