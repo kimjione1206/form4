@@ -177,7 +177,7 @@
   "1048286": {
     "name": "MARRIOTT INTERNATIONAL INC /MD/",
     "sic_description": "Hotels & Motels",
-    "summary": null
+    "summary": "호텔과 숙박 시설을 운영·가맹하는 회사"
   },
   "1048695": {
     "name": "F5, INC.",
@@ -237,7 +237,7 @@
   "1065696": {
     "name": "LKQ CORP",
     "sic_description": "Wholesale-Motor Vehicles & Motor Vehicle Parts & Supplies",
-    "summary": null
+    "summary": "자동차 수리용 부품을 유통하는 회사"
   },
   "1069157": {
     "name": "EAST WEST BANCORP INC",
@@ -372,7 +372,7 @@
   "1095565": {
     "name": "HEALTHSTREAM INC",
     "sic_description": "Services-Computer Programming, Data Processing, Etc.",
-    "summary": null
+    "summary": "의료기관용 온라인 교육·인력 소프트웨어 회사"
   },
   "1099800": {
     "name": "Edwards Lifesciences Corp",
@@ -877,7 +877,7 @@
   "1385613": {
     "name": "GREENLIGHT CAPITAL RE, LTD.",
     "sic_description": "Fire, Marine & Casualty Insurance",
-    "summary": null
+    "summary": "재보험을 제공하는 회사"
   },
   "1386716": {
     "name": "Star Bulk Carriers Corp.",
@@ -967,7 +967,7 @@
   "1413447": {
     "name": "NXP Semiconductors N.V.",
     "sic_description": "Semiconductors & Related Devices",
-    "summary": null
+    "summary": "반도체를 만드는 회사"
   },
   "1418819": {
     "name": "Iridium Communications Inc.",
@@ -2112,7 +2112,7 @@
   "1698991": {
     "name": "Accel Entertainment, Inc.",
     "sic_description": "Services-Amusement & Recreation Services",
-    "summary": null
+    "summary": "식당·술집 등에 게임기를 설치·운영하는 회사"
   },
   "1699031": {
     "name": "GRAIL, Inc.",
@@ -2647,7 +2647,7 @@
   "1835856": {
     "name": "Better Home & Finance Holding Co",
     "sic_description": "Loan Brokers",
-    "summary": null
+    "summary": "주택담보대출을 중개하는 회사"
   },
   "1835963": {
     "name": "Global-E Online Ltd.",
@@ -3207,7 +3207,7 @@
   "21665": {
     "name": "COLGATE PALMOLIVE CO",
     "sic_description": "Perfumes, Cosmetics & Other Toilet Preparations",
-    "summary": null
+    "summary": "치약과 생활용품을 만드는 회사"
   },
   "24090": {
     "name": "CITIZENS, INC.",
@@ -3412,7 +3412,7 @@
   "4962": {
     "name": "AMERICAN EXPRESS CO",
     "sic_description": "Finance Services",
-    "summary": null
+    "summary": "신용카드와 결제 서비스를 제공하는 회사"
   },
   "50725": {
     "name": "GRIFFON CORP",
@@ -3797,7 +3797,7 @@
   "860731": {
     "name": "TYLER TECHNOLOGIES INC",
     "sic_description": "Services-Prepackaged Software",
-    "summary": null
+    "summary": "공공기관용 소프트웨어를 만드는 회사"
   },
   "860748": {
     "name": "KEMPER Corp",
@@ -3882,7 +3882,7 @@
   "884887": {
     "name": "ROYAL CARIBBEAN CRUISES LTD",
     "sic_description": "Water Transportation",
-    "summary": null
+    "summary": "크루즈 여행 상품을 운영하는 회사"
   },
   "886163": {
     "name": "LIGAND PHARMACEUTICALS INC",
@@ -3892,7 +3892,7 @@
   "887359": {
     "name": "Vericel Corp",
     "sic_description": "Biological Products, (No Diagnostic Substances)",
-    "summary": null
+    "summary": "무릎 연골·화상 치료용 세포 치료제를 만드는 회사"
   },
   "887596": {
     "name": "CHEESECAKE FACTORY INC",
