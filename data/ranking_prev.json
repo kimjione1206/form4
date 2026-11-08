@@ -110,14 +110,14 @@
     "ticker": "ANIX"
   },
   {
+    "issuer_cik": "1520006",
+    "name": "Matador Resources Co",
+    "ticker": "MTDR"
+  },
+  {
     "issuer_cik": "1963088",
     "name": "AtlasClear Holdings, Inc.",
     "ticker": "ATCH"
-  },
-  {
-    "issuer_cik": "1046179",
-    "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
-    "ticker": "TSM"
   },
   {
     "issuer_cik": "31107",
@@ -205,6 +205,11 @@
     "ticker": "FGBI"
   },
   {
+    "issuer_cik": "1065696",
+    "name": "LKQ CORP",
+    "ticker": "LKQ"
+  },
+  {
     "issuer_cik": "1839530",
     "name": "XBP Global Holdings, Inc.",
     "ticker": "XBP"
@@ -220,14 +225,14 @@
     "ticker": "LMB"
   },
   {
-    "issuer_cik": "1510599",
-    "name": "PIMCO Dynamic Income Fund",
-    "ticker": "PDI"
-  },
-  {
     "issuer_cik": "2020932",
     "name": "AgomAb Therapeutics NV",
     "ticker": "AGMB"
+  },
+  {
+    "issuer_cik": "1510599",
+    "name": "PIMCO Dynamic Income Fund",
+    "ticker": "PDI"
   },
   {
     "issuer_cik": "1766478",
@@ -260,6 +265,11 @@
     "ticker": "LCU"
   },
   {
+    "issuer_cik": "1976443",
+    "name": "Silynxcom Ltd.",
+    "ticker": "SYNX"
+  },
+  {
     "issuer_cik": "813623",
     "name": "Total Return Securities Fund",
     "ticker": "SWZ"
@@ -288,11 +298,6 @@
     "issuer_cik": "34956",
     "name": "TENAX THERAPEUTICS, INC.",
     "ticker": "TENX"
-  },
-  {
-    "issuer_cik": "1976443",
-    "name": "Silynxcom Ltd.",
-    "ticker": "SYNX"
   },
   {
     "issuer_cik": "2019804",

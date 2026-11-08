@@ -174,6 +174,11 @@
     "sic_description": "Services-Skilled Nursing Care Facilities",
     "summary": "요양·노인 돌봄 시설을 운영하는 회사"
   },
+  "1048286": {
+    "name": "MARRIOTT INTERNATIONAL INC /MD/",
+    "sic_description": "Hotels & Motels",
+    "summary": null
+  },
   "1048695": {
     "name": "F5, INC.",
     "sic_description": "Computer Communications Equipment",
@@ -228,6 +233,11 @@
     "name": "WEYCO GROUP INC",
     "sic_description": "Wholesale-Apparel, Piece Goods & Notions",
     "summary": "남성 신발을 유통하는 회사"
+  },
+  "1065696": {
+    "name": "LKQ CORP",
+    "sic_description": "Wholesale-Motor Vehicles & Motor Vehicle Parts & Supplies",
+    "summary": null
   },
   "1069157": {
     "name": "EAST WEST BANCORP INC",
@@ -358,6 +368,11 @@
     "name": "Alpha Compute Corp",
     "sic_description": "Finance Services",
     "summary": "금융 서비스를 하는 회사"
+  },
+  "1095565": {
+    "name": "HEALTHSTREAM INC",
+    "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+    "summary": null
   },
   "1099800": {
     "name": "Edwards Lifesciences Corp",
@@ -859,6 +874,11 @@
     "sic_description": "Services-Computer Processing & Data Preparation",
     "summary": "클라우드 기업 통신 서비스 회사"
   },
+  "1385613": {
+    "name": "GREENLIGHT CAPITAL RE, LTD.",
+    "sic_description": "Fire, Marine & Casualty Insurance",
+    "summary": null
+  },
   "1386716": {
     "name": "Star Bulk Carriers Corp.",
     "sic_description": "Deep Sea Foreign Transportation of  Freight",
@@ -943,6 +963,11 @@
     "name": "Allison Transmission Holdings Inc",
     "sic_description": "Motor Vehicle Parts & Accessories",
     "summary": "상용차용 변속기를 만드는 회사"
+  },
+  "1413447": {
+    "name": "NXP Semiconductors N.V.",
+    "sic_description": "Semiconductors & Related Devices",
+    "summary": null
   },
   "1418819": {
     "name": "Iridium Communications Inc.",
@@ -2084,6 +2109,11 @@
     "sic_description": "Oil & Gas Field Services, NEC",
     "summary": "중동·북아프리카 유전 서비스 회사"
   },
+  "1698991": {
+    "name": "Accel Entertainment, Inc.",
+    "sic_description": "Services-Amusement & Recreation Services",
+    "summary": null
+  },
   "1699031": {
     "name": "GRAIL, Inc.",
     "sic_description": "Services-Medical Laboratories",
@@ -2613,6 +2643,11 @@
     "name": "Klaviyo, Inc.",
     "sic_description": "Services-Prepackaged Software",
     "summary": "소비자 기업용 고객관리(CRM) 소프트웨어 회사"
+  },
+  "1835856": {
+    "name": "Better Home & Finance Holding Co",
+    "sic_description": "Loan Brokers",
+    "summary": null
   },
   "1835963": {
     "name": "Global-E Online Ltd.",
@@ -3374,6 +3409,11 @@
     "sic_description": "Drilling Oil & Gas Wells",
     "summary": "유정 시추 서비스 회사"
   },
+  "4962": {
+    "name": "AMERICAN EXPRESS CO",
+    "sic_description": "Finance Services",
+    "summary": null
+  },
   "50725": {
     "name": "GRIFFON CORP",
     "sic_description": "Metal Doors, Sash, Frames, Moldings & Trim",
@@ -3754,6 +3794,11 @@
     "sic_description": "Services-Auto Rental & Leasing (No Drivers)",
     "summary": "트럭 임대와 물류 서비스를 하는 회사"
   },
+  "860731": {
+    "name": "TYLER TECHNOLOGIES INC",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
   "860748": {
     "name": "KEMPER Corp",
     "sic_description": "Fire, Marine & Casualty Insurance",
@@ -3834,10 +3879,20 @@
     "sic_description": "Surgical & Medical Instruments & Apparatus",
     "summary": "수액·의료용 기기를 만드는 회사"
   },
+  "884887": {
+    "name": "ROYAL CARIBBEAN CRUISES LTD",
+    "sic_description": "Water Transportation",
+    "summary": null
+  },
   "886163": {
     "name": "LIGAND PHARMACEUTICALS INC",
     "sic_description": "Pharmaceutical Preparations",
     "summary": "의약품 로열티 사업 바이오 회사"
+  },
+  "887359": {
+    "name": "Vericel Corp",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
   },
   "887596": {
     "name": "CHEESECAKE FACTORY INC",

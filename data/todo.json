@@ -16,9 +16,9 @@
       "sic_description": ""
     },
     {
-      "cik": "1694028",
-      "name": "Liberty Energy Inc.",
-      "sic_description": "Oil & Gas Field Services, NEC"
+      "cik": "1065696",
+      "name": "LKQ CORP",
+      "sic_description": "Wholesale-Motor Vehicles & Motor Vehicle Parts & Supplies"
     },
     {
       "cik": "1510599",
@@ -26,29 +26,19 @@
       "sic_description": ""
     },
     {
-      "cik": "1766478",
-      "name": "Angel Oak Mortgage REIT, Inc.",
-      "sic_description": "Real Estate"
-    },
-    {
       "cik": "813623",
       "name": "Total Return Securities Fund",
       "sic_description": ""
     },
     {
-      "cik": "1048695",
-      "name": "F5, INC.",
-      "sic_description": "Computer Communications Equipment"
+      "cik": "1095565",
+      "name": "HEALTHSTREAM INC",
+      "sic_description": "Services-Computer Programming, Data Processing, Etc."
     },
     {
-      "cik": "1468174",
-      "name": "Hyatt Hotels Corp",
+      "cik": "1048286",
+      "name": "MARRIOTT INTERNATIONAL INC /MD/",
       "sic_description": "Hotels & Motels"
-    },
-    {
-      "cik": "874716",
-      "name": "IDEXX LABORATORIES INC /DE",
-      "sic_description": "In Vitro & In Vivo Diagnostic Substances"
     },
     {
       "cik": "1094366",
@@ -56,157 +46,155 @@
       "sic_description": "Services-Business Services, NEC"
     },
     {
-      "cik": "882835",
-      "name": "ROPER TECHNOLOGIES INC",
-      "sic_description": "Industrial Instruments For Measurement, Display, and Control"
+      "cik": "4962",
+      "name": "AMERICAN EXPRESS CO",
+      "sic_description": "Finance Services"
     },
     {
-      "cik": "1669811",
-      "name": "Donnelley Financial Solutions, Inc.",
-      "sic_description": "Services-Miscellaneous Business Services"
+      "cik": "884887",
+      "name": "ROYAL CARIBBEAN CRUISES LTD",
+      "sic_description": "Water Transportation"
     },
     {
-      "cik": "89800",
-      "name": "SHERWIN WILLIAMS CO",
-      "sic_description": "Retail-Building Materials, Hardware, Garden Supply"
+      "cik": "860731",
+      "name": "TYLER TECHNOLOGIES INC",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "21665",
+      "name": "COLGATE PALMOLIVE CO",
+      "sic_description": "Perfumes, Cosmetics & Other Toilet Preparations"
+    },
+    {
+      "cik": "1698991",
+      "name": "Accel Entertainment, Inc.",
+      "sic_description": "Services-Amusement & Recreation Services"
+    },
+    {
+      "cik": "1413447",
+      "name": "NXP Semiconductors N.V.",
+      "sic_description": "Semiconductors & Related Devices"
+    },
+    {
+      "cik": "887359",
+      "name": "Vericel Corp",
+      "sic_description": "Biological Products, (No Diagnostic Substances)"
+    },
+    {
+      "cik": "1385613",
+      "name": "GREENLIGHT CAPITAL RE, LTD.",
+      "sic_description": "Fire, Marine & Casualty Insurance"
+    },
+    {
+      "cik": "1835856",
+      "name": "Better Home & Finance Holding Co",
+      "sic_description": "Loan Brokers"
     }
   ],
-  "industries": [],
+  "industries": [
+    "Loan Brokers",
+    "Wholesale-Motor Vehicles & Motor Vehicle Parts & Supplies"
+  ],
   "names": [
     {
-      "n": "Electra Therapeutics, Inc.",
-      "t": "ETRA"
+      "n": "HCA Healthcare, Inc.",
+      "t": "HCA"
     },
     {
-      "n": "Liberty Global Ltd.",
-      "t": "LBTY"
+      "n": "Annovis Bio, Inc.",
+      "t": "ANVS"
     },
     {
-      "n": "SOUTH PLAINS FINANCIAL, INC.",
-      "t": "SPFI"
+      "n": "CVS HEALTH Corp",
+      "t": "CVS"
     },
     {
-      "n": "ADMA BIOLOGICS, INC.",
-      "t": "ADMA"
+      "n": "General Motors Co",
+      "t": "GM"
     },
     {
-      "n": "MakeMyTrip Ltd",
-      "t": "MMYT"
+      "n": "SMITH A O CORP",
+      "t": "AOS"
     },
     {
-      "n": "Extra Space Storage Inc.",
-      "t": "EXR"
+      "n": "Allegiant Travel CO",
+      "t": "ALGT"
     },
     {
-      "n": "Ryerson Holding Corp",
-      "t": "RYZ"
+      "n": "Ingersoll Rand Inc.",
+      "t": "IR"
     },
     {
-      "n": "Baker Hughes Co",
-      "t": "BKR"
+      "n": "Alight, Inc. / Delaware",
+      "t": "ALIT"
     },
     {
-      "n": "SPX Technologies, Inc.",
-      "t": "SPXC"
+      "n": "ESAB Corp",
+      "t": "ESAB"
     },
     {
-      "n": "BLUE OWL CAPITAL INC.",
-      "t": "OWL"
+      "n": "WEST BANCORPORATION INC",
+      "t": "WTBA"
     },
     {
-      "n": "CLOROX CO /DE/",
-      "t": "CLX"
+      "n": "YPF SOCIEDAD ANONIMA",
+      "t": "YPF"
     },
     {
-      "n": "SPS COMMERCE INC",
-      "t": "SPSC"
+      "n": "LEVI STRAUSS & CO",
+      "t": "LEVI"
     },
     {
-      "n": "Vita Coco Company, Inc.",
-      "t": "COCO"
+      "n": "PEOPLES FINANCIAL SERVICES CORP.",
+      "t": "PFIS"
     },
     {
-      "n": "UDR, Inc.",
-      "t": "UDR"
+      "n": "Catalyst Bancorp, Inc.",
+      "t": "CLST"
     },
     {
-      "n": "PPG INDUSTRIES INC",
-      "t": "PPG"
+      "n": "Ranpak Holdings Corp.",
+      "t": "PACK"
     },
     {
-      "n": "Flowco Holdings Inc.",
-      "t": "FLOC"
+      "n": "Construction Partners, Inc.",
+      "t": "ROAD"
     },
     {
-      "n": "CRH PUBLIC LTD CO",
-      "t": "CRH"
+      "n": "FAIR ISAAC CORP",
+      "t": "FICO"
     },
     {
-      "n": "RYANAIR HOLDINGS PLC",
-      "t": "RYAAY"
+      "n": "INTERNATIONAL BATTERY METALS LTD.",
+      "t": "IBATF"
     },
     {
-      "n": "Orange County Bancorp, Inc. /DE/",
-      "t": "OBT"
-    },
-    {
-      "n": "EVEREST GROUP, LTD.",
-      "t": "EG"
-    },
-    {
-      "n": "STANDARD BIOTOOLS INC.",
-      "t": "LAB"
-    },
-    {
-      "n": "Vanda Pharmaceuticals Inc.",
-      "t": "VNDA"
-    },
-    {
-      "n": "OPKO HEALTH, INC.",
-      "t": "OPK"
-    },
-    {
-      "n": "MBX Biosciences, Inc.",
-      "t": "MBX"
-    },
-    {
-      "n": "Pulsenmore Ltd.",
-      "t": "PLSM"
-    },
-    {
-      "n": "SHENANDOAH TELECOMMUNICATIONS CO/VA/",
-      "t": "SHEN"
-    },
-    {
-      "n": "BCB BANCORP INC",
-      "t": "BCBP"
-    },
-    {
-      "n": "SIMPPLE LTD.",
-      "t": "SPPL"
+      "n": "PACCAR INC",
+      "t": "PCAR"
     }
   ],
   "titles": [
-    "EVP and President, Diagnostics",
-    "EVP, CAO & CIO",
-    "EVP, International",
-    "EVP, Worldwide Sales",
-    "Executive Chair of the Board",
-    "Executive VP & Chief HRO",
-    "Executive VP and CDO",
-    "Group Chief Executive Officer",
-    "Group President, Utilities",
-    "INVESTOR RELATIONS OFFICER",
-    "President/COO",
-    "Reg Pres, Westchester County",
-    "SVP - Corp Strategy & Devel.",
-    "SVP - IR & Corp. Comm.",
-    "SVP Commercial Sales",
-    "SVP OF INVENTORY MANAGEMENT",
-    "SVP, PQI",
-    "SVP-COO",
-    "Senior VP, Gen. Counsel, Sec.",
-    "Sr. VP, Perf Coatings Segment",
-    "VP, Rates & Reg Affairs"
+    "CFO & CAO",
+    "CFO and SVP",
+    "CHAIRMAN OF THE BOARD",
+    "CHRO & EVP, Global Ops. Serv.",
+    "Chief Home Lending Officer/EVP",
+    "Chief Lending Officer, EVP",
+    "Chief Strat/Marketing Officer",
+    "EVP &  General Counsel",
+    "EVP & Chief Digital Info Ofr",
+    "EVP - Wealth Management",
+    "EVP and CDTO",
+    "EVP and Chief Clinical Officer",
+    "EVP and Group President",
+    "EVP/CHIEF INV SERVICES OFFICER",
+    "Global Head of Clearing & CRO",
+    "Interim Cheif Legal Officer",
+    "SEVP, CL&GAO",
+    "SVP - Enterprise Finance & CAO",
+    "SVP Controller",
+    "SVP, Structured Finance",
+    "SVP-Chief Legal Officer",
+    "See \"Remarks\""
   ]
 }
