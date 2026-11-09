@@ -16,11 +16,6 @@
       "sic_description": ""
     },
     {
-      "cik": "1065696",
-      "name": "LKQ CORP",
-      "sic_description": "Wholesale-Motor Vehicles & Motor Vehicle Parts & Supplies"
-    },
-    {
       "cik": "1510599",
       "name": "PIMCO Dynamic Income Fund",
       "sic_description": ""
@@ -31,170 +26,12 @@
       "sic_description": ""
     },
     {
-      "cik": "1095565",
-      "name": "HEALTHSTREAM INC",
-      "sic_description": "Services-Computer Programming, Data Processing, Etc."
-    },
-    {
-      "cik": "1048286",
-      "name": "MARRIOTT INTERNATIONAL INC /MD/",
-      "sic_description": "Hotels & Motels"
-    },
-    {
       "cik": "1094366",
       "name": "RADWARE LTD",
       "sic_description": "Services-Business Services, NEC"
-    },
-    {
-      "cik": "4962",
-      "name": "AMERICAN EXPRESS CO",
-      "sic_description": "Finance Services"
-    },
-    {
-      "cik": "884887",
-      "name": "ROYAL CARIBBEAN CRUISES LTD",
-      "sic_description": "Water Transportation"
-    },
-    {
-      "cik": "860731",
-      "name": "TYLER TECHNOLOGIES INC",
-      "sic_description": "Services-Prepackaged Software"
-    },
-    {
-      "cik": "21665",
-      "name": "COLGATE PALMOLIVE CO",
-      "sic_description": "Perfumes, Cosmetics & Other Toilet Preparations"
-    },
-    {
-      "cik": "1698991",
-      "name": "Accel Entertainment, Inc.",
-      "sic_description": "Services-Amusement & Recreation Services"
-    },
-    {
-      "cik": "1413447",
-      "name": "NXP Semiconductors N.V.",
-      "sic_description": "Semiconductors & Related Devices"
-    },
-    {
-      "cik": "887359",
-      "name": "Vericel Corp",
-      "sic_description": "Biological Products, (No Diagnostic Substances)"
-    },
-    {
-      "cik": "1385613",
-      "name": "GREENLIGHT CAPITAL RE, LTD.",
-      "sic_description": "Fire, Marine & Casualty Insurance"
-    },
-    {
-      "cik": "1835856",
-      "name": "Better Home & Finance Holding Co",
-      "sic_description": "Loan Brokers"
     }
   ],
-  "industries": [
-    "Loan Brokers",
-    "Wholesale-Motor Vehicles & Motor Vehicle Parts & Supplies"
-  ],
-  "names": [
-    {
-      "n": "HCA Healthcare, Inc.",
-      "t": "HCA"
-    },
-    {
-      "n": "Annovis Bio, Inc.",
-      "t": "ANVS"
-    },
-    {
-      "n": "CVS HEALTH Corp",
-      "t": "CVS"
-    },
-    {
-      "n": "General Motors Co",
-      "t": "GM"
-    },
-    {
-      "n": "SMITH A O CORP",
-      "t": "AOS"
-    },
-    {
-      "n": "Allegiant Travel CO",
-      "t": "ALGT"
-    },
-    {
-      "n": "Ingersoll Rand Inc.",
-      "t": "IR"
-    },
-    {
-      "n": "Alight, Inc. / Delaware",
-      "t": "ALIT"
-    },
-    {
-      "n": "ESAB Corp",
-      "t": "ESAB"
-    },
-    {
-      "n": "WEST BANCORPORATION INC",
-      "t": "WTBA"
-    },
-    {
-      "n": "YPF SOCIEDAD ANONIMA",
-      "t": "YPF"
-    },
-    {
-      "n": "LEVI STRAUSS & CO",
-      "t": "LEVI"
-    },
-    {
-      "n": "PEOPLES FINANCIAL SERVICES CORP.",
-      "t": "PFIS"
-    },
-    {
-      "n": "Catalyst Bancorp, Inc.",
-      "t": "CLST"
-    },
-    {
-      "n": "Ranpak Holdings Corp.",
-      "t": "PACK"
-    },
-    {
-      "n": "Construction Partners, Inc.",
-      "t": "ROAD"
-    },
-    {
-      "n": "FAIR ISAAC CORP",
-      "t": "FICO"
-    },
-    {
-      "n": "INTERNATIONAL BATTERY METALS LTD.",
-      "t": "IBATF"
-    },
-    {
-      "n": "PACCAR INC",
-      "t": "PCAR"
-    }
-  ],
-  "titles": [
-    "CFO & CAO",
-    "CFO and SVP",
-    "CHAIRMAN OF THE BOARD",
-    "CHRO & EVP, Global Ops. Serv.",
-    "Chief Home Lending Officer/EVP",
-    "Chief Lending Officer, EVP",
-    "Chief Strat/Marketing Officer",
-    "EVP &  General Counsel",
-    "EVP & Chief Digital Info Ofr",
-    "EVP - Wealth Management",
-    "EVP and CDTO",
-    "EVP and Chief Clinical Officer",
-    "EVP and Group President",
-    "EVP/CHIEF INV SERVICES OFFICER",
-    "Global Head of Clearing & CRO",
-    "Interim Cheif Legal Officer",
-    "SEVP, CL&GAO",
-    "SVP - Enterprise Finance & CAO",
-    "SVP Controller",
-    "SVP, Structured Finance",
-    "SVP-Chief Legal Officer",
-    "See \"Remarks\""
-  ]
+  "industries": [],
+  "names": [],
+  "titles": []
 }

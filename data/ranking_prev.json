@@ -40,11 +40,6 @@
     "ticker": "BBT"
   },
   {
-    "issuer_cik": "1326380",
-    "name": "GameStop Corp.",
-    "ticker": "GME"
-  },
-  {
     "issuer_cik": "94344",
     "name": "STEWART INFORMATION SERVICES CORP",
     "ticker": "STC"
@@ -55,6 +50,11 @@
     "ticker": "PRHI"
   },
   {
+    "issuer_cik": "1326380",
+    "name": "GameStop Corp.",
+    "ticker": "GME"
+  },
+  {
     "issuer_cik": "1469395",
     "name": "Pampa Energy Inc.",
     "ticker": "PAM"
@@ -63,11 +63,6 @@
     "issuer_cik": "1844971",
     "name": "Vulcan Infrastructure & Power Inc.",
     "ticker": "GREE"
-  },
-  {
-    "issuer_cik": "1833141",
-    "name": "Helus Pharma Inc.",
-    "ticker": "HELP"
   },
   {
     "issuer_cik": "1803914",
@@ -93,11 +88,6 @@
     "issuer_cik": "40417",
     "name": "GENERAL AMERICAN INVESTORS CO INC",
     "ticker": "GAM"
-  },
-  {
-    "issuer_cik": "1505732",
-    "name": "Bankwell Financial Group, Inc.",
-    "ticker": "BWFG"
   },
   {
     "issuer_cik": "826675",
@@ -153,11 +143,6 @@
     "issuer_cik": "1551047",
     "name": "Bluerock Private Real Estate Fund",
     "ticker": "BPRE"
-  },
-  {
-    "issuer_cik": "2007919",
-    "name": "Inhibrx Biosciences, Inc.",
-    "ticker": "INBX"
   },
   {
     "issuer_cik": "2114459",
