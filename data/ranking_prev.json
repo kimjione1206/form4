@@ -50,11 +50,6 @@
     "ticker": "PRHI"
   },
   {
-    "issuer_cik": "1326380",
-    "name": "GameStop Corp.",
-    "ticker": "GME"
-  },
-  {
     "issuer_cik": "1469395",
     "name": "Pampa Energy Inc.",
     "ticker": "PAM"
@@ -128,6 +123,11 @@
     "issuer_cik": "1041368",
     "name": "RIVERVIEW BANCORP INC",
     "ticker": "RVSB"
+  },
+  {
+    "issuer_cik": "1326380",
+    "name": "GameStop Corp.",
+    "ticker": "GME"
   },
   {
     "issuer_cik": "2044950",
@@ -225,11 +225,6 @@
     "ticker": "AOMR"
   },
   {
-    "issuer_cik": "1095435",
-    "name": "Alpha Compute Corp",
-    "ticker": "ALP"
-  },
-  {
     "issuer_cik": "1630472",
     "name": "TPG RE Finance Trust, Inc.",
     "ticker": "TRTX"
@@ -260,11 +255,6 @@
     "ticker": "SWZ"
   },
   {
-    "issuer_cik": "1069533",
-    "name": "RGC RESOURCES INC",
-    "ticker": "RGCO"
-  },
-  {
     "issuer_cik": "1868995",
     "name": "CI&T Inc",
     "ticker": "CINT"
@@ -278,6 +268,11 @@
     "issuer_cik": "1638290",
     "name": "MasterCraft Boat Holdings, Inc.",
     "ticker": "MCFT"
+  },
+  {
+    "issuer_cik": "1069533",
+    "name": "RGC RESOURCES INC",
+    "ticker": "RGCO"
   },
   {
     "issuer_cik": "34956",
