@@ -16,6 +16,16 @@
       "sic_description": ""
     },
     {
+      "cik": "1116942",
+      "name": "TTM TECHNOLOGIES INC",
+      "sic_description": "Printed Circuit Boards"
+    },
+    {
+      "cik": "2035149",
+      "name": "Flowco Holdings Inc.",
+      "sic_description": "Oil & Gas Field Machinery & Equipment"
+    },
+    {
       "cik": "1510599",
       "name": "PIMCO Dynamic Income Fund",
       "sic_description": ""
@@ -29,9 +39,172 @@
       "cik": "1094366",
       "name": "RADWARE LTD",
       "sic_description": "Services-Business Services, NEC"
+    },
+    {
+      "cik": "1670076",
+      "name": "Frontier Group Holdings, Inc.",
+      "sic_description": "Air Transportation, Scheduled"
+    },
+    {
+      "cik": "40533",
+      "name": "GENERAL DYNAMICS CORP",
+      "sic_description": "Ship & Boat Building & Repairing"
+    },
+    {
+      "cik": "851968",
+      "name": "MOHAWK INDUSTRIES INC",
+      "sic_description": "Carpets & Rugs"
+    },
+    {
+      "cik": "1666700",
+      "name": "DuPont de Nemours, Inc.",
+      "sic_description": "Plastic Materials, Synth Resins & Nonvulcan Elastomers"
+    },
+    {
+      "cik": "27904",
+      "name": "DELTA AIR LINES, INC.",
+      "sic_description": "Air Transportation, Scheduled"
+    },
+    {
+      "cik": "14930",
+      "name": "BRUNSWICK CORP",
+      "sic_description": "Engines & Turbines"
+    },
+    {
+      "cik": "39263",
+      "name": "CULLEN/FROST BANKERS, INC.",
+      "sic_description": "National Commercial Banks"
+    },
+    {
+      "cik": "1673358",
+      "name": "Yum China Holdings, Inc.",
+      "sic_description": "Retail-Eating  Places"
+    },
+    {
+      "cik": "1035201",
+      "name": "CALIFORNIA WATER SERVICE GROUP",
+      "sic_description": "Water Supply"
+    },
+    {
+      "cik": "1069878",
+      "name": "TREX CO INC",
+      "sic_description": "Lumber & Wood Products (No Furniture)"
     }
   ],
-  "industries": [],
-  "names": [],
-  "titles": []
+  "industries": [
+    "Engines & Turbines",
+    "Plastic Materials, Synth Resins & Nonvulcan Elastomers",
+    "Water Supply"
+  ],
+  "names": [
+    {
+      "n": "FIGS, Inc.",
+      "t": "FIGS"
+    },
+    {
+      "n": "DuPont de Nemours, Inc.",
+      "t": "DD"
+    },
+    {
+      "n": "CareDx, Inc.",
+      "t": "CDNA"
+    },
+    {
+      "n": "ADTRAN Holdings, Inc.",
+      "t": "ADTN"
+    },
+    {
+      "n": "Lumen Technologies, Inc.",
+      "t": "LUMN"
+    },
+    {
+      "n": "GREENE BANCORP, INC.",
+      "t": "GCBC"
+    },
+    {
+      "n": "TREX CO INC",
+      "t": "TREX"
+    },
+    {
+      "n": "Lord Abbett Credit Opportunities Fund",
+      "t": "LCRDX"
+    },
+    {
+      "n": "Archer-Daniels-Midland Co",
+      "t": "ADM"
+    },
+    {
+      "n": "HEALTHPEAK PROPERTIES, INC.",
+      "t": "DOC"
+    },
+    {
+      "n": "OneSpan Inc.",
+      "t": "OSPN"
+    },
+    {
+      "n": "OSI SYSTEMS INC",
+      "t": "OSIS"
+    },
+    {
+      "n": "PROVIDENT FINANCIAL HOLDINGS INC",
+      "t": "PROV"
+    },
+    {
+      "n": "MERCURY GENERAL CORP",
+      "t": "MCY"
+    },
+    {
+      "n": "GRAFTECH INTERNATIONAL LTD",
+      "t": "EAF"
+    },
+    {
+      "n": "LEXICON PHARMACEUTICALS, INC.",
+      "t": "LXRX"
+    },
+    {
+      "n": "SITE Centers Corp.",
+      "t": "SITC"
+    },
+    {
+      "n": "Cooper-Standard Holdings Inc.",
+      "t": "CPS"
+    },
+    {
+      "n": "BANK OF THE JAMES FINANCIAL GROUP INC",
+      "t": "BOTJ"
+    },
+    {
+      "n": "Security Midwest Bancorp, Inc.",
+      "t": "SBMW"
+    },
+    {
+      "n": "ARVINAS, INC.",
+      "t": "ARVN"
+    }
+  ],
+  "titles": [
+    "CEO, Federated Hermes Limited",
+    "CVP,Strategy/Corp Development",
+    "E.V.P. & President Boat Group",
+    "EVP & Pres. - International",
+    "EVP & President, Marketplace",
+    "EVP - Retail & Ag Banking",
+    "EVP Gen Counsel,  Legal & Comp",
+    "EVP Head of Fintech Solutions",
+    "EVP and Treasurer",
+    "EVP, Pres. Workplace Solutions",
+    "EVP, SF Bay Area President",
+    "EVP,ChiefRecurringRev.Officer",
+    "EVP/CHIEF LENDING OFFICER",
+    "General Manager, KFC",
+    "PRES., OPTOELECTRONICS DIV",
+    "President of CFR",
+    "President of Global Ceramic",
+    "President-Nuclear Development",
+    "SVP, Chief Marketing Officer",
+    "SVP-Chief Information Officer",
+    "Sr. VP & Chief Info Officer",
+    "Sr. Vice President, Operations",
+    "Vice President and CFO"
+  ]
 }

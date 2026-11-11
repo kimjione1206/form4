@@ -15,6 +15,11 @@
     "ticker": "HEI, HEI.A"
   },
   {
+    "issuer_cik": "1520006",
+    "name": "Matador Resources Co",
+    "ticker": "MTDR"
+  },
+  {
     "issuer_cik": "2012593",
     "name": "Rapport Therapeutics, Inc.",
     "ticker": "RAPP"
@@ -55,11 +60,6 @@
     "ticker": "PAM"
   },
   {
-    "issuer_cik": "1844971",
-    "name": "Vulcan Infrastructure & Power Inc.",
-    "ticker": "GREE"
-  },
-  {
     "issuer_cik": "1803914",
     "name": "Playboy, Inc.",
     "ticker": "PLBY"
@@ -73,6 +73,11 @@
     "issuer_cik": "1336706",
     "name": "NORTHPOINTE BANCSHARES INC",
     "ticker": "NPB"
+  },
+  {
+    "issuer_cik": "350698",
+    "name": "AUTONATION, INC.",
+    "ticker": "AN"
   },
   {
     "issuer_cik": "1641614",
@@ -93,11 +98,6 @@
     "issuer_cik": "715446",
     "name": "Anixa Biosciences Inc",
     "ticker": "ANIX"
-  },
-  {
-    "issuer_cik": "1520006",
-    "name": "Matador Resources Co",
-    "ticker": "MTDR"
   },
   {
     "issuer_cik": "1963088",
@@ -155,6 +155,11 @@
     "ticker": "BWMX"
   },
   {
+    "issuer_cik": "1116942",
+    "name": "TTM TECHNOLOGIES INC",
+    "ticker": "TTMI"
+  },
+  {
     "issuer_cik": "917251",
     "name": "AGREE REALTY CORP",
     "ticker": "ADC"
@@ -165,19 +170,14 @@
     "ticker": "COO"
   },
   {
-    "issuer_cik": "1341766",
-    "name": "Celsius Holdings, Inc.",
-    "ticker": "CELH"
-  },
-  {
     "issuer_cik": "1089063",
     "name": "DICK'S SPORTING GOODS, INC.",
     "ticker": "DKS"
   },
   {
-    "issuer_cik": "350698",
-    "name": "AUTONATION, INC.",
-    "ticker": "AN"
+    "issuer_cik": "2035149",
+    "name": "Flowco Holdings Inc.",
+    "ticker": "FLOC"
   },
   {
     "issuer_cik": "2040127",
@@ -220,9 +220,9 @@
     "ticker": "PDI"
   },
   {
-    "issuer_cik": "1766478",
-    "name": "Angel Oak Mortgage REIT, Inc.",
-    "ticker": "AOMR"
+    "issuer_cik": "1046179",
+    "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
+    "ticker": "TSM"
   },
   {
     "issuer_cik": "1630472",
@@ -268,11 +268,6 @@
     "issuer_cik": "1638290",
     "name": "MasterCraft Boat Holdings, Inc.",
     "ticker": "MCFT"
-  },
-  {
-    "issuer_cik": "1069533",
-    "name": "RGC RESOURCES INC",
-    "ticker": "RGCO"
   },
   {
     "issuer_cik": "34956",
