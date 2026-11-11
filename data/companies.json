@@ -112,7 +112,7 @@
   "1035201": {
     "name": "CALIFORNIA WATER SERVICE GROUP",
     "sic_description": "Water Supply",
-    "summary": null
+    "summary": "수돗물을 공급하는 회사"
   },
   "1035267": {
     "name": "INTUITIVE SURGICAL INC",
@@ -267,7 +267,7 @@
   "1069878": {
     "name": "TREX CO INC",
     "sic_description": "Lumber & Wood Products (No Furniture)",
-    "summary": null
+    "summary": "합성 목재 데크를 만드는 회사"
   },
   "1070081": {
     "name": "PTC THERAPEUTICS, INC.",
@@ -442,7 +442,7 @@
   "1116942": {
     "name": "TTM TECHNOLOGIES INC",
     "sic_description": "Printed Circuit Boards",
-    "summary": null
+    "summary": "인쇄회로기판을 만드는 회사"
   },
   "1117297": {
     "name": "QUINSTREET, INC",
@@ -1217,7 +1217,7 @@
   "14930": {
     "name": "BRUNSWICK CORP",
     "sic_description": "Engines & Turbines",
-    "summary": null
+    "summary": "보트와 선박용 엔진을 만드는 회사"
   },
   "1493594": {
     "name": "MACOM Technology Solutions Holdings, Inc.",
@@ -2017,7 +2017,7 @@
   "1666700": {
     "name": "DuPont de Nemours, Inc.",
     "sic_description": "Plastic Materials, Synth Resins & Nonvulcan Elastomers",
-    "summary": null
+    "summary": "첨단 소재와 산업용 제품을 만드는 회사"
   },
   "1667011": {
     "name": "Arteris, Inc.",
@@ -2042,7 +2042,7 @@
   "1670076": {
     "name": "Frontier Group Holdings, Inc.",
     "sic_description": "Air Transportation, Scheduled",
-    "summary": null
+    "summary": "저가 항공편을 운항하는 항공사"
   },
   "1671502": {
     "name": "Quoin Pharmaceuticals, Ltd.",
@@ -2057,7 +2057,7 @@
   "1673358": {
     "name": "Yum China Holdings, Inc.",
     "sic_description": "Retail-Eating  Places",
-    "summary": null
+    "summary": "중국에서 음식점을 운영하는 회사"
   },
   "1673743": {
     "name": "Hinge Health, Inc.",
@@ -3147,7 +3147,7 @@
   "2035149": {
     "name": "Flowco Holdings Inc.",
     "sic_description": "Oil & Gas Field Machinery & Equipment",
-    "summary": null
+    "summary": "유전·가스 생산용 장비를 만드는 회사"
   },
   "2035989": {
     "name": "Amrize Ltd",
@@ -3262,7 +3262,7 @@
   "27904": {
     "name": "DELTA AIR LINES, INC.",
     "sic_description": "Air Transportation, Scheduled",
-    "summary": null
+    "summary": "여객 항공 서비스를 하는 항공사"
   },
   "310158": {
     "name": "Merck & Co., Inc.",
@@ -3402,7 +3402,7 @@
   "39263": {
     "name": "CULLEN/FROST BANKERS, INC.",
     "sic_description": "National Commercial Banks",
-    "summary": null
+    "summary": "텍사스 지역 은행 지주회사"
   },
   "39311": {
     "name": "INDEPENDENT BANK CORP /MI/",
@@ -3427,7 +3427,7 @@
   "40533": {
     "name": "GENERAL DYNAMICS CORP",
     "sic_description": "Ship & Boat Building & Repairing",
-    "summary": null
+    "summary": "항공우주·방위 장비를 만드는 회사"
   },
   "43920": {
     "name": "GREIF, INC",
@@ -3827,7 +3827,7 @@
   "851968": {
     "name": "MOHAWK INDUSTRIES INC",
     "sic_description": "Carpets & Rugs",
-    "summary": null
+    "summary": "바닥재를 만드는 회사"
   },
   "855658": {
     "name": "LATTICE SEMICONDUCTOR CORP",
