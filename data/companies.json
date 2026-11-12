@@ -32,7 +32,7 @@
   "100517": {
     "name": "United Airlines Holdings, Inc.",
     "sic_description": "Air Transportation, Scheduled",
-    "summary": null
+    "summary": "정기 노선 항공 여객·화물 운송 회사"
   },
   "1005731": {
     "name": "IDT CORP",
@@ -172,7 +172,7 @@
   "1046050": {
     "name": "TIMBERLAND BANCORP INC",
     "sic_description": "Savings Institutions, Not Federally Chartered",
-    "summary": null
+    "summary": "워싱턴주 지역 저축은행 지주회사"
   },
   "1046179": {
     "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
@@ -202,7 +202,7 @@
   "1048911": {
     "name": "FEDEX CORP",
     "sic_description": "Air Courier Services",
-    "summary": null
+    "summary": "택배와 화물 운송 회사"
   },
   "1049521": {
     "name": "MERCURY SYSTEMS INC",
@@ -217,7 +217,7 @@
   "1056943": {
     "name": "PEOPLES FINANCIAL SERVICES CORP.",
     "sic_description": "National Commercial Banks",
-    "summary": null
+    "summary": "펜실베이니아 지역 은행 지주회사"
   },
   "1059556": {
     "name": "MOODYS CORP /DE/",
@@ -302,7 +302,7 @@
   "1070750": {
     "name": "HOST HOTELS & RESORTS, INC.",
     "sic_description": "Real Estate Investment Trusts",
-    "summary": null
+    "summary": "고급 호텔을 보유하는 부동산투자신탁"
   },
   "1070985": {
     "name": "CoreCivic, Inc.",
@@ -467,7 +467,7 @@
   "1116132": {
     "name": "TAPESTRY, INC.",
     "sic_description": "Leather & Leather Products",
-    "summary": null
+    "summary": "핸드백 등 패션 잡화 브랜드 회사"
   },
   "1116942": {
     "name": "TTM TECHNOLOGIES INC",
@@ -507,7 +507,7 @@
   "1137774": {
     "name": "PRUDENTIAL FINANCIAL INC",
     "sic_description": "Life Insurance",
-    "summary": null
+    "summary": "생명보험과 자산 운용 서비스 회사"
   },
   "1137789": {
     "name": "Seagate Technology Holdings plc",
@@ -1162,7 +1162,7 @@
   "1468328": {
     "name": "Addus HomeCare Corp",
     "sic_description": "Services-Home Health Care Services",
-    "summary": null
+    "summary": "가정 방문 돌봄·호스피스 서비스 회사"
   },
   "1468642": {
     "name": "Aura Minerals Inc.",
@@ -2487,7 +2487,7 @@
   "1794783": {
     "name": "SelectQuote, Inc.",
     "sic_description": "Insurance Agents, Brokers & Service",
-    "summary": null
+    "summary": "보험 상품을 온라인·전화로 중개하는 회사"
   },
   "1795586": {
     "name": "Chime Financial, Inc.",
@@ -2957,7 +2957,7 @@
   "1884516": {
     "name": "Drilling Tools International Corp",
     "sic_description": "Oil & Gas Field Machinery & Equipment",
-    "summary": null
+    "summary": "석유·가스 시추용 장비를 다루는 회사"
   },
   "1886428": {
     "name": "Slide Insurance Holdings, Inc.",
@@ -3122,7 +3122,7 @@
   "1999001": {
     "name": "Six Flags Entertainment Corporation/NEW",
     "sic_description": "Services-Amusement & Recreation Services",
-    "summary": null
+    "summary": "놀이공원과 워터파크를 운영하는 회사"
   },
   "2001184": {
     "name": "PACS Group, Inc.",
@@ -3342,7 +3342,7 @@
   "313616": {
     "name": "DANAHER CORP /DE/",
     "sic_description": "Industrial Instruments For Measurement, Display, and Control",
-    "summary": null
+    "summary": "생명과학·진단 장비를 만드는 회사"
   },
   "313838": {
     "name": "Sony Group Corp",
@@ -3442,7 +3442,7 @@
   "355948": {
     "name": "RICHARDSON ELECTRONICS, LTD.",
     "sic_description": "Wholesale-Electronic Parts & Equipment, NEC",
-    "summary": null
+    "summary": "전자 부품을 공급·제조하는 회사"
   },
   "357173": {
     "name": "OLD SECOND BANCORP INC",
@@ -3547,7 +3547,7 @@
   "59558": {
     "name": "LINCOLN NATIONAL CORP",
     "sic_description": "Life Insurance",
-    "summary": null
+    "summary": "생명보험과 은퇴 상품을 파는 회사"
   },
   "62709": {
     "name": "MARSH & MCLENNAN COMPANIES, INC.",
@@ -3917,7 +3917,7 @@
   "860730": {
     "name": "HCA Healthcare, Inc.",
     "sic_description": "Services-General Medical & Surgical Hospitals, NEC",
-    "summary": null
+    "summary": "병원을 운영하는 의료 서비스 회사"
   },
   "860731": {
     "name": "TYLER TECHNOLOGIES INC",
@@ -3972,7 +3972,7 @@
   "879169": {
     "name": "INCYTE CORP",
     "sic_description": "Services-Commercial Physical & Biological Research",
-    "summary": null
+    "summary": "신약을 연구·개발하는 제약 회사"
   },
   "88000": {
     "name": "Horizon Kinetics Holding Corp",
