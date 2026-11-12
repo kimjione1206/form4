@@ -10,24 +10,24 @@
     "ticker": "FUL"
   },
   {
-    "issuer_cik": "46619",
-    "name": "HEICO CORP",
-    "ticker": "HEI, HEI.A"
-  },
-  {
     "issuer_cik": "1520006",
     "name": "Matador Resources Co",
     "ticker": "MTDR"
   },
   {
-    "issuer_cik": "2012593",
-    "name": "Rapport Therapeutics, Inc.",
-    "ticker": "RAPP"
-  },
-  {
     "issuer_cik": "933036",
     "name": "UPBOUND GROUP, INC.",
     "ticker": "UPBD"
+  },
+  {
+    "issuer_cik": "46619",
+    "name": "HEICO CORP",
+    "ticker": "HEI, HEI.A"
+  },
+  {
+    "issuer_cik": "2012593",
+    "name": "Rapport Therapeutics, Inc.",
+    "ticker": "RAPP"
   },
   {
     "issuer_cik": "1386716",
@@ -48,6 +48,16 @@
     "issuer_cik": "94344",
     "name": "STEWART INFORMATION SERVICES CORP",
     "ticker": "STC"
+  },
+  {
+    "issuer_cik": "1794783",
+    "name": "SelectQuote, Inc.",
+    "ticker": "SLQT"
+  },
+  {
+    "issuer_cik": "1046179",
+    "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
+    "ticker": "TSM"
   },
   {
     "issuer_cik": "1502292",
@@ -145,6 +155,11 @@
     "ticker": "BPRE"
   },
   {
+    "issuer_cik": "1999001",
+    "name": "Six Flags Entertainment Corporation/NEW",
+    "ticker": "FUN"
+  },
+  {
     "issuer_cik": "2114459",
     "name": "Cascade Real Assets Fund",
     "ticker": "CRAFX"
@@ -163,11 +178,6 @@
     "issuer_cik": "917251",
     "name": "AGREE REALTY CORP",
     "ticker": "ADC"
-  },
-  {
-    "issuer_cik": "711404",
-    "name": "COOPER COMPANIES, INC.",
-    "ticker": "COO"
   },
   {
     "issuer_cik": "1089063",
@@ -205,11 +215,6 @@
     "ticker": "LBRT"
   },
   {
-    "issuer_cik": "1606163",
-    "name": "Limbach Holdings, Inc.",
-    "ticker": "LMB"
-  },
-  {
     "issuer_cik": "2020932",
     "name": "AgomAb Therapeutics NV",
     "ticker": "AGMB"
@@ -220,9 +225,9 @@
     "ticker": "PDI"
   },
   {
-    "issuer_cik": "1046179",
-    "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
-    "ticker": "TSM"
+    "issuer_cik": "1606163",
+    "name": "Limbach Holdings, Inc.",
+    "ticker": "LMB"
   },
   {
     "issuer_cik": "1630472",
@@ -235,14 +240,14 @@
     "ticker": "OCFC"
   },
   {
+    "issuer_cik": "1884516",
+    "name": "Drilling Tools International Corp",
+    "ticker": "DTI"
+  },
+  {
     "issuer_cik": "929351",
     "name": "STARZ ENTERTAINMENT CORP /CN/",
     "ticker": "STRZ"
-  },
-  {
-    "issuer_cik": "1339688",
-    "name": "Lion Copper Corp.",
-    "ticker": "LCU"
   },
   {
     "issuer_cik": "1976443",
@@ -255,11 +260,6 @@
     "ticker": "SWZ"
   },
   {
-    "issuer_cik": "1868995",
-    "name": "CI&T Inc",
-    "ticker": "CINT"
-  },
-  {
     "issuer_cik": "36029",
     "name": "FIRST FINANCIAL BANKSHARES INC",
     "ticker": "FFIN"
@@ -270,14 +270,24 @@
     "ticker": "MCFT"
   },
   {
-    "issuer_cik": "34956",
-    "name": "TENAX THERAPEUTICS, INC.",
-    "ticker": "TENX"
+    "issuer_cik": "1868995",
+    "name": "CI&T Inc",
+    "ticker": "CINT"
   },
   {
     "issuer_cik": "2019804",
     "name": "Terrestrial Energy Inc. /DE/",
     "ticker": "IMSR"
+  },
+  {
+    "issuer_cik": "1339688",
+    "name": "Lion Copper Corp.",
+    "ticker": "LCU"
+  },
+  {
+    "issuer_cik": "1533040",
+    "name": "Phio Pharmaceuticals Corp.",
+    "ticker": "PHIO"
   },
   {
     "issuer_cik": "1175151",

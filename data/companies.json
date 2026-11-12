@@ -29,6 +29,11 @@
     "sic_description": "National Commercial Banks",
     "summary": "은행 지주회사"
   },
+  "100517": {
+    "name": "United Airlines Holdings, Inc.",
+    "sic_description": "Air Transportation, Scheduled",
+    "summary": null
+  },
   "1005731": {
     "name": "IDT CORP",
     "sic_description": "Telephone Communications (No Radiotelephone)",
@@ -164,6 +169,11 @@
     "sic_description": "Savings Institutions, Not Federally Chartered",
     "summary": "워싱턴주 지역 은행 지주회사"
   },
+  "1046050": {
+    "name": "TIMBERLAND BANCORP INC",
+    "sic_description": "Savings Institutions, Not Federally Chartered",
+    "summary": null
+  },
   "1046179": {
     "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
     "sic_description": "Semiconductors & Related Devices",
@@ -189,6 +199,11 @@
     "sic_description": "Computer Communications Equipment",
     "summary": "기업용 애플리케이션 전달·보안 제품을 만드는 회사"
   },
+  "1048911": {
+    "name": "FEDEX CORP",
+    "sic_description": "Air Courier Services",
+    "summary": null
+  },
   "1049521": {
     "name": "MERCURY SYSTEMS INC",
     "sic_description": "Electronic Components & Accessories",
@@ -198,6 +213,11 @@
     "name": "COLUMBIA SPORTSWEAR CO",
     "sic_description": "Apparel & Other Finishd Prods of  Fabrics & Similar Matl",
     "summary": "아웃도어 의류와 신발을 만드는 회사"
+  },
+  "1056943": {
+    "name": "PEOPLES FINANCIAL SERVICES CORP.",
+    "sic_description": "National Commercial Banks",
+    "summary": null
   },
   "1059556": {
     "name": "MOODYS CORP /DE/",
@@ -278,6 +298,11 @@
     "name": "BLACKBERRY Ltd",
     "sic_description": "Services-Prepackaged Software",
     "summary": "차량·기업용 보안 소프트웨어 회사"
+  },
+  "1070750": {
+    "name": "HOST HOTELS & RESORTS, INC.",
+    "sic_description": "Real Estate Investment Trusts",
+    "summary": null
   },
   "1070985": {
     "name": "CoreCivic, Inc.",
@@ -439,6 +464,11 @@
     "sic_description": "Electronic Components, NEC",
     "summary": "무선 인식(RFID) 칩을 만드는 회사"
   },
+  "1116132": {
+    "name": "TAPESTRY, INC.",
+    "sic_description": "Leather & Leather Products",
+    "summary": null
+  },
   "1116942": {
     "name": "TTM TECHNOLOGIES INC",
     "sic_description": "Printed Circuit Boards",
@@ -473,6 +503,11 @@
     "name": "BED BATH & BEYOND, INC.",
     "sic_description": "Retail-Catalog & Mail-Order Houses",
     "summary": "가정용품 소매 회사"
+  },
+  "1137774": {
+    "name": "PRUDENTIAL FINANCIAL INC",
+    "sic_description": "Life Insurance",
+    "summary": null
   },
   "1137789": {
     "name": "Seagate Technology Holdings plc",
@@ -1123,6 +1158,11 @@
     "name": "Rent the Runway, Inc.",
     "sic_description": "Retail-Retail Stores, NEC",
     "summary": "디자이너 의류를 빌려주는 구독 서비스 회사"
+  },
+  "1468328": {
+    "name": "Addus HomeCare Corp",
+    "sic_description": "Services-Home Health Care Services",
+    "summary": null
   },
   "1468642": {
     "name": "Aura Minerals Inc.",
@@ -2444,6 +2484,11 @@
     "sic_description": "Services-Prepackaged Software",
     "summary": "기업용 영업·마케팅 정보 소프트웨어 회사"
   },
+  "1794783": {
+    "name": "SelectQuote, Inc.",
+    "sic_description": "Insurance Agents, Brokers & Service",
+    "summary": null
+  },
   "1795586": {
     "name": "Chime Financial, Inc.",
     "sic_description": "Finance Services",
@@ -2909,6 +2954,11 @@
     "sic_description": "Retail-Miscellaneous Retail",
     "summary": "중고 의류 등을 파는 중고 매장 회사"
   },
+  "1884516": {
+    "name": "Drilling Tools International Corp",
+    "sic_description": "Oil & Gas Field Machinery & Equipment",
+    "summary": null
+  },
   "1886428": {
     "name": "Slide Insurance Holdings, Inc.",
     "sic_description": "Fire, Marine & Casualty Insurance",
@@ -3068,6 +3118,11 @@
     "name": "Proficient Auto Logistics, Inc",
     "sic_description": "Transportation Services",
     "summary": "자동차 운송·물류 회사"
+  },
+  "1999001": {
+    "name": "Six Flags Entertainment Corporation/NEW",
+    "sic_description": "Services-Amusement & Recreation Services",
+    "summary": null
   },
   "2001184": {
     "name": "PACS Group, Inc.",
@@ -3284,6 +3339,11 @@
     "sic_description": "Cutlery, Handtools & General Hardware",
     "summary": "산업용 철물·잠금장치를 만드는 회사"
   },
+  "313616": {
+    "name": "DANAHER CORP /DE/",
+    "sic_description": "Industrial Instruments For Measurement, Display, and Control",
+    "summary": null
+  },
   "313838": {
     "name": "Sony Group Corp",
     "sic_description": "Household Audio & Video Equipment",
@@ -3378,6 +3438,11 @@
     "name": "FIFTH THIRD BANCORP",
     "sic_description": "State Commercial Banks",
     "summary": "은행"
+  },
+  "355948": {
+    "name": "RICHARDSON ELECTRONICS, LTD.",
+    "sic_description": "Wholesale-Electronic Parts & Equipment, NEC",
+    "summary": null
   },
   "357173": {
     "name": "OLD SECOND BANCORP INC",
@@ -3477,6 +3542,11 @@
   "59478": {
     "name": "ELI LILLY & Co",
     "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
+  "59558": {
+    "name": "LINCOLN NATIONAL CORP",
+    "sic_description": "Life Insurance",
     "summary": null
   },
   "62709": {
@@ -3844,6 +3914,11 @@
     "sic_description": "Services-Auto Rental & Leasing (No Drivers)",
     "summary": "트럭 임대와 물류 서비스를 하는 회사"
   },
+  "860730": {
+    "name": "HCA Healthcare, Inc.",
+    "sic_description": "Services-General Medical & Surgical Hospitals, NEC",
+    "summary": null
+  },
   "860731": {
     "name": "TYLER TECHNOLOGIES INC",
     "sic_description": "Services-Prepackaged Software",
@@ -3893,6 +3968,11 @@
     "name": "MGIC INVESTMENT CORP",
     "sic_description": "Surety Insurance",
     "summary": "민간 모기지 보험 회사"
+  },
+  "879169": {
+    "name": "INCYTE CORP",
+    "sic_description": "Services-Commercial Physical & Biological Research",
+    "summary": null
   },
   "88000": {
     "name": "Horizon Kinetics Holding Corp",

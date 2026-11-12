@@ -1,6 +1,11 @@
 {
   "companies": [
     {
+      "cik": "1794783",
+      "name": "SelectQuote, Inc.",
+      "sic_description": "Insurance Agents, Brokers & Service"
+    },
+    {
       "cik": "40417",
       "name": "GENERAL AMERICAN INVESTORS CO INC",
       "sic_description": ""
@@ -11,19 +16,14 @@
       "sic_description": ""
     },
     {
+      "cik": "1999001",
+      "name": "Six Flags Entertainment Corporation/NEW",
+      "sic_description": "Services-Amusement & Recreation Services"
+    },
+    {
       "cik": "2114459",
       "name": "Cascade Real Assets Fund",
       "sic_description": ""
-    },
-    {
-      "cik": "1116942",
-      "name": "TTM TECHNOLOGIES INC",
-      "sic_description": "Printed Circuit Boards"
-    },
-    {
-      "cik": "2035149",
-      "name": "Flowco Holdings Inc.",
-      "sic_description": "Oil & Gas Field Machinery & Equipment"
     },
     {
       "cik": "1510599",
@@ -31,9 +31,29 @@
       "sic_description": ""
     },
     {
+      "cik": "1884516",
+      "name": "Drilling Tools International Corp",
+      "sic_description": "Oil & Gas Field Machinery & Equipment"
+    },
+    {
       "cik": "813623",
       "name": "Total Return Securities Fund",
       "sic_description": ""
+    },
+    {
+      "cik": "1468328",
+      "name": "Addus HomeCare Corp",
+      "sic_description": "Services-Home Health Care Services"
+    },
+    {
+      "cik": "100517",
+      "name": "United Airlines Holdings, Inc.",
+      "sic_description": "Air Transportation, Scheduled"
+    },
+    {
+      "cik": "1070750",
+      "name": "HOST HOTELS & RESORTS, INC.",
+      "sic_description": "Real Estate Investment Trusts"
     },
     {
       "cik": "1094366",
@@ -41,170 +61,183 @@
       "sic_description": "Services-Business Services, NEC"
     },
     {
-      "cik": "1670076",
-      "name": "Frontier Group Holdings, Inc.",
-      "sic_description": "Air Transportation, Scheduled"
+      "cik": "879169",
+      "name": "INCYTE CORP",
+      "sic_description": "Services-Commercial Physical & Biological Research"
     },
     {
-      "cik": "40533",
-      "name": "GENERAL DYNAMICS CORP",
-      "sic_description": "Ship & Boat Building & Repairing"
+      "cik": "860730",
+      "name": "HCA Healthcare, Inc.",
+      "sic_description": "Services-General Medical & Surgical Hospitals, NEC"
     },
     {
-      "cik": "851968",
-      "name": "MOHAWK INDUSTRIES INC",
-      "sic_description": "Carpets & Rugs"
+      "cik": "1048911",
+      "name": "FEDEX CORP",
+      "sic_description": "Air Courier Services"
     },
     {
-      "cik": "1666700",
-      "name": "DuPont de Nemours, Inc.",
-      "sic_description": "Plastic Materials, Synth Resins & Nonvulcan Elastomers"
+      "cik": "313616",
+      "name": "DANAHER CORP /DE/",
+      "sic_description": "Industrial Instruments For Measurement, Display, and Control"
     },
     {
-      "cik": "27904",
-      "name": "DELTA AIR LINES, INC.",
-      "sic_description": "Air Transportation, Scheduled"
+      "cik": "1116132",
+      "name": "TAPESTRY, INC.",
+      "sic_description": "Leather & Leather Products"
     },
     {
-      "cik": "14930",
-      "name": "BRUNSWICK CORP",
-      "sic_description": "Engines & Turbines"
+      "cik": "59558",
+      "name": "LINCOLN NATIONAL CORP",
+      "sic_description": "Life Insurance"
     },
     {
-      "cik": "39263",
-      "name": "CULLEN/FROST BANKERS, INC.",
+      "cik": "1137774",
+      "name": "PRUDENTIAL FINANCIAL INC",
+      "sic_description": "Life Insurance"
+    },
+    {
+      "cik": "1056943",
+      "name": "PEOPLES FINANCIAL SERVICES CORP.",
       "sic_description": "National Commercial Banks"
     },
     {
-      "cik": "1673358",
-      "name": "Yum China Holdings, Inc.",
-      "sic_description": "Retail-Eating  Places"
+      "cik": "355948",
+      "name": "RICHARDSON ELECTRONICS, LTD.",
+      "sic_description": "Wholesale-Electronic Parts & Equipment, NEC"
     },
     {
-      "cik": "1035201",
-      "name": "CALIFORNIA WATER SERVICE GROUP",
-      "sic_description": "Water Supply"
-    },
-    {
-      "cik": "1069878",
-      "name": "TREX CO INC",
-      "sic_description": "Lumber & Wood Products (No Furniture)"
+      "cik": "1046050",
+      "name": "TIMBERLAND BANCORP INC",
+      "sic_description": "Savings Institutions, Not Federally Chartered"
     }
   ],
   "industries": [
-    "Engines & Turbines",
-    "Plastic Materials, Synth Resins & Nonvulcan Elastomers",
-    "Water Supply"
+    "Air Courier Services",
+    "Leather & Leather Products",
+    "Wholesale-Electronic Parts & Equipment, NEC"
   ],
   "names": [
     {
-      "n": "FIGS, Inc.",
-      "t": "FIGS"
+      "n": "ALLSTATE CORP",
+      "t": "ALL"
     },
     {
-      "n": "DuPont de Nemours, Inc.",
-      "t": "DD"
+      "n": "Addus HomeCare Corp",
+      "t": "ADUS"
     },
     {
-      "n": "CareDx, Inc.",
-      "t": "CDNA"
+      "n": "VERTEX PHARMACEUTICALS INC / MA",
+      "t": "VRTX"
     },
     {
-      "n": "ADTRAN Holdings, Inc.",
-      "t": "ADTN"
+      "n": "EAGLE BANCORP INC",
+      "t": "EGBN"
     },
     {
-      "n": "Lumen Technologies, Inc.",
-      "t": "LUMN"
+      "n": "Playtika Holding Corp.",
+      "t": "PLTK"
     },
     {
-      "n": "GREENE BANCORP, INC.",
-      "t": "GCBC"
+      "n": "MORGAN STANLEY",
+      "t": "MS"
     },
     {
-      "n": "TREX CO INC",
-      "t": "TREX"
+      "n": "SelectQuote, Inc.",
+      "t": "SLQT"
     },
     {
-      "n": "Lord Abbett Credit Opportunities Fund",
-      "t": "LCRDX"
+      "n": "LENNOX INTERNATIONAL INC",
+      "t": "LII"
     },
     {
-      "n": "Archer-Daniels-Midland Co",
-      "t": "ADM"
+      "n": "CROWN CASTLE INC.",
+      "t": "CCI"
     },
     {
-      "n": "HEALTHPEAK PROPERTIES, INC.",
-      "t": "DOC"
+      "n": "Walker & Dunlop, Inc.",
+      "t": "WD"
     },
     {
-      "n": "OneSpan Inc.",
-      "t": "OSPN"
+      "n": "uniQure N.V.",
+      "t": "QURE"
     },
     {
-      "n": "OSI SYSTEMS INC",
-      "t": "OSIS"
+      "n": "ZIONS BANCORPORATION, NATIONAL ASSOCIATION /UT/",
+      "t": "ZION"
     },
     {
-      "n": "PROVIDENT FINANCIAL HOLDINGS INC",
-      "t": "PROV"
+      "n": "Strategic Education, Inc.",
+      "t": "STRA"
     },
     {
-      "n": "MERCURY GENERAL CORP",
-      "t": "MCY"
+      "n": "EASTMAN CHEMICAL CO",
+      "t": "EMN"
     },
     {
-      "n": "GRAFTECH INTERNATIONAL LTD",
-      "t": "EAF"
+      "n": "FULTON FINANCIAL CORP",
+      "t": "FULT"
     },
     {
-      "n": "LEXICON PHARMACEUTICALS, INC.",
-      "t": "LXRX"
+      "n": "Origin Bancorp, Inc.",
+      "t": "OBK"
     },
     {
-      "n": "SITE Centers Corp.",
-      "t": "SITC"
+      "n": "SunocoCorp LLC",
+      "t": "SUNC"
     },
     {
-      "n": "Cooper-Standard Holdings Inc.",
-      "t": "CPS"
+      "n": "Sunoco LP",
+      "t": "SUN"
     },
     {
-      "n": "BANK OF THE JAMES FINANCIAL GROUP INC",
-      "t": "BOTJ"
+      "n": "Tronox Holdings plc",
+      "t": "TROX"
     },
     {
-      "n": "Security Midwest Bancorp, Inc.",
-      "t": "SBMW"
+      "n": "Spero Therapeutics, Inc.",
+      "t": "SPRO"
     },
     {
-      "n": "ARVINAS, INC.",
-      "t": "ARVN"
+      "n": "CKX LANDS, INC.",
+      "t": "CKX"
+    },
+    {
+      "n": "FTAI Infrastructure Inc.",
+      "t": "FIP"
+    },
+    {
+      "n": "F&M BANK CORP",
+      "t": "FMBM"
     }
   ],
   "titles": [
-    "CEO, Federated Hermes Limited",
-    "CVP,Strategy/Corp Development",
-    "E.V.P. & President Boat Group",
-    "EVP & Pres. - International",
-    "EVP & President, Marketplace",
-    "EVP - Retail & Ag Banking",
-    "EVP Gen Counsel,  Legal & Comp",
-    "EVP Head of Fintech Solutions",
-    "EVP and Treasurer",
-    "EVP, Pres. Workplace Solutions",
-    "EVP, SF Bay Area President",
-    "EVP,ChiefRecurringRev.Officer",
-    "EVP/CHIEF LENDING OFFICER",
-    "General Manager, KFC",
-    "PRES., OPTOELECTRONICS DIV",
-    "President of CFR",
-    "President of Global Ceramic",
-    "President-Nuclear Development",
-    "SVP, Chief Marketing Officer",
-    "SVP-Chief Information Officer",
-    "Sr. VP & Chief Info Officer",
-    "Sr. Vice President, Operations",
-    "Vice President and CFO"
+    "CEO and Brand President, Coach",
+    "CFO  and CAO",
+    "CFO, Treasurer, EVP",
+    "CMO & Head of Late-Stage Dev.",
+    "Chief Sales and CS Officer",
+    "Controller, Chief Acct Officer",
+    "Director of Corporate Control",
+    "EVP & Pres., Bldg Climate Sol.",
+    "EVP - Chief Risk Officer",
+    "EVP HR and Labor Relations",
+    "EVP PMT",
+    "EVP,  CLO & CPO",
+    "EVP, CCO and Quality Officer",
+    "EVP, CFO, CAO & Treasurer",
+    "EVP, CHIEF MERCH. OFFICER",
+    "EVP, CLO and General Counsel",
+    "EVP, Chief Information Officer",
+    "EVP, GC & Chief Gov Officer",
+    "Head of Process Analytics",
+    "Interim CFO & Interim CAO",
+    "President - Key Accounts",
+    "President, Otis EMEA",
+    "SVP & Chief Nurse Executive",
+    "SVP GM Fendt/Valtra",
+    "SVP, Regions & Chf SupChn Ofcr",
+    "SVP, Strategy & Ventures",
+    "Senior EVP, CFO",
+    "V.P. (President, Terminals)"
   ]
 }
