@@ -880,11 +880,6 @@
     "ticker": "ARTV"
   },
   {
-    "issuer_cik": "1883085",
-    "name": "Pagaya Technologies Ltd.",
-    "ticker": "PGY"
-  },
-  {
     "issuer_cik": "1830214",
     "name": "Ginkgo Bioworks Holdings, Inc.",
     "ticker": "DNA"
@@ -918,6 +913,11 @@
     "issuer_cik": "1670076",
     "name": "Frontier Group Holdings, Inc.",
     "ticker": "ULCC"
+  },
+  {
+    "issuer_cik": "1883085",
+    "name": "Pagaya Technologies Ltd.",
+    "ticker": "PGY"
   },
   {
     "issuer_cik": "1393434",

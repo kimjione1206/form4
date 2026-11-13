@@ -1,11 +1,6 @@
 {
   "companies": [
     {
-      "cik": "1794783",
-      "name": "SelectQuote, Inc.",
-      "sic_description": "Insurance Agents, Brokers & Service"
-    },
-    {
       "cik": "40417",
       "name": "GENERAL AMERICAN INVESTORS CO INC",
       "sic_description": ""
@@ -14,11 +9,6 @@
       "cik": "1551047",
       "name": "Bluerock Private Real Estate Fund",
       "sic_description": ""
-    },
-    {
-      "cik": "1999001",
-      "name": "Six Flags Entertainment Corporation/NEW",
-      "sic_description": "Services-Amusement & Recreation Services"
     },
     {
       "cik": "2114459",
@@ -31,213 +21,17 @@
       "sic_description": ""
     },
     {
-      "cik": "1884516",
-      "name": "Drilling Tools International Corp",
-      "sic_description": "Oil & Gas Field Machinery & Equipment"
-    },
-    {
       "cik": "813623",
       "name": "Total Return Securities Fund",
       "sic_description": ""
     },
     {
-      "cik": "1468328",
-      "name": "Addus HomeCare Corp",
-      "sic_description": "Services-Home Health Care Services"
-    },
-    {
-      "cik": "100517",
-      "name": "United Airlines Holdings, Inc.",
-      "sic_description": "Air Transportation, Scheduled"
-    },
-    {
-      "cik": "1070750",
-      "name": "HOST HOTELS & RESORTS, INC.",
-      "sic_description": "Real Estate Investment Trusts"
-    },
-    {
       "cik": "1094366",
       "name": "RADWARE LTD",
       "sic_description": "Services-Business Services, NEC"
-    },
-    {
-      "cik": "879169",
-      "name": "INCYTE CORP",
-      "sic_description": "Services-Commercial Physical & Biological Research"
-    },
-    {
-      "cik": "860730",
-      "name": "HCA Healthcare, Inc.",
-      "sic_description": "Services-General Medical & Surgical Hospitals, NEC"
-    },
-    {
-      "cik": "1048911",
-      "name": "FEDEX CORP",
-      "sic_description": "Air Courier Services"
-    },
-    {
-      "cik": "313616",
-      "name": "DANAHER CORP /DE/",
-      "sic_description": "Industrial Instruments For Measurement, Display, and Control"
-    },
-    {
-      "cik": "1116132",
-      "name": "TAPESTRY, INC.",
-      "sic_description": "Leather & Leather Products"
-    },
-    {
-      "cik": "59558",
-      "name": "LINCOLN NATIONAL CORP",
-      "sic_description": "Life Insurance"
-    },
-    {
-      "cik": "1137774",
-      "name": "PRUDENTIAL FINANCIAL INC",
-      "sic_description": "Life Insurance"
-    },
-    {
-      "cik": "1056943",
-      "name": "PEOPLES FINANCIAL SERVICES CORP.",
-      "sic_description": "National Commercial Banks"
-    },
-    {
-      "cik": "355948",
-      "name": "RICHARDSON ELECTRONICS, LTD.",
-      "sic_description": "Wholesale-Electronic Parts & Equipment, NEC"
-    },
-    {
-      "cik": "1046050",
-      "name": "TIMBERLAND BANCORP INC",
-      "sic_description": "Savings Institutions, Not Federally Chartered"
     }
   ],
-  "industries": [
-    "Air Courier Services",
-    "Leather & Leather Products",
-    "Wholesale-Electronic Parts & Equipment, NEC"
-  ],
-  "names": [
-    {
-      "n": "ALLSTATE CORP",
-      "t": "ALL"
-    },
-    {
-      "n": "Addus HomeCare Corp",
-      "t": "ADUS"
-    },
-    {
-      "n": "VERTEX PHARMACEUTICALS INC / MA",
-      "t": "VRTX"
-    },
-    {
-      "n": "EAGLE BANCORP INC",
-      "t": "EGBN"
-    },
-    {
-      "n": "Playtika Holding Corp.",
-      "t": "PLTK"
-    },
-    {
-      "n": "MORGAN STANLEY",
-      "t": "MS"
-    },
-    {
-      "n": "SelectQuote, Inc.",
-      "t": "SLQT"
-    },
-    {
-      "n": "LENNOX INTERNATIONAL INC",
-      "t": "LII"
-    },
-    {
-      "n": "CROWN CASTLE INC.",
-      "t": "CCI"
-    },
-    {
-      "n": "Walker & Dunlop, Inc.",
-      "t": "WD"
-    },
-    {
-      "n": "uniQure N.V.",
-      "t": "QURE"
-    },
-    {
-      "n": "ZIONS BANCORPORATION, NATIONAL ASSOCIATION /UT/",
-      "t": "ZION"
-    },
-    {
-      "n": "Strategic Education, Inc.",
-      "t": "STRA"
-    },
-    {
-      "n": "EASTMAN CHEMICAL CO",
-      "t": "EMN"
-    },
-    {
-      "n": "FULTON FINANCIAL CORP",
-      "t": "FULT"
-    },
-    {
-      "n": "Origin Bancorp, Inc.",
-      "t": "OBK"
-    },
-    {
-      "n": "SunocoCorp LLC",
-      "t": "SUNC"
-    },
-    {
-      "n": "Sunoco LP",
-      "t": "SUN"
-    },
-    {
-      "n": "Tronox Holdings plc",
-      "t": "TROX"
-    },
-    {
-      "n": "Spero Therapeutics, Inc.",
-      "t": "SPRO"
-    },
-    {
-      "n": "CKX LANDS, INC.",
-      "t": "CKX"
-    },
-    {
-      "n": "FTAI Infrastructure Inc.",
-      "t": "FIP"
-    },
-    {
-      "n": "F&M BANK CORP",
-      "t": "FMBM"
-    }
-  ],
-  "titles": [
-    "CEO and Brand President, Coach",
-    "CFO  and CAO",
-    "CFO, Treasurer, EVP",
-    "CMO & Head of Late-Stage Dev.",
-    "Chief Sales and CS Officer",
-    "Controller, Chief Acct Officer",
-    "Director of Corporate Control",
-    "EVP & Pres., Bldg Climate Sol.",
-    "EVP - Chief Risk Officer",
-    "EVP HR and Labor Relations",
-    "EVP PMT",
-    "EVP,  CLO & CPO",
-    "EVP, CCO and Quality Officer",
-    "EVP, CFO, CAO & Treasurer",
-    "EVP, CHIEF MERCH. OFFICER",
-    "EVP, CLO and General Counsel",
-    "EVP, Chief Information Officer",
-    "EVP, GC & Chief Gov Officer",
-    "Head of Process Analytics",
-    "Interim CFO & Interim CAO",
-    "President - Key Accounts",
-    "President, Otis EMEA",
-    "SVP & Chief Nurse Executive",
-    "SVP GM Fendt/Valtra",
-    "SVP, Regions & Chf SupChn Ofcr",
-    "SVP, Strategy & Ventures",
-    "Senior EVP, CFO",
-    "V.P. (President, Terminals)"
-  ]
+  "industries": [],
+  "names": [],
+  "titles": []
 }
