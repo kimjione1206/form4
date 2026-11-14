@@ -92,7 +92,7 @@
   "1022079": {
     "name": "QUEST DIAGNOSTICS INC",
     "sic_description": "Services-Medical Laboratories",
-    "summary": null
+    "summary": "임상 검사 서비스를 하는 회사"
   },
   "1023024": {
     "name": "ANI PHARMACEUTICALS INC",
@@ -122,7 +122,7 @@
   "1031308": {
     "name": "BENTLEY SYSTEMS INC",
     "sic_description": "Services-Prepackaged Software",
-    "summary": null
+    "summary": "인프라 설계용 소프트웨어를 만드는 회사"
   },
   "1035201": {
     "name": "CALIFORNIA WATER SERVICE GROUP",
@@ -252,7 +252,7 @@
   "1062579": {
     "name": "AMDOCS LTD",
     "sic_description": "Services-Computer Programming Services",
-    "summary": null
+    "summary": "컴퓨터 소프트웨어 서비스를 하는 회사"
   },
   "1063761": {
     "name": "SIMON PROPERTY GROUP INC.",
@@ -407,7 +407,7 @@
   "1094366": {
     "name": "RADWARE LTD",
     "sic_description": "Services-Business Services, NEC",
-    "summary": null
+    "summary": "기업 대상 서비스를 하는 회사"
   },
   "1094972": {
     "name": "ULTRAPAR HOLDINGS INC",
@@ -637,7 +637,7 @@
   "12208": {
     "name": "BIO-RAD LABORATORIES, INC.",
     "sic_description": "Laboratory Analytical Instruments",
-    "summary": null
+    "summary": "생명과학 연구·진단 장비를 만드는 회사"
   },
   "1224608": {
     "name": "CNO Financial Group, Inc.",
@@ -907,7 +907,7 @@
   "1374690": {
     "name": "Larimar Therapeutics, Inc.",
     "sic_description": "Pharmaceutical Preparations",
-    "summary": null
+    "summary": "희귀질환 치료제를 개발하는 바이오 회사"
   },
   "1375205": {
     "name": "UR-ENERGY INC",
@@ -1002,7 +1002,7 @@
   "1395942": {
     "name": "OPENLANE, Inc.",
     "sic_description": "Retail-Auto Dealers & Gasoline Stations",
-    "summary": null
+    "summary": "중고차 도매 온라인 거래장터를 운영하는 회사"
   },
   "1397911": {
     "name": "LPL Financial Holdings Inc.",
@@ -1287,7 +1287,7 @@
   "1490978": {
     "name": "Schrodinger, Inc.",
     "sic_description": "Pharmaceutical Preparations",
-    "summary": null
+    "summary": "신약 개발용 계산 소프트웨어를 만드는 회사"
   },
   "14930": {
     "name": "BRUNSWICK CORP",
@@ -1327,7 +1327,7 @@
   "1504776": {
     "name": "Warby Parker Inc.",
     "sic_description": "Ophthalmic Goods",
-    "summary": null
+    "summary": "안경과 렌즈를 온라인·매장에서 파는 회사"
   },
   "1505732": {
     "name": "Bankwell Financial Group, Inc.",
@@ -1347,7 +1347,7 @@
   "1509470": {
     "name": "Neostellar Capital Corp.",
     "sic_description": "",
-    "summary": null
+    "summary": "기업에 투자하는 사업개발회사(BDC)"
   },
   "1509745": {
     "name": "CYPHERPUNK TECHNOLOGIES INC.",
@@ -1962,7 +1962,7 @@
   "1639877": {
     "name": "Ferroglobe PLC",
     "sic_description": "Metal Mining",
-    "summary": null
+    "summary": "금속을 채굴·생산하는 회사"
   },
   "1640147": {
     "name": "Snowflake Inc.",
@@ -2517,7 +2517,7 @@
   "1793229": {
     "name": "Claritev Corp",
     "sic_description": "Services-Business Services, NEC",
-    "summary": null
+    "summary": "의료비 데이터·분석 서비스를 하는 회사"
   },
   "1793659": {
     "name": "Rush Street Interactive, Inc.",
@@ -2557,7 +2557,7 @@
   "1801368": {
     "name": "MP Materials Corp. / DE",
     "sic_description": "Metal Mining",
-    "summary": null
+    "summary": "희토류를 채굴·가공하는 회사"
   },
   "1802369": {
     "name": "ADARx Pharmaceuticals, Inc.",
@@ -3462,7 +3462,7 @@
   "33185": {
     "name": "EQUIFAX INC",
     "sic_description": "Services-Consumer Credit Reporting, Collection Agencies",
-    "summary": null
+    "summary": "신용 정보와 데이터 분석을 제공하는 회사"
   },
   "3453": {
     "name": "Matson, Inc.",
@@ -4237,7 +4237,7 @@
   "920148": {
     "name": "LABCORP HOLDINGS INC.",
     "sic_description": "Services-Medical Laboratories",
-    "summary": null
+    "summary": "임상 검사와 신약 개발 시험을 하는 회사"
   },
   "92122": {
     "name": "SOUTHERN CO",
@@ -4287,7 +4287,7 @@
   "93389": {
     "name": "STANDARD MOTOR PRODUCTS, INC.",
     "sic_description": "Motor Vehicle Parts & Accessories",
-    "summary": null
+    "summary": "자동차 교체 부품을 만드는 회사"
   },
   "93410": {
     "name": "CHEVRON CORP",
@@ -4312,7 +4312,7 @@
   "93751": {
     "name": "STATE STREET CORP",
     "sic_description": "State Commercial Banks",
-    "summary": null
+    "summary": "기관투자자 대상 금융 서비스 은행"
   },
   "94344": {
     "name": "STEWART INFORMATION SERVICES CORP",
