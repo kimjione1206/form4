@@ -40,6 +40,11 @@
     "ticker": "RWT"
   },
   {
+    "issuer_cik": "1374690",
+    "name": "Larimar Therapeutics, Inc.",
+    "ticker": "LRMR"
+  },
+  {
     "issuer_cik": "1108134",
     "name": "Beacon Financial Corp",
     "ticker": "BBT"
@@ -58,6 +63,11 @@
     "issuer_cik": "1046179",
     "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
     "ticker": "TSM"
+  },
+  {
+    "issuer_cik": "1639877",
+    "name": "Ferroglobe PLC",
+    "ticker": "GSM"
   },
   {
     "issuer_cik": "1502292",
@@ -100,9 +110,19 @@
     "ticker": "GAM"
   },
   {
+    "issuer_cik": "1062579",
+    "name": "AMDOCS LTD",
+    "ticker": "DOX"
+  },
+  {
     "issuer_cik": "826675",
     "name": "DYNEX CAPITAL INC",
     "ticker": "DX"
+  },
+  {
+    "issuer_cik": "1884516",
+    "name": "Drilling Tools International Corp",
+    "ticker": "DTI"
   },
   {
     "issuer_cik": "715446",
@@ -118,6 +138,11 @@
     "issuer_cik": "31107",
     "name": "EASTERN CO",
     "ticker": "EML"
+  },
+  {
+    "issuer_cik": "1533040",
+    "name": "Phio Pharmaceuticals Corp.",
+    "ticker": "PHIO"
   },
   {
     "issuer_cik": "838875",
@@ -163,6 +188,11 @@
     "issuer_cik": "2114459",
     "name": "Cascade Real Assets Fund",
     "ticker": "CRAFX"
+  },
+  {
+    "issuer_cik": "1801368",
+    "name": "MP Materials Corp. / DE",
+    "ticker": "MP"
   },
   {
     "issuer_cik": "1788257",
@@ -240,9 +270,9 @@
     "ticker": "OCFC"
   },
   {
-    "issuer_cik": "1884516",
-    "name": "Drilling Tools International Corp",
-    "ticker": "DTI"
+    "issuer_cik": "1509470",
+    "name": "Neostellar Capital Corp.",
+    "ticker": "NSLR"
   },
   {
     "issuer_cik": "929351",
@@ -283,11 +313,6 @@
     "issuer_cik": "1339688",
     "name": "Lion Copper Corp.",
     "ticker": "LCU"
-  },
-  {
-    "issuer_cik": "1533040",
-    "name": "Phio Pharmaceuticals Corp.",
-    "ticker": "PHIO"
   },
   {
     "issuer_cik": "1175151",

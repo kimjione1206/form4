@@ -89,6 +89,11 @@
     "sic_description": "Real Estate Investment Trusts",
     "summary": "기록물 보관·관리 서비스 회사"
   },
+  "1022079": {
+    "name": "QUEST DIAGNOSTICS INC",
+    "sic_description": "Services-Medical Laboratories",
+    "summary": null
+  },
   "1023024": {
     "name": "ANI PHARMACEUTICALS INC",
     "sic_description": "Pharmaceutical Preparations",
@@ -113,6 +118,11 @@
     "name": "ROCKWELL AUTOMATION, INC",
     "sic_description": "Measuring & Controlling Devices, NEC",
     "summary": "산업 자동화 장비·소프트웨어 회사"
+  },
+  "1031308": {
+    "name": "BENTLEY SYSTEMS INC",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
   },
   "1035201": {
     "name": "CALIFORNIA WATER SERVICE GROUP",
@@ -238,6 +248,11 @@
     "name": "CYTOKINETICS INC",
     "sic_description": "Pharmaceutical Preparations",
     "summary": "신약을 개발하는 제약회사"
+  },
+  "1062579": {
+    "name": "AMDOCS LTD",
+    "sic_description": "Services-Computer Programming Services",
+    "summary": null
   },
   "1063761": {
     "name": "SIMON PROPERTY GROUP INC.",
@@ -619,6 +634,11 @@
     "sic_description": "Biological Products, (No Diagnostic Substances)",
     "summary": "항암 치료 부작용 약을 만드는 회사"
   },
+  "12208": {
+    "name": "BIO-RAD LABORATORIES, INC.",
+    "sic_description": "Laboratory Analytical Instruments",
+    "summary": null
+  },
   "1224608": {
     "name": "CNO Financial Group, Inc.",
     "sic_description": "Accident & Health Insurance",
@@ -884,6 +904,11 @@
     "sic_description": "Services-Prepackaged Software",
     "summary": "기업용 업무 자동화 소프트웨어 회사"
   },
+  "1374690": {
+    "name": "Larimar Therapeutics, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
   "1375205": {
     "name": "UR-ENERGY INC",
     "sic_description": "Gold and Silver Ores",
@@ -973,6 +998,11 @@
     "name": "TAKEDA PHARMACEUTICAL CO LTD",
     "sic_description": "Pharmaceutical Preparations",
     "summary": "의약품을 만드는 제약회사"
+  },
+  "1395942": {
+    "name": "OPENLANE, Inc.",
+    "sic_description": "Retail-Auto Dealers & Gasoline Stations",
+    "summary": null
   },
   "1397911": {
     "name": "LPL Financial Holdings Inc.",
@@ -1254,6 +1284,11 @@
     "sic_description": "State Commercial Banks",
     "summary": "은행 지주회사"
   },
+  "1490978": {
+    "name": "Schrodinger, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
   "14930": {
     "name": "BRUNSWICK CORP",
     "sic_description": "Engines & Turbines",
@@ -1289,6 +1324,11 @@
     "sic_description": "Fire, Marine & Casualty Insurance",
     "summary": "손해보험 회사"
   },
+  "1504776": {
+    "name": "Warby Parker Inc.",
+    "sic_description": "Ophthalmic Goods",
+    "summary": null
+  },
   "1505732": {
     "name": "Bankwell Financial Group, Inc.",
     "sic_description": "State Commercial Banks",
@@ -1303,6 +1343,11 @@
     "name": "MARA Holdings, Inc.",
     "sic_description": "Finance Services",
     "summary": "비트코인 채굴 회사"
+  },
+  "1509470": {
+    "name": "Neostellar Capital Corp.",
+    "sic_description": "",
+    "summary": null
   },
   "1509745": {
     "name": "CYPHERPUNK TECHNOLOGIES INC.",
@@ -1914,6 +1959,11 @@
     "sic_description": "Sporting & Athletic Goods, NEC",
     "summary": "운동 기구·구독 서비스 회사"
   },
+  "1639877": {
+    "name": "Ferroglobe PLC",
+    "sic_description": "Metal Mining",
+    "summary": null
+  },
   "1640147": {
     "name": "Snowflake Inc.",
     "sic_description": "Services-Prepackaged Software",
@@ -2503,6 +2553,11 @@
     "name": "CLOVER HEALTH INVESTMENTS, CORP. /DE",
     "sic_description": "Hospital & Medical Service Plans",
     "summary": "의료 서비스·보험 회사"
+  },
+  "1801368": {
+    "name": "MP Materials Corp. / DE",
+    "sic_description": "Metal Mining",
+    "summary": null
   },
   "1802369": {
     "name": "ADARx Pharmaceuticals, Inc.",
@@ -3404,6 +3459,11 @@
     "sic_description": "Electronic Computers",
     "summary": "스마트폰·컴퓨터 등 전자기기 회사"
   },
+  "33185": {
+    "name": "EQUIFAX INC",
+    "sic_description": "Services-Consumer Credit Reporting, Collection Agencies",
+    "summary": null
+  },
   "3453": {
     "name": "Matson, Inc.",
     "sic_description": "Water Transportation",
@@ -4174,6 +4234,11 @@
     "sic_description": "Wholesale-Computers & Peripheral Equipment & Software",
     "summary": "기술 제품 유통 회사"
   },
+  "920148": {
+    "name": "LABCORP HOLDINGS INC.",
+    "sic_description": "Services-Medical Laboratories",
+    "summary": null
+  },
   "92122": {
     "name": "SOUTHERN CO",
     "sic_description": "Electric Services",
@@ -4219,6 +4284,11 @@
     "sic_description": "Services-Equipment Rental & Leasing, NEC",
     "summary": "소비자에게 가전·가구를 임대 판매하는 회사"
   },
+  "93389": {
+    "name": "STANDARD MOTOR PRODUCTS, INC.",
+    "sic_description": "Motor Vehicle Parts & Accessories",
+    "summary": null
+  },
   "93410": {
     "name": "CHEVRON CORP",
     "sic_description": "Petroleum Refining",
@@ -4238,6 +4308,11 @@
     "name": "TRINET GROUP, INC.",
     "sic_description": "Services-Business Services, NEC",
     "summary": "중소기업 인사·급여 서비스 회사"
+  },
+  "93751": {
+    "name": "STATE STREET CORP",
+    "sic_description": "State Commercial Banks",
+    "summary": null
   },
   "94344": {
     "name": "STEWART INFORMATION SERVICES CORP",

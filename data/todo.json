@@ -1,9 +1,24 @@
 {
   "companies": [
     {
+      "cik": "1374690",
+      "name": "Larimar Therapeutics, Inc.",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "1639877",
+      "name": "Ferroglobe PLC",
+      "sic_description": "Metal Mining"
+    },
+    {
       "cik": "40417",
       "name": "GENERAL AMERICAN INVESTORS CO INC",
       "sic_description": ""
+    },
+    {
+      "cik": "1062579",
+      "name": "AMDOCS LTD",
+      "sic_description": "Services-Computer Programming Services"
     },
     {
       "cik": "1551047",
@@ -16,8 +31,18 @@
       "sic_description": ""
     },
     {
+      "cik": "1801368",
+      "name": "MP Materials Corp. / DE",
+      "sic_description": "Metal Mining"
+    },
+    {
       "cik": "1510599",
       "name": "PIMCO Dynamic Income Fund",
+      "sic_description": ""
+    },
+    {
+      "cik": "1509470",
+      "name": "Neostellar Capital Corp.",
       "sic_description": ""
     },
     {
@@ -26,12 +51,311 @@
       "sic_description": ""
     },
     {
+      "cik": "1395942",
+      "name": "OPENLANE, Inc.",
+      "sic_description": "Retail-Auto Dealers & Gasoline Stations"
+    },
+    {
       "cik": "1094366",
       "name": "RADWARE LTD",
       "sic_description": "Services-Business Services, NEC"
+    },
+    {
+      "cik": "93389",
+      "name": "STANDARD MOTOR PRODUCTS, INC.",
+      "sic_description": "Motor Vehicle Parts & Accessories"
+    },
+    {
+      "cik": "1031308",
+      "name": "BENTLEY SYSTEMS INC",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "33185",
+      "name": "EQUIFAX INC",
+      "sic_description": "Services-Consumer Credit Reporting, Collection Agencies"
+    },
+    {
+      "cik": "1022079",
+      "name": "QUEST DIAGNOSTICS INC",
+      "sic_description": "Services-Medical Laboratories"
+    },
+    {
+      "cik": "1504776",
+      "name": "Warby Parker Inc.",
+      "sic_description": "Ophthalmic Goods"
+    },
+    {
+      "cik": "93751",
+      "name": "STATE STREET CORP",
+      "sic_description": "State Commercial Banks"
+    },
+    {
+      "cik": "1490978",
+      "name": "Schrodinger, Inc.",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "1793229",
+      "name": "Claritev Corp",
+      "sic_description": "Services-Business Services, NEC"
+    },
+    {
+      "cik": "12208",
+      "name": "BIO-RAD LABORATORIES, INC.",
+      "sic_description": "Laboratory Analytical Instruments"
+    },
+    {
+      "cik": "920148",
+      "name": "LABCORP HOLDINGS INC.",
+      "sic_description": "Services-Medical Laboratories"
     }
   ],
   "industries": [],
-  "names": [],
-  "titles": []
+  "names": [
+    {
+      "n": "Liberty Media Corp",
+      "t": "FWONK"
+    },
+    {
+      "n": "LOEWS CORP",
+      "t": "L"
+    },
+    {
+      "n": "METLIFE INC",
+      "t": "MET"
+    },
+    {
+      "n": "APi Group Corp",
+      "t": "APG"
+    },
+    {
+      "n": "BlackRock, Inc.",
+      "t": "BLK"
+    },
+    {
+      "n": "FRANKLIN TEMPLETON INC",
+      "t": "BEN"
+    },
+    {
+      "n": "Xencor Inc",
+      "t": "XNCR"
+    },
+    {
+      "n": "RadNet, Inc.",
+      "t": "RDNT"
+    },
+    {
+      "n": "MP Materials Corp. / DE",
+      "t": "MP"
+    },
+    {
+      "n": "HUMANA INC",
+      "t": "HUM"
+    },
+    {
+      "n": "HORNBECK OFFSHORE SERVICES, INC.",
+      "t": "HOS"
+    },
+    {
+      "n": "Arxis, Inc.",
+      "t": "ARXS"
+    },
+    {
+      "n": "Bloomin' Brands, Inc.",
+      "t": "BLMN"
+    },
+    {
+      "n": "ENCORE CAPITAL GROUP INC",
+      "t": "ECPG"
+    },
+    {
+      "n": "Sally Beauty Holdings, Inc.",
+      "t": "SBH"
+    },
+    {
+      "n": "CNB FINANCIAL CORP/PA",
+      "t": "CCNE"
+    },
+    {
+      "n": "Zevia PBC",
+      "t": "ZVIA"
+    },
+    {
+      "n": "EPAM Systems, Inc.",
+      "t": "EPAM"
+    },
+    {
+      "n": "SOUTHEAST AIRPORT GROUP",
+      "t": "ASR"
+    },
+    {
+      "n": "Csquare, Inc.",
+      "t": "CSQR"
+    },
+    {
+      "n": "Larimar Therapeutics, Inc.",
+      "t": "LRMR"
+    },
+    {
+      "n": "Brookdale Senior Living Inc.",
+      "t": "BKD"
+    },
+    {
+      "n": "AMDOCS LTD",
+      "t": "DOX"
+    },
+    {
+      "n": "Boot Barn Holdings, Inc.",
+      "t": "BOOT"
+    },
+    {
+      "n": "Excelerate Energy, Inc.",
+      "t": "EE"
+    },
+    {
+      "n": "MCDONALDS CORP",
+      "t": "MCD"
+    },
+    {
+      "n": "Option Care Health, Inc.",
+      "t": "OPCH"
+    },
+    {
+      "n": "MPLX LP",
+      "t": "MPLX"
+    },
+    {
+      "n": "RPM INTERNATIONAL INC/DE/",
+      "t": "RPM"
+    },
+    {
+      "n": "Genie Energy Ltd.",
+      "t": "GNE"
+    },
+    {
+      "n": "TrueBlue, Inc.",
+      "t": "TBI"
+    },
+    {
+      "n": "INVESTORS TITLE CO",
+      "t": "ITIC"
+    },
+    {
+      "n": "FRANKLIN COVEY CO",
+      "t": "FC"
+    },
+    {
+      "n": "Vertex, Inc.",
+      "t": "VERX"
+    },
+    {
+      "n": "CONSTELLATION BRANDS, INC.",
+      "t": "STZ"
+    },
+    {
+      "n": "LEE ENTERPRISES, Inc",
+      "t": "LEE"
+    },
+    {
+      "n": "TOMPKINS FINANCIAL CORP",
+      "t": "TMP"
+    },
+    {
+      "n": "LINDSAY CORP",
+      "t": "LNN"
+    },
+    {
+      "n": "ONE Group Hospitality, Inc.",
+      "t": "STKS"
+    },
+    {
+      "n": "Perspective Therapeutics, Inc.",
+      "t": "CATX"
+    },
+    {
+      "n": "Costamare Inc.",
+      "t": "CMRE"
+    },
+    {
+      "n": "KLX Energy Services Holdings, Inc.",
+      "t": "KLXE"
+    },
+    {
+      "n": "INNOSPEC INC.",
+      "t": "IOSP"
+    },
+    {
+      "n": "Airsculpt Technologies, Inc.",
+      "t": "AIRS"
+    },
+    {
+      "n": "Holley Inc.",
+      "t": "HLLY"
+    },
+    {
+      "n": "TIM S.A.",
+      "t": "TIMB"
+    },
+    {
+      "n": "Industrial Logistics Properties Trust",
+      "t": "ILPT"
+    },
+    {
+      "n": "VERRA MOBILITY Corp",
+      "t": "VRRM"
+    },
+    {
+      "n": "Dole plc",
+      "t": "DOLE"
+    }
+  ],
+  "titles": [
+    "CAO & SVP Finance",
+    "CEO RSUM",
+    "CEO, Co-Founder",
+    "CFO & SECRETARY",
+    "CHIEF RISK & CLIENT SVCS OFC",
+    "CIO & VP IT",
+    "CLO & Corporate Secretary",
+    "Chief Digital & Info. Officer",
+    "Chief Digital Officer",
+    "Chief Oper. & Fin. Officer",
+    "Co-President, CFO & COO",
+    "Controller and CAO",
+    "EVP & Pres. Wine and Spirits",
+    "EVP - Chief Impact Officer",
+    "EVP Chief Digital Growth Offic",
+    "EVP Marketing & Communications",
+    "EVP and CTO",
+    "EVP&CEO DEF&MW&ChiefCorpAffOff",
+    "EVP, CFO & CBO",
+    "EVP, Chief Govt Rel Officer",
+    "EVP, Development",
+    "EVP, Europe Commercial",
+    "EVP, General Counsel & Sec",
+    "EVP, Legal & Corporate Affairs",
+    "EVP, Pres Outback Steakhouse",
+    "EVP, Pres of BLS, CMO & CSO",
+    "EVP, Pres, Global Housing",
+    "EVP, Pres. & CEO, BGS",
+    "EVP, President, LSG",
+    "Exec Chairman and CEO",
+    "Exec VP & Chief Fin Ofc",
+    "Executive VP & General Counsel",
+    "President, New Ventures",
+    "SR. VICE PRESIDENT & CFO",
+    "SVP & Chief Information Ofc.",
+    "SVP & President Sally Beauty",
+    "SVP for Diagnostic Services",
+    "SVP,  Water Quality",
+    "SVP, COS to the Chairman & CEO",
+    "SVP, PAO",
+    "SVP/Chief People Officer",
+    "Senior VP and Controller",
+    "Sr Vice President, T2 Systems",
+    "Sr. Vice Pres., CFO",
+    "V.P., C.A.O. and Treasurer",
+    "VP, Risk & Compliance"
+  ]
 }
