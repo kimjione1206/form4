@@ -65,6 +65,11 @@
     "ticker": "TSM"
   },
   {
+    "issuer_cik": "1884516",
+    "name": "Drilling Tools International Corp",
+    "ticker": "DTI"
+  },
+  {
     "issuer_cik": "1639877",
     "name": "Ferroglobe PLC",
     "ticker": "GSM"
@@ -100,11 +105,6 @@
     "ticker": "AN"
   },
   {
-    "issuer_cik": "1641614",
-    "name": "CPI Card Group Inc.",
-    "ticker": "PMTS"
-  },
-  {
     "issuer_cik": "40417",
     "name": "GENERAL AMERICAN INVESTORS CO INC",
     "ticker": "GAM"
@@ -115,14 +115,14 @@
     "ticker": "DOX"
   },
   {
+    "issuer_cik": "1337298",
+    "name": "FutureFuel Corp.",
+    "ticker": "FF"
+  },
+  {
     "issuer_cik": "826675",
     "name": "DYNEX CAPITAL INC",
     "ticker": "DX"
-  },
-  {
-    "issuer_cik": "1884516",
-    "name": "Drilling Tools International Corp",
-    "ticker": "DTI"
   },
   {
     "issuer_cik": "715446",
@@ -153,11 +153,6 @@
     "issuer_cik": "726854",
     "name": "CITY HOLDING CO",
     "ticker": "CHCO"
-  },
-  {
-    "issuer_cik": "1041368",
-    "name": "RIVERVIEW BANCORP INC",
-    "ticker": "RVSB"
   },
   {
     "issuer_cik": "1326380",
@@ -230,6 +225,11 @@
     "ticker": "FGBI"
   },
   {
+    "issuer_cik": "1482512",
+    "name": "Hudson Pacific Properties, Inc.",
+    "ticker": "HPP"
+  },
+  {
     "issuer_cik": "1065696",
     "name": "LKQ CORP",
     "ticker": "LKQ"
@@ -245,6 +245,11 @@
     "ticker": "LBRT"
   },
   {
+    "issuer_cik": "1767042",
+    "name": "Kodiak Gas Services, Inc.",
+    "ticker": "KGS"
+  },
+  {
     "issuer_cik": "2020932",
     "name": "AgomAb Therapeutics NV",
     "ticker": "AGMB"
@@ -255,9 +260,14 @@
     "ticker": "PDI"
   },
   {
-    "issuer_cik": "1606163",
-    "name": "Limbach Holdings, Inc.",
-    "ticker": "LMB"
+    "issuer_cik": "2105398",
+    "name": "Csquare, Inc.",
+    "ticker": "CSQR"
+  },
+  {
+    "issuer_cik": "1981599",
+    "name": "Centuri Holdings, Inc.",
+    "ticker": "CTRI"
   },
   {
     "issuer_cik": "1630472",
@@ -310,13 +320,23 @@
     "ticker": "IMSR"
   },
   {
+    "issuer_cik": "1630805",
+    "name": "Babcock & Wilcox Enterprises, Inc.",
+    "ticker": "BW"
+  },
+  {
     "issuer_cik": "1339688",
     "name": "Lion Copper Corp.",
     "ticker": "LCU"
   },
   {
-    "issuer_cik": "1175151",
-    "name": "Cytosorbents Corp",
-    "ticker": "CTSO"
+    "issuer_cik": "1326190",
+    "name": "Altimmune, Inc.",
+    "ticker": "ALT"
+  },
+  {
+    "issuer_cik": "1041368",
+    "name": "RIVERVIEW BANCORP INC",
+    "ticker": "RVSB"
   }
 ]

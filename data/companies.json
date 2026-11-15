@@ -169,6 +169,11 @@
     "sic_description": "Fire, Marine & Casualty Insurance",
     "summary": "특수 손해보험 회사"
   },
+  "1044777": {
+    "name": "OneSpan Inc.",
+    "sic_description": "Services-Computer Integrated Systems Design",
+    "summary": null
+  },
   "1045810": {
     "name": "NVIDIA CORP",
     "sic_description": "Semiconductors & Related Devices",
@@ -218,6 +223,11 @@
     "name": "MERCURY SYSTEMS INC",
     "sic_description": "Electronic Components & Accessories",
     "summary": "항공·방위용 전자장비를 만드는 회사"
+  },
+  "1050441": {
+    "name": "EAGLE BANCORP INC",
+    "sic_description": "State Commercial Banks",
+    "summary": null
   },
   "1050797": {
     "name": "COLUMBIA SPORTSWEAR CO",
@@ -624,6 +634,11 @@
     "sic_description": "Savings Institution, Federally Chartered",
     "summary": "미국 동부 지역 은행"
   },
+  "1179929": {
+    "name": "MOLINA HEALTHCARE, INC.",
+    "sic_description": "Hospital & Medical Service Plans",
+    "summary": null
+  },
   "1192448": {
     "name": "GLAUKOS Corp",
     "sic_description": "Surgical & Medical Instruments & Apparatus",
@@ -779,6 +794,11 @@
     "sic_description": "Transportation Services",
     "summary": "온라인 여행 예약 회사"
   },
+  "1326190": {
+    "name": "Altimmune, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
   "1326380": {
     "name": "GameStop Corp.",
     "sic_description": "Retail-Computer & Computer Software Stores",
@@ -819,10 +839,20 @@
     "sic_description": "Rubber & Plastics Footwear",
     "summary": "캐주얼 신발을 만드는 회사"
   },
+  "1335258": {
+    "name": "Live Nation Entertainment, Inc.",
+    "sic_description": "Services-Amusement & Recreation Services",
+    "summary": null
+  },
   "1336706": {
     "name": "NORTHPOINTE BANCSHARES INC",
     "sic_description": "State Commercial Banks",
     "summary": "미국 미시간주의 은행 지주회사"
+  },
+  "1337298": {
+    "name": "FutureFuel Corp.",
+    "sic_description": "Industrial Organic Chemicals",
+    "summary": null
   },
   "1337634": {
     "name": "StubHub Holdings, Inc.",
@@ -873,6 +903,11 @@
     "name": "PRECIGEN, INC.",
     "sic_description": "Pharmaceutical Preparations",
     "summary": "바이오 의약품을 개발하는 회사"
+  },
+  "1362468": {
+    "name": "Allegiant Travel CO",
+    "sic_description": "Air Transportation, Scheduled",
+    "summary": null
   },
   "1365767": {
     "name": "Allot Ltd.",
@@ -1253,6 +1288,11 @@
     "name": "Adaptive Biotechnologies Corp",
     "sic_description": "Biological Products, (No Diagnostic Substances)",
     "summary": "면역 기반 진단·치료제를 개발하는 바이오 회사"
+  },
+  "1482512": {
+    "name": "Hudson Pacific Properties, Inc.",
+    "sic_description": "Real Estate",
+    "summary": null
   },
   "1483934": {
     "name": "Scorpio Tankers Inc.",
@@ -1894,6 +1934,11 @@
     "sic_description": "Real Estate Investment Trusts",
     "summary": "상업용 부동산 대출을 하는 회사"
   },
+  "1630805": {
+    "name": "Babcock & Wilcox Enterprises, Inc.",
+    "sic_description": "Heating Equipment, Except Electric & Warm Air Furnaces",
+    "summary": null
+  },
   "1631574": {
     "name": "Wave Life Sciences, Inc.",
     "sic_description": "Pharmaceutical Preparations",
@@ -2008,6 +2053,11 @@
     "name": "Upstart Holdings, Inc.",
     "sic_description": "Finance Services",
     "summary": "인공지능 기반 대출 중개 플랫폼 회사"
+  },
+  "1649094": {
+    "name": "Vaxcyte, Inc.",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
   },
   "1649904": {
     "name": "RHYTHM PHARMACEUTICALS, INC.",
@@ -2429,6 +2479,11 @@
     "sic_description": "Natural Gas Transmission",
     "summary": "천연가스 압축 설비를 운영하는 회사"
   },
+  "1767582": {
+    "name": "Luckin Coffee Inc.",
+    "sic_description": "Retail-Eating & Drinking Places",
+    "summary": null
+  },
   "1768267": {
     "name": "Cerence Inc.",
     "sic_description": "Services-Prepackaged Software",
@@ -2763,6 +2818,11 @@
     "name": "Helus Pharma Inc.",
     "sic_description": "Pharmaceutical Preparations",
     "summary": "의약품을 개발하는 회사"
+  },
+  "1834489": {
+    "name": "Genius Sports Ltd",
+    "sic_description": "Services-Miscellaneous Amusement & Recreation",
+    "summary": null
   },
   "1835632": {
     "name": "Marvell Technology, Inc.",
@@ -3139,6 +3199,11 @@
     "sic_description": "Real Estate",
     "summary": "부동산 회사"
   },
+  "1971213": {
+    "name": "Sinclair, Inc.",
+    "sic_description": "Television Broadcasting Stations",
+    "summary": null
+  },
   "1973266": {
     "name": "TKO Group Holdings, Inc.",
     "sic_description": "Services-Amusement & Recreation Services",
@@ -3148,6 +3213,11 @@
     "name": "Silynxcom Ltd.",
     "sic_description": "Household Audio & Video Equipment",
     "summary": "음향·영상 기기를 만드는 회사"
+  },
+  "1981599": {
+    "name": "Centuri Holdings, Inc.",
+    "sic_description": "Natural Gas Transmisison & Distribution",
+    "summary": null
   },
   "1982518": {
     "name": "Smith Douglas Homes Corp.",
@@ -3319,6 +3389,11 @@
     "sic_description": "Services-Business Services, NEC",
     "summary": "기업 대상 서비스를 하는 회사"
   },
+  "2105398": {
+    "name": "Csquare, Inc.",
+    "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+    "summary": null
+  },
   "2114459": {
     "name": "Cascade Real Assets Fund",
     "sic_description": "",
@@ -3368,6 +3443,11 @@
     "name": "TARGET CORP",
     "sic_description": "Retail-Variety Stores",
     "summary": "종합 소매점을 운영하는 회사"
+  },
+  "278166": {
+    "name": "CAVCO INDUSTRIES, INC.",
+    "sic_description": "Mobile Homes",
+    "summary": null
   },
   "27904": {
     "name": "DELTA AIR LINES, INC.",
@@ -3429,6 +3509,11 @@
     "sic_description": "Biological Products, (No Diagnostic Substances)",
     "summary": null
   },
+  "318300": {
+    "name": "PEOPLES BANCORP INC",
+    "sic_description": "State Commercial Banks",
+    "summary": null
+  },
   "318306": {
     "name": "ABEONA THERAPEUTICS INC.",
     "sic_description": "Pharmaceutical Preparations",
@@ -3458,6 +3543,11 @@
     "name": "Apple Inc.",
     "sic_description": "Electronic Computers",
     "summary": "스마트폰·컴퓨터 등 전자기기 회사"
+  },
+  "320335": {
+    "name": "GLOBE LIFE INC.",
+    "sic_description": "Life Insurance",
+    "summary": null
   },
   "33185": {
     "name": "EQUIFAX INC",
@@ -3743,6 +3833,11 @@
     "name": "NUCOR CORP",
     "sic_description": "Steel Works, Blast Furnaces & Rolling Mills (Coke Ovens)",
     "summary": "철강을 만드는 회사"
+  },
+  "736772": {
+    "name": "CNB FINANCIAL CORP/PA",
+    "sic_description": "State Commercial Banks",
+    "summary": null
   },
   "748268": {
     "name": "Red Cat Holdings, Inc.",
