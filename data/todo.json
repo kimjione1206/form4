@@ -6,11 +6,6 @@
       "sic_description": ""
     },
     {
-      "cik": "1337298",
-      "name": "FutureFuel Corp.",
-      "sic_description": "Industrial Organic Chemicals"
-    },
-    {
       "cik": "1551047",
       "name": "Bluerock Private Real Estate Fund",
       "sic_description": ""
@@ -21,24 +16,9 @@
       "sic_description": ""
     },
     {
-      "cik": "1482512",
-      "name": "Hudson Pacific Properties, Inc.",
-      "sic_description": "Real Estate"
-    },
-    {
       "cik": "1510599",
       "name": "PIMCO Dynamic Income Fund",
       "sic_description": ""
-    },
-    {
-      "cik": "2105398",
-      "name": "Csquare, Inc.",
-      "sic_description": "Services-Computer Programming, Data Processing, Etc."
-    },
-    {
-      "cik": "1981599",
-      "name": "Centuri Holdings, Inc.",
-      "sic_description": "Natural Gas Transmisison & Distribution"
     },
     {
       "cik": "813623",
@@ -46,238 +26,14 @@
       "sic_description": ""
     },
     {
-      "cik": "1630805",
-      "name": "Babcock & Wilcox Enterprises, Inc.",
-      "sic_description": "Heating Equipment, Except Electric & Warm Air Furnaces"
-    },
-    {
-      "cik": "1326190",
-      "name": "Altimmune, Inc.",
-      "sic_description": "Pharmaceutical Preparations"
-    },
-    {
-      "cik": "1335258",
-      "name": "Live Nation Entertainment, Inc.",
-      "sic_description": "Services-Amusement & Recreation Services"
-    },
-    {
-      "cik": "1767582",
-      "name": "Luckin Coffee Inc.",
-      "sic_description": "Retail-Eating & Drinking Places"
-    },
-    {
-      "cik": "1971213",
-      "name": "Sinclair, Inc.",
-      "sic_description": "Television Broadcasting Stations"
-    },
-    {
       "cik": "1834489",
       "name": "Genius Sports Ltd",
       "sic_description": "Services-Miscellaneous Amusement & Recreation"
-    },
-    {
-      "cik": "1649094",
-      "name": "Vaxcyte, Inc.",
-      "sic_description": "Biological Products, (No Diagnostic Substances)"
-    },
-    {
-      "cik": "320335",
-      "name": "GLOBE LIFE INC.",
-      "sic_description": "Life Insurance"
-    },
-    {
-      "cik": "278166",
-      "name": "CAVCO INDUSTRIES, INC.",
-      "sic_description": "Mobile Homes"
-    },
-    {
-      "cik": "1179929",
-      "name": "MOLINA HEALTHCARE, INC.",
-      "sic_description": "Hospital & Medical Service Plans"
-    },
-    {
-      "cik": "1362468",
-      "name": "Allegiant Travel CO",
-      "sic_description": "Air Transportation, Scheduled"
-    },
-    {
-      "cik": "736772",
-      "name": "CNB FINANCIAL CORP/PA",
-      "sic_description": "State Commercial Banks"
-    },
-    {
-      "cik": "1050441",
-      "name": "EAGLE BANCORP INC",
-      "sic_description": "State Commercial Banks"
-    },
-    {
-      "cik": "1044777",
-      "name": "OneSpan Inc.",
-      "sic_description": "Services-Computer Integrated Systems Design"
-    },
-    {
-      "cik": "318300",
-      "name": "PEOPLES BANCORP INC",
-      "sic_description": "State Commercial Banks"
     }
   ],
-  "industries": [
-    "Heating Equipment, Except Electric & Warm Air Furnaces",
-    "Mobile Homes",
-    "Retail-Eating & Drinking Places"
-  ],
-  "names": [
-    {
-      "n": "STARWOOD PROPERTY TRUST, INC.",
-      "t": "STWD"
-    },
-    {
-      "n": "Biglari Holdings Inc.",
-      "t": "BH"
-    },
-    {
-      "n": "MOLINA HEALTHCARE, INC.",
-      "t": "MOH"
-    },
-    {
-      "n": "Capri Holdings Ltd",
-      "t": "CPRI"
-    },
-    {
-      "n": "Ionic Digital Inc.",
-      "t": "IOND"
-    },
-    {
-      "n": "Talen Energy Corp",
-      "t": "TLN"
-    },
-    {
-      "n": "Compass, Inc.",
-      "t": "COMP"
-    },
-    {
-      "n": "KITE REALTY GROUP TRUST",
-      "t": "KRG"
-    },
-    {
-      "n": "DELCATH SYSTEMS, INC.",
-      "t": "DCTH"
-    },
-    {
-      "n": "Sensata Technologies Holding plc",
-      "t": "ST"
-    },
-    {
-      "n": "FutureFuel Corp.",
-      "t": "FF"
-    },
-    {
-      "n": "WEYERHAEUSER CO",
-      "t": "WY"
-    },
-    {
-      "n": "Enpro Inc.",
-      "t": "NPO"
-    },
-    {
-      "n": "ECARX Holdings Inc.",
-      "t": "ECX"
-    },
-    {
-      "n": "Aldeyra Therapeutics, Inc.",
-      "t": "ALDX"
-    },
-    {
-      "n": "IRSA INVESTMENTS & REPRESENTATIONS INC",
-      "t": "IRS"
-    },
-    {
-      "n": "C4 Therapeutics, Inc.",
-      "t": "CCCC"
-    },
-    {
-      "n": "HAEMONETICS CORP",
-      "t": "HAE"
-    },
-    {
-      "n": "Trade Desk, Inc.",
-      "t": "TTD"
-    },
-    {
-      "n": "COSTAR GROUP, INC.",
-      "t": "CSGP"
-    },
-    {
-      "n": "Trinity Capital Inc.",
-      "t": "TRIN"
-    },
-    {
-      "n": "NATURAL GAS SERVICES GROUP INC",
-      "t": "NGS"
-    },
-    {
-      "n": "Corvus Pharmaceuticals, Inc.",
-      "t": "CRVS"
-    },
-    {
-      "n": "Upland Software, Inc.",
-      "t": "UPLD"
-    },
-    {
-      "n": "Verano Holdings Corp.",
-      "t": "VRNO"
-    },
-    {
-      "n": "Zapata Quantum, Inc.",
-      "t": "ZPTA"
-    },
-    {
-      "n": "FOX FACTORY HOLDING CORP",
-      "t": "FOXF"
-    },
-    {
-      "n": "DEEP FISSION, INC.",
-      "t": "FISN"
-    },
-    {
-      "n": "Vivani Medical, Inc.",
-      "t": "VANI"
-    },
-    {
-      "n": "Galaxy Gaming, Inc.",
-      "t": "GLXZ"
-    },
-    {
-      "n": "Meridian Corp",
-      "t": "MRBK"
-    },
-    {
-      "n": "Aebi Schmidt Holding AG",
-      "t": "AEBI"
-    }
-  ],
+  "industries": [],
+  "names": [],
   "titles": [
-    "CEO Europe and ROW",
-    "CEO, Chairman of the Board",
-    "COO & President of Local Media",
-    "Chief Admin. Officer & GC",
-    "Chief Technology & Eng Ofr",
-    "EVP & Chief Talent Officer",
-    "EVP & Gen Counsel/Corp. Sec'y.",
-    "EVP, Chief Sales Officer",
-    "EVP, M&A and Strategic Finance",
-    "EVP, Natural Gas Technologies",
-    "Exec VP GlobalComm/PubAffairs",
-    "Executive Chairman Board",
-    "MD, CHIEF ACCOUNTING OFFICER",
-    "President, Arch Capital Group",
-    "President,Manufactured Housing",
-    "SEVP/Chief Experience Officer",
-    "SVP & Chief Nuclear Officer",
-    "SVP, CLO and CHRO",
-    "Senior Vice President and CHRO",
-    "Sr. VP & Controller",
-    "VP - Investor Relations",
-    "VP-Chief Accounting Officer"
+    "EVP/CRDEO"
   ]
 }

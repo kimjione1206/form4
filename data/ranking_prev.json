@@ -30,16 +30,6 @@
     "ticker": "RAPP"
   },
   {
-    "issuer_cik": "1386716",
-    "name": "Star Bulk Carriers Corp.",
-    "ticker": "SBLK"
-  },
-  {
-    "issuer_cik": "930236",
-    "name": "REDWOOD TRUST INC",
-    "ticker": "RWT"
-  },
-  {
     "issuer_cik": "1374690",
     "name": "Larimar Therapeutics, Inc.",
     "ticker": "LRMR"
@@ -140,11 +130,6 @@
     "ticker": "EML"
   },
   {
-    "issuer_cik": "1533040",
-    "name": "Phio Pharmaceuticals Corp.",
-    "ticker": "PHIO"
-  },
-  {
     "issuer_cik": "838875",
     "name": "WILLAMETTE VALLEY VINEYARDS INC",
     "ticker": "WVVI"
@@ -190,11 +175,6 @@
     "ticker": "MP"
   },
   {
-    "issuer_cik": "1788257",
-    "name": "BETTERWARE DE MEXICO, S.A.P.I. DE C.V",
-    "ticker": "BWMX"
-  },
-  {
     "issuer_cik": "1116942",
     "name": "TTM TECHNOLOGIES INC",
     "ticker": "TTMI"
@@ -215,14 +195,14 @@
     "ticker": "FLOC"
   },
   {
+    "issuer_cik": "1788257",
+    "name": "BETTERWARE DE MEXICO, S.A.P.I. DE C.V",
+    "ticker": "BWMX"
+  },
+  {
     "issuer_cik": "2040127",
     "name": "Karman Holdings Inc.",
     "ticker": "KRMN"
-  },
-  {
-    "issuer_cik": "1408534",
-    "name": "First Guaranty Bancshares, Inc.",
-    "ticker": "FGBI"
   },
   {
     "issuer_cik": "1482512",
@@ -233,11 +213,6 @@
     "issuer_cik": "1065696",
     "name": "LKQ CORP",
     "ticker": "LKQ"
-  },
-  {
-    "issuer_cik": "1839530",
-    "name": "XBP Global Holdings, Inc.",
-    "ticker": "XBP"
   },
   {
     "issuer_cik": "1694028",
@@ -275,6 +250,11 @@
     "ticker": "TRTX"
   },
   {
+    "issuer_cik": "930236",
+    "name": "REDWOOD TRUST INC",
+    "ticker": "RWT"
+  },
+  {
     "issuer_cik": "1004702",
     "name": "OCEANFIRST FINANCIAL CORP",
     "ticker": "OCFC"
@@ -305,11 +285,6 @@
     "ticker": "FFIN"
   },
   {
-    "issuer_cik": "1638290",
-    "name": "MasterCraft Boat Holdings, Inc.",
-    "ticker": "MCFT"
-  },
-  {
     "issuer_cik": "1868995",
     "name": "CI&T Inc",
     "ticker": "CINT"
@@ -335,8 +310,8 @@
     "ticker": "ALT"
   },
   {
-    "issuer_cik": "1041368",
-    "name": "RIVERVIEW BANCORP INC",
-    "ticker": "RVSB"
+    "issuer_cik": "1533040",
+    "name": "Phio Pharmaceuticals Corp.",
+    "ticker": "PHIO"
   }
 ]
