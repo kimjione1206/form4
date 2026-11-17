@@ -125,16 +125,6 @@
     "ticker": "ATCH"
   },
   {
-    "issuer_cik": "31107",
-    "name": "EASTERN CO",
-    "ticker": "EML"
-  },
-  {
-    "issuer_cik": "838875",
-    "name": "WILLAMETTE VALLEY VINEYARDS INC",
-    "ticker": "WVVI"
-  },
-  {
     "issuer_cik": "726854",
     "name": "CITY HOLDING CO",
     "ticker": "CHCO"
@@ -180,11 +170,6 @@
     "ticker": "TTMI"
   },
   {
-    "issuer_cik": "917251",
-    "name": "AGREE REALTY CORP",
-    "ticker": "ADC"
-  },
-  {
     "issuer_cik": "1089063",
     "name": "DICK'S SPORTING GOODS, INC.",
     "ticker": "DKS"
@@ -193,16 +178,6 @@
     "issuer_cik": "2035149",
     "name": "Flowco Holdings Inc.",
     "ticker": "FLOC"
-  },
-  {
-    "issuer_cik": "1788257",
-    "name": "BETTERWARE DE MEXICO, S.A.P.I. DE C.V",
-    "ticker": "BWMX"
-  },
-  {
-    "issuer_cik": "2040127",
-    "name": "Karman Holdings Inc.",
-    "ticker": "KRMN"
   },
   {
     "issuer_cik": "1482512",
@@ -248,11 +223,6 @@
     "issuer_cik": "1630472",
     "name": "TPG RE Finance Trust, Inc.",
     "ticker": "TRTX"
-  },
-  {
-    "issuer_cik": "930236",
-    "name": "REDWOOD TRUST INC",
-    "ticker": "RWT"
   },
   {
     "issuer_cik": "1004702",
@@ -308,6 +278,11 @@
     "issuer_cik": "1326190",
     "name": "Altimmune, Inc.",
     "ticker": "ALT"
+  },
+  {
+    "issuer_cik": "838875",
+    "name": "WILLAMETTE VALLEY VINEYARDS INC",
+    "ticker": "WVVI"
   },
   {
     "issuer_cik": "1533040",
