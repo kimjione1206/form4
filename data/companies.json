@@ -652,7 +652,7 @@
   "1217234": {
     "name": "CareDx, Inc.",
     "sic_description": "Services-Medical Laboratories",
-    "summary": null
+    "summary": "이식 환자용 유전자 검사를 하는 회사"
   },
   "12208": {
     "name": "BIO-RAD LABORATORIES, INC.",
@@ -747,7 +747,7 @@
   "1297989": {
     "name": "ExlService Holdings, Inc.",
     "sic_description": "Services-Business Services, NEC",
-    "summary": null
+    "summary": "데이터·AI 기반 업무 서비스를 하는 회사"
   },
   "1304492": {
     "name": "Anterix Inc.",
@@ -1182,7 +1182,7 @@
   "1442145": {
     "name": "Verisk Analytics, Inc.",
     "sic_description": "Services-Computer Processing & Data Preparation",
-    "summary": null
+    "summary": "보험업계에 데이터·분석을 제공하는 회사"
   },
   "1447362": {
     "name": "CASTLE BIOSCIENCES INC",
@@ -2152,7 +2152,7 @@
   "1660280": {
     "name": "Tenable Holdings, Inc.",
     "sic_description": "Services-Prepackaged Software",
-    "summary": null
+    "summary": "사이버 보안 소프트웨어를 만드는 회사"
   },
   "1660334": {
     "name": "Verrica Pharmaceuticals Inc.",
@@ -2707,7 +2707,7 @@
   "1812477": {
     "name": "Keel Infrastructure Corp.",
     "sic_description": "Finance Services",
-    "summary": null
+    "summary": "데이터센터와 에너지 인프라를 개발하는 회사"
   },
   "1813814": {
     "name": "Definium Therapeutics, Inc.",
@@ -2807,7 +2807,7 @@
   "1826168": {
     "name": "TIM S.A.",
     "sic_description": "Telephone Communications (No Radiotelephone)",
-    "summary": null
+    "summary": "전화·통신 서비스를 하는 회사"
   },
   "1826681": {
     "name": "Palladyne AI Corp.",
@@ -3322,7 +3322,7 @@
   "2014596": {
     "name": "Concentra Group Holdings Parent, Inc.",
     "sic_description": "Services-Specialty Outpatient Facilities, NEC",
-    "summary": null
+    "summary": "직업 건강 진료 서비스를 하는 회사"
   },
   "2018064": {
     "name": "TechTarget, Inc.",
@@ -3407,7 +3407,7 @@
   "2080126": {
     "name": "Forgent Power Solutions, Inc.",
     "sic_description": "Electrical Industrial Apparatus",
-    "summary": null
+    "summary": "전력 설비를 만드는 회사"
   },
   "2082866": {
     "name": "Pinnacle Financial Partners, Inc.",
@@ -3437,7 +3437,7 @@
   "2105139": {
     "name": "ADI GLOBAL DISTRIBUTION INC.",
     "sic_description": "Wholesale-Hardware",
-    "summary": null
+    "summary": "철물류를 도매하는 회사"
   },
   "2105398": {
     "name": "Csquare, Inc.",
@@ -3872,7 +3872,7 @@
   "728387": {
     "name": "Perspective Therapeutics, Inc.",
     "sic_description": "Pharmaceutical Preparations",
-    "summary": null
+    "summary": "의약품을 개발하는 회사"
   },
   "730464": {
     "name": "Covista Inc.",
@@ -3962,7 +3962,7 @@
   "783325": {
     "name": "WEC ENERGY GROUP, INC.",
     "sic_description": "Electric & Other Services Combined",
-    "summary": null
+    "summary": "전기·가스를 공급하는 공익 회사"
   },
   "784199": {
     "name": "ARTIVION, INC.",
@@ -4177,7 +4177,7 @@
   "874866": {
     "name": "CORVEL CORP",
     "sic_description": "Insurance Agents, Brokers & Service",
-    "summary": null
+    "summary": "보험 관련 서비스를 하는 회사"
   },
   "876167": {
     "name": "PROGRESS SOFTWARE CORP /MA",
