@@ -649,6 +649,11 @@
     "sic_description": "Biological Products, (No Diagnostic Substances)",
     "summary": "항암 치료 부작용 약을 만드는 회사"
   },
+  "1217234": {
+    "name": "CareDx, Inc.",
+    "sic_description": "Services-Medical Laboratories",
+    "summary": null
+  },
   "12208": {
     "name": "BIO-RAD LABORATORIES, INC.",
     "sic_description": "Laboratory Analytical Instruments",
@@ -738,6 +743,11 @@
     "name": "Amphastar Pharmaceuticals, Inc.",
     "sic_description": "Pharmaceutical Preparations",
     "summary": "주사제·흡입제 등 의약품을 만드는 회사"
+  },
+  "1297989": {
+    "name": "ExlService Holdings, Inc.",
+    "sic_description": "Services-Business Services, NEC",
+    "summary": null
   },
   "1304492": {
     "name": "Anterix Inc.",
@@ -1168,6 +1178,11 @@
     "name": "MongoDB, Inc.",
     "sic_description": "Services-Prepackaged Software",
     "summary": "데이터베이스 소프트웨어 회사"
+  },
+  "1442145": {
+    "name": "Verisk Analytics, Inc.",
+    "sic_description": "Services-Computer Processing & Data Preparation",
+    "summary": null
   },
   "1447362": {
     "name": "CASTLE BIOSCIENCES INC",
@@ -2134,6 +2149,11 @@
     "sic_description": "Services-Prepackaged Software",
     "summary": "기업용 계정 보안 소프트웨어 회사"
   },
+  "1660280": {
+    "name": "Tenable Holdings, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
   "1660334": {
     "name": "Verrica Pharmaceuticals Inc.",
     "sic_description": "Pharmaceutical Preparations",
@@ -2444,6 +2464,11 @@
     "sic_description": "Radio & Tv Broadcasting & Communications Equipment",
     "summary": "위성 영상 정보 서비스 회사"
   },
+  "1758488": {
+    "name": "ONESPAWORLD HOLDINGS Ltd",
+    "sic_description": "Services-Membership Sports & Recreation Clubs",
+    "summary": null
+  },
   "1759425": {
     "name": "Mirum Pharmaceuticals, Inc.",
     "sic_description": "Pharmaceutical Preparations",
@@ -2679,6 +2704,11 @@
     "sic_description": "Biological Products, (No Diagnostic Substances)",
     "summary": "바이오 의약품을 개발하는 회사"
   },
+  "1812477": {
+    "name": "Keel Infrastructure Corp.",
+    "sic_description": "Finance Services",
+    "summary": null
+  },
   "1813814": {
     "name": "Definium Therapeutics, Inc.",
     "sic_description": "Medicinal Chemicals & Botanical Products",
@@ -2773,6 +2803,11 @@
     "name": "Archer Aviation Inc.",
     "sic_description": "Aircraft",
     "summary": "첨단 항공기를 개발하는 회사"
+  },
+  "1826168": {
+    "name": "TIM S.A.",
+    "sic_description": "Telephone Communications (No Radiotelephone)",
+    "summary": null
   },
   "1826681": {
     "name": "Palladyne AI Corp.",
@@ -3284,6 +3319,11 @@
     "sic_description": "Pharmaceutical Preparations",
     "summary": "신경계 질환 치료제를 개발하는 제약회사"
   },
+  "2014596": {
+    "name": "Concentra Group Holdings Parent, Inc.",
+    "sic_description": "Services-Specialty Outpatient Facilities, NEC",
+    "summary": null
+  },
   "2018064": {
     "name": "TechTarget, Inc.",
     "sic_description": "Telegraph & Other Message Communications",
@@ -3364,6 +3404,11 @@
     "sic_description": "Heavy Construction Other Than Bldg Const - Contractors",
     "summary": "토목·인프라 공사 회사"
   },
+  "2080126": {
+    "name": "Forgent Power Solutions, Inc.",
+    "sic_description": "Electrical Industrial Apparatus",
+    "summary": null
+  },
   "2082866": {
     "name": "Pinnacle Financial Partners, Inc.",
     "sic_description": "National Commercial Banks",
@@ -3388,6 +3433,11 @@
     "name": "Wise Group plc",
     "sic_description": "Services-Business Services, NEC",
     "summary": "기업 대상 서비스를 하는 회사"
+  },
+  "2105139": {
+    "name": "ADI GLOBAL DISTRIBUTION INC.",
+    "sic_description": "Wholesale-Hardware",
+    "summary": null
   },
   "2105398": {
     "name": "Csquare, Inc.",
@@ -3819,6 +3869,11 @@
     "sic_description": "National Commercial Banks",
     "summary": "웨스트버지니아의 지역 은행 지주회사"
   },
+  "728387": {
+    "name": "Perspective Therapeutics, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
   "730464": {
     "name": "Covista Inc.",
     "sic_description": "Services-Educational Services",
@@ -3903,6 +3958,11 @@
     "name": "ITRON, INC.",
     "sic_description": "Instruments For Meas & Testing of  Electricity & Elec Signals",
     "summary": "전력·수도 계측 장비를 만드는 회사"
+  },
+  "783325": {
+    "name": "WEC ENERGY GROUP, INC.",
+    "sic_description": "Electric & Other Services Combined",
+    "summary": null
   },
   "784199": {
     "name": "ARTIVION, INC.",
@@ -4113,6 +4173,11 @@
     "name": "IDEXX LABORATORIES INC /DE",
     "sic_description": "In Vitro & In Vivo Diagnostic Substances",
     "summary": "동물 병원용 진단 제품을 만드는 회사"
+  },
+  "874866": {
+    "name": "CORVEL CORP",
+    "sic_description": "Insurance Agents, Brokers & Service",
+    "summary": null
   },
   "876167": {
     "name": "PROGRESS SOFTWARE CORP /MA",

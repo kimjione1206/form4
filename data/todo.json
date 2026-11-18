@@ -1,9 +1,19 @@
 {
   "companies": [
     {
-      "cik": "40417",
-      "name": "GENERAL AMERICAN INVESTORS CO INC",
-      "sic_description": ""
+      "cik": "2105139",
+      "name": "ADI GLOBAL DISTRIBUTION INC.",
+      "sic_description": "Wholesale-Hardware"
+    },
+    {
+      "cik": "728387",
+      "name": "Perspective Therapeutics, Inc.",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
+      "cik": "2080126",
+      "name": "Forgent Power Solutions, Inc.",
+      "sic_description": "Electrical Industrial Apparatus"
     },
     {
       "cik": "1551047",
@@ -21,12 +31,223 @@
       "sic_description": ""
     },
     {
+      "cik": "40417",
+      "name": "GENERAL AMERICAN INVESTORS CO INC",
+      "sic_description": ""
+    },
+    {
       "cik": "813623",
       "name": "Total Return Securities Fund",
       "sic_description": ""
+    },
+    {
+      "cik": "1812477",
+      "name": "Keel Infrastructure Corp.",
+      "sic_description": "Finance Services"
+    },
+    {
+      "cik": "1660280",
+      "name": "Tenable Holdings, Inc.",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "783325",
+      "name": "WEC ENERGY GROUP, INC.",
+      "sic_description": "Electric & Other Services Combined"
+    },
+    {
+      "cik": "2014596",
+      "name": "Concentra Group Holdings Parent, Inc.",
+      "sic_description": "Services-Specialty Outpatient Facilities, NEC"
+    },
+    {
+      "cik": "1826168",
+      "name": "TIM S.A.",
+      "sic_description": "Telephone Communications (No Radiotelephone)"
+    },
+    {
+      "cik": "1758488",
+      "name": "ONESPAWORLD HOLDINGS Ltd",
+      "sic_description": "Services-Membership Sports & Recreation Clubs"
+    },
+    {
+      "cik": "1217234",
+      "name": "CareDx, Inc.",
+      "sic_description": "Services-Medical Laboratories"
+    },
+    {
+      "cik": "1297989",
+      "name": "ExlService Holdings, Inc.",
+      "sic_description": "Services-Business Services, NEC"
+    },
+    {
+      "cik": "1442145",
+      "name": "Verisk Analytics, Inc.",
+      "sic_description": "Services-Computer Processing & Data Preparation"
+    },
+    {
+      "cik": "874866",
+      "name": "CORVEL CORP",
+      "sic_description": "Insurance Agents, Brokers & Service"
     }
   ],
-  "industries": [],
-  "names": [],
-  "titles": []
+  "industries": [
+    "Services-Specialty Outpatient Facilities, NEC"
+  ],
+  "names": [
+    {
+      "n": "COVENANT LOGISTICS GROUP, INC.",
+      "t": "CVLG"
+    },
+    {
+      "n": "Concentra Group Holdings Parent, Inc.",
+      "t": "CON"
+    },
+    {
+      "n": "Pangaea Logistics Solutions Ltd.",
+      "t": "PANL"
+    },
+    {
+      "n": "Forgent Power Solutions, Inc.",
+      "t": "FPS"
+    },
+    {
+      "n": "Orion180 Insurance Group Inc.",
+      "t": "OIG"
+    },
+    {
+      "n": "Skydance Corp",
+      "t": "SKYD"
+    },
+    {
+      "n": "BrightSpire Capital, Inc.",
+      "t": "BRSP"
+    },
+    {
+      "n": "AFFILIATED MANAGERS GROUP, INC.",
+      "t": "AMG"
+    },
+    {
+      "n": "Shift4 Payments, Inc.",
+      "t": "FOUR"
+    },
+    {
+      "n": "CNH Industrial N.V.",
+      "t": "CNH"
+    },
+    {
+      "n": "Corteva, Inc.",
+      "t": "CTVA"
+    },
+    {
+      "n": "CorMedix Inc.",
+      "t": "CRMD"
+    },
+    {
+      "n": "ADI GLOBAL DISTRIBUTION INC.",
+      "t": "ADIG"
+    },
+    {
+      "n": "INSPERITY, INC.",
+      "t": "NSP"
+    },
+    {
+      "n": "Root, Inc.",
+      "t": "ROOT"
+    },
+    {
+      "n": "KINGSTONE COMPANIES, INC.",
+      "t": "KINS"
+    },
+    {
+      "n": "Nexpu Ltd.",
+      "t": "DPU"
+    },
+    {
+      "n": "Factorial Energy Inc.",
+      "t": "FAC"
+    },
+    {
+      "n": "Uniti Group Inc.",
+      "t": "UNIT"
+    },
+    {
+      "n": "SuperCom Ltd",
+      "t": "SPCB"
+    },
+    {
+      "n": "TaskUs, Inc.",
+      "t": "TASK"
+    },
+    {
+      "n": "Aura Biosciences, Inc.",
+      "t": "AURA"
+    },
+    {
+      "n": "ORRSTOWN FINANCIAL SERVICES INC",
+      "t": "ORRF"
+    },
+    {
+      "n": "RADCOM LTD",
+      "t": "RDCM"
+    },
+    {
+      "n": "Immuneering Corp",
+      "t": "IMRX"
+    },
+    {
+      "n": "RING ENERGY, INC.",
+      "t": "REI"
+    },
+    {
+      "n": "GERON CORP",
+      "t": "GERN"
+    },
+    {
+      "n": "NETSOL TECHNOLOGIES INC",
+      "t": "NTWK"
+    },
+    {
+      "n": "EASTMAN KODAK CO",
+      "t": "KODK"
+    },
+    {
+      "n": "Adecoagro S.A.",
+      "t": "AGRO"
+    },
+    {
+      "n": "LIGHTPATH TECHNOLOGIES INC",
+      "t": "LPTH"
+    },
+    {
+      "n": "Lineage Cell Therapeutics, Inc.",
+      "t": "LCTX"
+    },
+    {
+      "n": "QUAINT OAK BANCORP, INC.",
+      "t": "QNTO"
+    },
+    {
+      "n": "NewLake Capital Partners, Inc.",
+      "t": "NLCP"
+    }
+  ],
+  "titles": [
+    "Business Support Officer",
+    "Chief Actuary & Risk Officer",
+    "Chief Actuary and Senior VP",
+    "Chief Human Relations Officer",
+    "EVP, CO & FO",
+    "EVP, Market President",
+    "Exec. VP, GC, Corp. Sec. & CCO",
+    "Executive VP and CMO",
+    "Executive VP and COO",
+    "Executive VP, CFO",
+    "Head of R&D and CMO",
+    "Investor Relations Officer",
+    "President, CFO and COO",
+    "SVP, Corp. Controller & CAO",
+    "VP and Deputy General Counsel",
+    "VP, Principal Acctg. Officer"
+  ]
 }
