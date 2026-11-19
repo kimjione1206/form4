@@ -382,7 +382,7 @@
   "1084991": {
     "name": "NATURAL GAS SERVICES GROUP INC",
     "sic_description": "Oil & Gas Field Services, NEC",
-    "summary": null
+    "summary": "천연가스 압축 장비를 임대·제조하는 회사"
   },
   "1086222": {
     "name": "AKAMAI TECHNOLOGIES INC",
@@ -812,7 +812,7 @@
   "1326160": {
     "name": "Duke Energy CORP",
     "sic_description": "Electric & Other Services Combined",
-    "summary": null
+    "summary": "전기와 천연가스를 공급하는 에너지 회사"
   },
   "1326190": {
     "name": "Altimmune, Inc.",
@@ -922,7 +922,7 @@
   "1350653": {
     "name": "Alphatec Holdings, Inc.",
     "sic_description": "Surgical & Medical Instruments & Apparatus",
-    "summary": null
+    "summary": "척추 수술용 의료기기를 만드는 회사"
   },
   "1356090": {
     "name": "PRECIGEN, INC.",
@@ -1462,7 +1462,7 @@
   "1517228": {
     "name": "Vistance Networks, Inc.",
     "sic_description": "Radio & Tv Broadcasting & Communications Equipment",
-    "summary": null
+    "summary": "통신망 인프라 장비를 만드는 회사"
   },
   "1517413": {
     "name": "Fastly, Inc.",
@@ -2382,7 +2382,7 @@
   "1712189": {
     "name": "Target Hospitality Corp.",
     "sic_description": "Hotels, Rooming Houses, Camps & Other Lodging Places",
-    "summary": null
+    "summary": "이동식 숙소를 임대하는 회사"
   },
   "1713445": {
     "name": "Reddit, Inc.",
@@ -2452,7 +2452,7 @@
   "1735438": {
     "name": "MeiraGTx Holdings plc",
     "sic_description": "Biological Products, (No Diagnostic Substances)",
-    "summary": null
+    "summary": "유전자 치료제를 개발하는 바이오 회사"
   },
   "1736297": {
     "name": "Astera Labs, Inc.",
@@ -2497,12 +2497,12 @@
   "1757898": {
     "name": "STERIS plc",
     "sic_description": "Orthopedic, Prosthetic & Surgical Appliances & Supplies",
-    "summary": null
+    "summary": "감염 예방 의료 제품·서비스를 제공하는 회사"
   },
   "1758488": {
     "name": "ONESPAWORLD HOLDINGS Ltd",
     "sic_description": "Services-Membership Sports & Recreation Clubs",
-    "summary": null
+    "summary": "크루즈선 등에서 스파 서비스를 운영하는 회사"
   },
   "1759425": {
     "name": "Mirum Pharmaceuticals, Inc.",
@@ -2597,7 +2597,7 @@
   "1784570": {
     "name": "BETA Technologies, Inc.",
     "sic_description": "Aircraft",
-    "summary": null
+    "summary": "전기 항공기와 추진 장치를 만드는 회사"
   },
   "1786352": {
     "name": "BILL Holdings, Inc.",
@@ -2862,7 +2862,7 @@
   "1828105": {
     "name": "Hippo Holdings Inc.",
     "sic_description": "Fire, Marine & Casualty Insurance",
-    "summary": null
+    "summary": "주택 보험을 제공하는 보험 회사"
   },
   "1830214": {
     "name": "Ginkgo Bioworks Holdings, Inc.",
@@ -2907,7 +2907,7 @@
   "1834622": {
     "name": "Hayward Holdings, Inc.",
     "sic_description": "Refrigeration & Service Industry Machinery",
-    "summary": null
+    "summary": "수영장 장비를 만드는 회사"
   },
   "1835632": {
     "name": "Marvell Technology, Inc.",
@@ -3157,7 +3157,7 @@
   "1883685": {
     "name": "DraftKings Inc.",
     "sic_description": "Services-Miscellaneous Amusement & Recreation",
-    "summary": null
+    "summary": "온라인 스포츠 베팅과 카지노 게임을 운영하는 회사"
   },
   "1884516": {
     "name": "Drilling Tools International Corp",
@@ -3202,7 +3202,7 @@
   "1918102": {
     "name": "DEEP FISSION, INC.",
     "sic_description": "Electric Services",
-    "summary": null
+    "summary": "소형 원자로를 개발하는 회사"
   },
   "1919246": {
     "name": "Pelthos Therapeutics Inc.",
@@ -3507,7 +3507,7 @@
   "2110117": {
     "name": "ITG, Inc./DE/",
     "sic_description": "Water, Sewer, Pipeline, Comm & Power Line Construction",
-    "summary": null
+    "summary": "상하수도·송유관·전력선 등을 건설하는 회사"
   },
   "2114459": {
     "name": "Cascade Real Assets Fund",
@@ -4252,7 +4252,7 @@
   "876343": {
     "name": "Lineage Cell Therapeutics, Inc.",
     "sic_description": "Biological Products, (No Diagnostic Substances)",
-    "summary": null
+    "summary": "세포 치료제를 개발하는 바이오 회사"
   },
   "876437": {
     "name": "MGIC INVESTMENT CORP",
