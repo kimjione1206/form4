@@ -1,8 +1,8 @@
 [
   {
-    "issuer_cik": "1160330",
-    "name": "BANK BRADESCO",
-    "ticker": "BBD"
+    "issuer_cik": "933036",
+    "name": "UPBOUND GROUP, INC.",
+    "ticker": "UPBD"
   },
   {
     "issuer_cik": "39368",
@@ -13,11 +13,6 @@
     "issuer_cik": "1520006",
     "name": "Matador Resources Co",
     "ticker": "MTDR"
-  },
-  {
-    "issuer_cik": "933036",
-    "name": "UPBOUND GROUP, INC.",
-    "ticker": "UPBD"
   },
   {
     "issuer_cik": "46619",
@@ -40,9 +35,19 @@
     "ticker": "LRMR"
   },
   {
+    "issuer_cik": "1766478",
+    "name": "Angel Oak Mortgage REIT, Inc.",
+    "ticker": "AOMR"
+  },
+  {
     "issuer_cik": "1108134",
     "name": "Beacon Financial Corp",
     "ticker": "BBT"
+  },
+  {
+    "issuer_cik": "2110117",
+    "name": "ITG, Inc./DE/",
+    "ticker": "ITG"
   },
   {
     "issuer_cik": "1337298",
@@ -50,24 +55,19 @@
     "ticker": "FF"
   },
   {
+    "issuer_cik": "1884516",
+    "name": "Drilling Tools International Corp",
+    "ticker": "DTI"
+  },
+  {
     "issuer_cik": "94344",
     "name": "STEWART INFORMATION SERVICES CORP",
     "ticker": "STC"
   },
   {
-    "issuer_cik": "1766478",
-    "name": "Angel Oak Mortgage REIT, Inc.",
-    "ticker": "AOMR"
-  },
-  {
     "issuer_cik": "1794783",
     "name": "SelectQuote, Inc.",
     "ticker": "SLQT"
-  },
-  {
-    "issuer_cik": "1884516",
-    "name": "Drilling Tools International Corp",
-    "ticker": "DTI"
   },
   {
     "issuer_cik": "1046179",
@@ -165,11 +165,6 @@
     "ticker": "BBTX"
   },
   {
-    "issuer_cik": "1715497",
-    "name": "Borr Drilling Ltd",
-    "ticker": "BORR"
-  },
-  {
     "issuer_cik": "1551047",
     "name": "Bluerock Private Real Estate Fund",
     "ticker": "BPRE"
@@ -205,9 +200,19 @@
     "ticker": "FLOC"
   },
   {
+    "issuer_cik": "1883685",
+    "name": "DraftKings Inc.",
+    "ticker": "DKNG"
+  },
+  {
     "issuer_cik": "1509470",
     "name": "Neostellar Capital Corp.",
     "ticker": "NSLR"
+  },
+  {
+    "issuer_cik": "1517228",
+    "name": "Vistance Networks, Inc.",
+    "ticker": "VISN"
   },
   {
     "issuer_cik": "1482512",
@@ -220,9 +225,19 @@
     "ticker": "LKQ"
   },
   {
+    "issuer_cik": "1350653",
+    "name": "Alphatec Holdings, Inc.",
+    "ticker": "ATEC"
+  },
+  {
     "issuer_cik": "1694028",
     "name": "Liberty Energy Inc.",
     "ticker": "LBRT"
+  },
+  {
+    "issuer_cik": "1712189",
+    "name": "Target Hospitality Corp.",
+    "ticker": "TH"
   },
   {
     "issuer_cik": "2020932",
@@ -240,24 +255,19 @@
     "ticker": "PDI"
   },
   {
-    "issuer_cik": "1981599",
-    "name": "Centuri Holdings, Inc.",
-    "ticker": "CTRI"
-  },
-  {
     "issuer_cik": "1630472",
     "name": "TPG RE Finance Trust, Inc.",
     "ticker": "TRTX"
   },
   {
-    "issuer_cik": "40417",
-    "name": "GENERAL AMERICAN INVESTORS CO INC",
-    "ticker": "GAM"
-  },
-  {
     "issuer_cik": "1004702",
     "name": "OCEANFIRST FINANCIAL CORP",
     "ticker": "OCFC"
+  },
+  {
+    "issuer_cik": "1084991",
+    "name": "NATURAL GAS SERVICES GROUP INC",
+    "ticker": "NGS"
   },
   {
     "issuer_cik": "929351",
@@ -305,14 +315,24 @@
     "ticker": "ALT"
   },
   {
+    "issuer_cik": "838875",
+    "name": "WILLAMETTE VALLEY VINEYARDS INC",
+    "ticker": "WVVI"
+  },
+  {
+    "issuer_cik": "876343",
+    "name": "Lineage Cell Therapeutics, Inc.",
+    "ticker": "LCTX"
+  },
+  {
     "issuer_cik": "1533040",
     "name": "Phio Pharmaceuticals Corp.",
     "ticker": "PHIO"
   },
   {
-    "issuer_cik": "838875",
-    "name": "WILLAMETTE VALLEY VINEYARDS INC",
-    "ticker": "WVVI"
+    "issuer_cik": "1918102",
+    "name": "DEEP FISSION, INC.",
+    "ticker": "FISN"
   },
   {
     "issuer_cik": "1750704",

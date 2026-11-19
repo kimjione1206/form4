@@ -1,19 +1,9 @@
 {
   "companies": [
     {
-      "cik": "2105139",
-      "name": "ADI GLOBAL DISTRIBUTION INC.",
-      "sic_description": "Wholesale-Hardware"
-    },
-    {
-      "cik": "728387",
-      "name": "Perspective Therapeutics, Inc.",
-      "sic_description": "Pharmaceutical Preparations"
-    },
-    {
-      "cik": "2080126",
-      "name": "Forgent Power Solutions, Inc.",
-      "sic_description": "Electrical Industrial Apparatus"
+      "cik": "2110117",
+      "name": "ITG, Inc./DE/",
+      "sic_description": "Water, Sewer, Pipeline, Comm & Power Line Construction"
     },
     {
       "cik": "1551047",
@@ -26,14 +16,34 @@
       "sic_description": ""
     },
     {
+      "cik": "1883685",
+      "name": "DraftKings Inc.",
+      "sic_description": "Services-Miscellaneous Amusement & Recreation"
+    },
+    {
+      "cik": "1517228",
+      "name": "Vistance Networks, Inc.",
+      "sic_description": "Radio & Tv Broadcasting & Communications Equipment"
+    },
+    {
+      "cik": "1350653",
+      "name": "Alphatec Holdings, Inc.",
+      "sic_description": "Surgical & Medical Instruments & Apparatus"
+    },
+    {
+      "cik": "1712189",
+      "name": "Target Hospitality Corp.",
+      "sic_description": "Hotels, Rooming Houses, Camps & Other Lodging Places"
+    },
+    {
       "cik": "1510599",
       "name": "PIMCO Dynamic Income Fund",
       "sic_description": ""
     },
     {
-      "cik": "40417",
-      "name": "GENERAL AMERICAN INVESTORS CO INC",
-      "sic_description": ""
+      "cik": "1084991",
+      "name": "NATURAL GAS SERVICES GROUP INC",
+      "sic_description": "Oil & Gas Field Services, NEC"
     },
     {
       "cik": "813623",
@@ -41,29 +51,19 @@
       "sic_description": ""
     },
     {
-      "cik": "1812477",
-      "name": "Keel Infrastructure Corp.",
-      "sic_description": "Finance Services"
+      "cik": "876343",
+      "name": "Lineage Cell Therapeutics, Inc.",
+      "sic_description": "Biological Products, (No Diagnostic Substances)"
     },
     {
-      "cik": "1660280",
-      "name": "Tenable Holdings, Inc.",
-      "sic_description": "Services-Prepackaged Software"
+      "cik": "1918102",
+      "name": "DEEP FISSION, INC.",
+      "sic_description": "Electric Services"
     },
     {
-      "cik": "783325",
-      "name": "WEC ENERGY GROUP, INC.",
-      "sic_description": "Electric & Other Services Combined"
-    },
-    {
-      "cik": "2014596",
-      "name": "Concentra Group Holdings Parent, Inc.",
-      "sic_description": "Services-Specialty Outpatient Facilities, NEC"
-    },
-    {
-      "cik": "1826168",
-      "name": "TIM S.A.",
-      "sic_description": "Telephone Communications (No Radiotelephone)"
+      "cik": "1784570",
+      "name": "BETA Technologies, Inc.",
+      "sic_description": "Aircraft"
     },
     {
       "cik": "1758488",
@@ -71,183 +71,192 @@
       "sic_description": "Services-Membership Sports & Recreation Clubs"
     },
     {
-      "cik": "1217234",
-      "name": "CareDx, Inc.",
-      "sic_description": "Services-Medical Laboratories"
+      "cik": "1757898",
+      "name": "STERIS plc",
+      "sic_description": "Orthopedic, Prosthetic & Surgical Appliances & Supplies"
     },
     {
-      "cik": "1297989",
-      "name": "ExlService Holdings, Inc.",
-      "sic_description": "Services-Business Services, NEC"
+      "cik": "1326160",
+      "name": "Duke Energy CORP",
+      "sic_description": "Electric & Other Services Combined"
     },
     {
-      "cik": "1442145",
-      "name": "Verisk Analytics, Inc.",
-      "sic_description": "Services-Computer Processing & Data Preparation"
+      "cik": "1834622",
+      "name": "Hayward Holdings, Inc.",
+      "sic_description": "Refrigeration & Service Industry Machinery"
     },
     {
-      "cik": "874866",
-      "name": "CORVEL CORP",
-      "sic_description": "Insurance Agents, Brokers & Service"
+      "cik": "1735438",
+      "name": "MeiraGTx Holdings plc",
+      "sic_description": "Biological Products, (No Diagnostic Substances)"
+    },
+    {
+      "cik": "1828105",
+      "name": "Hippo Holdings Inc.",
+      "sic_description": "Fire, Marine & Casualty Insurance"
     }
   ],
   "industries": [
-    "Services-Specialty Outpatient Facilities, NEC"
+    "Hotels, Rooming Houses, Camps & Other Lodging Places"
   ],
   "names": [
     {
-      "n": "COVENANT LOGISTICS GROUP, INC.",
-      "t": "CVLG"
+      "n": "PepGen Inc.",
+      "t": "PEPG"
     },
     {
-      "n": "Concentra Group Holdings Parent, Inc.",
-      "t": "CON"
+      "n": "Atour Lifestyle Holdings Ltd",
+      "t": "ATAT"
     },
     {
-      "n": "Pangaea Logistics Solutions Ltd.",
-      "t": "PANL"
+      "n": "JAKKS PACIFIC INC",
+      "t": "JAKK"
     },
     {
-      "n": "Forgent Power Solutions, Inc.",
-      "t": "FPS"
+      "n": "ITG, Inc./DE/",
+      "t": "ITG"
     },
     {
-      "n": "Orion180 Insurance Group Inc.",
-      "t": "OIG"
+      "n": "HALLADOR ENERGY CO",
+      "t": "HRNG"
     },
     {
-      "n": "Skydance Corp",
-      "t": "SKYD"
+      "n": "ADVANCED DRAINAGE SYSTEMS, INC.",
+      "t": "WMS"
     },
     {
-      "n": "BrightSpire Capital, Inc.",
-      "t": "BRSP"
+      "n": "DIODES INC /DEL/",
+      "t": "DIOD"
     },
     {
-      "n": "AFFILIATED MANAGERS GROUP, INC.",
-      "t": "AMG"
+      "n": "CVD EQUIPMENT CORP",
+      "t": "CVV"
     },
     {
-      "n": "Shift4 Payments, Inc.",
-      "t": "FOUR"
+      "n": "W.W. GRAINGER, INC.",
+      "t": "GWW"
     },
     {
-      "n": "CNH Industrial N.V.",
-      "t": "CNH"
+      "n": "EVgo Inc.",
+      "t": "EVGO"
     },
     {
-      "n": "Corteva, Inc.",
-      "t": "CTVA"
+      "n": "PRA GROUP INC",
+      "t": "PRAA"
     },
     {
-      "n": "CorMedix Inc.",
-      "t": "CRMD"
+      "n": "NEWELL BRANDS INC.",
+      "t": "NWL"
     },
     {
-      "n": "ADI GLOBAL DISTRIBUTION INC.",
-      "t": "ADIG"
+      "n": "Ardmore Shipping Corp",
+      "t": "ASC"
     },
     {
-      "n": "INSPERITY, INC.",
-      "t": "NSP"
+      "n": "NorthWestern Energy Group, Inc.",
+      "t": "NWE"
     },
     {
-      "n": "Root, Inc.",
-      "t": "ROOT"
+      "n": "Suncrete, Inc.",
+      "t": "RMIX"
     },
     {
-      "n": "KINGSTONE COMPANIES, INC.",
-      "t": "KINS"
+      "n": "Crimson Wine Group, Ltd",
+      "t": "CWGL"
     },
     {
-      "n": "Nexpu Ltd.",
-      "t": "DPU"
+      "n": "NeuroPace Inc",
+      "t": "NPCE"
     },
     {
-      "n": "Factorial Energy Inc.",
-      "t": "FAC"
+      "n": "WHITE MOUNTAINS INSURANCE GROUP LTD",
+      "t": "WTM"
     },
     {
-      "n": "Uniti Group Inc.",
-      "t": "UNIT"
+      "n": "Air Products & Chemicals, Inc.",
+      "t": "APD"
     },
     {
-      "n": "SuperCom Ltd",
-      "t": "SPCB"
+      "n": "JBG SMITH Properties",
+      "t": "JBGS"
     },
     {
-      "n": "TaskUs, Inc.",
-      "t": "TASK"
+      "n": "International Money Express, Inc.",
+      "t": "IMXI"
     },
     {
-      "n": "Aura Biosciences, Inc.",
-      "t": "AURA"
+      "n": "Eagle Point Credit Co",
+      "t": "ECC"
     },
     {
-      "n": "ORRSTOWN FINANCIAL SERVICES INC",
-      "t": "ORRF"
+      "n": "SRH Total Return Fund, Inc.",
+      "t": "STEW"
     },
     {
-      "n": "RADCOM LTD",
-      "t": "RDCM"
+      "n": "Kodiak AI, Inc.",
+      "t": "KDK"
     },
     {
-      "n": "Immuneering Corp",
-      "t": "IMRX"
+      "n": "DATA I/O CORP",
+      "t": "DAIO"
     },
     {
-      "n": "RING ENERGY, INC.",
-      "t": "REI"
+      "n": "RenovoRx, Inc.",
+      "t": "RNXT"
     },
     {
-      "n": "GERON CORP",
-      "t": "GERN"
+      "n": "OpenWorld, Inc.",
+      "t": "OPNW"
     },
     {
-      "n": "NETSOL TECHNOLOGIES INC",
-      "t": "NTWK"
+      "n": "DAVION HEALTHCARE PLC",
+      "t": "DAVI"
     },
     {
-      "n": "EASTMAN KODAK CO",
-      "t": "KODK"
+      "n": "INTELLIGENT PROTECTION MANAGEMENT CORP.",
+      "t": "IPM"
     },
     {
-      "n": "Adecoagro S.A.",
-      "t": "AGRO"
+      "n": "Expensify, Inc.",
+      "t": "EXFY"
     },
     {
-      "n": "LIGHTPATH TECHNOLOGIES INC",
-      "t": "LPTH"
+      "n": "GLADSTONE LAND Corp",
+      "t": "LAND"
     },
     {
-      "n": "Lineage Cell Therapeutics, Inc.",
-      "t": "LCTX"
+      "n": "LITHIUM AMERICAS CORP.",
+      "t": "LAC"
     },
     {
-      "n": "QUAINT OAK BANCORP, INC.",
-      "t": "QNTO"
+      "n": "FIRST KEYSTONE CORP",
+      "t": "FKYS"
     },
     {
-      "n": "NewLake Capital Partners, Inc.",
-      "t": "NLCP"
+      "n": "BridgeBio Oncology Therapeutics, Inc.",
+      "t": "BBOT"
     }
   ],
   "titles": [
-    "Business Support Officer",
-    "Chief Actuary & Risk Officer",
-    "Chief Actuary and Senior VP",
-    "Chief Human Relations Officer",
-    "EVP, CO & FO",
-    "EVP, Market President",
-    "Exec. VP, GC, Corp. Sec. & CCO",
-    "Executive VP and CMO",
-    "Executive VP and COO",
-    "Executive VP, CFO",
-    "Head of R&D and CMO",
-    "Investor Relations Officer",
-    "President, CFO and COO",
-    "SVP, Corp. Controller & CAO",
-    "VP and Deputy General Counsel",
-    "VP, Principal Acctg. Officer"
+    "Acting Chief Executive Officer",
+    "CFO / COO",
+    "Chief Security Officer",
+    "Chief compliance officer",
+    "Co-chief financial officer",
+    "EVP & CI & GO",
+    "EVP, Chief Pwr Grid Op Officer",
+    "EVP, Head of Incyte Intl",
+    "Executive Chairman and CMO",
+    "Executive Vice President & CDO",
+    "Group CFO",
+    "Group President, Americas",
+    "Pres. Greater China",
+    "President, Precision Logistics",
+    "SVP & COO",
+    "SVP, Chief Technology Officer",
+    "Sr. VP & CLO",
+    "Sr. VP and GM, Life Sciences",
+    "VP and CFO",
+    "VP of Fuel Fabrication"
   ]
 }

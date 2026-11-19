@@ -379,6 +379,11 @@
     "sic_description": "Telegraph & Other Message Communications",
     "summary": null
   },
+  "1084991": {
+    "name": "NATURAL GAS SERVICES GROUP INC",
+    "sic_description": "Oil & Gas Field Services, NEC",
+    "summary": null
+  },
   "1086222": {
     "name": "AKAMAI TECHNOLOGIES INC",
     "sic_description": "Services-Business Services, NEC",
@@ -804,6 +809,11 @@
     "sic_description": "Transportation Services",
     "summary": "온라인 여행 예약 회사"
   },
+  "1326160": {
+    "name": "Duke Energy CORP",
+    "sic_description": "Electric & Other Services Combined",
+    "summary": null
+  },
   "1326190": {
     "name": "Altimmune, Inc.",
     "sic_description": "Pharmaceutical Preparations",
@@ -908,6 +918,11 @@
     "name": "Mueller Water Products, Inc.",
     "sic_description": "Miscellaneous Fabricated Metal Products",
     "summary": "상수도 관련 밸브·소화전을 만드는 회사"
+  },
+  "1350653": {
+    "name": "Alphatec Holdings, Inc.",
+    "sic_description": "Surgical & Medical Instruments & Apparatus",
+    "summary": null
   },
   "1356090": {
     "name": "PRECIGEN, INC.",
@@ -1443,6 +1458,11 @@
     "name": "Chefs' Warehouse, Inc.",
     "sic_description": "Wholesale-Groceries, General Line",
     "summary": "요리사 대상 특수 식자재 유통 회사"
+  },
+  "1517228": {
+    "name": "Vistance Networks, Inc.",
+    "sic_description": "Radio & Tv Broadcasting & Communications Equipment",
+    "summary": null
   },
   "1517413": {
     "name": "Fastly, Inc.",
@@ -2359,6 +2379,11 @@
     "sic_description": "Biological Products, (No Diagnostic Substances)",
     "summary": "유전자 치료제를 개발하는 바이오 회사"
   },
+  "1712189": {
+    "name": "Target Hospitality Corp.",
+    "sic_description": "Hotels, Rooming Houses, Camps & Other Lodging Places",
+    "summary": null
+  },
   "1713445": {
     "name": "Reddit, Inc.",
     "sic_description": "Services-Computer Processing & Data Preparation",
@@ -2424,6 +2449,11 @@
     "sic_description": "Services-Prepackaged Software",
     "summary": "업무 자동화 소프트웨어 회사"
   },
+  "1735438": {
+    "name": "MeiraGTx Holdings plc",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
+  },
   "1736297": {
     "name": "Astera Labs, Inc.",
     "sic_description": "Semiconductors & Related Devices",
@@ -2463,6 +2493,11 @@
     "name": "BlackSky Technology Inc.",
     "sic_description": "Radio & Tv Broadcasting & Communications Equipment",
     "summary": "위성 영상 정보 서비스 회사"
+  },
+  "1757898": {
+    "name": "STERIS plc",
+    "sic_description": "Orthopedic, Prosthetic & Surgical Appliances & Supplies",
+    "summary": null
   },
   "1758488": {
     "name": "ONESPAWORLD HOLDINGS Ltd",
@@ -2558,6 +2593,11 @@
     "name": "Porch Group, Inc.",
     "sic_description": "Accident & Health Insurance",
     "summary": "주택 관련 소프트웨어와 보험 서비스 회사"
+  },
+  "1784570": {
+    "name": "BETA Technologies, Inc.",
+    "sic_description": "Aircraft",
+    "summary": null
   },
   "1786352": {
     "name": "BILL Holdings, Inc.",
@@ -2819,6 +2859,11 @@
     "sic_description": "Pharmaceutical Preparations",
     "summary": "피부과 질환 치료제를 개발하는 제약회사"
   },
+  "1828105": {
+    "name": "Hippo Holdings Inc.",
+    "sic_description": "Fire, Marine & Casualty Insurance",
+    "summary": null
+  },
   "1830214": {
     "name": "Ginkgo Bioworks Holdings, Inc.",
     "sic_description": "Biological Products, (No Diagnostic Substances)",
@@ -2858,6 +2903,11 @@
     "name": "Genius Sports Ltd",
     "sic_description": "Services-Miscellaneous Amusement & Recreation",
     "summary": "오락·여가 분야 서비스를 하는 회사"
+  },
+  "1834622": {
+    "name": "Hayward Holdings, Inc.",
+    "sic_description": "Refrigeration & Service Industry Machinery",
+    "summary": null
   },
   "1835632": {
     "name": "Marvell Technology, Inc.",
@@ -3104,6 +3154,11 @@
     "sic_description": "Retail-Miscellaneous Retail",
     "summary": "중고 의류 등을 파는 중고 매장 회사"
   },
+  "1883685": {
+    "name": "DraftKings Inc.",
+    "sic_description": "Services-Miscellaneous Amusement & Recreation",
+    "summary": null
+  },
   "1884516": {
     "name": "Drilling Tools International Corp",
     "sic_description": "Oil & Gas Field Machinery & Equipment",
@@ -3143,6 +3198,11 @@
     "name": "Public Policy Holding Company, Inc.",
     "sic_description": "Services-Management Consulting Services",
     "summary": "정부 관계·홍보 컨설팅 회사"
+  },
+  "1918102": {
+    "name": "DEEP FISSION, INC.",
+    "sic_description": "Electric Services",
+    "summary": null
   },
   "1919246": {
     "name": "Pelthos Therapeutics Inc.",
@@ -3443,6 +3503,11 @@
     "name": "Csquare, Inc.",
     "sic_description": "Services-Computer Programming, Data Processing, Etc.",
     "summary": "컴퓨터 프로그래밍·데이터 처리 서비스 회사"
+  },
+  "2110117": {
+    "name": "ITG, Inc./DE/",
+    "sic_description": "Water, Sewer, Pipeline, Comm & Power Line Construction",
+    "summary": null
   },
   "2114459": {
     "name": "Cascade Real Assets Fund",
@@ -4183,6 +4248,11 @@
     "name": "PROGRESS SOFTWARE CORP /MA",
     "sic_description": "Services-Prepackaged Software",
     "summary": "기업용 소프트웨어를 만드는 회사"
+  },
+  "876343": {
+    "name": "Lineage Cell Therapeutics, Inc.",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
   },
   "876437": {
     "name": "MGIC INVESTMENT CORP",
