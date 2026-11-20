@@ -97,7 +97,7 @@
   "1022837": {
     "name": "SUMITOMO MITSUI FINANCIAL GROUP, INC.",
     "sic_description": "Commercial Banks, NEC",
-    "summary": null
+    "summary": "일본의 은행 지주회사"
   },
   "1023024": {
     "name": "ANI PHARMACEUTICALS INC",
@@ -417,7 +417,7 @@
   "109177": {
     "name": "Spectrum Brands Holdings, Inc.",
     "sic_description": "Miscellaneous Electrical Machinery, Equipment & Supplies",
-    "summary": null
+    "summary": "생활용품과 소형 가전을 만드는 회사"
   },
   "1093557": {
     "name": "DEXCOM INC",
@@ -752,7 +752,7 @@
   "1289340": {
     "name": "Stereotaxis, Inc.",
     "sic_description": "Electromedical & Electrotherapeutic Apparatus",
-    "summary": null
+    "summary": "심장질환 시술용 의료장비를 만드는 회사"
   },
   "1289460": {
     "name": "Texas Roadhouse, Inc.",
@@ -762,7 +762,7 @@
   "12927": {
     "name": "BOEING CO",
     "sic_description": "Aircraft",
-    "summary": null
+    "summary": "항공기와 방산·우주 장비를 만드는 회사"
   },
   "1297184": {
     "name": "Amphastar Pharmaceuticals, Inc.",
@@ -1257,7 +1257,7 @@
   "1465128": {
     "name": "STARWOOD PROPERTY TRUST, INC.",
     "sic_description": "Real Estate Investment Trusts",
-    "summary": null
+    "summary": "부동산 대출·투자를 하는 리츠"
   },
   "1467373": {
     "name": "Accenture plc",
@@ -1342,7 +1342,7 @@
   "1477815": {
     "name": "Sweetgreen, Inc.",
     "sic_description": "Retail-Eating  Places",
-    "summary": null
+    "summary": "샐러드 등 건강식을 파는 식당 체인"
   },
   "1478320": {
     "name": "Adaptive Biotechnologies Corp",
@@ -1547,7 +1547,7 @@
   "1528287": {
     "name": "NeuroPace Inc",
     "sic_description": "Surgical & Medical Instruments & Apparatus",
-    "summary": null
+    "summary": "뇌전증 치료용 의료기기를 만드는 회사"
   },
   "1528396": {
     "name": "Guidewire Software, Inc.",
@@ -2302,7 +2302,7 @@
   "1679049": {
     "name": "International Seaways, Inc.",
     "sic_description": "Water Transportation",
-    "summary": null
+    "summary": "원유·석유제품을 실어 나르는 유조선 회사"
   },
   "1679788": {
     "name": "Coinbase Global, Inc.",
@@ -2342,7 +2342,7 @@
   "16918": {
     "name": "CONSTELLATION BRANDS, INC.",
     "sic_description": "Beverages",
-    "summary": null
+    "summary": "맥주·와인·증류주를 만드는 회사"
   },
   "1692376": {
     "name": "Velocity Financial, Inc.",
@@ -2352,7 +2352,7 @@
   "1693736": {
     "name": "EquipmentShare.com Inc",
     "sic_description": "Services-Equipment Rental & Leasing, NEC",
-    "summary": null
+    "summary": "건설 장비를 빌려주고 관리 플랫폼을 운영하는 회사"
   },
   "1694028": {
     "name": "Liberty Energy Inc.",
@@ -2367,7 +2367,7 @@
   "1696556": {
     "name": "Once Upon a Farm, PBC",
     "sic_description": "Food and Kindred Products",
-    "summary": null
+    "summary": "식품을 만드는 회사"
   },
   "1698514": {
     "name": "National Energy Services Reunited Corp.",
@@ -3047,7 +3047,7 @@
   "1842279": {
     "name": "OPAL Fuels Inc.",
     "sic_description": "Gas & Other Services Combined",
-    "summary": null
+    "summary": "바이오가스로 천연가스와 전력을 만드는 회사"
   },
   "1842295": {
     "name": "Maze Therapeutics, Inc.",
@@ -3307,7 +3307,7 @@
   "1937653": {
     "name": "Zymeworks Inc.",
     "sic_description": "Pharmaceutical Preparations",
-    "summary": null
+    "summary": "항체 신약을 개발하는 바이오 회사"
   },
   "1943896": {
     "name": "Rubrik, Inc.",
@@ -3412,7 +3412,7 @@
   "2000178": {
     "name": "Loar Holdings Inc.",
     "sic_description": "Aircraft Parts & Auxiliary Equipment, NEC",
-    "summary": null
+    "summary": "항공기 부품을 만드는 회사"
   },
   "2001184": {
     "name": "PACS Group, Inc.",
@@ -3552,7 +3552,7 @@
   "2094433": {
     "name": "Suncrete, Inc.",
     "sic_description": "Concrete Products, Except Block & Brick",
-    "summary": null
+    "summary": "콘크리트 제품을 만드는 회사"
   },
   "2095486": {
     "name": "Blackstone Multi-Strategy Hedge Fund L.P.",
@@ -3607,7 +3607,7 @@
   "21344": {
     "name": "COCA COLA CO",
     "sic_description": "Beverages",
-    "summary": null
+    "summary": "청량음료 등 음료를 만들어 파는 회사"
   },
   "21535": {
     "name": "COHU INC",
@@ -3842,7 +3842,7 @@
   "40545": {
     "name": "GENERAL ELECTRIC CO",
     "sic_description": "Electronic & Other Electrical Equipment (No Computer Equip)",
-    "summary": null
+    "summary": "항공기 엔진 등을 만드는 회사"
   },
   "43920": {
     "name": "GREIF, INC",
@@ -4067,7 +4067,7 @@
   "752642": {
     "name": "UMH PROPERTIES, INC.",
     "sic_description": "Real Estate Investment Trusts",
-    "summary": null
+    "summary": "조립식 주택 단지를 임대·운영하는 리츠"
   },
   "752714": {
     "name": "MCGRATH RENTCORP",
@@ -4337,7 +4337,7 @@
   "875320": {
     "name": "VERTEX PHARMACEUTICALS INC / MA",
     "sic_description": "Pharmaceutical Preparations",
-    "summary": null
+    "summary": "의약품을 개발·판매하는 회사"
   },
   "876167": {
     "name": "PROGRESS SOFTWARE CORP /MA",
