@@ -35,6 +35,16 @@
     "ticker": "LRMR"
   },
   {
+    "issuer_cik": "1046179",
+    "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
+    "ticker": "TSM"
+  },
+  {
+    "issuer_cik": "1884516",
+    "name": "Drilling Tools International Corp",
+    "ticker": "DTI"
+  },
+  {
     "issuer_cik": "1766478",
     "name": "Angel Oak Mortgage REIT, Inc.",
     "ticker": "AOMR"
@@ -50,14 +60,19 @@
     "ticker": "ITG"
   },
   {
+    "issuer_cik": "2080126",
+    "name": "Forgent Power Solutions, Inc.",
+    "ticker": "FPS"
+  },
+  {
+    "issuer_cik": "2094433",
+    "name": "Suncrete, Inc.",
+    "ticker": "RMIX"
+  },
+  {
     "issuer_cik": "1337298",
     "name": "FutureFuel Corp.",
     "ticker": "FF"
-  },
-  {
-    "issuer_cik": "1884516",
-    "name": "Drilling Tools International Corp",
-    "ticker": "DTI"
   },
   {
     "issuer_cik": "94344",
@@ -68,11 +83,6 @@
     "issuer_cik": "1794783",
     "name": "SelectQuote, Inc.",
     "ticker": "SLQT"
-  },
-  {
-    "issuer_cik": "1046179",
-    "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
-    "ticker": "TSM"
   },
   {
     "issuer_cik": "2105139",
@@ -93,6 +103,11 @@
     "issuer_cik": "728387",
     "name": "Perspective Therapeutics, Inc.",
     "ticker": "CATX"
+  },
+  {
+    "issuer_cik": "1750704",
+    "name": "HawkEye 360, Inc.",
+    "ticker": "HAWK"
   },
   {
     "issuer_cik": "1469395",
@@ -120,9 +135,24 @@
     "ticker": "AN"
   },
   {
-    "issuer_cik": "2080126",
-    "name": "Forgent Power Solutions, Inc.",
-    "ticker": "FPS"
+    "issuer_cik": "1065696",
+    "name": "LKQ CORP",
+    "ticker": "LKQ"
+  },
+  {
+    "issuer_cik": "1767042",
+    "name": "Kodiak Gas Services, Inc.",
+    "ticker": "KGS"
+  },
+  {
+    "issuer_cik": "1630472",
+    "name": "TPG RE Finance Trust, Inc.",
+    "ticker": "TRTX"
+  },
+  {
+    "issuer_cik": "1696556",
+    "name": "Once Upon a Farm, PBC",
+    "ticker": "OFRM"
   },
   {
     "issuer_cik": "2105398",
@@ -140,6 +170,11 @@
     "ticker": "ANIX"
   },
   {
+    "issuer_cik": "36029",
+    "name": "FIRST FINANCIAL BANKSHARES INC",
+    "ticker": "FFIN"
+  },
+  {
     "issuer_cik": "1963088",
     "name": "AtlasClear Holdings, Inc.",
     "ticker": "ATCH"
@@ -148,6 +183,11 @@
     "issuer_cik": "1630805",
     "name": "Babcock & Wilcox Enterprises, Inc.",
     "ticker": "BW"
+  },
+  {
+    "issuer_cik": "1326190",
+    "name": "Altimmune, Inc.",
+    "ticker": "ALT"
   },
   {
     "issuer_cik": "726854",
@@ -175,6 +215,11 @@
     "ticker": "FUN"
   },
   {
+    "issuer_cik": "1465128",
+    "name": "STARWOOD PROPERTY TRUST, INC.",
+    "ticker": "STWD"
+  },
+  {
     "issuer_cik": "2114459",
     "name": "Cascade Real Assets Fund",
     "ticker": "CRAFX"
@@ -188,6 +233,11 @@
     "issuer_cik": "1116942",
     "name": "TTM TECHNOLOGIES INC",
     "ticker": "TTMI"
+  },
+  {
+    "issuer_cik": "12927",
+    "name": "BOEING CO",
+    "ticker": "BA"
   },
   {
     "issuer_cik": "1089063",
@@ -205,6 +255,11 @@
     "ticker": "DKNG"
   },
   {
+    "issuer_cik": "1693736",
+    "name": "EquipmentShare.com Inc",
+    "ticker": "EQPT"
+  },
+  {
     "issuer_cik": "1509470",
     "name": "Neostellar Capital Corp.",
     "ticker": "NSLR"
@@ -218,11 +273,6 @@
     "issuer_cik": "1482512",
     "name": "Hudson Pacific Properties, Inc.",
     "ticker": "HPP"
-  },
-  {
-    "issuer_cik": "1065696",
-    "name": "LKQ CORP",
-    "ticker": "LKQ"
   },
   {
     "issuer_cik": "1350653",
@@ -245,24 +295,24 @@
     "ticker": "AGMB"
   },
   {
-    "issuer_cik": "1767042",
-    "name": "Kodiak Gas Services, Inc.",
-    "ticker": "KGS"
-  },
-  {
     "issuer_cik": "1510599",
     "name": "PIMCO Dynamic Income Fund",
     "ticker": "PDI"
   },
   {
-    "issuer_cik": "1630472",
-    "name": "TPG RE Finance Trust, Inc.",
-    "ticker": "TRTX"
+    "issuer_cik": "1528287",
+    "name": "NeuroPace Inc",
+    "ticker": "NPCE"
   },
   {
     "issuer_cik": "1004702",
     "name": "OCEANFIRST FINANCIAL CORP",
     "ticker": "OCFC"
+  },
+  {
+    "issuer_cik": "1998768",
+    "name": "Proficient Auto Logistics, Inc",
+    "ticker": "PAL"
   },
   {
     "issuer_cik": "1084991",
@@ -290,14 +340,19 @@
     "ticker": "KEEL"
   },
   {
-    "issuer_cik": "36029",
-    "name": "FIRST FINANCIAL BANKSHARES INC",
-    "ticker": "FFIN"
+    "issuer_cik": "1842279",
+    "name": "OPAL Fuels Inc.",
+    "ticker": "OPAL"
   },
   {
     "issuer_cik": "1868995",
     "name": "CI&T Inc",
     "ticker": "CINT"
+  },
+  {
+    "issuer_cik": "1289340",
+    "name": "Stereotaxis, Inc.",
+    "ticker": "STXS"
   },
   {
     "issuer_cik": "2019804",
@@ -310,9 +365,9 @@
     "ticker": "LCU"
   },
   {
-    "issuer_cik": "1326190",
-    "name": "Altimmune, Inc.",
-    "ticker": "ALT"
+    "issuer_cik": "752642",
+    "name": "UMH PROPERTIES, INC.",
+    "ticker": "UMH"
   },
   {
     "issuer_cik": "838875",
@@ -333,10 +388,5 @@
     "issuer_cik": "1918102",
     "name": "DEEP FISSION, INC.",
     "ticker": "FISN"
-  },
-  {
-    "issuer_cik": "1750704",
-    "name": "HawkEye 360, Inc.",
-    "ticker": "HAWK"
   }
 ]
