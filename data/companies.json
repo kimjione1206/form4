@@ -259,6 +259,11 @@
     "sic_description": "Services-Commercial Physical & Biological Research",
     "summary": "임상시험을 대행하는 회사"
   },
+  "1061736": {
+    "name": "MEXICAN ECONOMIC DEVELOPMENT INC",
+    "sic_description": "Bottled & Canned Soft Drinks & Carbonated Waters",
+    "summary": null
+  },
   "1061983": {
     "name": "CYTOKINETICS INC",
     "sic_description": "Pharmaceutical Preparations",
@@ -744,6 +749,11 @@
     "sic_description": "Pharmaceutical Preparations",
     "summary": "단백질·저분자 치료제를 개발하는 바이오 회사"
   },
+  "1286681": {
+    "name": "DOMINOS PIZZA INC",
+    "sic_description": "Wholesale-Groceries & Related Products",
+    "summary": null
+  },
   "1288847": {
     "name": "Five9, Inc.",
     "sic_description": "Services-Computer Processing & Data Preparation",
@@ -964,6 +974,11 @@
     "sic_description": "Communications Services, NEC",
     "summary": "위성 통신 서비스 회사"
   },
+  "1368458": {
+    "name": "Sally Beauty Holdings, Inc.",
+    "sic_description": "Retail-Retail Stores, NEC",
+    "summary": null
+  },
   "1370637": {
     "name": "ETSY INC",
     "sic_description": "Services-Business Services, NEC",
@@ -1159,6 +1174,11 @@
     "sic_description": "Pharmaceutical Preparations",
     "summary": "바이러스 질환 치료제를 개발하는 회사"
   },
+  "1428205": {
+    "name": "Armour Residential REIT, Inc.",
+    "sic_description": "Real Estate Investment Trusts",
+    "summary": null
+  },
   "1428439": {
     "name": "ROKU, INC",
     "sic_description": "Cable & Other Pay Television Services",
@@ -1218,6 +1238,11 @@
     "name": "Verisk Analytics, Inc.",
     "sic_description": "Services-Computer Processing & Data Preparation",
     "summary": "보험업계에 데이터·분석을 제공하는 회사"
+  },
+  "1443646": {
+    "name": "Booz Allen Hamilton Holding Corp",
+    "sic_description": "Services-Management Consulting Services",
+    "summary": null
   },
   "1447362": {
     "name": "CASTLE BIOSCIENCES INC",
@@ -1484,6 +1509,11 @@
     "sic_description": "Services-Computer Programming Services",
     "summary": "의사용 온라인 플랫폼 회사"
   },
+  "1516912": {
+    "name": "Origin Bancorp, Inc.",
+    "sic_description": "State Commercial Banks",
+    "summary": null
+  },
   "1517175": {
     "name": "Chefs' Warehouse, Inc.",
     "sic_description": "Wholesale-Groceries, General Line",
@@ -1619,6 +1649,11 @@
     "sic_description": "Services-Prepackaged Software",
     "summary": "클라우드 기반 사이버 보안 회사"
   },
+  "1537435": {
+    "name": "TECOGEN INC.",
+    "sic_description": "Air-Cond & Warm Air Heatg Equip & Comm & Indl Refrig Equip",
+    "summary": null
+  },
   "1538379": {
     "name": "Ibotta, Inc.",
     "sic_description": "Services-Advertising",
@@ -1628,6 +1663,11 @@
     "name": "Diamondback Energy, Inc.",
     "sic_description": "Crude Petroleum & Natural Gas",
     "summary": "원유와 천연가스를 생산하는 회사"
+  },
+  "1540171": {
+    "name": "Avalyn Pharma Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
   },
   "1547546": {
     "name": "Lument Finance Trust, Inc.",
@@ -2844,6 +2884,11 @@
     "sic_description": "Pharmaceutical Preparations",
     "summary": "신약을 개발하는 제약회사"
   },
+  "1819133": {
+    "name": "Tango Therapeutics, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
   "1819493": {
     "name": "Xos, Inc.",
     "sic_description": "Motor Vehicle Parts & Accessories",
@@ -2903,6 +2948,11 @@
     "name": "TIM S.A.",
     "sic_description": "Telephone Communications (No Radiotelephone)",
     "summary": "전화·통신 서비스를 하는 회사"
+  },
+  "1826667": {
+    "name": "TriSalus Life Sciences, Inc.",
+    "sic_description": "Surgical & Medical Instruments & Apparatus",
+    "summary": null
   },
   "1826681": {
     "name": "Palladyne AI Corp.",
@@ -3083,6 +3133,11 @@
     "name": "Nextdoor Holdings, Inc.",
     "sic_description": "Services-Computer Programming, Data Processing, Etc.",
     "summary": "동네 이웃을 연결하는 지역 소셜 네트워크 회사"
+  },
+  "1847398": {
+    "name": "NorthEast Community Bancorp, Inc./MD/",
+    "sic_description": "Savings Institutions, Not Federally Chartered",
+    "summary": null
   },
   "1847590": {
     "name": "Bowman Consulting Group Ltd.",

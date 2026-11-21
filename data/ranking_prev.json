@@ -30,19 +30,24 @@
     "ticker": "DOX"
   },
   {
+    "issuer_cik": "1884516",
+    "name": "Drilling Tools International Corp",
+    "ticker": "DTI"
+  },
+  {
     "issuer_cik": "1374690",
     "name": "Larimar Therapeutics, Inc.",
     "ticker": "LRMR"
   },
   {
+    "issuer_cik": "2094433",
+    "name": "Suncrete, Inc.",
+    "ticker": "RMIX"
+  },
+  {
     "issuer_cik": "1046179",
     "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
     "ticker": "TSM"
-  },
-  {
-    "issuer_cik": "1884516",
-    "name": "Drilling Tools International Corp",
-    "ticker": "DTI"
   },
   {
     "issuer_cik": "1766478",
@@ -65,9 +70,9 @@
     "ticker": "FPS"
   },
   {
-    "issuer_cik": "2094433",
-    "name": "Suncrete, Inc.",
-    "ticker": "RMIX"
+    "issuer_cik": "876343",
+    "name": "Lineage Cell Therapeutics, Inc.",
+    "ticker": "LCTX"
   },
   {
     "issuer_cik": "1337298",
@@ -83,6 +88,11 @@
     "issuer_cik": "1794783",
     "name": "SelectQuote, Inc.",
     "ticker": "SLQT"
+  },
+  {
+    "issuer_cik": "1998768",
+    "name": "Proficient Auto Logistics, Inc",
+    "ticker": "PAL"
   },
   {
     "issuer_cik": "2105139",
@@ -285,14 +295,14 @@
     "ticker": "LBRT"
   },
   {
-    "issuer_cik": "1712189",
-    "name": "Target Hospitality Corp.",
-    "ticker": "TH"
-  },
-  {
     "issuer_cik": "2020932",
     "name": "AgomAb Therapeutics NV",
     "ticker": "AGMB"
+  },
+  {
+    "issuer_cik": "1712189",
+    "name": "Target Hospitality Corp.",
+    "ticker": "TH"
   },
   {
     "issuer_cik": "1510599",
@@ -300,19 +310,24 @@
     "ticker": "PDI"
   },
   {
+    "issuer_cik": "1516912",
+    "name": "Origin Bancorp, Inc.",
+    "ticker": "OBK"
+  },
+  {
     "issuer_cik": "1528287",
     "name": "NeuroPace Inc",
     "ticker": "NPCE"
   },
   {
+    "issuer_cik": "1826667",
+    "name": "TriSalus Life Sciences, Inc.",
+    "ticker": "TLSI"
+  },
+  {
     "issuer_cik": "1004702",
     "name": "OCEANFIRST FINANCIAL CORP",
     "ticker": "OCFC"
-  },
-  {
-    "issuer_cik": "1998768",
-    "name": "Proficient Auto Logistics, Inc",
-    "ticker": "PAL"
   },
   {
     "issuer_cik": "1084991",
@@ -375,9 +390,9 @@
     "ticker": "WVVI"
   },
   {
-    "issuer_cik": "876343",
-    "name": "Lineage Cell Therapeutics, Inc.",
-    "ticker": "LCTX"
+    "issuer_cik": "1428205",
+    "name": "Armour Residential REIT, Inc.",
+    "ticker": "ARR"
   },
   {
     "issuer_cik": "1533040",
@@ -388,5 +403,10 @@
     "issuer_cik": "1918102",
     "name": "DEEP FISSION, INC.",
     "ticker": "FISN"
+  },
+  {
+    "issuer_cik": "1537435",
+    "name": "TECOGEN INC.",
+    "ticker": "TGEN"
   }
 ]

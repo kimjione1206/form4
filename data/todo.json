@@ -1,24 +1,9 @@
 {
   "companies": [
     {
-      "cik": "2094433",
-      "name": "Suncrete, Inc.",
-      "sic_description": "Concrete Products, Except Block & Brick"
-    },
-    {
-      "cik": "1696556",
-      "name": "Once Upon a Farm, PBC",
-      "sic_description": "Food and Kindred Products"
-    },
-    {
       "cik": "1551047",
       "name": "Bluerock Private Real Estate Fund",
       "sic_description": ""
-    },
-    {
-      "cik": "1465128",
-      "name": "STARWOOD PROPERTY TRUST, INC.",
-      "sic_description": "Real Estate Investment Trusts"
     },
     {
       "cik": "2114459",
@@ -26,23 +11,18 @@
       "sic_description": ""
     },
     {
-      "cik": "12927",
-      "name": "BOEING CO",
-      "sic_description": "Aircraft"
-    },
-    {
-      "cik": "1693736",
-      "name": "EquipmentShare.com Inc",
-      "sic_description": "Services-Equipment Rental & Leasing, NEC"
-    },
-    {
       "cik": "1510599",
       "name": "PIMCO Dynamic Income Fund",
       "sic_description": ""
     },
     {
-      "cik": "1528287",
-      "name": "NeuroPace Inc",
+      "cik": "1516912",
+      "name": "Origin Bancorp, Inc.",
+      "sic_description": "State Commercial Banks"
+    },
+    {
+      "cik": "1826667",
+      "name": "TriSalus Life Sciences, Inc.",
       "sic_description": "Surgical & Medical Instruments & Apparatus"
     },
     {
@@ -51,251 +31,192 @@
       "sic_description": ""
     },
     {
-      "cik": "1842279",
-      "name": "OPAL Fuels Inc.",
-      "sic_description": "Gas & Other Services Combined"
-    },
-    {
-      "cik": "1289340",
-      "name": "Stereotaxis, Inc.",
-      "sic_description": "Electromedical & Electrotherapeutic Apparatus"
-    },
-    {
-      "cik": "752642",
-      "name": "UMH PROPERTIES, INC.",
+      "cik": "1428205",
+      "name": "Armour Residential REIT, Inc.",
       "sic_description": "Real Estate Investment Trusts"
     },
     {
-      "cik": "1022837",
-      "name": "SUMITOMO MITSUI FINANCIAL GROUP, INC.",
-      "sic_description": "Commercial Banks, NEC"
+      "cik": "1537435",
+      "name": "TECOGEN INC.",
+      "sic_description": "Air-Cond & Warm Air Heatg Equip & Comm & Indl Refrig Equip"
     },
     {
-      "cik": "2000178",
-      "name": "Loar Holdings Inc.",
-      "sic_description": "Aircraft Parts & Auxiliary Equipment, NEC"
-    },
-    {
-      "cik": "21344",
-      "name": "COCA COLA CO",
-      "sic_description": "Beverages"
-    },
-    {
-      "cik": "875320",
-      "name": "VERTEX PHARMACEUTICALS INC / MA",
+      "cik": "1540171",
+      "name": "Avalyn Pharma Inc.",
       "sic_description": "Pharmaceutical Preparations"
     },
     {
-      "cik": "16918",
-      "name": "CONSTELLATION BRANDS, INC.",
-      "sic_description": "Beverages"
+      "cik": "1368458",
+      "name": "Sally Beauty Holdings, Inc.",
+      "sic_description": "Retail-Retail Stores, NEC"
     },
     {
-      "cik": "40545",
-      "name": "GENERAL ELECTRIC CO",
-      "sic_description": "Electronic & Other Electrical Equipment (No Computer Equip)"
+      "cik": "1286681",
+      "name": "DOMINOS PIZZA INC",
+      "sic_description": "Wholesale-Groceries & Related Products"
     },
     {
-      "cik": "109177",
-      "name": "Spectrum Brands Holdings, Inc.",
-      "sic_description": "Miscellaneous Electrical Machinery, Equipment & Supplies"
+      "cik": "1061736",
+      "name": "MEXICAN ECONOMIC DEVELOPMENT INC",
+      "sic_description": "Bottled & Canned Soft Drinks & Carbonated Waters"
     },
     {
-      "cik": "1679049",
-      "name": "International Seaways, Inc.",
-      "sic_description": "Water Transportation"
-    },
-    {
-      "cik": "1937653",
-      "name": "Zymeworks Inc.",
+      "cik": "1819133",
+      "name": "Tango Therapeutics, Inc.",
       "sic_description": "Pharmaceutical Preparations"
     },
     {
-      "cik": "1477815",
-      "name": "Sweetgreen, Inc.",
-      "sic_description": "Retail-Eating  Places"
+      "cik": "1847398",
+      "name": "NorthEast Community Bancorp, Inc./MD/",
+      "sic_description": "Savings Institutions, Not Federally Chartered"
+    },
+    {
+      "cik": "1443646",
+      "name": "Booz Allen Hamilton Holding Corp",
+      "sic_description": "Services-Management Consulting Services"
     }
   ],
   "industries": [
-    "Concrete Products, Except Block & Brick",
-    "Electronic & Other Electrical Equipment (No Computer Equip)",
-    "Food and Kindred Products",
-    "Gas & Other Services Combined"
+    "Air-Cond & Warm Air Heatg Equip & Comm & Indl Refrig Equip",
+    "Wholesale-Groceries & Related Products"
   ],
   "names": [
     {
-      "n": "Loar Holdings Inc.",
-      "t": "LOAR"
+      "n": "INTERNATIONAL BANCSHARES CORP",
+      "t": "IBOC"
     },
     {
-      "n": "WINDWARD BIO GROUP AG",
-      "t": "WWB"
+      "n": "Avalyn Pharma Inc.",
+      "t": "AVLN"
     },
     {
-      "n": "Spectrum Brands Holdings, Inc.",
-      "t": "SPB"
+      "n": "HMH Holding Inc",
+      "t": "HMH"
     },
     {
-      "n": "First Watch Restaurant Group, Inc.",
-      "t": "FWRG"
+      "n": "COASTAL FINANCIAL CORP",
+      "t": "CCB"
     },
     {
-      "n": "ANTERO RESOURCES Corp",
-      "t": "AR"
+      "n": "Prologis, Inc.",
+      "t": "PLD"
     },
     {
-      "n": "Riot Platforms, Inc.",
-      "t": "RIOT"
+      "n": "Fortress Biotech, Inc.",
+      "t": "FBIO"
     },
     {
-      "n": "Antero Midstream Corp",
-      "t": "AM"
+      "n": "ARKO Petroleum Corp.",
+      "t": "APC"
     },
     {
-      "n": "Rapid7, Inc.",
-      "t": "RPD"
+      "n": "ADVENT CONVERTIBLE & INCOME FUND",
+      "t": "AVK"
     },
     {
-      "n": "VivoPower PLC",
-      "t": "VIVO"
+      "n": "LENSAR, Inc.",
+      "t": "LNSR"
     },
     {
-      "n": "EXPEDITORS INTERNATIONAL OF WASHINGTON INC",
-      "t": "EXPD"
+      "n": "CervoMed Inc.",
+      "t": "CRVO"
     },
     {
-      "n": "PCB BANCORP",
-      "t": "PCB"
+      "n": "NETGEAR, INC.",
+      "t": "NTGR"
     },
     {
-      "n": "Guardian Pharmacy Services, Inc.",
-      "t": "GRDN"
+      "n": "TWFG, Inc.",
+      "t": "TWFG"
     },
     {
-      "n": "GRANITE CONSTRUCTION INC",
-      "t": "GVA"
+      "n": "ALPHA & OMEGA SEMICONDUCTOR Ltd",
+      "t": "AOSL"
     },
     {
-      "n": "FreightCar America, Inc.",
-      "t": "RAIL"
+      "n": "GCT Semiconductor Holding, Inc.",
+      "t": "GCTS"
     },
     {
-      "n": "Atea Pharmaceuticals, Inc.",
-      "t": "AVIR"
+      "n": "TECOGEN INC.",
+      "t": "TGEN"
     },
     {
-      "n": "JACK HENRY & ASSOCIATES INC",
-      "t": "JKHY"
+      "n": "NexPoint Real Estate Finance, Inc.",
+      "t": "NREF"
     },
     {
-      "n": "Stereotaxis, Inc.",
-      "t": "STXS"
+      "n": "MYRIAD GENETICS INC",
+      "t": "MYGN"
     },
     {
-      "n": "MAXCYTE, INC.",
-      "t": "MXCT"
+      "n": "Clene Inc.",
+      "t": "CLNN"
     },
     {
-      "n": "BRC Group Holdings, Inc.",
-      "t": "RILY"
+      "n": "Maris Tech Ltd.",
+      "t": "MTEK"
     },
     {
-      "n": "Ellington Financial Inc.",
-      "t": "EFC"
+      "n": "Modular Medical, Inc.",
+      "t": "MODD"
     },
     {
-      "n": "ARROW FINANCIAL CORP",
-      "t": "AROW"
+      "n": "Roadzen Inc.",
+      "t": "RDZN"
     },
     {
-      "n": "NATIONAL HEALTH INVESTORS INC",
-      "t": "NHI"
+      "n": "InspireMD, Inc.",
+      "t": "NSPR"
     },
     {
-      "n": "XTI Aerospace, Inc.",
-      "t": "XTIA"
+      "n": "Zomedica Corp.",
+      "t": "ZOMDF"
     },
     {
-      "n": "SpyGlass Pharma, Inc.",
-      "t": "SGP"
+      "n": "BioStem Technologies, Inc.",
+      "t": "BSEM"
     },
     {
-      "n": "Motorsport Games Inc.",
-      "t": "MSGM"
+      "n": "NOMAD POWER SOLUTIONS, INC.",
+      "t": "NMAD"
     },
     {
-      "n": "Lightwave Logic, Inc.",
-      "t": "LWLG"
+      "n": "Energous Corp",
+      "t": "WATT"
     },
     {
-      "n": "IRONWOOD PHARMACEUTICALS INC",
-      "t": "IRWD"
+      "n": "Pennant Group, Inc.",
+      "t": "PNTG"
     },
     {
-      "n": "NEPHROS INC",
-      "t": "NEPH"
+      "n": "DAXOR CORP",
+      "t": "DXR"
     },
     {
-      "n": "Lite Strategy, Inc.",
-      "t": "LITS"
+      "n": "BIO KEY INTERNATIONAL INC",
+      "t": "BKYI"
     },
     {
-      "n": "Texas Community Bancshares, Inc.",
-      "t": "TCBS"
-    },
-    {
-      "n": "BARINGS GLOBAL SHORT DURATION HIGH YIELD FUND",
-      "t": "BGH"
-    },
-    {
-      "n": "AMPCO PITTSBURGH CORP",
-      "t": "AP"
-    },
-    {
-      "n": "ALLSPRING UTILITIES & HIGH INCOME FUND",
-      "t": "ERH"
-    },
-    {
-      "n": "ALLSPRING MULTI-SECTOR INCOME FUND",
-      "t": "ERC"
-    },
-    {
-      "n": "ALLSPRING GLOBAL DIVIDEND OPPORTUNITY FUND",
-      "t": "EOD"
-    },
-    {
-      "n": "ALLSPRING INCOME OPPORTUNITIES FUND",
-      "t": "EAD"
-    },
-    {
-      "n": "Deep Isolation Nuclear, Inc.",
-      "t": "DBHL"
+      "n": "MERCER INTERNATIONAL INC.",
+      "t": "MERC"
     }
   ],
   "titles": [
-    "COO, Amer. Payments & Mobility",
-    "Chairman and Co-CEO",
-    "Chief Accting. Off. & VP, Fin.",
-    "Chief Architect",
-    "Chief Concept Officer",
-    "Chief Operating& Legal Officer",
-    "EVP & Pres. - ITDS",
-    "EVP - Risk Management Services",
-    "EVP of Strategy, M&A, and BP",
-    "EVP, CHIEF CREDIT OFFICER",
-    "EVP, Chief Business Officer",
-    "EVP, Comm & Ind Lndg",
-    "Founder & CEO /",
-    "GC and Corporate Secretary",
-    "President & Head of R&D",
-    "President of North America",
-    "President, Networks",
-    "SVP - Chief Financial Officer",
-    "SVP OF MERCHANDISE",
-    "SVP and COO",
-    "SVP, Lubricants & Specialties",
-    "Senior Managing Corporate EO",
-    "Sr VP & Chief Accounting Offic",
-    "Vice President of Sales"
+    "EVP OF HUMAN RESOURCES & CHRO",
+    "EVP, Chief R&D Officer",
+    "EVP, Chief Restaurant Officer",
+    "EVP-WW Sales & Bus Development",
+    "PRESIDENT, CEO & CHAIRMAN",
+    "President & GM, NFB",
+    "President Beauty Systems Group",
+    "SVP OF INTERNATIONAL",
+    "SVP OF REAL ESTATE & EXPANSION",
+    "SVP of Operations",
+    "SVP, Innovation&Gov Relations",
+    "SVP-Finance and Treasurer",
+    "Sector President",
+    "Sr MD, General Counsel",
+    "VP Financial Planning Analysis"
   ]
 }
