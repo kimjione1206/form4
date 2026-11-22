@@ -239,6 +239,11 @@
     "sic_description": "Apparel & Other Finishd Prods of  Fabrics & Similar Matl",
     "summary": "아웃도어 의류와 신발을 만드는 회사"
   },
+  "1056288": {
+    "name": "FEDERATED HERMES, INC.",
+    "sic_description": "Investment Advice",
+    "summary": null
+  },
   "1056943": {
     "name": "PEOPLES FINANCIAL SERVICES CORP.",
     "sic_description": "National Commercial Banks",
@@ -1064,6 +1069,11 @@
     "sic_description": "Natural Gas Transmission",
     "summary": "천연가스 수송·가공 회사"
   },
+  "1390478": {
+    "name": "SELLAS Life Sciences Group, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
   "1392380": {
     "name": "Gevo, Inc.",
     "sic_description": "Industrial Organic Chemicals",
@@ -1128,6 +1138,11 @@
     "name": "Happen, Inc.",
     "sic_description": "Personal Credit Institutions",
     "summary": "디지털 은행"
+  },
+  "1410098": {
+    "name": "CorMedix Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
   },
   "1410384": {
     "name": "Q2 Holdings, Inc.",
@@ -1449,6 +1464,11 @@
     "sic_description": "Fire, Marine & Casualty Insurance",
     "summary": "손해보험 회사"
   },
+  "1502377": {
+    "name": "Contango Silver & Gold Inc.",
+    "sic_description": "Gold and Silver Ores",
+    "summary": null
+  },
   "1504776": {
     "name": "Warby Parker Inc.",
     "sic_description": "Ophthalmic Goods",
@@ -1463,6 +1483,11 @@
     "name": "PINTEREST, INC.",
     "sic_description": "Services-Computer Programming, Data Processing, Etc.",
     "summary": "이미지 공유 소셜 미디어 회사"
+  },
+  "1506488": {
+    "name": "NXG NextGen Infrastructure Income Fund",
+    "sic_description": "",
+    "summary": null
   },
   "1507605": {
     "name": "MARA Holdings, Inc.",
@@ -2159,6 +2184,11 @@
     "sic_description": "Computer & office Equipment",
     "summary": "기업용 서버와 네트워크 장비 회사"
   },
+  "1646188": {
+    "name": "Ondas Inc.",
+    "sic_description": "Radio & Tv Broadcasting & Communications Equipment",
+    "summary": null
+  },
   "1647639": {
     "name": "Upstart Holdings, Inc.",
     "sic_description": "Finance Services",
@@ -2409,6 +2439,11 @@
     "sic_description": "Food and Kindred Products",
     "summary": "식품을 만드는 회사"
   },
+  "1697500": {
+    "name": "Solaris Energy Infrastructure, Inc.",
+    "sic_description": "Oil & Gas Field Machinery & Equipment",
+    "summary": null
+  },
   "1698514": {
     "name": "National Energy Services Reunited Corp.",
     "sic_description": "Oil & Gas Field Services, NEC",
@@ -2578,6 +2613,11 @@
     "name": "GRID DYNAMICS HOLDINGS, INC.",
     "sic_description": "Services-Prepackaged Software",
     "summary": "기업용 AI·소프트웨어 개발 서비스 회사"
+  },
+  "1744489": {
+    "name": "Walt Disney Co",
+    "sic_description": "Services-Miscellaneous Amusement & Recreation",
+    "summary": null
   },
   "1750704": {
     "name": "HawkEye 360, Inc.",
@@ -3049,6 +3089,11 @@
     "sic_description": "General Industrial Machinery & Equipment, NEC",
     "summary": "창고용 로봇 자동화 시스템을 만드는 회사"
   },
+  "1837607": {
+    "name": "AEON Biopharma, Inc.",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
+  },
   "1838359": {
     "name": "Rigetti Computing, Inc.",
     "sic_description": "Services-Computer Programming Services",
@@ -3083,6 +3128,11 @@
     "name": "SOUNDHOUND AI, INC.",
     "sic_description": "Services-Prepackaged Software",
     "summary": "음성 인식 인공지능 소프트웨어 회사"
+  },
+  "1841644": {
+    "name": "PicS N.V.",
+    "sic_description": "Personal Credit Institutions",
+    "summary": null
   },
   "1841761": {
     "name": "Grove Collaborative Holdings, Inc.",
@@ -4069,6 +4119,11 @@
     "sic_description": "General Industrial Machinery & Equipment, NEC",
     "summary": "정밀 산업 장비를 만드는 회사"
   },
+  "723612": {
+    "name": "AVIS BUDGET GROUP, INC.",
+    "sic_description": "Services-Auto Rental & Leasing (No Drivers)",
+    "summary": null
+  },
   "726854": {
     "name": "CITY HOLDING CO",
     "sic_description": "National Commercial Banks",
@@ -4278,6 +4333,11 @@
     "name": "PAR PACIFIC HOLDINGS, INC.",
     "sic_description": "Crude Petroleum & Natural Gas",
     "summary": "원유를 정제하고 연료를 공급하는 회사"
+  },
+  "825542": {
+    "name": "SCOTTS MIRACLE-GRO CO",
+    "sic_description": "Agricultural Chemicals",
+    "summary": null
   },
   "826675": {
     "name": "DYNEX CAPITAL INC",
@@ -4533,6 +4593,11 @@
     "name": "COSTCO WHOLESALE CORP /NEW",
     "sic_description": "Retail-Variety Stores",
     "summary": "회원제 창고형 할인매장을 운영하는 회사"
+  },
+  "910073": {
+    "name": "FLAGSTAR BANK, NATIONAL ASSOCIATION",
+    "sic_description": "Savings Institutions, Not Federally Chartered",
+    "summary": null
   },
   "910612": {
     "name": "CBL & ASSOCIATES PROPERTIES INC",

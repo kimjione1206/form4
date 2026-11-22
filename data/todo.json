@@ -1,13 +1,33 @@
 {
   "companies": [
     {
+      "cik": "1697500",
+      "name": "Solaris Energy Infrastructure, Inc.",
+      "sic_description": "Oil & Gas Field Machinery & Equipment"
+    },
+    {
+      "cik": "1410098",
+      "name": "CorMedix Inc.",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
       "cik": "1551047",
       "name": "Bluerock Private Real Estate Fund",
       "sic_description": ""
     },
     {
-      "cik": "2114459",
-      "name": "Cascade Real Assets Fund",
+      "cik": "910073",
+      "name": "FLAGSTAR BANK, NATIONAL ASSOCIATION",
+      "sic_description": "Savings Institutions, Not Federally Chartered"
+    },
+    {
+      "cik": "1841644",
+      "name": "PicS N.V.",
+      "sic_description": "Personal Credit Institutions"
+    },
+    {
+      "cik": "1506488",
+      "name": "NXG NextGen Infrastructure Income Fund",
       "sic_description": ""
     },
     {
@@ -16,14 +36,9 @@
       "sic_description": ""
     },
     {
-      "cik": "1516912",
-      "name": "Origin Bancorp, Inc.",
-      "sic_description": "State Commercial Banks"
-    },
-    {
-      "cik": "1826667",
-      "name": "TriSalus Life Sciences, Inc.",
-      "sic_description": "Surgical & Medical Instruments & Apparatus"
+      "cik": "1502377",
+      "name": "Contango Silver & Gold Inc.",
+      "sic_description": "Gold and Silver Ores"
     },
     {
       "cik": "813623",
@@ -31,192 +46,152 @@
       "sic_description": ""
     },
     {
-      "cik": "1428205",
-      "name": "Armour Residential REIT, Inc.",
-      "sic_description": "Real Estate Investment Trusts"
-    },
-    {
-      "cik": "1537435",
-      "name": "TECOGEN INC.",
-      "sic_description": "Air-Cond & Warm Air Heatg Equip & Comm & Indl Refrig Equip"
-    },
-    {
-      "cik": "1540171",
-      "name": "Avalyn Pharma Inc.",
+      "cik": "1837607",
+      "name": "AEON Biopharma, Inc.",
       "sic_description": "Pharmaceutical Preparations"
     },
     {
-      "cik": "1368458",
-      "name": "Sally Beauty Holdings, Inc.",
-      "sic_description": "Retail-Retail Stores, NEC"
+      "cik": "1056288",
+      "name": "FEDERATED HERMES, INC.",
+      "sic_description": "Investment Advice"
     },
     {
-      "cik": "1286681",
-      "name": "DOMINOS PIZZA INC",
-      "sic_description": "Wholesale-Groceries & Related Products"
+      "cik": "1744489",
+      "name": "Walt Disney Co",
+      "sic_description": "Services-Miscellaneous Amusement & Recreation"
     },
     {
-      "cik": "1061736",
-      "name": "MEXICAN ECONOMIC DEVELOPMENT INC",
-      "sic_description": "Bottled & Canned Soft Drinks & Carbonated Waters"
+      "cik": "1646188",
+      "name": "Ondas Inc.",
+      "sic_description": "Radio & Tv Broadcasting & Communications Equipment"
     },
     {
-      "cik": "1819133",
-      "name": "Tango Therapeutics, Inc.",
+      "cik": "723612",
+      "name": "AVIS BUDGET GROUP, INC.",
+      "sic_description": "Services-Auto Rental & Leasing (No Drivers)"
+    },
+    {
+      "cik": "1390478",
+      "name": "SELLAS Life Sciences Group, Inc.",
       "sic_description": "Pharmaceutical Preparations"
     },
     {
-      "cik": "1847398",
-      "name": "NorthEast Community Bancorp, Inc./MD/",
-      "sic_description": "Savings Institutions, Not Federally Chartered"
-    },
-    {
-      "cik": "1443646",
-      "name": "Booz Allen Hamilton Holding Corp",
-      "sic_description": "Services-Management Consulting Services"
+      "cik": "825542",
+      "name": "SCOTTS MIRACLE-GRO CO",
+      "sic_description": "Agricultural Chemicals"
     }
   ],
   "industries": [
-    "Air-Cond & Warm Air Heatg Equip & Comm & Indl Refrig Equip",
-    "Wholesale-Groceries & Related Products"
+    "Agricultural Chemicals"
   ],
   "names": [
     {
-      "n": "INTERNATIONAL BANCSHARES CORP",
-      "t": "IBOC"
+      "n": "SILGAN HOLDINGS INC",
+      "t": "SLGN"
     },
     {
-      "n": "Avalyn Pharma Inc.",
-      "t": "AVLN"
+      "n": "SELLAS Life Sciences Group, Inc.",
+      "t": "SLS"
     },
     {
-      "n": "HMH Holding Inc",
-      "t": "HMH"
+      "n": "PicS N.V.",
+      "t": "PICS"
     },
     {
-      "n": "COASTAL FINANCIAL CORP",
-      "t": "CCB"
+      "n": "SAGTEC GLOBAL Ltd",
+      "t": "SAGT"
     },
     {
-      "n": "Prologis, Inc.",
-      "t": "PLD"
+      "n": "CITIGROUP INC",
+      "t": "C"
     },
     {
-      "n": "Fortress Biotech, Inc.",
-      "t": "FBIO"
+      "n": "TJX COMPANIES INC /DE/",
+      "t": "TJX"
     },
     {
-      "n": "ARKO Petroleum Corp.",
-      "t": "APC"
+      "n": "FOSTER L B CO",
+      "t": "FSTR"
     },
     {
-      "n": "ADVENT CONVERTIBLE & INCOME FUND",
-      "t": "AVK"
+      "n": "GRAY MEDIA, INC",
+      "t": "GTN"
     },
     {
-      "n": "LENSAR, Inc.",
-      "t": "LNSR"
+      "n": "REGENCY CENTERS CORP",
+      "t": "REG"
     },
     {
-      "n": "CervoMed Inc.",
-      "t": "CRVO"
+      "n": "Teamshares Inc",
+      "t": "TMS"
     },
     {
-      "n": "NETGEAR, INC.",
-      "t": "NTGR"
+      "n": "AEVEX Corp.",
+      "t": "AVEX"
     },
     {
-      "n": "TWFG, Inc.",
-      "t": "TWFG"
+      "n": "DarkHorse Technologies Inc.",
+      "t": "DRK"
     },
     {
-      "n": "ALPHA & OMEGA SEMICONDUCTOR Ltd",
-      "t": "AOSL"
+      "n": "AEON Biopharma, Inc.",
+      "t": "AEON"
     },
     {
-      "n": "GCT Semiconductor Holding, Inc.",
-      "t": "GCTS"
+      "n": "CION Investment Corp",
+      "t": "CION"
     },
     {
-      "n": "TECOGEN INC.",
-      "t": "TGEN"
+      "n": "Comstock Inc.",
+      "t": "LODE"
     },
     {
-      "n": "NexPoint Real Estate Finance, Inc.",
-      "t": "NREF"
+      "n": "Eagle Bancorp Montana, Inc.",
+      "t": "EBMT"
     },
     {
-      "n": "MYRIAD GENETICS INC",
-      "t": "MYGN"
+      "n": "Zeo Energy Corp.",
+      "t": "ZEO"
     },
     {
-      "n": "Clene Inc.",
-      "t": "CLNN"
+      "n": "Immix Biopharma, Inc.",
+      "t": "IMMX"
     },
     {
-      "n": "Maris Tech Ltd.",
-      "t": "MTEK"
+      "n": "Rocky Mountain Chocolate Factory, Inc.",
+      "t": "RMCF"
     },
     {
-      "n": "Modular Medical, Inc.",
-      "t": "MODD"
+      "n": "FIRST NATIONAL CORP /VA/",
+      "t": "FXNC"
     },
     {
-      "n": "Roadzen Inc.",
-      "t": "RDZN"
+      "n": "VOLITIONRX LTD",
+      "t": "VNRX"
     },
     {
-      "n": "InspireMD, Inc.",
-      "t": "NSPR"
-    },
-    {
-      "n": "Zomedica Corp.",
-      "t": "ZOMDF"
-    },
-    {
-      "n": "BioStem Technologies, Inc.",
-      "t": "BSEM"
-    },
-    {
-      "n": "NOMAD POWER SOLUTIONS, INC.",
-      "t": "NMAD"
-    },
-    {
-      "n": "Energous Corp",
-      "t": "WATT"
-    },
-    {
-      "n": "Pennant Group, Inc.",
-      "t": "PNTG"
-    },
-    {
-      "n": "DAXOR CORP",
-      "t": "DXR"
-    },
-    {
-      "n": "BIO KEY INTERNATIONAL INC",
-      "t": "BKYI"
-    },
-    {
-      "n": "MERCER INTERNATIONAL INC.",
-      "t": "MERC"
+      "n": "Dare Bioscience, Inc.",
+      "t": "DARE"
     }
   ],
   "titles": [
-    "EVP OF HUMAN RESOURCES & CHRO",
-    "EVP, Chief R&D Officer",
-    "EVP, Chief Restaurant Officer",
-    "EVP-WW Sales & Bus Development",
-    "PRESIDENT, CEO & CHAIRMAN",
-    "President & GM, NFB",
-    "President Beauty Systems Group",
-    "SVP OF INTERNATIONAL",
-    "SVP OF REAL ESTATE & EXPANSION",
-    "SVP of Operations",
-    "SVP, Innovation&Gov Relations",
-    "SVP-Finance and Treasurer",
-    "Sector President",
-    "Sr MD, General Counsel",
-    "VP Financial Planning Analysis"
+    "CFO, President",
+    "CLO, CSO and Corp Secretary",
+    "COO, GC & Secretary",
+    "Chair",
+    "Chief Corp Development Officer",
+    "Chief Marketplace Officer",
+    "Chief People Strategy Officer",
+    "EVP (CHESI)",
+    "EVP, GC & CCO",
+    "Executive VP & GENERAL COUNSEL",
+    "President, A&G",
+    "SEVP, Co-Pres, Co-COO & CFO",
+    "SVP, Chief Development Officer",
+    "SVP, Gov & External Affairs",
+    "Sr. EVP & Chief Legal Officer",
+    "VP, Chief Compliance Officer",
+    "VP, Mktg, Com, Sus & Pub Aff",
+    "Vice President, ZEBS"
   ]
 }
