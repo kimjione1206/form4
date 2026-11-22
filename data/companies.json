@@ -242,7 +242,7 @@
   "1056288": {
     "name": "FEDERATED HERMES, INC.",
     "sic_description": "Investment Advice",
-    "summary": null
+    "summary": "투자 자문과 자산운용을 하는 회사"
   },
   "1056943": {
     "name": "PEOPLES FINANCIAL SERVICES CORP.",
@@ -1072,7 +1072,7 @@
   "1390478": {
     "name": "SELLAS Life Sciences Group, Inc.",
     "sic_description": "Pharmaceutical Preparations",
-    "summary": null
+    "summary": "암 치료제를 개발하는 제약회사"
   },
   "1392380": {
     "name": "Gevo, Inc.",
@@ -1142,7 +1142,7 @@
   "1410098": {
     "name": "CorMedix Inc.",
     "sic_description": "Pharmaceutical Preparations",
-    "summary": null
+    "summary": "감염 예방 의약품을 개발·판매하는 제약회사"
   },
   "1410384": {
     "name": "Q2 Holdings, Inc.",
@@ -1467,7 +1467,7 @@
   "1502377": {
     "name": "Contango Silver & Gold Inc.",
     "sic_description": "Gold and Silver Ores",
-    "summary": null
+    "summary": "알래스카에서 금광을 탐사·개발하는 회사"
   },
   "1504776": {
     "name": "Warby Parker Inc.",
@@ -2187,7 +2187,7 @@
   "1646188": {
     "name": "Ondas Inc.",
     "sic_description": "Radio & Tv Broadcasting & Communications Equipment",
-    "summary": null
+    "summary": "드론·보안·통신 기술 장비를 만드는 회사"
   },
   "1647639": {
     "name": "Upstart Holdings, Inc.",
@@ -2442,7 +2442,7 @@
   "1697500": {
     "name": "Solaris Energy Infrastructure, Inc.",
     "sic_description": "Oil & Gas Field Machinery & Equipment",
-    "summary": null
+    "summary": "발전 설비와 유전 자재 관리 장비를 제공하는 회사"
   },
   "1698514": {
     "name": "National Energy Services Reunited Corp.",
@@ -2617,7 +2617,7 @@
   "1744489": {
     "name": "Walt Disney Co",
     "sic_description": "Services-Miscellaneous Amusement & Recreation",
-    "summary": null
+    "summary": "영화·방송·스트리밍·테마파크를 운영하는 엔터테인먼트 회사"
   },
   "1750704": {
     "name": "HawkEye 360, Inc.",
@@ -3092,7 +3092,7 @@
   "1837607": {
     "name": "AEON Biopharma, Inc.",
     "sic_description": "Pharmaceutical Preparations",
-    "summary": null
+    "summary": "보툴리눔 톡신 의약품을 개발하는 제약회사"
   },
   "1838359": {
     "name": "Rigetti Computing, Inc.",
@@ -3132,7 +3132,7 @@
   "1841644": {
     "name": "PicS N.V.",
     "sic_description": "Personal Credit Institutions",
-    "summary": null
+    "summary": "개인 대출 등 신용 서비스를 하는 회사"
   },
   "1841761": {
     "name": "Grove Collaborative Holdings, Inc.",
@@ -4122,7 +4122,7 @@
   "723612": {
     "name": "AVIS BUDGET GROUP, INC.",
     "sic_description": "Services-Auto Rental & Leasing (No Drivers)",
-    "summary": null
+    "summary": "자동차 렌터카와 차량 공유 서비스 회사"
   },
   "726854": {
     "name": "CITY HOLDING CO",
@@ -4337,7 +4337,7 @@
   "825542": {
     "name": "SCOTTS MIRACLE-GRO CO",
     "sic_description": "Agricultural Chemicals",
-    "summary": null
+    "summary": "잔디·정원용 비료와 원예 용품을 만드는 회사"
   },
   "826675": {
     "name": "DYNEX CAPITAL INC",
@@ -4597,7 +4597,7 @@
   "910073": {
     "name": "FLAGSTAR BANK, NATIONAL ASSOCIATION",
     "sic_description": "Savings Institutions, Not Federally Chartered",
-    "summary": null
+    "summary": "미국 북동부 중심의 은행"
   },
   "910612": {
     "name": "CBL & ASSOCIATES PROPERTIES INC",
