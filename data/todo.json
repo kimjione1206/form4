@@ -1,29 +1,9 @@
 {
   "companies": [
     {
-      "cik": "1697500",
-      "name": "Solaris Energy Infrastructure, Inc.",
-      "sic_description": "Oil & Gas Field Machinery & Equipment"
-    },
-    {
-      "cik": "1410098",
-      "name": "CorMedix Inc.",
-      "sic_description": "Pharmaceutical Preparations"
-    },
-    {
       "cik": "1551047",
       "name": "Bluerock Private Real Estate Fund",
       "sic_description": ""
-    },
-    {
-      "cik": "910073",
-      "name": "FLAGSTAR BANK, NATIONAL ASSOCIATION",
-      "sic_description": "Savings Institutions, Not Federally Chartered"
-    },
-    {
-      "cik": "1841644",
-      "name": "PicS N.V.",
-      "sic_description": "Personal Credit Institutions"
     },
     {
       "cik": "1506488",
@@ -36,162 +16,12 @@
       "sic_description": ""
     },
     {
-      "cik": "1502377",
-      "name": "Contango Silver & Gold Inc.",
-      "sic_description": "Gold and Silver Ores"
-    },
-    {
       "cik": "813623",
       "name": "Total Return Securities Fund",
       "sic_description": ""
-    },
-    {
-      "cik": "1837607",
-      "name": "AEON Biopharma, Inc.",
-      "sic_description": "Pharmaceutical Preparations"
-    },
-    {
-      "cik": "1056288",
-      "name": "FEDERATED HERMES, INC.",
-      "sic_description": "Investment Advice"
-    },
-    {
-      "cik": "1744489",
-      "name": "Walt Disney Co",
-      "sic_description": "Services-Miscellaneous Amusement & Recreation"
-    },
-    {
-      "cik": "1646188",
-      "name": "Ondas Inc.",
-      "sic_description": "Radio & Tv Broadcasting & Communications Equipment"
-    },
-    {
-      "cik": "723612",
-      "name": "AVIS BUDGET GROUP, INC.",
-      "sic_description": "Services-Auto Rental & Leasing (No Drivers)"
-    },
-    {
-      "cik": "1390478",
-      "name": "SELLAS Life Sciences Group, Inc.",
-      "sic_description": "Pharmaceutical Preparations"
-    },
-    {
-      "cik": "825542",
-      "name": "SCOTTS MIRACLE-GRO CO",
-      "sic_description": "Agricultural Chemicals"
     }
   ],
-  "industries": [
-    "Agricultural Chemicals"
-  ],
-  "names": [
-    {
-      "n": "SILGAN HOLDINGS INC",
-      "t": "SLGN"
-    },
-    {
-      "n": "SELLAS Life Sciences Group, Inc.",
-      "t": "SLS"
-    },
-    {
-      "n": "PicS N.V.",
-      "t": "PICS"
-    },
-    {
-      "n": "SAGTEC GLOBAL Ltd",
-      "t": "SAGT"
-    },
-    {
-      "n": "CITIGROUP INC",
-      "t": "C"
-    },
-    {
-      "n": "TJX COMPANIES INC /DE/",
-      "t": "TJX"
-    },
-    {
-      "n": "FOSTER L B CO",
-      "t": "FSTR"
-    },
-    {
-      "n": "GRAY MEDIA, INC",
-      "t": "GTN"
-    },
-    {
-      "n": "REGENCY CENTERS CORP",
-      "t": "REG"
-    },
-    {
-      "n": "Teamshares Inc",
-      "t": "TMS"
-    },
-    {
-      "n": "AEVEX Corp.",
-      "t": "AVEX"
-    },
-    {
-      "n": "DarkHorse Technologies Inc.",
-      "t": "DRK"
-    },
-    {
-      "n": "AEON Biopharma, Inc.",
-      "t": "AEON"
-    },
-    {
-      "n": "CION Investment Corp",
-      "t": "CION"
-    },
-    {
-      "n": "Comstock Inc.",
-      "t": "LODE"
-    },
-    {
-      "n": "Eagle Bancorp Montana, Inc.",
-      "t": "EBMT"
-    },
-    {
-      "n": "Zeo Energy Corp.",
-      "t": "ZEO"
-    },
-    {
-      "n": "Immix Biopharma, Inc.",
-      "t": "IMMX"
-    },
-    {
-      "n": "Rocky Mountain Chocolate Factory, Inc.",
-      "t": "RMCF"
-    },
-    {
-      "n": "FIRST NATIONAL CORP /VA/",
-      "t": "FXNC"
-    },
-    {
-      "n": "VOLITIONRX LTD",
-      "t": "VNRX"
-    },
-    {
-      "n": "Dare Bioscience, Inc.",
-      "t": "DARE"
-    }
-  ],
-  "titles": [
-    "CFO, President",
-    "CLO, CSO and Corp Secretary",
-    "COO, GC & Secretary",
-    "Chair",
-    "Chief Corp Development Officer",
-    "Chief Marketplace Officer",
-    "Chief People Strategy Officer",
-    "EVP (CHESI)",
-    "EVP, GC & CCO",
-    "Executive VP & GENERAL COUNSEL",
-    "President, A&G",
-    "SEVP, Co-Pres, Co-COO & CFO",
-    "SVP, Chief Development Officer",
-    "SVP, Gov & External Affairs",
-    "Sr. EVP & Chief Legal Officer",
-    "VP, Chief Compliance Officer",
-    "VP, Mktg, Com, Sus & Pub Aff",
-    "Vice President, ZEBS"
-  ]
+  "industries": [],
+  "names": [],
+  "titles": []
 }

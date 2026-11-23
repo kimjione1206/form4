@@ -265,11 +265,6 @@
     "ticker": "BA"
   },
   {
-    "issuer_cik": "1089063",
-    "name": "DICK'S SPORTING GOODS, INC.",
-    "ticker": "DKS"
-  },
-  {
     "issuer_cik": "2035149",
     "name": "Flowco Holdings Inc.",
     "ticker": "FLOC"
@@ -335,14 +330,14 @@
     "ticker": "NXG"
   },
   {
-    "issuer_cik": "1510599",
-    "name": "PIMCO Dynamic Income Fund",
-    "ticker": "PDI"
-  },
-  {
     "issuer_cik": "1502377",
     "name": "Contango Silver & Gold Inc.",
     "ticker": "CTGO"
+  },
+  {
+    "issuer_cik": "1510599",
+    "name": "PIMCO Dynamic Income Fund",
+    "ticker": "PDI"
   },
   {
     "issuer_cik": "1516912",
