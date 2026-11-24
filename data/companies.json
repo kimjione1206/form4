@@ -779,6 +779,11 @@
     "sic_description": "Aircraft",
     "summary": "항공기와 방산·우주 장비를 만드는 회사"
   },
+  "1293613": {
+    "name": "Kayne Anderson Energy Infrastructure Fund, Inc.",
+    "sic_description": "",
+    "summary": null
+  },
   "1297184": {
     "name": "Amphastar Pharmaceuticals, Inc.",
     "sic_description": "Pharmaceutical Preparations",
@@ -1173,6 +1178,11 @@
     "name": "Atomera Inc",
     "sic_description": "Semiconductors & Related Devices",
     "summary": "반도체 공정 기술을 개발해 라이선스하는 회사"
+  },
+  "1420800": {
+    "name": "Enovis CORP",
+    "sic_description": "Orthopedic, Prosthetic & Surgical Appliances & Supplies",
+    "summary": null
   },
   "1422143": {
     "name": "Kura Oncology, Inc.",
@@ -1589,6 +1599,11 @@
     "sic_description": "Air Transportation, Nonscheduled",
     "summary": "헬리콥터 운항 서비스 회사"
   },
+  "1526113": {
+    "name": "Global Net Lease, Inc.",
+    "sic_description": "Real Estate Investment Trusts",
+    "summary": null
+  },
   "1527636": {
     "name": "Autohome Inc.",
     "sic_description": "Services-Computer Processing & Data Preparation",
@@ -1623,6 +1638,11 @@
     "name": "Enova International, Inc.",
     "sic_description": "Personal Credit Institutions",
     "summary": "온라인 대출 서비스를 하는 회사"
+  },
+  "1530804": {
+    "name": "Tronox Holdings plc",
+    "sic_description": "Industrial Inorganic Chemicals",
+    "summary": null
   },
   "1530979": {
     "name": "Honest Company, Inc.",
@@ -1712,6 +1732,11 @@
   "1551047": {
     "name": "Bluerock Private Real Estate Fund",
     "sic_description": "",
+    "summary": null
+  },
+  "1551182": {
+    "name": "Eaton Corp plc",
+    "sic_description": "Misc Industrial & Commercial Machinery & Equipment",
     "summary": null
   },
   "1551306": {
@@ -2078,6 +2103,11 @@
     "name": "Wave Life Sciences, Inc.",
     "sic_description": "Pharmaceutical Preparations",
     "summary": "RNA 의약품을 개발하는 회사"
+  },
+  "1633336": {
+    "name": "Crescent Capital BDC, Inc.",
+    "sic_description": "",
+    "summary": null
   },
   "1633917": {
     "name": "PayPal Holdings, Inc.",
@@ -2629,6 +2659,11 @@
     "sic_description": "Radio & Tv Broadcasting & Communications Equipment",
     "summary": "위성 영상 정보 서비스 회사"
   },
+  "1755672": {
+    "name": "Corteva, Inc.",
+    "sic_description": "Agricultural Production-Crops",
+    "summary": null
+  },
   "1757898": {
     "name": "STERIS plc",
     "sic_description": "Orthopedic, Prosthetic & Surgical Appliances & Supplies",
@@ -3008,6 +3043,11 @@
     "name": "Hippo Holdings Inc.",
     "sic_description": "Fire, Marine & Casualty Insurance",
     "summary": "주택 보험을 제공하는 보험 회사"
+  },
+  "1830033": {
+    "name": "PureCycle Technologies, Inc.",
+    "sic_description": "Plastic Materials, Synth Resins & Nonvulcan Elastomers",
+    "summary": null
   },
   "1830214": {
     "name": "Ginkgo Bioworks Holdings, Inc.",
@@ -3619,6 +3659,11 @@
     "sic_description": "Biological Products, (No Diagnostic Substances)",
     "summary": "생물학적 제제를 개발하는 회사"
   },
+  "2048951": {
+    "name": "Teamshares Inc",
+    "sic_description": "Retail-Miscellaneous Retail",
+    "summary": null
+  },
   "2058758": {
     "name": "Avidia Bancorp, Inc.",
     "sic_description": "Savings Institutions, Not Federally Chartered",
@@ -3634,6 +3679,11 @@
     "sic_description": "Services-Medical Laboratories",
     "summary": "분자 진단 검사 회사"
   },
+  "2071778": {
+    "name": "Fermi Inc.",
+    "sic_description": "Real Estate Investment Trusts",
+    "summary": null
+  },
   "2079999": {
     "name": "Cardinal Infrastructure Group Inc.",
     "sic_description": "Heavy Construction Other Than Bldg Const - Contractors",
@@ -3644,10 +3694,20 @@
     "sic_description": "Electrical Industrial Apparatus",
     "summary": "전력 설비를 만드는 회사"
   },
+  "2080921": {
+    "name": "ARKO Petroleum Corp.",
+    "sic_description": "Wholesale-Petroleum & Petroleum Products (No Bulk Stations)",
+    "summary": null
+  },
   "2082866": {
     "name": "Pinnacle Financial Partners, Inc.",
     "sic_description": "National Commercial Banks",
     "summary": "테네시 기반 은행 지주회사"
+  },
+  "2084026": {
+    "name": "QumulusAI, Inc.",
+    "sic_description": "Services-Computer Processing & Data Preparation",
+    "summary": null
   },
   "2089975": {
     "name": "HPS Real Assets Lending Co LP",

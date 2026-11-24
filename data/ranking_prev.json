@@ -25,6 +25,11 @@
     "ticker": "RAPP"
   },
   {
+    "issuer_cik": "2094433",
+    "name": "Suncrete, Inc.",
+    "ticker": "RMIX"
+  },
+  {
     "issuer_cik": "1046179",
     "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
     "ticker": "TSM"
@@ -40,14 +45,19 @@
     "ticker": "DOX"
   },
   {
+    "issuer_cik": "1526113",
+    "name": "Global Net Lease, Inc.",
+    "ticker": "GNL"
+  },
+  {
     "issuer_cik": "1374690",
     "name": "Larimar Therapeutics, Inc.",
     "ticker": "LRMR"
   },
   {
-    "issuer_cik": "2094433",
-    "name": "Suncrete, Inc.",
-    "ticker": "RMIX"
+    "issuer_cik": "2080126",
+    "name": "Forgent Power Solutions, Inc.",
+    "ticker": "FPS"
   },
   {
     "issuer_cik": "1766478",
@@ -63,11 +73,6 @@
     "issuer_cik": "2110117",
     "name": "ITG, Inc./DE/",
     "ticker": "ITG"
-  },
-  {
-    "issuer_cik": "2080126",
-    "name": "Forgent Power Solutions, Inc.",
-    "ticker": "FPS"
   },
   {
     "issuer_cik": "876343",
@@ -95,6 +100,11 @@
     "ticker": "SLQT"
   },
   {
+    "issuer_cik": "1998768",
+    "name": "Proficient Auto Logistics, Inc",
+    "ticker": "PAL"
+  },
+  {
     "issuer_cik": "2105139",
     "name": "ADI GLOBAL DISTRIBUTION INC.",
     "ticker": "ADIG"
@@ -118,6 +128,11 @@
     "issuer_cik": "1750704",
     "name": "HawkEye 360, Inc.",
     "ticker": "HAWK"
+  },
+  {
+    "issuer_cik": "1537435",
+    "name": "TECOGEN INC.",
+    "ticker": "TGEN"
   },
   {
     "issuer_cik": "1469395",
@@ -180,19 +195,9 @@
     "ticker": "DX"
   },
   {
-    "issuer_cik": "1998768",
-    "name": "Proficient Auto Logistics, Inc",
-    "ticker": "PAL"
-  },
-  {
     "issuer_cik": "1842279",
     "name": "OPAL Fuels Inc.",
     "ticker": "OPAL"
-  },
-  {
-    "issuer_cik": "715446",
-    "name": "Anixa Biosciences Inc",
-    "ticker": "ANIX"
   },
   {
     "issuer_cik": "36029",
@@ -200,9 +205,9 @@
     "ticker": "FFIN"
   },
   {
-    "issuer_cik": "1963088",
-    "name": "AtlasClear Holdings, Inc.",
-    "ticker": "ATCH"
+    "issuer_cik": "1633336",
+    "name": "Crescent Capital BDC, Inc.",
+    "ticker": "CCAP"
   },
   {
     "issuer_cik": "1630805",
@@ -218,11 +223,6 @@
     "issuer_cik": "1326190",
     "name": "Altimmune, Inc.",
     "ticker": "ALT"
-  },
-  {
-    "issuer_cik": "1537435",
-    "name": "TECOGEN INC.",
-    "ticker": "TGEN"
   },
   {
     "issuer_cik": "726854",
@@ -290,9 +290,19 @@
     "ticker": "NSLR"
   },
   {
+    "issuer_cik": "1293613",
+    "name": "Kayne Anderson Energy Infrastructure Fund, Inc.",
+    "ticker": "KYN"
+  },
+  {
     "issuer_cik": "1482512",
     "name": "Hudson Pacific Properties, Inc.",
     "ticker": "HPP"
+  },
+  {
+    "issuer_cik": "2048951",
+    "name": "Teamshares Inc",
+    "ticker": "TMS"
   },
   {
     "issuer_cik": "1350653",
@@ -320,6 +330,11 @@
     "ticker": "TH"
   },
   {
+    "issuer_cik": "1830033",
+    "name": "PureCycle Technologies, Inc.",
+    "ticker": "PCT"
+  },
+  {
     "issuer_cik": "1841644",
     "name": "PicS N.V.",
     "ticker": "PICS"
@@ -330,14 +345,19 @@
     "ticker": "NXG"
   },
   {
+    "issuer_cik": "1755672",
+    "name": "Corteva, Inc.",
+    "ticker": "CTVA"
+  },
+  {
     "issuer_cik": "1502377",
     "name": "Contango Silver & Gold Inc.",
     "ticker": "CTGO"
   },
   {
-    "issuer_cik": "1510599",
-    "name": "PIMCO Dynamic Income Fund",
-    "ticker": "PDI"
+    "issuer_cik": "2080921",
+    "name": "ARKO Petroleum Corp.",
+    "ticker": "APC"
   },
   {
     "issuer_cik": "1516912",
@@ -345,9 +365,19 @@
     "ticker": "OBK"
   },
   {
+    "issuer_cik": "1551182",
+    "name": "Eaton Corp plc",
+    "ticker": "ETN"
+  },
+  {
     "issuer_cik": "1528287",
     "name": "NeuroPace Inc",
     "ticker": "NPCE"
+  },
+  {
+    "issuer_cik": "1420800",
+    "name": "Enovis CORP",
+    "ticker": "ENOV"
   },
   {
     "issuer_cik": "1826667",
@@ -375,6 +405,11 @@
     "ticker": "SYNX"
   },
   {
+    "issuer_cik": "1866364",
+    "name": "Webull Corp",
+    "ticker": "BULL"
+  },
+  {
     "issuer_cik": "813623",
     "name": "Total Return Securities Fund",
     "ticker": "SWZ"
@@ -385,24 +420,24 @@
     "ticker": "KEEL"
   },
   {
+    "issuer_cik": "1530804",
+    "name": "Tronox Holdings plc",
+    "ticker": "TROX"
+  },
+  {
     "issuer_cik": "1289340",
     "name": "Stereotaxis, Inc.",
     "ticker": "STXS"
   },
   {
-    "issuer_cik": "1868995",
-    "name": "CI&T Inc",
-    "ticker": "CINT"
+    "issuer_cik": "752642",
+    "name": "UMH PROPERTIES, INC.",
+    "ticker": "UMH"
   },
   {
     "issuer_cik": "2019804",
     "name": "Terrestrial Energy Inc. /DE/",
     "ticker": "IMSR"
-  },
-  {
-    "issuer_cik": "752642",
-    "name": "UMH PROPERTIES, INC.",
-    "ticker": "UMH"
   },
   {
     "issuer_cik": "1339688",
@@ -413,6 +448,11 @@
     "issuer_cik": "838875",
     "name": "WILLAMETTE VALLEY VINEYARDS INC",
     "ticker": "WVVI"
+  },
+  {
+    "issuer_cik": "715446",
+    "name": "Anixa Biosciences Inc",
+    "ticker": "ANIX"
   },
   {
     "issuer_cik": "1533040",
