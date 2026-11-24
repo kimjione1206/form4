@@ -1801,5 +1801,14 @@
   "co CFO": "공동 재무이사(CFO)",
   "executive vice president": "부사장",
   "president": "사장",
-  "president and CEO": "사장 겸 대표이사(CEO)"
+  "president and CEO": "사장 겸 대표이사(CEO)",
+  "CEO, COB, President": "대표이사(CEO)·이사회 의장·사장",
+  "CFO, Secretary and Treasurer": "재무이사(CFO)·비서역·재무담당",
+  "Chief Integration Officer": "통합총괄이사",
+  "Chief Site Development Officer": "부지개발총괄이사",
+  "EVP, Chief Dist. & Brand Off": "전무(EVP)·유통·브랜드총괄이사",
+  "GC, Secretary, EVP": "법무총괄(GC)·비서역·전무(EVP)",
+  "Global Chief Operating Officer": "글로벌 최고운영책임자(COO)",
+  "SEVP & President of Kinetic": "수석부사장(SEVP)·키네틱 사업부 사장",
+  "Vice President and Director": "부사장·이사"
 }

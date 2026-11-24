@@ -1182,7 +1182,7 @@
   "1420800": {
     "name": "Enovis CORP",
     "sic_description": "Orthopedic, Prosthetic & Surgical Appliances & Supplies",
-    "summary": null
+    "summary": "정형외과용 의료기기를 만드는 회사"
   },
   "1422143": {
     "name": "Kura Oncology, Inc.",
@@ -1602,7 +1602,7 @@
   "1526113": {
     "name": "Global Net Lease, Inc.",
     "sic_description": "Real Estate Investment Trusts",
-    "summary": null
+    "summary": "해외·국내 순임대 부동산을 보유·운영하는 리츠"
   },
   "1527636": {
     "name": "Autohome Inc.",
@@ -1642,7 +1642,7 @@
   "1530804": {
     "name": "Tronox Holdings plc",
     "sic_description": "Industrial Inorganic Chemicals",
-    "summary": null
+    "summary": "이산화티타늄 안료를 만드는 회사"
   },
   "1530979": {
     "name": "Honest Company, Inc.",
@@ -1737,7 +1737,7 @@
   "1551182": {
     "name": "Eaton Corp plc",
     "sic_description": "Misc Industrial & Commercial Machinery & Equipment",
-    "summary": null
+    "summary": "전력 관리 장비를 만드는 회사"
   },
   "1551306": {
     "name": "Progyny, Inc.",
@@ -2107,7 +2107,7 @@
   "1633336": {
     "name": "Crescent Capital BDC, Inc.",
     "sic_description": "",
-    "summary": null
+    "summary": "중견기업에 대출하는 금융회사"
   },
   "1633917": {
     "name": "PayPal Holdings, Inc.",
@@ -2662,7 +2662,7 @@
   "1755672": {
     "name": "Corteva, Inc.",
     "sic_description": "Agricultural Production-Crops",
-    "summary": null
+    "summary": "농작물 종자와 작물보호제를 만드는 회사"
   },
   "1757898": {
     "name": "STERIS plc",
@@ -3047,7 +3047,7 @@
   "1830033": {
     "name": "PureCycle Technologies, Inc.",
     "sic_description": "Plastic Materials, Synth Resins & Nonvulcan Elastomers",
-    "summary": null
+    "summary": "플라스틱 소재를 만드는 회사"
   },
   "1830214": {
     "name": "Ginkgo Bioworks Holdings, Inc.",
@@ -3662,7 +3662,7 @@
   "2048951": {
     "name": "Teamshares Inc",
     "sic_description": "Retail-Miscellaneous Retail",
-    "summary": null
+    "summary": "기업 인수를 목적으로 만든 껍데기 회사"
   },
   "2058758": {
     "name": "Avidia Bancorp, Inc.",
@@ -3682,7 +3682,7 @@
   "2071778": {
     "name": "Fermi Inc.",
     "sic_description": "Real Estate Investment Trusts",
-    "summary": null
+    "summary": "AI용 전력·데이터센터 단지를 개발하는 회사"
   },
   "2079999": {
     "name": "Cardinal Infrastructure Group Inc.",
@@ -3697,7 +3697,7 @@
   "2080921": {
     "name": "ARKO Petroleum Corp.",
     "sic_description": "Wholesale-Petroleum & Petroleum Products (No Bulk Stations)",
-    "summary": null
+    "summary": "연료를 도매로 공급하는 회사"
   },
   "2082866": {
     "name": "Pinnacle Financial Partners, Inc.",
@@ -3707,7 +3707,7 @@
   "2084026": {
     "name": "QumulusAI, Inc.",
     "sic_description": "Services-Computer Processing & Data Preparation",
-    "summary": null
+    "summary": "컴퓨터 데이터 처리 서비스 회사"
   },
   "2089975": {
     "name": "HPS Real Assets Lending Co LP",
