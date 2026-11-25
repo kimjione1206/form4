@@ -1,16 +1,6 @@
 {
   "companies": [
     {
-      "cik": "1526113",
-      "name": "Global Net Lease, Inc.",
-      "sic_description": "Real Estate Investment Trusts"
-    },
-    {
-      "cik": "1633336",
-      "name": "Crescent Capital BDC, Inc.",
-      "sic_description": ""
-    },
-    {
       "cik": "1551047",
       "name": "Bluerock Private Real Estate Fund",
       "sic_description": ""
@@ -21,174 +11,17 @@
       "sic_description": ""
     },
     {
-      "cik": "2048951",
-      "name": "Teamshares Inc",
-      "sic_description": "Retail-Miscellaneous Retail"
-    },
-    {
-      "cik": "1830033",
-      "name": "PureCycle Technologies, Inc.",
-      "sic_description": "Plastic Materials, Synth Resins & Nonvulcan Elastomers"
-    },
-    {
       "cik": "1506488",
       "name": "NXG NextGen Infrastructure Income Fund",
       "sic_description": ""
     },
     {
-      "cik": "1755672",
-      "name": "Corteva, Inc.",
-      "sic_description": "Agricultural Production-Crops"
-    },
-    {
-      "cik": "2080921",
-      "name": "ARKO Petroleum Corp.",
-      "sic_description": "Wholesale-Petroleum & Petroleum Products (No Bulk Stations)"
-    },
-    {
-      "cik": "1551182",
-      "name": "Eaton Corp plc",
-      "sic_description": "Misc Industrial & Commercial Machinery & Equipment"
-    },
-    {
-      "cik": "1420800",
-      "name": "Enovis CORP",
-      "sic_description": "Orthopedic, Prosthetic & Surgical Appliances & Supplies"
-    },
-    {
       "cik": "813623",
       "name": "Total Return Securities Fund",
       "sic_description": ""
-    },
-    {
-      "cik": "1530804",
-      "name": "Tronox Holdings plc",
-      "sic_description": "Industrial Inorganic Chemicals"
-    },
-    {
-      "cik": "2084026",
-      "name": "QumulusAI, Inc.",
-      "sic_description": "Services-Computer Processing & Data Preparation"
-    },
-    {
-      "cik": "2071778",
-      "name": "Fermi Inc.",
-      "sic_description": "Real Estate Investment Trusts"
     }
   ],
-  "industries": [
-    "Agricultural Production-Crops",
-    "Industrial Inorganic Chemicals",
-    "Misc Industrial & Commercial Machinery & Equipment",
-    "Wholesale-Petroleum & Petroleum Products (No Bulk Stations)"
-  ],
-  "names": [
-    {
-      "n": "Anthropic, PBC",
-      "t": "ANT"
-    },
-    {
-      "n": "Tron Inc.",
-      "t": "TRON"
-    },
-    {
-      "n": "Fermi Inc.",
-      "t": "FRMI"
-    },
-    {
-      "n": "Bunge Global SA",
-      "t": "BG"
-    },
-    {
-      "n": "Global Net Lease, Inc.",
-      "t": "GNL"
-    },
-    {
-      "n": "QumulusAI, Inc.",
-      "t": "QMLS"
-    },
-    {
-      "n": "Sunstone Hotel Investors, Inc.",
-      "t": "SHO"
-    },
-    {
-      "n": "First American Financial Corp",
-      "t": "FAF"
-    },
-    {
-      "n": "UNITED RENTALS, INC.",
-      "t": "URI"
-    },
-    {
-      "n": "COHEN & STEERS, INC.",
-      "t": "CNS"
-    },
-    {
-      "n": "SOLESENCE, INC.",
-      "t": "SLSN"
-    },
-    {
-      "n": "PEABODY ENERGY CORP",
-      "t": "BTU"
-    },
-    {
-      "n": "GrowGeneration Corp.",
-      "t": "GRWG"
-    },
-    {
-      "n": "Westrock Coffee Co",
-      "t": "WEST"
-    },
-    {
-      "n": "Forge Nano Holdings, Inc.",
-      "t": "NANO"
-    },
-    {
-      "n": "BRENX LTD.",
-      "t": "BRNX"
-    },
-    {
-      "n": "Arrive AI Inc.",
-      "t": "ARAI"
-    },
-    {
-      "n": "PURE CYCLE CORP",
-      "t": "PCYO"
-    },
-    {
-      "n": "NextBoat Inc.",
-      "t": "NXB"
-    },
-    {
-      "n": "RETRACTABLE TECHNOLOGIES INC",
-      "t": "RVP"
-    },
-    {
-      "n": "Falcon's Beyond Global, Inc.",
-      "t": "FBYD"
-    },
-    {
-      "n": "Newton Golf Company, Inc.",
-      "t": "NWTG"
-    },
-    {
-      "n": "Azitra, Inc.",
-      "t": "AZTR"
-    },
-    {
-      "n": "Transglobal Management Group, Inc.",
-      "t": "TMGI"
-    }
-  ],
-  "titles": [
-    "CEO, COB, President",
-    "CFO, Secretary and Treasurer",
-    "Chief Integration Officer",
-    "Chief Site Development Officer",
-    "EVP, Chief Dist. & Brand Off",
-    "GC, Secretary, EVP",
-    "Global Chief Operating Officer",
-    "SEVP & President of Kinetic",
-    "Vice President and Director"
-  ]
+  "industries": [],
+  "names": [],
+  "titles": []
 }
