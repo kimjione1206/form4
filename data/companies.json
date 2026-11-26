@@ -2049,6 +2049,11 @@
     "sic_description": "Services-Prepackaged Software",
     "summary": "기업용 클라우드 컴퓨팅 소프트웨어 회사"
   },
+  "1622536": {
+    "name": "Talen Energy Corp",
+    "sic_description": "Electric Services",
+    "summary": null
+  },
   "1623526": {
     "name": "Stoke Therapeutics, Inc.",
     "sic_description": "Pharmaceutical Preparations",
@@ -2919,6 +2924,11 @@
     "sic_description": "Finance Services",
     "summary": "데이터센터와 에너지 인프라를 개발하는 회사"
   },
+  "1812727": {
+    "name": "Reliance Global Group, Inc.",
+    "sic_description": "Insurance Agents, Brokers & Service",
+    "summary": null
+  },
   "1813814": {
     "name": "Definium Therapeutics, Inc.",
     "sic_description": "Medicinal Chemicals & Botanical Products",
@@ -3238,6 +3248,11 @@
     "name": "Oklo Inc.",
     "sic_description": "Electric Services",
     "summary": "원자력 발전 설비를 개발하는 회사"
+  },
+  "1849396": {
+    "name": "Nexxen International Ltd.",
+    "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+    "summary": null
   },
   "1849853": {
     "name": "Stevanato Group S.p.A.",
@@ -4053,6 +4068,11 @@
     "name": "Unum Group",
     "sic_description": "Accident & Health Insurance",
     "summary": "장애·생명보험 회사"
+  },
+  "55242": {
+    "name": "KENNAMETAL INC",
+    "sic_description": "Machine Tools, Metal Cutting Types",
+    "summary": null
   },
   "59478": {
     "name": "ELI LILLY & Co",

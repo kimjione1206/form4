@@ -5,14 +5,14 @@
     "ticker": "UPBD"
   },
   {
-    "issuer_cik": "39368",
-    "name": "FULLER H B CO",
-    "ticker": "FUL"
-  },
-  {
     "issuer_cik": "1520006",
     "name": "Matador Resources Co",
     "ticker": "MTDR"
+  },
+  {
+    "issuer_cik": "39368",
+    "name": "FULLER H B CO",
+    "ticker": "FUL"
   },
   {
     "issuer_cik": "46619",
@@ -58,11 +58,6 @@
     "issuer_cik": "2080126",
     "name": "Forgent Power Solutions, Inc.",
     "ticker": "FPS"
-  },
-  {
-    "issuer_cik": "1766478",
-    "name": "Angel Oak Mortgage REIT, Inc.",
-    "ticker": "AOMR"
   },
   {
     "issuer_cik": "1108134",
@@ -118,6 +113,11 @@
     "issuer_cik": "1502292",
     "name": "Presurance Holdings, Inc.",
     "ticker": "PRHI"
+  },
+  {
+    "issuer_cik": "1766478",
+    "name": "Angel Oak Mortgage REIT, Inc.",
+    "ticker": "AOMR"
   },
   {
     "issuer_cik": "728387",
@@ -190,9 +190,9 @@
     "ticker": "CSQR"
   },
   {
-    "issuer_cik": "826675",
-    "name": "DYNEX CAPITAL INC",
-    "ticker": "DX"
+    "issuer_cik": "1528287",
+    "name": "NeuroPace Inc",
+    "ticker": "NPCE"
   },
   {
     "issuer_cik": "1842279",
@@ -213,6 +213,11 @@
     "issuer_cik": "1630805",
     "name": "Babcock & Wilcox Enterprises, Inc.",
     "ticker": "BW"
+  },
+  {
+    "issuer_cik": "838875",
+    "name": "WILLAMETTE VALLEY VINEYARDS INC",
+    "ticker": "WVVI"
   },
   {
     "issuer_cik": "1428205",
@@ -248,6 +253,11 @@
     "issuer_cik": "1465128",
     "name": "STARWOOD PROPERTY TRUST, INC.",
     "ticker": "STWD"
+  },
+  {
+    "issuer_cik": "820318",
+    "name": "COHERENT CORP.",
+    "ticker": "COHR"
   },
   {
     "issuer_cik": "1801368",
@@ -350,6 +360,11 @@
     "ticker": "CTVA"
   },
   {
+    "issuer_cik": "1812727",
+    "name": "Reliance Global Group, Inc.",
+    "ticker": "XGPU"
+  },
+  {
     "issuer_cik": "1502377",
     "name": "Contango Silver & Gold Inc.",
     "ticker": "CTGO"
@@ -360,19 +375,24 @@
     "ticker": "APC"
   },
   {
+    "issuer_cik": "826675",
+    "name": "DYNEX CAPITAL INC",
+    "ticker": "DX"
+  },
+  {
     "issuer_cik": "1516912",
     "name": "Origin Bancorp, Inc.",
     "ticker": "OBK"
   },
   {
+    "issuer_cik": "55242",
+    "name": "KENNAMETAL INC",
+    "ticker": "KMT"
+  },
+  {
     "issuer_cik": "1551182",
     "name": "Eaton Corp plc",
     "ticker": "ETN"
-  },
-  {
-    "issuer_cik": "1528287",
-    "name": "NeuroPace Inc",
-    "ticker": "NPCE"
   },
   {
     "issuer_cik": "1420800",
@@ -395,6 +415,11 @@
     "ticker": "NGS"
   },
   {
+    "issuer_cik": "1866364",
+    "name": "Webull Corp",
+    "ticker": "BULL"
+  },
+  {
     "issuer_cik": "929351",
     "name": "STARZ ENTERTAINMENT CORP /CN/",
     "ticker": "STRZ"
@@ -403,16 +428,6 @@
     "issuer_cik": "1976443",
     "name": "Silynxcom Ltd.",
     "ticker": "SYNX"
-  },
-  {
-    "issuer_cik": "1866364",
-    "name": "Webull Corp",
-    "ticker": "BULL"
-  },
-  {
-    "issuer_cik": "813623",
-    "name": "Total Return Securities Fund",
-    "ticker": "SWZ"
   },
   {
     "issuer_cik": "1812477",
@@ -430,24 +445,24 @@
     "ticker": "STXS"
   },
   {
-    "issuer_cik": "752642",
-    "name": "UMH PROPERTIES, INC.",
-    "ticker": "UMH"
-  },
-  {
     "issuer_cik": "2019804",
     "name": "Terrestrial Energy Inc. /DE/",
     "ticker": "IMSR"
   },
   {
+    "issuer_cik": "752642",
+    "name": "UMH PROPERTIES, INC.",
+    "ticker": "UMH"
+  },
+  {
+    "issuer_cik": "813623",
+    "name": "Total Return Securities Fund",
+    "ticker": "SWZ"
+  },
+  {
     "issuer_cik": "1339688",
     "name": "Lion Copper Corp.",
     "ticker": "LCU"
-  },
-  {
-    "issuer_cik": "838875",
-    "name": "WILLAMETTE VALLEY VINEYARDS INC",
-    "ticker": "WVVI"
   },
   {
     "issuer_cik": "715446",

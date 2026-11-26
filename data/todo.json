@@ -16,12 +16,155 @@
       "sic_description": ""
     },
     {
+      "cik": "1812727",
+      "name": "Reliance Global Group, Inc.",
+      "sic_description": "Insurance Agents, Brokers & Service"
+    },
+    {
+      "cik": "55242",
+      "name": "KENNAMETAL INC",
+      "sic_description": "Machine Tools, Metal Cutting Types"
+    },
+    {
       "cik": "813623",
       "name": "Total Return Securities Fund",
       "sic_description": ""
+    },
+    {
+      "cik": "1622536",
+      "name": "Talen Energy Corp",
+      "sic_description": "Electric Services"
+    },
+    {
+      "cik": "1849396",
+      "name": "Nexxen International Ltd.",
+      "sic_description": "Services-Computer Programming, Data Processing, Etc."
     }
   ],
-  "industries": [],
-  "names": [],
-  "titles": []
+  "industries": [
+    "Machine Tools, Metal Cutting Types"
+  ],
+  "names": [
+    {
+      "n": "Yesway, Inc.",
+      "t": "YSWY"
+    },
+    {
+      "n": "IES Holdings, Inc.",
+      "t": "IESC"
+    },
+    {
+      "n": "Elmet Group Co.",
+      "t": "ELMT"
+    },
+    {
+      "n": "Amplify Energy Corp.",
+      "t": "AMPY"
+    },
+    {
+      "n": "Reynolds Consumer Products Inc.",
+      "t": "REYN"
+    },
+    {
+      "n": "ENERGIZER HOLDINGS, INC.",
+      "t": "ENR"
+    },
+    {
+      "n": "Reliance Global Group, Inc.",
+      "t": "XGPU"
+    },
+    {
+      "n": "AMC Robotics Corp",
+      "t": "AMCI"
+    },
+    {
+      "n": "Atrium Therapeutics, Inc.",
+      "t": "RNA"
+    },
+    {
+      "n": "KIMCO REALTY CORP",
+      "t": "KIM"
+    },
+    {
+      "n": "Builders FirstSource, Inc.",
+      "t": "BLDR"
+    },
+    {
+      "n": "MARKEL GROUP INC.",
+      "t": "MKL"
+    },
+    {
+      "n": "FRIEDMAN INDUSTRIES INC",
+      "t": "FRD"
+    },
+    {
+      "n": "Huntsman CORP",
+      "t": "HUN"
+    },
+    {
+      "n": "Evaxion A/S",
+      "t": "EVAX"
+    },
+    {
+      "n": "CERAGON NETWORKS LTD",
+      "t": "CRNT"
+    },
+    {
+      "n": "DT Midstream, Inc.",
+      "t": "DTM"
+    },
+    {
+      "n": "CSB Financial Inc.",
+      "t": "CSBA"
+    },
+    {
+      "n": "New Mountain Finance Corp",
+      "t": "NMFC"
+    },
+    {
+      "n": "Hercules Capital, Inc.",
+      "t": "HTGC"
+    },
+    {
+      "n": "NATIONAL STEEL CO",
+      "t": "SID"
+    },
+    {
+      "n": "FLYEXCLUSIVE INC.",
+      "t": "FLYX"
+    },
+    {
+      "n": "Beamr Imaging Ltd.",
+      "t": "BMR"
+    },
+    {
+      "n": "OHIO VALLEY BANC CORP",
+      "t": "OVBC"
+    },
+    {
+      "n": "Workhorse Group Inc.",
+      "t": "WKHS"
+    },
+    {
+      "n": "Burford Capital Ltd",
+      "t": "BUR"
+    }
+  ],
+  "titles": [
+    "CAIO / Chief AI Officer",
+    "CHIEF LEGAL ADMIN OFC AND SECY",
+    "Contracted CEO",
+    "Division President",
+    "EVP, Global Business Sales",
+    "EVP, U.S. Commercial",
+    "Executive Chairman and CEO",
+    "First VP & CSO",
+    "President / CEO / Director",
+    "President, Global ECS",
+    "President, Reynolds Cook&Bake",
+    "Regional President - EMEA",
+    "Sr MD Gl Hd Commodities Mkts",
+    "Sr. Vice President, Controller",
+    "VP, Finance & PAO"
+  ]
 }
