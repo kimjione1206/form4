@@ -55,14 +55,14 @@
     "ticker": "LRMR"
   },
   {
-    "issuer_cik": "2080126",
-    "name": "Forgent Power Solutions, Inc.",
-    "ticker": "FPS"
-  },
-  {
     "issuer_cik": "1108134",
     "name": "Beacon Financial Corp",
     "ticker": "BBT"
+  },
+  {
+    "issuer_cik": "2080126",
+    "name": "Forgent Power Solutions, Inc.",
+    "ticker": "FPS"
   },
   {
     "issuer_cik": "2110117",
@@ -105,6 +105,11 @@
     "ticker": "ADIG"
   },
   {
+    "issuer_cik": "1530804",
+    "name": "Tronox Holdings plc",
+    "ticker": "TROX"
+  },
+  {
     "issuer_cik": "1639877",
     "name": "Ferroglobe PLC",
     "ticker": "GSM"
@@ -128,6 +133,11 @@
     "issuer_cik": "1750704",
     "name": "HawkEye 360, Inc.",
     "ticker": "HAWK"
+  },
+  {
+    "issuer_cik": "1326190",
+    "name": "Altimmune, Inc.",
+    "ticker": "ALT"
   },
   {
     "issuer_cik": "1537435",
@@ -163,6 +173,11 @@
     "issuer_cik": "1065696",
     "name": "LKQ CORP",
     "ticker": "LKQ"
+  },
+  {
+    "issuer_cik": "1517228",
+    "name": "Vistance Networks, Inc.",
+    "ticker": "VISN"
   },
   {
     "issuer_cik": "1767042",
@@ -215,6 +230,11 @@
     "ticker": "BW"
   },
   {
+    "issuer_cik": "752642",
+    "name": "UMH PROPERTIES, INC.",
+    "ticker": "UMH"
+  },
+  {
     "issuer_cik": "838875",
     "name": "WILLAMETTE VALLEY VINEYARDS INC",
     "ticker": "WVVI"
@@ -225,11 +245,6 @@
     "ticker": "ARR"
   },
   {
-    "issuer_cik": "1326190",
-    "name": "Altimmune, Inc.",
-    "ticker": "ALT"
-  },
-  {
     "issuer_cik": "726854",
     "name": "CITY HOLDING CO",
     "ticker": "CHCO"
@@ -238,6 +253,11 @@
     "issuer_cik": "2044950",
     "name": "Bambusa Therapeutics, Inc.",
     "ticker": "BBTX"
+  },
+  {
+    "issuer_cik": "820318",
+    "name": "COHERENT CORP.",
+    "ticker": "COHR"
   },
   {
     "issuer_cik": "1551047",
@@ -255,9 +275,9 @@
     "ticker": "STWD"
   },
   {
-    "issuer_cik": "820318",
-    "name": "COHERENT CORP.",
-    "ticker": "COHR"
+    "issuer_cik": "1859392",
+    "name": "Galaxy Digital Inc.",
+    "ticker": "GLXY"
   },
   {
     "issuer_cik": "1801368",
@@ -290,9 +310,14 @@
     "ticker": "EQPT"
   },
   {
-    "issuer_cik": "1517228",
-    "name": "Vistance Networks, Inc.",
-    "ticker": "VISN"
+    "issuer_cik": "1876431",
+    "name": "Prenetics Global Ltd",
+    "ticker": "PRE"
+  },
+  {
+    "issuer_cik": "2048951",
+    "name": "Teamshares Inc",
+    "ticker": "TMS"
   },
   {
     "issuer_cik": "1509470",
@@ -308,11 +333,6 @@
     "issuer_cik": "1482512",
     "name": "Hudson Pacific Properties, Inc.",
     "ticker": "HPP"
-  },
-  {
-    "issuer_cik": "2048951",
-    "name": "Teamshares Inc",
-    "ticker": "TMS"
   },
   {
     "issuer_cik": "1350653",
@@ -370,14 +390,14 @@
     "ticker": "CTGO"
   },
   {
-    "issuer_cik": "2080921",
-    "name": "ARKO Petroleum Corp.",
-    "ticker": "APC"
-  },
-  {
     "issuer_cik": "826675",
     "name": "DYNEX CAPITAL INC",
     "ticker": "DX"
+  },
+  {
+    "issuer_cik": "2080921",
+    "name": "ARKO Petroleum Corp.",
+    "ticker": "APC"
   },
   {
     "issuer_cik": "1516912",
@@ -435,11 +455,6 @@
     "ticker": "KEEL"
   },
   {
-    "issuer_cik": "1530804",
-    "name": "Tronox Holdings plc",
-    "ticker": "TROX"
-  },
-  {
     "issuer_cik": "1289340",
     "name": "Stereotaxis, Inc.",
     "ticker": "STXS"
@@ -448,11 +463,6 @@
     "issuer_cik": "2019804",
     "name": "Terrestrial Energy Inc. /DE/",
     "ticker": "IMSR"
-  },
-  {
-    "issuer_cik": "752642",
-    "name": "UMH PROPERTIES, INC.",
-    "ticker": "UMH"
   },
   {
     "issuer_cik": "813623",

@@ -489,6 +489,11 @@
     "sic_description": "Metal Forgings & Stampings",
     "summary": "첨단 소재를 만드는 회사"
   },
+  "110471": {
+    "name": "WOLVERINE WORLD WIDE INC /DE/",
+    "sic_description": "Footwear, (No Rubber)",
+    "summary": null
+  },
   "1107843": {
     "name": "QUALYS, INC.",
     "sic_description": "Services-Prepackaged Software",
@@ -503,6 +508,11 @@
     "name": "CAMTEK LTD",
     "sic_description": "Optical Instruments & Lenses",
     "summary": "광학 검사 장비를 만드는 회사"
+  },
+  "1110803": {
+    "name": "ILLUMINA, INC.",
+    "sic_description": "Laboratory Analytical Instruments",
+    "summary": null
   },
   "1111485": {
     "name": "RxSight, Inc.",
@@ -964,6 +974,11 @@
     "sic_description": "Surgical & Medical Instruments & Apparatus",
     "summary": "척추 수술용 의료기기를 만드는 회사"
   },
+  "1352010": {
+    "name": "EPAM Systems, Inc.",
+    "sic_description": "Services-Computer Programming Services",
+    "summary": null
+  },
   "1356090": {
     "name": "PRECIGEN, INC.",
     "sic_description": "Pharmaceutical Preparations",
@@ -988,6 +1003,11 @@
     "name": "Sally Beauty Holdings, Inc.",
     "sic_description": "Retail-Retail Stores, NEC",
     "summary": "전문 미용용품을 파는 소매·유통 회사"
+  },
+  "1368514": {
+    "name": "ADMA BIOLOGICS, INC.",
+    "sic_description": "Biological Products, (No Diagnostic Substances)",
+    "summary": null
   },
   "1370637": {
     "name": "ETSY INC",
@@ -1919,6 +1939,11 @@
     "sic_description": "Hotels & Motels",
     "summary": "카지노·호텔 운영 회사"
   },
+  "1590955": {
+    "name": "Paycom Software, Inc.",
+    "sic_description": "Services-Prepackaged Software",
+    "summary": null
+  },
   "1591588": {
     "name": "Gold.com, Inc.",
     "sic_description": "Wholesale-Jewelry, Watches, Precious Stones & Metals",
@@ -1993,6 +2018,11 @@
     "name": "Natera, Inc.",
     "sic_description": "Services-Medical Laboratories",
     "summary": "유전자 검사 서비스 회사"
+  },
+  "1605301": {
+    "name": "CB Financial Services, Inc.",
+    "sic_description": "State Commercial Banks",
+    "summary": null
   },
   "1606163": {
     "name": "Limbach Holdings, Inc.",
@@ -2799,6 +2829,11 @@
     "sic_description": "Motor Vehicle Parts & Accessories",
     "summary": "차량용 센서 부품 회사"
   },
+  "1789940": {
+    "name": "First Watch Restaurant Group, Inc.",
+    "sic_description": "Retail-Eating  Places",
+    "summary": null
+  },
   "1791145": {
     "name": "GBank Financial Holdings Inc.",
     "sic_description": "State Commercial Banks",
@@ -3299,6 +3334,11 @@
     "sic_description": "Retail-Catalog & Mail-Order Houses",
     "summary": "온라인 대형 상품 판매 회사"
   },
+  "1859392": {
+    "name": "Galaxy Digital Inc.",
+    "sic_description": "Security Brokers, Dealers & Flotation Companies",
+    "summary": null
+  },
   "1859690": {
     "name": "Arqit Quantum Inc.",
     "sic_description": "Services-Prepackaged Software",
@@ -3358,6 +3398,11 @@
     "name": "Circle Internet Group, Inc.",
     "sic_description": "Finance Services",
     "summary": "스테이블코인과 결제 서비스 회사"
+  },
+  "1876431": {
+    "name": "Prenetics Global Ltd",
+    "sic_description": "Pharmaceutical Preparations",
+    "summary": null
   },
   "1877184": {
     "name": "KESTRA MEDICAL TECHNOLOGIES, LTD.",
@@ -4343,6 +4388,11 @@
     "name": "VIASAT INC",
     "sic_description": "Communications Services, NEC",
     "summary": "위성 통신 서비스 회사"
+  },
+  "799292": {
+    "name": "M/I HOMES, INC.",
+    "sic_description": "Operative Builders",
+    "summary": null
   },
   "800457": {
     "name": "DONEGAL GROUP INC",

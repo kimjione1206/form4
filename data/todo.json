@@ -6,6 +6,16 @@
       "sic_description": ""
     },
     {
+      "cik": "1859392",
+      "name": "Galaxy Digital Inc.",
+      "sic_description": "Security Brokers, Dealers & Flotation Companies"
+    },
+    {
+      "cik": "1876431",
+      "name": "Prenetics Global Ltd",
+      "sic_description": "Pharmaceutical Preparations"
+    },
+    {
       "cik": "1293613",
       "name": "Kayne Anderson Energy Infrastructure Fund, Inc.",
       "sic_description": ""
@@ -31,14 +41,54 @@
       "sic_description": ""
     },
     {
+      "cik": "110471",
+      "name": "WOLVERINE WORLD WIDE INC /DE/",
+      "sic_description": "Footwear, (No Rubber)"
+    },
+    {
+      "cik": "1110803",
+      "name": "ILLUMINA, INC.",
+      "sic_description": "Laboratory Analytical Instruments"
+    },
+    {
       "cik": "1622536",
       "name": "Talen Energy Corp",
       "sic_description": "Electric Services"
     },
     {
+      "cik": "799292",
+      "name": "M/I HOMES, INC.",
+      "sic_description": "Operative Builders"
+    },
+    {
+      "cik": "1368514",
+      "name": "ADMA BIOLOGICS, INC.",
+      "sic_description": "Biological Products, (No Diagnostic Substances)"
+    },
+    {
+      "cik": "1789940",
+      "name": "First Watch Restaurant Group, Inc.",
+      "sic_description": "Retail-Eating  Places"
+    },
+    {
+      "cik": "1590955",
+      "name": "Paycom Software, Inc.",
+      "sic_description": "Services-Prepackaged Software"
+    },
+    {
+      "cik": "1352010",
+      "name": "EPAM Systems, Inc.",
+      "sic_description": "Services-Computer Programming Services"
+    },
+    {
       "cik": "1849396",
       "name": "Nexxen International Ltd.",
       "sic_description": "Services-Computer Programming, Data Processing, Etc."
+    },
+    {
+      "cik": "1605301",
+      "name": "CB Financial Services, Inc.",
+      "sic_description": "State Commercial Banks"
     }
   ],
   "industries": [
@@ -50,28 +100,60 @@
       "t": "YSWY"
     },
     {
+      "n": "DeFi Capital Markets, Inc.",
+      "t": "DCM"
+    },
+    {
       "n": "IES Holdings, Inc.",
       "t": "IESC"
-    },
-    {
-      "n": "Elmet Group Co.",
-      "t": "ELMT"
-    },
-    {
-      "n": "Amplify Energy Corp.",
-      "t": "AMPY"
-    },
-    {
-      "n": "Reynolds Consumer Products Inc.",
-      "t": "REYN"
     },
     {
       "n": "ENERGIZER HOLDINGS, INC.",
       "t": "ENR"
     },
     {
+      "n": "Celldex Therapeutics, Inc.",
+      "t": "CLDX"
+    },
+    {
+      "n": "Madison Square Garden Entertainment Corp.",
+      "t": "MSGE"
+    },
+    {
+      "n": "Woodward, Inc.",
+      "t": "WWD"
+    },
+    {
+      "n": "Elmet Group Co.",
+      "t": "ELMT"
+    },
+    {
+      "n": "AngloGold Ashanti PLC",
+      "t": "AU"
+    },
+    {
+      "n": "Amplify Energy Corp.",
+      "t": "AMPY"
+    },
+    {
+      "n": "TMC the metals Co Inc.",
+      "t": "TMC"
+    },
+    {
+      "n": "Reynolds Consumer Products Inc.",
+      "t": "REYN"
+    },
+    {
+      "n": "GRACO INC",
+      "t": "GGG"
+    },
+    {
       "n": "Reliance Global Group, Inc.",
       "t": "XGPU"
+    },
+    {
+      "n": "PATRICK INDUSTRIES INC",
+      "t": "PATK"
     },
     {
       "n": "AMC Robotics Corp",
@@ -98,8 +180,28 @@
       "t": "FRD"
     },
     {
+      "n": "Bradbury Capital Inc.",
+      "t": "BBCI"
+    },
+    {
+      "n": "Clearwater Paper Corp",
+      "t": "CLW"
+    },
+    {
+      "n": "Regencell Bioscience Holdings Ltd",
+      "t": "RGC"
+    },
+    {
       "n": "Huntsman CORP",
       "t": "HUN"
+    },
+    {
+      "n": "EXPAND ENERGY Corp",
+      "t": "EXE"
+    },
+    {
+      "n": "i3 Verticals, Inc.",
+      "t": "IIIV"
     },
     {
       "n": "Evaxion A/S",
@@ -114,8 +216,28 @@
       "t": "DTM"
     },
     {
+      "n": "Advantage Solutions Inc.",
+      "t": "ADV"
+    },
+    {
+      "n": "DarioHealth Corp.",
+      "t": "DRIO"
+    },
+    {
+      "n": "GRUPO TELEVISA, S.A.B.",
+      "t": "TV"
+    },
+    {
+      "n": "Stark Novus Financial Inc.",
+      "t": "SNFI"
+    },
+    {
       "n": "CSB Financial Inc.",
       "t": "CSBA"
+    },
+    {
+      "n": "HELIOS TECHNOLOGIES, INC.",
+      "t": "HLIO"
     },
     {
       "n": "New Mountain Finance Corp",
@@ -126,12 +248,20 @@
       "t": "HTGC"
     },
     {
+      "n": "INTEGRA LIFESCIENCES HOLDINGS CORP",
+      "t": "IART"
+    },
+    {
       "n": "NATIONAL STEEL CO",
       "t": "SID"
     },
     {
       "n": "FLYEXCLUSIVE INC.",
       "t": "FLYX"
+    },
+    {
+      "n": "EnerSys",
+      "t": "ENS"
     },
     {
       "n": "Beamr Imaging Ltd.",
@@ -142,29 +272,80 @@
       "t": "OVBC"
     },
     {
+      "n": "DBV Technologies S.A.",
+      "t": "DBVT"
+    },
+    {
       "n": "Workhorse Group Inc.",
       "t": "WKHS"
     },
     {
+      "n": "CREATIVE MEDICAL TECHNOLOGY HOLDINGS, INC.",
+      "t": "CELZ"
+    },
+    {
       "n": "Burford Capital Ltd",
       "t": "BUR"
+    },
+    {
+      "n": "Serina Therapeutics, Inc.",
+      "t": "SER"
+    },
+    {
+      "n": "ENB Financial Corp",
+      "t": "ENBP"
+    },
+    {
+      "n": "BranchOut Food Inc.",
+      "t": "BOF"
+    },
+    {
+      "n": "Powerus Corp",
+      "t": "PUSA"
+    },
+    {
+      "n": "Co-Diagnostics, Inc.",
+      "t": "CODX"
     }
   ],
   "titles": [
     "CAIO / Chief AI Officer",
     "CHIEF LEGAL ADMIN OFC AND SECY",
+    "COO and SVP, Compliance",
+    "Chairman, CEO & President",
+    "Chief Creative & Marketing Off",
+    "Chief Deliv Off, EVP, Americas",
+    "Chief Lending Officer",
     "Contracted CEO",
     "Division President",
+    "EVP Pacific BU",
+    "EVP of Finance & Accounting",
+    "EVP, CFO and Assistant Sec.",
     "EVP, Global Business Sales",
+    "EVP, NATIONAL SALES",
+    "EVP, PRESIDENT REAL ESTATE",
     "EVP, U.S. Commercial",
     "Executive Chairman and CEO",
     "First VP & CSO",
+    "Group Pres, EMEA",
+    "Hd of Financial Services Group",
+    "Head of PI, Retail, and GSC",
+    "PRES, CMO ROSS DRESS FOR LESS",
+    "Pres, Global Powder Division",
+    "Pres. of Forge Battery, Inc.",
     "President / CEO / Director",
     "President, Global ECS",
+    "President, Military+",
     "President, Reynolds Cook&Bake",
+    "President, Wholesale Brands",
     "Regional President - EMEA",
+    "SVP -Special Rail Projects",
+    "SVP AND CFO",
+    "SVP, Finance & PAO",
+    "SVP, GC & Chief Admin Officer",
     "Sr MD Gl Hd Commodities Mkts",
     "Sr. Vice President, Controller",
+    "VP of the Intra-Asia BU",
     "VP, Finance & PAO"
   ]
 }
