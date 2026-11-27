@@ -492,7 +492,7 @@
   "110471": {
     "name": "WOLVERINE WORLD WIDE INC /DE/",
     "sic_description": "Footwear, (No Rubber)",
-    "summary": null
+    "summary": "신발과 의류를 디자인·판매하는 회사"
   },
   "1107843": {
     "name": "QUALYS, INC.",
@@ -512,7 +512,7 @@
   "1110803": {
     "name": "ILLUMINA, INC.",
     "sic_description": "Laboratory Analytical Instruments",
-    "summary": null
+    "summary": "실험·분석 장비를 만드는 회사"
   },
   "1111485": {
     "name": "RxSight, Inc.",
@@ -977,7 +977,7 @@
   "1352010": {
     "name": "EPAM Systems, Inc.",
     "sic_description": "Services-Computer Programming Services",
-    "summary": null
+    "summary": "디지털 엔지니어링·소프트웨어 개발 서비스 회사"
   },
   "1356090": {
     "name": "PRECIGEN, INC.",
@@ -1007,7 +1007,7 @@
   "1368514": {
     "name": "ADMA BIOLOGICS, INC.",
     "sic_description": "Biological Products, (No Diagnostic Substances)",
-    "summary": null
+    "summary": "면역결핍 환자용 특수 생물의약품을 만드는 회사"
   },
   "1370637": {
     "name": "ETSY INC",
@@ -1942,7 +1942,7 @@
   "1590955": {
     "name": "Paycom Software, Inc.",
     "sic_description": "Services-Prepackaged Software",
-    "summary": null
+    "summary": "소프트웨어를 만드는 회사"
   },
   "1591588": {
     "name": "Gold.com, Inc.",
@@ -2022,7 +2022,7 @@
   "1605301": {
     "name": "CB Financial Services, Inc.",
     "sic_description": "State Commercial Banks",
-    "summary": null
+    "summary": "펜실베이니아의 지역 은행 지주회사"
   },
   "1606163": {
     "name": "Limbach Holdings, Inc.",
@@ -2082,7 +2082,7 @@
   "1622536": {
     "name": "Talen Energy Corp",
     "sic_description": "Electric Services",
-    "summary": null
+    "summary": "전기를 생산해 판매하는 발전 회사"
   },
   "1623526": {
     "name": "Stoke Therapeutics, Inc.",
@@ -2832,7 +2832,7 @@
   "1789940": {
     "name": "First Watch Restaurant Group, Inc.",
     "sic_description": "Retail-Eating  Places",
-    "summary": null
+    "summary": "아침·브런치·점심 식당을 운영하는 회사"
   },
   "1791145": {
     "name": "GBank Financial Holdings Inc.",
@@ -2962,7 +2962,7 @@
   "1812727": {
     "name": "Reliance Global Group, Inc.",
     "sic_description": "Insurance Agents, Brokers & Service",
-    "summary": null
+    "summary": "보험·기술 기업을 인수해 운영하는 지주회사"
   },
   "1813814": {
     "name": "Definium Therapeutics, Inc.",
@@ -3287,7 +3287,7 @@
   "1849396": {
     "name": "Nexxen International Ltd.",
     "sic_description": "Services-Computer Programming, Data Processing, Etc.",
-    "summary": null
+    "summary": "소프트웨어 개발·데이터 처리 서비스 회사"
   },
   "1849853": {
     "name": "Stevanato Group S.p.A.",
@@ -3337,7 +3337,7 @@
   "1859392": {
     "name": "Galaxy Digital Inc.",
     "sic_description": "Security Brokers, Dealers & Flotation Companies",
-    "summary": null
+    "summary": "디지털 자산 금융 서비스와 데이터센터를 운영하는 회사"
   },
   "1859690": {
     "name": "Arqit Quantum Inc.",
@@ -4117,7 +4117,7 @@
   "55242": {
     "name": "KENNAMETAL INC",
     "sic_description": "Machine Tools, Metal Cutting Types",
-    "summary": null
+    "summary": "금속 절삭 공구를 만드는 회사"
   },
   "59478": {
     "name": "ELI LILLY & Co",
@@ -4392,7 +4392,7 @@
   "799292": {
     "name": "M/I HOMES, INC.",
     "sic_description": "Operative Builders",
-    "summary": null
+    "summary": "단독주택을 짓는 건설회사"
   },
   "800457": {
     "name": "DONEGAL GROUP INC",
